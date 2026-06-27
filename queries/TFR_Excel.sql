@@ -1,0 +1,45 @@
+﻿SELECT
+  TFR_2.AccountName,
+  TFR_2.Sch_Grp,
+  TFR_2.UnitDesc,
+  TFR_2.UnitCount,
+  TFR_2.FundDate,
+  Format([TFR_2].[FundDate], "mmm yyyy") AS FundMthYear,
+  TFR_2.OEC,
+  TFR_2.OECPerUnit,
+  TFR_2.Bank,
+  TFR_2.SyndFee,
+  TFR_2.SynFeePct,
+  TFR_2.TermPenalty,
+  TFR_2.TermPenaltyPct,
+  TFR_2.NetSyndFee,
+  TFR_2.NetSyndPct,
+  TFR_2.PDRent,
+  TFR_2.PDRentPct,
+  TFR_2.PDDaysAvg,
+  TFR_2.UTA,
+  TFR_2.UTApct,
+  TFR_2.NPV,
+  TFR_2.NPVPct,
+  TFR_2.NetFee,
+  TFR_2.NetFeePct,
+  TFR_2.PmtAmt,
+  TFR_2.FMSS,
+  TFR_2.PmtAmtFMSS,
+  TFR_2.RVPerUnit,
+  TFR_2.RVPct,
+  TFR_2.LeaseTermPrimary,
+  TFR_2.MilesAllowed,
+  TFR_2.Assigned_Indicator,
+  TFR_2.FundDate,
+  TFR_2.SWAP,
+  TFR_2.Spread,
+  TFR_2.Yield,
+  TFR_2.Bonus
+FROM
+  TFR_2
+ORDER BY
+  TFR_2.AccountName,
+  CDbl(
+    NumInString([Schedule])
+  )& [UnitGroup] DESC;

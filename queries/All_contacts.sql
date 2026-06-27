@@ -1,0 +1,40 @@
+﻿SELECT
+  client_lookup.CompanyAndDBA,
+  Contacts.clientRef,
+  Contacts.contactID,
+  Contacts.contactCreateDate,
+  Contacts.contactEditDate,
+  Contacts.contactClassification,
+  Contacts.contactFullName,
+  Contacts.contactPrefix,
+  Contacts.contactFirst,
+  Contacts.contactMiddle,
+  Contacts.contactLast,
+  Contacts.contactSuffix,
+  Contacts.contactTitle,
+  Contacts.contactSalutation,
+  Contacts.contactPrimaryPhone,
+  Contacts.contactPhoneExt,
+  Contacts.contactPhone2,
+  Contacts.contactCell,
+  Contacts.contactEmail,
+  Contacts.contactOptOut,
+  Contacts.contactNote,
+  Contacts.contactAddress1,
+  Contacts.contactAddress2,
+  Contacts.contactCity,
+  Contacts.stateRef,
+  Contacts.contactZip,
+  Contacts.contactCountry,
+  Contacts.LocationName,
+  Contacts.contactFax,
+  Contacts.ContactObsolete,
+  Contacts.ContactObsoletedt
+FROM
+  client_lookup
+  INNER JOIN Contacts ON client_lookup.clientID = Contacts.clientRef
+ORDER BY
+  client_lookup.CompanyAndDBA,
+  Contacts.contactClassification,
+  Contacts.contactFirst,
+  Contacts.contactLast;

@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "CloneSchNGroup",
+    "FileName": "CloneSchNGroup.png",
+    "Extension": "png",
+    "ContentHash": "bdd1f09"
+  }
+}

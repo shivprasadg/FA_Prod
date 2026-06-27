@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "vw_Sch_Grp_Units_Remarketing",
+    "Connect": "ODBC;DRIVER=ODBC Driver 17 for SQL Server;SERVER=tcp:FA-Phoenix;DATABASE=FleetAdvantage_beSQL;Trusted_Connection=yes;Persist Security Info=True;TrustServerCertificate=yes;ConnectPolicy=Redirect;MARS Connection=True;Network Packet Size=16384;",
+    "SourceTableName": "dbo.vw_Sch_Grp_Units_Remarketing",
+    "Attributes": 537001984
+  }
+}

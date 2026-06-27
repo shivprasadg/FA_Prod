@@ -1,0 +1,7 @@
+﻿dbMemo "SQL" ="EXEC usp_Ops_ChildPart_Make"
+dbMemo "Connect" ="ODBC;Description=AtlaasCore;DRIVER=ODBC Driver 17 for SQL Server;SERVER=10.1.0.7"
+    ",1549;Trusted_Connection=Yes;DATABASE=FleetAdvantage_beSQL;"
+dbBoolean "ReturnsRecords" ="-1"
+dbInteger "ODBCTimeout" ="60"
+dbBoolean "LogMessages" ="0"
+dbByte "Orientation" ="0"

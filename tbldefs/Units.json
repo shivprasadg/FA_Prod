@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "Units",
+    "Connect": "ODBC;DRIVER=ODBC Driver 17 for SQL Server;SERVER=tcp:10.1.0.7,1549;DATABASE=FleetAdvantage_beSQL;Trusted_Connection=yes;Persist Security Info=True;TrustServerCertificate=yes;ConnectPolicy=Redirect;MARS Connection=True;Network Packet Size=16384;",
+    "SourceTableName": "dbo.Units",
+    "Attributes": 537001984,
+    "PrimaryKey": "[UnitID]"
+  }
+}

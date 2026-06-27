@@ -1,0 +1,28 @@
+﻿{
+  "Info": {
+    "Class": "clsDbReport",
+    "Description": "LabelsToCustodian Print Settings"
+  },
+  "Items": {
+    "Printer": {
+      "Orientation": "Portrait",
+      "PaperSize": "Letter"
+    },
+    "Margins": {
+      "LeftMargin": 0.5312,
+      "TopMargin": 0.5,
+      "RightMargin": 0.5,
+      "BotMargin": 0.5,
+      "DataOnly": false,
+      "Width": 3.4375,
+      "Height": 0.6667,
+      "DefaultSize": true,
+      "Columns": 2,
+      "ColumnSpacing": 0.5625,
+      "RowSpacing": 0,
+      "ItemLayout": "Horizontal Columns",
+      "FastPrint": 1,
+      "Datasheet": 1
+    }
+  }
+}

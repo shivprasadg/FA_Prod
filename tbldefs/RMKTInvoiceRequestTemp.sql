@@ -1,0 +1,7 @@
+﻿CREATE TABLE [RMKTInvoiceRequestTemp] (
+  [ID] AUTOINCREMENT CONSTRAINT [ID] PRIMARY KEY UNIQUE NOT NULL,
+  [RequestNum] SHORT,
+  [Requested] DATETIME,
+  [BuyerRef] DOUBLE,
+  [UnitRef] DOUBLE
+)

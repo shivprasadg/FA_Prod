@@ -1,0 +1,9 @@
+﻿CREATE TABLE [ATFWorkTable] (
+  [ID] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [ATFID] LONG,
+  [Reason] LONGTEXT,
+  [ATFSchSpecID] LONG,
+  [ATFGroupSpecID] LONG,
+  [ATFUnitSpecID] LONG,
+  [ATFChildSpecID] LONG
+)

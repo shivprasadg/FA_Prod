@@ -1,0 +1,15 @@
+﻿SELECT
+  Banks.BankName,
+  Banks.BankShortName,
+  Banks.BankType,
+  Banks.BankAddress,
+  Banks.Address1,
+  Banks.Address2,
+  Banks.City,
+  Banks.State,
+  Banks.Zip,
+  Banks.PortfolioNumber,
+  Banks.PortfolioNumberInterm,
+  Banks.BankID
+FROM
+  Banks;

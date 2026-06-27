@@ -1,0 +1,6 @@
+﻿CREATE TABLE [UnitStatus] (
+  [ID] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [Unitstatus] VARCHAR (2),
+  [FAOrig] BIT,
+  [DEF] VARCHAR (30)
+)

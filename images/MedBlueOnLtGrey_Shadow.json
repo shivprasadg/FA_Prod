@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "MedBlueOnLtGrey_Shadow",
+    "FileName": "MedBlueOnLtGrey_Shadow.PNG",
+    "Extension": "PNG",
+    "ContentHash": "86b19a3"
+  }
+}

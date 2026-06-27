@@ -1,0 +1,4 @@
+﻿CREATE TABLE [UnitWorkTable] (
+  [UnitId] LONG,
+  [index] AUTOINCREMENT CONSTRAINT [PK_UnitWorkTable] PRIMARY KEY UNIQUE NOT NULL
+)

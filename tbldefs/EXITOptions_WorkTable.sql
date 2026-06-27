@@ -1,0 +1,9 @@
+﻿CREATE TABLE [EXITOptions_WorkTable] (
+  [UnitID] LONG CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [UID0] VARCHAR (255),
+  [UID1] VARCHAR (255),
+  [UID2] VARCHAR (255),
+  [UID3] VARCHAR (255),
+  [UnitUnitNum] VARCHAR (255),
+  [GroupID] LONG
+)

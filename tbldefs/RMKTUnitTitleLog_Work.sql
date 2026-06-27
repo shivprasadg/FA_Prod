@@ -1,0 +1,20 @@
+﻿CREATE TABLE [RMKTUnitTitleLog_Work] (
+  [UnitTitleLogID] AUTOINCREMENT CONSTRAINT [PK_UnitTitleLog_A] PRIMARY KEY UNIQUE NOT NULL,
+  [AssetID] LONG,
+  [VIN] VARCHAR (255),
+  [UnitStatus] VARCHAR (255),
+  [EntryTypeId] LONG,
+  [EntryReasonId] LONG,
+  [EntryReason] VARCHAR (250),
+  [TitleNumber] VARCHAR (50),
+  [TitleSt] VARCHAR (5),
+  [UnitTitleLogDate] DATETIME,
+  [ExpectedReturn] BIT,
+  [UserID] VARCHAR (250),
+  [Desc] VARCHAR (255),
+  [LastDirection] VARCHAR (255),
+  [LastEntry] VARCHAR (255),
+  [LastEntryTypeId] LONG,
+   CONSTRAINT ,
+   CONSTRAINT 
+)

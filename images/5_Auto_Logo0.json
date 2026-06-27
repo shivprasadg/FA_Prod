@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "5_Auto_Logo0",
+    "FileName": "Auto_Logo0.gif",
+    "Extension": "gif",
+    "ContentHash": "8759ac5"
+  }
+}

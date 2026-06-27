@@ -1,0 +1,31 @@
+﻿SELECT
+  vw_SixKeys.ClientGroupId,
+  vw_SixKeys.clientID,
+  vw_SixKeys.MLID,
+  vw_SixKeys.SchID,
+  vw_SixKeys.SGrpID,
+  vw_SixKeys.CompanyName,
+  vw_SixKeys.ClientShortName,
+  vw_SixKeys.CompanyType,
+  vw_SixKeys.MLNo,
+  vw_SixKeys.MLOrig,
+  vw_SixKeys.FAID,
+  vw_SixKeys.Schedule,
+  vw_SixKeys.UnitGroup,
+  Count(vw_SixKeys.AssetID) AS Units
+FROM
+  vw_SixKeys
+GROUP BY
+  vw_SixKeys.ClientGroupId,
+  vw_SixKeys.clientID,
+  vw_SixKeys.MLID,
+  vw_SixKeys.SchID,
+  vw_SixKeys.SGrpID,
+  vw_SixKeys.CompanyName,
+  vw_SixKeys.ClientShortName,
+  vw_SixKeys.CompanyType,
+  vw_SixKeys.MLNo,
+  vw_SixKeys.MLOrig,
+  vw_SixKeys.FAID,
+  vw_SixKeys.Schedule,
+  vw_SixKeys.UnitGroup;

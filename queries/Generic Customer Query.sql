@@ -1,0 +1,128 @@
+﻿SELECT
+  Units.unitvin,
+  Clients.ClientShNm,
+  MstrLease.MLNo,
+  Schedule.SchNo,
+  SchGrp.SGrpNO,
+  SchGrp.Assignee_Bank,
+  SchGrp.BLCD,
+  SchGrp.FundDate,
+  SchGrp.FundDate_Projected,
+  SchGrp.UnitsInGroup,
+  SchGrp.OrigEquipCost,
+  SchGrp.LeaseTermPrimary,
+  SchGrp.SGrpPLRF AS Expr1,
+  SchGrp.LeasePymtForGroup,
+  SchGrp.SGrpFSLPmt,
+  SchGrp.SGrpFSLSch,
+  SchGrp.ExchangeITGroup,
+  SchGrp.ExchangeITMonth,
+  SchGrp.ExchangeITType,
+  SchGrp.LeaseTermNotice,
+  SchGrp.LeaseExtOption1Term,
+  SchGrp.LeaseExtOption1LRF,
+  SchGrp.SGrpRtTBD,
+  SchGrp.SGrpOpt2,
+  SchGrp.SGrpO2LRF,
+  SchGrp.SGrpOpt3,
+  SchGrp.SGrpO3LRF,
+  SchGrp.SGrpEngReb,
+  SchGrp.SgrpEngMi,
+  SchGrp.SGrpRefR,
+  SchGrp.SGrpRHr,
+  SchGrp.AllowedMilesPer,
+  SchGrp.SGprAllow1,
+  SchGrp.SGrpMH1,
+  SchGrp.SGrpov1,
+  SchGrp.SGprAllow2,
+  SchGrp.SGrpMH2,
+  SchGrp.SGrpov2,
+  SchGrp.SGprAllow3,
+  SchGrp.SGrpMH3,
+  SchGrp.SGrpov3,
+  SchGrp.SGprAllow4,
+  SchGrp.SGrpov4,
+  SchGrp.SGrpMH4,
+  SchGrp.AllowedMilesPeriod,
+  [unityr] & " " & [unitmake] & " " & [unittype] & " " & [unitmodel] AS [Desc],
+  Units.unitstatus,
+  SchGrp.RebateUnitProjected,
+  Units.UnitID,
+  Units.UnitUnitNum
+FROM
+  (
+    (
+      Clients
+      INNER JOIN MstrLease ON Clients.clientID = MstrLease.Client
+    )
+    INNER JOIN Schedule ON MstrLease.MLID = Schedule.SchMLRef
+  )
+  INNER JOIN (
+    SchGrp
+    INNER JOIN Units ON SchGrp.SGrpID = Units.GroupREF
+  ) ON Schedule.SchID = SchGrp.SGrpSchID
+GROUP BY
+  Units.unitvin,
+  Clients.ClientShNm,
+  MstrLease.MLNo,
+  Schedule.SchNo,
+  SchGrp.SGrpNO,
+  SchGrp.Assignee_Bank,
+  SchGrp.BLCD,
+  SchGrp.FundDate,
+  SchGrp.FundDate_Projected,
+  SchGrp.UnitsInGroup,
+  SchGrp.OrigEquipCost,
+  SchGrp.LeaseTermPrimary,
+  SchGrp.SGrpPLRF,
+  SchGrp.LeasePymtForGroup,
+  SchGrp.SGrpFSLPmt,
+  SchGrp.SGrpFSLSch,
+  SchGrp.ExchangeITGroup,
+  SchGrp.ExchangeITMonth,
+  SchGrp.ExchangeITType,
+  SchGrp.LeaseTermNotice,
+  SchGrp.LeaseExtOption1Term,
+  SchGrp.LeaseExtOption1LRF,
+  SchGrp.SGrpRtTBD,
+  SchGrp.SGrpOpt2,
+  SchGrp.SGrpO2LRF,
+  SchGrp.SGrpOpt3,
+  SchGrp.SGrpO3LRF,
+  SchGrp.SGrpEngReb,
+  SchGrp.SgrpEngMi,
+  SchGrp.SGrpRefR,
+  SchGrp.SGrpRHr,
+  SchGrp.AllowedMilesPer,
+  SchGrp.SGprAllow1,
+  SchGrp.SGrpMH1,
+  SchGrp.SGrpov1,
+  SchGrp.SGprAllow2,
+  SchGrp.SGrpMH2,
+  SchGrp.SGrpov2,
+  SchGrp.SGprAllow3,
+  SchGrp.SGrpMH3,
+  SchGrp.SGrpov3,
+  SchGrp.SGprAllow4,
+  SchGrp.SGrpov4,
+  SchGrp.SGrpMH4,
+  SchGrp.AllowedMilesPeriod,
+  [unityr] & " " & [unitmake] & " " & [unittype] & " " & [unitmodel],
+  Units.unitstatus,
+  SchGrp.RebateUnitProjected,
+  Units.UnitID,
+  Units.UnitUnitNum,
+  Schedule.SchID
+HAVING
+  (
+    (
+      (Clients.ClientShNm) Like "*Transc*"
+    )
+  )
+ORDER BY
+  Units.unitvin,
+  MstrLease.MLNo,
+  Schedule.SchID,
+  Schedule.SchNo,
+  SchGrp.SGrpNO,
+  SchGrp.UnitsInGroup;

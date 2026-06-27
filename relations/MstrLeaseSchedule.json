@@ -1,0 +1,18 @@
+﻿{
+  "Info": {
+    "Class": "clsDbRelation",
+    "Description": "Database relationship"
+  },
+  "Items": {
+    "Name": "MstrLeaseSchedule",
+    "Attributes": 16777218,
+    "Table": "MstrLease",
+    "ForeignTable": "Schedule",
+    "Fields": [
+      {
+        "Name": "MLID",
+        "ForeignName": "SchMLRef"
+      }
+    ]
+  }
+}

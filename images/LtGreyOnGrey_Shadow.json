@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "LtGreyOnGrey_Shadow",
+    "FileName": "LtGreyOnGrey_Shadow.PNG",
+    "Extension": "PNG",
+    "ContentHash": "56da809"
+  }
+}

@@ -1,0 +1,1375 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    DefaultView =0
+    TabularCharSet =238
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =13005
+    DatasheetFontHeight =11
+    ItemSuffix =102
+    Left =7065
+    Top =2550
+    Right =20325
+    Bottom =10245
+    Filter ="[SchID]=783"
+    ShortcutMenuBar ="SortClip"
+    RecSrcDt = Begin
+        0xe789d3a1f1fae340
+    End
+    RecordSource ="SELECT Clients.clientID, Schedule.*, MstrLease.MLNo, Clients.ClientShNm FROM (Cl"
+        "ients INNER JOIN MstrLease ON Clients.clientID = MstrLease.Client) INNER JOIN Sc"
+        "hedule ON MstrLease.MLID = Schedule.SchMLRef;"
+    DatasheetFontName ="Calibri"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    AllowLayoutView =0
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+        End
+        Begin CommandButton
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            BorderColor =12632256
+        End
+        Begin FormHeader
+            CanGrow = NotDefault
+            Height =1200
+            BackColor =15707392
+            Name ="FormHeader"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2040
+                    Top =315
+                    Width =8160
+                    Height =465
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
+                    Name ="Text66"
+                    ControlSource ="=UCase([clientshnm] & \" Schedule \" & [schNO] & IIf(IsNull([schalias]),Null,\"("
+                        "\" & [schalias] & \")\"))"
+                    FontName ="Tahoma"
+
+                    LayoutCachedLeft =2040
+                    LayoutCachedTop =315
+                    LayoutCachedWidth =10200
+                    LayoutCachedHeight =780
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11655
+                    Width =870
+                    Height =540
+                    FontSize =8
+                    FontWeight =700
+                    TabIndex =1
+                    ForeColor =-2147483615
+                    Name ="Command31"
+                    Caption ="Close"
+                    FontName ="Tahoma"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="Close"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Command31\" xmlns=\"http://schemas.microsoft.com/office/acce"
+                                "ssservices/2009/11/application\"><Statements><Action Name=\"CloseWindow\"/></Sta"
+                                "tements></UserInterfaceMacro>"
+                        End
+                    End
+
+                    LayoutCachedLeft =11655
+                    LayoutCachedWidth =12525
+                    LayoutCachedHeight =540
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =10395
+                    Top =60
+                    Width =1155
+                    Height =540
+                    FontSize =8
+                    FontWeight =700
+                    TabIndex =2
+                    ForeColor =-2147483615
+                    Name ="ViewGrpBtn"
+                    Caption ="View Lease Terms"
+                    FontName ="Tahoma"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="OpenForm"
+                            Argument ="BankGrpFrom"
+                            Argument ="0"
+                            Argument =""
+                            Argument ="=\"[SchID]=\" & [SchID]"
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Action ="MoveSize"
+                            Argument ="0"
+                            Argument ="0"
+                            Argument ="14400"
+                            Argument ="10800"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"ViewGrpBtn\" xmlns=\"http://schemas.microsoft.com/office/acc"
+                                "essservices/2009/11/application\"><Statements><Action Name=\"OpenForm\"><Argumen"
+                                "t Name=\"FormName\">BankGrpFrom</"
+                        End
+                        Begin
+                            Comment ="_AXL:Argument><Argument Name=\"WhereCondition\">=\"[SchID]=\" &amp; [SchID]</Arg"
+                                "ument></Action><Action Name=\"MoveAndSizeWindow\"><Argument Name=\"Right\">0</Ar"
+                                "gument><Argument Name=\"Down\">0</Argument><Argument Name=\"Width\">14400</Argum"
+                                "ent><Argument Name=\"Heigh"
+                        End
+                        Begin
+                            Comment ="_AXL:t\">10800</Argument></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
+
+                    LayoutCachedLeft =10395
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =11550
+                    LayoutCachedHeight =600
+                End
+                Begin Image
+                    Left =59
+                    Top =60
+                    Width =1974
+                    Height =1014
+                    Name ="Auto_Logo0"
+                    Picture ="SmallLogo.gif"
+                    ImageData = Begin
+                        0x47494638396119018800f70000ffffff7bc542008cc56b6b63635a63cecece6b ,
+                        0x6b73f7efef42a5d6cee6efe6e6ef7b6b739ca5ef9c6b42736b1073a5106b5a9c ,
+                        0x42e6529ca51010e65210cee69ca5c5a5d6ef949494a5105aa510194210de4210 ,
+                        0x9c42cea5219ca519a52919a5087b7b84429ca510735abdc5bd0894ce3a739c10 ,
+                        0x315a6ba5c542525a9c63ef3a73de42315a9c31de42ef194231199c319c9cefa5 ,
+                        0x42a5736b63ef6b31de1031196b319c10a5731073196befa510ef1973ef631031 ,
+                        0xde10319c10efa53a529c3a52de42ce191052196bcea510ce199c7394a5adad6b ,
+                        0x6b42e6e6de109cef4a9c3108529ca56b6be6f7ff42efe6cec510ce5210ce8c10 ,
+                        0xce19104aa5109c9c73848c8c639c9c739c7342e6739ca53110e67310efe69c52 ,
+                        0x9c9ca552ded6d60873dea5ef634231de42319c42efa563b5e6ce6ba5ce29a510 ,
+                        0x52dece4aa5ce08a5219cce427329739c52009ca508738c9c5a1010526b42c5de ,
+                        0xa5efe6ef9cb5cec531ce5231ce8c31ce1931cec573ce6be6ce52739cef10ce29 ,
+                        0xe6ce8c73ce1973ceade6efc510ef5210ef8c10ef1910ef9c94cec552ce4ae6ce ,
+                        0x52529cce10ce08e6ce8c52ce1952ce8ce663efe69ca59c0094c57bc5deceefc5 ,
+                        0x6bce196b9c3173b53aa5ce94425229ef6ba5ef29a56bef19ef4aa5ef08a59cce ,
+                        0x5a429cefe6ceb5733a6b733a2973106b73102910106b9c73ce42106b9c10ef42 ,
+                        0x10299c10ad42b5526b73ce6b10ef1010296b10ad10b5521010ef1010ad10ceb5 ,
+                        0xbdce9cceef6bceef10e6ce946b94ef733a4a733a0873104a73100810104a9c52 ,
+                        0xce42104a9c10ce4210089c108c4294526b52ce6b10ce1010086b108c10945210 ,
+                        0x10ce10108c10ce9473ce52c59cb50873ad42734a9cced610524aefc573ef6be6 ,
+                        0xef52739cef31efc531ef5231ef29e6ef8c31ef1931ef8c73ef1973efade6c59c ,
+                        0x94efc552ef4ae6ef52529cce31ef08e6ef8c52ef1952ef8ce663c5de42736b9c ,
+                        0x7b10a5ce737ba59c84efe6a53a6befef9ca53a29ceef42a53a4aa53a089c94a5 ,
+                        0x9cceb5425208efef6befef1073ce73427308c5cee66b7ba5e6ceefefefc5c5ef ,
+                        0x9cefef426be642ffefff6bc5422c00000000190188000008ff0001081c48b0a0 ,
+                        0xc18308132a5cc8b0a1c38710234a9c48b1a2c58b18336adcc8b1a3c78f20438a ,
+                        0x1c49b2a4c9932853aa5cc9b2a5cb973063ca9c49b3a6cd9b3873eadcc9b3a7cf ,
+                        0x9f40830a1d4ab4a8d1a348375a7884ee44d3a74ea3c61b71e040d2ab5853364b ,
+                        0x23a0cdb2365ec17e6da3a4cd9b12e80a58cdcab66d472608c8911040b7ae5d36 ,
+                        0x5fdfbc29d265addbbf8025361300c7115dc3020c23a69bb7ca080581234b5e88 ,
+                        0x204d1ac48bed26eeea0c45b323fe268b1ead804461cc9b15db5df606c5882ea3 ,
+                        0x634b26970681eac37533b32e479589ecdf6d0fa4a1c03535eecd9bcd82500bbc ,
+                        0x39d6c17034a3464e572f5fe7d89122a87c7b7aeadd238e64ff1f3f3481a3c2c7 ,
+                        0x914f6fe30cde3df2f081d2b68d7b7a66bdafe3ebdf79e03c89eec6a9c61e0854 ,
+                        0xed67e04dcd989699660c2ab15717be1d28214c5d405242086065a8e1866089e0 ,
+                        0x4c3917c452c008234042a289259ea8628a54f935e18b129d234912334a62e38d ,
+                        0x38e698c41a49d0d8638d34aa01a42442fa48642556dce3228c4c3214cb269b4c ,
+                        0x2265009350f98f955656a9a5945c48e9a597544eb2c6945faea10633caf4d5e4 ,
+                        0x9a0b41b2493ce70420e79c74d669a79d5cdc190017c9c839891a955c00c90111 ,
+                        0xb2692841076c124b9c7e52e9a8968e465a65a393243369a473fea325336a50f1 ,
+                        0xd8a1a012440925b1d4c9a79e92ce79e9a49652aa2a9103bcffb664a86b3eb9cf ,
+                        0x26573a7aa596c970b16baf745609acaa72e6196c0066a2a04c01b4860ac939b7 ,
+                        0x426ae7aa74b6aa6ba39862fba71a8d14d8aca1898e5a27a4d4ba6aeca3739e2b ,
+                        0xed9f95785ad5b7868e5a2ab1d9627a6900bb8e8b6fbd93701a2b84f0b219cb17 ,
+                        0xf3eabba7bdf4127baebe6b98590981a005bce6b34f127b6fae7bf679b0abd3d2 ,
+                        0xb9c68c6aa87141016a4acc64a2b15072a7b1174fa969a52c93bb46983c866c04 ,
+                        0x817d156af28b949c03c3b155feeaa82446f458741247abb1a3d244fa1872c856 ,
+                        0x5c20ebac3b1fb80fb451a2ba3130674e6185d754783dc514207c6d45d8674f41 ,
+                        0x4523cabca600a155377984a25953da6ad0011069c4b20a1cff71c01180f7fdf7 ,
+                        0xdb472820b8df07f8f36edc27bfc968a3c35eea70112330e1cf52e854e0540599 ,
+                        0x67be79531508e1d4635433ae5fcf946c82edea7e26d1aeb75b7515d6ec1c8285 ,
+                        0xdf113a9bae9fad75b3bee51a41c4fab6400ac4b520837629c79ceefbcd3d02ae ,
+                        0xc7a22be71af60cc0978b8f38421ff2c89b753df3f1250ac3e3900eebe79f2834 ,
+                        0xb23c41955da6dafb9a99c51bdce08f0703a9c1f679e9ddaebb9b3b007150907d ,
+                        0xea5317b38cac74f51bcdadf6113d96398a0bae8b957810321f00a9a72eac1141 ,
+                        0x7e12d89cb9552c5b185355120850840208ee006f7b5b55eed10104cce5821734 ,
+                        0x8cf210c841c078506540e39898d4d0b01efab0874628410bff0708430158e73d ,
+                        0x358c8dbcb0b5b07b41aa4643f2913c80518410588688a8710478fc96c4c92cb0 ,
+                        0x77fba296b0eea5a73335a20bf7388f0507c81e7814e07f5d64cb11cef1a41096 ,
+                        0xeb540723639d00b51cf1541086f661cd1b361847b7840b87da9a93b5f4782760 ,
+                        0x20293ca1e90f1c5eb898013a4239bd29645b9698303e55696139a493dee05132 ,
+                        0x0040a792e9c90c7baea3c9ac7c715295d263bec815805ee56b72a51448fb1c61 ,
+                        0xc9e3c8af45ad4c8a3eeaf1243d8a914eff38151927d1bf4c12e4086a3c0e2a93 ,
+                        0xf7062aac2f984439001d5596ab4f26cc77166317c44263900a621139827c0d1c ,
+                        0xb1e9939e150c997eba5baa4c65294059415608118e65a8e3ff9dc45cf20dcba1 ,
+                        0x213b73f2ca843112617e9a512598e129d828642be8e12701e9b24a240ef42747 ,
+                        0x20e63930064b8b152b6192a8991a06704605ac932070b8e244a7b945815e5426 ,
+                        0x2853d93257d7251f7d8c4744b21908aee75281dc230de8992680d843855cbe14 ,
+                        0x273d63604793a9b13c26410d4660c61a806104aa32e36b9453d2e21cf2470baa ,
+                        0x479045e0e2517172b562766c52575a4325ac47b22eb4b50b5d50a1404e9a4fcb ,
+                        0x5c26372b4d0c6b9643d7b1b68462d08b5e9d24b1d02228090056e9a9432c10cd ,
+                        0x225287332554ac5f4da24d71458f96db22a56425420eedf5923abfdcea645f92 ,
+                        0x548315aba9cc789d583f02cdd348f3b55d79435ae837da96ff9435b0e5da9598 ,
+                        0xe4618522406624d98b0e5e012980743ab4b62cf1e0392ec5d4724da2b0460549 ,
+                        0x6d8a73cec498c500059820725372c850626a726ae9ab46181b51e2226795d1dd ,
+                        0xee4846a5543d7514500d45c9091c71d7ea16f70dbc199e7a4bb240d33ad19e9f ,
+                        0x4209133ac04b5e0e17866d30c16cf74b92392eeab2d832931a70b6598d1cc17d ,
+                        0x00eaa77556cb608f74975e4e546ba74c484e95dc23046cf0a7448d8349f17698 ,
+                        0x22ecd59a941cc68c12ea97250a38c13252ac18f809e841157e314320f1e0194b ,
+                        0x424c620ae953a13ab2f4a6c437cd180b5e0430e52a2f23b6f90db290f3498964 ,
+                        0x1089534f0db3d2a01ab5021c962607680686c05296379885ff2c6f7e83829dbc ,
+                        0xe5881c0045241a41dbf44ca2b6dd23ae5a2e89e2bad08c22a0a3089ce39ca113 ,
+                        0x7de81bd7f922fe505c6201104972067a2591f40bd55cfce84e7bfad3a00eb5a8 ,
+                        0x474dea529bfad4a80e665556cdea56bb5ab4466135a719c26abf8e0004b8ceb5 ,
+                        0xae779d6b058c60018d400a130e4005102c800a17b030ae2fadbb220ce0d90320 ,
+                        0x40b4a72ded6a479b0047288201928d94460cc000d06616460a308005ccba8623 ,
+                        0x30c0022897e776bb9b444c18c100b89d9202904c235d5880010804827d331b00 ,
+                        0x4c3882bab57b93aad8fbdf3f51c6b7cfad0c02045b25548895462ef06d66c9db ,
+                        0x0023c04817fc7d6e951480002040b84fb4bd80e336241e04ffa0374aa840808c ,
+                        0x8fdb00db16883fa8a06e934fa40b030001c16f728f9c8bbc27e936c06f1d226f ,
+                        0x781ca42a85439c4091fe37142ec92f111f41a6113b698710bbdcc725b7018ad0 ,
+                        0x10a6176e713d0fb964578da8a6038eec05112dd2fdc661c40a041203a002fdde ,
+                        0x056baaff8ded68cfa7d9952e90ba539ded2aecb8412ebef385385be55d6844b1 ,
+                        0xfbbd007d1f5b6a4f1fc10570ad6f981f7b6d0e3d02158edd781050e1f3a007bd ,
+                        0xcd137271ae13e402354f48178a307963ab5bddc8ceaeba15a078951ffd0017a0 ,
+                        0x02d70f20f96257def1c8f616008a10d0112cfef5976765118ecdf8d03bdff400 ,
+                        0x2840117cfffa7d83e002614d7bef716d797563ff008a17b7ff40b6eff87d2fe0 ,
+                        0x02eaab08c987de1065c47cfcd02ef7aeaf4d05ed6a7eda0bc0f5e29f4d008c03 ,
+                        0x20dfd5a76fe5b600e5066e0bc07e0971008eb7241b3700467710054080d2967f ,
+                        0xbaf66cdb967fbcf76da357108d400007787513c86bd0f68057377d28f06c1488 ,
+                        0x6bf8071b8dd078af576e280883f3067f162882cf0602c7d50511276deaa66b56 ,
+                        0x206d933700e27675355881d1b67514717123700f24c38468d484506815872710 ,
+                        0x3867009e323cc38642ab076e17b01614b775b8d36a6e157103f01e29447145e0 ,
+                        0x7486a3863da56d486810da268469a78039171e5691852854005f680556417172 ,
+                        0x87100147805ca77545900064376c47700ff0006e2e177182ffa8167758150ab0 ,
+                        0x7c71376c86436e3aa7426c9858201077900870ab7604cd40807f080014b76e26 ,
+                        0x14895ae88672387ccf6658ae968814d77213e17ee0167fb8888b5c577402010f ,
+                        0x39475705006eb0b171fea71011a77211277e73051100480508a100e0e68c05e1 ,
+                        0x6c38b88c06c10411070290d1802e77107e2810454000d2981011278d9b67001b ,
+                        0x3810e9b600da158ce308471b4700160581df261e3d578c09e186cca28006f080 ,
+                        0x09e18b5450620fe1869dd78306997fafa70cc3977202010204a0900b4173bba8 ,
+                        0x6e02158c0b007512a77ee0a68c05916e193910a8677b1008736b418d54138cc5 ,
+                        0xe856e93810ee281034279205c1049d287e3817720b616f0bff2193650800f206 ,
+                        0x02b44680cc720f24b9101b577212216f0ba02429b49428c4943ce98000a0009d ,
+                        0xc8177f666f66e6567fa683d6e38a2050955e7995244372f44373dd2811e43683 ,
+                        0x09a86f36d977fd56960851936bc18fd037105727925d90882a79975c84899416 ,
+                        0x750ce19702e18e3d75007055954770976b1171b0417130199311f71e4809965e ,
+                        0x9997bf868e470973e25128b9a333e1986c0a5079b9187fd2166dc9c68aa3399a ,
+                        0xd0c683f50892b4481134277437096ed0a7936e7910d07880ea987a047171c775 ,
+                        0x00c4778b476881ebf66b3e09002cc791063173ad0800615791afc97fd0997f3a ,
+                        0x4800cce28bfe688c04001b41878ba8796de0469d12e16cb8fff910f2966c02b7 ,
+                        0x6dac070fe9d908d8877df0a09e197701f9d708ac579fed5904eae99e50875d07 ,
+                        0xe156b43578f237029433a002aa0c4530a00b1821fa569b06916f2117213a3997 ,
+                        0x47a06f734971e5866c1790a1b9b77905688ecb498ee04985956810076066d157 ,
+                        0x8318aaa1c58682fc1992b4968c4fb96e17000fec699f07da08f989800d117485 ,
+                        0xa710da966c07d089f3c81053281111079105019847d76fdf49004efaa44e0a9d ,
+                        0xdff67ec6f99109018d06e022f7287e624997fd76013a3a57b716777dd89ac6b8 ,
+                        0x9c42799106416ece48721c192128847a72e86ce3989672d89322a170b0499e0c ,
+                        0x898d569a4f26c49320d7107fb69f0c0aa308219e9ee77ca0ff3779a1d7894669 ,
+                        0x9c04709d0881894bc29854c88804418c2b098efbe6921f7a7488fa7f64baa664 ,
+                        0x4a71946a109fc99f1fb79609819241596e615a106814646ed8a3f9f87edf1891 ,
+                        0x50d980c8591067397417404207319307316c0bf8100dc86d266978b24aab1b09 ,
+                        0x0000a9339fb9930a81a7fe30ac0c9aa4667a04df362bf2e68c14f7700918ad74 ,
+                        0xd885574a737228970b018da1baa3abf9100ac76d67494af94489e2968dd7b4a9 ,
+                        0xe548102407307d8794b3ea6df8e81071c82ccb0ab0883289dfa68d70288e4167 ,
+                        0x7358da08a5c304cd08aa7ef097fcd97730978604a1002c6774d438a403316c8b ,
+                        0xc89ff1e6a43bc56e2322a0f2598048748ac247aba7287811ff0b11450a001560 ,
+                        0x819f97a1ac977b9d987211d2050ee981180a0f1ada6f1587280b60b42afa6d8d ,
+                        0xd98c1db7aae6367cb7d8b32aaaae34c78e24da895c7810ce76a11a8ab419da89 ,
+                        0x9d2877cab9ad033173210a8ed1767e1a4a8046d9807187a1389aa1af0994ea18 ,
+                        0xb450faa47588a8416a004e9ba1644b73fda7b63e3a7b10916e2a27795e0b9d06 ,
+                        0xe829d44a7c04187fe0b66f17307af7f0b2b7b86f45209074f9859d9aab0be072 ,
+                        0x05b0a2df066de08633187810ebe8b0d7f89b16389a06c81756e8921b9b80a30a ,
+                        0x7095199cdb6651a75bb9df869adbd605a8a78c07700f2472a0cc3b02e1d589bd ,
+                        0x397d02089cdf066cbfda10fef07510e174244a988589468eff169328f4674c98 ,
+                        0x950b4198e44b6700a0bd1441982ea285e4fb67111370fff9b1eacb040a80464f ,
+                        0x9895be91bdbfe5beb416be0097bfe41ba68653984da826c30630c93bba88a56f ,
+                        0xa377c06844beb8c31382e711175cb287426e6a7aad3e976aa271005c985ebcd7 ,
+                        0x891790c1202c14dad67f76aba2fa06723f97c23d51002d788bfdd77f0d0b0fb3 ,
+                        0x2ac380316c59999539c3c3423cc4445cc4b6490edbf108169010cd308ff70007 ,
+                        0x7191c405f108e26501db410e8f6052049100513c8f4cf00848b41453dc0cc483 ,
+                        0xc451fcbf541c9360ac105cbc1d096010f7301fe430a40a400eec57c7437700e4 ,
+                        0xf0c600f00857bc1d4bcc9c694c10cdb01d69f0087c3c1016ff40c605710f830c ,
+                        0x708f501b81ec160a2000586c1b08403540b5c58ff00884d1c9255bc98cfc508e ,
+                        0xf008b4e108a30c001660c99df508049106e9e0530290c8004002aecc9c96dcc9 ,
+                        0x763c108e400eb9430293acaab5d10c29c57e9e8cc585dccb5bec08b4cc048e60 ,
+                        0x514c00cc02b114e4c0ca614c0204c10472410ecde0c78e10cc8c15ccaa8ccd03 ,
+                        0x411b9dfccd7f11cdbfa5009bdcc88e40023a9a0624ebc908c0107e3c10d96351 ,
+                        0x1690060291206b9b06810c17e43010fe2c100940ce31c915f54c97009d108c35 ,
+                        0x10f75028cd80ce03611ea37cd0d49a06892c1cf3980002e022fbcc3e6960cc24 ,
+                        0x90c8abfccc84cccfc4c3cc06bdc34711cd89ecd1431ac503ff5d100d9dcd872c ,
+                        0xcd0a71cfe59c0611f253060dcf039106a31cc9031117154d029a1cc9352d1044 ,
+                        0x0d886944cb7375c80661012400a1255db24ca0d1259b0671f0b18ec07e719006 ,
+                        0x6ba1002c5d1048acc8877cd6aaacd20047d59161d6ec8700b71cd40ab0cf3a23 ,
+                        0x1ce27ccfe4d0d408c1d32bfd5bfb4c28080007af3cc9cefc1ece1cd3bddcd78f ,
+                        0x0cd01e7dcb5bfdd509d1ca3af353ff93d8063dd25bacd1102acfcbac33212d10 ,
+                        0x690dc78eb016560c009dc5c7a3ddcf248000529d154cb0d5b4dcd704410e860d ,
+                        0x004f7dd8364dc61e1ddb0401d80097d500601e69f0dab47cd3ba34d0915c2807 ,
+                        0xbd1d7131744f1dd94e2dce557d1975ddda361dd0c43dd5c9ff1dcc074dcb834d ,
+                        0xda7e5db2c46dd5a49dd5da5ddc9d850028bc13669ddc757d000280008b5c1b38 ,
+                        0x0dcea5bc14b6bcd30b1dd4b3ddd6956110cacd9c4a4dd79d7d74379d46ae6cdf ,
+                        0x0d31d1813cde091dc818ddd91bedd915ed08a2edd6466d10078dda6e2d1707b0 ,
+                        0xde9b5dde5841db196e51d903ddb6f1dd28355d868c40c21dc96b31d65b5dd74e ,
+                        0x9dca5b2d173a73d0610acb106dcbbb7d748532064d4d02b15c108cf5d9cdccd6 ,
+                        0x5b0ddedd0d40641dd4b18dc411a2dd95910e6e1de0d37cda6e91003eed1bec9c ,
+                        0xdb39ce3e64aedb93ecd143e7ccd68dcf640ee110cdcf8ce5e2c15ddf0501e699 ,
+                        0x3de4aacc4b243b5708eed475edc91d5dca19febe705ddc61f1bdc5574d10583e ,
+                        0xe5f83ccb6a5d100820006e5dc8f8fcdf6ce1cc58dcde7eb1e404710f902e1014 ,
+                        0x0d00508cd68e6e108361cab611cc5b61159d25dda91c95a36ed0a5dcc9593c10 ,
+                        0x3aadc8b35e1013adc42e843dbdbcc8d5ecd7668dcc571eecd953dee621de3ecd ,
+                        0x3e24400e1660c5a8cce88e601003bed2f69d3db18e15757cc57b8de30007ede5 ,
+                        0xccc70700db05a1007030ab561c17bbbcc5beac4b933cc7e5e4e150bc1d7090c8 ,
+                        0x739c3b887c52569c06edfee995b11d43ca04f5feee3e955208b0ed09f0ef0004 ,
+                        0xeea6d43e0cdff024ead70980f06d3e5922f7de46bcf11cdff11efff1201ff222 ,
+                        0x3ff2245ff226bf650101003b
+                    End
+
+                    LayoutCachedLeft =59
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =2033
+                    LayoutCachedHeight =1074
+                    TabIndex =4
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11640
+                    Top =600
+                    Width =870
+                    Height =540
+                    FontSize =8
+                    FontWeight =700
+                    TabIndex =3
+                    ForeColor =-2147483615
+                    Name ="CPNBtn"
+                    Caption ="Banks"
+                    FontName ="Tahoma"
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="Close"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="0"
+                        End
+                        Begin
+                            Action ="OpenForm"
+                            Argument ="Bank_View"
+                            Argument ="0"
+                            Argument =""
+                            Argument =""
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"CPNBtn\" xmlns=\"http://schemas.microsoft.com/office/accesss"
+                                "ervices/2009/11/application\"><Statements><Action Name=\"CloseWindow\"/><Action "
+                                "Name=\"OpenForm\"><Argument Name="
+                        End
+                        Begin
+                            Comment ="_AXL:\"FormName\">Bank_View</Argument></Action></Statements></UserInterfaceMacro"
+                                ">"
+                        End
+                    End
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    LayoutCachedLeft =11640
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =12510
+                    LayoutCachedHeight =1140
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =6510
+            Name ="Detail"
+            Begin
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =93
+                    Top =420
+                    Width =6240
+                    Height =2175
+                    BackColor =11853709
+                    Name ="Box33"
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =6240
+                    LayoutCachedHeight =2595
+                End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =6300
+                    Top =420
+                    Width =6555
+                    Height =2190
+                    BackColor =13298606
+                    Name ="Box25"
+                    LayoutCachedLeft =6300
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =12855
+                    LayoutCachedHeight =2610
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =11850
+                    Top =75
+                    Width =0
+                    Height =225
+                    Name ="SchMLRef"
+                    ControlSource ="SchMLRef"
+                    StatusBarText ="reference to master lease"
+
+                    LayoutCachedLeft =11850
+                    LayoutCachedTop =75
+                    LayoutCachedWidth =11850
+                    LayoutCachedHeight =300
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OverlapFlags =215
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =825
+                    Top =870
+                    Width =1140
+                    Height =315
+                    TabIndex =1
+                    Name ="SchOut"
+                    ControlSource ="SchOut"
+                    Format ="mm/dd/yy"
+                    StatusBarText ="date schedule sent out"
+
+                    LayoutCachedLeft =825
+                    LayoutCachedTop =870
+                    LayoutCachedWidth =1965
+                    LayoutCachedHeight =1185
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =238
+                            TextAlign =3
+                            Top =870
+                            Width =750
+                            Height =315
+                            FontWeight =700
+                            Name ="Label5"
+                            Caption ="Sent:"
+                            LayoutCachedTop =870
+                            LayoutCachedWidth =750
+                            LayoutCachedHeight =1185
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OverlapFlags =215
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3495
+                    Top =870
+                    Width =1140
+                    Height =315
+                    TabIndex =2
+                    Name ="SchIn"
+                    ControlSource ="SchIn"
+                    Format ="mm/dd/yy"
+                    StatusBarText ="date schedule in"
+
+                    LayoutCachedLeft =3495
+                    LayoutCachedTop =870
+                    LayoutCachedWidth =4635
+                    LayoutCachedHeight =1185
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =2295
+                            Top =870
+                            Width =1005
+                            Height =315
+                            Name ="Label6"
+                            Caption ="Returned:"
+                            LayoutCachedLeft =2295
+                            LayoutCachedTop =870
+                            LayoutCachedWidth =3300
+                            LayoutCachedHeight =1185
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OverlapFlags =215
+                    TextFontCharSet =238
+                    IMESentenceMode =3
+                    Left =825
+                    Top =1290
+                    Width =5145
+                    Height =315
+                    FontSize =9
+                    TabIndex =3
+                    Name ="SchSigner"
+                    ControlSource ="SchSigner"
+                    Format =">"
+                    StatusBarText ="signer"
+
+                    LayoutCachedLeft =825
+                    LayoutCachedTop =1290
+                    LayoutCachedWidth =5970
+                    LayoutCachedHeight =1605
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =238
+                            TextAlign =3
+                            Top =1290
+                            Width =735
+                            Height =315
+                            FontWeight =700
+                            Name ="Label7"
+                            Caption ="Signer:"
+                            LayoutCachedTop =1290
+                            LayoutCachedWidth =735
+                            LayoutCachedHeight =1605
+                        End
+                    End
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    SpecialEffect =2
+                    OldBorderStyle =0
+                    OverlapFlags =223
+                    TextFontCharSet =238
+                    IMESentenceMode =3
+                    Left =825
+                    Top =1650
+                    Width =5145
+                    Height =300
+                    FontSize =9
+                    TabIndex =4
+                    Name ="SchSigner2"
+                    ControlSource ="SchSigner2"
+                    Format =">"
+                    StatusBarText ="signer"
+
+                    LayoutCachedLeft =825
+                    LayoutCachedTop =1650
+                    LayoutCachedWidth =5970
+                    LayoutCachedHeight =1950
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    SpecialEffect =2
+                    OldBorderStyle =0
+                    OverlapFlags =215
+                    TextFontCharSet =238
+                    IMESentenceMode =3
+                    Left =825
+                    Top =1950
+                    Width =5145
+                    Height =360
+                    FontSize =9
+                    TabIndex =5
+                    Name ="SchSigner3"
+                    ControlSource ="SchSigner3"
+                    Format =">"
+                    StatusBarText ="signer"
+
+                    LayoutCachedLeft =825
+                    LayoutCachedTop =1950
+                    LayoutCachedWidth =5970
+                    LayoutCachedHeight =2310
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =8295
+                    Top =1080
+                    Height =300
+                    TabIndex =6
+                    Name ="SchTitleAssignee"
+                    ControlSource ="SchTitleAssignee"
+
+                    LayoutCachedLeft =8295
+                    LayoutCachedTop =1080
+                    LayoutCachedWidth =8555
+                    LayoutCachedHeight =1380
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =238
+                            TextAlign =3
+                            Left =6540
+                            Top =1080
+                            Width =1590
+                            Height =300
+                            FontWeight =700
+                            Name ="Label11"
+                            Caption ="Assignee"
+                            LayoutCachedLeft =6540
+                            LayoutCachedTop =1080
+                            LayoutCachedWidth =8130
+                            LayoutCachedHeight =1380
+                        End
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =238
+                    TextAlign =2
+                    Left =6360
+                    Top =480
+                    Width =4965
+                    Height =300
+                    FontWeight =700
+                    Name ="Label13"
+                    Caption ="Equipment is titled to:"
+                    LayoutCachedLeft =6360
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =11325
+                    LayoutCachedHeight =780
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =8295
+                    Top =1415
+                    TabIndex =7
+                    Name ="SchTitltoFA"
+                    ControlSource ="SchTitltoFA"
+
+                    LayoutCachedLeft =8295
+                    LayoutCachedTop =1415
+                    LayoutCachedWidth =8555
+                    LayoutCachedHeight =1655
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =238
+                            TextAlign =3
+                            Left =6540
+                            Top =1415
+                            Width =1590
+                            Height =300
+                            FontWeight =700
+                            Name ="Label14"
+                            Caption ="Fleet Advantage"
+                            LayoutCachedLeft =6540
+                            LayoutCachedTop =1415
+                            LayoutCachedWidth =8130
+                            LayoutCachedHeight =1715
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =8280
+                    Top =1825
+                    TabIndex =8
+                    Name ="SchTitletoClient"
+                    ControlSource ="SchTitletoClient"
+
+                    LayoutCachedLeft =8280
+                    LayoutCachedTop =1825
+                    LayoutCachedWidth =8540
+                    LayoutCachedHeight =2065
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =238
+                            TextAlign =3
+                            Left =6540
+                            Top =1765
+                            Width =1590
+                            Height =300
+                            FontWeight =700
+                            Name ="Label15"
+                            Caption ="Client"
+                            LayoutCachedLeft =6540
+                            LayoutCachedTop =1765
+                            LayoutCachedWidth =8130
+                            LayoutCachedHeight =2065
+                        End
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =238
+                    TextAlign =2
+                    Top =480
+                    Width =6180
+                    Height =300
+                    FontWeight =700
+                    Name ="Label18"
+                    Caption ="Document Information"
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =780
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =11910
+                    Top =75
+                    Width =60
+                    Height =315
+                    TabIndex =10
+                    Name ="SchID"
+                    ControlSource ="SchID"
+
+                    LayoutCachedLeft =11910
+                    LayoutCachedTop =75
+                    LayoutCachedWidth =11970
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =8700
+                    Top =1260
+                    Width =3300
+                    Height =720
+                    TabIndex =9
+                    Name ="SchTitleHolder"
+                    ControlSource ="SchTitleHolder"
+
+                    LayoutCachedLeft =8700
+                    LayoutCachedTop =1260
+                    LayoutCachedWidth =12000
+                    LayoutCachedHeight =1980
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            Left =8700
+                            Top =960
+                            Width =1260
+                            Height =315
+                            Name ="Label34"
+                            Caption ="Title Holder:"
+                            LayoutCachedLeft =8700
+                            LayoutCachedTop =960
+                            LayoutCachedWidth =9960
+                            LayoutCachedHeight =1275
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =11730
+                    Width =60
+                    Height =225
+                    TabIndex =11
+                    Name ="Text39"
+                    ControlSource ="SchID"
+
+                    LayoutCachedLeft =11730
+                    LayoutCachedWidth =11790
+                    LayoutCachedHeight =225
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =840
+                    Width =2445
+                    Height =315
+                    TabIndex =12
+                    Name ="SchNo"
+                    ControlSource ="SchNo"
+                    StatusBarText ="schedule number starts with 1"
+
+                    LayoutCachedLeft =840
+                    LayoutCachedWidth =3285
+                    LayoutCachedHeight =315
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Width =720
+                            Height =315
+                            Name ="Label45"
+                            Caption ="SchNo:"
+                            LayoutCachedWidth =720
+                            LayoutCachedHeight =315
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3750
+                    Top =75
+                    Width =730
+                    TabIndex =13
+                    Name ="SchFSL"
+                    ControlSource ="SchFSL"
+                    StatusBarText ="FSL Lease"
+
+                    LayoutCachedLeft =3750
+                    LayoutCachedTop =75
+                    LayoutCachedWidth =4480
+                    LayoutCachedHeight =315
+                    Begin
+                        Begin Label
+                            SpecialEffect =2
+                            OverlapFlags =247
+                            Left =4410
+                            Width =450
+                            Height =315
+                            Name ="Label46"
+                            Caption ="FSL"
+                            LayoutCachedLeft =4410
+                            LayoutCachedWidth =4860
+                            LayoutCachedHeight =315
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =6600
+                    Width =6105
+                    Height =315
+                    TabIndex =14
+                    Name ="Text47"
+                    ControlSource ="SchShortDesc"
+
+                    LayoutCachedLeft =6600
+                    LayoutCachedWidth =12705
+                    LayoutCachedHeight =315
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =5380
+                            Width =1140
+                            Height =315
+                            Name ="Label48"
+                            Caption ="Short Desc:"
+                            LayoutCachedLeft =5380
+                            LayoutCachedWidth =6520
+                            LayoutCachedHeight =315
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =238
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =9162
+                    Top =6270
+                    Width =540
+                    FontSize =8
+                    TabIndex =15
+                    ForeColor =5026082
+                    Name ="Text52"
+                    ControlSource ="SchMLRef"
+                    StatusBarText ="reference to master lease"
+
+                    LayoutCachedLeft =9162
+                    LayoutCachedTop =6270
+                    LayoutCachedWidth =9702
+                    LayoutCachedHeight =6510
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextFontCharSet =238
+                            Left =8163
+                            Top =6270
+                            Width =780
+                            Height =240
+                            FontSize =8
+                            FontWeight =700
+                            ForeColor =5026082
+                            Name ="Label53"
+                            Caption ="SchMLRef:"
+                            LayoutCachedLeft =8163
+                            LayoutCachedTop =6270
+                            LayoutCachedWidth =8943
+                            LayoutCachedHeight =6510
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =238
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =10620
+                    Top =6270
+                    Width =720
+                    FontSize =8
+                    TabIndex =16
+                    ForeColor =5026082
+                    Name ="Text54"
+                    ControlSource ="SchID"
+
+                    LayoutCachedLeft =10620
+                    LayoutCachedTop =6270
+                    LayoutCachedWidth =11340
+                    LayoutCachedHeight =6510
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextFontCharSet =238
+                            Left =9921
+                            Top =6270
+                            Width =480
+                            Height =240
+                            FontSize =8
+                            FontWeight =700
+                            ForeColor =5026082
+                            Name ="Label55"
+                            Caption ="SchID:"
+                            LayoutCachedLeft =9921
+                            LayoutCachedTop =6270
+                            LayoutCachedWidth =10401
+                            LayoutCachedHeight =6510
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =238
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =7224
+                    Top =6270
+                    Width =720
+                    FontSize =8
+                    TabIndex =17
+                    ForeColor =5026082
+                    Name ="clientID"
+                    ControlSource ="clientID"
+
+                    LayoutCachedLeft =7224
+                    LayoutCachedTop =6270
+                    LayoutCachedWidth =7944
+                    LayoutCachedHeight =6510
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextFontCharSet =238
+                            Left =6345
+                            Top =6270
+                            Width =660
+                            Height =240
+                            FontSize =8
+                            FontWeight =700
+                            ForeColor =5026082
+                            Name ="Label56"
+                            Caption ="clientID:"
+                            LayoutCachedLeft =6345
+                            LayoutCachedTop =6270
+                            LayoutCachedWidth =7005
+                            LayoutCachedHeight =6510
+                        End
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =93
+                    Left =6285
+                    Top =2925
+                    Width =6600
+                    Height =3045
+                    Name ="Box61"
+                    LayoutCachedLeft =6285
+                    LayoutCachedTop =2925
+                    LayoutCachedWidth =12885
+                    LayoutCachedHeight =5970
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    SpecialEffect =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =5
+                    Left =6420
+                    Top =3420
+                    Width =5580
+                    Height =315
+                    TabIndex =18
+                    Name ="SchBillAdd"
+                    ControlSource ="SchBillAdd"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Locations.LocationID, Locations.LocationName, Locations.LState, Locations"
+                        ".LZip, Locations.LocationType FROM Locations WHERE (((Locations.ClientREF)=[form"
+                        "s]![bankschform]![clientid]) AND ((Locations.LocObsolete)=No)) ORDER BY Location"
+                        "s.LState;"
+                    ColumnWidths ="0;2520;432;1008;1440"
+                    AllowValueListEdits =0
+
+                    LayoutCachedLeft =6420
+                    LayoutCachedTop =3420
+                    LayoutCachedWidth =12000
+                    LayoutCachedHeight =3735
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =161
+                            Left =6420
+                            Top =3060
+                            Width =1515
+                            Height =315
+                            FontWeight =700
+                            Name ="Label63"
+                            Caption ="Billing Address:"
+                            LayoutCachedLeft =6420
+                            LayoutCachedTop =3060
+                            LayoutCachedWidth =7935
+                            LayoutCachedHeight =3375
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =1290
+                    Top =3390
+                    TabIndex =19
+                    Name ="BLCDACDT"
+                    ControlSource ="BLCDACDT"
+                    StatusBarText ="term starts with Accepted dt not BLCD"
+
+                    LayoutCachedLeft =1290
+                    LayoutCachedTop =3390
+                    LayoutCachedWidth =1550
+                    LayoutCachedHeight =3630
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =1515
+                            Top =3360
+                            Width =3015
+                            Height =315
+                            Name ="Label80"
+                            Caption ="Term from unit acceptance date"
+                            LayoutCachedLeft =1515
+                            LayoutCachedTop =3360
+                            LayoutCachedWidth =4530
+                            LayoutCachedHeight =3675
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2940
+                    Top =2910
+                    Width =1515
+                    Height =255
+                    TabIndex =20
+                    Name ="SchBnkClNO"
+                    ControlSource ="SchBnkClNO"
+
+                    LayoutCachedLeft =2940
+                    LayoutCachedTop =2910
+                    LayoutCachedWidth =4455
+                    LayoutCachedHeight =3165
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextFontCharSet =204
+                            Left =1245
+                            Top =2910
+                            Width =1500
+                            Height =315
+                            FontWeight =700
+                            Name ="Label57"
+                            Caption ="Bank Client No:"
+                            LayoutCachedLeft =1245
+                            LayoutCachedTop =2910
+                            LayoutCachedWidth =2745
+                            LayoutCachedHeight =3225
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextFontCharSet =204
+                    Left =6375
+                    Top =3855
+                    Width =4545
+                    Height =330
+                    FontWeight =700
+                    Name ="Label88"
+                    Caption ="Customer Required Invoice \"Fields\""
+                    LayoutCachedLeft =6375
+                    LayoutCachedTop =3855
+                    LayoutCachedWidth =10920
+                    LayoutCachedHeight =4185
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =8370
+                    Top =4245
+                    Width =2490
+                    Height =315
+                    TabIndex =21
+                    Name ="InvFld1desc"
+                    ControlSource ="InvFld1desc"
+                    StatusBarText ="Lessee descriptor of number to appear on invoice"
+
+                    LayoutCachedLeft =8370
+                    LayoutCachedTop =4245
+                    LayoutCachedWidth =10860
+                    LayoutCachedHeight =4560
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =6420
+                            Top =4245
+                            Width =1875
+                            Height =315
+                            Name ="Label89"
+                            Caption ="Descripton/Lable 1:"
+                            LayoutCachedLeft =6420
+                            LayoutCachedTop =4245
+                            LayoutCachedWidth =8295
+                            LayoutCachedHeight =4560
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =8370
+                    Top =4620
+                    Width =2490
+                    Height =315
+                    TabIndex =22
+                    Name ="Text93"
+                    ControlSource ="InvFld1"
+                    StatusBarText ="number itself"
+
+                    LayoutCachedLeft =8370
+                    LayoutCachedTop =4620
+                    LayoutCachedWidth =10860
+                    LayoutCachedHeight =4935
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =7605
+                            Top =4620
+                            Width =690
+                            Height =315
+                            Name ="Label94"
+                            Caption ="Value:"
+                            LayoutCachedLeft =7605
+                            LayoutCachedTop =4620
+                            LayoutCachedWidth =8295
+                            LayoutCachedHeight =4935
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =8370
+                    Top =5100
+                    Width =2490
+                    Height =315
+                    TabIndex =23
+                    Name ="Text95"
+                    ControlSource ="InvFld2desc"
+                    StatusBarText ="Lessee descriptor of number to appear on invoice"
+
+                    LayoutCachedLeft =8370
+                    LayoutCachedTop =5100
+                    LayoutCachedWidth =10860
+                    LayoutCachedHeight =5415
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =6420
+                            Top =5100
+                            Width =1875
+                            Height =315
+                            Name ="Label96"
+                            Caption ="Descripton/Lable 2:"
+                            LayoutCachedLeft =6420
+                            LayoutCachedTop =5100
+                            LayoutCachedWidth =8295
+                            LayoutCachedHeight =5415
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =8370
+                    Top =5520
+                    Width =2490
+                    Height =315
+                    TabIndex =24
+                    Name ="Text97"
+                    ControlSource ="InvFld2"
+                    StatusBarText ="number itself"
+
+                    LayoutCachedLeft =8370
+                    LayoutCachedTop =5520
+                    LayoutCachedWidth =10860
+                    LayoutCachedHeight =5835
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =7620
+                            Top =5520
+                            Width =675
+                            Height =315
+                            Name ="Label98"
+                            Caption ="Value:"
+                            LayoutCachedLeft =7620
+                            LayoutCachedTop =5520
+                            LayoutCachedWidth =8295
+                            LayoutCachedHeight =5835
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextFontCharSet =238
+                    TextAlign =3
+                    Left =8955
+                    Top =3000
+                    Width =1590
+                    Height =300
+                    FontWeight =700
+                    Name ="Label99"
+                    Caption ="Client"
+                    LayoutCachedLeft =8955
+                    LayoutCachedTop =3000
+                    LayoutCachedWidth =10545
+                    LayoutCachedHeight =3300
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =8295
+                    Top =2160
+                    TabIndex =25
+                    Name ="Check100"
+                    ControlSource ="SchTitleToTrust"
+
+                    LayoutCachedLeft =8295
+                    LayoutCachedTop =2160
+                    LayoutCachedWidth =8555
+                    LayoutCachedHeight =2400
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =238
+                            TextAlign =3
+                            Left =6555
+                            Top =2100
+                            Width =1575
+                            Height =315
+                            FontWeight =700
+                            Name ="Label101"
+                            Caption ="FA Title Trust"
+                            LayoutCachedLeft =6555
+                            LayoutCachedTop =2100
+                            LayoutCachedWidth =8130
+                            LayoutCachedHeight =2415
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="FormFooter"
+        End
+    End
+End

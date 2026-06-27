@@ -1,0 +1,206 @@
+﻿{
+  "Info": {
+    "Class": "clsDbImexSpec",
+    "Description": "Import/Export Specification from MSysIMEXSpecs"
+  },
+  "Items": {
+    "DateDelim": "/",
+    "DateFourDigitYear": false,
+    "DateLeadingZeros": false,
+    "DateOrder": 2,
+    "DecimalPoint": "",
+    "FieldSeparator": "\u0001",
+    "FileType": 0,
+    "SpecName": "",
+    "SpecType": 0,
+    "StartRow": 1,
+    "TextDelim": "\u0002",
+    "TimeDelim": ":",
+    "Columns": {
+      "ActivityMonth": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 167,
+        "Width": 14
+      },
+      "ClientGroupID": {
+        "Attributes": 0,
+        "DataType": 3,
+        "IndexType": 1,
+        "SkipColumn": false,
+        "Start": 36,
+        "Width": 14
+      },
+      "ClientID": {
+        "Attributes": 0,
+        "DataType": 3,
+        "IndexType": 1,
+        "SkipColumn": false,
+        "Start": 50,
+        "Width": 9
+      },
+      "CompanyCodeDescr": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 17,
+        "Width": 19
+      },
+      "CompanyDivision": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 59,
+        "Width": 16
+      },
+      "FleetCodeDescr": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 1,
+        "Width": 16
+      },
+      "LaborCost": {
+        "Attributes": 0,
+        "DataType": 5,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 202,
+        "Width": 10
+      },
+      "LaborHours": {
+        "Attributes": 0,
+        "DataType": 7,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 191,
+        "Width": 11
+      },
+      "LTD": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 187,
+        "Width": 4
+      },
+      "OutsideCost": {
+        "Attributes": 0,
+        "DataType": 5,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 221,
+        "Width": 12
+      },
+      "PartCost": {
+        "Attributes": 0,
+        "DataType": 5,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 212,
+        "Width": 9
+      },
+      "RODateTime": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 156,
+        "Width": 11
+      },
+      "RONumber": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 147,
+        "Width": 9
+      },
+      "SystemCodeDescr": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 131,
+        "Width": 16
+      },
+      "TaxCost": {
+        "Attributes": 0,
+        "DataType": 5,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 233,
+        "Width": 8
+      },
+      "TotalCost": {
+        "Attributes": 0,
+        "DataType": 5,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 241,
+        "Width": 10
+      },
+      "TypeDescr": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 111,
+        "Width": 15
+      },
+      "UnitID": {
+        "Attributes": 0,
+        "DataType": 3,
+        "IndexType": 1,
+        "SkipColumn": false,
+        "Start": 86,
+        "Width": 7
+      },
+      "UnitNumber": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 75,
+        "Width": 11
+      },
+      "Usage": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 181,
+        "Width": 6
+      },
+      "VIN": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 93,
+        "Width": 18
+      },
+      "VMRS": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 126,
+        "Width": 5
+      },
+      "VMRSNotes": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 251,
+        "Width": 51
+      }
+    }
+  }
+}

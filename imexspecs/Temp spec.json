@@ -1,0 +1,126 @@
+﻿{
+  "Info": {
+    "Class": "clsDbImexSpec",
+    "Description": "Import/Export Specification from MSysIMEXSpecs"
+  },
+  "Items": {
+    "DateDelim": null,
+    "DateFourDigitYear": false,
+    "DateLeadingZeros": false,
+    "DateOrder": 0,
+    "DecimalPoint": null,
+    "FieldSeparator": null,
+    "FileType": 0,
+    "SpecName": "Temp spec",
+    "SpecType": 5,
+    "StartRow": 1,
+    "TextDelim": null,
+    "TimeDelim": null,
+    "Columns": {
+      "ATLAAS_PNOBC": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 5,
+        "Width": 0
+      },
+      "ATLAAS_UnitNum": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 1,
+        "SkipColumn": false,
+        "Start": 4,
+        "Width": 0
+      },
+      "InService": {
+        "Attributes": 0,
+        "DataType": 8,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 7,
+        "Width": 0
+      },
+      "ModelYear": {
+        "Attributes": 0,
+        "DataType": 7,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 6,
+        "Width": 0
+      },
+      "OBCMatch": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 12,
+        "Width": 0
+      },
+      "PNOBC": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 9,
+        "Width": 0
+      },
+      "ReportingStatus": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 1,
+        "Width": 0
+      },
+      "UNFI_Vin": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 11,
+        "Width": 0
+      },
+      "UNFIUnitNumber": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 8,
+        "Width": 0
+      },
+      "UnitID": {
+        "Attributes": 0,
+        "DataType": 7,
+        "IndexType": 1,
+        "SkipColumn": false,
+        "Start": 2,
+        "Width": 0
+      },
+      "UnitStatus": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 3,
+        "Width": 0
+      },
+      "VIN": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 10,
+        "Width": 0
+      },
+      "VINMatch": {
+        "Attributes": 0,
+        "DataType": 10,
+        "IndexType": 0,
+        "SkipColumn": false,
+        "Start": 13,
+        "Width": 0
+      }
+    }
+  }
+}

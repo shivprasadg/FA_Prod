@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "1_WhiteShadow",
+    "FileName": "WhiteShadow.PNG",
+    "Extension": "PNG",
+    "ContentHash": "0b93d97"
+  }
+}

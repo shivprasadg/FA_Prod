@@ -1,0 +1,415 @@
+﻿{
+  "Info": {
+    "Class": "clsDbProperty",
+    "Description": "Database Properties (DAO)"
+  },
+  "Items": {
+    "AccessVersion": {
+      "Value": "09.50",
+      "Type": 10
+    },
+    "AllowBuiltInToolbars": {
+      "Value": true,
+      "Type": 1
+    },
+    "AllowDatasheetSchema": {
+      "Value": true,
+      "Type": 1
+    },
+    "AllowFullMenus": {
+      "Value": true,
+      "Type": 1
+    },
+    "AllowShortcutMenus": {
+      "Value": true,
+      "Type": 1
+    },
+    "AllowSpecialKeys": {
+      "Value": true,
+      "Type": 1
+    },
+    "AllowToolbarChanges": {
+      "Value": true,
+      "Type": 1
+    },
+    "ANSI Query Mode": {
+      "Value": 0,
+      "Type": 4
+    },
+    "AppIcon": {
+      "Value": "C:\\FAAS\\Images\\Atlaas_Trans.ico",
+      "Type": 10
+    },
+    "AppTitle": {
+      "Value": "ATLAAS 32/64 v1.9.38a",
+      "Type": 10
+    },
+    "Auto Compact": {
+      "Value": 0,
+      "Type": 4
+    },
+    "Build": {
+      "Value": 606,
+      "Type": 4
+    },
+    "CheckTruncatedNumFields": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Clear Cache on Close": {
+      "Value": 1,
+      "Type": 4
+    },
+    "CollatingOrder": {
+      "Value": 1033,
+      "Type": 3
+    },
+    "Connect": {
+      "Value": "",
+      "Type": 12
+    },
+    "Continuous Form Navigation Keys": {
+      "Value": 0,
+      "Type": 4
+    },
+    "Continuous Form Record Navigation Keys": {
+      "Value": 0,
+      "Type": 4
+    },
+    "DefaultBackupLocation": {
+      "Value": "P:\\FLEETADVANTAGE\\Database\\backup\\\u0000",
+      "Type": 10
+    },
+    "DesignMasterID": {
+      "Value": "",
+      "Type": 15
+    },
+    "DesignWithData": {
+      "Value": true,
+      "Type": 1
+    },
+    "HasOfflineLists": {
+      "Value": 70,
+      "Type": 3
+    },
+    "Name": {
+      "Value": "rel:ATLAAS_Shiv_v1.accdb",
+      "Type": 12
+    },
+    "NavPane Category": {
+      "Value": 0,
+      "Type": 4
+    },
+    "NavPane Closed": {
+      "Value": 0,
+      "Type": 4
+    },
+    "NavPane Sort By": {
+      "Value": 1,
+      "Type": 4
+    },
+    "NavPane View By": {
+      "Value": 0,
+      "Type": 4
+    },
+    "NavPane Width": {
+      "Value": 313,
+      "Type": 4
+    },
+    "Never Cache": {
+      "Value": 0,
+      "Type": 4
+    },
+    "Option to enable Monaco SQL Editor": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Perform Name AutoCorrect": {
+      "Value": 0,
+      "Type": 4
+    },
+    "Picture Property Storage Format": {
+      "Value": 0,
+      "Type": 4
+    },
+    "ProjVer": {
+      "Value": 142,
+      "Type": 3
+    },
+    "Property Sheet Label Width": {
+      "Value": 1845,
+      "Type": 4
+    },
+    "QueryTimeout": {
+      "Value": 60,
+      "Type": 3
+    },
+    "RecordsAffected": {
+      "Value": 0,
+      "Type": 4
+    },
+    "ReplicaID": {
+      "Value": "",
+      "Type": 15
+    },
+    "SharePointSiteMRU": {
+      "Value": [
+        60,
+        0,
+        115,
+        0,
+        105,
+        0,
+        116,
+        0,
+        101,
+        0,
+        77,
+        0,
+        114,
+        0,
+        117,
+        0,
+        115,
+        0,
+        62,
+        0,
+        60,
+        0,
+        115,
+        0,
+        105,
+        0,
+        116,
+        0,
+        101,
+        0,
+        77,
+        0,
+        114,
+        0,
+        117,
+        0,
+        32,
+        0,
+        117,
+        0,
+        114,
+        0,
+        108,
+        0,
+        61,
+        0,
+        34,
+        0,
+        104,
+        0,
+        116,
+        0,
+        116,
+        0,
+        112,
+        0,
+        115,
+        0,
+        58,
+        0,
+        47,
+        0,
+        47,
+        0,
+        102,
+        0,
+        108,
+        0,
+        101,
+        0,
+        101,
+        0,
+        116,
+        0,
+        97,
+        0,
+        100,
+        0,
+        118,
+        0,
+        97,
+        0,
+        110,
+        0,
+        116,
+        0,
+        97,
+        0,
+        103,
+        0,
+        101,
+        0,
+        46,
+        0,
+        115,
+        0,
+        104,
+        0,
+        97,
+        0,
+        114,
+        0,
+        101,
+        0,
+        112,
+        0,
+        111,
+        0,
+        105,
+        0,
+        110,
+        0,
+        116,
+        0,
+        46,
+        0,
+        99,
+        0,
+        111,
+        0,
+        109,
+        0,
+        34,
+        0,
+        32,
+        0,
+        110,
+        0,
+        97,
+        0,
+        109,
+        0,
+        101,
+        0,
+        61,
+        0,
+        34,
+        0,
+        34,
+        0,
+        32,
+        0,
+        47,
+        0,
+        62,
+        0,
+        60,
+        0,
+        47,
+        0,
+        115,
+        0,
+        105,
+        0,
+        116,
+        0,
+        101,
+        0,
+        77,
+        0,
+        114,
+        0,
+        117,
+        0,
+        115,
+        0,
+        62,
+        0,
+        0,
+        0
+      ],
+      "Type": 9
+    },
+    "Show Navigation Pane Search Bar": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Show Values in Indexed": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Show Values in Non-Indexed": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Show Values in Remote": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Show Values Limit": {
+      "Value": 1000,
+      "Type": 4
+    },
+    "ShowDocumentTabs": {
+      "Value": true,
+      "Type": 1
+    },
+    "StartUpForm": {
+      "Value": "FAMainMenu",
+      "Type": 10
+    },
+    "StartUpShowDBWindow": {
+      "Value": true,
+      "Type": 1
+    },
+    "StartUpShowStatusBar": {
+      "Value": true,
+      "Type": 1
+    },
+    "Theme Resource Name": {
+      "Value": "Office Theme",
+      "Type": 10
+    },
+    "Themed Form Controls": {
+      "Value": 0,
+      "Type": 4
+    },
+    "Track Name AutoCorrect Info": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Transactions": {
+      "Value": true,
+      "Type": 1
+    },
+    "Updatable": {
+      "Value": true,
+      "Type": 1
+    },
+    "Use BigInt for linking and importing data": {
+      "Value": 1,
+      "Type": 4
+    },
+    "Use DateTime2 for linking and importing data": {
+      "Value": 0,
+      "Type": 4
+    },
+    "Use Microsoft Access 2007 compatible cache": {
+      "Value": 0,
+      "Type": 4
+    },
+    "UseAppIconForFrmRpt": {
+      "Value": true,
+      "Type": 1
+    },
+    "UseMDIMode": {
+      "Value": 1,
+      "Type": 2
+    },
+    "Version": {
+      "Value": "16.7",
+      "Type": 12
+    },
+    "WebDesignMode": {
+      "Value": 0,
+      "Type": 2
+    }
+  }
+}

@@ -1,0 +1,20 @@
+﻿CREATE TABLE [CofATemp] (
+  [MLID] LONG,
+  [SchID] LONG,
+  [GroupID] LONG,
+  [Header] LONGTEXT,
+  [CofADate] DATETIME,
+  [Letterdate] VARCHAR (255),
+  [MLNo] VARCHAR (50),
+  [Paragraph1] LONGTEXT,
+  [Paragraph2] LONGTEXT,
+  [Paragraph3] LONGTEXT,
+  [Paragraph4] LONGTEXT,
+  [Paragraph5] LONGTEXT,
+  [Paragraph6] LONGTEXT,
+  [Paragraph7] LONGTEXT,
+  [RequestDate] VARCHAR (255),
+  [ReturnToAddress] LONGTEXT,
+  [Salutation] VARCHAR (255),
+  [UnitIDArray] LONGTEXT
+)

@@ -1,0 +1,31 @@
+﻿SELECT
+  Client,
+  BDEX,
+  Schedule,
+  Units,
+  ExchangeITDate,
+  ExpiryDate,
+  UnitType,
+  OEC,
+  RV,
+  Term,
+  NoticeDate,
+  ExchangeITTerm
+FROM
+  ExpiryReport_Base
+UNION ALL
+SELECT
+  Client,
+  BDEX,
+  Schedule,
+  Units,
+  ExchangeITDate,
+  ExpiryDate,
+  UnitType,
+  OEC,
+  RV,
+  Term,
+  NoticeDate,
+  ExchangeITTerm
+FROM
+  ExpiryReport_AutoHauler;

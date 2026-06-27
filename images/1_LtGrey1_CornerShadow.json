@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "1_LtGrey1_CornerShadow",
+    "FileName": "LtGrey1_CornerShadow.PNG",
+    "Extension": "PNG",
+    "ContentHash": "67de540"
+  }
+}

@@ -1,0 +1,121 @@
+﻿Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Dim RST As DAO.Recordset
+Dim SQLz As String
+
+Private Sub CloseMe_Click()
+DoCmd.close acForm, Me.Form.Name
+End Sub
+
+Private Sub AddContact_Click()
+ DoCmd.GotoRecord , , acNewRec
+ Me.clientID = Me.Parent.clientID
+End Sub
+
+Private Sub contactFirst_AfterUpdate()
+Call MakeFullContact
+End Sub
+
+Private Sub contactLast_AfterUpdate()
+Call MakeFullContact
+End Sub
+
+Private Sub contactMiddle_AfterUpdate()
+Call MakeFullContact
+End Sub
+Private Sub contactPrefix_AfterUpdate()
+Call MakeFullContact
+End Sub
+Private Sub ContactObsolete_Click()
+Me.ConObsoleteDt = Date
+End Sub
+
+Private Sub ContactsList_Click()
+  'Me.Form.Filter = ""
+  'Me.Form.FilterOn = False
+  Set RST = Me.RecordsetClone
+  RST.FindFirst "ContactId = " & Me.ContactsList.Column(0) & ""
+  Me.Bookmark = RST.Bookmark
+  Me.Form.Repaint
+End Sub
+
+Private Sub DeleteContact_Click()
+If IsNull(Me.contactFullName) Then Exit Sub
+  Dim Response
+  On Error GoTo FixMe
+      Response = MsgBox("Are you sure you want to DELETE " & Me.contactFullName & "?", vbQuestion + vbYesNo + vbCritical, "DELETE!!")
+         If Response = vbYes Then
+            SQLz = "Delete * From Contacts WHERE ContactId = " & Me.contactID & ";"
+            DoCmd.SetWarnings False
+            DoCmd.RunSQL (SQLz)
+            Me.ContactsList.Requery
+            DoCmd.SetWarnings True
+            Me.Form.Refresh
+         Else
+         Exit Sub
+         End If
+FixMe:
+End Sub
+
+Private Sub Form_Current()
+    Dim Ccrl As Control
+    Me.ConObsoleteDt.Locked = True
+    Me.ContactObsolete.Locked = True
+    SQLz = "SELECT contactID, clientRef, contactClassification, contactFullName AS Contact FROM Location_contacts " & _
+        "WHERE clientRef=" & Me.Parent.BankId & " Order by contactFullName ;"
+    Me.ContactsList.RowSource = SQLz
+    If Me.contactClassification Like "*Incumbent*" And Not FAUserAccessGroup Like "*Synd*" And FAUserAccess < 51 Then
+
+        For Each Ccrl In Me.Controls
+            If Me(Ccrl.Name).Tag = "Protect" Then
+                Me(Ccrl.Name).Locked = True
+                Me(Ccrl.Name).Enabled = False
+            End If
+        Next Ccrl
+    Else
+        For Each Ccrl In Me.Controls
+            If Me(Ccrl.Name).Tag = "Protect" Then
+                Me(Ccrl.Name).Locked = False
+                Me(Ccrl.Name).Enabled = True
+            End If
+        Next Ccrl
+    End If
+End Sub
+
+
+
+Private Sub MakeFullContactBtn_Click()
+Call MakeFullContact
+End Sub
+
+Private Sub Printcontacts_Click()
+DoCmd.OpenReport "CONTACTPRNT", acViewPreview
+End Sub
+
+Private Sub SaveUpdate_Click()
+Dim Msgx As String
+Msgx = "|"
+    If IsNull(Me.contactFirst.Value) Then Msgx = Msgx & " First Name |"
+    If IsNull(Me.contactLast.Value) Then Msgx = Msgx & " Last Name |"
+   If Me.contactClassification.Value & "test" = "test" Then Msgx = Msgx & " Contact Class |"
+    If Msgx <> "|" Then
+        MsgBox "Please Enter Data for All Required Fields" & vbNewLine & "You're Missing: " & Msgx, , Reuired '
+        Exit Sub
+    End If
+Me.Form.Refresh
+
+End Sub
+
+Private Sub Unlockit_Click()
+Me.ConObsoleteDt.Locked = False
+Me.ContactObsolete.Locked = False
+End Sub
+
+Public Sub MakeFullContact()
+    Me.contactFullName = Trim([contactPrefix] & " " & [contactFirst] & " " & _
+    Nz([contactMiddle], "") & " " & [contactLast] & " " & [contactSuffix])
+    Me.contactFullName = Trim(Me.contactFullName)
+End Sub

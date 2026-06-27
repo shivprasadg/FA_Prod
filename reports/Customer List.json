@@ -1,0 +1,33 @@
+﻿{
+  "Info": {
+    "Class": "clsDbReport",
+    "Description": "Customer List Print Settings"
+  },
+  "Items": {
+    "Device": {
+      "DriverName": "winspool",
+      "DeviceName": "Microsoft Print to PDF",
+      "Port": "PORTPROMPT:",
+      "Default": false
+    },
+    "Printer": {
+      "Orientation": "Portrait"
+    },
+    "Margins": {
+      "LeftMargin": 0.1667,
+      "TopMargin": 0.1667,
+      "RightMargin": 0.1667,
+      "BotMargin": 0.1667,
+      "DataOnly": false,
+      "Width": 7.5104,
+      "Height": 0.2083,
+      "DefaultSize": true,
+      "Columns": 1,
+      "ColumnSpacing": 0.25,
+      "RowSpacing": 0,
+      "ItemLayout": "Horizontal Columns",
+      "FastPrint": 1,
+      "Datasheet": 1
+    }
+  }
+}

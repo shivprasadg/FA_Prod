@@ -1,0 +1,27 @@
+﻿SELECT
+  Clients.clientID,
+  Clients.LeaseID AS Expr1,
+  Clients.LeaseDate AS Expr2,
+  Clients.LeaseTaxID AS Expr3,
+  Clients.LeaseNameVer,
+  Clients.LeaseCGS,
+  Clients.LeaseSTofCorp,
+  Clients.LeaseEntity,
+  Clients.LeaseMLAContactREF AS Expr4,
+  Clients.LeaseMLASigRef AS Expr5,
+  Clients.LeaseMLASigTitle AS Expr6,
+  Clients.LeaseMLASent AS Expr7,
+  Clients.LeaseMLABack AS Expr8,
+  Clients.LeaseGuarantor AS Expr9,
+  Clients.LeaseGtySigREF AS Expr10,
+  Clients.LeaseGtySigTitle AS Expr11,
+  Clients.LeaseGtyTaxID AS Expr12,
+  Clients.LeaseGtyExp AS Expr13,
+  Clients.LeaseGtyDate AS Expr14,
+  Clients.LeaseGtyBasis AS Expr15,
+  Clients.LeaseGTYCap AS Expr16,
+  Clients.LeaseGTYUnlim AS Expr17,
+  Clients.LeaseGtySent AS Expr18,
+  Clients.LeaseGtyBack AS Expr19
+FROM
+  Clients;

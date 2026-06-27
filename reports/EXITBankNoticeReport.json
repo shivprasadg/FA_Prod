@@ -1,0 +1,34 @@
+﻿{
+  "Info": {
+    "Class": "clsDbReport",
+    "Description": "EXITBankNoticeReport Print Settings"
+  },
+  "Items": {
+    "Device": {
+      "DriverName": "winspool",
+      "DeviceName": "\\\\FA-FILE\\1730 KONICA Color",
+      "Port": "192.168.2.226",
+      "Default": false
+    },
+    "Printer": {
+      "Orientation": "Landscape",
+      "PaperSize": "Folio"
+    },
+    "Margins": {
+      "LeftMargin": 0.1667,
+      "TopMargin": 0.1667,
+      "RightMargin": 0.1667,
+      "BotMargin": 0.1667,
+      "DataOnly": false,
+      "Width": 11.7076,
+      "Height": 0.2,
+      "DefaultSize": true,
+      "Columns": 1,
+      "ColumnSpacing": 0.25,
+      "RowSpacing": 0,
+      "ItemLayout": "Horizontal Columns",
+      "FastPrint": 1,
+      "Datasheet": 1
+    }
+  }
+}

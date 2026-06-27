@@ -1,0 +1,7 @@
+﻿dbMemo "SQL" ="Select * From vw_sixKeys"
+dbMemo "Connect" ="ODBC;DSN=ATLAAS_SQL;UID=ljohnson;Trusted_Connection=Yes;DATABASE=FleetAdvantage_"
+    "beSQL;"
+dbBoolean "ReturnsRecords" ="-1"
+dbInteger "ODBCTimeout" ="60"
+dbBoolean "LogMessages" ="0"
+dbByte "Orientation" ="0"

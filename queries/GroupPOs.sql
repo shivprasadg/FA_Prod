@@ -1,0 +1,17 @@
+﻿SELECT
+  SchGrp.SGrpID,
+  SchGrp.SGrpNO,
+  SchGrp.PONum1,
+  SchGrp.POVendor,
+  SchGrp.POSentDt,
+  SchGrp.PONum2,
+  SchGrp.PO2Vendor,
+  SchGrp.PO2SentDt,
+  SchGrp.PONum3,
+  SchGrp.PO3Vendor,
+  SchGrp.PO3SentDt,
+  SchGrp.PONum4,
+  SchGrp.PO4Vendor,
+  SchGrp.PO4SentDt
+FROM
+  SchGrp;

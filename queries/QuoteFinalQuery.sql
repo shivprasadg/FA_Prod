@@ -1,0 +1,44 @@
+﻿SELECT
+  SpecReviews.groupRef,
+  Quotes.QuoteFinal,
+  Quotes.QuoteID,
+  Quotes.dealRef,
+  Quotes.QuoteDate,
+  Quotes.QuoteBLCD,
+  Quotes.QuoteLeaseTerm,
+  Quotes.QuoteLRF,
+  Quotes.QuotePayment,
+  Quotes.QuoteBonusDep,
+  Quotes.QuoteIndex,
+  Quotes.QuoteIndexYear,
+  Quotes.QuoteIndexDate,
+  Quotes.QuoteIndexRate,
+  Quotes.QuoteMPYHPY,
+  Quotes.QuoteOverMiCharge,
+  Quotes.QuoteAdvArr,
+  Quotes.QuoteYears,
+  Quotes.QuoteTotal,
+  Quotes.QuoteGrandTotal,
+  Quotes.QuoteOptMo1,
+  Quotes.QuoteOptMo2,
+  Quotes.QuoteOptMo3,
+  Quotes.QuoteOption1,
+  Quotes.QuoteOption2,
+  Quotes.QuoteOption3,
+  Quotes.QuoteOptRate1,
+  Quotes.QuoteOptRate2,
+  Quotes.QuoteOptRate3,
+  Quotes.QuoteOpt1Exercised,
+  Quotes.QuoteOpt2Exercised,
+  Quotes.QuoteOpt3Exercised,
+  Quotes.QuoteRequote,
+  Quotes.QuoteNotes
+FROM
+  SpecReviews
+  INNER JOIN Quotes ON SpecReviews.SRID = Quotes.specREF
+WHERE
+  (
+    (
+      (Quotes.QuoteFinal)= Yes
+    )
+  );

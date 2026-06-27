@@ -1,0 +1,4 @@
+﻿CREATE TABLE [Make Types] (
+  [MakeType] VARCHAR (1) CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [Type Desc] VARCHAR (35)
+)

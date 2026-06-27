@@ -1,0 +1,42 @@
+﻿SELECT
+  Deals.FAID,
+  Groups.groupNo,
+  Groups.groupID,
+  Groups.dealRef,
+  client_lookup.CompanyAndDBA,
+  Groups.groupUnits,
+  Groups.groupYear,
+  Groups.groupMakeRef,
+  Groups.groupModelRef,
+  Groups.groupTypeRef,
+  Groups.groupTotal,
+  Groups.groupOptMo1,
+  Groups.groupOptMo2,
+  Groups.groupOptMo3,
+  Groups.groupOption1,
+  Groups.groupOption2,
+  Groups.groupOption3,
+  Groups.groupMPYHPY,
+  Deals.dealSchedNum,
+  Deals.dealShortDesc,
+  Deals.clientRef,
+  Groups.groupBillingRef,
+  Groups.groupBillingNotes,
+  Groups.GRPLOCSN,
+  Groups.AltEquip,
+  Groups.groupMake,
+  Groups.groupModel,
+  Groups.groupType,
+  Deals.DealPLB,
+  Groups.GrpSchedule,
+  Groups.groupTotal
+FROM
+  (
+    Deals
+    INNER JOIN client_lookup ON Deals.clientRef = client_lookup.clientID
+  )
+  INNER JOIN Groups ON Deals.dealID = Groups.dealRef
+ORDER BY
+  Deals.FAID,
+  Groups.groupNo,
+  Groups.groupID;

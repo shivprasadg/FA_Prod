@@ -1,0 +1,9 @@
+﻿SELECT
+  Units.UnitID,
+  Units.EstDelInd,
+  Units.UnitOriginserv,
+  Units.UnitDep,
+  Units.UnitDepdt,
+  Units.UnitDepPdDT
+FROM
+  Units;

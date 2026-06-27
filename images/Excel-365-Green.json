@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "Excel-365-Green",
+    "FileName": "Excel-365-Green.png",
+    "Extension": "png",
+    "ContentHash": "0ce73e3"
+  }
+}

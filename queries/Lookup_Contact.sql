@@ -1,0 +1,22 @@
+﻿SELECT
+  Contacts.clientRef,
+  Contacts.contactClassification,
+  Contacts.contactPrefix,
+  Contacts.contactFirst,
+  Contacts.contactMiddle,
+  Contacts.contactLast,
+  Contacts.contactSuffix,
+  Contacts.contactTitle,
+  Contacts.contactPrimaryPhone,
+  Contacts.contactPhoneExt,
+  Contacts.contactPhone2,
+  Contacts.contactCell,
+  Contacts.contactEmail,
+  Contacts.contactOptOut,
+  Contacts.contactFullName,
+  Contacts.contactNote
+FROM
+  Contacts
+ORDER BY
+  Contacts.contactClassification,
+  Contacts.contactFirst;

@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "Command22",
+    "FileName": "Command22.png",
+    "Extension": "png",
+    "ContentHash": "28f7e22"
+  }
+}

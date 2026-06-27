@@ -1,0 +1,5 @@
+﻿CREATE TABLE [UnitGroup_WorkTable] (
+  [UnitId] LONG,
+  [index] AUTOINCREMENT CONSTRAINT [PK_UnitWorkTable] PRIMARY KEY UNIQUE NOT NULL,
+  [GroupID] LONG
+)

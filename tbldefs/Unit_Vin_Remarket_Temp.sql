@@ -1,0 +1,11 @@
+﻿CREATE TABLE [Unit_Vin_Remarket_Temp] (
+  [ID] AUTOINCREMENT CONSTRAINT [ID] PRIMARY KEY UNIQUE NOT NULL,
+  [Unit] VARCHAR (255),
+  [Asset] DOUBLE,
+  [Desc] VARCHAR (255),
+  [Year] DOUBLE,
+  [Division] VARCHAR (255),
+  [State] VARCHAR (255),
+  [Make] VARCHAR (255),
+  [VIN] VARCHAR (255)
+)

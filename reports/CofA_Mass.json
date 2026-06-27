@@ -1,0 +1,33 @@
+﻿{
+  "Info": {
+    "Class": "clsDbReport",
+    "Description": "CofA_Mass Print Settings"
+  },
+  "Items": {
+    "Device": {
+      "DriverName": "winspool",
+      "DeviceName": "Adobe PDF",
+      "Port": "Documents\\*.pdf",
+      "Default": false
+    },
+    "Printer": {
+      "Orientation": "Portrait"
+    },
+    "Margins": {
+      "LeftMargin": 0.25,
+      "TopMargin": 0.25,
+      "RightMargin": 0.25,
+      "BotMargin": 0.25,
+      "DataOnly": false,
+      "Width": 7.9833,
+      "Height": 0.2,
+      "DefaultSize": true,
+      "Columns": 1,
+      "ColumnSpacing": 0.25,
+      "RowSpacing": 0,
+      "ItemLayout": "Horizontal Columns",
+      "FastPrint": 1,
+      "Datasheet": 1
+    }
+  }
+}

@@ -1,0 +1,12 @@
+﻿SELECT
+  Clients.clientID,
+  Clients.clientCompanyName,
+  Clients.clientCity,
+  Clients.clientState,
+  Clients.clientWebsite,
+  Clients.clientIndustry,
+  Clients.clientType,
+  Clients.clientMainPhone,
+  Clients.clientAnnualSales
+FROM
+  Clients;

@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "Red_Dark_Shadow",
+    "FileName": "Red_Dark_Shadow.PNG",
+    "Extension": "PNG",
+    "ContentHash": "d8e3b39"
+  }
+}

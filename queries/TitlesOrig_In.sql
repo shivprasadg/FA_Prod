@@ -1,0 +1,19 @@
+﻿SELECT
+  FirstTitleLog.UnitTitleLogId,
+  FirstTitleLog.UnitRef,
+  FirstTitleLog.EntryTypeId,
+  FirstTitleLog.EntryReasonId,
+  FirstTitleLog.TitleNumber,
+  FirstTitleLog.UnitTitleZipcodeId,
+  FirstTitleLog.TitleSt,
+  FirstTitleLog.ReasonLogged,
+  FirstTitleLog.UnitTitleLogDate,
+  FirstTitleLog.ExpectedReturn
+FROM
+  FirstTitleLog
+WHERE
+  (
+    (
+      (FirstTitleLog.EntryTypeId)= 1
+    )
+  );

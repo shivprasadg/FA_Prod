@@ -1,0 +1,36 @@
+﻿{
+  "Info": {
+    "Class": "clsDbDocument",
+    "Description": "Database Documents Properties (DAO)"
+  },
+  "Items": {
+    "Forms": {
+      "Bank_View": {
+        "Description": "Primary form"
+      },
+      "BuyersForm": {
+        "Description": "Primary form"
+      },
+      "ClientsView": {
+        "Description": "Primary form"
+      },
+      "Deals_view": {
+        "Description": "primary form"
+      },
+      "Documentation_sub": {
+        "Description": "Sub form for the deals_view form"
+      },
+      "FleetStudy_Importer": {
+        "Description": "Primary form"
+      },
+      "Spec_Review_sub": {
+        "Description": "Sub form for the Groups_view sub form"
+      }
+    },
+    "Reports": {
+      "ScheduleEconomicsSyndReport": {
+        "Description": "RW"
+      }
+    }
+  }
+}

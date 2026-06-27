@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbSharedImage",
+    "Description": "Shared Image Gallery Item"
+  },
+  "Items": {
+    "Name": "1_LtGrey1_VertShadow",
+    "FileName": "LtGrey1_VertShadow.PNG",
+    "Extension": "PNG",
+    "ContentHash": "e5a6f46"
+  }
+}

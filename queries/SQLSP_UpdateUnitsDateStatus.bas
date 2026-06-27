@@ -1,0 +1,7 @@
+﻿dbMemo "SQL" ="Exec   FleetAdvantage_beSQL.[dbo].UpdateUnitsDateStatus"
+dbMemo "Connect" ="ODBC;DRIVER=SQL Server;SERVER=FA-PROTEUS\\MSSQL;DATABASE=Fleet_Jobs;UID=supuser;"
+    "PWD=yhwhyire"
+dbBoolean "ReturnsRecords" ="0"
+dbInteger "ODBCTimeout" ="60"
+dbBoolean "LogMessages" ="-1"
+dbByte "Orientation" ="0"

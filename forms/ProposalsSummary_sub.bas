@@ -1,0 +1,1995 @@
+﻿Version =20
+VersionRequired =20
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    OrderByOn = NotDefault
+    AllowDesignChanges = NotDefault
+    RecordLocks =2
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =19275
+    DatasheetFontHeight =10
+    ItemSuffix =174
+    Left =27210
+    Top =10665
+    Right =-18856
+    Bottom =18690
+    ShortcutMenuBar ="SortClip"
+    RecSrcDt = Begin
+        0x23ec64b77670e540
+    End
+    Caption ="Proposals_sub"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    FilterOnLoad =0
+    NavigationCaption ="Transactions"
+    ShowPageMargins =0
+    DatasheetGridlinesColor12 =12632256
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+        End
+        Begin CommandButton
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+        End
+        Begin ToggleButton
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            BackStyle =0
+            BorderLineStyle =0
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            Height =1305
+            BackColor =14211288
+            Name ="FormHeader"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =17760
+                    Top =75
+                    Width =1380
+                    Height =330
+                    FontSize =9
+                    Name ="RefreshBtn"
+                    Caption ="Refresh Data"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Segoe UI"
+                    LeftPadding =60
+                    RightPadding =75
+                    BottomPadding =120
+
+                    LayoutCachedLeft =17760
+                    LayoutCachedTop =75
+                    LayoutCachedWidth =19140
+                    LayoutCachedHeight =405
+                    ForeThemeColorIndex =0
+                    UseTheme =1
+                    Gradient =12
+                    BackThemeColorIndex =0
+                    BorderThemeColorIndex =1
+                    HoverThemeColorIndex =0
+                    HoverTint =80.0
+                    PressedThemeColorIndex =0
+                    PressedShade =80.0
+                    HoverForeThemeColorIndex =0
+                    PressedForeThemeColorIndex =0
+                    Shadow =-1
+                    QuickStyle =22
+                    QuickStyleMask =-65
+                    Overlaps =1
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =3405
+                    Top =915
+                    Width =1275
+                    Height =240
+                    FontWeight =700
+                    Name ="Label37"
+                    Caption ="Type"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =3405
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =4680
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =2355
+                    Top =915
+                    Width =994
+                    Height =240
+                    FontWeight =700
+                    Name ="Label61"
+                    Caption ="Date Entered"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =2355
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =3349
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =735
+                    Top =915
+                    Width =885
+                    Height =240
+                    FontWeight =700
+                    Name ="Label62"
+                    Caption ="FAID"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =735
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =1620
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =105
+                    Top =915
+                    Width =479
+                    Height =240
+                    FontWeight =700
+                    Name ="Label63"
+                    Caption =" "
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =105
+                    TopPadding =0
+                    RightPadding =120
+                    BottomPadding =0
+                    LayoutCachedLeft =105
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =584
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =0
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =4740
+                    Top =915
+                    Width =510
+                    Height =240
+                    FontWeight =700
+                    Name ="Label64"
+                    Caption ="(days)"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =4740
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =5250
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =5310
+                    Top =915
+                    Width =930
+                    Height =240
+                    FontWeight =700
+                    Name ="Label65"
+                    Caption ="LPAF Due"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =5310
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =6240
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =6300
+                    Top =915
+                    Width =4380
+                    Height =240
+                    FontWeight =700
+                    Name ="Label66"
+                    Caption ="Description"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =6300
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =10680
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =13935
+                    Top =915
+                    Width =930
+                    Height =240
+                    FontWeight =700
+                    Name ="Label67"
+                    Caption ="Est Delivery"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =13935
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =14865
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =14895
+                    Top =915
+                    Width =1230
+                    Height =240
+                    FontWeight =700
+                    Name ="Label68"
+                    Caption ="Outcome"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =14895
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =16125
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =16185
+                    Top =915
+                    Width =1395
+                    Height =240
+                    FontWeight =700
+                    Name ="Label69"
+                    Caption ="Deal Schdule"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =16185
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =17580
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =17610
+                    Top =915
+                    Width =1050
+                    Height =240
+                    FontWeight =700
+                    Name ="Label70"
+                    Caption =" Date"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =17610
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =18660
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =17610
+                    Top =675
+                    Width =1050
+                    Height =240
+                    FontWeight =700
+                    Name ="Label72"
+                    Caption ="Outome"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =17610
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =18660
+                    LayoutCachedHeight =915
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =4740
+                    Top =675
+                    Width =510
+                    Height =240
+                    FontWeight =700
+                    Name ="Label73"
+                    Caption ="Time"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =4740
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =5250
+                    LayoutCachedHeight =915
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =45
+                    Top =15
+                    Width =6675
+                    Height =615
+                    FontSize =26
+                    FontWeight =700
+                    ForeColor =-2147483600
+                    Name ="ScheduleLbl"
+                    Caption ="Awarded Deals"
+                    FontName ="Calibri"
+                    LayoutCachedLeft =45
+                    LayoutCachedTop =15
+                    LayoutCachedWidth =6720
+                    LayoutCachedHeight =630
+                End
+                Begin EmptyCell
+                    Left =105
+                    Top =675
+                    Width =479
+                    Name ="EmptyCell76"
+                    GroupTable =5
+                    LeftPadding =105
+                    TopPadding =0
+                    RightPadding =120
+                    BottomPadding =0
+                    LayoutCachedLeft =105
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =584
+                    LayoutCachedHeight =915
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =735
+                    Top =675
+                    Width =885
+                    Name ="EmptyCell77"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =735
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =1620
+                    LayoutCachedHeight =915
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =2355
+                    Top =675
+                    Width =994
+                    Name ="EmptyCell78"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =2355
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =3349
+                    LayoutCachedHeight =915
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =3405
+                    Top =675
+                    Width =1275
+                    Name ="EmptyCell79"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =3405
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =4680
+                    LayoutCachedHeight =915
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =5310
+                    Top =675
+                    Width =930
+                    Name ="EmptyCell81"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =5310
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =6240
+                    LayoutCachedHeight =915
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =6300
+                    Top =675
+                    Width =4380
+                    Name ="EmptyCell82"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =6300
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =10680
+                    LayoutCachedHeight =915
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =13935
+                    Top =675
+                    Width =930
+                    Name ="EmptyCell83"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =13935
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =14865
+                    LayoutCachedHeight =915
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =14895
+                    Top =675
+                    Width =1230
+                    Name ="EmptyCell84"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =14895
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =16125
+                    LayoutCachedHeight =915
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =16185
+                    Top =675
+                    Width =1395
+                    Name ="EmptyCell85"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =16185
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =17580
+                    LayoutCachedHeight =915
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin Image
+                    PictureTiling = NotDefault
+                    SizeMode =3
+                    PictureAlignment =0
+                    PictureType =2
+                    Top =1125
+                    Width =19257
+                    Height =180
+                    Name ="Image4124"
+                    Picture ="LtGrey2_Shadow"
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    HorizontalAnchor =2
+
+                    LayoutCachedTop =1125
+                    LayoutCachedWidth =19257
+                    LayoutCachedHeight =1305
+                    TabIndex =1
+                    RowStart =2
+                    RowEnd =2
+                    ColumnEnd =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =1
+                    BorderShade =65.0
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =18660
+                    Top =675
+                    Width =615
+                    Height =240
+                    FontWeight =700
+                    Name ="Label124"
+                    Caption ="Exclude"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =18660
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =19275
+                    LayoutCachedHeight =915
+                    ColumnStart =15
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =247
+                    TextAlign =2
+                    Left =18660
+                    Top =915
+                    Width =615
+                    Height =240
+                    FontWeight =700
+                    Name ="Label126"
+                    Caption =" KPI"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =18660
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =19275
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =15
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =247
+                    TextAlign =2
+                    Left =1680
+                    Top =915
+                    Width =615
+                    Height =240
+                    FontWeight =700
+                    Name ="Label135"
+                    Caption ="BDEX"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =1680
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =2295
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =1680
+                    Top =675
+                    Width =615
+                    Name ="EmptyCell149"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =1680
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =2295
+                    LayoutCachedHeight =915
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =247
+                    TextAlign =2
+                    Left =11970
+                    Top =915
+                    Width =1260
+                    Height =240
+                    FontWeight =700
+                    Name ="Label150"
+                    Caption ="LO Total"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =11970
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =13230
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =11970
+                    Top =675
+                    Width =1260
+                    Name ="EmptyCell153"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =11970
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =13230
+                    LayoutCachedHeight =915
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =247
+                    TextAlign =2
+                    Left =13230
+                    Top =675
+                    Width =705
+                    Height =480
+                    FontWeight =700
+                    Name ="Label158"
+                    Caption ="Lo Vol Pct"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =13230
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =13935
+                    LayoutCachedHeight =1155
+                    RowEnd =1
+                    ColumnStart =10
+                    ColumnEnd =10
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =10710
+                    Top =675
+                    Width =1260
+                    Name ="EmptyCell168"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =10710
+                    LayoutCachedTop =675
+                    LayoutCachedWidth =11970
+                    LayoutCachedHeight =915
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin Label
+                    OverlapFlags =247
+                    TextAlign =2
+                    Left =10710
+                    Top =915
+                    Width =1260
+                    Height =240
+                    FontWeight =700
+                    Name ="Label172"
+                    Caption ="Deal Total"
+                    FontName ="Calibri"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =10710
+                    LayoutCachedTop =915
+                    LayoutCachedWidth =11970
+                    LayoutCachedHeight =1155
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    ThemeFontIndex =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    ForeThemeColorIndex =2
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+            End
+        End
+        Begin Section
+            Height =240
+            Name ="Detail"
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =735
+                    Width =885
+                    ColumnWidth =2310
+                    TabIndex =1
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="dealFAID"
+                    ControlSource ="FAID"
+                    ValidationRule ="Is Not Null"
+                    ValidationText ="FAID may be changed but cannot be left blank"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =735
+                    LayoutCachedWidth =1620
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6300
+                    Width =4380
+                    TabIndex =7
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="dealShortDesc"
+                    ControlSource ="dealShortDesc"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =6300
+                    LayoutCachedWidth =10680
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =13935
+                    Top =240
+                    Width =930
+                    Height =0
+                    ColumnWidth =900
+                    TabIndex =16
+                    ForeColor =1643706
+                    Name ="clientRef"
+                    ControlSource ="clientRef"
+                    StatusBarText ="link to clients table"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =13935
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =14865
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =17610
+                    Top =240
+                    Width =1050
+                    Height =0
+                    ColumnWidth =1440
+                    TabIndex =17
+                    ForeColor =1643706
+                    Name ="dealID"
+                    ControlSource ="dealID"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =17610
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =18660
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =95
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =13935
+                    Width =930
+                    TabIndex =11
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="dealEstDelDate"
+                    ControlSource ="dealEstDelDate"
+                    Format ="Short Date"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =13935
+                    LayoutCachedWidth =14865
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2355
+                    Width =994
+                    TabIndex =3
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="dealEnteredDate"
+                    ControlSource ="dealEnteredDate"
+                    Format ="Short Date"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =2355
+                    LayoutCachedWidth =3349
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =5310
+                    Width =930
+                    TabIndex =6
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="dealLPAFDue"
+                    ControlSource ="dealLPAFDue"
+                    Format ="Short Date"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =5310
+                    LayoutCachedWidth =6240
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =4740
+                    Width =510
+                    TabIndex =5
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="ProposalTimeline"
+                    ControlSource ="ProposalTimeline"
+                    Format ="General Number"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =4740
+                    LayoutCachedWidth =5250
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GroupTable =5
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =105
+                    Width =479
+                    Height =240
+                    Name ="EditBtn"
+                    Caption ="Edit"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Segoe UI"
+                    ControlTipText ="Find Next"
+                    GroupTable =5
+                    LeftPadding =105
+                    TopPadding =0
+                    RightPadding =120
+                    BottomPadding =0
+
+                    LayoutCachedLeft =105
+                    LayoutCachedWidth =584
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    LayoutGroup =1
+                    ForeThemeColorIndex =1
+                    UseTheme =1
+                    BackThemeColorIndex =2
+                    BorderThemeColorIndex =1
+                    HoverThemeColorIndex =2
+                    PressedThemeColorIndex =2
+                    HoverForeThemeColorIndex =1
+                    PressedForeThemeColorIndex =1
+                    GroupTable =5
+                    Shadow =5
+                    Overlaps =1
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =14895
+                    Width =1230
+                    TabIndex =12
+                    ForeColor =0
+                    ConditionalFormat = Begin
+                        0x0100000076000000010000000000000002000000000000000a00000001000000 ,
+                        0x00000000a3e1cc00000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x22004100770061007200640065006400220000000000
+                    End
+                    Name ="dealOutcome"
+                    ControlSource ="dealOutcome"
+                    RowSourceType ="Value List"
+                    RowSource ="Awarded;Lost;Dead"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =14895
+                    LayoutCachedWidth =16125
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    ConditionalFormat14 = Begin
+                        0x01000100000000000000020000000100000000000000a3e1cc00090000002200 ,
+                        0x4100770061007200640065006400220000000000000000000000000000000000 ,
+                        0x0000000000
+                    End
+                    GroupTable =5
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =3405
+                    Width =1275
+                    TabIndex =4
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="transTypeRef"
+                    ControlSource ="transTypeRef"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT lookup_transTypes.TransTypeID, lookup_transTypes.TransType FROM lookup_tr"
+                        "ansTypes WHERE (((lookup_transTypes.TransType)<>\"schedule\")) ORDER BY lookup_t"
+                        "ransTypes.TransType;"
+                    ColumnWidths ="0;2880"
+                    StatusBarText ="link to lookup_transTypes table"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =3405
+                    LayoutCachedWidth =4680
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =95
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =17610
+                    Width =1050
+                    TabIndex =14
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="dealOutcomeDate"
+                    ControlSource ="dealOutcomeDate"
+                    Format ="General Date"
+                    FontName ="Segoe UI"
+                    ConditionalFormat = Begin
+                        0x0100000076000000010000000000000002000000000000000a00000001000000 ,
+                        0x00000000e6edd700000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x22004100770061007200640065006400220000000000
+                    End
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =17610
+                    LayoutCachedWidth =18660
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    ConditionalFormat14 = Begin
+                        0x01000100000000000000020000000100000000000000e6edd700090000002200 ,
+                        0x4100770061007200640065006400220000000000000000000000000000000000 ,
+                        0x0000000000
+                    End
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =105
+                    Top =240
+                    Width =479
+                    Height =0
+                    Name ="EmptyCell91"
+                    GroupTable =5
+                    LeftPadding =105
+                    TopPadding =0
+                    RightPadding =120
+                    BottomPadding =0
+                    LayoutCachedLeft =105
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =584
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =735
+                    Top =240
+                    Width =885
+                    Height =0
+                    Name ="EmptyCell92"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =735
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =1620
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =2355
+                    Top =240
+                    Width =994
+                    Height =0
+                    Name ="EmptyCell93"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =2355
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =3349
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =3405
+                    Top =240
+                    Width =1275
+                    Height =0
+                    Name ="EmptyCell94"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =3405
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =4680
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =4740
+                    Top =240
+                    Width =510
+                    Height =0
+                    Name ="EmptyCell95"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =4740
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =5250
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =5310
+                    Top =240
+                    Width =930
+                    Height =0
+                    Name ="EmptyCell96"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =5310
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =6240
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =6300
+                    Top =240
+                    Width =4380
+                    Height =0
+                    Name ="EmptyCell97"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =6300
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =10680
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =14895
+                    Top =240
+                    Width =1230
+                    Height =0
+                    Name ="EmptyCell99"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =14895
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =16125
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =16185
+                    Top =240
+                    Width =1395
+                    Height =0
+                    Name ="EmptyCell100"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =16185
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =17580
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =16185
+                    Width =1395
+                    TabIndex =13
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="dealSchedNum"
+                    ControlSource ="dealSchedNum"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =16185
+                    LayoutCachedWidth =17580
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =18660
+                    Top =240
+                    Width =615
+                    Height =0
+                    Name ="EmptyCell123"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =18660
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =19275
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =15
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin OptionButton
+                    OverlapFlags =93
+                    Left =18870
+                    Width =405
+                    TabIndex =15
+                    Name ="ExcludeFromKPI"
+                    ControlSource ="ExcludeFromKPI"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =18870
+                    LayoutCachedWidth =19275
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =16
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =18660
+                    Width =210
+                    Name ="EmptyCell134"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =18660
+                    LayoutCachedWidth =18870
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =15
+                    ColumnEnd =15
+                    LayoutGroup =1
+                    GroupTable =5
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =1680
+                    Width =615
+                    TabIndex =2
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="DealLOEx"
+                    ControlSource ="DealLOEx"
+                    ValidationRule ="Is Not Null"
+                    ValidationText ="FAID may be changed but cannot be left blank"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =1680
+                    LayoutCachedWidth =2295
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =1680
+                    Top =240
+                    Width =615
+                    Height =0
+                    Name ="EmptyCell148"
+                    GroupTable =5
+                    TopPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =1680
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =2295
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =11970
+                    Width =1260
+                    TabIndex =9
+                    BackColor =16777215
+                    Name ="LOTotal"
+                    ControlSource ="=IIf([ExcludeFromKPI]=-1,0,([dealGrandTotal]*[lovolumepct]))"
+                    Format ="$#,##0.00;($#,##0.00)"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =11970
+                    LayoutCachedWidth =13230
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    ForeThemeColorIndex =2
+                    ForeShade =50.0
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                    CurrencySymbol ="$"
+                End
+                Begin EmptyCell
+                    Left =11970
+                    Top =240
+                    Width =1260
+                    Height =0
+                    Name ="EmptyCell156"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =11970
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =13230
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =87
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =13230
+                    Width =705
+                    TabIndex =10
+                    BackColor =16777215
+                    Name ="LOVolumePct"
+                    ControlSource ="LOVolumePct"
+                    Format ="Percent"
+                    FontName ="Calibri"
+                    OnChange ="[Event Procedure]"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =13230
+                    LayoutCachedWidth =13935
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =10
+                    ColumnEnd =10
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    ThemeFontIndex =1
+                    ForeThemeColorIndex =2
+                    ForeShade =75.0
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                End
+                Begin EmptyCell
+                    Left =13230
+                    Top =240
+                    Width =705
+                    Height =0
+                    Name ="EmptyCell164"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =13230
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =13935
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =10
+                    ColumnEnd =10
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    SpecialEffect =0
+                    OverlapFlags =87
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =10710
+                    Width =1260
+                    TabIndex =8
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="Text166"
+                    ControlSource ="dealGrandTotal"
+                    Format ="$#,##0.00;($#,##0.00)"
+                    FontName ="Segoe UI"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+
+                    LayoutCachedLeft =10710
+                    LayoutCachedWidth =11970
+                    LayoutCachedHeight =240
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    BorderThemeColorIndex =1
+                    BorderShade =85.0
+                    GridlineThemeColorIndex =1
+                    GridlineShade =65.0
+                    GroupTable =5
+                    CurrencySymbol ="$"
+                End
+                Begin EmptyCell
+                    Left =10710
+                    Top =240
+                    Width =1260
+                    Height =0
+                    Name ="EmptyCell171"
+                    GroupTable =5
+                    LeftPadding =0
+                    TopPadding =0
+                    RightPadding =0
+                    BottomPadding =0
+                    LayoutCachedLeft =10710
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =11970
+                    LayoutCachedHeight =240
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    BackThemeColorIndex =1
+                    BackShade =85.0
+                    GroupTable =5
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =16249583
+            Name ="FormFooter"
+        End
+    End
+End
+CodeBehindForm
+' See "ProposalsSummary_sub.cls"

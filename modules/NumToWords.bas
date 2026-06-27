@@ -1,0 +1,146 @@
+﻿Attribute VB_Name = "NumToWords"
+Option Compare Database
+
+
+ Function SayNumber(ByVal n As Currency) As String
+
+     Const Thousand = 1000@
+     Const Million = Thousand * Thousand
+     Const Billion = Thousand * Million
+     Const Trillion = Thousand * Billion
+
+     If (n = 0@) Then SayNumber = "zero": Exit Function
+
+     Dim Buf As String: If (n < 0@) Then Buf = "negative " Else Buf = ""
+     Dim Frac As Currency: Frac = Abs(n - Fix(n))
+     If (n < 0@ Or Frac <> 0@) Then n = Abs(Fix(n))
+     Dim AtLeastOne As Integer: AtLeastOne = n >= 1
+
+     If (n >= Trillion) Then
+       '  Debug.Print N
+         Buf = Buf & SayNoDigitGroup(Int(n / Trillion)) & " trillion"
+         n = n - Int(n / Trillion) * Trillion
+         If (n >= 1@) Then Buf = Buf & " "
+     End If
+
+     If (n >= Billion) Then
+        ' Debug.Print N
+         Buf = Buf & SayNoDigitGroup(Int(n / Billion)) & " billion"
+         n = n - Int(n / Billion) * Billion
+         If (n >= 1@) Then Buf = Buf & " "
+     End If
+
+     If (n >= Million) Then
+        ' Debug.Print N
+         Buf = Buf & SayNoDigitGroup(n \ Million) & " million"
+         n = n Mod Million
+         If (n >= 1@) Then Buf = Buf & " "
+     End If
+
+     If (n >= Thousand) Then
+        ' Debug.Print N
+         Buf = Buf & SayNoDigitGroup(n \ Thousand) & " thousand"
+         n = n Mod Thousand
+         If (n >= 1@) Then Buf = Buf & " "
+     End If
+
+     If (n >= 1@) Then
+        ' Debug.Print N
+         Buf = Buf & SayNoDigitGroup(n)
+     End If
+
+     If (Frac = 0@) Then
+         Buf = Buf
+     ElseIf (Int(Frac * 100@) = Frac * 100@) Then
+         If AtLeastOne Then Buf = Buf & " and "
+         Buf = Buf & Format$(Frac * 100@, "00") & "/100"
+     Else
+         If AtLeastOne Then Buf = Buf & " and "
+         Buf = Buf & Format$(Frac * 10000@, "0000") & "/10000"
+     End If
+
+     SayNumber = Buf
+ End Function
+
+ Private Function SayNoDigitGroup(ByVal n As Integer) As String
+
+     Const Hundred = " hundred"
+     Const One = "one"
+     Const Two = "two"
+     Const Three = "three"
+     Const Four = "four"
+     Const Five = "five"
+     Const Six = "six"
+     Const Seven = "seven"
+     Const Eight = "eight"
+     Const Nine = "nine"
+     Dim Buf As String: Buf = ""
+     Dim Flag As Integer: Flag = False
+
+     Select Case (n \ 100)
+         Case 0: Buf = "": Flag = False
+         Case 1: Buf = One & Hundred: Flag = True
+         Case 2: Buf = Two & Hundred: Flag = True
+         Case 3: Buf = Three & Hundred: Flag = True
+         Case 4: Buf = Four & Hundred: Flag = True
+         Case 5: Buf = Five & Hundred: Flag = True
+         Case 6: Buf = Six & Hundred: Flag = True
+         Case 7: Buf = Seven & Hundred: Flag = True
+         Case 8: Buf = Eight & Hundred: Flag = True
+         Case 9: Buf = Nine & Hundred: Flag = True
+     End Select
+
+     If (Flag <> False) Then n = n Mod 100
+     If (n > 0) Then
+         If (Flag <> False) Then Buf = Buf & " "
+     Else
+         SayNoDigitGroup = Buf
+         Exit Function
+     End If
+
+     Select Case (n \ 10)
+         Case 0, 1: Flag = False
+         Case 2: Buf = Buf & "twenty": Flag = True
+         Case 3: Buf = Buf & "thirty": Flag = True
+         Case 4: Buf = Buf & "forty": Flag = True
+         Case 5: Buf = Buf & "fifty": Flag = True
+         Case 6: Buf = Buf & "sixty": Flag = True
+         Case 7: Buf = Buf & "seventy": Flag = True
+         Case 8: Buf = Buf & "eighty": Flag = True
+         Case 9: Buf = Buf & "ninety": Flag = True
+     End Select
+
+     If (Flag <> False) Then n = n Mod 10
+     If (n > 0) Then
+         If (Flag <> False) Then Buf = Buf & "-"
+     Else
+         SayNoDigitGroup = Buf
+         Exit Function
+     End If
+
+     Select Case (n)
+         Case 0:
+         Case 1: Buf = Buf & One
+         Case 2: Buf = Buf & Two
+         Case 3: Buf = Buf & Three
+         Case 4: Buf = Buf & Four
+         Case 5: Buf = Buf & Five
+         Case 6: Buf = Buf & Six
+         Case 7: Buf = Buf & Seven
+         Case 8: Buf = Buf & Eight
+         Case 9: Buf = Buf & Nine
+         Case 10: Buf = Buf & "ten"
+         Case 11: Buf = Buf & "eleven"
+         Case 12: Buf = Buf & "twelve"
+         Case 13: Buf = Buf & "thirteen"
+         Case 14: Buf = Buf & "fourteen"
+         Case 15: Buf = Buf & "fifteen"
+         Case 16: Buf = Buf & "sixteen"
+         Case 17: Buf = Buf & "seventeen"
+         Case 18: Buf = Buf & "eighteen"
+         Case 19: Buf = Buf & "nineteen"
+     End Select
+
+     SayNoDigitGroup = Buf
+
+ End Function
