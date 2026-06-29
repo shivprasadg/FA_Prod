@@ -1,0 +1,2631 @@
+﻿-------------------------------------
+Beginning build from Source
+ATLAAS_Shiv_v1.accdb
+VCS Version 4.1.2
+Full Path: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb
+Export Folder: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\
+6/27/2026 7:49:44 AM
+-------------------------------------
+Saving backup of original database...
+Saved as ATLAAS_Shiv_v1_VCSBackup1.accdb.
+Created blank database for import. (v12)
+Removing non built-in references...
+  Removed DAO
+  Removed stdole
+Scanning source files...
+No vbe forms source files found.
+No proj properties source files found.
+No saved specs source files found.
+No table data source files found.
+No table data macros source files found.
+-------------------------------------
+-------------------------------------
+Importing db connections...   
+  db-connection.json
+[1]
+-------------------------------------
+Importing project...          
+  project.json
+[1]
+-------------------------------------
+Importing vb project...       
+  vbe-project.json
+[1]
+-------------------------------------
+Importing vbe references...   
+  vbe-references.json
+[1]
+-------------------------------------
+Importing modules...          
+  ATF_Functions.bas
+  ATLAASMessager.bas
+  BillingReports.bas
+  BTF Module.bas
+  CheckIfAppIsRunning.bas
+  CheckUsers.bas
+  Concatenate.bas
+  Contants_Enums.bas
+  ControlTips.bas
+  ControlVBAReferences.bas
+  CustomFunctions.bas
+  DailyRoutines.bas
+  Dialog.bas
+  DocumentFunctions.bas
+  Emailer.bas
+  Excelexporter.bas
+  ExitFunctions.bas
+  Export2Excel.bas
+  FAModule1.bas
+  FAModule2.bas
+  FileSearcher.bas
+  Geocoding.bas
+  GetExcelData.bas
+  GroupFunctions.bas
+  InterimFuctions.bas
+  Location_Functions.bas
+  LogEventsSupport.bas
+  LOMenuLog.bas
+  MassModFunctions.bas
+  ModFader.bas
+  modFieldActions.bas
+  Module1.bas
+  modWindowsAPI.bas
+  NumToWords.bas
+  Paymetadjustments.bas
+  PixelsToTwips.bas
+  PowerShellFunctions.bas
+  Printers.bas
+  RemarketingFunctions.bas
+  RenameODBConnection.bas
+  SchSumRptTLSPDF.bas
+  Security.bas
+  SetStatus_Misc.bas
+  SetWindowSizePos.bas
+  SharePoint.bas
+  SQLServerCalls.bas
+  Tax_Functions.bas
+  TextImporter.bas
+  TFR_Functions.bas
+  TreeView_Functions.bas
+  Trigonometry.bas
+  Trust_Synd_Email_Funtions.bas
+  Userlog.bas
+  VINDecoderDL1.bas
+  WindowSizing.bas
+  WindowsSizingMetrics.bas
+  clsFieldEngine.cls
+  WindoSizeMetrics.cls
+[58]
+-------------------------------------
+Importing commandbars...      
+  FormsCmd.json
+  mnuExit.json
+  mnuFormPopup.json
+  mnuFormToolbar.json
+  mnuPreviewPrint.json
+  mnuReportPopup.json
+  MyTreeviewContextMenu.json
+  PrintMe.json
+  Sample Menu Bar.json
+  SortClip.json
+[10]
+-------------------------------------
+Importing shared images...    
+  1_1_LtGrey1_CornerShadow.json
+  1_1_WhiteShadow.json
+  1_2_WhiteShadow.json
+  1_3_WhiteShadow.json
+  1_ATLAASGlobeLogo.json
+  1_Auto_Logo0.json
+  1_DkBlue_Shadow.json
+  1_Excel-365-Green.json
+  1_LtGrey1_CornerShadow.json
+  1_LtGrey1_VertShadow.json
+  1_LtGrey2_Shadow.json
+  1_WhiteShadow.json
+  2_3_WhiteShadow.json
+  2_ATLAASGlobeLogo.json
+  2_Auto_Logo0.json
+  2_LtGrey2_Shadow.json
+  2_WhiteShadow.json
+  3_3_WhiteShadow.json
+  3_Auto_Logo0.json
+  3_LtGrey2_Shadow.json
+  3_WhiteShadow.json
+  4_Auto_Logo0.json
+  4_LtGrey2_Shadow.json
+  5_Auto_Logo0.json
+  5_LtGrey2_Shadow.json
+  6_LtGrey2_Shadow.json
+  7_LtGrey2_Shadow.json
+  8_LtGrey2_Shadow.json
+  ATLAASGlobeLogo.json
+  ATLAASLogoNew.json
+  Auto_Logo0.json
+  CloneSchNGroup.json
+  Command22.json
+  DkBlue_Shadow.json
+  DkGreen_Shadow.json
+  Documents-Ltblue.json
+  DrkRedOnLtGrey_Shadow.json
+  Excel-365-Green.json
+  Excel-Green.json
+  GreyOnGrey_Shadow.json
+  LtBlue_Shadow.json
+  LtGreen_Shadow.json
+  LtGrey1_CornerShadow.json
+  LtGrey1_VertShadow.json
+  LtGrey2_Shadow.json
+  LtGreyOnGrey_Shadow.json
+  MedBlueOnLtGrey_Shadow.json
+  MedBlue_Shadow.json
+  Orange_Shadow.json
+  Red_Dark_Shadow.json
+  WhiteBox_Shadow.json
+  WhiteShadow.json
+[52]
+-------------------------------------
+Importing themes...           
+  Office Theme.thmx
+[1]
+-------------------------------------
+Importing db properties...    
+  dbs-properties.json
+[1]
+-------------------------------------
+Importing imex specs...       
+  1.json
+  10.json
+  101.json
+  2.json
+  3.json
+  31.json
+  4.json
+  5.json
+  6.json
+  7.json
+  8.json
+  81.json
+  9.json
+  91.json
+  Spec 83.json
+  Temp spec.json
+  Temp spec0.json
+[17]
+-------------------------------------
+Importing tables...           
+  AddToGroupPO_WorkTable.xml
+  AIMDataTemp.xml
+  ATFWorkTable.xml
+  Bills_Batch_WorkTable.xml
+  BTFTemp.xml
+  Bulk_Update_WorkTable.xml
+  Bulk_Update_WorkTable_Child.xml
+  BuyersOrder_MMod_Work.xml
+  BuyersProposal_WorkTable.xml
+  CloneSchGrp_WorkTable.xml
+  CofATemp.xml
+  ComboHelper.xml
+  CostcoDataTemp.xml
+  Cost_Type_Excludes.xml
+  CustomFields.xml
+  CustomFields_Values.xml
+  DecalCost_WorkTable.xml
+  DrawUnits_WorkTable.xml
+  EXITOptions_WorkTable.xml
+  ExitTermTemp.xml
+  FleetStudyImport_Work.xml
+  Forms_Reports.xml
+  GroupAdd_WorkTable.xml
+  GroupFormAdd_WorkTable.xml
+  InspLinkTemp.xml
+  LastWriteReport.xml
+  LocationsCountyTemp.xml
+  LocationsTemp.xml
+  Make Types.xml
+  MakeModelManagerParts_WorkTable.xml
+  MakeModelManager_WorkTable.xml
+  MandRData_Temp.xml
+  MoveUnits_WorkTable.xml
+  NIS_WorkTable.xml
+  OpenVendorDataTemp.xml
+  Paste Errors.xml
+  PenskeDataTemp.xml
+  PerDiemFactors.xml
+  Pick_DrawUnits_WorkTable.xml
+  Pick_MoveUnits_WorkTable.xml
+  Pick_RMKTUnits_WorkTable.xml
+  Pick_Schedule_WorkTable.xml
+  Pick_Units_WorkTable.xml
+  RALTemp1.xml
+  ReMarketingBuyOut_WorkTable.xml
+  RemarketingSales_WorkTable.xml
+  ReportStartEnd_SoldUnits.xml
+  RMKTBulk_Update_WorkTable.xml
+  RMKTInvoiceRequestTable.xml
+  RMKTInvoiceRequestTemp.xml
+  RMKTUnitTitleLog_Work.xml
+  RMKT_MMod_Work.xml
+  Rmkt_WrongStatus.xml
+  ScheduleHealthCheckWorkTable.xml
+  Schedule_Group_WorkTable.xml
+  SchIDWorkTable.xml
+  StagingVendorTracking.xml
+  Table_ImportErrors.xml
+  Table_ImportErrors1.xml
+  TaxBaseTemp.xml
+  TaxCitiesTemp.xml
+  TaxExceptionsTemp.xml
+  TFR_Work.xml
+  TitleLogNumTemp.xml
+  TitleLogStateTemp.xml
+  TitleRequestTemp.xml
+  TrailerData_Temp.xml
+  UnitDescByGroupTemp.xml
+  UnitGroup_WorkTable.xml
+  UnitInsp_WorkTable.xml
+  UnitsFilter.xml
+  UnitsFormFilter.xml
+  UnitStatus.xml
+  Units_Temp.xml
+  UnitTitleLog_Work.xml
+  UnitWorkTable.xml
+  Unit_Vin_Remarket_Temp.xml
+  Unit_Vin_temp.xml
+  _CACHE_FindAndReplace.xml
+  _LOG_FindAndReplace.xml
+  _LOG_FindAndReplace_xref.xml
+  ATF.json
+  ATFChildPartSpec.json
+  ATFContacts.json
+  ATFGroupSpec.json
+  ATFRevT.json
+  ATFScheduleRevisions.json
+  ATFScheduleSpec.json
+  ATFUnitSpec.json
+  ATF_ChangeReasons.json
+  ATF_FAID_ActiveUnitProfiles.json
+  ATF_FAID_FieldMatrix.json
+  ATF_FAID_Sessions.json
+  ATF_Keys.json
+  ATF_LastChangeIndx.json
+  ATF_Report_AllowancesActive.json
+  ATF_Report_BillingActive.json
+  ATF_Report_ChildPartsActive.json
+  ATF_Report_EquipmentActive.json
+  ATF_Report_GuarantorsActive.json
+  ATF_Report_LeaseActive.json
+  ATF_Report_SchNotesActive.json
+  ATF_Revisions.json
+  ATF_UnitLevelHash.json
+  ATLAASNotifications.json
+  AttachedFiles.json
+  BankContacts.json
+  BankPAI.json
+  BankRatesShare.json
+  Banks.json
+  BaseClientUnits.json
+  Base_ChildParts.json
+  BillAdjT.json
+  BillingFees.json
+  BillingRules.json
+  BillingRulesClient.json
+  BillMakerDates.json
+  Bills.json
+  Bills_UnitLastBilledDates.json
+  Buyer.json
+  Buyers.json
+  BuyersProposalUnits.json
+  BuyersWhoBought_A.json
+  ChildParts.json
+  ChildPart_Cost_OEC_summed.json
+  CLASS.json
+  ClientAcctFirm.json
+  ClientAliasNames.json
+  ClientDivisions.json
+  ClientGroups.json
+  Clients.json
+  ClientWorkTable.json
+  Client_FleetList.json
+  Client_FleetList_MPG.json
+  CMPVerticals.json
+  CONCESSION.json
+  Contacts.json
+  ContactsLinkedToLocation.json
+  ContactsLinkedToLocationTypes.json
+  ContactType.json
+  ControllingProcess.json
+  Cost_ChildParts.json
+  Cost_ChildParts_Types.json
+  Cost_ChildParts_Types0.json
+  Cost_ChildParts_Types2.json
+  Cost_ChildParts_Types3.json
+  Country.json
+  Deals.json
+  DepartmentContacts.json
+  DocLinks.json
+  Documentation.json
+  DocumentSignature.json
+  DocumentType.json
+  DrawDownInvoiceBalance.json
+  DrawDownInvoices.json
+  DrawDowns.json
+  DrawDowns_Groups.json
+  DrawDowns_Units_All.json
+  DrawDownType.json
+  ElectronicTitleRequest.json
+  Emps.json
+  EntryType.json
+  ExitOptionsActiveRent.json
+  EXITOptionsGAPReport.json
+  ExitOptionsGroup.json
+  ExitOptionsGroup_EOL.json
+  ExitOptionsGroup_Local.json
+  EXITOptionsNewOldSchGrp.json
+  EXITOptionsNewOldUnits.json
+  ExitOptionsTermPenaltyChanges.json
+  Expenses.json
+  FABills.json
+  FleetStudyImportBase.json
+  FSL.json
+  GroupFinalizedTracker.json
+  GroupFinalizedTrackerFields.json
+  InterimFunding_Days_Rate_Group.json
+  Invoices.json
+  LastMilesReportedAll.json
+  LastTitleEntry.json
+  LaunchReportsList.json
+  LeasedScheduleGroupUnit.json
+  LocationAddresses.json
+  LocationChangeHistory.json
+  LocationNames.json
+  Locations.json
+  Lookup_BillType.json
+  LookUp_ChildPartMake.json
+  LookUp_ChildPartModel.json
+  LookUp_ChildPartType.json
+  LookUp_ClientType.json
+  Lookup_EnginePower.json
+  Lookup_EngineType.json
+  LookUp_EquipmentType.json
+  LookUp_ExitOptionTypes.json
+  Lookup_ExpenseTypes.json
+  Lookup_FileTypes.json
+  LookUp_GroupMakes.json
+  LookUp_GroupModels.json
+  LookUp_GroupSubTypes.json
+  LookUp_GroupTypes.json
+  LookUp_Industry.json
+  LookUp_LeaseProfile.json
+  Lookup_LeaseStartsOn.json
+  LookUp_LeaseTypes.json
+  Lookup_PartClasses.json
+  Lookup_PartTypes.json
+  LookUp_ReimburseStatus.json
+  Lookup_RMKTDisposition.json
+  LookUp_Salutation.json
+  LookUp_States.json
+  LookUp_TitleReasons.json
+  LookUp_Transmissions.json
+  LookUp_TransTypes.json
+  LookUp_UnitAxle.json
+  LookUp_UnitConfiguration.json
+  LookUp_UnitDesc.json
+  LookUp_UnitMakes.json
+  LookUp_UnitModels.json
+  LookUp_UnitStatus.json
+  LookUp_UnitSubTypes.json
+  LookUp_UnitTypes.json
+  LookUp_UnitUOM.json
+  LOREG.json
+  MandRData_BETL.json
+  MilesFromBuyerToUnits_R.json
+  MLAmends.json
+  MstrLease.json
+  NADAResults.json
+  NAICScodes.json
+  NewDekraInspections.json
+  OBC.json
+  Open_Email_Tracking.json
+  PerDeimSurrenderExceptions.json
+  PerDiem_Days_Rate_Group.json
+  PerDiem_Days_Rate_Unit.json
+  PurchaseOrder.json
+  PurchaseOrderStatus.json
+  PurchaseOrderType.json
+  RALConditions.json
+  Reasons.json
+  RecallCampaign.json
+  Recalls.json
+  RecallUnits.json
+  RemarketExpense.json
+  RemarketExpenseType.json
+  RemarketingReportAllUnits.json
+  RemarketUnits.json
+  RemarketWarranty.json
+  RemarketWarrantyType.json
+  RentType.json
+  ReportsRanLog.json
+  ReqInvMSO_Tracking.json
+  Rmkt.json
+  RmktBills.json
+  RmktInvoiceRequestTbl.json
+  RmktPreferredUnitTypes.json
+  RMKT_BuyersOrders.json
+  Salesperson.json
+  Schedule.json
+  ScheduleAmends.json
+  ScheduleCoLessee.json
+  SchGrp.json
+  States.json
+  SUFConditions.json
+  Switchboard Items.json
+  TaxCities.json
+  TaxCitiesBase.json
+  TaxCitiesExceptions.json
+  TaxCounties.json
+  TaxCountiesBase.json
+  TaxCountiesExceptions.json
+  TaxCountries.json
+  TaxExceptionsNAICS.json
+  TaxExceptionType.json
+  TaxPostalCodes.json
+  TaxSpecialDistrictBase.json
+  TaxSpecialDistrictExceptions.json
+  TaxSpecialDistricts.json
+  TaxStates.json
+  TaxStatesBase.json
+  TaxStatesExceptions.json
+  TaxType.json
+  TaxZipFipsMatrix.json
+  tbl_EmpAccessDesc.json
+  TBL_Employees.json
+  tbl_UserlogIN.json
+  tbl_UserlogOUT.json
+  TFR_1.json
+  TFR_2.json
+  TrackedUnitsRentProfile.json
+  TrackingSheetChangedDatesLog.json
+  TrailerMilesHours.json
+  TrustedUrls.json
+  UnitClientOdoHourReads.json
+  UnitDeliveryTracking.json
+  UnitEvents.json
+  UnitExitOption.json
+  UnitHistory.json
+  UnitInspectionResults.json
+  UnitInspections.json
+  UnitInspectionTypes.json
+  UnitMoveOrder.json
+  UnitMoveOrderMatrix.json
+  UnitNotes.json
+  UnitRecalls.json
+  Units.json
+
+-------------------------------------
+ERROR: 3626 - The operation failed. There are too many indexes on table 'Units'. Delete some of the indexes on the table and try the operation again.
+Source: clsDbTableDef.ImportLinkedTable
+-------------------------------------
+  UnitTitleHistoryLastEntry.json
+  UnitTitleHistoryLastRecv.json
+  UnitTitleHistoryLastSent.json
+  UnitTitleLog.json
+  UnitTotalOEC.json
+  UnitVinDecoder.json
+  UnitVinDetails.json
+  UnitVINResults.json
+  VendorContacts.json
+  VendorNotes.json
+  Vendors.json
+  VendorTypes.json
+  VINDecodeEngineMatrix.json
+  VINDecodeErrors.json
+  VinYear.json
+  vw_AssigneeActivity.json
+  vw_ATFHashCheck.json
+  vw_ATFKeys.json
+  vw_ATFRevSchedule.json
+  vw_ATFRev_Leesee.json
+  vw_ATF_Active_Profile.json
+  vw_ATF_AllSpecs_Master.json
+  vw_ATF_Avail_Signed_FAID.json
+  vw_ATF_LastChange.json
+  vw_ATF_MakeScheduleSnapShot.json
+  vw_ATF_ReportBaseActive.json
+  vw_ATF_RevATF.json
+  vw_ATF_RevBase.json
+  vw_ATF_RevChildParts.json
+  vw_ATF_RevGroups.json
+  vw_ATF_RevGuarantors.json
+  vw_ATF_RevInstructions.json
+  vw_ATF_RevUnits.json
+  vw_ATF_SF_DealTypes.json
+  vw_ATF_SF_Keys.json
+  vw_ATF_UnitLevelHashCheck.json
+  vw_AuditUnits.json
+  vw_BankBill.json
+  vw_BankBillReport.json
+  vw_BankBill_Batch.json
+  vw_BillMakerPrevBills.json
+  vw_BillMakerUnits.json
+  vw_BillsStaleMissing_Batch.json
+  vw_BookValue.json
+  vw_BuyersOrder.json
+  vw_BuyersOrderUnits.json
+  vw_BuyOutCalcUnit.json
+  vw_CCSZ_Lookup.json
+  vw_ClientDeals.json
+  vw_ClientFleetList.json
+  vw_ClientGroup_MatchedClients.json
+  vw_CofABase.json
+  vw_CustDelvReportBase.json
+  vw_CustDelvReportFinal.json
+  vw_CustDelvReportSummed.json
+  vw_CustodianTitleTrust1.json
+  vw_CustodianTitleTrust2.json
+  vw_CustodianTitleTrustReLeasedUnits.json
+  vw_CustomerDeliveryReport.json
+  vw_CustomerDeliveryReportSummary.json
+  vw_DrawDowns_Invoices.json
+  vw_DrawDowns_Units.json
+  vw_EconoProfileGroup.json
+  vw_EconoProfileSchedule.json
+  vw_EconoProfileUnit.json
+  vw_EOLDashboard.json
+  vw_EXchangeITDates.json
+  vw_ExitAMG.json
+  vw_ExitMilesReport.json
+  vw_ExitOptionHistory.json
+  vw_ExitReport0.json
+  vw_ExtendLeases.json
+  vw_FABill_Base.json
+  vw_FAID_Hash.json
+  vw_FAID_RevAllBase.json
+  vw_FAID_RevBase.json
+  vw_FAID_RevChildParts.json
+  vw_FAID_RevChildPartsGrouped.json
+  vw_FAID_RevEconomics.json
+  vw_FAID_RevGroupUnion.json
+  vw_FAID_RevMoveGrps.json
+  vw_FAID_RevMoveGrpsGrouped.json
+  vw_FAID_RevRentGrouped.json
+  vw_FAID_RevRents.json
+  vw_FAID_RevResidual.json
+  vw_FAID_RevResidualGrouped.json
+  vw_FAID_RevSchedule.json
+  vw_FAID_RevScheduleUnion.json
+  vw_FAID_RevTerms.json
+  vw_FAID_RevUnitSpec.json
+  vw_FAId_RevUnitSpecGrouped.json
+  vw_FAID_RevUnitVendor.json
+  vw_FAID_RevUnitVendorGrouped.json
+  vw_FiveKeys.json
+  vw_FleetList_OBC.json
+  vw_GroupBillingRules.json
+  vw_LastGroupSignOff.json
+  vw_LastParkedMove.json
+  vw_LeasedUnitsProfile.json
+  vw_LeasedUnitsProfile_Base.json
+  vw_LocationAddressMatrix.json
+  vw_LocationContacts.json
+  vw_LocationDistribution_Taxes.json
+  vw_LocationNames.json
+  vw_LocationNamesBase.json
+  vw_Locations.json
+  vw_LocationTaxes.json
+  vw_LocationTaxSales2.json
+  vw_Lookup_Clients.json
+  vw_OEC_Rents_LRF_Cost.json
+  vw_OPS_Report_Base.json
+  vw_OverMilesEmail.json
+  vw_OverMiles_ExceedsMPY.json
+  vw_PaymentAdj.json
+  vw_PayProceeds_Base.json
+  vw_PayProceeds_Base_Cparts.json
+  vw_PayProceeds_IfUnits.json
+  vw_PayProceeds_Interim_Header.json
+  vw_PayProceeds_Report.json
+  vw_PayProceeds_Summary.json
+  vw_PayProceeds_TotalProceeds.json
+  vw_PayProceeds_UnitParts_Union.json
+  vw_PayProceeds_Vendor_Header.json
+  vw_PerDiemInvoice.json
+  vw_PerDiemSurrender.json
+  vw_PerDiemSurrenderByLocation.json
+  vw_PerdiemSurrenderInvoice.json
+  vw_PerDiem_Batch.json
+  vw_PotentialBilling.json
+  vw_PotentialBillingPerDiem.json
+  vw_PotentialBillingSurrPerDiem.json
+  vw_PricingRecon_Curr.json
+  vw_PricingRecon_LPAF.json
+  vw_RALAttachment.json
+  vw_RALBase.json
+  vw_Recalls.json
+  vw_RecentEvents.json
+  vw_RegLocations.json
+  vw_ReLeasedUnits.json
+  vw_ReLeasedUnitsMatchedCost.json
+  vw_ReLeasedUnits_LastTitleHistory.json
+  vw_RemarketingReportAllUnits.json
+  vw_RentInvoice.json
+  vw_RentInvoiceBase.json
+  vw_RMKT_AvailbleUnits.json
+  vw_RMKT_BuyersOrdersWarranty.json
+  vw_RMKT_SUFHistory.json
+  vw_RvRealized.json
+  vw_ScheduleDates.json
+  vw_ScheduleHealthCheck.json
+  vw_ScheduleUnitDoc.json
+  vw_Sch_Grp_Units_ChildParts.json
+  vw_Sch_Grp_Units_Leased.json
+  vw_Sch_Grp_Units_Remarketing.json
+  vw_Sch_Grp_Units_TBReturned.json
+  vw_Sch_Grp_Units_Tracking.json
+  vw_SFI_GroupSpec.json
+  vw_SFI_SchDealSpec.json
+  vw_SFI_UnitSpec.json
+  vw_SFKeys.json
+  vw_SixKeys.json
+  vw_SixKeys_bUnits.json
+  vw_SUFReportAutoHauler.json
+  vw_SUFReportQuery.json
+  vw_SyndByState.json
+  vw_SyndicationBackLog.json
+  vw_Syndication_Validate_Base.json
+  vw_Syndication_Validate_Final.json
+  vw_TaxCitiesExceptionsQ.json
+  vw_TaxCountiesExceptionsQ.json
+  vw_TaxKeys.json
+  vw_TaxStatesExceptionsQ.json
+  vw_TaxTableRoot.json
+  vw_Tax_CityBaseQ.json
+  vw_Tax_CountyBaseQ.json
+  vw_Tax_StateBaseQ.json
+  vw_TFR_0.json
+  vw_TFR_TMT1.json
+  vw_TFR_TMT2.json
+  vw_TitleApp_Status.json
+  vw_TitleToCustodian_Pending.json
+  vw_TitleToCustodian_PendingINOUT.json
+  vw_UMP_Mileage.json
+  vw_UnitExtends.json
+  vw_UnitGroupHealth.json
+  vw_UnitHealth_Base.json
+  vw_UnitInspectionLast.json
+  vw_UnitLocationHealth.json
+  vw_UnitMileageProcessed.json
+  vw_UnitMoveDashboard.json
+  vw_UnitNeedMSOInvoice.json
+  vw_UnitReverseLookUp.json
+  vw_UnitStatus_ByYearDate.json
+  vw_Units_AutoHaulerPaired.json
+  vw_Units_TaxedOrExempt.json
+  vw_UnitType_Matrix.json
+  vw_UnitVinDetails.json
+  vw_VendorFundReport.json
+  vw_VinDecodedEngine.json
+  vw_VinDecodedEngineUnit.json
+  vw_VINsNotDecoded.json
+  vw_VMRS_Lookup.json
+  WorkOrderItems.json
+  WorkOrders.json
+  Zipcodes.json
+[512]
+-------------------------------------
+Importing queries...          
+  AcceptedDate_vs_InserviceDate_part1.bas
+  AcctRMKTInventoryReserveRpt.bas
+  AcctRMKTInventoryRpt.bas
+  AcctRMKTInventoryRpt_Part1.bas
+  AcqMiHrq.bas
+  ActiveClientSearch.bas
+  ActiveUnits_ByYear.bas
+  ActiveUnits_ByYearUnion.bas
+  addaddchild.bas
+  AddDealQuery.bas
+  AllLeasedUnitsAcceptedDate.bas
+  AllLeasedUnits_byAcceptedDate.bas
+  AllLeasedUnits_byInvoiceDate.bas
+  AllLeasedUnits_byLeaseDate.bas
+  AllLeasedUnits_Cost.bas
+  All_contacts.bas
+  AssetIDBySchID.bas
+  AssigneeBanks.bas
+  ATFMaxRevNo.bas
+  ATFrevq0.bas
+  ATFrevq2.bas
+  ATFScheduleRevisionsTemp.bas
+  ATFScheduleRevisions_Append.bas
+  ATF_ActiveReportBase.bas
+  ATF_ChildPartCost.bas
+  ATF_ContactsActive.bas
+  ATF_ContactsActive_Base.bas
+  atf_contacts_cansign.bas
+  ATF_FAID_ContactsMLSigners.bas
+  ATF_FAID_ContactsMLSignersBase.bas
+  ATF_FAID_REV_Check.bas
+  ATF_InsertUnit.bas
+  ATF_LastChange.bas
+  ATF_LastChangeIndx_old.bas
+  ATF_LeaseStructure.bas
+  ATF_ReportActive.bas
+  ATF_ReportActiveQ.bas
+  ATF_ReportBase.bas
+  ATF_ReportBaseActive.bas
+  ATF_ReportEquipment.bas
+  ATF_Report_Active_ContactControl.bas
+  ATF_Report_AllowancesActiveQ.bas
+  ATF_Report_BillingActiveQ.bas
+  ATF_Report_ChildPartsActiveQ.bas
+  ATF_Report_Contacts.bas
+  ATF_Report_ContactsActive.bas
+  ATF_Report_ContactsActive2.bas
+  ATF_Report_ContactsActive2Q.bas
+  ATF_Report_EquipmentActiveQ.bas
+  ATF_Report_LeaseActiveQ.bas
+  ATF_Report_SchNotesActiveQ.bas
+  ATF_Schedule_Group.bas
+  ATF_SFImporterQ.bas
+  ATF_SF_GroupProfile.bas
+  ATF_SF_ImportDeal.bas
+  ATF_SF_ScheduleProfile.bas
+  ATF_SF_UnitSpec.bas
+  ATF_UnitSpecCostRollup.bas
+  AvgPDDays.bas
+  Awarded_Deals_Client.bas
+  Axle_Update_MakeTable.bas
+  Axle_Update_PartA.bas
+  Axle_Update_PartB.bas
+  Axle_Update_Post.bas
+  BankAddresses.bas
+  BankBillAddq.bas
+  BankContractNumber.bas
+  BankCustEmails.bas
+  BankListAll.bas
+  BankPrimaryContact.bas
+  BankSchSummq.bas
+  BankTrustAllEmails.bas
+  BankTrustContactsEmails.bas
+  BankTrustEmails.bas
+  Bank_Assignee.bas
+  Bank_view_query.bas
+  BDFSSelq.bas
+  BDVOP_Excel0.bas
+  BDVOP_Excel1.bas
+  BDVOP_Excel2.bas
+  BillingRulesBase.bas
+  BillingRulesBase_Summary.bas
+  BillingRules_FeeLabels.bas
+  BillsByScheduleDate_Base.bas
+  BillsByScheduleDate_DaysMonths.bas
+  BillStEndq.bas
+  BillUnitq.bas
+  BillUnitq_PartA.bas
+  billunitselect.bas
+  BulkUpdate_UnitTaxes.bas
+  Bulk_Units_FAID_SCH.bas
+  Bulk_Units_FAID_SCH_StatusA.bas
+  Bulk_Update_PostToPortalA.bas
+  Bulk_Update_SelectedUnits.bas
+  Bulk_Update_SelectedUnits_Child.bas
+  Bulk_Update_SelectedUnits_SYND.bas
+  Buyer2Proposal_Query.bas
+  Buyer2UnitsMatchScore_Query.bas
+  BuyerOrderUnits.bas
+  BuyerProposalAutoStatus.bas
+  BuyerProposalLastActionDate.bas
+  BuyersContacts.bas
+  BuyersOrderAcct.bas
+  BuyersOrderMassMod1.bas
+  BuyersOrderUnits.bas
+  BuyersProposalBuyerCount.bas
+  BuyersProposalListAmount.bas
+  BuyersProposalSPCount.bas
+  BuyersProposalStatus_Last30.bas
+  BuyersProposalUnitCount.bas
+  BuyersProposalUnitCountDistinct.bas
+  BuyersProposalUnitCountSummed.bas
+  BuyersProposalUnitLocations.bas
+  BuyersProposalwTargetPrice.bas
+  ByYearTotals.bas
+  ByYear_UnitsAccepted.bas
+  ByYear_UnitsDelivered.bas
+  ByYear_UnitsInServiced.bas
+  ByYear_UnitsOffLease.bas
+  ByYear_UnitsOrdered-PO.bas
+  ByYear_UnitsTitled.bas
+  ByyyearTemp.bas
+  ChFilterLUq.bas
+  ChFilterq.bas
+  childdrdnq.bas
+  Childinv.bas
+  ChildInvPmtReq.bas
+  childPartQ.bas
+  ChildPartResidSummaryQ.bas
+  ChildPartSummaryQTLS.bas
+  ChildPartSummaryQuery.bas
+  ChildPart_Cost_OEC_Unit.bas
+  ChildPart_Orphans.bas
+  ChildSerNoq.bas
+  ChildSerq.bas
+  ChildTypeQ.bas
+  ckchildadds.bas
+  ClassTypeRecap.bas
+  ClearRmktBillReq.bas
+  Clear_WrongRmktstatus.bas
+  Client Unit Rent Request.bas
+  ClientContacts_Base.bas
+  ClientGroupFirstBLCDDate.bas
+  ClientGroup_LPAFSummary.bas
+  ClientGroup_MatchedClients.bas
+  ClientMasterLeasesTypeCount.bas
+  ClientMasterLeasesTypeCount_Summed.bas
+  ClientPrimaryContact.bas
+  Clientq.bas
+  Clients-FAID-Sch-UnitCount-Year.bas
+  ClientsFAUnits.bas
+  ClientsFAUnitsFirstOrder.bas
+  ClientsFAUnitsNonFAUnits.bas
+  ClientsList.bas
+  ClientsNonFAUnits.bas
+  Clients_FAID.bas
+  Clients_Grp_FAID.bas
+  Clients_Sch_Group_OEC_Part1.bas
+  Clients_Sch_Group_OEC_Part2.bas
+  Clients_with_Units_Address.bas
+  Clients_with_Units_Locations.bas
+  Client_Lease_Detail.bas
+  Client_Lease_Summary.bas
+  client_lookup.bas
+  Client_LPAF.bas
+  Client_TRUnits_Report.bas
+  COA_Signers_Unit.bas
+  CofAChildSub.bas
+  CofA_ChildParts.bas
+  CofA_Rent_OEC.bas
+  CofA_Report.bas
+  CofA_Report_A.bas
+  CofA_Report_Mass.bas
+  CofA_Report_Mass_old.bas
+  CofA_Report_Mass_Pre.bas
+  CofA_Report_Mass_Pre_Sch.bas
+  CofA_Report_Mass_Sch.bas
+  CofA_Report_Mass_wDate.bas
+  CofA_Report_X.bas
+  CofA_Report_X_Test.bas
+  ContactAddresses_Base.bas
+  ContactsIncumbent.bas
+  ContactsLinkedToLocationQuery.bas
+  ContactsQuery.bas
+  Contfilterbank.bas
+  Contfilterfa.bas
+  Contfilterlo.bas
+  Contfilterrmkt.bas
+  copy lease data from documentation to clients table.bas
+  CostcoImpxDry.bas
+  CostcoImpxWet.bas
+  CostLastPmq2.bas
+  CostUnitPMq.bas
+  Cost_Body.bas
+  Cost_ChildParts_AllTypes.bas
+  Cost_ChildParts_AssetID.bas
+  Cost_ChildParts_Pivot_Cost.bas
+  Cost_ChildParts_Pivot_Cost_BackUp.bas
+  Cost_ChildParts_Pivot_DrawNum.bas
+  Cost_ChildParts_Pivot_InvoiceDate.bas
+  Cost_ChildParts_Pivot_InvoiceNum.bas
+  Cost_ChildParts_Pivot_Make.bas
+  Cost_ChildParts_Pivot_Model.bas
+  Cost_ChildParts_Pivot_Vendors.bas
+  Cost_Connections.bas
+  Cost_Decals.bas
+  Cost_Decals0.bas
+  Cost_Decals1.bas
+  Cost_Decals1a.bas
+  Cost_Decals2a.bas
+  Cost_Decals3a.bas
+  Cost_Decals4.bas
+  Cost_DecalsCoName.bas
+  Cost_DecalsMisc.bas
+  Cost_DecalsMisc2.bas
+  Cost_DecalsRegNumber.bas
+  Cost_FeesTax.bas
+  Cost_Freight.bas
+  Cost_Inspection.bas
+  Cost_Labor.bas
+  Cost_OBC.bas
+  Cost_OBC_Adapt.bas
+  Cost_OBC_All.bas
+  Cost_OBC_Display.bas
+  Cost_OBC_Dome.bas
+  Cost_OBC_Install.bas
+  Cost_OBC_Multi.bas
+  Cost_OBC_Part.bas
+  Cost_Oil.bas
+  Cost_Other.bas
+  Cost_PTO.bas
+  Cost_Refrig.bas
+  Cost_TankBody.bas
+  Cost_TankOther.bas
+  Cost_Warranty.bas
+  CP Unit list.bas
+  CrRankCalc.bas
+  CurrSessions.bas
+  CustList_OrigBDEX.bas
+  CustodianTitleTrust0.bas
+  CustodianTitleTrust1DataFile.bas
+  CustodianTitleTrust2DataFile.bas
+  CustodianTitleUpdate1.bas
+  CustomerDeliveryReport_Abbr.bas
+  CustomerQ.bas
+  DataFile.bas
+  DealAwaredDates.bas
+  DealCommissions.bas
+  Deals with client name.bas
+  DealsQuery.bas
+  Deal_KPI_Report.bas
+  Deal_KPI_Report_Stale.bas
+  DelAccptCnt.bas
+  DelAccptCntSummary.bas
+  delbodyq.bas
+  DeliveredVendorNotPaid.bas
+  DeliveryDatesMinMax_BUnits.bas
+  DelRptQYrEnd.bas
+  delupdtq.bas
+  delupdttractorq.bas
+  DocsLinkSubQ.bas
+  docsreeferq.bas
+  docunitq.bas
+  DrawableUnitInvoices.bas
+  DrawableUnitInvoices0.bas
+  DrawBanksList.bas
+  DrawClientsFAIDList.bas
+  DrawClientsList.bas
+  DrawDownAvailChildParts.bas
+  DrawDownChildParts_GroupID.bas
+  DrawDownsChildInvoices.bas
+  DrawDownsChildInvoices0.bas
+  DrawDowns_Active.bas
+  DrawDowns_AttachedInvoices.bas
+  DrawDowns_ChildParts_Drawn.bas
+  DrawDowns_ChildParts_Open.bas
+  DrawDowns_Draws.bas
+  DrawDowns_DrawsAtthSchedules.bas
+  DrawDowns_Invoices2DrawCount.bas
+  DrawDowns_InvoicesChild_Drawn.bas
+  DrawDowns_InvoicesChild_Open.bas
+  DrawDowns_Invoices_Drawn.bas
+  DrawDowns_Invoices_Open.bas
+  DrawDowns_Invoices_Open_Drawn.bas
+  DrawDowns_MstLeases.bas
+  DrawDowns_Schedules.bas
+  DrawDowns_Units_Drawn.bas
+  DrawDowns_Units_Open.bas
+  DrawDown_TransactionSummary.bas
+  DrawFAID.bas
+  DrawMatch2Units.bas
+  DrawMaxNumber.bas
+  DrawnChildInvoices.bas
+  DrawnUnitInvoices.bas
+  DrawnUnits.bas
+  DrawnUnitsList.bas
+  Dup_UnitNumberWithinClientGroups.bas
+  Dyno Units.bas
+  EditPerdiem.bas
+  EquipOrderTracking.bas
+  exchange points and type.bas
+  EXchangeIT_ByYear.bas
+  ExcorExpq.bas
+  EXITClient.bas
+  EXITClientrr.bas
+  ExitInsert.bas
+  ExitOptionCheckBuyIT.bas
+  ExitOptionCheckExch.bas
+  ExitOptionCheckExtd.bas
+  ExitOptionCheckTerm.bas
+  ExitOptionEOLDatesGapType.bas
+  ExitOptionLastUpdated.bas
+  ExitOptions.bas
+  ExitOptionSelected_A.bas
+  ExitOptionSelected_B.bas
+  ExitOptionsGapLapStatus.bas
+  ExitOptionsGroupExport.bas
+  ExitOptionsMatchedExchangeIT.bas
+  ExitOptionsQry.bas
+  ExitOptionsQry3.bas
+  ExitOptionsQryAll.bas
+  ExitOptionsQryAll2.bas
+  ExitOptionsQryBuyIT.bas
+  ExitOptionsQryExchangeIT.bas
+  ExitOptionsQryExtend.bas
+  ExitOptionsQryExtendSub.bas
+  ExitOptionsQryTerminate.bas
+  ExitOptionsQryTerminateSub_TomsStone.bas
+  ExitOptions_GetLocal.bas
+  ExitOption_MakeTermTemp.bas
+  EXITSchedule.bas
+  EXITSchedule_Units.bas
+  ExpensesQuery.bas
+  ExpiringUnits_ByYear.bas
+  ExpiryReportUnion.bas
+  ExpiryReport_AutoHauler.bas
+  ExpiryReport_Base.bas
+  Extend TermOptions.bas
+  Extended_ByYear.bas
+  FABankBill.bas
+  FABankBillGroup.bas
+  FABankBillGroupBatch.bas
+  FABankBillGroupBatchHeader.bas
+  FABankBillGroupBatchSummary.bas
+  FABankBillGroupSummary.bas
+  FABankBillGroupSummary_MBM.bas
+  FABankBillGroupSummary_Transco.bas
+  FABankBillGroup_MBM.bas
+  FABankBillGroup_Transco.bas
+  FABankBillReg.bas
+  FABankBillRegSummary.bas
+  FABilling_ADMInvoice.bas
+  FAID_PO_Dates.bas
+  FAID_Sch_Grp_UnitCount.bas
+  FALeased_Unitcount.bas
+  FAnoQ.bas
+  FAPerDiemBatch.bas
+  FARentBillAssignedQ.bas
+  FARentBillAssigned_Group.bas
+  FARentBillq.bas
+  FARentBillSummary.bas
+  FARentBill_Group_Summary.bas
+  FARents_ML_SchGrp_Desc.bas
+  FAUnitsByModelYear.bas
+  filtcontlo.bas
+  Find dup for RemarketExpense.bas
+  Find dup for RemarketExpense2.bas
+  Find duplicates for Contacts.bas
+  Find duplicates for Cost_Other.bas
+  Find duplicates for FleetStudyImport.bas
+  Find duplicates for LeaseReport2.bas
+  Find duplicates for Rmkt.bas
+  Find duplicates for TaxStatesBase.bas
+  Find duplicates for TrailerMilesHours.bas
+  Find duplicates for Units.bas
+  Find duplicates for UnitVinDecoder.bas
+  Find duplicates for vw_SixKeys.bas
+  Find duplicates for vw_UnitVinDetails.bas
+  Find duplicates forVINS Units.bas
+  Find duplicates UnitNum Units.bas
+  Find_Dup_Units_UnitNumbers.bas
+  FirstTitleLog.bas
+  FiveIDTable.bas
+  fix website.bas
+  FleetImporter_ExisitingUnitNums.bas
+  FleetImporter_Locations.bas
+  FleetImporter_UnitsNotImported.bas
+  FleetImporter_UnitsNotImported_Compare.bas
+  FleetMgr.bas
+  FleetStudyImport.bas
+  FleetStudyImportLocID.bas
+  FleetStudyImport_ExistingUnits.bas
+  FleetStudyImport_Test.bas
+  FleetStudyList.bas
+  FleetStudyNewVins.bas
+  FleetStudyNewVinsBase.bas
+  FleetStudyUnitNumMatch.bas
+  FleetStudyUnitNum_NoMatch.bas
+  FleetStudyVINMatch.bas
+  FleetStudy_UnitNumConflict.bas
+  FleetUnitCountByStatus.bas
+  FleetUnitCountByStatus_All.bas
+  FleetUnitCountByStatus_ClientGroup.bas
+  Fleet_Counts_vs_UMP.bas
+  FSLBankBillq.bas
+  FSLBankBillq_Toyota.bas
+  FSLBankBillTransco.bas
+  FSLFee_EndDate.bas
+  FSLQUERY.bas
+  FSLRentBillq.bas
+  FSPmtSch-nonsynq.bas
+  FUQ.bas
+  GarageLocations.bas
+  General contact query.bas
+  Generic Customer Query.bas
+  GeoCodeLocations.bas
+  GetNADAVins.bas
+  Group Form.bas
+  GroupAdd_AppendQuery.bas
+  groupBillingContact.bas
+  GroupEconomicsSyndReport.bas
+  GroupFinalizationReport.bas
+  GroupFinalizationReport_base.bas
+  GroupFinalizedPersons.bas
+  GroupInfo.bas
+  GroupOEC_LRF.bas
+  GroupPOs.bas
+  GroupPurchaseOrders.bas
+  GroupReviewSyndQ.bas
+  GroupReviewSyndQ_Bak.bas
+  GROUPRTQ.bas
+  GroupsFormQuery.bas
+  Groups_List.bas
+  groups_viewQuery.bas
+  Group_OEC_Rent_LRF.bas
+  Group_UnitCount_Cost_Rents.bas
+  Group_UnitsInGroupVActualUnits.bas
+  Grpsc.bas
+  GrpUnitTypeq.bas
+  GuarantorsfParent.bas
+  Hannaunits.bas
+  HrsOnlyq.bas
+  ImportTrailerData.bas
+  ImportTrailerMilesHours.bas
+  industryq.bas
+  INTDaysQ.bas
+  INTDaysQ_Part1.bas
+  INTDaysQ_Part2.bas
+  InterimFunding_Days_Rate.bas
+  InterimFunding_Days_Rate_Unit.bas
+  InterimLoanq.bas
+  InterimLoanqBak.bas
+  IntPDq.bas
+  InvoiceBillToAddress.bas
+  InvReqq.bas
+  INV_MsoContactq.bas
+  Inv_MSOContactq2.bas
+  Itinq.bas
+  IT_UnitsToBeOffLeased.bas
+  Last Title Entry.bas
+  Last10PONumbers.bas
+  LastExtendedEvent.bas
+  LastTitleEntry_In.bas
+  LastTitleEntry_old.bas
+  LastTitleEntry_Out.bas
+  LastTitleLog.bas
+  LastTitleLogEntry.bas
+  LastTitleLogEntry_old.bas
+  LastTitleLogInOut.bas
+  LastTitlogEntryq1.bas
+  LastTitlogEntryq2.bas
+  LeasedClientsWUnits.bas
+  LeasedMLeaseWUnits.bas
+  Leased_MLSchGrpUnits.bas
+  LeaseInOutExtendedBase.bas
+  LeaseInOutExtendedSummed.bas
+  LeaseReporDates.bas
+  LeaseReport1.bas
+  LeaseReport2.bas
+  LeaseReportByYear.bas
+  LeaseUnitStatusAudit.bas
+  LeaseUnits_MissingDecodedData.bas
+  LeaseUnits_NotDecoded.bas
+  Leasing_sub.bas
+  Lic Upload.bas
+  Linesumq.bas
+  LoadBoTitleIn.bas
+  LoadBoTitleInFL.bas
+  LoadBoTitleItoFL.bas
+  LoadBoTitletoBuyer.bas
+  LoadTitleInq.bas
+  LocationCompare.bas
+  LocationDistroTaxes.bas
+  LocationsBilling.bas
+  LocationsCountyFix.bas
+  LocationsCountyMake.bas
+  LocationsRemit.bas
+  Locations_withStateinname.bas
+  Location_contacts.bas
+  Location_Divisions_UnitCount.bas
+  Location_Rent_Report.bas
+  Locfilterlo.bas
+  LOCUPDT.bas
+  LOEMq2-grp.bas
+  LOEMq2.bas
+  LookUp_AxleProp.bas
+  LookUp_ChildPartMatrix.bas
+  Lookup_Contact.bas
+  lookup_Contacts.bas
+  Lookup_Salesperson.bas
+  LOPHq2-grpClientReview.bas
+  LOPHq2.bas
+  MainVendorChildcosts.bas
+  MakeModelManager_Parts.bas
+  MakeModelManager_Units.bas
+  MakeOrderedOwnedSyn_LeaseReport.bas
+  MarkOffLease_TUnits.bas
+  max del.bas
+  max del2.bas
+  MaxDelTRFq.bas
+  MaxHrsQ.bas
+  MaxMiq.bas
+  MaxOpsclientreview.bas
+  maxpmdtq.bas
+  maxunitmhdt.bas
+  MClaneUPdt.bas
+  Mgmtclient.bas
+  MGT_BusiDevelopVolume.bas
+  MiHrAdjQ.bas
+  Mileage.bas
+  MileageOdoReadingAdj.bas
+  MileAppQ.bas
+  MissingMake.bas
+  MissingPlateq.bas
+  MLAdmens_Last.bas
+  MLbackq.bas
+  ML_Sch_Grp_FAID_Count_Cost_Rents.bas
+  MnRDataDataLastRead.bas
+  MonroeAd.bas
+  MOStatCofAr.bas
+  MOStatCofAS.bas
+  MOStatDocsAccpt.bas
+  MOStatML.bas
+  MOStatRALr.bas
+  MOStatRALs.bas
+  MOStatSch.bas
+  MOStatTitleTrust.bas
+  Move BP.bas
+  MovedUnits.bas
+  moveschgrpq.bas
+  movesunitq.bas
+  MTM Fix.bas
+  Newcontactq.bas
+  NewDekraInspectionsImport.bas
+
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsImport
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsImport'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+
+-------------------------------------
+ERROR: Skipping import of 'NewDekraInspectionsImport'. Your application may not run or complile.
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Build error in: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\queries\NewDekraInspectionsImport.bas
+Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
+-------------------------------------
+  NewDekraInspectionsNoMatch.bas
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsNoMatch'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsNoMatch
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsNoMatch'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+Retrying import for: NewDekraInspectionsNoMatch
+
+-------------------------------------
+ERROR: Import issue with 'NewDekraInspectionsNoMatch'
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+
+-------------------------------------
+ERROR: Skipping import of 'NewDekraInspectionsNoMatch'. Your application may not run or complile.
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Build error in: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\queries\NewDekraInspectionsNoMatch.bas
+Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
+-------------------------------------
+  NewULookupQ.bas
+  Non_Reporting_Units.bas
+  OpenVendorTrackingUpdate_AllDates.bas
+  OpenVendorTrackingUpdate_BuildDate.bas
+  OpenVendorTrackingUpdate_DeliveryDate.bas
+  OpenVendorTrackingUpdate_EstimatedDeliveryDate.bas
+  Open_Items_FAID_SCH.bas
+  Open_Items_POVendors.bas
+  OphandedGroups.bas
+  OppProposalOutcomePeriod.bas
+  OpsUnitq.bas
+  OpsUnitqdnu.bas
+  Ops_ChildPart_Make.bas
+  Ops_ChildPart_Serial.bas
+  OPS_sheet.bas
+  OPS_sheet1.bas
+  OPS_sheet2.bas
+  OrderedOwnedSyn_LeaseReport.bas
+  OrderedOwnedSyn_LeaseReport_Sum.bas
+  Osite T T2.bas
+  OSTitlesQ.bas
+  OutstandingATFSchedule_KPI.bas
+  OutstandingProposalsQuery.bas
+  OutstandingProposalsQueryMgmt.bas
+  OutstandingProposalsQueryMgmtsubrpt.bas
+  OutstandingTitles.bas
+  PAIBase.bas
+  ParentChildupdtq.bas
+  ParkedLocationsUnitCount.bas
+  ParkedLocationsUnitCountByType.bas
+  ParkedLocationsUnitCount_InvOnly.bas
+  PayProceeds_data_Cert.bas
+  PayProceeds_data_Letter.bas
+  PayProceeds_data_Units.bas
+  PayProceeds_data_Units_Cert.bas
+  PayProceeds_data_Units_Letter.bas
+  PDBillq.bas
+  pddays.bas
+  PDiemBill_Days.bas
+  PDiemBill_Part1.bas
+  PDiemBill_Part2.bas
+  PDQ1a.bas
+  PDq2.bas
+  PDS check.bas
+  PDstdtq.bas
+  PerDiemSurrender_Batch.bas
+  PerDiem_Days_Rate_BDEX.bas
+  Pickmake.bas
+  PipelinProspects.bas
+  PntSumq.bas
+  PO Data back.bas
+  POData.bas
+  POData_New.bas
+  POFAID.bas
+  POMainVendorq.bas
+  PONO1.bas
+  POqstart.bas
+  POSel2.bas
+  PosProspects.bas
+  PostTrailerData.bas
+  PO_ChildParts.bas
+  PO_PartA.bas
+  ProjBLCDq.bas
+  ProjMiHrs.bas
+  ProposalsOutstandingq.bas
+  ProposalsSummaryQuery.bas
+  PropSynq.bas
+  PROSTARQ.bas
+  PVINMatchq.bas
+  p_SurrenderPerDiemReport.bas
+  qryExportContactsCompareOutlookSFDC.bas
+  qryFLTSEEKall1.bas
+  QryLocChangehistory.bas
+  QryLocChangehistory2.bas
+  QRY_FAID.bas
+  qry_FinalLocHist.bas
+  qry_FirstLastLoc.bas
+  qry_LocationLookup.bas
+  qry_LocChangeRpt.bas
+  qry_login.bas
+  qry_logout.bas
+  qry_NUlocations1.bas
+  qry_Title_Transmital.bas
+  qry_UnitsByClient.bas
+  Query1.bas
+  Query2.bas
+  Query3.bas
+  Query4.bas
+  Query5.bas
+  Query6.bas
+  QuoteFinalQuery.bas
+  QuoteQuery.bas
+  Quotes Without Matching SpecReviews.bas
+  R12-LostTranQ.bas
+  R12-LPAFS BY SM.bas
+  R12-OS Proposalsq.bas
+  RALBase.bas
+  RALGroupDetails.bas
+  RALInsert.bas
+  RALMain.bas
+  RALRents.bas
+  RALSource.bas
+  RALUnitDesc.bas
+  RALUnits.bas
+  ReadyQ.bas
+  Recall Export.bas
+  RecallExportReport.bas
+  RecallQ.bas
+  recallrpt1.bas
+  ReMarketingBuyOutUnits.bas
+  RemarketingChildParts.bas
+  RemarketingClients.bas
+  RemarketingClientsWUnits.bas
+  RemarketingDashboardINV_Sales.bas
+  RemarketingDashboardSOLD_Sales.bas
+  RemarketingDashboard_Admin.bas
+  RemarketingInventoryCurrent.bas
+  RemarketingInventoryFuture.bas
+  RemarketingListLocCity.bas
+  RemarketingListLocState.bas
+  RemarketingMakes.bas
+  RemarketingMassMod1.bas
+  RemarketingMassModUnitList.bas
+  RemarketingMileage.bas
+  RemarketingMLeaseWUnits.bas
+  RemarketingModels.bas
+  RemarketingOutStandingInvoices.bas
+  RemarketingReportInventory.bas
+  RemarketingReportInvSales.bas
+  RemarketingReportSoldUnits.bas
+  RemarketingRequestInvoiceUnitsAssigned.bas
+  RemarketingRequestInvoiceUnitsUnAssigned.bas
+  RemarketingTransmissions.bas
+  RemarketingTypes.bas
+  RemarketingUnitsBySchedule.bas
+  RemarketingUnitsReport.bas
+  Remarketing_Assignee_Cost_Report.bas
+  Remarketing_AvgProjectedReserve.bas
+  Remarketing_AvgSoldPrice.bas
+  Remarketing_AvgSoldPrice_dated.bas
+  ReMarketing_MLSchGrpUnits.bas
+  Remarketing_ParkedToSold_KPI.bas
+  ReMarketing_SalesCust.bas
+  ReMarketing_UnitSales.bas
+  Remarketing_Units_Location.bas
+  RemarketReportExpenes.bas
+  RemarketReportExpenesTotal.bas
+  RemarketUnitStatusAudit.bas
+  RemarketWrongStatusUnits.bas
+  Remarket_SoucreCompany_Buyer.bas
+  RentAssignmentLetterExport.bas
+  RentBillq.bas
+  RentInvoiceSum.bas
+  RentInvoiceSumGroup.bas
+  ReportExpiringUnit_ByYear.bas
+  Reporting_Units_CurrMonth.bas
+  ReportSoldUnit_ByYear.bas
+  ReportStartEnd_MakeTemp.bas
+  ReqInvMSO.bas
+  RevPrintSUF.bas
+  RmkIdropdown.bas
+  RmkInvqdrop.bas
+  RmktAvailInvoiceRequestNumbers.bas
+  RmktBboSreq.bas
+  RmktBilllogq.bas
+  RmktBookq.bas
+  RMKTBulk_Update_RMKTFields.bas
+  RMKTBulk_Update_SelectedUnits.bas
+  RMKTBulk_Update_SelectedUnits_Child.bas
+  RmktContactq.bas
+  RMKTFAID_Sch_Grp_UnitCount.bas
+  RmktInvoiceRequestReverseLookUp.bas
+  rmktinvq.bas
+  RmktinvreqRePrintq.bas
+  RmktRElq.bas
+  RMKTSalesPersons.bas
+  RMKTSalesPersons_Last30.bas
+  RMKTSalesPersons_Last30_summed.bas
+  RMKTScheduleGroupUnit.bas
+  RmktSReqIupdt.bas
+  RMKTUnitsSold.bas
+  RMKTUnitsSold30_60_90.bas
+  RMKT_Client_FAID.bas
+  RMKT_Invoices.bas
+  RMKT_Paid_CorrectStatus.bas
+  RMKT_Paid_WrongStatus.bas
+  RMKT_RequestedInvoice.bas
+  RMKT_Sch_Grp_UnitCount.bas
+  Rmkt_View_query.bas
+  salesscorecard.bas
+  SaleTax_ClientLocationExempt_Base.bas
+  SampBillq.bas
+  SampBillq1.bas
+  SampBillq2.bas
+  SampBillq3.bas
+  SampBillqToyota.bas
+  SchCkListQ.bas
+  SchCkListQ2.bas
+  SchDocsChildInvoices.bas
+  SchDocsChildVendors.bas
+  SchDocsReportFinal.bas
+  SchDocsVendorChild.bas
+  SchDocsVendorDetail.bas
+  SchDocsVendorSummary.bas
+  SchDocsVendorUnion.bas
+  SchDocsVendorUnit.bas
+  schedProposalq.bas
+  ScheduleCheckListQ.bas
+  ScheduleClientInfo.bas
+  ScheduleCost.bas
+  ScheduleDates.bas
+  ScheduleDocsReport.bas
+  ScheduleDocsReportCostRentTax.bas
+  ScheduleDocsReportEconomics.bas
+  ScheduleDocsReportExcel.bas
+  ScheduleDocsReportExcelBase.bas
+  ScheduleDocsReportLocations.bas
+  ScheduleExchangedBy.bas
+  ScheduleGroupPOTypes.bas
+  ScheduleGroupUnit.bas
+  ScheduleHealthCheck.bas
+  ScheduleHealthCheckFunded.bas
+  ScheduleHealthCheckUnFunded.bas
+  ScheduleInfo.bas
+  ScheduleSerialNumbers.bas
+  SchedulesOpen.bas
+  ScheduleSortOrder.bas
+  SchedulesSubform.bas
+  SchedulesSubform_Pre.bas
+  schedulesSummaryQuery.bas
+  ScheduleSyndCheck.bas
+  ScheduleUnitDocs3.bas
+  ScheduleUnitDocs4.bas
+  ScheduleUnitsOPSq.bas
+  ScheduleUnitSummary.bas
+  Schedule_First_BLCDate.bas
+  Schedule_Group_Entered_KPI.bas
+  Schedule_Rent_Report.bas
+  SchEquipCostq.bas
+  schgrpcntq.bas
+  SchOrderchq.bas
+  SchUnitsq.bas
+  SearchUnitQ.bas
+  SectionQueryVendors.bas
+  Select BillTypeID, BillType Lookup_BillType Order By BillType.bas
+  SetMPGGoalsClient.bas
+  SetMPGGoalsClientGroup.bas
+  SetMPGGoalsMissing.bas
+  SetMPG_Axel.bas
+  SetSUFSentq.bas
+  SetUnitTaxes.bas
+  sfAccountq.bas
+  sfContactq.bas
+  SFOpportunitesq.bas
+  SF_InsertSchedule.bas
+  sgrpvendorq.bas
+  SQLSP_UpdateUnitsDateStatus.bas
+  StagingVendorTracking_Lastest.bas
+  StagingVendorTracking_Update_Child.bas
+  StagingVendorTracking_Update_Unit.bas
+  StatusUpdtKtoKS.bas
+  StatusUpdtRtoS.bas
+  SufReport.bas
+  SUFReportExport.bas
+  Synagingq1.bas
+  Synagingq1a.bas
+  Synagingq2.bas
+  SyndGroupStripsUTA.bas
+  SyndGroupStripsUTA_Summed.bas
+  Syndication_Validate_Portfolio.bas
+  Syndication_Validate_Portfolio_Pending.bas
+  SyndReady.bas
+  TaxKeys.bas
+  TaxqGarageLoc.bas
+  temp_update contact address.bas
+  TestCommSumq.bas
+  TFRCompare.bas
+  TFRCompare_Summary.bas
+  TFRDesc.bas
+  TFR_Excel.bas
+  TFR_Report.bas
+  TFR_SyndPlan.bas
+  TitleLogMakeTemp.bas
+  TitleLogUpdateUnits.bas
+  TitleLog_InNoOut.bas
+  TitleLog_LastInWithNoOut.bas
+  TitleOutdebackq.bas
+  TitleSentToTrust.bas
+  TitleSentTrustDate.bas
+  TitlesOrig_In.bas
+  TitlesOutToReturn.bas
+  Titles_Out.bas
+  TList.bas
+  TMTSignedDates.bas
+  TonyReviewq.bas
+  tOP45q1.bas
+  ToyAnnq.bas
+  ToyotaAncillaryRent.bas
+  TOYOTAQ.bas
+  TPq1.bas
+  TQ1.bas
+  TQ2.bas
+  TrackedUnitLastMileage.bas
+  TrailerDataEvaluation.bas
+  TrailerLastMaxMilesHours.bas
+  TrailerLastReportDate.bas
+  TrailerMilesHoursAvgMaker.bas
+  TrailerMilesHoursDataValidator.bas
+  Trailers_LastRead.bas
+  TRANS.bas
+  TranscoInserviceUpdate.bas
+  TranscoUnits.bas
+  TR_Status_FAUnits.bas
+  UMPCurrentMiles.bas
+  UMP_Latest.bas
+  UMP_MilesFuelMPG.bas
+  UNFIQ.bas
+  UNFI_badUnitNumbers.bas
+  UnfI_Non_Reporting.bas
+  UnfI_Non_Reporting_UnitNumber.bas
+  Unfi_OBC_Unitnumber.bas
+  UnistInserviceByYear.bas
+  UnitAndChildDealTotalQuery.bas
+  UnitAndChildTotalsQuery.bas
+  UnitByYear.bas
+  UnitByYear_summed.bas
+  UnitClassTypeNullFix.bas
+  UNITCNQ.bas
+  UNITCNQcp.bas
+  UNITCNQcp2.bas
+  UNITCNQSum.bas
+  UNITCNQSumcust.bas
+  UnitCountSummary.bas
+  UnitCount_ByTypeSubType.bas
+  UnitDeliveredCost.bas
+  UnitDescByGroup_A.bas
+  UnitDescByGroup_B.bas
+  UnitDescByGroup_C.bas
+  UnitDescInGroup.bas
+  UnitFirstOBCReport.bas
+  UnitFirstOBCReport_ODORead.bas
+  UnitGroupPerdiemsSyndReport.bas
+  UnitGroupPerdiemsSyndTotals.bas
+  UnitHistory_LastEvent.bas
+  UnitLastMileageRead.bas
+  UnitLastOBCReport.bas
+  UnitLastOBCReport_ODORead.bas
+  UnitLevelTaxes.bas
+  UnitLocationLookup.bas
+  UnitMileage1.bas
+  unitmileagerecords.bas
+  UnitModelsInUse.bas
+  UnitMoveOrderUpdate.bas
+  UnitMoveOrderUpdateMissing.bas
+  UnitOEC1.bas
+  UnitOEC2.bas
+  Unitq.bas
+  UnitRecallq.bas
+  UnitReportStartEndDates.bas
+  UnitReportStartEndDates_End.bas
+  UnitReportStartEndDates_Start.bas
+  UnitRExpq.bas
+  UnitsAndChildUnionQuery.bas
+  UnitsAtLocations.bas
+  UnitsFieldsToDelete.bas
+  UnitsForm.bas
+
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+-------------------------------------
+ERROR: Import issue with 'UnitsForm'
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Skipping import of 'UnitsForm'. Your application may not run or complile.
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Build error in: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\queries\UnitsForm.bas
+Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
+-------------------------------------
+  UnitsFormGarageLocations.bas
+  UnitsForm_back.bas
+  UnitsForm_OLD.bas
+  UnitsInGroupCount.bas
+  UnitsInserviceFix.bas
+  UnitsIn_Group_Sch.bas
+  UnitsMissingLicensePlates.bas
+  UnitsMissingUnitNumbers.bas
+  UnitsMissing_ClientGroupId.bas
+  UnitsParkedLocations.bas
+  UnitsParkedLocations_InvOnly.bas
+  UnitsSummary.bas
+  UnitsWithoutOBCUnitNumbers.bas
+  Units_byStatus.bas
+  Units_byStatus_Year.bas
+  Units_Delivered_NotInService.bas
+  Units_MakeModelsInUse.bas
+  Units_MakeModelsInUse_A.bas
+  Units_MakesModel_NotListed.bas
+  Units_sub.bas
+  UnitTitleAppSentQ.bas
+  Unittitleckinoputq.bas
+  UnitTypesAccepted_ByYear.bas
+  UnitTypesCom_ByYear.bas
+  UnitTypesNewBusiness_ByYear.bas
+  UnitTypes_Active.bas
+  UnitTypes_EOL.bas
+  UnitTypes_FA.bas
+  UnitUnitNun_2_OBCUnitNumber.bas
+  UnitViinVer.bas
+  UnitVinDetails_Append_VinResults.bas
+  UnitWOmaxMi.bas
+  Unit_Bulk_Mod.bas
+  Unit_ExtendedEOLDate.bas
+  Unit_LocationHistory.bas
+  UNtq.bas
+  update locationrefs on Units.bas
+  update unit.bas
+  UPdateFAProfile.bas
+  updateq.bas
+  Update_OBCUnitNumber.bas
+  UpDtRecallq.bas
+  UpdtSchTtoTrstq.bas
+  UpdtUnits.bas
+  updtwalmartq.bas
+  UploadPDSq.bas
+  uptotrust.bas
+  VContfilterfa.bas
+  VendHole-mailq.bas
+  VendorsTopTenDate.bas
+  VendorUnitCount.bas
+  VendorUnits.bas
+  ViewUnits_Excel.bas
+  VINImport_Remarketing.bas
+  VistSum.bas
+  VW_Clients_ML_FAID_SCH_Groups_count.bas
+  vw_Client_FAID_PO_Remarketing_Sch_Grp_Units.bas
+  vw_SixKeysPT.bas
+  WalMartUpdt.bas
+  YREndDelq.bas
+  YrVendorsq.bas
+  ZipFips.bas
+[983]
+-------------------------------------
+Importing forms...            
+  AcctAuth.bas
+  AcctFrimSub.bas
+  AcctMenu.bas
+  AddClientDivision.bas
+  AddClientGroup.bas
+  AddSchedule.bas
+  AMTitleLogEntry.bas
+  AM_Menu.bas
+  ATFReasonEdit.bas
+  ATFRevATF.bas
+  ATFRevChild.bas
+  ATFRevF.bas
+  ATFRevF1.bas
+  ATFRevGroup.bas
+  ATFRevSchedule.bas
+  ATFRevUnit.bas
+  ATF_SFImporter.bas
+  ATF_Structure.bas
+  Attach_File.bas
+  AuditManager.bas
+  AuditManagerLog.bas
+  AuditManagertest.bas
+  BankContact_sub.bas
+  BankRates_sub.bas
+  BankSchForm.bas
+  BankSchSub.bas
+  BankWireDetails_Sub.bas
+  Bank_Locations.bas
+  Bank_View.bas
+  BatchBillingForm.bas
+  BatchBillingMassModSub.bas
+  Billing.bas
+  BillingSubForm.bas
+  BTF_BuyersOrder.bas
+  BulkChange_ChildPartControl.bas
+  BulkChange_ChildParts.bas
+  BulkChange_CoaMso.bas
+  BulkChange_Desc.bas
+  BulkChange_Desc2.bas
+  BulkChange_Form.bas
+  BulkChange_Interim.bas
+  BulkChange_Locations.bas
+  BulkChange_Rents.bas
+  BulkChange_Syndication.bas
+  BulkChange_Vendor.bas
+  BuyersForm.bas
+  BuyersOrderMassMod.bas
+  BuyersOrderUnits_Sub.bas
+  ChildPartsToGroupPO.bas
+  ChildParts_sub.bas
+  CkinTitleSearch.bas
+  ClassTypeRecap.bas
+  ClientContact_sub.bas
+  ClientsView.bas
+  ClientsView_Schedules1.bas
+  ClientsView_Schedules2.bas
+  CloneScheduleGroups.bas
+  CofA Checkin.bas
+  CofASignerPopUp.bas
+  CommSubF.bas
+  CommSubForm.bas
+  Contacts subform.bas
+  Contacts_Add.bas
+  ControlTipPop.bas
+  CurrSessions subform.bas
+  CustDelSel.bas
+  CustExChForm.bas
+  DataConnection.bas
+  DataUpdate.bas
+  Deals_view.bas
+  DocAddEditLinkForm.bas
+  DocAddEditLinkForm_OLD.bas
+  DocLinksSub.bas
+  DocsMenu.bas
+  Documentation_sub.bas
+  DrawDownAddADraw.bas
+  DrawDownMaker.bas
+  DrawDownManager.bas
+  EFExportProgress.bas
+  ElectronciTitlePopUp.bas
+  Employee Dropdown Maint.bas
+  Equipment Type_Add.bas
+  EXITOptions.bas
+  ExitOptionSelection_subForm.bas
+  ExitOptionsGroup_Sub.bas
+  ExitOptionsManager.bas
+  ExitOptions_subform.bas
+  ExitOptions_subform_BuyIT.bas
+  ExitOptions_subform_Exchange.bas
+  ExitOptions_subform_Extend.bas
+  ExitOptions_subform_History.bas
+  ExitOptions_subform_Terminate.bas
+  ExpenseType_Add.bas
+  FAMainMenu.bas
+  FAMainMenu_backup.bas
+  FAMainMenu_prev.bas
+  FindVIN subform.bas
+  FleetStudy_Importer.bas
+  FormDialog.bas
+  FormDialog_Input.bas
+  FormDialog_Safe.bas
+  frmZip2TaxBrowser.bas
+  GroupAdd_Form.bas
+  GroupBillingRules_subform.bas
+  GroupForm.bas
+  GroupForm_UnitsSub.bas
+  GroupInfo_SubForm.bas
+  GroupPOSub.bas
+  GroupRevisionLog.bas
+  Groups_view.bas
+  InspectionsSubForm.bas
+  Invoice - Add%2FEditdnu.bas
+  Invoice.bas
+  ITFunctions.bas
+  LeasedWrongStatus.bas
+  LeaseSum.bas
+  LeaseSumLO.bas
+  Lease_Pricing_sub.bas
+  Leasing_sub.bas
+  linesubform.bas
+  LineSum.bas
+  LinkedDocManager.bas
+  LocationAddressesAdd.bas
+  LocationAddressesEdit.bas
+  LocationAddressList.bas
+  LocationNames.bas
+  LocationNamesAdd.bas
+  LocationsManager.bas
+  Locations_Billing_sub.bas
+  Locations_sub.bas
+  Locations_Title_sub.bas
+  LocationTax.bas
+  LocationTaxEdit.bas
+  LocationTaxManager.bas
+  LocationTaxSub.bas
+  LogRecallf.bas
+  LORPTM.bas
+  MakeModelManager.bas
+  MakeModelManagerParts.bas
+  MakeModelManagerParts_Makes.bas
+  MakeModelManagerParts_Models.bas
+  MakeModelManager_Makes.bas
+  MakeModelManager_Models.bas
+  ManagementMenu.bas
+  MassMod_InvoiceDraw.bas
+  MassMod_PerdiemRents.bas
+  MassMod_PerdiemType.bas
+  MassMod_Titles.bas
+  MasterLease_Guarentees.bas
+  MessagePopUp.bas
+  MessagePopUpIT.bas
+  MLAmendf.bas
+  MoveGroup.bas
+  MoveGrp.bas
+  MoveLocations.bas
+  MoveOrdersForm.bas
+  MoveUnit.bas
+  MstrLease.bas
+  NewBill.bas
+  NewEditNote.bas
+  Open_Items_ChildParts_SubForm.bas
+  Ops Main Menu.bas
+  OpsPassword.bas
+  OPSTitleLogEntry.bas
+  OpsUnitq_subform.bas
+  PASSWORD ENTRY.bas
+  PayProceedsManager.bas
+  PopUp_PickLocation.bas
+  Printers.bas
+  PromptUserForm.bas
+  ProposalPopup.bas
+  ProposalsSummary_sub.bas
+  Proposals_sub.bas
+  RALConditions.bas
+  Recall Campaign.bas
+  Recall Campaign2.bas
+  ReCall Checkin.bas
+  RecallPForm.bas
+  REcallunitref.bas
+  ReLeaseUnitManager.bas
+  ReLeaseUnitsSub.bas
+  RemarketExpense.bas
+  RemarketingBuyOut.bas
+  ReMarketingBuyOut_subform.bas
+  RemarketingClientLocations.bas
+  RemarketingContact_sub.bas
+  RemarketingDashboardAccounting.bas
+  RemarketingDashboardAdmin.bas
+  RemarketingDashboardInventory.bas
+  RemarketingDashboardINVMgr.bas
+  RemarketingDashboardINVSales.bas
+  RemarketingDashboardSOLDMgr.bas
+  RemarketingDashboardSOLDSales.bas
+  RemarketingInvoiceRequest_Sub.bas
+  RemarketingMassMod.bas
+  ReMarketingMassMod_sub_BuyOutView.bas
+  ReMarketingMassMod_sub_FMVPenalty.bas
+  ReMarketingMassMod_sub_Inspection2.bas
+  ReMarketingMassMod_sub_SoldInvoice.bas
+  ReMarketingMassMod_sub_SUFParked.bas
+  RemarketingMassMod_sub_Titles.bas
+  ReMarketInvoiceManager.bas
+  ReMarketInvoiceSub.bas
+  RemarketWrongStatus.bas
+  ReqInvMSO_Form.bas
+  RequestString.bas
+  Rmkt Menu.bas
+  RmktBillSel.bas
+  RmktBillUpdt.bas
+  RmktExpense.bas
+  RmktExpenseManager.bas
+  RMKTExpenseSub.bas
+  RmktInvoiceRequestReverseLookUpForm.bas
+  SchAddf.bas
+  ScheduleAmends.bas
+  ScheduleBillingRules_subform.bas
+  ScheduleClientInfo_SubForm.bas
+  ScheduleCoLessee.bas
+  ScheduleControl.bas
+  ScheduleHealthDashboard.bas
+  ScheduleInfo_SubForm.bas
+  ScheduleInfo_SubForm2.bas
+  ScheduleRevisionLog.bas
+  ScheduleSort.bas
+  ScheduleUnitInfo_SubForm.bas
+  Schedule_CoLessee.bas
+  Schedule_Form.bas
+  SCHORDf.bas
+  SgrpExpForm.bas
+  SignOff Tasks.bas
+  SignOffDashboard.bas
+  SignOffDashboardSingle.bas
+  SignOffForm.bas
+  Spec_Review_File_Sub.bas
+  Spec_Review_sub.bas
+  SUF CheckIn.bas
+  SUFConditions.bas
+  SUF_Select_Form.bas
+  Tax_Add.bas
+  Tax_Add_Exception.bas
+  Tax_Add_ExceptionSub.bas
+  Tax_AnyBaseSub.bas
+  Tax_AnySub.bas
+  Tax_Any_ExceptionsSub.bas
+  Tax_City.bas
+  Tax_CityBaseSub.bas
+  Tax_CityExceptionsSub.bas
+  Tax_CitySub.bas
+  Tax_County.bas
+  Tax_CountyBaseSub.bas
+  Tax_CountyExceptionsSub.bas
+  Tax_CountySub.bas
+  Tax_State.bas
+  Tax_StateBaseSub.bas
+  Tax_StateExceptionsSub.bas
+  Tax_StateSub.bas
+  TChkinsub.bas
+  TempPlateContact_sub.bas
+  TFRDashboard.bas
+  TitleCheckin.bas
+  TitleCheckInSub.bas
+  TitleLoc-Sub.bas
+  TitleToCustodianDashboard.bas
+  TitletoTrustq.bas
+  TreeCommand.bas
+  TreeTest.bas
+  Unit List_CofASub.bas
+  UnitExitOption_subForm.bas
+  UnitLocationChangeHistoryForm.bas
+  UnitMoveOrder_Maker.bas
+  UnitMoveOrder_MassModSub.bas
+  UnitNotes.bas
+  UnitPartsList_SubForm.bas
+  UnitRcallsub.bas
+  UnitReverseLookUpForm.bas
+  UnitRevisionLog.bas
+  UnitsForm.bas
+  UnitsFormBackup.bas
+  UnitsList_SubForm.bas
+  UnitSnapShot.bas
+  Units_Exit_ExchangeIT.bas
+  Units_Exit_Extend.bas
+  Units_Exit_Terminate.bas
+  Units_RMKT_Sub.bas
+  UnitTitleLogForm.bas
+  Unlock Grp.bas
+  ValueAdded.bas
+  VendorContact_sub.bas
+  VendorNotes.bas
+  VendorsForm.bas
+  Vendors_UnitsSub.bas
+  Vendor_Add.bas
+  ViewMiNew.bas
+  VINDecode.bas
+  VINVerify.bas
+  VIN_Decoder.bas
+  WorkOrderItemsSub.bas
+  WorkOrdersForm.bas
+  xdlgSearchForText_v42.bas
+[299]
+-------------------------------------
+Importing macros...           
+  Contacts Spreadsheet.bas
+  NO_AUTOEXEC.bas
+  OPENMMT.bas
+[3]
+-------------------------------------
+Importing reports...          
+  AllBankList.bas
+  ATF_Report_Active.bas
+  ATF_Report_Active_1.bas
+  ATF_Report_AllowancesActive.bas
+  ATF_Report_BillingActive.bas
+  ATF_Report_ChildPartsActive.bas
+  ATF_Report_CoLesseeActive.bas
+  ATF_Report_ContactsActive.bas
+  ATf_Report_EquipmentActive.bas
+  ATF_Report_GuarantorsActive.bas
+  ATF_Report_PartsActive.bas
+  ATf_Report_ScheduleSumsActive.bas
+  ATF_Report_SchNotesActive.bas
+  ATF_Report_StructureActive.bas
+  BackLog Rpt.bas
+  BankBillReg.bas
+  BankBillReg_Summary.bas
+  BankBillRentOnly.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  BankBillRentOnly_Summary.bas
+  BankBill_FARemit.bas
+  BillingRulesInvoice.bas
+  BillingRules_Invoice.bas
+  BillingRules_Invoice_Summary.bas
+  BILLPROTOTYPE.bas
+  BillServFeeOnly.bas
+  BillServFeeOnly_Summary.bas
+  BillWarranty.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  BuyerRmkSales.bas
+  BuyersDeliveryReceipt.bas
+  BuyersOrder.bas
+  BuyersOrderWarranties.bas
+  CertOfLease_Mass.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE.domain.local\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  CofA-Toyota_Archive.bas
+  CofA.bas
+  CofASubr.bas
+  CofA_ColesseeHeader.bas
+  CofA_CoLesseeSign.bas
+  CofA_Dynamic.bas
+  CofA_Mass.bas
+
+-------------------------------------
+WARNING: Could not find printer 'Adobe PDF' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  CofA_Mass_AirGas.bas
+  CofA_Mass_AirProd.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  CofA_Mass_Dean.bas
+  CofA_Mass_Dyno.bas
+  CofA_Mass_Linde.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  CofA_Mass_new.bas
+  CofA_Mass_Sch.bas
+  CofA_Mass_Sch_wDate.bas
+  CofA_Mass_SPD.bas
+  CofA_Mass_Sygma.bas
+  CofA_Mass_UGI.bas
+  CofA_Mass_Unisource.bas
+  CofA_Mass_wDate.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  Completed for PeriodMgmt-CP.bas
+  CompletedATFSchedule_KPI_Report.bas
+  CONTACTPRNT.bas
+  Customer List.bas
+  CustomerDeliveryReportDetailed.bas
+  CustomerDeliveryReport_AcceptedCount.bas
+  Deal_to_BLCD_KPI_Report.bas
+  DrawDown_TransactionSummary_Report.bas
+  ElectronicTitleRequestOK.bas
+  ElectronicTitleRequestOK_HDR.bas
+  EXITBankNoticeReport.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  FA Bank Bill_New.bas
+  FA ProfileRank.bas
+  FA Rent Bill-TLSassigned.bas
+  FABankBill.bas
+  FABankBillGroup.bas
+  FABankBillGroupMBM.bas
+  FABankBillGroupMBM_Summary.bas
+  FABankBillGroupTransco.bas
+  FABankBillGroupTransco_Summary.bas
+  FABankBillGroup_Batch.bas
+  FABankBillGroup_Batch_Header.bas
+  FABankBillGroup_Batch_Summary.bas
+  FABankBillGroup_Summary.bas
+  FABankBill_ADM.bas
+  FABankBill_Toyota.bas
+  FABankBill_Toyota10.bas
+  FABankBill_Toyota3.bas
+  FAFeeOnly.bas
+  FAOBCUnitRpt.bas
+  FAPerDiem_Batch_Header.bas
+  FARentBill.bas
+  FARentBillNew.bas
+  FARentBillNew_Group.bas
+  FARentBill_Group.bas
+  FARentBill_Group_Summary.bas
+  FARentBill_Summary.bas
+  FAUnit Count.bas
+  FAUnit Countcp.bas
+  FAUnit Countcp2.bas
+  Financials Needed.bas
+  GroupReviewSynd.bas
+  GroupReviewSynd_Bak.bas
+  LabelsToCustodian.bas
+  Lease Schedule 1 - Equipment Acceptance Notification.bas
+  LeaseBillingInvoice.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  LeaseReportByYear.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  LeaseReportByYear_Company.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  Line Usage.bas
+  LiquidityReport.bas
+  LO NOTECHECK.bas
+  LO VolumeQuota.bas
+  LO VolumeQuotadays.bas
+  Location Change History.bas
+  Location Change History2.bas
+  Location Change Report.bas
+  LocationDirectory.bas
+  LocationDirectory_TaxesSub.bas
+  MoveOrderDeliveryPage.bas
+  MoveOrderPickUpPage.bas
+  MoveOrderRelease.bas
+  Outstanding Docs.bas
+  OutstandingATFSchedule_KPI_Report.bas
+  PayProceeds_Cert.bas
+  PayProceeds_IntrimBank.bas
+  PayProceeds_Letter.bas
+  PayProceeds_Report.bas
+  PayProceeds_UnitsList.bas
+  PayProceeds_Vendor.bas
+  PD Bill-AirP.bas
+  PD Bill.bas
+  PD-Toyota.bas
+  PD-Toyota_tuncate.bas
+  PerDiemInvoice.bas
+  PerDiemInvoiceGroup.bas
+  PerDiemInvoiceGroupSummary.bas
+  PerDiemInvoiceSummary.bas
+  PerDiemInvoice_Batch.bas
+  PerDiemInvoice_BatchSummary.bas
+  PerDiemSurrenderInvoice.bas
+  PerDiemSurrenderInvoiceLocation.bas
+  PerDiemSurrenderInvoiceLocationSummary.bas
+  PerDiemSurrenderInvoiceSummary.bas
+  PerDiemSurrenderSummary_Batch.bas
+  PerDiemSurrender_Batch.bas
+  PerDiemSurrender_Batch_Header.bas
+  PO Signoff Tracking.bas
+  PO.bas
+  PO_Vendor.bas
+  PO_VendorBoth.bas
+  PO_VendorTracking.bas
+  PO_Vendor_Child.bas
+  Profile Rank Explanation.bas
+  RALAttachment.bas
+  RALReport.bas
+  RAL_Group.bas
+  Recall Status.bas
+  Reg PD Bill.bas
+  RegionRpt.bas
+  RemarketingBillOfSale.bas
+  RemarketingBillOfSaleBOSPage.bas
+  RemarketingBillOfSaleCoverOld.bas
+  RemarketingBillOfSaleDeliveryPage.bas
+  RemarketingBillOfSaleNew.bas
+  RemarketingBillOfSalePickUpPage.bas
+  RemarketingBillOfSale_pld.bas
+  remarketing_SoldUnits_template.bas
+  RemarketSoldUnits.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1720 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  Rent Bill.bas
+  Rent-ToyotaAncillary.bas
+  RentInvoice.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\fa-dc01\KONICA C554 Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  RentInvoiceGroup.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  RentInvoiceSummary.bas
+  RentInvoiceSummaryGroup.bas
+  RentInvoice_Uccc.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  Rmkt Relocate Units.bas
+  RmktBkSubRpt.bas
+  RmktBOSRpt.bas
+  RMKTInventory.bas
+  RMKTInventoryClient.bas
+  RmktInvoice.bas
+  RmktInvoiceReprint.bas
+  RmktInvoiceRequestRpt.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE.domain.local\1730 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  RmktInvoiceRpt-Reprint.bas
+  RmktInvoiceRpt-Reprint2.bas
+  RmktTitleCoverLetter.bas
+  RmktTitleRelLetter.bas
+  RmtInv.bas
+  Sample Bank Bill.bas
+  SchChecklistSub.bas
+  ScheduleCheckList2.bas
+  ScheduleCheckList21.bas
+  ScheduleCheckListNew.bas
+  ScheduleEconomicsSyndReport.bas
+  ScheduleEconomicsSyndReportSub.bas
+  SUFReport.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\KONICA C554 Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  SUFReport_AutoHauler.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE\KONICA C554 Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  SUFReport_Mclane.bas
+  SUFRpt.bas
+  SUFwConditions.bas
+  SURReport.bas
+  SyndReadyReport.bas
+  TFRCompare.bas
+  TFRCompareSummary.bas
+  TFRCompareSummary_Portfolio.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\FA-FILE.domain.local\1720 KONICA Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  TitleReleaseAffidavit.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\fa-dc01\KONICA C554 Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  TitleReleaseAffidavitOK.bas
+
+-------------------------------------
+WARNING: Could not find printer '\\fa-dc01\KONICA C554 Color' on this system.
+Source: clsDevMode.LoadFromPrinter
+-------------------------------------
+  TitleReleaseRequest.bas
+  TitleReleaseRequestUnits.bas
+  Toyota Checklist.bas
+  ToyotaAncillaryRent.bas
+  UnitTitleLog.bas
+  ValAddedAll.bas
+  ValAddRpt-LO.bas
+  ValueAddedReport.bas
+  vw_PayProceeds_Report.bas
+[208]
+-------------------------------------
+Importing relations...        
+  ClientsDeals.json
+  ClientsLocations.json
+  ClientsMstrLease.json
+  CustomFieldsCustomFields_Values.json
+  MstrLeaseMLAmends.json
+  MstrLeaseSchedule.json
+  ScheduleSchGrp.json
+  SchGrpUnits.json
+  UnitsChildParts.json
+[9]
+-------------------------------------
+Importing doc properties...   
+  documents.json
+[1]
+-------------------------------------
+Importing nav pane groups...  
+  nav-pane-groups.json
+[1]
+-------------------------------------
+Importing hidden attributes...
+  hidden-attributes.json
+
+-------------------------------------
+ERROR: Error setting hidden attribute for ~TMPCLP130581
+Error 2950: Reserved Error Source: clsDbHiddenAttribute
+-------------------------------------
+
+-------------------------------------
+ERROR: Error setting hidden attribute for ~TMPCLP524531
+Error 2950: Reserved Error Source: clsDbHiddenAttribute
+-------------------------------------
+
+-------------------------------------
+ERROR: Error setting hidden attribute for ~TMPCLP624641
+Error 2950: Reserved Error Source: clsDbHiddenAttribute
+-------------------------------------
+[1]
+-------------------------------------
+Done. (245.12 seconds)
+
+--------------------------------------------------
+                PERFORMANCE REPORTS
+--------------------------------------------------
+Category                      Count     Seconds
+--------------------------------------------------
+DB Connections                1         75.67
+Reports                       208       64.70
+Forms                         299       39.52
+Tables                        512       34.44
+Queries                       983       23.15
+Modules                       58        1.31
+Doc Properties                1         0.58
+Shared Images                 52        0.52
+CommandBars                   10        0.37
+Relations                     9         0.26
+IMEX Specs                    17        0.24
+Hidden Attributes             1         0.20
+Macros                        3         0.09
+VBE References                1         0.07
+DB Properties                 1         0.06
+Nav Pane Groups               1         0.04
+Themes                        1         0.02
+VB Project                    1         0.01
+Project                       1         0.01
+--------------------------------------------------
+TOTALS:                       2160      241.27
+--------------------------------------------------
+
+--------------------------------------------------
+Operations                    Count     Seconds
+--------------------------------------------------
+App.LoadFromText()            1495      82.65
+modVCSUtility.LoadComponentFr 
+omText                        1491      16.21
+Read File                     1673      15.23
+Read File Bytes               3206      8.71
+Parse JSON ISO Date           2163      1.82
+Get File List                 18        1.41
+Delete File                   3524      0.97
+Save Stream to File           1504      0.94
+Get File Property Hash        2156      0.87
+Increment Progress            2160      0.66
+Import VBE Module             58        0.62
+Parse JSON                    745       0.53
+modFileAccess.VerifyPath      3535      0.46
+Write File                    527       0.43
+Console Updates               90        0.43
+Convert to JSON               4506      0.31
+Load Stream from File         1504      0.31
+Get VBA Hash                  565       0.27
+Compute SHA256                4376      0.24
+Get Modified Date             5035      0.21
+Create new database           1         0.18
+Enc. utf-8 as utf-16          1504      0.17
+Copy Stream                   1504      0.09
+Building CommandBar           10        0.07
+Add GUID References           18        0.05
+Get Unused Resource Name      52        0.05
+Parse VBA Module              58        0.03
+Scan Source Files             1         0.01
+Clear References              1         0.01
+Check for linked table        1         0.00
+modFileAccess.GetUncPath      3         0.00
+--------------------------------------------------
+Other Operations                        111.21
+--------------------------------------------------
+
+
+WARNING: The performance monitoring for operations still
+had items in the call stack. This typically happens when
+performance logging is started for an operation, but not
+closed at the conclusion of the operation.
+The call stack currently contains the following 10 items:
+ - modVCSUtility.LoadComponentFromText
+ - App.LoadFromText()
+ - App.LoadFromText()
+ - App.LoadFromText()
+ - App.LoadFromText()
+ - App.LoadFromText()
+ - App.LoadFromText()
+ - App.LoadFromText()
+ - App.LoadFromText()
+ - modVCSUtility.LoadComponentFromText
+
