@@ -15,13 +15,13 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =9705
+    Width =10272
     DatasheetFontHeight =11
-    ItemSuffix =595
-    Left =4845
-    Top =3570
-    Right =14550
-    Bottom =11115
+    ItemSuffix =601
+    Left =6252
+    Top =2676
+    Right =16512
+    Bottom =10224
     ShortcutMenuBar ="SortClip"
     RecSrcDt = Begin
         0x90faff9076ebe340
@@ -328,10 +328,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =2955
-                    Top =2190
-                    Width =2655
-                    Height =330
+                    Left =2964
+                    Top =2256
+                    Width =2652
+                    Height =336
                     TabIndex =13
                     ForeColor =0
                     Name ="ScheduleControl"
@@ -346,10 +346,10 @@ Begin Form
                         0x00000000
                     End
 
-                    LayoutCachedLeft =2955
-                    LayoutCachedTop =2190
-                    LayoutCachedWidth =5610
-                    LayoutCachedHeight =2520
+                    LayoutCachedLeft =2964
+                    LayoutCachedTop =2256
+                    LayoutCachedWidth =5616
+                    LayoutCachedHeight =2592
                     Alignment =1
                     RowStart =5
                     RowEnd =5
@@ -388,10 +388,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5745
-                    Top =795
+                    Left =5760
+                    Top =816
                     Width =2700
-                    Height =330
+                    Height =336
                     TabIndex =5
                     ForeColor =0
                     Name ="MakeBankPayOffEmail"
@@ -439,10 +439,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5745
-                    LayoutCachedTop =795
-                    LayoutCachedWidth =8445
-                    LayoutCachedHeight =1125
+                    LayoutCachedLeft =5760
+                    LayoutCachedTop =816
+                    LayoutCachedWidth =8460
+                    LayoutCachedHeight =1152
                     PictureCaptionArrangement =5
                     RowStart =2
                     RowEnd =2
@@ -469,9 +469,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =120
-                    Top =1260
+                    Top =1296
                     Width =2700
-                    Height =330
+                    Height =336
                     TabIndex =6
                     ForeColor =0
                     Name ="OpenDashBoardSales"
@@ -487,9 +487,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =120
-                    LayoutCachedTop =1260
+                    LayoutCachedTop =1296
                     LayoutCachedWidth =2820
-                    LayoutCachedHeight =1590
+                    LayoutCachedHeight =1632
                     Alignment =1
                     RowStart =3
                     RowEnd =3
@@ -531,9 +531,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =120
-                    Top =795
+                    Top =816
                     Width =2700
-                    Height =330
+                    Height =336
                     TabIndex =3
                     ForeColor =0
                     Name ="OpenDashBoardInv"
@@ -546,9 +546,9 @@ Begin Form
                     BottomPadding =120
 
                     LayoutCachedLeft =120
-                    LayoutCachedTop =795
+                    LayoutCachedTop =816
                     LayoutCachedWidth =2820
-                    LayoutCachedHeight =1125
+                    LayoutCachedHeight =1152
                     Alignment =1
                     RowStart =2
                     RowEnd =2
@@ -572,7 +572,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5745
+                    Left =5760
                     Top =120
                     Width =2700
                     Height =330
@@ -590,9 +590,9 @@ Begin Form
                         0x00000000
                     End
 
-                    LayoutCachedLeft =5745
+                    LayoutCachedLeft =5760
                     LayoutCachedTop =120
-                    LayoutCachedWidth =8445
+                    LayoutCachedWidth =8460
                     LayoutCachedHeight =450
                     ColumnStart =2
                     ColumnEnd =2
@@ -678,9 +678,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =120
-                    Top =1725
+                    Top =1776
                     Width =2700
-                    Height =330
+                    Height =336
                     TabIndex =9
                     ForeColor =0
                     Name ="OpenDashBoardAdmin"
@@ -696,9 +696,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =120
-                    LayoutCachedTop =1725
+                    LayoutCachedTop =1776
                     LayoutCachedWidth =2820
-                    LayoutCachedHeight =2055
+                    LayoutCachedHeight =2112
                     Alignment =1
                     RowStart =4
                     RowEnd =4
@@ -722,10 +722,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =2955
-                    Top =1260
-                    Width =2655
-                    Height =330
+                    Left =2964
+                    Top =1296
+                    Width =2652
+                    Height =336
                     TabIndex =7
                     ForeColor =0
                     Name ="OpenDashBoardAcct"
@@ -740,10 +740,10 @@ Begin Form
                         0x00000000
                     End
 
-                    LayoutCachedLeft =2955
-                    LayoutCachedTop =1260
-                    LayoutCachedWidth =5610
-                    LayoutCachedHeight =1590
+                    LayoutCachedLeft =2964
+                    LayoutCachedTop =1296
+                    LayoutCachedWidth =5616
+                    LayoutCachedHeight =1632
                     Alignment =1
                     RowStart =3
                     RowEnd =3
@@ -769,10 +769,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =2955
-                    Top =1725
-                    Width =2655
-                    Height =330
+                    Left =2964
+                    Top =1776
+                    Width =2652
+                    Height =336
                     TabIndex =10
                     ForeColor =0
                     Name ="SPDashboard"
@@ -784,10 +784,10 @@ Begin Form
                     RightPadding =75
                     BottomPadding =120
 
-                    LayoutCachedLeft =2955
-                    LayoutCachedTop =1725
-                    LayoutCachedWidth =5610
-                    LayoutCachedHeight =2055
+                    LayoutCachedLeft =2964
+                    LayoutCachedTop =1776
+                    LayoutCachedWidth =5616
+                    LayoutCachedHeight =2112
                     Alignment =1
                     RowStart =4
                     RowEnd =4
@@ -814,9 +814,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =120
-                    Top =2190
+                    Top =2256
                     Width =2700
-                    Height =330
+                    Height =336
                     TabIndex =12
                     ForeColor =0
                     Name ="OpendashBoardInvMgr"
@@ -829,9 +829,9 @@ Begin Form
                     BottomPadding =120
 
                     LayoutCachedLeft =120
-                    LayoutCachedTop =2190
+                    LayoutCachedTop =2256
                     LayoutCachedWidth =2820
-                    LayoutCachedHeight =2520
+                    LayoutCachedHeight =2592
                     Alignment =1
                     RowStart =5
                     RowEnd =5
@@ -854,20 +854,20 @@ Begin Form
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =5745
-                    Top =570
+                    Left =5760
+                    Top =576
                     Width =2700
-                    Height =210
+                    Height =216
                     Name ="EmptyCell327"
                     GroupTable =23
                     LeftPadding =60
                     TopPadding =0
                     RightPadding =75
                     BottomPadding =0
-                    LayoutCachedLeft =5745
-                    LayoutCachedTop =570
-                    LayoutCachedWidth =8445
-                    LayoutCachedHeight =780
+                    LayoutCachedLeft =5760
+                    LayoutCachedTop =576
+                    LayoutCachedWidth =8460
+                    LayoutCachedHeight =792
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -876,20 +876,20 @@ Begin Form
                     GroupTable =23
                 End
                 Begin EmptyCell
-                    Left =2955
-                    Top =570
-                    Width =2655
-                    Height =210
+                    Left =2964
+                    Top =576
+                    Width =2652
+                    Height =216
                     Name ="EmptyCell333"
                     GroupTable =23
                     LeftPadding =60
                     TopPadding =0
                     RightPadding =75
                     BottomPadding =0
-                    LayoutCachedLeft =2955
-                    LayoutCachedTop =570
-                    LayoutCachedWidth =5610
-                    LayoutCachedHeight =780
+                    LayoutCachedLeft =2964
+                    LayoutCachedTop =576
+                    LayoutCachedWidth =5616
+                    LayoutCachedHeight =792
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -899,9 +899,9 @@ Begin Form
                 End
                 Begin EmptyCell
                     Left =120
-                    Top =570
+                    Top =576
                     Width =2700
-                    Height =210
+                    Height =216
                     Name ="EmptyCell362"
                     GroupTable =23
                     LeftPadding =60
@@ -909,9 +909,9 @@ Begin Form
                     RightPadding =75
                     BottomPadding =0
                     LayoutCachedLeft =120
-                    LayoutCachedTop =570
+                    LayoutCachedTop =576
                     LayoutCachedWidth =2820
-                    LayoutCachedHeight =780
+                    LayoutCachedHeight =792
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -1039,10 +1039,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5745
-                    Top =2190
+                    Left =5760
+                    Top =2256
                     Width =2700
-                    Height =330
+                    Height =336
                     TabIndex =14
                     ForeColor =0
                     Name =" UpdateRMKTData"
@@ -1058,10 +1058,10 @@ Begin Form
                         0x00000000
                     End
 
-                    LayoutCachedLeft =5745
-                    LayoutCachedTop =2190
-                    LayoutCachedWidth =8445
-                    LayoutCachedHeight =2520
+                    LayoutCachedLeft =5760
+                    LayoutCachedTop =2256
+                    LayoutCachedWidth =8460
+                    LayoutCachedHeight =2592
                     Alignment =1
                     RowStart =5
                     RowEnd =5
@@ -1138,9 +1138,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =2160
-                    Top =4140
+                    Top =4152
                     Width =2880
-                    Height =270
+                    Height =276
                     FontSize =10
                     TabIndex =21
                     ForeColor =0
@@ -1189,9 +1189,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =2160
-                    LayoutCachedTop =4140
+                    LayoutCachedTop =4152
                     LayoutCachedWidth =5040
-                    LayoutCachedHeight =4410
+                    LayoutCachedHeight =4428
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =1
@@ -1216,10 +1216,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5745
-                    Top =1725
+                    Left =5760
+                    Top =1776
                     Width =2700
-                    Height =330
+                    Height =336
                     TabIndex =11
                     ForeColor =0
                     Name ="OutstandingPayOffs"
@@ -1267,10 +1267,10 @@ Begin Form
                         0x81c433ff81c433ef
                     End
 
-                    LayoutCachedLeft =5745
-                    LayoutCachedTop =1725
-                    LayoutCachedWidth =8445
-                    LayoutCachedHeight =2055
+                    LayoutCachedLeft =5760
+                    LayoutCachedTop =1776
+                    LayoutCachedWidth =8460
+                    LayoutCachedHeight =2112
                     PictureCaptionArrangement =5
                     RowStart =4
                     RowEnd =4
@@ -1296,9 +1296,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5400
+                    Left =5412
                     Top =3720
-                    Width =3030
+                    Width =3036
                     Height =274
                     FontSize =10
                     TabIndex =20
@@ -1346,9 +1346,9 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5400
+                    LayoutCachedLeft =5412
                     LayoutCachedTop =3720
-                    LayoutCachedWidth =8430
+                    LayoutCachedWidth =8448
                     LayoutCachedHeight =3994
                     PictureCaptionArrangement =5
                     Alignment =1
@@ -1414,10 +1414,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5400
-                    Top =4140
-                    Width =3030
-                    Height =270
+                    Left =5412
+                    Top =4152
+                    Width =3036
+                    Height =276
                     FontSize =10
                     TabIndex =22
                     ForeColor =0
@@ -1464,10 +1464,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5400
-                    LayoutCachedTop =4140
-                    LayoutCachedWidth =8430
-                    LayoutCachedHeight =4410
+                    LayoutCachedLeft =5412
+                    LayoutCachedTop =4152
+                    LayoutCachedWidth =8448
+                    LayoutCachedHeight =4428
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =1
@@ -1494,10 +1494,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5400
-                    Top =4560
-                    Width =3030
-                    Height =270
+                    Left =5412
+                    Top =4584
+                    Width =3036
+                    Height =276
                     FontSize =10
                     TabIndex =24
                     ForeColor =0
@@ -1544,10 +1544,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5400
-                    LayoutCachedTop =4560
-                    LayoutCachedWidth =8430
-                    LayoutCachedHeight =4830
+                    LayoutCachedLeft =5412
+                    LayoutCachedTop =4584
+                    LayoutCachedWidth =8448
+                    LayoutCachedHeight =4860
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =2
@@ -1641,10 +1641,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5400
-                    Top =4980
-                    Width =3030
-                    Height =270
+                    Left =5412
+                    Top =5016
+                    Width =3036
+                    Height =276
                     FontSize =10
                     TabIndex =26
                     ForeColor =0
@@ -1691,10 +1691,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5400
-                    LayoutCachedTop =4980
-                    LayoutCachedWidth =8430
-                    LayoutCachedHeight =5250
+                    LayoutCachedLeft =5412
+                    LayoutCachedTop =5016
+                    LayoutCachedWidth =8448
+                    LayoutCachedHeight =5292
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =3
@@ -1722,9 +1722,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =2160
-                    Top =4560
+                    Top =4584
                     Width =2880
-                    Height =270
+                    Height =276
                     TabIndex =23
                     ForeColor =0
                     Name ="OpenRmktExpenseManager"
@@ -1772,9 +1772,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =2160
-                    LayoutCachedTop =4560
+                    LayoutCachedTop =4584
                     LayoutCachedWidth =5040
-                    LayoutCachedHeight =4830
+                    LayoutCachedHeight =4860
                     PictureCaptionArrangement =5
                     RowStart =2
                     RowEnd =2
@@ -1798,10 +1798,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5400
-                    Top =5400
-                    Width =3030
-                    Height =330
+                    Left =5412
+                    Top =5448
+                    Width =3036
+                    Height =336
                     FontSize =10
                     TabIndex =28
                     ForeColor =0
@@ -1849,10 +1849,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5400
-                    LayoutCachedTop =5400
-                    LayoutCachedWidth =8430
-                    LayoutCachedHeight =5730
+                    LayoutCachedLeft =5412
+                    LayoutCachedTop =5448
+                    LayoutCachedWidth =8448
+                    LayoutCachedHeight =5784
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =4
@@ -1880,9 +1880,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =2160
-                    Top =4980
+                    Top =5016
                     Width =2880
-                    Height =270
+                    Height =276
                     FontSize =10
                     TabIndex =25
                     ForeColor =0
@@ -1931,9 +1931,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =2160
-                    LayoutCachedTop =4980
+                    LayoutCachedTop =5016
                     LayoutCachedWidth =5040
-                    LayoutCachedHeight =5250
+                    LayoutCachedHeight =5292
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =3
@@ -1959,9 +1959,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =2160
-                    Top =5400
+                    Top =5448
                     Width =2880
-                    Height =330
+                    Height =336
                     FontSize =10
                     TabIndex =27
                     ForeColor =0
@@ -2011,9 +2011,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =2160
-                    LayoutCachedTop =5400
+                    LayoutCachedTop =5448
                     LayoutCachedWidth =5040
-                    LayoutCachedHeight =5730
+                    LayoutCachedHeight =5784
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =4
@@ -2099,10 +2099,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5745
-                    Top =1260
+                    Left =5760
+                    Top =1296
                     Width =2700
-                    Height =330
+                    Height =336
                     TabIndex =8
                     ForeColor =0
                     Name ="MakeSUFEmail"
@@ -2150,10 +2150,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5745
-                    LayoutCachedTop =1260
-                    LayoutCachedWidth =8445
-                    LayoutCachedHeight =1590
+                    LayoutCachedLeft =5760
+                    LayoutCachedTop =1296
+                    LayoutCachedWidth =8460
+                    LayoutCachedHeight =1632
                     PictureCaptionArrangement =5
                     RowStart =3
                     RowEnd =3
@@ -2273,10 +2273,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =2955
-                    Top =795
-                    Width =2655
-                    Height =330
+                    Left =2964
+                    Top =816
+                    Width =2652
+                    Height =336
                     TabIndex =4
                     ForeColor =0
                     Name ="OpenUnitMoverManager"
@@ -2324,10 +2324,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =2955
-                    LayoutCachedTop =795
-                    LayoutCachedWidth =5610
-                    LayoutCachedHeight =1125
+                    LayoutCachedLeft =2964
+                    LayoutCachedTop =816
+                    LayoutCachedWidth =5616
+                    LayoutCachedHeight =1152
                     PictureCaptionArrangement =5
                     RowStart =2
                     RowEnd =2
@@ -2353,9 +2353,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =2955
+                    Left =2964
                     Top =120
-                    Width =2655
+                    Width =2652
                     Height =330
                     TabIndex =1
                     ForeColor =0
@@ -2371,9 +2371,9 @@ Begin Form
                         0x00000000
                     End
 
-                    LayoutCachedLeft =2955
+                    LayoutCachedLeft =2964
                     LayoutCachedTop =120
-                    LayoutCachedWidth =5610
+                    LayoutCachedWidth =5616
                     LayoutCachedHeight =450
                     ColumnStart =1
                     ColumnEnd =1
@@ -2398,9 +2398,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =93
                     Left =2160
-                    Top =5880
+                    Top =5940
                     Width =2880
-                    Height =330
+                    Height =336
                     FontSize =10
                     TabIndex =29
                     ForeColor =0
@@ -2450,9 +2450,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =2160
-                    LayoutCachedTop =5880
+                    LayoutCachedTop =5940
                     LayoutCachedWidth =5040
-                    LayoutCachedHeight =6210
+                    LayoutCachedHeight =6276
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =5
@@ -2477,10 +2477,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5400
-                    Top =5880
-                    Width =3030
-                    Height =330
+                    Left =5412
+                    Top =5940
+                    Width =3036
+                    Height =336
                     FontSize =10
                     TabIndex =30
                     ForeColor =0
@@ -2527,10 +2527,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5400
-                    LayoutCachedTop =5880
-                    LayoutCachedWidth =8430
-                    LayoutCachedHeight =6210
+                    LayoutCachedLeft =5412
+                    LayoutCachedTop =5940
+                    LayoutCachedWidth =8448
+                    LayoutCachedHeight =6276
                     PictureCaptionArrangement =5
                     Alignment =1
                     RowStart =5
@@ -2556,14 +2556,14 @@ Begin Form
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =5145
+                    Left =5148
                     Top =3720
-                    Width =195
+                    Width =192
                     Height =274
                     Name ="EmptyCell583"
                     GroupTable =26
                     BottomPadding =120
-                    LayoutCachedLeft =5145
+                    LayoutCachedLeft =5148
                     LayoutCachedTop =3720
                     LayoutCachedWidth =5340
                     LayoutCachedHeight =3994
@@ -2573,17 +2573,17 @@ Begin Form
                     GroupTable =26
                 End
                 Begin EmptyCell
-                    Left =5145
-                    Top =4140
-                    Width =195
-                    Height =270
+                    Left =5148
+                    Top =4152
+                    Width =192
+                    Height =276
                     Name ="EmptyCell584"
                     GroupTable =26
                     BottomPadding =120
-                    LayoutCachedLeft =5145
-                    LayoutCachedTop =4140
+                    LayoutCachedLeft =5148
+                    LayoutCachedTop =4152
                     LayoutCachedWidth =5340
-                    LayoutCachedHeight =4410
+                    LayoutCachedHeight =4428
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -2592,17 +2592,17 @@ Begin Form
                     GroupTable =26
                 End
                 Begin EmptyCell
-                    Left =5145
-                    Top =4560
-                    Width =195
-                    Height =270
+                    Left =5148
+                    Top =4584
+                    Width =192
+                    Height =276
                     Name ="EmptyCell585"
                     GroupTable =26
                     BottomPadding =120
-                    LayoutCachedLeft =5145
-                    LayoutCachedTop =4560
+                    LayoutCachedLeft =5148
+                    LayoutCachedTop =4584
                     LayoutCachedWidth =5340
-                    LayoutCachedHeight =4830
+                    LayoutCachedHeight =4860
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -2611,17 +2611,17 @@ Begin Form
                     GroupTable =26
                 End
                 Begin EmptyCell
-                    Left =5145
-                    Top =4980
-                    Width =195
-                    Height =270
+                    Left =5148
+                    Top =5016
+                    Width =192
+                    Height =276
                     Name ="EmptyCell586"
                     GroupTable =26
                     BottomPadding =120
-                    LayoutCachedLeft =5145
-                    LayoutCachedTop =4980
+                    LayoutCachedLeft =5148
+                    LayoutCachedTop =5016
                     LayoutCachedWidth =5340
-                    LayoutCachedHeight =5250
+                    LayoutCachedHeight =5292
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -2630,17 +2630,17 @@ Begin Form
                     GroupTable =26
                 End
                 Begin EmptyCell
-                    Left =5145
-                    Top =5400
-                    Width =195
-                    Height =330
+                    Left =5148
+                    Top =5448
+                    Width =192
+                    Height =336
                     Name ="EmptyCell587"
                     GroupTable =26
                     BottomPadding =120
-                    LayoutCachedLeft =5145
-                    LayoutCachedTop =5400
+                    LayoutCachedLeft =5148
+                    LayoutCachedTop =5448
                     LayoutCachedWidth =5340
-                    LayoutCachedHeight =5730
+                    LayoutCachedHeight =5784
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -2649,17 +2649,17 @@ Begin Form
                     GroupTable =26
                 End
                 Begin EmptyCell
-                    Left =5145
-                    Top =5880
-                    Width =195
-                    Height =330
+                    Left =5148
+                    Top =5940
+                    Width =192
+                    Height =336
                     Name ="EmptyCell588"
                     GroupTable =26
                     BottomPadding =120
-                    LayoutCachedLeft =5145
-                    LayoutCachedTop =5880
+                    LayoutCachedLeft =5148
+                    LayoutCachedTop =5940
                     LayoutCachedWidth =5340
-                    LayoutCachedHeight =6210
+                    LayoutCachedHeight =6276
                     RowStart =5
                     RowEnd =5
                     ColumnStart =1
@@ -2668,11 +2668,11 @@ Begin Form
                     GroupTable =26
                 End
                 Begin CommandButton
-                    OverlapFlags =95
+                    OverlapFlags =223
                     Left =2160
-                    Top =6330
+                    Top =6336
                     Width =2880
-                    Height =330
+                    Height =336
                     FontSize =10
                     TabIndex =36
                     ForeColor =0
@@ -2722,9 +2722,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =2160
-                    LayoutCachedTop =6330
+                    LayoutCachedTop =6336
                     LayoutCachedWidth =5040
-                    LayoutCachedHeight =6660
+                    LayoutCachedHeight =6672
                     PictureCaptionArrangement =5
                     Alignment =1
                     LayoutGroup =3
@@ -2747,10 +2747,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5400
-                    Top =6360
-                    Width =3030
-                    Height =270
+                    Left =5412
+                    Top =6432
+                    Width =3036
+                    Height =276
                     TabIndex =31
                     ForeColor =0
                     Name ="BTF_BuyersOrder"
@@ -2795,10 +2795,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5400
-                    LayoutCachedTop =6360
-                    LayoutCachedWidth =8430
-                    LayoutCachedHeight =6630
+                    LayoutCachedLeft =5412
+                    LayoutCachedTop =6432
+                    LayoutCachedWidth =8448
+                    LayoutCachedHeight =6708
                     PictureCaptionArrangement =5
                     RowStart =6
                     RowEnd =6
@@ -2823,41 +2823,67 @@ Begin Form
                 End
                 Begin EmptyCell
                     Left =2160
-                    Top =6360
+                    Top =6432
                     Width =2880
-                    Height =270
+                    Height =276
                     Name ="EmptyCell592"
                     GroupTable =26
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
                     LayoutCachedLeft =2160
-                    LayoutCachedTop =6360
+                    LayoutCachedTop =6432
                     LayoutCachedWidth =5040
-                    LayoutCachedHeight =6630
+                    LayoutCachedHeight =6708
                     RowStart =6
                     RowEnd =6
                     LayoutGroup =2
                     GroupTable =26
                 End
                 Begin EmptyCell
-                    Left =5145
-                    Top =6360
-                    Width =195
-                    Height =270
+                    Left =5148
+                    Top =6432
+                    Width =192
+                    Height =276
                     Name ="EmptyCell593"
                     GroupTable =26
                     BottomPadding =120
-                    LayoutCachedLeft =5145
-                    LayoutCachedTop =6360
+                    LayoutCachedLeft =5148
+                    LayoutCachedTop =6432
                     LayoutCachedWidth =5340
-                    LayoutCachedHeight =6630
+                    LayoutCachedHeight =6708
                     RowStart =6
                     RowEnd =6
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
                     GroupTable =26
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8820
+                    Top =180
+                    TabIndex =37
+                    Name ="Command595"
+                    Caption ="Command595"
+
+                    LayoutCachedLeft =8820
+                    LayoutCachedTop =180
+                    LayoutCachedWidth =10260
+                    LayoutCachedHeight =540
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9060
+                    Top =2280
+                    Width =1212
+                    Height =300
+                    Name ="Label600"
+                    Caption ="git dev 1 test"
+                    LayoutCachedLeft =9060
+                    LayoutCachedTop =2280
+                    LayoutCachedWidth =10272
+                    LayoutCachedHeight =2580
                 End
             End
         End

@@ -111,7 +111,7 @@
         "BuiltInFace": true,
         "Caption": "Page Set&up...",
         "DescriptionText": "",
-        "Enabled": false,
+        "Enabled": true,
         "FaceId": 247,
         "Height": 28,
         "HelpContextId": 0,

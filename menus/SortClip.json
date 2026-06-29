@@ -275,7 +275,7 @@
         "TooltipText": "Sort &Descending",
         "Type": 1,
         "Visible": true,
-        "Width": 112,
+        "Width": 108,
         "Id": 10068,
         "ImagePath": "rel:SortClip_Images\\ÿ"
       },
@@ -304,7 +304,7 @@
         "TooltipText": "Sort &Descending",
         "Type": 1,
         "Visible": true,
-        "Width": 128,
+        "Width": 113,
         "Id": 10071,
         "ImagePath": "rel:SortClip_Images\\ÿ_9"
       },
