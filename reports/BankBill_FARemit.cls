@@ -5,5 +5,5 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Report_Load()
-If Me.clientID = 4209 Then Me.FeeLabel.caption = "Ancillary"
+If Me.ClientID = 4209 Then Me.FeeLabel.caption = "Ancillary"
 End Sub

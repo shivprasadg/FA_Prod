@@ -113,13 +113,13 @@ Private Sub UnitActualDelDate_Click()
 End Sub
 
 Private Sub UnitStatus_AfterUpdate()
-Me.unitstatus = UCase(Me.unitstatus)
-    If Not IsDate(DLookup("cofacopy", "units", "Unitid=" & Me.UnitID)) And Not IsDate(DLookup("coaback", "units", "Unitid=" & Me.UnitID)) And Me.unitstatus = "A" Then
+Me.UnitStatus = UCase(Me.UnitStatus)
+    If Not IsDate(DLookup("cofacopy", "units", "Unitid=" & Me.UnitID)) And Not IsDate(DLookup("coaback", "units", "Unitid=" & Me.UnitID)) And Me.UnitStatus = "A" Then
             MsgBox "You must have an CoA Copy Date entered", vbInformation, "CoA Date Req"
-        Me.unitstatus = "B"
+        Me.UnitStatus = "B"
         Exit Sub
     End If
-    If IsDate(DLookup("cofacopy", "units", "Unitid=" & Me.UnitID)) And Me.unitstatus = "A" Then
+    If IsDate(DLookup("cofacopy", "units", "Unitid=" & Me.UnitID)) And Me.UnitStatus = "A" Then
            Me.UnitDocAccpt = -1
     End If
 End Sub

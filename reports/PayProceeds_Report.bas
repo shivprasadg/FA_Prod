@@ -499,7 +499,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =382
+            Height =396
             BreakLevel =1
             Name ="GroupHeader1"
             AlternateBackThemeColorIndex =1
@@ -510,19 +510,19 @@ Begin Report
                     BorderWidth =1
                     TextAlign =1
                     TextFontFamily =18
-                    Left =30
-                    Top =30
-                    Width =2130
-                    Height =330
+                    Left =36
+                    Top =36
+                    Width =2136
+                    Height =336
                     RightMargin =29
                     Name ="Label1232"
                     Caption ="Proceeds"
                     FontName ="Times New Roman"
                     GroupTable =8
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =2160
-                    LayoutCachedHeight =360
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =2172
+                    LayoutCachedHeight =372
                     LayoutGroup =4
                     BackThemeColorIndex =1
                     BackShade =95.0
@@ -554,7 +554,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =142
+            Height =156
             BreakLevel =2
             Name ="GroupFooter4"
             AlternateBackShade =95.0
@@ -568,9 +568,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =7920
-                    Top =30
+                    Top =36
                     Width =2280
-                    Height =90
+                    Height =96
                     LeftMargin =29
                     RightMargin =29
                     Name ="Text1225"
@@ -580,9 +580,9 @@ Begin Report
                     GroupTable =7
 
                     LayoutCachedLeft =7920
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =10200
-                    LayoutCachedHeight =120
+                    LayoutCachedHeight =132
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =3
@@ -602,9 +602,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =2280
-                    Top =30
+                    Top =36
                     Width =5580
-                    Height =90
+                    Height =96
                     TabIndex =1
                     LeftMargin =29
                     RightMargin =29
@@ -614,9 +614,9 @@ Begin Report
                     GroupTable =7
 
                     LayoutCachedLeft =2280
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =7860
-                    LayoutCachedHeight =120
+                    LayoutCachedHeight =132
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =3
@@ -634,9 +634,9 @@ Begin Report
                     TextFontFamily =18
                     IMESentenceMode =3
                     Left =1020
-                    Top =30
+                    Top =36
                     Width =1200
-                    Height =90
+                    Height =96
                     TabIndex =2
                     RightMargin =29
                     Name ="Label1227"
@@ -645,9 +645,9 @@ Begin Report
                     GroupTable =7
 
                     LayoutCachedLeft =1020
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =120
+                    LayoutCachedHeight =132
                     LayoutGroup =3
                     BackThemeColorIndex =6
                     BackTint =20.0
@@ -662,7 +662,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =382
+            Height =396
             BreakLevel =1
             Name ="GroupFooter2"
             AlternateBackShade =95.0
@@ -676,9 +676,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =7920
-                    Top =30
+                    Top =36
                     Width =2280
-                    Height =330
+                    Height =336
                     TabIndex =1
                     LeftMargin =29
                     RightMargin =29
@@ -689,9 +689,9 @@ Begin Report
                     GroupTable =3
 
                     LayoutCachedLeft =7920
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =10200
-                    LayoutCachedHeight =360
+                    LayoutCachedHeight =372
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =2
@@ -711,9 +711,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =2280
-                    Top =30
+                    Top =36
                     Width =5580
-                    Height =330
+                    Height =336
                     LeftMargin =29
                     RightMargin =29
                     Name ="Text151"
@@ -722,9 +722,9 @@ Begin Report
                     GroupTable =3
 
                     LayoutCachedLeft =2280
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =7860
-                    LayoutCachedHeight =360
+                    LayoutCachedHeight =372
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -740,18 +740,18 @@ Begin Report
                             TextAlign =1
                             TextFontFamily =18
                             Left =1020
-                            Top =30
+                            Top =36
                             Width =1200
-                            Height =330
+                            Height =336
                             RightMargin =29
                             Name ="Label354"
                             Caption ="Pay Vendor"
                             FontName ="Times New Roman"
                             GroupTable =3
                             LayoutCachedLeft =1020
-                            LayoutCachedTop =30
+                            LayoutCachedTop =36
                             LayoutCachedWidth =2220
-                            LayoutCachedHeight =360
+                            LayoutCachedHeight =372
                             LayoutGroup =2
                             BackThemeColorIndex =9
                             BackTint =20.0
@@ -817,7 +817,7 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =7050
+                    Left =7056
                     Top =60
                     Width =0
                     Height =1980
@@ -827,9 +827,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =7050
+                    LayoutCachedLeft =7056
                     LayoutCachedTop =60
-                    LayoutCachedWidth =7050
+                    LayoutCachedWidth =7056
                     LayoutCachedHeight =2040
                     ColumnStart =2
                     ColumnEnd =2

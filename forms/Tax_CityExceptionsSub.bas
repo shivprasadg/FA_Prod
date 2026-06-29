@@ -183,12 +183,11 @@ Begin Form
                     Height =480
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label3"
                     Caption ="Starts \015\012ON"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =4934
                     LayoutCachedWidth =6014
                     LayoutCachedHeight =480
@@ -206,7 +205,9 @@ Begin Form
                     ColumnOrder =0
                     FontSize =8
                     BorderColor =12632256
+                    ForeColor =0
                     Name ="txtCurrent"
+                    GridlineColor =0
 
                     LayoutCachedLeft =3180
                     LayoutCachedWidth =3300
@@ -227,12 +228,11 @@ Begin Form
                     Height =240
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="TaxNumberLabel"
                     Caption ="Excp Tax"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =4079
                     LayoutCachedWidth =4914
                     LayoutCachedHeight =240
@@ -249,12 +249,11 @@ Begin Form
                     Height =240
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label206"
                     Caption ="Rate %"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =4079
                     LayoutCachedTop =240
                     LayoutCachedWidth =4914
@@ -271,12 +270,11 @@ Begin Form
                     Height =480
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label210"
                     Caption ="Ends\015\012ON"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =6014
                     LayoutCachedWidth =7094
                     LayoutCachedHeight =480
@@ -297,10 +295,10 @@ Begin Form
                     FontSize =10
                     FontWeight =700
                     TabIndex =1
+                    ForeColor =0
                     Name ="StateNameLabel"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedTop =90
                     LayoutCachedWidth =4065
@@ -321,12 +319,11 @@ Begin Form
                     Height =240
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label218"
                     Caption ="Active"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =12345
                     LayoutCachedTop =240
                     LayoutCachedWidth =12959
@@ -343,12 +340,11 @@ Begin Form
                     Height =480
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label220"
                     Caption =" Replaces Base"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =7094
                     LayoutCachedWidth =7859
                     LayoutCachedHeight =480
@@ -365,13 +361,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =8210719
                     Name ="Label223"
                     Caption ="Trac"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =7860
                     LayoutCachedTop =255
                     LayoutCachedWidth =8393
@@ -390,13 +384,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =8210719
                     Name ="Label226"
                     Caption ="Trlr"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =8926
                     LayoutCachedTop =255
                     LayoutCachedWidth =9459
@@ -415,13 +407,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =8210719
                     Name ="Label229"
                     Caption ="Str"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =8393
                     LayoutCachedTop =255
                     LayoutCachedWidth =8926
@@ -440,13 +430,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =8210719
                     Name ="Label232"
                     Caption ="4 Hire"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =9459
                     LayoutCachedTop =255
                     LayoutCachedWidth =9992
@@ -465,13 +453,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =8210719
                     Name ="Label235"
                     Caption ="Term↑ "
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =9992
                     LayoutCachedTop =255
                     LayoutCachedWidth =10577
@@ -490,13 +476,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =8210719
                     Name ="Label236"
                     Caption ="Weight ↑"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =10577
                     LayoutCachedTop =255
                     LayoutCachedWidth =11477
@@ -515,13 +499,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =8210719
                     Name ="Label240"
                     Caption ="Max $"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =11477
                     LayoutCachedTop =255
                     LayoutCachedWidth =12312
@@ -540,13 +522,11 @@ Begin Form
                     Height =240
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =6108695
                     Name ="Label242"
                     Caption ="┌─────────── Applies to ───────────┐"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =8040
                     LayoutCachedTop =60
                     LayoutCachedWidth =11325
@@ -573,9 +553,7 @@ Begin Form
                     Width =750
                     Height =255
                     BackColor =12566463
-                    BorderColor =10921638
                     Name ="Box238"
-                    GridlineColor =10921638
                     LayoutCachedLeft =7125
                     LayoutCachedWidth =7875
                     LayoutCachedHeight =255
@@ -590,7 +568,7 @@ Begin Form
                     Width =4020
                     Height =255
                     FontSize =10
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="Text214"
                     ControlSource ="=[ExceptionDescription] & \" (\" & [TaxAbbreviation] & \")\""
                     ControlTipText ="Double-Click to Edit Event"
@@ -598,7 +576,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =45
                     LayoutCachedWidth =4065
@@ -622,7 +599,7 @@ Begin Form
                     FontSize =9
                     FontWeight =700
                     TabIndex =1
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="StartsOn"
                     ControlSource ="StartsOn"
                     Format ="Short Date"
@@ -631,7 +608,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4934
                     LayoutCachedWidth =6014
@@ -656,12 +632,9 @@ Begin Form
                     Height =231
                     FontSize =8
                     TabIndex =2
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Id"
                     ControlSource ="Id"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =3900
                     LayoutCachedWidth =4053
@@ -674,14 +647,12 @@ Begin Form
                     Width =210
                     Height =225
                     TabIndex =3
-                    BorderColor =10921638
                     Name ="IsActive"
                     ControlSource ="IsActive"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12586
                     LayoutCachedTop =29
@@ -704,12 +675,9 @@ Begin Form
                     Height =231
                     FontSize =8
                     TabIndex =4
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="TaxStatesID"
                     ControlSource ="TaxStatesID"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =3495
                     LayoutCachedWidth =3633
@@ -726,7 +694,7 @@ Begin Form
                     FontSize =9
                     FontWeight =700
                     TabIndex =5
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="EndsOn"
                     ControlSource ="EndsOn"
                     Format ="Short Date"
@@ -735,7 +703,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =6014
                     LayoutCachedWidth =7094
@@ -768,6 +735,7 @@ Begin Form
                         0x5b00490044005d003d005b00740078007400430075007200720065006e007400 ,
                         0x5d0000000000
                     End
+                    GridlineColor =0
 
                     LayoutCachedTop =255
                     LayoutCachedWidth =12960
@@ -797,6 +765,7 @@ Begin Form
                     FontSize =10
                     TabIndex =7
                     BorderColor =9211020
+                    ForeColor =0
                     Name ="TaxNumber"
                     ControlSource ="TaxRate"
                     Format ="Percent"
@@ -807,7 +776,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4079
                     LayoutCachedWidth =4914
@@ -834,12 +802,9 @@ Begin Form
                     Height =231
                     FontSize =8
                     TabIndex =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="TaxTypeId"
                     ControlSource ="TaxTypeId"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =3195
                     LayoutCachedWidth =3333
@@ -852,14 +817,12 @@ Begin Form
                     Width =210
                     Height =195
                     TabIndex =9
-                    BorderColor =10921638
                     Name ="Check219"
                     ControlSource ="TaxRule"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7425
                     LayoutCachedTop =43
@@ -877,14 +840,12 @@ Begin Form
                     Width =210
                     Height =225
                     TabIndex =10
-                    BorderColor =10921638
                     Name ="AppliesToTractors"
                     ControlSource ="AppliesToTractors"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8025
                     LayoutCachedTop =29
@@ -902,14 +863,12 @@ Begin Form
                     Width =210
                     Height =225
                     TabIndex =11
-                    BorderColor =10921638
                     Name ="AppliesToTrailers"
                     ControlSource ="AppliesToTrailers"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =9105
                     LayoutCachedTop =29
@@ -927,14 +886,12 @@ Begin Form
                     Width =210
                     Height =225
                     TabIndex =12
-                    BorderColor =10921638
                     Name ="AppliesToStraightTrucks"
                     ControlSource ="AppliesToStraightTrucks"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8565
                     LayoutCachedTop =29
@@ -952,14 +909,12 @@ Begin Form
                     Width =210
                     Height =225
                     TabIndex =13
-                    BorderColor =10921638
                     Name ="Check233"
                     ControlSource ="ForHireOnly"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =9645
                     LayoutCachedTop =29
@@ -982,6 +937,7 @@ Begin Form
                     FontSize =10
                     TabIndex =14
                     BorderColor =9211020
+                    ForeColor =0
                     Name ="IfWeightLimitExceedsLbs"
                     ControlSource ="WeightLimitMinLbs"
                     Format ="Standard"
@@ -990,7 +946,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10577
                     LayoutCachedWidth =11567
@@ -1016,6 +971,7 @@ Begin Form
                     FontSize =10
                     TabIndex =15
                     BorderColor =9211020
+                    ForeColor =0
                     Name ="Text234"
                     ControlSource ="TermExceedsMonths"
                     ControlTipText ="Double-Click to Edit Event"
@@ -1023,7 +979,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =9992
                     LayoutCachedWidth =10577
@@ -1050,6 +1005,7 @@ Begin Form
                     FontSize =10
                     TabIndex =16
                     BorderColor =9211020
+                    ForeColor =0
                     Name ="TaxMaxValue"
                     ControlSource ="TaxMaxValue"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -1058,7 +1014,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =11567
                     LayoutCachedWidth =12402

@@ -122,17 +122,17 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =540
+            Height =552
             Name ="GroupHeader0"
             AlternateBackShade =95.0
             BackThemeColorIndex =1
             Begin
                 Begin Label
                     TextAlign =1
-                    Left =5835
-                    Top =330
-                    Width =1470
-                    Height =210
+                    Left =5844
+                    Top =336
+                    Width =1476
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label246"
@@ -142,11 +142,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =5835
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =7305
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =5844
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =7320
+                    LayoutCachedHeight =552
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -159,9 +158,9 @@ Begin Report
                 Begin Label
                     TextAlign =1
                     Left =60
-                    Top =330
+                    Top =336
                     Width =2445
-                    Height =210
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label247"
@@ -171,11 +170,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
-                    LayoutCachedTop =330
+                    LayoutCachedTop =336
                     LayoutCachedWidth =2505
-                    LayoutCachedHeight =540
+                    LayoutCachedHeight =552
                     LayoutGroup =1
                     BorderThemeColorIndex =-1
                     BorderTint =100.0
@@ -186,10 +184,10 @@ Begin Report
                 Begin Label
                     Visible = NotDefault
                     TextAlign =2
-                    Left =7305
-                    Top =330
-                    Width =510
-                    Height =210
+                    Left =7320
+                    Top =336
+                    Width =516
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label248"
@@ -199,11 +197,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =7305
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =7815
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =7320
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =7836
+                    LayoutCachedHeight =552
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -216,10 +213,10 @@ Begin Report
                 Begin Label
                     Visible = NotDefault
                     TextAlign =2
-                    Left =7815
-                    Top =330
-                    Width =1455
-                    Height =210
+                    Left =7836
+                    Top =336
+                    Width =1452
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label27"
@@ -229,11 +226,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =7815
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =9270
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =7836
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =9288
+                    LayoutCachedHeight =552
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -251,9 +247,9 @@ Begin Report
                     Height =330
                     FontWeight =700
                     BorderColor =7500402
+                    ForeColor =0
                     Name ="Label15"
                     Caption ="Lessee Contacts"
-                    GridlineColor =10921638
                     LayoutCachedWidth =11448
                     LayoutCachedHeight =330
                     BackThemeColorIndex =-1
@@ -265,10 +261,10 @@ Begin Report
                 Begin Label
                     Visible = NotDefault
                     TextAlign =2
-                    Left =9270
-                    Top =330
-                    Width =1455
-                    Height =210
+                    Left =9288
+                    Top =336
+                    Width =1452
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label269"
@@ -278,11 +274,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =9270
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =10725
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =9288
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =10740
+                    LayoutCachedHeight =552
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
@@ -294,10 +289,10 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =2505
-                    Top =330
-                    Width =3330
-                    Height =210
+                    Left =2508
+                    Top =336
+                    Width =3336
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label289"
@@ -307,11 +302,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2505
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =5835
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =2508
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =5844
+                    LayoutCachedHeight =552
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -338,12 +332,13 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5835
-                    Width =1470
+                    Left =5844
+                    Width =1476
                     Height =230
                     FontSize =8
                     TabIndex =2
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="ChildDesc"
                     ControlSource ="SignerType"
                     FontName ="Tahoma"
@@ -352,11 +347,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =5835
-                    LayoutCachedWidth =7305
+                    LayoutCachedLeft =5844
+                    LayoutCachedWidth =7320
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -383,6 +377,7 @@ Begin Report
                     Height =230
                     FontSize =8
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="VendorSNm"
                     ControlSource ="FullName"
                     FontName ="Tahoma"
@@ -391,7 +386,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =60
@@ -417,12 +411,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7305
-                    Width =510
+                    Left =7320
+                    Width =516
                     Height =230
                     FontSize =8
                     TabIndex =3
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="ChildPartCost"
                     ControlSource ="HasEmail"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -432,11 +427,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =7305
-                    LayoutCachedWidth =7815
+                    LayoutCachedLeft =7320
+                    LayoutCachedWidth =7836
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -458,12 +452,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7815
-                    Width =1455
+                    Left =7836
+                    Width =1452
                     Height =230
                     FontSize =8
                     TabIndex =4
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="contactPrimaryPhone"
                     ControlSource ="Phone"
                     FontName ="Tahoma"
@@ -473,11 +468,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =7815
-                    LayoutCachedWidth =9270
+                    LayoutCachedLeft =7836
+                    LayoutCachedWidth =9288
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -498,12 +492,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =9270
-                    Width =1455
+                    Left =9288
+                    Width =1452
                     Height =230
                     FontSize =8
                     TabIndex =5
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="Text270"
                     ControlSource ="Mobile"
                     FontName ="Tahoma"
@@ -513,11 +508,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =9270
-                    LayoutCachedWidth =10725
+                    LayoutCachedLeft =9288
+                    LayoutCachedWidth =10740
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -539,12 +533,13 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2505
-                    Width =3330
+                    Left =2508
+                    Width =3336
                     Height =230
                     FontSize =8
                     TabIndex =1
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="Text283"
                     ControlSource ="Title"
                     FontName ="Tahoma"
@@ -553,11 +548,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2505
-                    LayoutCachedWidth =5835
+                    LayoutCachedLeft =2508
+                    LayoutCachedWidth =5844
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1

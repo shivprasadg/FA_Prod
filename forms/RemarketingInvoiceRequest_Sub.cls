@@ -175,7 +175,7 @@ Private Sub Form_Current()
     SQLz = SQLz & ", RI.BuyerID, RI.InvoiceSentDate AS Sent, RI.InvoicePaidDate AS Paid "
     SQLz = SQLz & "FROM RmktInvoiceRequestTbl AS RI "
     SQLz = SQLz & "LEFT JOIN RMKT_BuyersOrders AS B ON RI.InvoiceRequestID = B.BuyersOrderID "
-    SQLz = SQLz & "WHERE BuyerId= " & Nz(Me.Parent.BuyerId, 0) & " "
+    SQLz = SQLz & "WHERE BuyerId= " & Nz(Me.Parent.BuyerID, 0) & " "
     SQLz = SQLz & "GROUP BY RI.InvoiceRequestID, RI.InvoiceRequestDate, RI.BuyerID, RI.InvoiceSentDate, RI.InvoicePaidDate "
     SQLz = SQLz & "Order by InvoiceRequestID Desc;"
     BI = 0
@@ -213,18 +213,18 @@ Private Sub NewBuyersOrder_Click()
     If Committ = vbNo Then Exit Sub
     Me.BuyersOrderUnits_Sub.Visible = False
     DoCmd.GotoRecord , , acNewRec
-    Me.BuyerId = Me.Parent.BuyerId
+    Me.BuyerID = Me.Parent.BuyerID
     Me.RequestedBy = FAUserName
     If IsNull(Me.TakeDelivery) Then Me.TakeDelivery = DateAdd("M", 1, DateSerial(Year(Date), Month(Date), 1) + 24)
 End Sub
 Private Sub SaveUpdateOrder_Click()
-    If Me.BuyerId & "test" = "test" Then Me.BuyerId = Me.Parent.BuyerId
+    If Me.BuyerID & "test" = "test" Then Me.BuyerID = Me.Parent.BuyerID
     If Me.SalesRep & "test" = "test" Or Me.RequestDate & "test" = "test" Or IsNull(Me.TakeDelivery) Or Me.Disposition & "test" = "test" Then
         MsgBox "Each Buyers Order Requires a:" & vbNewLine & "A Sales Rep" & vbNewLine & "A Request Date" & vbNewLine & "A Take Delivery Date" & vbNewLine & "Disposition" & vbNewLine, , "No Stuff,why?"
         Exit Sub
     End If
     Committ = MsgBox("You're Saving a Buyers Order For: " & _
-                     vbNewLine & DLookup("BuyerShortName", "Buyer", "BuyerID=" & Me.Parent.BuyerId) & " " & _
+                     vbNewLine & DLookup("BuyerShortName", "Buyer", "BuyerID=" & Me.Parent.BuyerID) & " " & _
                      vbNewLine & "  Take Delivery of: " & Me.TakeDelivery & _
                      vbNewLine & "  Disposition of: " & Me.Disposition.Column(1) & _
                      vbNewLine & "  Tax Rate of: " & Format(Me.TaxRateToUse, "Percent") & _

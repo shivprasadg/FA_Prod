@@ -851,7 +851,7 @@ Begin Form
                     TextFontCharSet =238
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =780
+                    Left =792
                     Top =9840
                     Width =720
                     Height =255
@@ -867,9 +867,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =780
+                    LayoutCachedLeft =792
                     LayoutCachedTop =9840
-                    LayoutCachedWidth =1500
+                    LayoutCachedWidth =1512
                     LayoutCachedHeight =10095
                     ColumnStart =1
                     ColumnEnd =1
@@ -883,9 +883,9 @@ Begin Form
                     TextFontCharSet =238
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1500
+                    Left =1524
                     Top =9840
-                    Width =2010
+                    Width =2016
                     Height =255
                     FontSize =9
                     TabIndex =4
@@ -899,9 +899,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =1500
+                    LayoutCachedLeft =1524
                     LayoutCachedTop =9840
-                    LayoutCachedWidth =3510
+                    LayoutCachedWidth =3540
                     LayoutCachedHeight =10095
                     ColumnStart =2
                     ColumnEnd =2
@@ -980,9 +980,9 @@ Begin Form
                     OverlapFlags =223
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3510
+                    Left =3552
                     Top =9840
-                    Width =285
+                    Width =288
                     Height =255
                     FontSize =9
                     TabIndex =5
@@ -996,9 +996,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =3510
+                    LayoutCachedLeft =3552
                     LayoutCachedTop =9840
-                    LayoutCachedWidth =3795
+                    LayoutCachedWidth =3840
                     LayoutCachedHeight =10095
                     ColumnStart =3
                     ColumnEnd =3
@@ -1011,9 +1011,9 @@ Begin Form
                     OverlapFlags =223
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =4950
+                    Left =5016
                     Top =9840
-                    Width =825
+                    Width =828
                     Height =255
                     FontSize =9
                     TabIndex =7
@@ -1027,9 +1027,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =4950
+                    LayoutCachedLeft =5016
                     LayoutCachedTop =9840
-                    LayoutCachedWidth =5775
+                    LayoutCachedWidth =5844
                     LayoutCachedHeight =10095
                     ColumnStart =5
                     ColumnEnd =5
@@ -1297,9 +1297,9 @@ Begin Form
                     OverlapFlags =215
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3795
+                    Left =3852
                     Top =9840
-                    Width =1155
+                    Width =1152
                     Height =255
                     FontSize =9
                     TabIndex =6
@@ -1313,9 +1313,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =3795
+                    LayoutCachedLeft =3852
                     LayoutCachedTop =9840
-                    LayoutCachedWidth =4950
+                    LayoutCachedWidth =5004
                     LayoutCachedHeight =10095
                     ColumnStart =4
                     ColumnEnd =4

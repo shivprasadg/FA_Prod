@@ -334,9 +334,7 @@ Begin Report
                     Left =8940
                     Width =1665
                     Height =285
-                    BorderColor =10921638
                     Name ="Box266"
-                    GridlineColor =10921638
                     LayoutCachedLeft =8940
                     LayoutCachedWidth =10605
                     LayoutCachedHeight =285

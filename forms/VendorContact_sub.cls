@@ -13,7 +13,7 @@ End Sub
 Private Sub AddContact_Click()
  DoCmd.GotoRecord , , acNewRec
  Me.ContactsList.Requery
- Me.clientID = Me.Parent.VendorID
+ Me.ClientID = Me.Parent.VendorID
 End Sub
 
 Private Sub contactFirst_AfterUpdate()

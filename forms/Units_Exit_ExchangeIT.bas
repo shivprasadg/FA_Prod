@@ -675,9 +675,9 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =2910
+                    Left =2928
                     Top =2520
-                    Width =1230
+                    Width =1236
                     Height =255
                     FontSize =10
                     TabIndex =7
@@ -688,9 +688,9 @@ Begin Form
                     Format ="Short Date"
                     GroupTable =1
 
-                    LayoutCachedLeft =2910
+                    LayoutCachedLeft =2928
                     LayoutCachedTop =2520
-                    LayoutCachedWidth =4140
+                    LayoutCachedWidth =4164
                     LayoutCachedHeight =2775
                     ColumnStart =1
                     ColumnEnd =1
@@ -708,7 +708,7 @@ Begin Form
                             BackStyle =1
                             OverlapFlags =215
                             TextAlign =1
-                            Left =1530
+                            Left =1536
                             Top =2520
                             Width =1320
                             Height =255
@@ -718,9 +718,9 @@ Begin Form
                             Caption ="Final Rent Date"
                             FontName ="Segoe UI"
                             GroupTable =1
-                            LayoutCachedLeft =1530
+                            LayoutCachedLeft =1536
                             LayoutCachedTop =2520
-                            LayoutCachedWidth =2850
+                            LayoutCachedWidth =2856
                             LayoutCachedHeight =2775
                             LayoutGroup =1
                             ThemeFontIndex =-1
@@ -737,10 +737,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =2910
-                    Top =2835
-                    Width =1230
-                    Height =255
+                    Left =2928
+                    Top =2844
+                    Width =1236
+                    Height =252
                     FontSize =10
                     TabIndex =8
                     BackColor =14151142
@@ -750,10 +750,10 @@ Begin Form
                     Format ="Short Date"
                     GroupTable =1
 
-                    LayoutCachedLeft =2910
-                    LayoutCachedTop =2835
-                    LayoutCachedWidth =4140
-                    LayoutCachedHeight =3090
+                    LayoutCachedLeft =2928
+                    LayoutCachedTop =2844
+                    LayoutCachedWidth =4164
+                    LayoutCachedHeight =3096
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -771,20 +771,20 @@ Begin Form
                             BackStyle =1
                             OverlapFlags =215
                             TextAlign =1
-                            Left =1530
-                            Top =2835
+                            Left =1536
+                            Top =2844
                             Width =1320
-                            Height =255
+                            Height =252
                             FontSize =8
                             BorderColor =0
                             Name ="Label214"
                             Caption ="Proj Off-lease "
                             FontName ="Segoe UI"
                             GroupTable =1
-                            LayoutCachedLeft =1530
-                            LayoutCachedTop =2835
-                            LayoutCachedWidth =2850
-                            LayoutCachedHeight =3090
+                            LayoutCachedLeft =1536
+                            LayoutCachedTop =2844
+                            LayoutCachedWidth =2856
+                            LayoutCachedHeight =3096
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -936,9 +936,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =2940
-                    Top =1275
+                    Top =1272
                     Width =1230
-                    Height =255
+                    Height =252
                     FontSize =10
                     TabIndex =4
                     BorderColor =12632256
@@ -949,9 +949,9 @@ Begin Form
                     GroupTable =2
 
                     LayoutCachedLeft =2940
-                    LayoutCachedTop =1275
+                    LayoutCachedTop =1272
                     LayoutCachedWidth =4170
-                    LayoutCachedHeight =1530
+                    LayoutCachedHeight =1524
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -969,9 +969,9 @@ Begin Form
                             OverlapFlags =215
                             TextAlign =1
                             Left =1560
-                            Top =1275
+                            Top =1272
                             Width =1320
-                            Height =255
+                            Height =252
                             FontSize =8
                             BorderColor =0
                             Name ="Label2"
@@ -979,9 +979,9 @@ Begin Form
                             FontName ="Segoe UI"
                             GroupTable =2
                             LayoutCachedLeft =1560
-                            LayoutCachedTop =1275
+                            LayoutCachedTop =1272
                             LayoutCachedWidth =2880
-                            LayoutCachedHeight =1530
+                            LayoutCachedHeight =1524
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =2
@@ -1001,9 +1001,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =2940
-                    Top =1590
+                    Top =1584
                     Width =1230
-                    Height =255
+                    Height =252
                     FontSize =10
                     TabIndex =5
                     BorderColor =12632256
@@ -1014,9 +1014,9 @@ Begin Form
                     GroupTable =2
 
                     LayoutCachedLeft =2940
-                    LayoutCachedTop =1590
+                    LayoutCachedTop =1584
                     LayoutCachedWidth =4170
-                    LayoutCachedHeight =1845
+                    LayoutCachedHeight =1836
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -1034,9 +1034,9 @@ Begin Form
                             OverlapFlags =215
                             TextAlign =1
                             Left =1560
-                            Top =1590
+                            Top =1584
                             Width =1320
-                            Height =255
+                            Height =252
                             FontSize =8
                             BorderColor =0
                             Name ="Label259"
@@ -1044,9 +1044,9 @@ Begin Form
                             FontName ="Segoe UI"
                             GroupTable =2
                             LayoutCachedLeft =1560
-                            LayoutCachedTop =1590
+                            LayoutCachedTop =1584
                             LayoutCachedWidth =2880
-                            LayoutCachedHeight =1845
+                            LayoutCachedHeight =1836
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =2
@@ -1066,9 +1066,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =2940
-                    Top =1905
+                    Top =1896
                     Width =1230
-                    Height =255
+                    Height =252
                     FontSize =10
                     TabIndex =6
                     BorderColor =12632256
@@ -1079,9 +1079,9 @@ Begin Form
                     GroupTable =2
 
                     LayoutCachedLeft =2940
-                    LayoutCachedTop =1905
+                    LayoutCachedTop =1896
                     LayoutCachedWidth =4170
-                    LayoutCachedHeight =2160
+                    LayoutCachedHeight =2148
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -1099,9 +1099,9 @@ Begin Form
                             OverlapFlags =215
                             TextAlign =1
                             Left =1560
-                            Top =1905
+                            Top =1896
                             Width =1320
-                            Height =255
+                            Height =252
                             FontSize =8
                             BorderColor =0
                             Name ="Label265"
@@ -1109,9 +1109,9 @@ Begin Form
                             FontName ="Segoe UI"
                             GroupTable =2
                             LayoutCachedLeft =1560
-                            LayoutCachedTop =1905
+                            LayoutCachedTop =1896
                             LayoutCachedWidth =2880
-                            LayoutCachedHeight =2160
+                            LayoutCachedHeight =2148
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =2

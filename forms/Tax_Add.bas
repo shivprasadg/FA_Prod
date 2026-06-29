@@ -120,10 +120,8 @@ Begin Form
                     Top =465
                     Width =13680
                     Height =135
-                    BorderColor =10921638
                     Name ="Image142"
                     Picture ="2_WhiteShadow"
-                    GridlineColor =10921638
                     HorizontalAnchor =2
 
                     LayoutCachedTop =465

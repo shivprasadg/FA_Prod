@@ -4,10 +4,10 @@ ATLAAS_Shiv_v1.accdb
 VCS Version 4.1.2
 Full Path: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb
 Export Folder: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\
-6/27/2026 7:49:44 AM
+6/29/2026 10:33:55 AM
 -------------------------------------
 Saving backup of original database...
-Saved as ATLAAS_Shiv_v1_VCSBackup1.accdb.
+Saved as ATLAAS_Shiv_v1_VCSBackup.accdb.
 Created blank database for import. (v12)
 Removing non built-in references...
   Removed DAO
@@ -1313,58 +1313,14 @@ Error 2128: Microsoft Access encountered errors while importing NewDekraInspecti
 -------------------------------------
 Retrying import for: NewDekraInspectionsImport
 
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
 
 -------------------------------------
 ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+Source: .Unknown.LogUnhandledErrors
 -------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
 -------------------------------------
 ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
+Source: modVCSUtility.LoadComponentFromText
 -------------------------------------
 Retrying import for: NewDekraInspectionsImport
 
@@ -1388,28 +1344,6 @@ ERROR: Build error in: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.ac
 Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
 -------------------------------------
   NewDekraInspectionsNoMatch.bas
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsNoMatch'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-Retrying import for: NewDekraInspectionsNoMatch
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsNoMatch'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-Retrying import for: NewDekraInspectionsNoMatch
 
 -------------------------------------
 ERROR: Import issue with 'NewDekraInspectionsNoMatch'
@@ -2543,73 +2477,74 @@ Error 2950: Reserved Error Source: clsDbHiddenAttribute
 -------------------------------------
 [1]
 -------------------------------------
-Done. (245.12 seconds)
+Done. (323.26 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Category                      Count     Seconds
 --------------------------------------------------
-DB Connections                1         75.67
-Reports                       208       64.70
-Forms                         299       39.52
-Tables                        512       34.44
-Queries                       983       23.15
-Modules                       58        1.31
-Doc Properties                1         0.58
-Shared Images                 52        0.52
-CommandBars                   10        0.37
-Relations                     9         0.26
-IMEX Specs                    17        0.24
-Hidden Attributes             1         0.20
-Macros                        3         0.09
+DB Connections                1         89.57
+Reports                       208       78.71
+Forms                         299       55.67
+Queries                       983       46.90
+Tables                        512       41.98
+Modules                       58        2.41
+CommandBars                   10        2.14
+Shared Images                 52        1.31
+Doc Properties                1         0.79
+IMEX Specs                    17        0.51
+Relations                     9         0.42
+Hidden Attributes             1         0.25
+Macros                        3         0.15
+DB Properties                 1         0.08
 VBE References                1         0.07
-DB Properties                 1         0.06
-Nav Pane Groups               1         0.04
-Themes                        1         0.02
+Nav Pane Groups               1         0.05
+Themes                        1         0.03
 VB Project                    1         0.01
 Project                       1         0.01
 --------------------------------------------------
-TOTALS:                       2160      241.27
+TOTALS:                       2160      321.06
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-App.LoadFromText()            1495      82.65
+App.LoadFromText()            1494      106.76
+Read File                     1673      29.72
+Read File Bytes               3201      25.23
 modVCSUtility.LoadComponentFr 
-omText                        1491      16.21
-Read File                     1673      15.23
-Read File Bytes               3206      8.71
-Parse JSON ISO Date           2163      1.82
-Get File List                 18        1.41
-Delete File                   3524      0.97
-Save Stream to File           1504      0.94
-Get File Property Hash        2156      0.87
-Increment Progress            2160      0.66
-Import VBE Module             58        0.62
-Parse JSON                    745       0.53
-modFileAccess.VerifyPath      3535      0.46
-Write File                    527       0.43
-Console Updates               90        0.43
-Convert to JSON               4506      0.31
-Load Stream from File         1504      0.31
-Get VBA Hash                  565       0.27
-Compute SHA256                4376      0.24
-Get Modified Date             5035      0.21
-Create new database           1         0.18
-Enc. utf-8 as utf-16          1504      0.17
-Copy Stream                   1504      0.09
-Building CommandBar           10        0.07
-Add GUID References           18        0.05
+omText                        1492      21.87
+Building CommandBar           10        1.67
+Get File List                 18        1.47
+Save Stream to File           1498      1.23
+Delete File                   3519      1.22
+Get File Property Hash        2156      1.05
+Increment Progress            2160      0.87
+Import VBE Module             58        0.78
+modFileAccess.VerifyPath      3523      0.64
+Write File                    527       0.55
+Parse JSON                    745       0.51
+Load Stream from File         1498      0.48
+Console Updates               73        0.36
+Get VBA Hash                  565       0.35
+Convert to JSON               4506      0.34
+Compute SHA256                4376      0.29
+Get Modified Date             5035      0.24
+Enc. utf-8 as utf-16          1498      0.24
+Create new database           1         0.19
+Copy Stream                   1498      0.11
 Get Unused Resource Name      52        0.05
+Scan Source Files             1         0.05
+Parse JSON ISO Date           2163      0.04
+Add GUID References           18        0.03
 Parse VBA Module              58        0.03
-Scan Source Files             1         0.01
 Clear References              1         0.01
+App.SaveAsText()              1         0.00
 Check for linked table        1         0.00
 modFileAccess.GetUncPath      3         0.00
 --------------------------------------------------
-Other Operations                        111.21
+Other Operations                        126.88
 --------------------------------------------------
 
 
@@ -2617,15 +2552,9 @@ WARNING: The performance monitoring for operations still
 had items in the call stack. This typically happens when
 performance logging is started for an operation, but not
 closed at the conclusion of the operation.
-The call stack currently contains the following 10 items:
+The call stack currently contains the following 4 items:
  - modVCSUtility.LoadComponentFromText
  - App.LoadFromText()
  - App.LoadFromText()
  - App.LoadFromText()
- - App.LoadFromText()
- - App.LoadFromText()
- - App.LoadFromText()
- - App.LoadFromText()
- - App.LoadFromText()
- - modVCSUtility.LoadComponentFromText
 

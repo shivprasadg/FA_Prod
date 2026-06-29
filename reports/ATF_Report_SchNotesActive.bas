@@ -152,10 +152,10 @@ Begin Report
                     ColumnOrder =0
                     FontWeight =700
                     BorderColor =8355711
+                    ForeColor =0
                     Name ="Label15"
                     ControlSource ="=\"Schedule \" & DLookUp(\"SchNo\",\"Schedule\",\"SchId=\" & [schid]) & \" Revis"
                         "ion - Notes\" & IIf([Page]>1,\" Cont'd\",\"\")"
-                    GridlineColor =10921638
 
                     LayoutCachedTop =60
                     LayoutCachedWidth =11405
@@ -180,7 +180,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =525
                     LayoutCachedTop =440
                     LayoutCachedWidth =1533
@@ -206,7 +205,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =45
                     LayoutCachedTop =440
                     LayoutCachedWidth =525
@@ -230,7 +228,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1533
                     LayoutCachedTop =440
                     LayoutCachedWidth =9213
@@ -255,6 +252,7 @@ Begin Report
                     FontSize =9
                     TabIndex =1
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="SchID"
                     ControlSource ="SchID"
                     StatusBarText ="deal id"
@@ -264,7 +262,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10065
                     LayoutCachedTop =60
@@ -283,7 +280,6 @@ Begin Report
                     BorderWidth =2
                     Width =11405
                     Name ="Line260"
-                    GridlineColor =10921638
                     LayoutCachedWidth =11405
                 End
                 Begin TextBox
@@ -305,7 +301,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10469
                     LayoutCachedTop =440
@@ -340,6 +335,7 @@ Begin Report
                     FontSize =9
                     TabIndex =1
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="VendorSNm"
                     ControlSource ="ActionDate"
                     Format ="Short Date"
@@ -347,7 +343,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =540
@@ -376,6 +371,7 @@ Begin Report
                     FontSize =10
                     FontWeight =700
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="contactPrimaryPhone"
                     ControlSource ="RevID"
                     FontName ="Segoe UI"
@@ -383,7 +379,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =60
@@ -420,7 +415,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =540
@@ -448,6 +442,7 @@ Begin Report
                     FontSize =8
                     TabIndex =2
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="ActionDesc"
                     ControlSource ="ActionDesc"
                     FontName ="Segoe UI"
@@ -455,7 +450,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     TextFormat =1
                     ShowDatePicker =1
 
@@ -495,7 +489,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =10469
@@ -525,6 +518,7 @@ Begin Report
                     FontSize =9
                     TabIndex =5
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="ReviewedDateTxt"
                     ControlSource ="=IIf(Nz([ReviewedDate],\"\")=\"\",Null,[ReviewedDate])"
                     Format ="Short Date"
@@ -532,7 +526,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =10469

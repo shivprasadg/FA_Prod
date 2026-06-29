@@ -5,6 +5,7 @@ Begin Form
     RecordSelectors = NotDefault
     AutoCenter = NotDefault
     DividingLines = NotDefault
+    OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     TabularCharSet =238
     PictureAlignment =2
@@ -210,9 +211,9 @@ Begin Form
                     OverlapFlags =247
                     TextFontCharSet =186
                     TextAlign =2
-                    Left =6060
+                    Left =6072
                     Top =2820
-                    Width =705
+                    Width =708
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -224,9 +225,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =6060
+                    LayoutCachedLeft =6072
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =6765
+                    LayoutCachedWidth =6780
                     LayoutCachedHeight =3105
                     ColumnStart =2
                     ColumnEnd =2
@@ -239,9 +240,9 @@ Begin Form
                     OverlapFlags =247
                     TextFontCharSet =186
                     TextAlign =2
-                    Left =15585
+                    Left =15600
                     Top =2820
-                    Width =1455
+                    Width =1452
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -252,9 +253,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =15585
+                    LayoutCachedLeft =15600
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =17040
+                    LayoutCachedWidth =17052
                     LayoutCachedHeight =3105
                     ColumnStart =11
                     ColumnEnd =11
@@ -265,9 +266,9 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =247
                     TextAlign =2
-                    Left =27270
+                    Left =27264
                     Top =2820
-                    Width =975
+                    Width =972
                     Height =285
                     FontSize =9
                     FontWeight =700
@@ -278,9 +279,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =27270
+                    LayoutCachedLeft =27264
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =28245
+                    LayoutCachedWidth =28236
                     LayoutCachedHeight =3105
                     ColumnStart =23
                     ColumnEnd =23
@@ -294,9 +295,9 @@ Begin Form
                     OverlapFlags =247
                     TextFontCharSet =186
                     TextAlign =1
-                    Left =105
+                    Left =108
                     Top =2820
-                    Width =1851
+                    Width =1848
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -307,7 +308,7 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =105
+                    LayoutCachedLeft =108
                     LayoutCachedTop =2820
                     LayoutCachedWidth =1956
                     LayoutCachedHeight =3105
@@ -318,9 +319,9 @@ Begin Form
                     OverlapFlags =255
                     TextFontCharSet =186
                     TextAlign =2
-                    Left =10320
+                    Left =10332
                     Top =2820
-                    Width =315
+                    Width =312
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -331,9 +332,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =10320
+                    LayoutCachedLeft =10332
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =10635
+                    LayoutCachedWidth =10644
                     LayoutCachedHeight =3105
                     ColumnStart =5
                     ColumnEnd =5
@@ -384,9 +385,9 @@ Begin Form
                     OverlapFlags =247
                     TextFontCharSet =186
                     TextAlign =2
-                    Left =17040
+                    Left =17052
                     Top =2820
-                    Width =570
+                    Width =576
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -397,9 +398,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =17040
+                    LayoutCachedLeft =17052
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =17610
+                    LayoutCachedWidth =17628
                     LayoutCachedHeight =3105
                     ColumnStart =12
                     ColumnEnd =12
@@ -848,9 +849,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =12450
+                    Left =12456
                     Top =2820
-                    Width =945
+                    Width =948
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -861,9 +862,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =12450
+                    LayoutCachedLeft =12456
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =13395
+                    LayoutCachedWidth =13404
                     LayoutCachedHeight =3105
                     ColumnStart =7
                     ColumnEnd =7
@@ -1160,9 +1161,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =255
                     TextAlign =2
-                    Left =13905
+                    Left =13920
                     Top =2820
-                    Width =825
+                    Width =828
                     Height =285
                     FontSize =9
                     FontWeight =700
@@ -1173,9 +1174,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =13905
+                    LayoutCachedLeft =13920
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =14730
+                    LayoutCachedWidth =14748
                     LayoutCachedHeight =3105
                     ColumnStart =9
                     ColumnEnd =9
@@ -1187,9 +1188,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =255
                     TextAlign =2
-                    Left =14730
+                    Left =14748
                     Top =2820
-                    Width =855
+                    Width =852
                     Height =285
                     FontSize =9
                     FontWeight =700
@@ -1200,9 +1201,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =14730
+                    LayoutCachedLeft =14748
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =15585
+                    LayoutCachedWidth =15600
                     LayoutCachedHeight =3105
                     ColumnStart =10
                     ColumnEnd =10
@@ -1212,9 +1213,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =255
                     TextAlign =2
-                    Left =13395
+                    Left =13404
                     Top =2820
-                    Width =510
+                    Width =516
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -1225,9 +1226,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =13395
+                    LayoutCachedLeft =13404
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =13905
+                    LayoutCachedWidth =13920
                     LayoutCachedHeight =3105
                     ColumnStart =8
                     ColumnEnd =8
@@ -1239,9 +1240,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =17610
+                    Left =17628
                     Top =2820
-                    Width =1095
+                    Width =1092
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -1252,9 +1253,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =17610
+                    LayoutCachedLeft =17628
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =18705
+                    LayoutCachedWidth =18720
                     LayoutCachedHeight =3105
                     ColumnStart =13
                     ColumnEnd =13
@@ -1314,9 +1315,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =6765
+                    Left =6780
                     Top =2820
-                    Width =2835
+                    Width =2832
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -1327,9 +1328,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =6765
+                    LayoutCachedLeft =6780
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =9600
+                    LayoutCachedWidth =9612
                     LayoutCachedHeight =3105
                     ColumnStart =3
                     ColumnEnd =3
@@ -1341,7 +1342,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =255
                     TextAlign =2
-                    Left =9600
+                    Left =9612
                     Top =2820
                     Width =720
                     Height =285
@@ -1354,9 +1355,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =9600
+                    LayoutCachedLeft =9612
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =10320
+                    LayoutCachedWidth =10332
                     LayoutCachedHeight =3105
                     ColumnStart =4
                     ColumnEnd =4
@@ -1368,9 +1369,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =1
-                    Left =1950
+                    Left =1956
                     Top =2820
-                    Width =4110
+                    Width =4116
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -1381,9 +1382,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =1950
+                    LayoutCachedLeft =1956
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =6060
+                    LayoutCachedWidth =6072
                     LayoutCachedHeight =3105
                     ColumnStart =1
                     ColumnEnd =1
@@ -1393,9 +1394,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =18705
+                    Left =18720
                     Top =2820
-                    Width =1095
+                    Width =1092
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -1406,9 +1407,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =18705
+                    LayoutCachedLeft =18720
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =19800
+                    LayoutCachedWidth =19812
                     LayoutCachedHeight =3105
                     ColumnStart =14
                     ColumnEnd =14
@@ -1499,9 +1500,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =19800
+                    Left =19812
                     Top =2820
-                    Width =1095
+                    Width =1092
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -1512,9 +1513,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =19800
+                    LayoutCachedLeft =19812
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =20895
+                    LayoutCachedWidth =20904
                     LayoutCachedHeight =3105
                     ColumnStart =15
                     ColumnEnd =15
@@ -1526,7 +1527,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =20895
+                    Left =20904
                     Top =2820
                     Width =660
                     Height =285
@@ -1539,9 +1540,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =20895
+                    LayoutCachedLeft =20904
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =21555
+                    LayoutCachedWidth =21564
                     LayoutCachedHeight =3105
                     ColumnStart =16
                     ColumnEnd =16
@@ -1553,9 +1554,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =21555
+                    Left =21564
                     Top =2820
-                    Width =1515
+                    Width =1512
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -1566,9 +1567,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =21555
+                    LayoutCachedLeft =21564
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =23070
+                    LayoutCachedWidth =23076
                     LayoutCachedHeight =3105
                     ColumnStart =17
                     ColumnEnd =17
@@ -1580,9 +1581,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =10635
+                    Left =10644
                     Top =2820
-                    Width =1815
+                    Width =1812
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -1593,9 +1594,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =10635
+                    LayoutCachedLeft =10644
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =12450
+                    LayoutCachedWidth =12456
                     LayoutCachedHeight =3105
                     ColumnStart =6
                     ColumnEnd =6
@@ -1608,9 +1609,9 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =247
                     TextAlign =2
-                    Left =26295
+                    Left =26292
                     Top =2820
-                    Width =975
+                    Width =972
                     Height =285
                     FontSize =9
                     FontWeight =700
@@ -1621,9 +1622,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =26295
+                    LayoutCachedLeft =26292
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =27270
+                    LayoutCachedWidth =27264
                     LayoutCachedHeight =3105
                     ColumnStart =22
                     ColumnEnd =22
@@ -1637,9 +1638,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =24345
+                    Left =24348
                     Top =2820
-                    Width =975
+                    Width =972
                     Height =285
                     FontSize =9
                     FontWeight =700
@@ -1650,7 +1651,7 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =24345
+                    LayoutCachedLeft =24348
                     LayoutCachedTop =2820
                     LayoutCachedWidth =25320
                     LayoutCachedHeight =3105
@@ -1664,9 +1665,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =23370
+                    Left =23376
                     Top =2820
-                    Width =975
+                    Width =972
                     Height =285
                     FontSize =9
                     FontWeight =700
@@ -1677,9 +1678,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =23370
+                    LayoutCachedLeft =23376
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =24345
+                    LayoutCachedWidth =24348
                     LayoutCachedHeight =3105
                     ColumnStart =19
                     ColumnEnd =19
@@ -1938,9 +1939,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =23760
+                    Left =23772
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =19
@@ -1955,9 +1956,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =23760
+                    LayoutCachedLeft =23772
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =24045
+                    LayoutCachedWidth =24060
                     LayoutCachedHeight =2145
                     ColumnStart =1
                     ColumnEnd =1
@@ -2012,9 +2013,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =26640
+                    Left =26652
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =25
@@ -2029,9 +2030,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =26640
+                    LayoutCachedLeft =26652
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =26925
+                    LayoutCachedWidth =26940
                     LayoutCachedHeight =2145
                     ColumnStart =1
                     ColumnEnd =1
@@ -2050,9 +2051,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =24390
+                    Left =24396
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =21
@@ -2067,9 +2068,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =24390
+                    LayoutCachedLeft =24396
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =24675
+                    LayoutCachedWidth =24684
                     LayoutCachedHeight =2145
                     LayoutGroup =4
                     GridlineThemeColorIndex =1
@@ -2086,9 +2087,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =24690
+                    Left =24708
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =22
@@ -2103,9 +2104,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =24690
+                    LayoutCachedLeft =24708
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =24975
+                    LayoutCachedWidth =24996
                     LayoutCachedHeight =2145
                     ColumnStart =1
                     ColumnEnd =1
@@ -2124,9 +2125,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =24060
+                    Left =24084
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =20
@@ -2141,9 +2142,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =24060
+                    LayoutCachedLeft =24084
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =24345
+                    LayoutCachedWidth =24372
                     LayoutCachedHeight =2145
                     ColumnStart =2
                     ColumnEnd =2
@@ -2162,9 +2163,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =24990
+                    Left =25020
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =23
@@ -2179,9 +2180,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =24990
+                    LayoutCachedLeft =25020
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =25275
+                    LayoutCachedWidth =25308
                     LayoutCachedHeight =2145
                     ColumnStart =2
                     ColumnEnd =2
@@ -2200,9 +2201,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =26940
+                    Left =26964
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =26
@@ -2217,9 +2218,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =26940
+                    LayoutCachedLeft =26964
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =27225
+                    LayoutCachedWidth =27252
                     LayoutCachedHeight =2145
                     ColumnStart =2
                     ColumnEnd =2
@@ -2349,9 +2350,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =25680
+                    Left =25692
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =28
@@ -2366,9 +2367,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =25680
+                    LayoutCachedLeft =25692
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =25965
+                    LayoutCachedWidth =25980
                     LayoutCachedHeight =2145
                     ColumnStart =1
                     ColumnEnd =1
@@ -2387,9 +2388,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =25980
+                    Left =26004
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =29
@@ -2404,9 +2405,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =25980
+                    LayoutCachedLeft =26004
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =26265
+                    LayoutCachedWidth =26292
                     LayoutCachedHeight =2145
                     ColumnStart =2
                     ColumnEnd =2
@@ -2456,7 +2457,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =23070
+                    Left =23076
                     Top =2820
                     Width =300
                     Height =285
@@ -2469,9 +2470,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =23070
+                    LayoutCachedLeft =23076
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =23370
+                    LayoutCachedWidth =23376
                     LayoutCachedHeight =3105
                     ColumnStart =18
                     ColumnEnd =18
@@ -2690,9 +2691,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =87
-                    Left =27600
+                    Left =27612
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =44
@@ -2707,9 +2708,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =27600
+                    LayoutCachedLeft =27612
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =27885
+                    LayoutCachedWidth =27900
                     LayoutCachedHeight =2145
                     ColumnStart =1
                     ColumnEnd =1
@@ -2728,9 +2729,9 @@ Begin Form
                 Begin CommandButton
                     FontUnderline = NotDefault
                     OverlapFlags =85
-                    Left =27900
+                    Left =27924
                     Top =1920
-                    Width =285
+                    Width =288
                     Height =225
                     FontSize =7
                     TabIndex =45
@@ -2745,9 +2746,9 @@ Begin Form
                     RightPadding =15
                     BottomPadding =15
 
-                    LayoutCachedLeft =27900
+                    LayoutCachedLeft =27924
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =28185
+                    LayoutCachedWidth =28212
                     LayoutCachedHeight =2145
                     ColumnStart =2
                     ColumnEnd =2
@@ -2953,8 +2954,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =13395
-                    Width =510
+                    Left =13404
+                    Width =516
                     Height =255
                     FontSize =10
                     TabIndex =11
@@ -2977,8 +2978,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =13395
-                    LayoutCachedWidth =13905
+                    LayoutCachedLeft =13404
+                    LayoutCachedWidth =13920
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3002,8 +3003,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1950
-                    Width =4110
+                    Left =1956
+                    Width =4116
                     Height =255
                     FontSize =8
                     TabIndex =4
@@ -3020,8 +3021,8 @@ Begin Form
                     TextFormat =1
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =1950
-                    LayoutCachedWidth =6060
+                    LayoutCachedLeft =1956
+                    LayoutCachedWidth =6072
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3036,8 +3037,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =17040
-                    Width =570
+                    Left =17052
+                    Width =576
                     Height =255
                     FontSize =9
                     TabIndex =15
@@ -3051,8 +3052,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =17040
-                    LayoutCachedWidth =17610
+                    LayoutCachedLeft =17052
+                    LayoutCachedWidth =17628
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3068,8 +3069,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =6060
-                    Width =705
+                    Left =6072
+                    Width =708
                     Height =255
                     ColumnOrder =2
                     FontSize =9
@@ -3086,8 +3087,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =6060
-                    LayoutCachedWidth =6765
+                    LayoutCachedLeft =6072
+                    LayoutCachedWidth =6780
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3102,8 +3103,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =13905
-                    Width =825
+                    Left =13920
+                    Width =828
                     Height =255
                     FontSize =8
                     TabIndex =12
@@ -3118,8 +3119,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =13905
-                    LayoutCachedWidth =14730
+                    LayoutCachedLeft =13920
+                    LayoutCachedWidth =14748
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3136,8 +3137,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =15585
-                    Width =1455
+                    Left =15600
+                    Width =1452
                     Height =255
                     ColumnOrder =9
                     FontSize =8
@@ -3154,8 +3155,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =15585
-                    LayoutCachedWidth =17040
+                    LayoutCachedLeft =15600
+                    LayoutCachedWidth =17052
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3170,8 +3171,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =27270
-                    Width =975
+                    Left =27264
+                    Width =972
                     Height =255
                     ColumnOrder =4
                     FontSize =9
@@ -3187,8 +3188,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =27270
-                    LayoutCachedWidth =28245
+                    LayoutCachedLeft =27264
+                    LayoutCachedWidth =28236
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3206,8 +3207,8 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =105
-                    Width =1851
+                    Left =108
+                    Width =1848
                     Height =255
                     ColumnOrder =0
                     FontSize =9
@@ -3223,7 +3224,7 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =105
+                    LayoutCachedLeft =108
                     LayoutCachedWidth =1956
                     LayoutCachedHeight =255
                     RowStart =1
@@ -3271,8 +3272,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =10320
-                    Width =315
+                    Left =10332
+                    Width =312
                     Height =255
                     ColumnOrder =1
                     FontSize =9
@@ -3286,8 +3287,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10320
-                    LayoutCachedWidth =10635
+                    LayoutCachedLeft =10332
+                    LayoutCachedWidth =10644
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3306,8 +3307,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =12450
-                    Width =945
+                    Left =12456
+                    Width =948
                     Height =255
                     FontSize =8
                     TabIndex =10
@@ -3323,8 +3324,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =12450
-                    LayoutCachedWidth =13395
+                    LayoutCachedLeft =12456
+                    LayoutCachedWidth =13404
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3339,8 +3340,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =14730
-                    Width =855
+                    Left =14748
+                    Width =852
                     Height =255
                     FontSize =8
                     TabIndex =13
@@ -3355,8 +3356,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =14730
-                    LayoutCachedWidth =15585
+                    LayoutCachedLeft =14748
+                    LayoutCachedWidth =15600
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3401,8 +3402,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =17610
-                    Width =1095
+                    Left =17628
+                    Width =1092
                     Height =255
                     FontSize =9
                     TabIndex =16
@@ -3417,8 +3418,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =17610
-                    LayoutCachedWidth =18705
+                    LayoutCachedLeft =17628
+                    LayoutCachedWidth =18720
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3434,8 +3435,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =6765
-                    Width =2835
+                    Left =6780
+                    Width =2832
                     Height =255
                     FontSize =8
                     TabIndex =6
@@ -3449,8 +3450,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =6765
-                    LayoutCachedWidth =9600
+                    LayoutCachedLeft =6780
+                    LayoutCachedWidth =9612
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3465,7 +3466,7 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =9600
+                    Left =9612
                     Width =720
                     Height =255
                     FontSize =8
@@ -3480,8 +3481,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =9600
-                    LayoutCachedWidth =10320
+                    LayoutCachedLeft =9612
+                    LayoutCachedWidth =10332
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3500,8 +3501,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =18705
-                    Width =1095
+                    Left =18720
+                    Width =1092
                     Height =255
                     FontSize =9
                     TabIndex =17
@@ -3516,8 +3517,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =18705
-                    LayoutCachedWidth =19800
+                    LayoutCachedLeft =18720
+                    LayoutCachedWidth =19812
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3535,8 +3536,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =19800
-                    Width =1095
+                    Left =19812
+                    Width =1092
                     Height =255
                     FontSize =9
                     TabIndex =18
@@ -3551,8 +3552,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =19800
-                    LayoutCachedWidth =20895
+                    LayoutCachedLeft =19812
+                    LayoutCachedWidth =20904
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3570,7 +3571,7 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =20895
+                    Left =20904
                     Width =660
                     Height =255
                     FontSize =9
@@ -3586,8 +3587,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =20895
-                    LayoutCachedWidth =21555
+                    LayoutCachedLeft =20904
+                    LayoutCachedWidth =21564
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3606,8 +3607,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =21555
-                    Width =1515
+                    Left =21564
+                    Width =1512
                     Height =255
                     FontSize =9
                     TabIndex =20
@@ -3621,8 +3622,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =21555
-                    LayoutCachedWidth =23070
+                    LayoutCachedLeft =21564
+                    LayoutCachedWidth =23076
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3639,8 +3640,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =10635
-                    Width =1815
+                    Left =10644
+                    Width =1812
                     Height =255
                     FontSize =8
                     TabIndex =9
@@ -3654,8 +3655,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =10635
-                    LayoutCachedWidth =12450
+                    LayoutCachedLeft =10644
+                    LayoutCachedWidth =12456
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3671,8 +3672,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =26295
-                    Width =975
+                    Left =26292
+                    Width =972
                     Height =255
                     FontSize =9
                     TabIndex =25
@@ -3687,8 +3688,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =26295
-                    LayoutCachedWidth =27270
+                    LayoutCachedLeft =26292
+                    LayoutCachedWidth =27264
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3706,8 +3707,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =24345
-                    Width =975
+                    Left =24348
+                    Width =972
                     Height =255
                     FontSize =9
                     TabIndex =23
@@ -3721,7 +3722,7 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =24345
+                    LayoutCachedLeft =24348
                     LayoutCachedWidth =25320
                     LayoutCachedHeight =255
                     RowStart =1
@@ -3738,8 +3739,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =23370
-                    Width =975
+                    Left =23376
+                    Width =972
                     Height =255
                     FontSize =9
                     TabIndex =22
@@ -3754,8 +3755,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =23370
-                    LayoutCachedWidth =24345
+                    LayoutCachedLeft =23376
+                    LayoutCachedWidth =24348
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -3806,7 +3807,7 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =23070
+                    Left =23076
                     Width =300
                     Height =255
                     FontSize =9
@@ -3822,8 +3823,8 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =23070
-                    LayoutCachedWidth =23370
+                    LayoutCachedLeft =23076
+                    LayoutCachedWidth =23376
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1

@@ -25,7 +25,7 @@ Private Sub AddNew_Click()
 If Me.ClientGroupID & 1 = 1 Then Me.ClientGroupID = Forms!ClientsView.ClientGroupID
 DoCmd.close acForm, "LocationNamesAdd"
 DoCmd.OpenForm "LocationNamesAdd", , , , , , CInt(Me.ClientGroupID)
-Forms!LocationNamesAdd.ClientList = Me.clientID
+Forms!LocationNamesAdd.ClientList = Me.ClientID
 'On Error Resume Next
 'If Me.Dirty Then Me.Dirty = False
 'On Error GoTo FixMe
@@ -69,7 +69,7 @@ Private Sub ContactsCBO_Click()
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
-    Me.LinkEdContactsList.Requery
+    Me.LinkedContactsList.Requery
     Me.Parent.ClientContact_sub.Form.LinkedLocationsList.Requery
     Call SetUnits
     Me.ContactDetail = ""
@@ -156,7 +156,7 @@ Public Sub LocationList_Click()
 FixMe:
 End Sub
 Private Sub SetUnits()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -174,11 +174,11 @@ Private Sub SetUnits()
     ListCountX = "0 Units @ Location"
     If Me.UnitsList.ListCount > 0 Then ListCountX = Me.UnitsList.ListCount - 1 & " Units @ Location"
     If (Me.UnitsList.ListCount - 1) = 1 Then ListCountX = Me.UnitsList.ListCount - 1 & " Unit @ Location"
-    Me.Units.caption = ListCountX
+    Me.UNITS.caption = ListCountX
 
     ListCountX = "0 Contacts Linked to Location"
-    If Me.LinkEdContactsList.ListCount > 0 Then ListCountX = Me.LinkEdContactsList.ListCount - 1 & " Contacts Linked to Location"
-    If (Me.LinkEdContactsList.ListCount - 1) = 1 Then ListCountX = Me.LinkEdContactsList.ListCount - 1 & " Contact Linked to Location"
+    If Me.LinkedContactsList.ListCount > 0 Then ListCountX = Me.LinkedContactsList.ListCount - 1 & " Contacts Linked to Location"
+    If (Me.LinkedContactsList.ListCount - 1) = 1 Then ListCountX = Me.LinkedContactsList.ListCount - 1 & " Contact Linked to Location"
     Me.ContactsLinked.caption = ListCountX
 End Sub
 
@@ -226,16 +226,16 @@ Private Sub UnitsList_DblClick(Cancel As Integer)
 End Sub
 
 Private Sub UnLinkedContact_Click()
-    If IsNull(Me.LinkEdContactsList.Column(0)) Then Exit Sub
+    If IsNull(Me.LinkedContactsList.Column(0)) Then Exit Sub
     Dim Askit  As String
-    Askit = MsgBox("You're about to Un-Link..." & vbNewLine & "Name: " & Me.LinkEdContactsList.Column(3) & vbNewLine & "From:  " & Me.LocationName & vbNewLine & "Type:   " & Me.LinkEdContactsList.Column(2) & vbNewLine & vbNewLine & "Do you agree?", vbQuestion + vbYesNo + vbCritical, "Un-Link")
+    Askit = MsgBox("You're about to Un-Link..." & vbNewLine & "Name: " & Me.LinkedContactsList.Column(3) & vbNewLine & "From:  " & Me.LocationName & vbNewLine & "Type:   " & Me.LinkedContactsList.Column(2) & vbNewLine & vbNewLine & "Do you agree?", vbQuestion + vbYesNo + vbCritical, "Un-Link")
     If Askit <> 6 Then Exit Sub
     SQLz = "Delete From ContactsLinkedToLocation " & _
-           "WHERE  ContactID=" & Me.LinkEdContactsList.Column(0) & " AND LinkTypeID=" & Me.LinkEdContactsList.Column(5) & " AND LocationID=" & Me.LocationID & ";"
+           "WHERE  ContactID=" & Me.LinkedContactsList.Column(0) & " AND LinkTypeID=" & Me.LinkedContactsList.Column(5) & " AND LocationID=" & Me.LocationID & ";"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
-    Me.LinkEdContactsList.Requery
+    Me.LinkedContactsList.Requery
     Me.Parent.ClientContact_sub.Form.LinkedLocationsList.Requery
     Call SetUnits
     Me.ContactDetail = ""

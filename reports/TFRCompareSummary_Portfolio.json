@@ -4,12 +4,6 @@
     "Description": "TFRCompareSummary_Portfolio Print Settings"
   },
   "Items": {
-    "Device": {
-      "DriverName": "winspool",
-      "DeviceName": "\\\\FA-FILE.domain.local\\1720 KONICA Color",
-      "Port": "192.168.2.227",
-      "Default": false
-    },
     "Printer": {
       "Orientation": "Portrait",
       "PaperSize": "Letter"

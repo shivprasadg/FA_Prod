@@ -129,7 +129,7 @@ End Sub
 
 Private Sub OPSMetrics_Click()
     Call MessageUser("Open", "Getting Metrics Report", "...This will be quick...")
-    Call getOPSMetricsReport(Nz(Me.startDate, ""), Nz(Me.Enddate, ""))
+    Call getOPSMetricsReport(Nz(Me.StartDate, ""), Nz(Me.EndDate, ""))
     Call MessageUser("Close")
 End Sub
 
@@ -353,7 +353,7 @@ Private Sub ExitOptionsConsole_Click()
 End Sub
 
 Private Sub FundedUnitReport_Click()
-    If IsNull(Me.startDate) Or IsNull(Me.Enddate) Then
+    If IsNull(Me.StartDate) Or IsNull(Me.EndDate) Then
         MsgBox "You must select a BOTH a Start and End date" & vbNewLine & "before you can run this report", vbCritical, "What are you doing?!"
         Exit Sub
     End If
@@ -366,10 +366,10 @@ Private Sub FundedUnitReport_Click()
     SQLz = SQLz & "             Left Join Banks ON Units.UnitIFBankID=Banks.BankID) AS UP ON S.AssetID = UP.UnitID)"
     SQLz = SQLz & " LEFT JOIN (Select UnitRef, UnitTitleLogDate as TitleAppSent, EntryReason From UnitTitleLog Where EntryReasonId = 18) AS TA ON S.AssetID=TA.UnitRef)"
     SQLz = SQLz & " LEFT JOIN DrawDowns ON UP.DrawDownId = DrawDowns.DrawDownId"
-    SQLz = SQLz & " Where VendorPaid >= #" & Me.startDate & "# AND VendorPaid <= #" & Me.Enddate & "# "
+    SQLz = SQLz & " Where VendorPaid >= #" & Me.StartDate & "# AND VendorPaid <= #" & Me.EndDate & "# "
     SQLz = SQLz & " Order By ClientShortName, Schedule, UnitGroup, VIN"
     XLS = "|D,BC|G,BC|G,BC|J,$E|N,BC|P,$E|"
-    SendReport2Excel SQLz, "Funded Units", "Funded Units: " & Me.startDate & "~" & Me.Enddate, True, XLS, , True
+    SendReport2Excel SQLz, "Funded Units", "Funded Units: " & Me.StartDate & "~" & Me.EndDate, True, XLS, , True
 
 End Sub
 
@@ -421,7 +421,7 @@ End Sub
 Private Sub OutstandingExcel_Click()
 SQLz = "Select * From OutstandingTitles"
 XLS = "|B,TC|B,W10|F,CX|F,TC|G,TC|I,BC|J,TC|M,TC|N,Sint|N,BC|J,cColor:3:153.153.0|N,cColor:3:153.153.0|O,CX|"
-SendReport2Excel SQLz, "Titles Out", "Outstanding Titles: " & Me.startDate & "~" & Me.Enddate, True, XLS, , True
+SendReport2Excel SQLz, "Titles Out", "Outstanding Titles: " & Me.StartDate & "~" & Me.EndDate, True, XLS, , True
 'FormatExcel "OutstandingTitles", "C:\Faas\" & FAUserName & "\Temp\OutstandingTitles", "Titles Out", , "|B,TC|F,CX|G,TC|I,BC|M,TC|N,Sint|N,BC|", DCount("AssetID", "OutstandingTitles", ""), "Outstanding Titles, as of: " & Date, True
 End Sub
 
@@ -438,7 +438,7 @@ End Sub
 
 
 Private Sub RMKT_Title_Sent_Click()
-    If IsNull(Me.startDate) Or IsNull(Me.Enddate) Then
+    If IsNull(Me.StartDate) Or IsNull(Me.EndDate) Then
         MsgBox "You must select a BOTH a Start and End date" & vbNewLine & "before you can run this report", vbCritical, "What are you doing?!"
         Exit Sub
     End If
@@ -447,33 +447,33 @@ Private Sub RMKT_Title_Sent_Click()
     SQLz = SQLz & "FROM vw_SixKeys As Six "
     SQLz = SQLz & "INNER JOIN UnitTitleLog AS TL ON Six.UnitID = TL.UnitRef "
     SQLz = SQLz & "WHERE TL.EntryReasonID = 7 "
-    SQLz = SQLz & "AND UnitTitleLogDate >= #" & Me.startDate & "# "
-    SQLz = SQLz & "AND UnitTitleLogDate <= #" & Me.Enddate & "# "
+    SQLz = SQLz & "AND UnitTitleLogDate >= #" & Me.StartDate & "# "
+    SQLz = SQLz & "AND UnitTitleLogDate <= #" & Me.EndDate & "# "
     SQLz = SQLz & "GROUP BY ClientShortName "
     SQLz = SQLz & "ORDER BY ClientShortName;"
 
-    SendReport2Excel SQLz, "RMKT TitleSent", "RMKT Titles Sent: " & Me.startDate & "~" & Me.Enddate, True, , , True
+    SendReport2Excel SQLz, "RMKT TitleSent", "RMKT Titles Sent: " & Me.StartDate & "~" & Me.EndDate, True, , , True
    End Sub
 
 Private Sub TitleAppStatus_Click()
-    If IsNull(Me.startDate) Then
+    If IsNull(Me.StartDate) Then
         MsgBox "You must select a Start date" & vbNewLine & "before you can run this report", vbCritical, "What are you doing?!"
         Exit Sub
     End If
     SQLz = "SELECT * from vw_TitleApp_Status "
-    Headerx = "Title Apps Status On or after: " & Me.startDate
+    Headerx = "Title Apps Status On or after: " & Me.StartDate
     If Nz(Me.SelectClient, 0) > 0 Then
-        SQLz = SQLz & "WHERE ClientGroupID=" & Me.SelectClient & " AND (OutDate >= #" & Me.startDate & "# OR OutDate IS Null)"
+        SQLz = SQLz & "WHERE ClientGroupID=" & Me.SelectClient & " AND (OutDate >= #" & Me.StartDate & "# OR OutDate IS Null)"
         Headerx = Headerx & " Client Group: " & Me.SelectClient.Column(1)
     Else
-        SQLz = SQLz & "WHERE (OutDate >= #" & Me.startDate & "# OR OutDate IS Null)"
+        SQLz = SQLz & "WHERE (OutDate >= #" & Me.StartDate & "# OR OutDate IS Null)"
     End If
     SQLz = SQLz & "ORDER BY Client, AssetID;"
     XLS = "|C,BL|E,LX|F,BC|J,BC|L,BC|O,BC|R,HH|S,HH|"
     SendReport2Excel SQLz, "TitleApps", Headerx, True, XLS, , True
 End Sub
 Private Sub TitleSent_Click()
-    If IsNull(Me.startDate) Or IsNull(Me.Enddate) Then
+    If IsNull(Me.StartDate) Or IsNull(Me.EndDate) Then
          MsgBox "You must select a BOTH a Start and End date" & vbNewLine & "before you can run this report", vbCritical, "What are you doing?!"
         Exit Sub
     End If
@@ -481,11 +481,11 @@ Private Sub TitleSent_Click()
     SQLz = "SELECT ClientShortName as Client, Count(U.UnitID) AS Units, Min(UnitTASent) as First, Max(UnitTASent) as Last "
     SQLz = SQLz & "FROM vw_SixKeys As Six "
     SQLz = SQLz & "INNER JOIN Units As U ON Six.UnitID = U.UnitID "
-    SQLz = SQLz & "WHERE UnitTASent >= #" & Me.startDate & "# "
-    SQLz = SQLz & "AND UnitTASent <= #" & Me.Enddate & "# "
+    SQLz = SQLz & "WHERE UnitTASent >= #" & Me.StartDate & "# "
+    SQLz = SQLz & "AND UnitTASent <= #" & Me.EndDate & "# "
     SQLz = SQLz & "GROUP BY ClientShortName "
     SQLz = SQLz & "ORDER BY ClientShortName;"
-    SendReport2Excel SQLz, "TitleAppSent", "Title Apps Sent: " & Me.startDate & "~" & Me.Enddate, True, , , True
+    SendReport2Excel SQLz, "TitleAppSent", "Title Apps Sent: " & Me.StartDate & "~" & Me.EndDate, True, , , True
 End Sub
 
 Private Sub RequestMSO_Click()

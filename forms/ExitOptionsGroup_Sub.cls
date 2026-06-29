@@ -98,7 +98,7 @@ Private Sub NewUnit_DblClick(Cancel As Integer)
     Call OpenUnitsForm(Me.NewUnit)
     'DoCmd.OpenForm "UnitsForm", , , "UNITID=" & Me.NewUnit
     Forms!Unitsform.UnitsTabControl.Value = 8
-    Me.UnitUnitNum.SetFocus
+    Me.unitunitnum.SetFocus
 End Sub
 
 Private Sub UnitID_DblClick(Cancel As Integer)
@@ -106,7 +106,7 @@ Private Sub UnitID_DblClick(Cancel As Integer)
     Call OpenUnitsForm(Me.UnitID)
     'DoCmd.OpenForm "UnitsForm", , , "UNITID=" & Me.UnitID
     Forms!Unitsform.UnitsTabControl.Value = 8
-    Me.UnitUnitNum.SetFocus
+    Me.unitunitnum.SetFocus
 End Sub
 
 Private Sub UnitVIN_DblClick(Cancel As Integer)

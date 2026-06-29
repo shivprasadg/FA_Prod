@@ -158,7 +158,7 @@ End Sub
 
 Private Sub GroupFleetList_Click()
     On Error GoTo GroupFleetList_Click_Error
-    Call ExportFleetList(Me.ClientGroupID.Column(1), True, Me.clientID, Me.ClientGroupID)
+    Call ExportFleetList(Me.ClientGroupID.Column(1), True, Me.ClientID, Me.ClientGroupID)
     On Error GoTo 0
     Exit Sub
 GroupFleetList_Click_Error:
@@ -166,7 +166,7 @@ GroupFleetList_Click_Error:
 End Sub
 Private Sub ClientFleetList_Click()
     On Error GoTo ClientFleetList_Click_Error
-    Call ExportFleetList(Me.ClientShNm, False, Me.clientID, Me.ClientGroupID)
+    Call ExportFleetList(Me.ClientShNm, False, Me.ClientID, Me.ClientGroupID)
     On Error GoTo 0
     Exit Sub
 ClientFleetList_Click_Error:
@@ -181,7 +181,7 @@ Private Sub ClientList_Click()
     Me.GroupFleetList.caption = "Fleets in " & Me.ClientGroupID.Column(1) & "'s Group"
 
     Forms!ClientsView!Locations_sub.Form.SetLocations
-    Forms!ClientsView!proposalsSummary_sub.Form.SetDeals
+    Forms!ClientsView!ProposalsSummary_sub.Form.SetDeals
     Forms!ClientsView!ClientContact_sub.Form.SetContacts
     Forms!ClientsView!SUF_Conditions.Form.SetSuf
     Forms!ClientsView!ValueAdded_sub.Form.SetValueAdd
@@ -204,7 +204,7 @@ End Sub
 Private Sub ImportFAID_Click()
 If FAUserAccessGroup Like "*ITT*" Or FAUserAccessGroup Like "*TMT*" Or FAUserAccessGroup Like "*SYND*" Then
 DoCmd.OpenForm "ATF_SFImporter"
-Forms!ATF_SFImporter.SFAccountID = Me.SFAccountID
+Forms!ATF_SFImporter.SFAccountId = Me.SFAccountId
 Forms!ATF_SFImporter.FAIDLPAFList = "0"
 Else
 MsgBox "Sorry you do not have access to the Salesforce Importer", vbCritical, AtlaasVersion
@@ -276,5 +276,5 @@ Form_Current_Error:
 End Sub
 
 Private Sub SFAccountID_DblClick(Cancel As Integer)
-If FAUserAccess > 90 Then Me.SFAccountID.Locked = False
+If FAUserAccess > 90 Then Me.SFAccountId.Locked = False
 End Sub

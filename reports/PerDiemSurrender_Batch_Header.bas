@@ -673,7 +673,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =337
+            Height =348
             Name ="Detail"
             Begin
                 Begin Line
@@ -826,9 +826,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =3000
-                    Top =30
+                    Top =36
                     Width =1140
-                    Height =285
+                    Height =288
                     FontSize =9
                     FontWeight =700
                     TabIndex =7
@@ -838,9 +838,9 @@ Begin Report
                     GroupTable =1
 
                     LayoutCachedLeft =3000
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =4140
-                    LayoutCachedHeight =315
+                    LayoutCachedHeight =324
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
@@ -852,9 +852,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =4200
-                    Top =30
+                    Top =36
                     Width =900
-                    Height =285
+                    Height =288
                     FontSize =9
                     FontWeight =700
                     TabIndex =8
@@ -865,9 +865,9 @@ Begin Report
                     GroupTable =1
 
                     LayoutCachedLeft =4200
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =5100
-                    LayoutCachedHeight =315
+                    LayoutCachedHeight =324
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -881,9 +881,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =5160
-                    Top =30
+                    Top =36
                     Width =720
-                    Height =285
+                    Height =288
                     FontSize =9
                     FontWeight =700
                     TabIndex =9
@@ -894,9 +894,9 @@ Begin Report
                     GroupTable =1
 
                     LayoutCachedLeft =5160
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =5880
-                    LayoutCachedHeight =315
+                    LayoutCachedHeight =324
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1

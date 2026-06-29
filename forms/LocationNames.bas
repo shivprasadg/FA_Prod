@@ -197,6 +197,9 @@ Begin Form
             GridlineShade =65.0
         End
         Begin ToggleButton
+            TextFontCharSet =177
+            TextFontFamily =0
+            FontName ="Calibri"
             ForeThemeColorIndex =0
             ForeTint =75.0
             GridlineThemeColorIndex =1
@@ -204,12 +207,10 @@ Begin Form
             UseTheme =1
             Shape =2
             Bevel =1
-            BackColor =-1
             BackThemeColorIndex =4
             BackTint =60.0
             OldBorderStyle =0
             BorderLineStyle =0
-            BorderColor =-1
             BorderThemeColorIndex =4
             BorderTint =60.0
             ThemeFontIndex =1
@@ -222,8 +223,9 @@ Begin Form
             PressedForeThemeColorIndex =1
         End
         Begin Tab
+            TextFontFamily =0
             FontSize =11
-            FontName ="Calibri"
+            FontName ="Cambria"
             ThemeFontIndex =0
             GridlineThemeColorIndex =1
             GridlineShade =65.0
@@ -271,6 +273,7 @@ Begin Form
                     Height =1155
                     BorderColor =8355711
                     Name ="Box779"
+                    GridlineColor =0
                     LayoutCachedLeft =6840
                     LayoutCachedTop =3375
                     LayoutCachedWidth =6847
@@ -290,6 +293,7 @@ Begin Form
                     Height =285
                     BorderColor =8355711
                     Name ="Box232"
+                    GridlineColor =0
                     LayoutCachedLeft =6510
                     LayoutCachedTop =3285
                     LayoutCachedWidth =7230
@@ -304,21 +308,21 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7680
+                    Left =7704
                     Top =1080
-                    Width =3675
+                    Width =3696
                     FontSize =9
                     TabIndex =15
                     BorderColor =10855845
+                    ForeColor =0
                     Name ="LocationName"
                     ControlSource ="LocationName"
                     FontName ="Segoe UI"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7680
+                    LayoutCachedLeft =7704
                     LayoutCachedTop =1080
-                    LayoutCachedWidth =11355
+                    LayoutCachedWidth =11400
                     LayoutCachedHeight =1320
                     DatasheetCaption ="Location Name"
                     RowStart =1
@@ -337,19 +341,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =6375
+                            Left =6372
                             Top =1080
-                            Width =1245
+                            Width =1260
                             Height =240
                             FontSize =8
+                            BorderColor =0
                             Name ="Label39"
                             Caption ="Location Name"
                             FontName ="Segoe UI"
                             GroupTable =1
-                            GridlineColor =10921638
-                            LayoutCachedLeft =6375
+                            LayoutCachedLeft =6372
                             LayoutCachedTop =1080
-                            LayoutCachedWidth =7620
+                            LayoutCachedWidth =7632
                             LayoutCachedHeight =1320
                             RowStart =1
                             RowEnd =1
@@ -368,23 +372,23 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7680
-                    Top =1380
-                    Width =3675
+                    Left =7704
+                    Top =1392
+                    Width =3696
                     FontSize =9
                     TabIndex =17
                     BorderColor =10855845
+                    ForeColor =0
                     Name ="Locationsn"
                     ControlSource ="Locationsn"
                     StatusBarText ="short name for locaition or Lessee number"
                     FontName ="Segoe UI"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =1380
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =1620
+                    LayoutCachedLeft =7704
+                    LayoutCachedTop =1392
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =1632
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -401,20 +405,20 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =6375
-                            Top =1380
-                            Width =1245
+                            Left =6372
+                            Top =1392
+                            Width =1260
                             Height =240
                             FontSize =8
+                            BorderColor =0
                             Name ="Label40"
                             Caption ="Short Name"
                             FontName ="Segoe UI"
                             GroupTable =1
-                            GridlineColor =10921638
-                            LayoutCachedLeft =6375
-                            LayoutCachedTop =1380
-                            LayoutCachedWidth =7620
-                            LayoutCachedHeight =1620
+                            LayoutCachedLeft =6372
+                            LayoutCachedTop =1392
+                            LayoutCachedWidth =7632
+                            LayoutCachedHeight =1632
                             RowStart =2
                             RowEnd =2
                             ColumnEnd =1
@@ -432,25 +436,25 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7680
-                    Top =795
-                    Width =3675
-                    Height =255
+                    Left =7704
+                    Top =792
+                    Width =3696
+                    Height =252
                     FontSize =9
                     TabIndex =13
                     BorderColor =10855845
+                    ForeColor =0
                     Name ="LocationStreet"
                     ControlSource ="LocationStreet"
                     FontName ="Segoe UI"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =795
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =1050
+                    LayoutCachedLeft =7704
+                    LayoutCachedTop =792
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =1044
                     ColumnStart =2
                     ColumnEnd =3
                     LayoutGroup =1
@@ -465,22 +469,22 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =6375
-                            Top =795
-                            Width =1245
-                            Height =255
+                            Left =6372
+                            Top =792
+                            Width =1260
+                            Height =252
                             FontSize =8
+                            BorderColor =0
                             Name ="Label41"
                             Caption ="Company "
                             FontName ="Segoe UI"
                             GroupTable =1
                             TopPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
-                            LayoutCachedLeft =6375
-                            LayoutCachedTop =795
-                            LayoutCachedWidth =7620
-                            LayoutCachedHeight =1050
+                            LayoutCachedLeft =6372
+                            LayoutCachedTop =792
+                            LayoutCachedWidth =7632
+                            LayoutCachedHeight =1044
                             ColumnEnd =1
                             LayoutGroup =1
                             ThemeFontIndex =-1
@@ -498,9 +502,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =11895
-                    Top =2625
-                    Width =1110
+                    Left =11964
+                    Top =2676
+                    Width =1116
                     FontSize =8
                     TabIndex =32
                     BorderColor =12632256
@@ -510,12 +514,11 @@ Begin Form
                     FontName ="Tahoma"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11895
-                    LayoutCachedTop =2625
-                    LayoutCachedWidth =13005
-                    LayoutCachedHeight =2865
+                    LayoutCachedLeft =11964
+                    LayoutCachedTop =2676
+                    LayoutCachedWidth =13080
+                    LayoutCachedHeight =2916
                     RowStart =6
                     RowEnd =6
                     ColumnStart =6
@@ -536,9 +539,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =11895
-                    Top =2940
-                    Width =1110
+                    Left =11964
+                    Top =3000
+                    Width =1116
                     FontSize =8
                     TabIndex =34
                     BorderColor =12632256
@@ -547,12 +550,11 @@ Begin Form
                     StatusBarText ="link to Clients table"
                     FontName ="Tahoma"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11895
-                    LayoutCachedTop =2940
-                    LayoutCachedWidth =13005
-                    LayoutCachedHeight =3180
+                    LayoutCachedLeft =11964
+                    LayoutCachedTop =3000
+                    LayoutCachedWidth =13080
+                    LayoutCachedHeight =3240
                     RowStart =7
                     RowEnd =7
                     ColumnStart =6
@@ -569,19 +571,19 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =11655
+                    Left =11712
                     Top =1080
                     Width =180
                     TabIndex =16
+                    BorderColor =0
                     Name ="Garage"
                     ControlSource ="Garage"
                     StatusBarText ="cooperative"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11655
+                    LayoutCachedLeft =11712
                     LayoutCachedTop =1080
-                    LayoutCachedWidth =11835
+                    LayoutCachedWidth =11892
                     LayoutCachedHeight =1320
                     RowStart =1
                     RowEnd =1
@@ -594,23 +596,23 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =11655
-                    Top =795
+                    Left =11712
+                    Top =792
                     Width =180
-                    Height =255
+                    Height =252
                     TabIndex =14
+                    BorderColor =0
                     Name ="Headquarters"
                     ControlSource ="Headquarters"
                     Tag ="Required"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11655
-                    LayoutCachedTop =795
-                    LayoutCachedWidth =11835
-                    LayoutCachedHeight =1050
+                    LayoutCachedLeft =11712
+                    LayoutCachedTop =792
+                    LayoutCachedWidth =11892
+                    LayoutCachedHeight =1044
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
@@ -620,20 +622,20 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =11655
-                    Top =1380
+                    Left =11712
+                    Top =1392
                     Width =180
                     TabIndex =18
+                    BorderColor =0
                     Name ="Billing"
                     ControlSource ="Billing"
                     StatusBarText ="up load to Portal"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11655
-                    LayoutCachedTop =1380
-                    LayoutCachedWidth =11835
-                    LayoutCachedHeight =1620
+                    LayoutCachedLeft =11712
+                    LayoutCachedTop =1392
+                    LayoutCachedWidth =11892
+                    LayoutCachedHeight =1632
                     RowStart =2
                     RowEnd =2
                     ColumnStart =5
@@ -646,22 +648,22 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =11895
-                    Top =795
-                    Width =1110
-                    Height =255
+                    Left =11964
+                    Top =792
+                    Width =1116
+                    Height =252
                     FontSize =8
+                    BorderColor =0
                     Name ="Label638"
                     Caption ="Headquarters"
                     FontName ="Segoe UI"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11895
-                    LayoutCachedTop =795
-                    LayoutCachedWidth =13005
-                    LayoutCachedHeight =1050
+                    LayoutCachedLeft =11964
+                    LayoutCachedTop =792
+                    LayoutCachedWidth =13080
+                    LayoutCachedHeight =1044
                     ColumnStart =6
                     ColumnEnd =6
                     LayoutGroup =1
@@ -676,20 +678,20 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =11895
-                    Top =1380
-                    Width =1110
+                    Left =11964
+                    Top =1392
+                    Width =1116
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label647"
                     Caption ="Billing"
                     FontName ="Segoe UI"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11895
-                    LayoutCachedTop =1380
-                    LayoutCachedWidth =13005
-                    LayoutCachedHeight =1620
+                    LayoutCachedLeft =11964
+                    LayoutCachedTop =1392
+                    LayoutCachedWidth =13080
+                    LayoutCachedHeight =1632
                     RowStart =2
                     RowEnd =2
                     ColumnStart =6
@@ -705,21 +707,21 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =11655
-                    Top =1680
+                    Left =11712
+                    Top =1704
                     Width =180
                     TabIndex =21
+                    BorderColor =0
                     Name ="Registration"
                     ControlSource ="Registration"
                     StatusBarText ="cooperative"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11655
-                    LayoutCachedTop =1680
-                    LayoutCachedWidth =11835
-                    LayoutCachedHeight =1920
+                    LayoutCachedLeft =11712
+                    LayoutCachedTop =1704
+                    LayoutCachedWidth =11892
+                    LayoutCachedHeight =1944
                     RowStart =3
                     RowEnd =3
                     ColumnStart =5
@@ -731,21 +733,21 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =11655
-                    Top =1995
+                    Left =11712
+                    Top =2028
                     Width =180
                     TabIndex =25
+                    BorderColor =0
                     Name ="Title"
                     ControlSource ="Title"
                     Tag ="Required"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11655
-                    LayoutCachedTop =1995
-                    LayoutCachedWidth =11835
-                    LayoutCachedHeight =2235
+                    LayoutCachedLeft =11712
+                    LayoutCachedTop =2028
+                    LayoutCachedWidth =11892
+                    LayoutCachedHeight =2268
                     RowStart =4
                     RowEnd =4
                     ColumnStart =5
@@ -757,21 +759,21 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =11655
-                    Top =2310
+                    Left =11712
+                    Top =2352
                     Width =180
                     TabIndex =29
+                    BorderColor =0
                     Name ="Other"
                     ControlSource ="Other"
                     StatusBarText ="up load to Portal"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11655
-                    LayoutCachedTop =2310
-                    LayoutCachedWidth =11835
-                    LayoutCachedHeight =2550
+                    LayoutCachedLeft =11712
+                    LayoutCachedTop =2352
+                    LayoutCachedWidth =11892
+                    LayoutCachedHeight =2592
                     RowStart =5
                     RowEnd =5
                     ColumnStart =5
@@ -784,21 +786,21 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =11895
-                    Top =1680
-                    Width =1110
+                    Left =11964
+                    Top =1704
+                    Width =1116
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label20"
                     Caption ="Registration"
                     FontName ="Segoe UI"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11895
-                    LayoutCachedTop =1680
-                    LayoutCachedWidth =13005
-                    LayoutCachedHeight =1920
+                    LayoutCachedLeft =11964
+                    LayoutCachedTop =1704
+                    LayoutCachedWidth =13080
+                    LayoutCachedHeight =1944
                     RowStart =3
                     RowEnd =3
                     ColumnStart =6
@@ -815,21 +817,21 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =11895
-                    Top =1995
-                    Width =1110
+                    Left =11964
+                    Top =2028
+                    Width =1116
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label21"
                     Caption ="Title"
                     FontName ="Segoe UI"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11895
-                    LayoutCachedTop =1995
-                    LayoutCachedWidth =13005
-                    LayoutCachedHeight =2235
+                    LayoutCachedLeft =11964
+                    LayoutCachedTop =2028
+                    LayoutCachedWidth =13080
+                    LayoutCachedHeight =2268
                     RowStart =4
                     RowEnd =4
                     ColumnStart =6
@@ -846,21 +848,21 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =11895
-                    Top =2310
-                    Width =1110
+                    Left =11964
+                    Top =2352
+                    Width =1116
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label22"
                     Caption ="Other"
                     FontName ="Segoe UI"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11895
-                    LayoutCachedTop =2310
-                    LayoutCachedWidth =13005
-                    LayoutCachedHeight =2550
+                    LayoutCachedLeft =11964
+                    LayoutCachedTop =2352
+                    LayoutCachedWidth =13080
+                    LayoutCachedHeight =2592
                     RowStart =5
                     RowEnd =5
                     ColumnStart =6
@@ -877,19 +879,19 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =11895
+                    Left =11964
                     Top =1080
-                    Width =1110
+                    Width =1116
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label357"
                     Caption ="Garage"
                     FontName ="Segoe UI"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11895
+                    LayoutCachedLeft =11964
                     LayoutCachedTop =1080
-                    LayoutCachedWidth =13005
+                    LayoutCachedWidth =13080
                     LayoutCachedHeight =1320
                     RowStart =1
                     RowEnd =1
@@ -908,24 +910,24 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7680
-                    Top =1995
-                    Width =1890
+                    Left =7704
+                    Top =2028
+                    Width =1896
                     FontSize =9
                     TabIndex =23
                     BorderColor =10855845
+                    ForeColor =0
                     Name ="LPhone"
                     ControlSource ="LPhone"
                     FontName ="Segoe UI"
                     InputMask ="!\\(999\") \"000\\-0000;;_"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =1995
-                    LayoutCachedWidth =9570
-                    LayoutCachedHeight =2235
+                    LayoutCachedLeft =7704
+                    LayoutCachedTop =2028
+                    LayoutCachedWidth =9600
+                    LayoutCachedHeight =2268
                     RowStart =4
                     RowEnd =4
                     ColumnStart =2
@@ -943,24 +945,24 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7680
-                    Top =2310
-                    Width =1890
+                    Left =7704
+                    Top =2352
+                    Width =1896
                     FontSize =9
                     TabIndex =27
                     BorderColor =10855845
+                    ForeColor =0
                     Name ="LFax"
                     ControlSource ="LFax"
                     FontName ="Segoe UI"
                     InputMask ="!\\(999\") \"000\\-0000;;_"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =2310
-                    LayoutCachedWidth =9570
-                    LayoutCachedHeight =2550
+                    LayoutCachedLeft =7704
+                    LayoutCachedTop =2352
+                    LayoutCachedWidth =9600
+                    LayoutCachedHeight =2592
                     RowStart =5
                     RowEnd =5
                     ColumnStart =2
@@ -978,24 +980,24 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7680
-                    Top =2625
-                    Width =3675
+                    Left =7704
+                    Top =2676
+                    Width =3696
                     FontSize =9
                     TabIndex =31
                     BorderColor =10855845
+                    ForeColor =0
                     Name ="LEmail"
                     ControlSource ="LEmail"
                     StatusBarText ="link to counties table"
                     FontName ="Segoe UI"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =2625
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =2865
+                    LayoutCachedLeft =7704
+                    LayoutCachedTop =2676
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =2916
                     RowStart =6
                     RowEnd =6
                     ColumnStart =2
@@ -1017,12 +1019,13 @@ Begin Form
                     ColumnCount =3
                     ListRows =8
                     ListWidth =2880
-                    Left =7680
-                    Top =2940
-                    Width =3675
+                    Left =7704
+                    Top =3000
+                    Width =3696
                     FontSize =9
                     TabIndex =33
                     BorderColor =10855845
+                    ForeColor =0
                     Name ="DivisionID"
                     ControlSource ="DivisionID"
                     RowSourceType ="Table/Query"
@@ -1031,13 +1034,12 @@ Begin Form
                     ColumnWidths ="0;2160;0"
                     FontName ="Segoe UI"
                     GroupTable =1
-                    GridlineColor =10921638
                     AllowValueListEdits =0
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =2940
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =3180
+                    LayoutCachedLeft =7704
+                    LayoutCachedTop =3000
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =3240
                     RowStart =7
                     RowEnd =7
                     ColumnStart =2
@@ -1050,18 +1052,51 @@ Begin Form
                     ForeThemeColorIndex =-1
                     ForeShade =100.0
                     GroupTable =1
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =6504
+                            Top =3000
+                            Width =1128
+                            Height =240
+                            FontSize =8
+                            BorderColor =0
+                            Name ="Label566"
+                            Caption ="       Division"
+                            FontName ="Segoe UI"
+                            GroupTable =1
+                            LeftPadding =0
+                            LayoutCachedLeft =6504
+                            LayoutCachedTop =3000
+                            LayoutCachedWidth =7632
+                            LayoutCachedHeight =3240
+                            RowStart =7
+                            RowEnd =7
+                            ColumnStart =1
+                            ColumnEnd =1
+                            LayoutGroup =1
+                            ThemeFontIndex =-1
+                            BackThemeColorIndex =-1
+                            BorderThemeColorIndex =-1
+                            BorderTint =100.0
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            GroupTable =1
+                        End
+                    End
                 End
                 Begin EmptyCell
-                    Left =11655
-                    Top =2940
+                    Left =11712
+                    Top =3000
                     Width =180
                     Name ="EmptyCell109"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11655
-                    LayoutCachedTop =2940
-                    LayoutCachedWidth =11835
-                    LayoutCachedHeight =3180
+                    LayoutCachedLeft =11712
+                    LayoutCachedTop =3000
+                    LayoutCachedWidth =11892
+                    LayoutCachedHeight =3240
                     RowStart =7
                     RowEnd =7
                     ColumnStart =5
@@ -1075,9 +1110,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =9630
-                    Top =2310
-                    Width =1725
+                    Left =9672
+                    Top =2352
+                    Width =1728
                     FontSize =8
                     TabIndex =28
                     BorderColor =12632256
@@ -1086,12 +1121,11 @@ Begin Form
                     FontName ="Tahoma"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =9630
-                    LayoutCachedTop =2310
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =2550
+                    LayoutCachedLeft =9672
+                    LayoutCachedTop =2352
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =2592
                     RowStart =5
                     RowEnd =5
                     ColumnStart =3
@@ -1114,13 +1148,14 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =8
                     ListWidth =7200
-                    Left =7680
-                    Top =3240
-                    Width =3675
+                    Left =7704
+                    Top =3312
+                    Width =3696
                     FontSize =9
                     TabIndex =35
                     BackColor =16249583
                     BorderColor =13017476
+                    ForeColor =0
                     Name ="LAddressID"
                     ControlSource ="LAddressID"
                     RowSourceType ="Table/Query"
@@ -1131,12 +1166,11 @@ Begin Form
                     FontName ="Segoe UI"
                     OnClick ="[Event Procedure]"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =3240
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =3480
+                    LayoutCachedLeft =7704
+                    LayoutCachedTop =3312
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =3552
                     RowStart =8
                     RowEnd =8
                     ColumnStart =2
@@ -1149,59 +1183,61 @@ Begin Form
                     ForeThemeColorIndex =-1
                     ForeShade =100.0
                     GroupTable =1
-                End
-                Begin Label
-                    BackStyle =1
-                    OverlapFlags =215
-                    TextAlign =1
-                    Left =6375
-                    Top =3240
-                    Width =1245
-                    Height =240
-                    FontSize =8
-                    Name ="Label130"
-                    Caption ="Select Address⏵"
-                    FontName ="Segoe UI"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6375
-                    LayoutCachedTop =3240
-                    LayoutCachedWidth =7620
-                    LayoutCachedHeight =3480
-                    RowStart =8
-                    RowEnd =8
-                    ColumnEnd =1
-                    LayoutGroup =1
-                    ThemeFontIndex =-1
-                    BackThemeColorIndex =-1
-                    BorderThemeColorIndex =-1
-                    BorderTint =100.0
-                    ForeThemeColorIndex =2
-                    ForeTint =100.0
-                    GroupTable =1
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =215
+                            TextAlign =1
+                            Left =6372
+                            Top =3312
+                            Width =1260
+                            Height =240
+                            FontSize =8
+                            BorderColor =0
+                            Name ="Label130"
+                            Caption ="Select Address⏵"
+                            FontName ="Segoe UI"
+                            GroupTable =1
+                            LayoutCachedLeft =6372
+                            LayoutCachedTop =3312
+                            LayoutCachedWidth =7632
+                            LayoutCachedHeight =3552
+                            RowStart =8
+                            RowEnd =8
+                            ColumnEnd =1
+                            LayoutGroup =1
+                            ThemeFontIndex =-1
+                            BackThemeColorIndex =-1
+                            BorderThemeColorIndex =-1
+                            BorderTint =100.0
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            GroupTable =1
+                        End
+                    End
                 End
                 Begin TextBox
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7680
-                    Top =1680
-                    Width =3675
+                    Left =7704
+                    Top =1704
+                    Width =3696
                     FontSize =9
                     TabIndex =20
                     BorderColor =10855845
+                    ForeColor =0
                     Name ="AttenToLine"
                     ControlSource ="AttenToLine"
                     StatusBarText ="short name for locaition or Lessee number"
                     FontName ="Segoe UI"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =1680
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =1920
+                    LayoutCachedLeft =7704
+                    LayoutCachedTop =1704
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =1944
                     RowStart =3
                     RowEnd =3
                     ColumnStart =2
@@ -1216,17 +1252,16 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11655
-                    Top =2625
+                    Left =11712
+                    Top =2676
                     Width =180
                     Name ="EmptyCell196"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11655
-                    LayoutCachedTop =2625
-                    LayoutCachedWidth =11835
-                    LayoutCachedHeight =2865
+                    LayoutCachedLeft =11712
+                    LayoutCachedTop =2676
+                    LayoutCachedWidth =11892
+                    LayoutCachedHeight =2916
                     RowStart =6
                     RowEnd =6
                     ColumnStart =5
@@ -1235,34 +1270,32 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11415
-                    Top =795
+                    Left =11472
+                    Top =792
                     Width =180
-                    Height =255
+                    Height =252
                     Name ="EmptyCell212"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11415
-                    LayoutCachedTop =795
-                    LayoutCachedWidth =11595
-                    LayoutCachedHeight =1050
+                    LayoutCachedLeft =11472
+                    LayoutCachedTop =792
+                    LayoutCachedWidth =11652
+                    LayoutCachedHeight =1044
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11415
+                    Left =11472
                     Top =1080
                     Width =180
                     Name ="EmptyCell213"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11415
+                    LayoutCachedLeft =11472
                     LayoutCachedTop =1080
-                    LayoutCachedWidth =11595
+                    LayoutCachedWidth =11652
                     LayoutCachedHeight =1320
                     RowStart =1
                     RowEnd =1
@@ -1272,16 +1305,15 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11415
-                    Top =1380
+                    Left =11472
+                    Top =1392
                     Width =180
                     Name ="EmptyCell214"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11415
-                    LayoutCachedTop =1380
-                    LayoutCachedWidth =11595
-                    LayoutCachedHeight =1620
+                    LayoutCachedLeft =11472
+                    LayoutCachedTop =1392
+                    LayoutCachedWidth =11652
+                    LayoutCachedHeight =1632
                     RowStart =2
                     RowEnd =2
                     ColumnStart =4
@@ -1290,17 +1322,16 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11415
-                    Top =1680
+                    Left =11472
+                    Top =1704
                     Width =180
                     Name ="EmptyCell215"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11415
-                    LayoutCachedTop =1680
-                    LayoutCachedWidth =11595
-                    LayoutCachedHeight =1920
+                    LayoutCachedLeft =11472
+                    LayoutCachedTop =1704
+                    LayoutCachedWidth =11652
+                    LayoutCachedHeight =1944
                     RowStart =3
                     RowEnd =3
                     ColumnStart =4
@@ -1309,17 +1340,16 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11415
-                    Top =1995
+                    Left =11472
+                    Top =2028
                     Width =180
                     Name ="EmptyCell216"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11415
-                    LayoutCachedTop =1995
-                    LayoutCachedWidth =11595
-                    LayoutCachedHeight =2235
+                    LayoutCachedLeft =11472
+                    LayoutCachedTop =2028
+                    LayoutCachedWidth =11652
+                    LayoutCachedHeight =2268
                     RowStart =4
                     RowEnd =4
                     ColumnStart =4
@@ -1328,17 +1358,16 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11415
-                    Top =2310
+                    Left =11472
+                    Top =2352
                     Width =180
                     Name ="EmptyCell217"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11415
-                    LayoutCachedTop =2310
-                    LayoutCachedWidth =11595
-                    LayoutCachedHeight =2550
+                    LayoutCachedLeft =11472
+                    LayoutCachedTop =2352
+                    LayoutCachedWidth =11652
+                    LayoutCachedHeight =2592
                     RowStart =5
                     RowEnd =5
                     ColumnStart =4
@@ -1347,17 +1376,16 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11415
-                    Top =2625
+                    Left =11472
+                    Top =2676
                     Width =180
                     Name ="EmptyCell218"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11415
-                    LayoutCachedTop =2625
-                    LayoutCachedWidth =11595
-                    LayoutCachedHeight =2865
+                    LayoutCachedLeft =11472
+                    LayoutCachedTop =2676
+                    LayoutCachedWidth =11652
+                    LayoutCachedHeight =2916
                     RowStart =6
                     RowEnd =6
                     ColumnStart =4
@@ -1366,16 +1394,15 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =11415
-                    Top =2940
+                    Left =11472
+                    Top =3000
                     Width =180
                     Name ="EmptyCell219"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11415
-                    LayoutCachedTop =2940
-                    LayoutCachedWidth =11595
-                    LayoutCachedHeight =3180
+                    LayoutCachedLeft =11472
+                    LayoutCachedTop =3000
+                    LayoutCachedWidth =11652
+                    LayoutCachedHeight =3240
                     RowStart =7
                     RowEnd =7
                     ColumnStart =4
@@ -1385,9 +1412,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =11415
-                    Top =3240
-                    Width =1590
+                    Left =11472
+                    Top =3312
+                    Width =1608
                     Height =240
                     FontSize =8
                     TabIndex =36
@@ -1397,7 +1424,6 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Edit Address"
                     GroupTable =1
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -1435,10 +1461,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =11415
-                    LayoutCachedTop =3240
-                    LayoutCachedWidth =13005
-                    LayoutCachedHeight =3480
+                    LayoutCachedLeft =11472
+                    LayoutCachedTop =3312
+                    LayoutCachedWidth =13080
+                    LayoutCachedHeight =3552
                     PictureCaptionArrangement =5
                     RowStart =8
                     RowEnd =8
@@ -1485,11 +1511,11 @@ Begin Form
                     TabIndex =37
                     BackColor =16249583
                     BorderColor =16249583
+                    ForeColor =0
                     Name ="AddressText"
                     FontName ="Segoe UI"
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =7710
@@ -1513,12 +1539,10 @@ Begin Form
                     Width =5310
                     Height =4305
                     TabIndex =38
-                    BorderColor =10921638
                     Name ="LocationTax"
                     SourceObject ="Form.LocationTaxSub"
                     LinkChildFields ="LocationID"
                     LinkMasterFields ="LAddressID"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =6540
                     LayoutCachedTop =4410
@@ -1536,6 +1560,7 @@ Begin Form
                     Height =7050
                     FontSize =9
                     TabIndex =12
+                    ForeColor =0
                     Name ="LocationList"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT vw_LocationAddressMatrix.LocationID, vw_LocationAddressMatrix.LAddressID,"
@@ -1553,7 +1578,6 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     LeftPadding =60
                     RightPadding =75
-                    GridlineColor =10921638
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =45
@@ -1582,6 +1606,7 @@ Begin Form
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -1664,6 +1689,7 @@ Begin Form
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -1746,6 +1772,7 @@ Begin Form
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -1827,6 +1854,7 @@ Begin Form
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x000000000000000000000000000000000000000000000000727272ff727272ff ,
@@ -1905,13 +1933,13 @@ Begin Form
                     TabIndex =11
                     Name ="TabCtl128"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13140
                     LayoutCachedTop =630
                     LayoutCachedWidth =20370
                     LayoutCachedHeight =7890
                     ThemeFontIndex =-1
+                    BackColor =16777215
                     BackShade =100.0
                     BorderColor =6108695
                     BorderThemeColorIndex =-1
@@ -1919,9 +1947,9 @@ Begin Form
                     HoverThemeColorIndex =4
                     PressedColor =16645629
                     PressedThemeColorIndex =-1
-                    HoverForeColor =4210752
                     PressedForeThemeColorIndex =2
                     PressedForeTint =100.0
+                    ForeColor =0
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     Begin
@@ -1931,10 +1959,8 @@ Begin Form
                             Top =1065
                             Width =7080
                             Height =6750
-                            BorderColor =10921638
                             Name ="Units"
                             Caption ="112 Units @ Location"
-                            GridlineColor =10921638
                             LayoutCachedLeft =13215
                             LayoutCachedTop =1065
                             LayoutCachedWidth =20295
@@ -1948,10 +1974,11 @@ Begin Form
                                     Width =6930
                                     Height =225
                                     FontSize =8
-                                    ForeColor =8355711
+                                    BorderColor =0
                                     Name ="Label88"
                                     Caption =" ┌─ Search   ─┬────────────┬────────┬──────────┬─────────────┐"
                                     FontName ="Segoe UI"
+                                    GridlineColor =0
                                     LayoutCachedLeft =13365
                                     LayoutCachedTop =1140
                                     LayoutCachedWidth =20295
@@ -1974,12 +2001,12 @@ Begin Form
                                     TabIndex =1
                                     BackColor =13434879
                                     BorderColor =967423
+                                    ForeColor =0
                                     Name ="SearchAssetId"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =13310
                                     LayoutCachedTop =1340
@@ -2003,12 +2030,12 @@ Begin Form
                                     TabIndex =3
                                     BackColor =13434879
                                     BorderColor =967423
+                                    ForeColor =0
                                     Name ="SearchLease"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =14030
                                     LayoutCachedTop =1340
@@ -2032,12 +2059,12 @@ Begin Form
                                     TabIndex =4
                                     BackColor =13434879
                                     BorderColor =967423
+                                    ForeColor =0
                                     Name ="SearchSchedule"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =14599
                                     LayoutCachedTop =1340
@@ -2061,12 +2088,12 @@ Begin Form
                                     TabIndex =2
                                     BackColor =13434879
                                     BorderColor =967423
+                                    ForeColor =0
                                     Name ="SearchUnit"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =15751
                                     LayoutCachedTop =1340
@@ -2092,12 +2119,12 @@ Begin Form
                                     TabIndex =5
                                     BackColor =13434879
                                     BorderColor =967423
+                                    ForeColor =0
                                     Name ="SearchDesc"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =16622
                                     LayoutCachedTop =1340
@@ -2123,12 +2150,12 @@ Begin Form
                                     TabIndex =6
                                     BackColor =13434879
                                     BorderColor =967423
+                                    ForeColor =0
                                     Name ="SearchStatus"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =19502
                                     LayoutCachedTop =1340
@@ -2154,6 +2181,7 @@ Begin Form
                                     Width =6912
                                     Height =6150
                                     FontSize =8
+                                    ForeColor =0
                                     Name ="UnitsList"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT AssetID, iif(vw_SixKeys.MLOrig='FA','FA','Track')As MLOrig, iif(vw_SixKey"
@@ -2164,7 +2192,6 @@ Begin Form
                                     OnDblClick ="[Event Procedure]"
                                     LeftPadding =60
                                     RightPadding =75
-                                    GridlineColor =10921638
                                     AllowValueListEdits =0
 
                                     LayoutCachedLeft =13310
@@ -2186,10 +2213,8 @@ Begin Form
                             Top =1065
                             Width =7080
                             Height =6750
-                            BorderColor =10921638
                             Name ="ContactsLinked"
                             Caption ="0 Contacts Linked to Location"
-                            GridlineColor =10921638
                             LayoutCachedLeft =13215
                             LayoutCachedTop =1065
                             LayoutCachedWidth =20295
@@ -2205,6 +2230,7 @@ Begin Form
                                     Width =6891
                                     Height =3720
                                     FontSize =9
+                                    ForeColor =0
                                     BorderColor =12632256
                                     Name ="LinkedContactsList"
                                     RowSourceType ="Table/Query"
@@ -2216,6 +2242,7 @@ Begin Form
                                         "ionID]));"
                                     ColumnWidths ="0;0;1152;2592;2592;0"
                                     OnClick ="[Event Procedure]"
+                                    GridlineColor =0
 
                                     LayoutCachedLeft =13260
                                     LayoutCachedTop =1175
@@ -2241,8 +2268,10 @@ Begin Form
                                     Width =3720
                                     Height =1305
                                     FontSize =8
+                                    BorderColor =0
                                     ForeColor =-2147483617
                                     Name ="ContactDetail"
+                                    GridlineColor =0
 
                                     LayoutCachedLeft =13335
                                     LayoutCachedTop =5265
@@ -2264,6 +2293,7 @@ Begin Form
                                     Width =3900
                                     Height =1560
                                     Name ="Box656"
+                                    GridlineColor =0
                                     LayoutCachedLeft =13260
                                     LayoutCachedTop =5070
                                     LayoutCachedWidth =17160
@@ -2287,7 +2317,6 @@ Begin Form
                                     FontWeight =700
                                     Name ="Label657"
                                     Caption ="Contact Detail"
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =13305
                                     LayoutCachedTop =4950
                                     LayoutCachedWidth =14790
@@ -2311,6 +2340,7 @@ Begin Form
                                     Width =1620
                                     FontSize =9
                                     BorderColor =967423
+                                    ForeColor =0
                                     Name ="ContactsCBO"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT Location_contacts.contactID, Location_contacts.clientRef, [contactFirst] "
@@ -2319,7 +2349,6 @@ Begin Form
                                         "ntacts WHERE (((Location_contacts.clientRef)=[Forms]![ClientsView]![clientID]));"
                                     ColumnWidths ="0;0;3312;2376"
                                     OnClick ="[Event Procedure]"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =18060
                                     LayoutCachedTop =6150
@@ -2346,7 +2375,6 @@ Begin Form
                                             BorderColor =967423
                                             Name ="Label730"
                                             Caption ="Select Contact to Link"
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =18060
                                             LayoutCachedTop =5910
                                             LayoutCachedWidth =19635
@@ -2376,6 +2404,7 @@ Begin Form
                                     LeftPadding =60
                                     RightPadding =75
                                     BottomPadding =120
+                                    GridlineColor =0
 
                                     LayoutCachedLeft =17640
                                     LayoutCachedTop =4950
@@ -2389,8 +2418,10 @@ Begin Form
                                     GridlineShade =100.0
                                     Shape =0
                                     Gradient =0
+                                    BackColor =16777215
                                     BackThemeColorIndex =-1
                                     BackTint =100.0
+                                    BorderColor =0
                                     BorderThemeColorIndex =-1
                                     BorderTint =100.0
                                     ThemeFontIndex =-1
@@ -2422,13 +2453,13 @@ Begin Form
                     Height =522
                     FontSize =10
                     TabIndex =39
+                    ForeColor =0
                     Name ="DeleteMe"
                     Caption ="Delete \015\012Name"
                     ControlTipText ="Delete This Base Tax"
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedTop =7920
@@ -2461,9 +2492,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =6495
-                    Top =1680
-                    Width =1125
+                    Left =6504
+                    Top =1704
+                    Width =1128
                     Height =240
                     FontSize =8
                     TabIndex =19
@@ -2473,7 +2504,6 @@ Begin Form
                     GroupTable =1
                     LeftPadding =0
                     BottomPadding =45
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -2511,10 +2541,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =6495
-                    LayoutCachedTop =1680
-                    LayoutCachedWidth =7620
-                    LayoutCachedHeight =1920
+                    LayoutCachedLeft =6504
+                    LayoutCachedTop =1704
+                    LayoutCachedWidth =7632
+                    LayoutCachedHeight =1944
                     PictureCaptionArrangement =4
                     Alignment =3
                     RowStart =3
@@ -2526,25 +2556,27 @@ Begin Form
                     ForeTint =100.0
                     Shape =0
                     Gradient =0
+                    BackColor =16777215
                     BackThemeColorIndex =-1
                     BackTint =100.0
+                    BorderColor =0
                     BorderThemeColorIndex =-1
                     BorderTint =100.0
                     ThemeFontIndex =-1
+                    HoverColor =16777215
                     HoverThemeColorIndex =-1
                     HoverTint =100.0
+                    PressedColor =16777215
                     PressedThemeColorIndex =-1
                     PressedShade =100.0
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
                     GroupTable =1
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =6495
-                    Top =1995
-                    Width =1125
+                    Left =6504
+                    Top =2028
+                    Width =1128
                     Height =240
                     FontSize =8
                     TabIndex =22
@@ -2554,7 +2586,6 @@ Begin Form
                     GroupTable =1
                     LeftPadding =0
                     BottomPadding =45
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -2592,10 +2623,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =6495
-                    LayoutCachedTop =1995
-                    LayoutCachedWidth =7620
-                    LayoutCachedHeight =2235
+                    LayoutCachedLeft =6504
+                    LayoutCachedTop =2028
+                    LayoutCachedWidth =7632
+                    LayoutCachedHeight =2268
                     PictureCaptionArrangement =4
                     Alignment =3
                     RowStart =4
@@ -2607,25 +2638,27 @@ Begin Form
                     ForeTint =100.0
                     Shape =0
                     Gradient =0
+                    BackColor =16777215
                     BackThemeColorIndex =-1
                     BackTint =100.0
+                    BorderColor =0
                     BorderThemeColorIndex =-1
                     BorderTint =100.0
                     ThemeFontIndex =-1
+                    HoverColor =16777215
                     HoverThemeColorIndex =-1
                     HoverTint =100.0
+                    PressedColor =16777215
                     PressedThemeColorIndex =-1
                     PressedShade =100.0
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
                     GroupTable =1
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =6495
-                    Top =2625
-                    Width =1125
+                    Left =6504
+                    Top =2676
+                    Width =1128
                     Height =240
                     FontSize =8
                     TabIndex =30
@@ -2635,7 +2668,6 @@ Begin Form
                     GroupTable =1
                     LeftPadding =0
                     BottomPadding =45
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -2673,10 +2705,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =6495
-                    LayoutCachedTop =2625
-                    LayoutCachedWidth =7620
-                    LayoutCachedHeight =2865
+                    LayoutCachedLeft =6504
+                    LayoutCachedTop =2676
+                    LayoutCachedWidth =7632
+                    LayoutCachedHeight =2916
                     PictureCaptionArrangement =4
                     Alignment =3
                     RowStart =6
@@ -2688,25 +2720,27 @@ Begin Form
                     ForeTint =100.0
                     Shape =0
                     Gradient =0
+                    BackColor =16777215
                     BackThemeColorIndex =-1
                     BackTint =100.0
+                    BorderColor =0
                     BorderThemeColorIndex =-1
                     BorderTint =100.0
                     ThemeFontIndex =-1
+                    HoverColor =16777215
                     HoverThemeColorIndex =-1
                     HoverTint =100.0
+                    PressedColor =16777215
                     PressedThemeColorIndex =-1
                     PressedShade =100.0
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
                     GroupTable =1
                     Overlaps =1
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =6495
-                    Top =2310
-                    Width =1125
+                    Left =6504
+                    Top =2352
+                    Width =1128
                     Height =240
                     FontSize =8
                     TabIndex =26
@@ -2716,7 +2750,6 @@ Begin Form
                     GroupTable =1
                     LeftPadding =0
                     BottomPadding =45
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -2754,10 +2787,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =6495
-                    LayoutCachedTop =2310
-                    LayoutCachedWidth =7620
-                    LayoutCachedHeight =2550
+                    LayoutCachedLeft =6504
+                    LayoutCachedTop =2352
+                    LayoutCachedWidth =7632
+                    LayoutCachedHeight =2592
                     PictureCaptionArrangement =4
                     Alignment =3
                     RowStart =5
@@ -2769,136 +2802,101 @@ Begin Form
                     ForeTint =100.0
                     Shape =0
                     Gradient =0
+                    BackColor =16777215
                     BackThemeColorIndex =-1
                     BackTint =100.0
+                    BorderColor =0
                     BorderThemeColorIndex =-1
                     BorderTint =100.0
                     ThemeFontIndex =-1
+                    HoverColor =16777215
                     HoverThemeColorIndex =-1
                     HoverTint =100.0
+                    PressedColor =16777215
                     PressedThemeColorIndex =-1
                     PressedShade =100.0
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
                     GroupTable =1
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =6375
-                    Top =1680
+                    Left =6372
+                    Top =1704
                     Width =120
                     Name ="EmptyCell275"
                     GroupTable =1
                     RightPadding =0
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6375
-                    LayoutCachedTop =1680
-                    LayoutCachedWidth =6495
-                    LayoutCachedHeight =1920
+                    LayoutCachedLeft =6372
+                    LayoutCachedTop =1704
+                    LayoutCachedWidth =6492
+                    LayoutCachedHeight =1944
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =1
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =6375
-                    Top =1995
+                    Left =6372
+                    Top =2028
                     Width =120
                     Name ="EmptyCell277"
                     GroupTable =1
                     RightPadding =0
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6375
-                    LayoutCachedTop =1995
-                    LayoutCachedWidth =6495
-                    LayoutCachedHeight =2235
+                    LayoutCachedLeft =6372
+                    LayoutCachedTop =2028
+                    LayoutCachedWidth =6492
+                    LayoutCachedHeight =2268
                     RowStart =4
                     RowEnd =4
                     LayoutGroup =1
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =6375
-                    Top =2310
+                    Left =6372
+                    Top =2352
                     Width =120
                     Name ="EmptyCell279"
                     GroupTable =1
                     RightPadding =0
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6375
-                    LayoutCachedTop =2310
-                    LayoutCachedWidth =6495
-                    LayoutCachedHeight =2550
+                    LayoutCachedLeft =6372
+                    LayoutCachedTop =2352
+                    LayoutCachedWidth =6492
+                    LayoutCachedHeight =2592
                     RowStart =5
                     RowEnd =5
                     LayoutGroup =1
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =6375
-                    Top =2625
+                    Left =6372
+                    Top =2676
                     Width =120
                     Name ="EmptyCell281"
                     GroupTable =1
                     RightPadding =0
                     BottomPadding =45
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6375
-                    LayoutCachedTop =2625
-                    LayoutCachedWidth =6495
-                    LayoutCachedHeight =2865
+                    LayoutCachedLeft =6372
+                    LayoutCachedTop =2676
+                    LayoutCachedWidth =6492
+                    LayoutCachedHeight =2916
                     RowStart =6
                     RowEnd =6
                     LayoutGroup =1
                     GroupTable =1
                 End
-                Begin Label
-                    BackStyle =1
-                    OverlapFlags =85
-                    TextAlign =1
-                    Left =6495
-                    Top =2940
-                    Width =1125
-                    Height =240
-                    FontSize =8
-                    Name ="Label566"
-                    Caption ="       Division"
-                    FontName ="Segoe UI"
-                    GroupTable =1
-                    LeftPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6495
-                    LayoutCachedTop =2940
-                    LayoutCachedWidth =7620
-                    LayoutCachedHeight =3180
-                    RowStart =7
-                    RowEnd =7
-                    ColumnStart =1
-                    ColumnEnd =1
-                    LayoutGroup =1
-                    ThemeFontIndex =-1
-                    BackThemeColorIndex =-1
-                    BorderThemeColorIndex =-1
-                    BorderTint =100.0
-                    ForeThemeColorIndex =2
-                    ForeTint =100.0
-                    GroupTable =1
-                End
                 Begin EmptyCell
-                    Left =6375
-                    Top =2940
+                    Left =6372
+                    Top =3000
                     Width =120
                     Name ="EmptyCell283"
                     GroupTable =1
                     RightPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6375
-                    LayoutCachedTop =2940
-                    LayoutCachedWidth =6495
-                    LayoutCachedHeight =3180
+                    LayoutCachedLeft =6372
+                    LayoutCachedTop =3000
+                    LayoutCachedWidth =6492
+                    LayoutCachedHeight =3240
                     RowStart =7
                     RowEnd =7
                     LayoutGroup =1
@@ -2906,8 +2904,6 @@ Begin Form
                 End
                 Begin ToggleButton
                     OverlapFlags =93
-                    TextFontCharSet =177
-                    TextFontFamily =0
                     Left =45
                     Top =495
                     Width =2160
@@ -2919,10 +2915,8 @@ Begin Form
                     Name ="ToggleSortName"
                     DefaultValue ="0"
                     Caption ="↓↑ Location"
-                    FontName ="Calibri"
                     OnClick ="[Event Procedure]"
                     Tag ="TSort"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =45
                     LayoutCachedTop =495
@@ -2950,14 +2944,11 @@ Begin Form
                     HoverForeColor =8210719
                     HoverForeThemeColorIndex =-1
                     HoverForeTint =100.0
-                    PressedForeColor =16777215
                     PressedForeThemeColorIndex =-1
                     Overlaps =1
                 End
                 Begin ToggleButton
                     OverlapFlags =95
-                    TextFontCharSet =177
-                    TextFontFamily =0
                     Left =2205
                     Top =495
                     Width =360
@@ -2969,10 +2960,8 @@ Begin Form
                     Name ="ToggleSortState"
                     DefaultValue ="0"
                     Caption ="St"
-                    FontName ="Calibri"
                     OnClick ="[Event Procedure]"
                     Tag ="TSort"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2205
                     LayoutCachedTop =495
@@ -3000,14 +2989,11 @@ Begin Form
                     HoverForeColor =8210719
                     HoverForeThemeColorIndex =-1
                     HoverForeTint =100.0
-                    PressedForeColor =16777215
                     PressedForeThemeColorIndex =-1
                     Overlaps =1
                 End
                 Begin ToggleButton
                     OverlapFlags =95
-                    TextFontCharSet =177
-                    TextFontFamily =0
                     Left =2565
                     Top =495
                     Width =1152
@@ -3019,10 +3005,8 @@ Begin Form
                     Name ="ToggleSortUnits"
                     DefaultValue ="0"
                     Caption ="↓↑ Units@"
-                    FontName ="Calibri"
                     OnClick ="[Event Procedure]"
                     Tag ="TSort"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2565
                     LayoutCachedTop =495
@@ -3050,14 +3034,11 @@ Begin Form
                     HoverForeColor =8210719
                     HoverForeThemeColorIndex =-1
                     HoverForeTint =100.0
-                    PressedForeColor =16777215
                     PressedForeThemeColorIndex =-1
                     Overlaps =1
                 End
                 Begin ToggleButton
                     OverlapFlags =95
-                    TextFontCharSet =177
-                    TextFontFamily =0
                     Left =3717
                     Top =495
                     Width =648
@@ -3069,10 +3050,8 @@ Begin Form
                     Name ="ToggleSortTax"
                     DefaultValue ="0"
                     Caption ="Tax%"
-                    FontName ="Calibri"
                     OnClick ="[Event Procedure]"
                     Tag ="TSort"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =3717
                     LayoutCachedTop =495
@@ -3100,14 +3079,11 @@ Begin Form
                     HoverForeColor =8210719
                     HoverForeThemeColorIndex =-1
                     HoverForeTint =100.0
-                    PressedForeColor =16777215
                     PressedForeThemeColorIndex =-1
                     Overlaps =1
                 End
                 Begin ToggleButton
                     OverlapFlags =95
-                    TextFontCharSet =177
-                    TextFontFamily =0
                     Left =4365
                     Top =495
                     Width =1530
@@ -3119,10 +3095,8 @@ Begin Form
                     Name ="ToggleSortType"
                     DefaultValue ="0"
                     Caption ="↓↑ Type"
-                    FontName ="Calibri"
                     OnClick ="[Event Procedure]"
                     Tag ="TSort"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4365
                     LayoutCachedTop =495
@@ -3150,7 +3124,6 @@ Begin Form
                     HoverForeColor =8210719
                     HoverForeThemeColorIndex =-1
                     HoverForeTint =100.0
-                    PressedForeColor =16777215
                     PressedForeThemeColorIndex =-1
                     Overlaps =1
                 End
@@ -3166,7 +3139,6 @@ Begin Form
                     Name ="ClearSorts"
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Edit Address"
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -3244,9 +3216,11 @@ Begin Form
                     Width =5265
                     Height =495
                     FontSize =18
+                    BorderColor =0
                     Name ="Label65"
                     ControlSource ="=\"Locations\""
                     FontName ="Segoe UI"
+                    GridlineColor =0
                     TextFormat =1
 
                     LayoutCachedWidth =5265
@@ -3266,9 +3240,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =9630
-                    Top =1995
-                    Width =1725
+                    Left =9672
+                    Top =2028
+                    Width =1728
                     FontSize =8
                     TabIndex =24
                     BorderColor =12632256
@@ -3278,12 +3252,11 @@ Begin Form
                     FontName ="Tahoma"
                     GroupTable =1
                     BottomPadding =45
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =9630
-                    LayoutCachedTop =1995
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =2235
+                    LayoutCachedLeft =9672
+                    LayoutCachedTop =2028
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =2268
                     RowStart =4
                     RowEnd =4
                     ColumnStart =3
@@ -3311,7 +3284,6 @@ Begin Form
                     Caption ="Look Up Tax (Zip)"
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Edit Address"
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,

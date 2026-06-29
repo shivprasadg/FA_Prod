@@ -12,7 +12,7 @@
     "NameLocal": "mnuExit",
     "Position": 1,
     "Protection": 17,
-    "RowIndex": 11,
+    "RowIndex": 4,
     "Top": -9,
     "Type": 0,
     "Visible": false,
@@ -22,7 +22,7 @@
         "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
-        "Caption": "E&xit",
+        "Caption": "E&xit Access",
         "DescriptionText": "",
         "Enabled": true,
         "FaceId": 752,
@@ -39,15 +39,15 @@
         "Priority": 3,
         "ShortcutText": "",
         "State": 0,
-        "Style": 2,
+        "Style": 0,
         "Tag": "",
-        "TooltipText": "E&xit",
+        "TooltipText": "E&xit Access",
         "Top": -9,
         "Type": 1,
         "Visible": true,
         "Width": 23,
         "Id": 752,
-        "ImagePath": "rel:mnuExit_Images\\Exit"
+        "ImagePath": "rel:mnuExit_Images\\Exit Access"
       }
     ]
   }

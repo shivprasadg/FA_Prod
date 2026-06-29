@@ -1607,7 +1607,6 @@ Begin Report
                     SourceObject ="Report.LocationDirectory_TaxesSub"
                     LinkChildFields ="LocationID"
                     LinkMasterFields ="LocationID"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2130
                     LayoutCachedTop =60

@@ -39,6 +39,6 @@ End Sub
 
 
 Private Sub GroupFooter1_Print(Cancel As Integer, PrintCount As Integer)
-Call MakeVertLine(2, (Me.Units.Top - 40), 20, (1440 * 8) - 40)
-Call MakeVertLine(2, Me.Units.Top, 20, (1440 * 8) - 40)
+Call MakeVertLine(2, (Me.UNITS.Top - 40), 20, (1440 * 8) - 40)
+Call MakeVertLine(2, Me.UNITS.Top, 20, (1440 * 8) - 40)
 End Sub

@@ -5,7 +5,7 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Public Sub SetValueAdd()
-    Me.Form.RecordSource = "SELECT * FROM Concession Where ClientId=" & Me.Parent.clientID & " Order By ConDt Desc;"
+    Me.Form.RecordSource = "SELECT * FROM Concession Where ClientId=" & Me.Parent.ClientID & " Order By ConDt Desc;"
 End Sub
 Private Sub Form_Close()
    On Error GoTo Form_Close_Error

@@ -18,7 +18,7 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub Odometer_Click()
-    Me.ODOMETER.ControlTipText = "ODO mileage collected from " & DLookup("ODOSource", "RemarketingReportAllUnits", "UnitId=" & Me.UnitID) & " on " & DLookup("ODOReadDate", "RemarketingReportAllUnits", "UnitId=" & Me.UnitID)
+    Me.Odometer.ControlTipText = "ODO mileage collected from " & DLookup("ODOSource", "RemarketingReportAllUnits", "UnitId=" & Me.UnitID) & " on " & DLookup("ODOReadDate", "RemarketingReportAllUnits", "UnitId=" & Me.UnitID)
 End Sub
 
 Private Sub ReportsList_Click()
@@ -346,7 +346,7 @@ Private Sub lstStatus_Build()
 End Sub
 Private Sub Buyer_DblClick(Cancel As Integer)
     If Me.Buyer & "TEST" = "TEST" Then Exit Sub
-    Call OpenBuyersFrom(Me.BuyerId, 0)
+    Call OpenBuyersFrom(Me.BuyerID, 0)
 End Sub
 Private Sub Buy0_Click()
     Call BuyOutStart_Click
@@ -394,7 +394,7 @@ End Sub
 Private Sub SourceCompany_DblClick(Cancel As Integer)
     If Me.SourceCompany & "TEST" = "TEST" Then Exit Sub
     DoCmd.close acForm, "ClientsView"
-    DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+    DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
     Me.UnitID.SetFocus
 End Sub
 Private Sub TargetValueList_Click()

@@ -844,16 +844,16 @@ Err_Handler:
     Resume Exit_Handler
 End Function
 
-Function GetNextWorkDay(startDate As Date, DaysInFuture As Integer)
+Function GetNextWorkDay(StartDate As Date, DaysInFuture As Integer)
     Dim TempDate As Date
-    TempDate = startDate + DaysInFuture
+    TempDate = StartDate + DaysInFuture
     If Weekday(TempDate) = 7 Then TempDate = TempDate + 2
     If Weekday(TempDate) = 1 Then TempDate = TempDate + 1
     GetNextWorkDay = TempDate
 End Function
-Function GetNextWorkDayInDays(startDate As Date, DaysInFuture As Integer)
+Function GetNextWorkDayInDays(StartDate As Date, DaysInFuture As Integer)
     Dim TempDate As Date
-    TempDate = startDate + DaysInFuture
+    TempDate = StartDate + DaysInFuture
     If Weekday(TempDate) = 7 Then TempDate = TempDate + 2
     If Weekday(TempDate) = 1 Then TempDate = TempDate + 1
     GetNextWorkDayInDays = DateDiff("d", Date, TempDate)
@@ -1249,7 +1249,7 @@ Public Function MakeHealthReport()
         For x = 1 To RST.RecordCount
             SQLz = "INSERT INTO ScheduleHealthCheckWorkTable ( ClientID, SchID, GroupID, SchNo, Client, SynRent, PDRent )"
             SQLz = SQLz & " SELECT "
-            SQLz = SQLz & RST!clientID
+            SQLz = SQLz & RST!ClientID
             SQLz = SQLz & RST!SchID
             SQLz = SQLz & RST!groupID
             SQLz = SQLz & RST!SchNo

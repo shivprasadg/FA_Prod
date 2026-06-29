@@ -127,8 +127,8 @@ Me.Form.Refresh
         MsgBox "A Invoice Request Date is required", vbCritical, "No Date"
         Exit Sub
     End If
-    If Me.ReMarketInvoiceSub!unitstatus = "S" Or Me.ReMarketInvoiceSub!unitstatus = "KS" Then
-        MsgBox "These units have a status of = " & Me.ReMarketInvoiceSub!unitstatus & "  (SOLD)" & vbNewLine & "I will open a 'reprint'", vbInformation, "Sold Status"
+    If Me.ReMarketInvoiceSub!UnitStatus = "S" Or Me.ReMarketInvoiceSub!UnitStatus = "KS" Then
+        MsgBox "These units have a status of = " & Me.ReMarketInvoiceSub!UnitStatus & "  (SOLD)" & vbNewLine & "I will open a 'reprint'", vbInformation, "Sold Status"
         DoCmd.OpenReport "RmktInvoiceReprint", acViewPreview
         Exit Sub
     End If

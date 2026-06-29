@@ -18,7 +18,7 @@ Form_Close_Error:
 End Sub
 
 Public Sub SetDeals()
-Me.Form.RecordSource = "Select * From Deals Where ClientID=" & Me.Parent.clientID & ";"
+Me.Form.RecordSource = "Select * From Deals Where ClientID=" & Me.Parent.ClientID & ";"
 Me.Form.Visible = True
 End Sub
 

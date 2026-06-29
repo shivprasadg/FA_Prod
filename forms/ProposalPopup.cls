@@ -31,19 +31,19 @@ On Error GoTo 0
 End Sub
 
 Private Sub Form_Current()
-If Me.proposalStatus = "Closed" Then
+If Me.ProposalStatus = "Closed" Then
 Me.LockIt.caption = "UnLocked"
 Call LockUnLockBtn_Click
 End If
 End Sub
 
 Private Sub Form_Load()
-    SQLz = "SELECT * FROM Buyer2Proposal_Query WHERE ProposalID = " & Me.proposalID & " ;"
-    Me.proposalUnitsList.RowSource = SQLz
+    SQLz = "SELECT * FROM Buyer2Proposal_Query WHERE ProposalID = " & Me.ProposalID & " ;"
+    Me.ProposalUnitsList.RowSource = SQLz
     ' Me.Insplink = ""
-    SQLz = "Select * From Event_History Where ProposalID =" & Me.proposalID & " Order By EventStatus Desc, EventDueDate Desc  ;"
-    Me.EventHistory_proposal.Form.RecordSource = SQLz
-    Me.EventHistory_proposal.Form.Refresh
+    SQLz = "Select * From Event_History Where ProposalID =" & Me.ProposalID & " Order By EventStatus Desc, EventDueDate Desc  ;"
+    Me.EventHistory_Proposal.Form.RecordSource = SQLz
+    Me.EventHistory_Proposal.Form.Refresh
 End Sub
 
 Private Sub LockUnLockBtn_Click()
@@ -62,8 +62,8 @@ Private Sub LockUnLockBtn_Click()
 End Sub
 
 Private Sub ProposalUnitsList_DblClick(Cancel As Integer)
-    If IsNull(Me.proposalUnitsList.Column(0)) Then Exit Sub
-    Call OpenUnitsForm(Me.proposalUnitsList.Column(0))
+    If IsNull(Me.ProposalUnitsList.Column(0)) Then Exit Sub
+    Call OpenUnitsForm(Me.ProposalUnitsList.Column(0))
     'DoCmd.OpenForm "UnitsForm", , , "UnitID=" & Me.proposalUnitsList.Column(0)
     Pause (0.5)
     DoCmd.SelectObject acForm, "UnitsForm"

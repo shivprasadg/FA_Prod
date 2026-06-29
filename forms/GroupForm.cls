@@ -13,11 +13,11 @@ Dim Committ As String
 
 Private Sub AddDocLink_Click()
     DoCmd.close acForm, "DocAddEditLinkForm"
-    DoCmd.OpenForm "DocAddEditLinkForm", acNormal, , , acFormAdd, , Me.clientID & "|" & Me.MLID & "|" & Me.SchID & "|" & Me.groupID & "|0|" & Me.Form.Name & "|Add"
+    DoCmd.OpenForm "DocAddEditLinkForm", acNormal, , , acFormAdd, , Me.ClientID & "|" & Me.MLID & "|" & Me.SchID & "|" & Me.groupID & "|0|" & Me.Form.Name & "|Add"
 End Sub
 
 Private Sub AssigneeBankID_Click()
-    Me.Assignee_Bank = Me.AssigneeBankId.Column(1)
+    Me.Assignee_Bank = Me.AssigneeBankID.Column(1)
 End Sub
 
 Private Sub CloneSchGroup_Click()
@@ -55,7 +55,7 @@ Private Sub Form_Load()
         Me.AssignedIndicator.Locked = True
         Me.FinalEconomicsReportBtn.Enabled = False
     End If
-    If FAUserAccessGroup Like "*BDEX*" Then Me.Tabcontrol.Pages(5).Visible = False
+    If FAUserAccessGroup Like "*BDEX*" Then Me.TabControl.Pages(5).Visible = False
     Call HideShowUAT
     If Nz(Me.Assigned_Indicator, "P") = "F" Then Call LockUnLock(True) Else Call LockUnLock(False)
     Me.GroupsList = Me.SGrpID
@@ -80,7 +80,7 @@ Private Sub Form_Current()
         Me.CalcSyndRV = CCur(Nz(Rst1!GroupSyndRV, 0))
         Me.CalcSalesRent = CCur(Nz(Rst1!GroupSalesRent, 0))
         Me.CalcSalesRV = CCur(Nz(Rst1!GroupSalesRV, 0))
-        Me.calcOEC = CCur(Nz(Rst1!GroupOEC, 0))
+        Me.CalcOEC = CCur(Nz(Rst1!GroupOEC, 0))
         Me.CalcVendorCost = CCur(Nz(Rst1!VendorPlus, 0))
         Me.ExtRollUp = CCur(Nz(Rst1!GroupExtRent, 0))
         Me.LeaseExtOption1LRF = Nz(Rst1!EXTLRF, 0)
@@ -88,7 +88,7 @@ Private Sub Form_Current()
         Me.MTMRate = Nz(Rst1!MTMLRF, 0)
         If Me.LRFGroup & "test" = "test" Then Me.LRFGroup = CCur(Nz(Rst1!GroupLRF, 0))
         'Me.CalcGroupLRF = CCur(Nz(Rst!GroupLRF, 0))
-        If Me.CalcRent = 0 Or Me.calcOEC = 0 Then CalcGroupLRF = 0 Else CalcGroupLRF = CDbl(Me.CalcRent / Me.calcOEC)
+        If Me.CalcRent = 0 Or Me.CalcOEC = 0 Then CalcGroupLRF = 0 Else CalcGroupLRF = CDbl(Me.CalcRent / Me.CalcOEC)
         If Me.LORebate.Value > 0 And Nz(Me.SynRebate.Value, 0) = 0 Then Me.SynRebate.BackColor = RGB(255, 255, 153) Else Me.SynRebate.BackColor = RGB(255, 255, 255)
 
         Rst1.close
@@ -98,15 +98,15 @@ Private Sub Form_Current()
     Me.BillingAddressPreview = Me.BillToAddressID.Column(1)
     Me.GroupRevisionLog.Requery
     Call CheckPerdiem
-    If Me.OrigEquipCost & "test" = "test" And Me.MLOrig = "FA" Then Me.OrigEquipCost = Me.calcOEC
+    If Me.OrigEquipCost & "test" = "test" And Me.MLOrig = "FA" Then Me.OrigEquipCost = Me.CalcOEC
     If Me.LeasePymtForGroup & "test" = "test" And Me.MLOrig = "FA" And Me.CalcSalesRent > 1 Then Me.LeasePymtForGroup = Me.CalcSalesRent
     '    If Me.LeasePymtForGroup & "test" = "test" And Me.MLOrig = "FA" And Me.CalcRent < 1 Then Me.LeasePymtForGroup = Me.CalcRent
 
 
-    If Me.calcOEC <> Me.OrigEquipCost And Me.MLOrig = "FA" Then
+    If Me.CalcOEC <> Me.OrigEquipCost And Me.MLOrig = "FA" Then
         Beep
-        Me.OrigEquipCost = Me.calcOEC
-        MsgBox "The Group OEC was corrected to " & Format(Me.calcOEC, "$#,#.#0") & vbNewLine & "Which is the actual 'roll-up' of the Unit Level cost.", , AtlaasVersion
+        Me.OrigEquipCost = Me.CalcOEC
+        MsgBox "The Group OEC was corrected to " & Format(Me.CalcOEC, "$#,#.#0") & vbNewLine & "Which is the actual 'roll-up' of the Unit Level cost.", , AtlaasVersion
         'Me.OrigEquipCost.BackColor = RGB(255, 204, 0)
         'Me.calcOEC.BackColor = RGB(255, 204, 0)
     Else
@@ -218,7 +218,7 @@ Private Sub ExitOptionsConsole_Click()
     End If
     DoCmd.close acForm, "ExitOptionsManager"
     DoCmd.OpenForm "ExitOptionsManager"
-    Forms!ExitOptionsManager.ClientList = Me.clientID
+    Forms!ExitOptionsManager.ClientList = Me.ClientID
     Form_ExitOptionsManager.ClientList_Click
     Forms!ExitOptionsManager.SchGrpList = Me.groupID
     Form_ExitOptionsManager.SchGrpList_Click
@@ -515,7 +515,7 @@ End Sub
 Private Sub ShowGroupSelected()
     Dim i As Integer
     For i = 0 To GroupsList.ListCount
-        If (Me.GroupsList.Column(0, i)) = Nz(Me.OpenArgs, Me.UnitGroupId) Then
+        If (Me.GroupsList.Column(0, i)) = Nz(Me.OpenArgs, Me.UnitGroupID) Then
             Me.GroupsList.Selected(i) = True
             Me.GroupsList.SetFocus
             '  Me.GroupsList.ListIndex = (I)
@@ -645,14 +645,14 @@ Private Sub SyndMiscValue2_AfterUpdate()
 End Sub
 
 Private Sub SynFee_AfterUpdate()
-    Me.SalePrice = [calcOEC] + [SynFee]
+    Me.SalePrice = [CalcOEC] + [SynFee]
 End Sub
 
 
 
 
 Private Sub CalcSyndFees()
-    If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & Me.groupID) = "FA" Then Me.SalePrice = [calcOEC] + [SynFee]
+    If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & Me.groupID) = "FA" Then Me.SalePrice = [CalcOEC] + [SynFee]
     Me.SynFee.Requery
     Me.SyndNetFee.Requery
     Me.ActualServiceFee.Requery
@@ -807,7 +807,7 @@ End Sub
 Private Sub OpenMassMod_Click()
     DoCmd.close acForm, "BulkChange_form"
     DoCmd.OpenForm "BulkChange_form"
-    Forms!BulkChange_Form.ClientList = Me.clientID
+    Forms!BulkChange_Form.ClientList = Me.ClientID
     Form_BulkChange_Form.ClientList_Click
     Forms!BulkChange_Form.LeaseList = DLookup("MLID", "vw_SixKeys", "SchId=" & Me.SchID & "")
     Form_BulkChange_Form.Leaselist_Click
@@ -833,7 +833,7 @@ End Sub
 
 Private Sub SUF_Selection_Click()
     DoCmd.OpenForm "SUF_Select_Form"
-    Forms!SUF_Select_Form.Company_List = Me.clientID
+    Forms!SUF_Select_Form.Company_List = Me.ClientID
     Form_SUF_Select_Form.Company_List_Click
 End Sub
 
@@ -875,28 +875,28 @@ Private Sub PCofABTN_Click()
         MsgBox "The CofA requires the Master Lease No and Date be entered on the Mastser Lease Form", vbCritical, "Missing Master Lease Info"
         Exit Sub
     End If
-    If (Forms!GroupForm!sgrpplb = False And Forms!GroupForm!ClientShNm = "Wal-Mart Trans") Then
+    If (Forms!GroupForm!SGRPPLB = False And Forms!GroupForm!ClientShNm = "Wal-Mart Trans") Then
         DoCmd.OpenReport "CofA-WalMart", acViewPreview, "", "", acNormal
         Exit Sub
     End If
-    If (Forms!GroupForm!sgrpplb = False And Forms!GroupForm![client group] = "maines") Then
+    If (Forms!GroupForm!SGRPPLB = False And Forms!GroupForm![client group] = "maines") Then
         DoCmd.OpenReport "CofA-Maines", acViewPreview, "", "", acNormal
         Exit Sub
     End If
-    If (Forms!GroupForm!sgrpplb = False And Forms!GroupForm![client group] = "Toyota Motor Sales") Then
+    If (Forms!GroupForm!SGRPPLB = False And Forms!GroupForm![client group] = "Toyota Motor Sales") Then
         Beep
         MsgBox "CofA requires Schedule date and negotiated BLCD on the LO Economics tab to be entered", vbExclamation, "Toyota Required Info for CofA"
         DoCmd.OpenReport "CofA-Toyota", acViewPreview, "", "", acNormal
         Exit Sub
     End If
-    If (Forms!GroupForm!sgrpplb = True) Then
+    If (Forms!GroupForm!SGRPPLB = True) Then
         'DoCmd.OpenReport "CofA PLB", acViewPreview, "", "", acNormal
         'Exit Sub
         DoCmd.OpenReport "CofA", acViewPreview, "", "", acNormal
         ' BP West Coast Products LLC
         Exit Sub
     End If
-    If (Forms!GroupForm!sgrpplb = False And Forms!GroupForm!ClientShNm = "BP PRODUCTS NA") Then
+    If (Forms!GroupForm!SGRPPLB = False And Forms!GroupForm!ClientShNm = "BP PRODUCTS NA") Then
         DoCmd.OpenReport "CofaBPWest", acViewPreview, "", "", acNormal
         DoCmd.OpenReport "CofABPWestAttch", acViewPreview, "", "", acNormal
         Exit Sub

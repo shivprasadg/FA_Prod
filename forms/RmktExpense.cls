@@ -25,7 +25,7 @@ Private Sub AddNew_Click()
 Private Sub Form_BeforeUpdate(Cancel As Integer)
 
     If Me.Dirty Then
-    If Nz(Me.VendorRef, 0) = 0 Or Nz(Me.ExpenseType, 0) = 0 Or Nz(Me.ExpenseDate, 0) = 0 Or Nz(Me.Expense, 0) = 0 Then
+    If Nz(Me.VendorREF, 0) = 0 Or Nz(Me.ExpenseType, 0) = 0 Or Nz(Me.ExpenseDate, 0) = 0 Or Nz(Me.Expense, 0) = 0 Then
         Me.Undo
         'DoCmd.SetWarnings False
         'DoCmd.RunSQL ("DELETE * From RemarketExpense Where RMKTExpenseId=" & Me.RMKTExpenseId & ";")
@@ -83,7 +83,7 @@ End Sub
 
 Private Sub SaveMe_Click()
     Dim Validate As String
-    If Nz(Me.VendorRef, 0) = 0 Then Validate = Validate & "   Vendor" & vbNewLine
+    If Nz(Me.VendorREF, 0) = 0 Then Validate = Validate & "   Vendor" & vbNewLine
     If Nz(Me.ExpenseType, 0) = 0 Then Validate = Validate & "   Expense Type" & vbNewLine
     If Nz(Me.ExpenseDate, 0) = 0 Then Validate = Validate & "   Expense Date" & vbNewLine
     If Nz(Me.Expense, 0) = 0 Then Validate = Validate & "   Expense Amount" & vbNewLine

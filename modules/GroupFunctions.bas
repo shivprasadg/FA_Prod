@@ -93,8 +93,8 @@ Function SetUnitsInGroup(ClientIDx As Integer, FA_NotFA_All As String)
     RST.MoveFirst
     MessageUser "Open", "Updating " & RST.RecordCount & " Groups", "Also testing OBC numbers"
     Do Until RST.EOF
-        MessageUser "Update", "Updating " & RST.RecordCount - x & " Groups", "Also testing " & RST!Units & " OBC numbers"
-        SQLz = "UPDATE SchGrp SET UnitsInGroup = " & RST!Units & " " & _
+        MessageUser "Update", "Updating " & RST.RecordCount - x & " Groups", "Also testing " & RST!UNITS & " OBC numbers"
+        SQLz = "UPDATE SchGrp SET UnitsInGroup = " & RST!UNITS & " " & _
                "WHERE SGrpID =" & RST!SGrpID & ";"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)

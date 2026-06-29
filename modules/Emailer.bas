@@ -57,11 +57,11 @@ Public Function SendEmailMessage(varTo As Variant, ByVal strSubject As String, B
     Dim i As Integer
     Dim strTempFile As String
     Dim strMsg As String
-    Dim objOutlook As outlook.Application
-    Dim objOutlookMsg As outlook.MailItem
-    Dim objOutlookRecip As outlook.Recipient
-    Dim objOutlookAttach As outlook.Attachment
-    Dim objInsp As outlook.Inspector
+    Dim objOutlook As Outlook.Application
+    Dim objOutlookMsg As Outlook.MailItem
+    Dim objOutlookRecip As Outlook.Recipient
+    Dim objOutlookAttach As Outlook.Attachment
+    Dim objInsp As Outlook.Inspector
     Dim objWord As Word.Application
     Dim objdoc As Word.Document
     Dim objrange As Word.Range
@@ -78,7 +78,7 @@ SentEmail:
     SendEmailMessage = False
   On Error GoTo outlookopen:    'Trap if OutLook is NOT running
 
-    Set objOutlook = New outlook.Application                                'Create the Outlook session.
+    Set objOutlook = New Outlook.Application                                'Create the Outlook session.
     Set objOutlookMsg = objOutlook.CreateItem(olMailItem)                   'Create the message.
 
 On Error GoTo HandleError    ' Check for other Errors
@@ -610,7 +610,7 @@ Public Function SendDekraImportEmail(Optional eAttached As String, Optional Test
         m2 = m2 & "<TD ALIGN=""Left"">" & RST!UnitNum & "</TD>"
         m2 = m2 & "<TD ALIGN=""Left"">" & RST!VIN & "</TD>"
         m2 = m2 & "<TD ALIGN=""Left"">" & RST!InspDate & "</TD>"
-        m2 = m2 & "<TD ALIGN=""Left"">" & RST!ODOMETER & "</TD>"
+        m2 = m2 & "<TD ALIGN=""Left"">" & RST!Odometer & "</TD>"
         m2 = m2 & "<TD ALIGN=""Left"">" & RST!uDesc & "</TD>"
         m2 = m2 & "<TD ALIGN=""Right"">" & Format(RST!iCost, "Currency") & "</TD></span>"
         m2 = m2 & "<TD ALIGN=""Center""><a href=""" & RST!link2 & """>Dekra</a></TD>"
@@ -646,7 +646,7 @@ Public Function SendDekraImportEmail(Optional eAttached As String, Optional Test
             m2 = m2 & "<TD ALIGN=""Left"">" & Rst2!iUnitNum & "</TD>"
             m2 = m2 & "<TD ALIGN=""Left"">" & Rst2!VIN & "</TD>"
             m2 = m2 & "<TD ALIGN=""Left"">" & Rst2!iDate & "</TD>"
-            m2 = m2 & "<TD ALIGN=""Left"">" & Rst2!Year & " " & Rst2!MAKE & " " & Rst2!MODEL & " " & Rst2!Type & "</TD>"
+            m2 = m2 & "<TD ALIGN=""Left"">" & Rst2!Year & " " & Rst2!Make & " " & Rst2!Model & " " & Rst2!Type & "</TD>"
             m2 = m2 & "<TD ALIGN=""Right"">" & Format(Rst2!iCost, "Currency") & "</TD></span>"
             m2 = m2 & "<TD ALIGN=""Center""><a href=""" & Rst2!LinkAddr & """>Dekra</a></TD>"
             m2 = m2 & "</span></TR>"
@@ -783,7 +783,7 @@ If eType = "Losing BuyersOrders" Then
       m2 = m2 & "<TD ALIGN=""Left"">" & Rst2!SalesPerson & "</TD>"
       m2 = m2 & "<TD ALIGN=""Left"">" & Rst2!BuyerShortName & "</TD>"
       m2 = m2 & "<TD ALIGN=""Center"">" & Rst2!BONum & "</TD></span>"
-      m2 = m2 & "<TD ALIGN=""Center"">" & Rst2!Units & "</TD>"
+      m2 = m2 & "<TD ALIGN=""Center"">" & Rst2!UNITS & "</TD>"
       m2 = m2 & "<TD ALIGN=""Center"">" & Rst2!Source & "</TD>"
       m2 = m2 & "</span></TR>"
       eToEmail = eToEmail & Rst2!Email & ";"

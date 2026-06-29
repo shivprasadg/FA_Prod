@@ -16,12 +16,12 @@ Private Sub Form_Current()
 Me.LocationList.Requery
 Me.LocationList = Me.LocationID
 Call LocationList_Click
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""
 SQLz = "SELECT DivisionID, DivisionName, ClientID From ClientDivisions " & _
-       "WHERE Deleted=False and ClientID=" & Me.clientID & " Order by DivisionName"
+       "WHERE Deleted=False and ClientID=" & Me.ClientID & " Order by DivisionName"
 Me.DivisionID.RowSource = SQLz
 End Sub
 
@@ -48,11 +48,11 @@ Private Sub SearchAssetId_Change()
     Me.SearchLease = ""
     Me.SearchSchedule = ""
     SQLz = "Select AssetID, MLNO, Schedule, [Unit#], Desc From UnitsParkedLocations Where GarageLocationID=" & Me.LocationList.Column(0) & " " & _
-    "AND AssetID Like '*" & Me.SearchAssetId.Text & "*' Order by AssetID;"
+    "AND AssetID Like '*" & Me.SearchAssetID.Text & "*' Order by AssetID;"
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchLease_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     'Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -61,7 +61,7 @@ Private Sub SearchLease_Change()
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchSchedule_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     'Me.SearchSchedule = ""
@@ -70,7 +70,7 @@ Private Sub SearchSchedule_Change()
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchUnit_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     'Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""

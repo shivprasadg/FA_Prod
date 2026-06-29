@@ -92,10 +92,8 @@ Begin Form
                     Height =30
                     FontSize =10
                     TabIndex =1
-                    BorderColor =10921638
                     Name ="Text2"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1
                     LayoutCachedTop =14
@@ -117,7 +115,6 @@ Begin Form
                     FontSize =9
                     Name ="Text0"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =15
                     LayoutCachedTop =30

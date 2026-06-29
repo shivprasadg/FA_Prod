@@ -382,7 +382,7 @@ Private Sub StateBuild()
 End Sub
 Private Sub Buyer_DblClick(Cancel As Integer)
     If 1 = 1 Or Me.Buyer & "TEST" = "TEST" Then Exit Sub
-    Call OpenBuyersFrom(Me.BuyerId, 0)
+    Call OpenBuyersFrom(Me.BuyerID, 0)
 End Sub
 Private Sub Buy0_Click()
     Call BuyOutStart_Click
@@ -430,7 +430,7 @@ End Sub
 Private Sub SourceCompany_DblClick(Cancel As Integer)
     If Me.SourceCompany & "TEST" = "TEST" Then Exit Sub
     DoCmd.close acForm, "ClientsView"
-    DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+    DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
     Me.UnitID.SetFocus
 End Sub
 Private Sub TargetValueList_Click()

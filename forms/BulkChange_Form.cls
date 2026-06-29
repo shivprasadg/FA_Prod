@@ -32,7 +32,7 @@ Public Sub ClientList_Click()
     SQLz = "SELECT MLID, MLNo, MLOrig From vw_SixKeys " & _
            "WHERE ClientId =" & Me.ClientList.Column(0) & " GROUP BY MLID, MLNo, MLOrig Order by MLOrig, MLNo;"
     Me.LeaseList.RowSource = SQLz
-    Me.clientID = Me.ClientList.Column(0)
+    Me.ClientID = Me.ClientList.Column(0)
     Me.ClientGroupID = Me.ClientList.Column(3)
     Me.GetSelectedUnits.Visible = False
     Me.GetAll.Visible = False
@@ -325,13 +325,13 @@ Private Sub SUF_Mass_Click()
     Dim Queryx As String
     Queryx = "vw_SUFReportQuery"
     ReportX = "SUFReport"
-    If DCount("ClientID", "SUFConditions", "ClientID=" & Me.clientID) > 0 Then ReportX = "SUFwConditions"
+    If DCount("ClientID", "SUFConditions", "ClientID=" & Me.ClientID) > 0 Then ReportX = "SUFwConditions"
     If IsAutohauler("SchId", Me.ScheduleList) > 0 Then
         Queryx = "vw_SUFReportAutoHauler"
         ReportX = "SUFReport_AutoHauler"
     End If
     If Me.ClientList.Column(1) Like "*Maines*" Then ReportX = "SUFReport_Maines"
-    If Me.clientID = 4971 Then ReportX = "SUFMass_Mclane"
+    If Me.ClientID = 4971 Then ReportX = "SUFMass_Mclane"
     SQLz = "SELECT * "
     SQLz = SQLz & "FROM " & Queryx & " "
     SQLz = SQLz & "INNER JOIN Bulk_Update_WorkTable "
@@ -444,7 +444,7 @@ Public Function SetUnits(Optional fFilter As String)
     SQLx = ""
     DoCmd.SetWarnings True
 
-    Me.clientID = Me.ClientList.Column(0)
+    Me.ClientID = Me.ClientList.Column(0)
     Call ReQueryAll
     On Error GoTo fixme1
     Me.UnitCount.Visible = True
@@ -476,7 +476,7 @@ Public Sub ReQueryAll()
     Me.BulkChange_ChildParts.Form.ChildList.Requery
     Me.MassMod_Titles.Form.Requery
     Me.BulkChange_ChildPartControl.Form.ChildList.Requery
-    Me.BulkChange_ChildPartControl.Form.SisterPArts.Requery
+    Me.BulkChange_ChildPartControl.Form.SisterParts.Requery
 End Sub
 Private Sub DelWorkTable()
     DoCmd.SetWarnings False
@@ -513,7 +513,7 @@ Private Sub SearchClient_Change()
     If Me.PickModeToggle = True Then Call ReselectPickedUnits
 End Sub
 Public Function SearchUnits_List(sField As String)
-    If sField <> "AssetID" Then Me.SearchAssetId = ""
+    If sField <> "AssetID" Then Me.SearchAssetID = ""
     If sField <> "UnitVIN" Then Me.SearchUnitVin = ""
     If sField <> "UnitNum" Then Me.SearchUnitNum = ""
     If sField <> "UnitDesc" Then Me.SearchUnitDesc = ""

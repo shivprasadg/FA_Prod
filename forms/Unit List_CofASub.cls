@@ -51,12 +51,12 @@ Private Sub Form_Current()
 End Sub
 
 Private Sub UnitAcceptDate_AfterUpdate()
-    If IsDate(Me.UnitCOABack) And Me.unitstatus = "B" Then Me.unitstatus = "A"
+    If IsDate(Me.UnitCOABack) And Me.UnitStatus = "B" Then Me.UnitStatus = "A"
     If AllUnitsInGroup_Accepted(Me.groupID) = True Then Call AllUnitsInGroup_AcceptedMessage(Me.groupID)
 End Sub
 
 Private Sub UnitCOABack_AfterUpdate()
-    If IsDate(Me.UnitCOABack) And Me.unitstatus = "B" Then Me.unitstatus = "A"
+    If IsDate(Me.UnitCOABack) And Me.UnitStatus = "B" Then Me.UnitStatus = "A"
     If AllUnitsInGroup_Accepted(Me.groupID) = True Then Call AllUnitsInGroup_AcceptedMessage(Me.groupID)
 End Sub
 
@@ -69,6 +69,6 @@ Private Sub UnitCOABack_GotFocus()
 End Sub
 
 Private Sub UnitCofACopy_AfterUpdate()
-    If IsDate(Me.UnitCofACopy) And Me.unitstatus = "B" Then Me.unitstatus = "A"
+    If IsDate(Me.UnitCofACopy) And Me.UnitStatus = "B" Then Me.UnitStatus = "A"
     If AllUnitsInGroup_Accepted(Me.groupID) = True Then Call AllUnitsInGroup_AcceptedMessage(Me.groupID)
 End Sub

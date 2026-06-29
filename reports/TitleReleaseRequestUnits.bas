@@ -11,7 +11,7 @@ Begin Report
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =10628
+    Width =10692
     DatasheetFontHeight =11
     ItemSuffix =121
     Left =4815
@@ -122,7 +122,7 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =2280
+                    Left =2292
                     Width =660
                     Height =855
                     BackColor =16183539
@@ -135,8 +135,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =2280
-                    LayoutCachedWidth =2940
+                    LayoutCachedLeft =2292
+                    LayoutCachedWidth =2952
                     LayoutCachedHeight =855
                     ColumnStart =1
                     ColumnEnd =1
@@ -176,7 +176,7 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =2940
+                    Left =2964
                     Width =4320
                     Height =855
                     BackColor =16183539
@@ -189,8 +189,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =2940
-                    LayoutCachedWidth =7260
+                    LayoutCachedLeft =2964
+                    LayoutCachedWidth =7284
                     LayoutCachedHeight =855
                     ColumnStart =2
                     ColumnEnd =2
@@ -205,8 +205,8 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =7260
-                    Width =2070
+                    Left =7296
+                    Width =2076
                     Height =855
                     BackColor =16183539
                     BorderColor =0
@@ -218,8 +218,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =7260
-                    LayoutCachedWidth =9330
+                    LayoutCachedLeft =7296
+                    LayoutCachedWidth =9372
                     LayoutCachedHeight =855
                     ColumnStart =3
                     ColumnEnd =3
@@ -234,8 +234,8 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =9330
-                    Width =1290
+                    Left =9384
+                    Width =1296
                     Height =855
                     BackColor =6737151
                     BorderColor =0
@@ -247,8 +247,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =9330
-                    LayoutCachedWidth =10620
+                    LayoutCachedLeft =9384
+                    LayoutCachedWidth =10680
                     LayoutCachedHeight =855
                     ColumnStart =4
                     ColumnEnd =4
@@ -275,7 +275,7 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =2280
+                    Left =2292
                     Width =660
                     Height =306
                     FontSize =10
@@ -289,8 +289,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =2280
-                    LayoutCachedWidth =2940
+                    LayoutCachedLeft =2292
+                    LayoutCachedWidth =2952
                     LayoutCachedHeight =306
                     ColumnStart =1
                     ColumnEnd =1
@@ -334,7 +334,7 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =2940
+                    Left =2964
                     Width =4320
                     Height =306
                     FontSize =10
@@ -348,8 +348,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =2940
-                    LayoutCachedWidth =7260
+                    LayoutCachedLeft =2964
+                    LayoutCachedWidth =7284
                     LayoutCachedHeight =306
                     ColumnStart =2
                     ColumnEnd =2
@@ -366,8 +366,8 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =7260
-                    Width =2070
+                    Left =7296
+                    Width =2076
                     Height =306
                     FontSize =10
                     TabIndex =3
@@ -380,8 +380,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =7260
-                    LayoutCachedWidth =9330
+                    LayoutCachedLeft =7296
+                    LayoutCachedWidth =9372
                     LayoutCachedHeight =306
                     ColumnStart =3
                     ColumnEnd =3
@@ -398,8 +398,8 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =9330
-                    Width =1290
+                    Left =9384
+                    Width =1296
                     Height =306
                     FontSize =10
                     TabIndex =4
@@ -413,8 +413,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =9330
-                    LayoutCachedWidth =10620
+                    LayoutCachedLeft =9384
+                    LayoutCachedWidth =10680
                     LayoutCachedHeight =306
                     ColumnStart =4
                     ColumnEnd =4

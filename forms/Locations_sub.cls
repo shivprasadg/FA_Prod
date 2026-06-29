@@ -11,7 +11,7 @@ Dim PrevBilling As String
 Private Sub AddNewDivision_Click()
     DoCmd.close acForm, "AddClientDivision"
     DoCmd.OpenForm "AddClientDivision"
-    Forms!AddClientDivision.Form.clientID = Me.Parent.clientID
+    Forms!AddClientDivision.Form.ClientID = Me.Parent.ClientID
     Forms!AddClientDivision.Form.ClientGroupID = Me.Parent.ClientGroupID
 End Sub
 
@@ -39,7 +39,7 @@ Private Sub ContactsCBO_Click()
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
-    Me.LinkEdContactsList.Requery
+    Me.LinkedContactsList.Requery
     Me.Parent.ClientContact_sub.Form.LinkedLocationsList.Requery
     Call SetUnits
     Me.ContactDetail = ""
@@ -155,7 +155,7 @@ Private Sub LAddrLine2_GotFocus()
 End Sub
 
 Private Sub LinkedContactsList_Click()
-    SQLz = "Select * From Contacts WHERE ContactID =" & Me.LinkEdContactsList.Column(0) & ";"
+    SQLz = "Select * From Contacts WHERE ContactID =" & Me.LinkedContactsList.Column(0) & ";"
     Set RST = CurrentDb.OpenRecordset(SQLz, dbOpenSnapshot)
     Me.ContactDetail = RST![contactFullName] & vbNewLine & RST!contactTitle & vbNewLine & _
         Me.LAddrLine1 & vbNewLine & _
@@ -430,16 +430,16 @@ Private Sub ClearSorts_Click()
     Me.LocationList.RowSource = SplitString(Me.LocationList.RowSource, "Order By", 0) & " Order By LocationName"
 End Sub
 Private Sub UnLinkedContact_Click()
-    If IsNull(Me.LinkEdContactsList.Column(0)) Then Exit Sub
+    If IsNull(Me.LinkedContactsList.Column(0)) Then Exit Sub
     Dim Askit  As String
-    Askit = MsgBox("You're about to Un-Link..." & vbNewLine & "Name: " & Me.LinkEdContactsList.Column(3) & vbNewLine & "From:  " & Me.LocationName & vbNewLine & "Type:   " & Me.LinkEdContactsList.Column(2) & vbNewLine & vbNewLine & "Do you agree?", vbQuestion + vbYesNo + vbCritical, "Un-Link")
+    Askit = MsgBox("You're about to Un-Link..." & vbNewLine & "Name: " & Me.LinkedContactsList.Column(3) & vbNewLine & "From:  " & Me.LocationName & vbNewLine & "Type:   " & Me.LinkedContactsList.Column(2) & vbNewLine & vbNewLine & "Do you agree?", vbQuestion + vbYesNo + vbCritical, "Un-Link")
     If Askit <> 6 Then Exit Sub
     SQLz = "Delete From ContactsLinkedToLocation " & _
-        "WHERE  ContactID=" & Me.LinkEdContactsList.Column(0) & " AND LinkTypeID=" & Me.LinkEdContactsList.Column(5) & " AND LocationID=" & Me.LocationID & ";"
+        "WHERE  ContactID=" & Me.LinkedContactsList.Column(0) & " AND LinkTypeID=" & Me.LinkedContactsList.Column(5) & " AND LocationID=" & Me.LocationID & ";"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
-    Me.LinkEdContactsList.Requery
+    Me.LinkedContactsList.Requery
     Me.Parent.ClientContact_sub.Form.LinkedLocationsList.Requery
     Call SetUnits
     Me.ContactDetail = ""
@@ -471,7 +471,7 @@ Public Sub Form_Current()
     'Call SetLocations
 End Sub
 Public Sub SetLocations()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -482,7 +482,7 @@ Public Sub SetLocations()
     On Error GoTo Form_Current_Error
 
     Dim ClientX, ClientGroupx As Long
-    ClientX = Nz(Me.Parent.clientID, 0)
+    ClientX = Nz(Me.Parent.ClientID, 0)
     ClientGroupx = Nz(Me.Parent.ClientGroupID, 0)
 
     SQLz = "SELECT DivisionID, DivisionName, ClientID From ClientDivisions " & _
@@ -525,7 +525,7 @@ Form_Current_Error:
 End Sub
 
 Private Sub SetUnits()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -540,9 +540,9 @@ Private Sub SetUnits()
     ListCountX = "0 Units @ Location"
     If Me.UnitsList.ListCount > 0 Then ListCountX = Me.UnitsList.ListCount - 1 & " Units @ Location"
     If (Me.UnitsList.ListCount - 1) = 1 Then ListCountX = Me.UnitsList.ListCount - 1 & " Unit @ Location"
-    Me.Units.caption = ListCountX
+    Me.UNITS.caption = ListCountX
     SQLz = "SELECT ContactID, LocationID, ContactType, [FirstName] & ' ' & [LastName] AS Name, Email, Phone From vw_LocationContacts Where LocationID= " & Me.LocationID & ";"
-    Me.LinkEdContactsList.RowSource = SQLz
+    Me.LinkedContactsList.RowSource = SQLz
 End Sub
 
 Public Sub LocationList_Click()
@@ -572,11 +572,11 @@ Private Sub SearchAssetId_Change()
     Me.SearchDesc = ""
     Me.SearchStatus = ""
     SQLz = "Select AssetID, MLNO, Schedule, UnitNum, Desc, Status From " & SourceUnitQueryX & " Where GarageLocationID=" & Me.LocationList.Column(0) & " " & _
-        "AND AssetID Like '*" & Me.SearchAssetId.Text & "*' Order by AssetID;"
+        "AND AssetID Like '*" & Me.SearchAssetID.Text & "*' Order by AssetID;"
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchLease_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     'Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -587,7 +587,7 @@ Private Sub SearchLease_Change()
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchSchedule_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     'Me.SearchSchedule = ""
@@ -598,7 +598,7 @@ Private Sub SearchSchedule_Change()
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchUnit_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     'Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -609,7 +609,7 @@ Private Sub SearchUnit_Change()
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchDesc_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -620,7 +620,7 @@ Private Sub SearchDesc_Change()
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchStatus_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""

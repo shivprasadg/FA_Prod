@@ -4,8 +4,8 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
 Private Sub BuyerName_DblClick(Cancel As Integer)
-   If IsNull(Me.BuyerId) Then Exit Sub
-   Call OpenBuyersFrom(Me.BuyerId, 0)
+   If IsNull(Me.BuyerID) Then Exit Sub
+   Call OpenBuyersFrom(Me.BuyerID, 0)
 End Sub
 
 Private Sub AddBlankUnit_Click()

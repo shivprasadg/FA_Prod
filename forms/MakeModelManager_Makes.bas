@@ -103,8 +103,9 @@ Begin Form
             BorderColor =12632256
         End
         Begin Tab
+            TextFontFamily =0
             FontSize =11
-            FontName ="Calibri"
+            FontName ="Cambria"
             ThemeFontIndex =0
             GridlineThemeColorIndex =1
             GridlineShade =65.0

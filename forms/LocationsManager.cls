@@ -17,8 +17,8 @@ Me.LocationList.Requery
 Me.LocationList = Me.LocationID
 Call LocationList_Click
 Dim ClientX
-ClientX = Nz(Me.clientID, 0)
-    Me.SearchAssetId = ""
+ClientX = Nz(Me.ClientID, 0)
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -193,11 +193,11 @@ Private Sub SearchAssetId_Change()
     Me.SearchLease = ""
     Me.SearchSchedule = ""
     SQLz = "Select AssetID, MLNO, Schedule, [Unit#], Desc From UnitsParkedLocations Where GarageLocationID=" & Me.LocationList.Column(0) & " " & _
-    "AND AssetID Like '*" & Me.SearchAssetId.Text & "*' Order by AssetID;"
+    "AND AssetID Like '*" & Me.SearchAssetID.Text & "*' Order by AssetID;"
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchLease_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     'Me.SearchLease = ""
     Me.SearchSchedule = ""
@@ -206,7 +206,7 @@ Private Sub SearchLease_Change()
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchSchedule_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnit = ""
     Me.SearchLease = ""
     'Me.SearchSchedule = ""
@@ -215,7 +215,7 @@ Private Sub SearchSchedule_Change()
     Me.UnitsList.RowSource = SQLz
 End Sub
 Private Sub SearchUnit_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     'Me.SearchUnit = ""
     Me.SearchLease = ""
     Me.SearchSchedule = ""

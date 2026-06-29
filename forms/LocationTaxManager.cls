@@ -30,7 +30,7 @@ End Sub
 Private Sub Form_Current()
     Dim ClientX
     'ClientX = Nz(Me.clientID, 0)
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchUnitNum = ""
     Me.SearchVin = ""
     Me.SearchStatus = ""
@@ -216,8 +216,8 @@ Private Sub LState_Click()
 End Sub
 
 Private Sub OpenClient_Click()
-    If Me.clientID = "" Or IsNull(Me.clientID) Then Exit Sub
-    DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+    If Me.ClientID = "" Or IsNull(Me.ClientID) Then Exit Sub
+    DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
     DoCmd.SelectObject acForm, "ClientsView"
 End Sub
 
@@ -311,7 +311,7 @@ Private Sub SearchVIN_Change()
     Call SearchUnitsList("VIN")
 End Sub
 Public Function SearchUnitsList(sField As String)
-    If sField <> "AssetID" Then Me.SearchAssetId = ""
+    If sField <> "AssetID" Then Me.SearchAssetID = ""
     If sField <> "VIN" Then Me.SearchVin = ""
     If sField <> "UnitNum" Then Me.SearchUnitNum = ""
     If sField <> "Status" Then Me.SearchStatus = ""
@@ -367,7 +367,7 @@ Private Sub SearchZip_Button_Click()
 End Sub
 
 Private Sub LocationsList_Click()
-    Me.clientID = Me.LocationsList.Column(22)
+    Me.ClientID = Me.LocationsList.Column(22)
     'On Error GoTo FixMe
     SQLz = "SELECT Locations.*"
     SQLz = SQLz & ", lookup_States.StTaxType"

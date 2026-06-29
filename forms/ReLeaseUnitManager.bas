@@ -826,8 +826,8 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13665
-                    Width =990
+                    Left =13668
+                    Width =996
                     Height =255
                     FontSize =9
                     TabIndex =12
@@ -839,8 +839,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =13665
-                    LayoutCachedWidth =14655
+                    LayoutCachedLeft =13668
+                    LayoutCachedWidth =14664
                     LayoutCachedHeight =255
                     ColumnStart =1
                     ColumnEnd =1
@@ -861,8 +861,8 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =12675
-                    Width =990
+                    Left =12672
+                    Width =996
                     Height =255
                     FontSize =9
                     TabIndex =13
@@ -874,8 +874,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =12675
-                    LayoutCachedWidth =13665
+                    LayoutCachedLeft =12672
+                    LayoutCachedWidth =13668
                     LayoutCachedHeight =255
                     LayoutGroup =2
                     BackThemeColorIndex =-1

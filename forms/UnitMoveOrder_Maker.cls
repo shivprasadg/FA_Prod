@@ -107,9 +107,9 @@ Public Sub LocationList_Click()
 End Sub
 
 Private Sub SubmitMoveOrder_Click()
-    If Me.mNewLocationID & "test" = "test" Or Me.mAssetID & "test" = "test" Then Exit Sub
+    If Me.mNewLocationID & "test" = "test" Or Me.mAssetId & "test" = "test" Then Exit Sub
     DoCmd.SetWarnings False
-    DoCmd.RunSQL ("Update Units Set UnitStatus='EM', LocationParkedID= " & Me.mNewLocationID & " WHERE UnitID=" & Me.mAssetID & ";")
+    DoCmd.RunSQL ("Update Units Set UnitStatus='EM', LocationParkedID= " & Me.mNewLocationID & " WHERE UnitID=" & Me.mAssetId & ";")
     DoCmd.SetWarnings True
 End Sub
 

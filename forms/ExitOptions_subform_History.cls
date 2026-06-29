@@ -6,7 +6,7 @@ Option Compare Database
 
 Private Sub DeleteMe_Click()
     Dim Response, SQLz As String
-    Response = MsgBox("You're about to Delete Unit# " & Me.UnitUnitNum & "'s " & vbNewLine & Me.OptionTypeDesc & " option entry , " & vbNewLine & "Are you sure?", vbQuestion + vbYesNo + vbCritical, "What? Delete!")
+    Response = MsgBox("You're about to Delete Unit# " & Me.unitunitnum & "'s " & vbNewLine & Me.OptionTypeDesc & " option entry , " & vbNewLine & "Are you sure?", vbQuestion + vbYesNo + vbCritical, "What? Delete!")
     If Response = vbNo Then Exit Sub
      On Error GoTo FixMe
     SQLz = "Delete From EXITOptions_WorkTable WHERE UnitID = " & Me.UnitID & "and OptionTypeID = " & Me.OptionTypeID & ";"

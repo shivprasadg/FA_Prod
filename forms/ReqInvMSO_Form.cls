@@ -81,10 +81,10 @@ SQLz = "SELECT * From ReqInvMSO WHERE [FAID/(PO)] = '" & Me.Client.Column(1) & "
 
             Msgx = Msgx & "<tr><td align='right'><b>  " & x & "</td>" & _
                           "<td></b>Year:<b> " & RST!MYr & "</b></td> " & _
-                          "<td></b>Make:<b>  " & RST!MAKE & "</td>" & _
-                          "<td></b>Model:<b> " & RST!MODEL & "</td>" & _
+                          "<td></b>Make:<b>  " & RST!Make & "</td>" & _
+                          "<td></b>Model:<b> " & RST!Model & "</td>" & _
                           "<td></b>Type:<b>  " & RST!Type & "</td>" & _
-                          "<td></b>Unit VIN:<b> " & RST!UnitVIN & "</td></tr>"
+                          "<td></b>Unit VIN:<b> " & RST!unitvin & "</td></tr>"
                           '"<td></b>AssetID:<b> " & RST!AssetID & vbNewLine & "</b></td></tr>"
              RST.MoveNext
              x = x + 1

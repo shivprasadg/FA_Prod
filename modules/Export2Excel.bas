@@ -1305,8 +1305,8 @@ Public Function SendFormData2Excel(frm As Form, ByVal sTabName As String, Option
         xlSheet.Name = Left(sTabName, 34)
     End If
     xlSheet.Range("A1").Select
-    Do Until intCount = RST.fields.Count
-        xlApp.ActiveCell = RST.fields(intCount).Name
+    Do Until intCount = RST.Fields.Count
+        xlApp.ActiveCell = RST.Fields(intCount).Name
         xlApp.ActiveCell.Offset(0, 1).Select
         intCount = intCount + 1
     Loop
@@ -1502,10 +1502,10 @@ Public Function SendReport2Excel(ByVal RSql As String, ByVal sTabName As String,
     End If
     If Len(WorkSheetTitleX) > 0 Then xlSheet.Name = Left(sTabName, 34)
     Dim ColumnCount As Long
-    ColumnCount = rs.fields.Count
+    ColumnCount = rs.Fields.Count
     Dim colIndex As Integer
     For colIndex = 0 To ColumnCount - 1
-        xlSheet.Cells(1, colIndex + 1).Value = rs.fields(colIndex).Name
+        xlSheet.Cells(1, colIndex + 1).Value = rs.Fields(colIndex).Name
     Next colIndex
     xlSheet.Range("A2").CopyFromRecordset rs
     rs.close
@@ -2283,8 +2283,8 @@ Public Function ExportFleetList(NameToUse As String, ClientGroupList As Boolean,
     RST.MoveLast
     RST.MoveFirst
     For x = 1 To RST.RecordCount
-        Header = Header & RST!UnitStatusDesc & ":" & RST!Units & " "
-        UnitsX = UnitsX + RST!Units
+        Header = Header & RST!UnitStatusDesc & ":" & RST!UNITS & " "
+        UnitsX = UnitsX + RST!UNITS
         RST.MoveNext
     Next x
     Header = Header & "As of:" & Date

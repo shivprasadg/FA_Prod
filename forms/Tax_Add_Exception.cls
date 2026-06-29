@@ -12,14 +12,14 @@ Private ranCurrent As Boolean
 Private Sub Form_Load()
     If Not IsNull(Me.OpenArgs) Then
         Me.TaxLevel = SplitString(Me.OpenArgs, "|", 0)
-        Me.TaxTypeId = SplitString(Me.OpenArgs, "|", 1)
+        Me.TaxTypeID = SplitString(Me.OpenArgs, "|", 1)
         Me.TaxLevelLookupID = SplitString(Me.OpenArgs, "|", 2)
         Me.CurrTaxRate = CDbl(SplitString(Me.OpenArgs, "|", 3))
         Me.Mode = SplitString(Me.OpenArgs, "|", 4)
     Else
         Me.TaxLevel = "State"
         Me.TaxLevelLookupID = 11
-        Me.TaxTypeId = 1
+        Me.TaxTypeID = 1
     End If
     Call SetRecordSource
     DoCmd.SetWarnings False
@@ -180,26 +180,26 @@ End Sub
 
 Public Sub SetRecordSource()
 Dim TaxTypeX As String
-TaxTypeX = DLookup("TaxAbbreviation", "TaxType", "ID=" & Me.TaxTypeId)
+TaxTypeX = DLookup("TaxAbbreviation", "TaxType", "ID=" & Me.TaxTypeID)
     If Me.TaxLevel = "State" Then
        Me.TaxStatesID = Me.TaxLevelLookupID
         Me.EventDescription = Me.Mode & "ing an 'Exception' to the <b>" & TaxTypeX & "</b> Rate, <b>" & Me.TaxLevel & " </b>of <b>" & DLookup("StateName", "TaxStates", "ID=" & Me.TaxLevelLookupID) & "</b>"
         SQLz = "SELECT * From vw_TaxStatesExceptionsQ " & _
-               "WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxStatesID=" & TaxLevelLookupID & " " & _
+               "WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxStatesID=" & TaxLevelLookupID & " " & _
                "ORDER BY StartsOn DESC;"
     End If
     If Me.TaxLevel = "County" Then
     Me.TaxCountiesID = Me.TaxLevelLookupID
         Me.EventDescription = Me.Mode & "ing an 'Exception' to the <b>" & TaxTypeX & "</b> Rate, <b>" & DLookup("CountyName", "TaxCounties", "ID=" & Me.TaxLevelLookupID) & " County</b>"
         SQLz = "SELECT * From vw_TaxCountiesExceptionsQ " & _
-               "WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxCountiesID=" & TaxLevelLookupID & " " & _
+               "WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxCountiesID=" & TaxLevelLookupID & " " & _
                "ORDER BY StartsOn DESC;"
     End If
     If Me.TaxLevel = "City" Then
         Me.TaxCitiesID = Me.TaxLevelLookupID
         Me.EventDescription = Me.Mode & "ing an 'Exception' to the <b>" & TaxTypeX & "</b> Rate, <b>" & Me.TaxLevel & " </b>of <b>" & DLookup("CityName", "TaxCities", "ID=" & Me.TaxLevelLookupID) & "</b>"
         SQLz = "SELECT * From vw_TaxCitiesExceptionsQ " & _
-               "WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxCitiesID=" & TaxLevelLookupID & " " & _
+               "WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxCitiesID=" & TaxLevelLookupID & " " & _
                "ORDER BY StartsOn DESC;"
     End If
     Me.Tax_Any_ExceptionSub.Form.RecordSource = SQLz
@@ -215,13 +215,13 @@ Public Sub ValidateNewTax()
     Dim Script As String
         If Me.TaxRule = True Then
         Script = "<font color=Navy>This Tax<font color=DarkOrange><b> Replaces</b></font> the Base Tax " & Script & "</font> "
-        Me.EffectiveTax = CDbl(Nz(Me.taxrate, 0))
+        Me.EffectiveTax = CDbl(Nz(Me.TaxRate, 0))
     Else
-        Me.EffectiveTax = CDbl(Nz(Me.[CurrTaxRate], 0) + Nz(Me.[taxrate], 0))
+        Me.EffectiveTax = CDbl(Nz(Me.[CurrTaxRate], 0) + Nz(Me.[TaxRate], 0))
     End If
     If Nz(Me.EffectiveTax, 0) < 0 Then msg1 = msg1 & "<br />You<b> Cannot </b>have an 'Effective Tax Rate' that is less than Zero"
     If Nz(Me.ExceptionDescription, "") = "" Then msg1 = msg1 & "<br />You<b> Must </b>Enter an <b>Exception</b> before you can start"
-    If IsNull(Me.taxrate) Then msg1 = msg1 & "<br />You <b> Must </b> set an <b> Tax Rate </b> even if <b>0%</b>, before you can start"
+    If IsNull(Me.TaxRate) Then msg1 = msg1 & "<br />You <b> Must </b> set an <b> Tax Rate </b> even if <b>0%</b>, before you can start"
     If msg1 <> "" Then
         Beep
         msg1 = "<font color=red><b>Error! </b></font> " & msg1
@@ -271,13 +271,13 @@ Public Sub ValidateNewTax()
     If IsNumeric(Me.TaxMaxValue) Then Script = Script & " This Exception will not exceed<b> " & Format(Me.TaxMaxValue, "Currency") & "</b>"
     If Me.TaxRule = True Then
         Script = "</b><font color=Navy>This Tax<font color=DarkOrange><b> Replaces</b></font> the Base Tax" & Script & "</font> "
-        Me.EffectiveTax = CDbl(Nz(Me.taxrate, 0))
+        Me.EffectiveTax = CDbl(Nz(Me.TaxRate, 0))
     Else
-        Me.EffectiveTax = CDbl(Nz(Me.[CurrTaxRate], 0) + Nz(Me.[taxrate], 0))
+        Me.EffectiveTax = CDbl(Nz(Me.[CurrTaxRate], 0) + Nz(Me.[TaxRate], 0))
     End If
     If Script <> "" And Me.TaxRule = False Then
-        If Me.taxrate >= 0 Then Script = "<font color=Navy>This Tax<font color=Red><b> Increase </b></font>applies to" & Script & "</font>"
-        If Me.taxrate <= 0 Then Script = "<font color=Navy>This Tax<font color=Green><b> Reduction </b></font>applies to" & Script & "</font>"
+        If Me.TaxRate >= 0 Then Script = "<font color=Navy>This Tax<font color=Red><b> Increase </b></font>applies to" & Script & "</font>"
+        If Me.TaxRate <= 0 Then Script = "<font color=Navy>This Tax<font color=Green><b> Reduction </b></font>applies to" & Script & "</font>"
     End If
     If Script <> "" Then Me.TaxScript = Script Else Me.TaxScript = ""
     Dim PrevStartDate As Date
@@ -286,9 +286,9 @@ Public Sub ValidateNewTax()
     Dim NewEndDate As Date
     Dim ExcDesc As String
     Dim xi     As Integer
-    If Me.TaxLevel = "State" Then SQLz = "SELECT * From vw_TaxStatesExceptionsQ WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxStatesID=" & TaxLevelLookupID & " AND ExceptionDescription = '" & Me.ExceptionDescription & "' AND IsActive = True AND ID <>" & Me.ID & " "
-    If Me.TaxLevel = "County" Then SQLz = "SELECT * From vw_TaxCountiesExceptionsQ WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxCountiesID=" & TaxLevelLookupID & " AND ExceptionDescription = '" & Me.ExceptionDescription & "' AND IsActive = True AND ID <>" & Me.ID & " "
-    If Me.TaxLevel = "City" Then SQLz = "SELECT * From vw_TaxCitiesExceptionsQ WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxCitiesID=" & TaxLevelLookupID & " AND ExceptionDescription = '" & Me.ExceptionDescription & "' AND IsActive = True AND ID <>" & Me.ID & " "
+    If Me.TaxLevel = "State" Then SQLz = "SELECT * From vw_TaxStatesExceptionsQ WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxStatesID=" & TaxLevelLookupID & " AND ExceptionDescription = '" & Me.ExceptionDescription & "' AND IsActive = True AND ID <>" & Me.ID & " "
+    If Me.TaxLevel = "County" Then SQLz = "SELECT * From vw_TaxCountiesExceptionsQ WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxCountiesID=" & TaxLevelLookupID & " AND ExceptionDescription = '" & Me.ExceptionDescription & "' AND IsActive = True AND ID <>" & Me.ID & " "
+    If Me.TaxLevel = "City" Then SQLz = "SELECT * From vw_TaxCitiesExceptionsQ WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxCitiesID=" & TaxLevelLookupID & " AND ExceptionDescription = '" & Me.ExceptionDescription & "' AND IsActive = True AND ID <>" & Me.ID & " "
     FlawTest = 0
     Set RST = CurrentDb.OpenRecordset(SQLz, dbOpenSnapshot)
     On Error Resume Next
@@ -314,7 +314,7 @@ Public Sub ValidateNewTax()
     ExcDesc = Me.ExceptionDescription
     Select Case FlawTest
     Case 0
-        msg1 = msg1 & "<font color=green><b>Valid!</b></font> This<b> " & ExcDesc & "</b> rate of <b>" & Format(Me.taxrate, "##.0###%") & "</b> will start on <b>" & Me.StartsOnDate & "</b><br />" & HSpaces(10)
+        msg1 = msg1 & "<font color=green><b>Valid!</b></font> This<b> " & ExcDesc & "</b> rate of <b>" & Format(Me.TaxRate, "##.0###%") & "</b> will start on <b>" & Me.StartsOnDate & "</b><br />" & HSpaces(10)
         If IsDate(Me.EndsOnDate) Then msg1 = msg1 & "and will<b> expire</b> on<b> " & Me.EndsOnDate & "</b>" Else msg1 = msg1 & "That tax rate will continue in perpetuity"
         If IsDate(Me.EndsOnDate) And Me.EndsOnDate <= Date Then msg1 = msg1 & "<font color=DarkOrange><b> Please Note:</b></font> this exception will <b>not</b> be active!"
         If IsDate(Me.EndsOnDate) And Me.EndsOnDate > Date Then msg1 = msg1 & ". This will be an<b> active</b> exception"
@@ -322,11 +322,11 @@ Public Sub ValidateNewTax()
 
       '  msg1 = msg1 & "<br/>" & HSpaces(10) & "There were no previous<b> " & ExcDesc & "</b> rates set for this " & Me.TaxLevel
     Case 1
-        msg1 = msg1 & "<font color=green><b>Valid!</b></font> This<b> " & ExcDesc & "</b> rate of <b>" & Format(Me.taxrate, "##.0###%") & "</b> will start on <b>" & Me.StartsOnDate & "</b><br />" & HSpaces(10)
+        msg1 = msg1 & "<font color=green><b>Valid!</b></font> This<b> " & ExcDesc & "</b> rate of <b>" & Format(Me.TaxRate, "##.0###%") & "</b> will start on <b>" & Me.StartsOnDate & "</b><br />" & HSpaces(10)
         If IsDate(Me.EndsOnDate) Then msg1 = msg1 & "This tax rate will<b> expire</b> on<b> " & Me.EndsOnDate & "</b>" Else msg1 = msg1 & "That tax rate will continue in perpetuity"
         If IsDate(Me.EndsOnDate) And Me.EndsOnDate <= Date Then msg1 = msg1 & "<br/>" & HSpaces(10) & "<b>Note:</b> this tax will <b>not</b> be active!"
         If Not IsDate(Me.EndsOnDate) Or CDate(Nz(Me.EndsOnDate, "1/1/1800")) > Date Then msg1 = msg1 & " This will be an<b> active</b> tax rate"
-        If IsDate(Me.StartsOnDate) And Me.StartsOnDate > RST!StartsOn Then msg1 = msg1 & "<br/>" & HSpaces(10) & "This will replace the 'previous'<b> " & RST!ExceptionDescription & "</b> rate of <b>" & Format(RST!taxrate, "##.0###%") & "</b>,<br/>" & HSpaces(10) & "which will expire on<b> " & DateAdd("d", -1, Me.StartsOnDate) & "</b>"
+        If IsDate(Me.StartsOnDate) And Me.StartsOnDate > RST!StartsOn Then msg1 = msg1 & "<br/>" & HSpaces(10) & "This will replace the 'previous'<b> " & RST!ExceptionDescription & "</b> rate of <b>" & Format(RST!TaxRate, "##.0###%") & "</b>,<br/>" & HSpaces(10) & "which will expire on<b> " & DateAdd("d", -1, Me.StartsOnDate) & "</b>"
     Case 2
         msg1 = msg1 & "<font color=red><b>Conflict!</b></font> This " & ExcDesc & " has a <b>Starts On</b> date of <b>" & Me.StartsOnDate & "</b><br/>"
         msg1 = msg1 & HSpaces(14) & "which is the<b><font color=red> same</font></b> as the existing " & RST!ExceptionDescription & " <b>Starts On</b> date (<i>" & RST!StartsOn & "</i>)"
@@ -347,8 +347,8 @@ Public Sub ValidateNewTax()
         Me.StartsOnDate.BackColor = RGB(255, 255, 255)
         Me.EndsOnDate.BackColor = RGB(255, 255, 255)
         On Error Resume Next
-        If RST.RecordCount > 0 And Format(RST!taxrate, "percent") = Format(Me.taxrate, "percent") Then _
-           msg1 = msg1 & "<font color=DarkOrange><b>Please Note:</b></font> this Exception rate and the Base Tax rate are the<b> same</b> (" & Format(RST!taxrate, "percent") & ")"
+        If RST.RecordCount > 0 And Format(RST!TaxRate, "percent") = Format(Me.TaxRate, "percent") Then _
+           msg1 = msg1 & "<font color=DarkOrange><b>Please Note:</b></font> this Exception rate and the Base Tax rate are the<b> same</b> (" & Format(RST!TaxRate, "percent") & ")"
         On Error GoTo 0
     End If
     If FlawTest > 2 Then Me.SaveTax.Enabled = False
@@ -442,7 +442,7 @@ Private Sub SaveTax_Click()
 End Sub
 
 Private Sub TaxRule_Click()
-If Me.taxrate < 0 Then
+If Me.TaxRate < 0 Then
 MsgBox "You cannot replace a Base Tax rate with a" & vbNewLine & "Negative Exception Rate." & vbNewLine & "Please correct the Exception Rate.", vbCritical, AtlaasVersion
 Me.TaxRule = False
 End If

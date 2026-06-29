@@ -118,10 +118,8 @@ Begin Form
                     Top =465
                     Width =12960
                     Height =240
-                    BorderColor =10921638
                     Name ="Image439"
                     Picture ="LtGrey2_Shadow"
-                    GridlineColor =10921638
                     HorizontalAnchor =2
 
                     LayoutCachedTop =465
@@ -141,7 +139,6 @@ Begin Form
                     Name ="Auto_Header0"
                     Caption ="Sign Off Events"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     HorizontalAnchor =2
                     LayoutCachedTop =30
                     LayoutCachedWidth =10470
@@ -164,12 +161,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="INDX"
                     ControlSource ="INDX"
                     BottomPadding =150
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =11638
                     LayoutCachedWidth =12461
@@ -187,12 +181,9 @@ Begin Form
                             TopMargin =22
                             RightMargin =44
                             BottomMargin =22
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label0"
                             Caption ="INDX"
                             BottomPadding =150
-                            GridlineColor =10921638
                             LayoutCachedLeft =11010
                             LayoutCachedWidth =11833
                             LayoutCachedHeight =285
@@ -222,12 +213,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Department"
                     ControlSource ="Department"
                     BottomPadding =150
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2248
                     LayoutCachedTop =660
@@ -249,12 +237,9 @@ Begin Form
                             TopMargin =22
                             RightMargin =44
                             BottomMargin =22
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label3"
                             Caption ="Department"
                             BottomPadding =150
-                            GridlineColor =10921638
                             LayoutCachedLeft =225
                             LayoutCachedTop =660
                             LayoutCachedWidth =2248
@@ -278,8 +263,6 @@ Begin Form
                     Height =360
                     ColumnWidth =2040
                     TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4138256
                     Name ="PrimaryContactID"
                     ControlSource ="PrimaryContactID"
                     RowSourceType ="Table/Query"
@@ -287,7 +270,6 @@ Begin Form
                         " [Employee Name]"
                     ColumnWidths ="0;2880"
                     BottomPadding =150
-                    GridlineColor =10921638
                     AllowValueListEdits =0
                     LeftMargin =44
                     TopMargin =22
@@ -314,12 +296,9 @@ Begin Form
                             TopMargin =22
                             RightMargin =44
                             BottomMargin =22
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label6"
                             Caption ="From"
                             BottomPadding =150
-                            GridlineColor =10921638
                             LayoutCachedLeft =225
                             LayoutCachedTop =1020
                             LayoutCachedWidth =2248
@@ -343,8 +322,6 @@ Begin Form
                     Height =360
                     ColumnWidth =1770
                     TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4138256
                     Name ="SecondaryContactID"
                     ControlSource ="SecondaryContactID"
                     RowSourceType ="Table/Query"
@@ -352,7 +329,6 @@ Begin Form
                         " [Employee Name]"
                     ColumnWidths ="0;2880"
                     BottomPadding =150
-                    GridlineColor =10921638
                     AllowValueListEdits =0
                     LeftMargin =44
                     TopMargin =22
@@ -379,12 +355,9 @@ Begin Form
                             TopMargin =22
                             RightMargin =44
                             BottomMargin =22
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label9"
                             Caption ="To"
                             BottomPadding =150
-                            GridlineColor =10921638
                             LayoutCachedLeft =225
                             LayoutCachedTop =1380
                             LayoutCachedWidth =2248
@@ -410,12 +383,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="DepartmentEmail"
                     ControlSource ="DepartmentEmail"
                     BottomPadding =150
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2248
                     LayoutCachedTop =1845
@@ -437,12 +407,9 @@ Begin Form
                             TopMargin =22
                             RightMargin =44
                             BottomMargin =22
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label12"
                             Caption ="CC Group"
                             BottomPadding =150
-                            GridlineColor =10921638
                             LayoutCachedLeft =225
                             LayoutCachedTop =1845
                             LayoutCachedWidth =2248
@@ -468,12 +435,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="SignOffTaskList"
                     ControlSource ="SignOffTaskList"
                     BottomPadding =150
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =7230
@@ -498,12 +462,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="SignOffLevel"
                     ControlSource ="SignOffLevel"
                     BottomPadding =150
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2248
                     LayoutCachedTop =300
@@ -529,12 +490,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="SignOffGroupEmail"
                     ControlSource ="SignOffGroupEmail"
                     BottomPadding =150
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2250
                     LayoutCachedTop =3120
@@ -556,12 +514,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =8355711
-                    ForeColor =8355711
                     Name ="Label15"
                     Caption ="SignOffTaskList"
                     BottomPadding =150
-                    GridlineColor =10921638
                     LayoutCachedLeft =5205
                     LayoutCachedTop =195
                     LayoutCachedWidth =7228
@@ -582,12 +537,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =8355711
-                    ForeColor =8355711
                     Name ="Label18"
                     Caption ="SignOffLevel"
                     BottomPadding =150
-                    GridlineColor =10921638
                     LayoutCachedLeft =225
                     LayoutCachedTop =300
                     LayoutCachedWidth =2248
@@ -608,12 +560,9 @@ Begin Form
                     TopMargin =22
                     RightMargin =44
                     BottomMargin =22
-                    BorderColor =8355711
-                    ForeColor =8355711
                     Name ="Label21"
                     Caption ="SignOffGroupEmail"
                     BottomPadding =150
-                    GridlineColor =10921638
                     LayoutCachedLeft =210
                     LayoutCachedTop =3120
                     LayoutCachedWidth =2233

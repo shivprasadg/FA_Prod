@@ -1313,10 +1313,10 @@ Begin Form
                 Begin TextBox
                     OverlapFlags =93
                     IMESentenceMode =3
-                    Left =105
-                    Top =345
-                    Width =2775
-                    Height =270
+                    Left =108
+                    Top =360
+                    Width =2772
+                    Height =276
                     FontSize =9
                     BackColor =13434879
                     Name ="SearchClient"
@@ -1327,10 +1327,10 @@ Begin Form
                     RightPadding =0
                     BottomPadding =15
 
-                    LayoutCachedLeft =105
-                    LayoutCachedTop =345
+                    LayoutCachedLeft =108
+                    LayoutCachedTop =360
                     LayoutCachedWidth =2880
-                    LayoutCachedHeight =615
+                    LayoutCachedHeight =636
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -1482,10 +1482,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =95
-                    Left =2880
-                    Top =345
-                    Width =345
-                    Height =270
+                    Left =2892
+                    Top =360
+                    Width =348
+                    Height =276
                     FontSize =8
                     FontWeight =700
                     TabIndex =1
@@ -1536,10 +1536,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =2880
-                    LayoutCachedTop =345
-                    LayoutCachedWidth =3225
-                    LayoutCachedHeight =615
+                    LayoutCachedLeft =2892
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =3240
+                    LayoutCachedHeight =636
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -1566,9 +1566,9 @@ Begin Form
                     OldBorderStyle =1
                     OverlapFlags =87
                     TextAlign =3
-                    Left =105
-                    Top =105
-                    Width =3120
+                    Left =108
+                    Top =108
+                    Width =3132
                     Height =240
                     FontSize =8
                     FontWeight =700
@@ -1579,10 +1579,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =15
                     BottomPadding =0
-                    LayoutCachedLeft =105
-                    LayoutCachedTop =105
-                    LayoutCachedWidth =3225
-                    LayoutCachedHeight =345
+                    LayoutCachedLeft =108
+                    LayoutCachedTop =108
+                    LayoutCachedWidth =3240
+                    LayoutCachedHeight =348
                     ColumnEnd =1
                     LayoutGroup =1
                     ThemeFontIndex =1

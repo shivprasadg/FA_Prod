@@ -6,6 +6,6 @@ Option Compare Database
 
 Private Sub ClientShNmd_DblClick(Cancel As Integer)
 DoCmd.close acReport, "RMKTInventoryClient"
-DoCmd.OpenReport "RMKTInventoryClient", acViewReport, , , , "SELECT * FROM RMKTInventoryFinal WHERE ClientId=" & Me.clientID & ";"
+DoCmd.OpenReport "RMKTInventoryClient", acViewReport, , , , "SELECT * FROM RMKTInventoryFinal WHERE ClientId=" & Me.ClientID & ";"
 Me.LocationHDR.SetFocus
 End Sub

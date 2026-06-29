@@ -40,7 +40,7 @@ Public Sub SendATFEmail(SchIDx As Long, GroupIDx As Long, EventID As Long)
            "GroupID, SchID, FieldGroup, RevID, ID FROM vw_FAID_RevScheduleUnion WHERE ID = '" & EventID & "';"
     Set RST = CurrentDb.OpenRecordset(SQLz, dbOpenSnapshot)
     If RST.RecordCount = 0 Then Exit Sub
-    subjectx = "Schedule Revision Number:" & RST!Revid & "; " & ClientX & " Sch " & Schx & "|Grp " & Grpx
+    subjectx = "Schedule Revision Number:" & RST!RevID & "; " & ClientX & " Sch " & Schx & "|Grp " & Grpx
     'make email message
     FontSetting = "<span style='font-size:10pt;font-family:" & Chr(34) & "Segoe UI" & Chr(34) & ",sans-serif'>"
     msg1 = msg1 & "<html><body><p style='color:Navy;font-family:Segoe UI;font-size:20px;'><b> Changes to " & RST!FieldName & "</b></p>"
@@ -94,8 +94,8 @@ End Sub
 
 Private Sub ActionDate_DblClick(Cancel As Integer)
     Call ClearSearchBoxes("All")
-    Me.Search_ActionDATE = SplitString(Me.ActionDate, " ", 0)
-    Call SetRecordSource("AND ActionDate Like '*" & Me.Search_ActionDATE & "*' ")
+    Me.Search_ActionDate = SplitString(Me.ActionDate, " ", 0)
+    Call SetRecordSource("AND ActionDate Like '*" & Me.Search_ActionDate & "*' ")
 End Sub
 
 Private Sub AddRevision_Click()
@@ -300,7 +300,7 @@ End Sub
 
 Private Sub Search_ActionDate_afterUpdate()
     Call ClearSearchBoxes(Me.ActiveControl.Name)
-    Call SetRecordSource("AND ActionDate Like '*" & Me.Search_ActionDATE & "*' ")
+    Call SetRecordSource("AND ActionDate Like '*" & Me.Search_ActionDate & "*' ")
 End Sub
 
 Private Sub ClearSearchBoxes(Excludeme As String)

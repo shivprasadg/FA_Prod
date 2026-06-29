@@ -10,12 +10,4 @@
   TL.ExpectedReturn
 FROM
   UnitTitleLog AS TL
-  INNER JOIN (
-    SELECT
-      Min(UnitTitleLog.UnitTitleLogId) AS MinLogId,
-      UnitREF
-    FROM
-      UnitTitleLog
-    GROUP BY
-      UnitRef
-  ) AS T2 ON TL.UnitTitleLogId = T2.MinLogId;
+  INNER JOIN [SELECT Min(UnitTitleLog].[UnitTitleLogId) AS MinLogId, UnitREF FROM UnitTitleLog GROUP BY UnitRef] AS T2 ON TL.UnitTitleLogId = T2.MinLogId;

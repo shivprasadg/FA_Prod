@@ -96,10 +96,10 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     ListWidth =1440
-                    Left =2625
-                    Top =195
-                    Width =3015
-                    Height =315
+                    Left =2628
+                    Top =192
+                    Width =3012
+                    Height =312
                     Name ="SelClient"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT Clients.ClientShNm, Clients.[CLIENT GROUP] FROM Clients WHERE (((Clients."
@@ -126,10 +126,10 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =2625
-                    LayoutCachedTop =195
+                    LayoutCachedLeft =2628
+                    LayoutCachedTop =192
                     LayoutCachedWidth =5640
-                    LayoutCachedHeight =510
+                    LayoutCachedHeight =504
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -138,17 +138,17 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =510
-                            Top =195
-                            Width =2055
-                            Height =315
+                            Left =516
+                            Top =192
+                            Width =2052
+                            Height =312
                             Name ="ClientShNm_Label"
                             Caption ="1. Select Customer"
                             GroupTable =1
-                            LayoutCachedLeft =510
-                            LayoutCachedTop =195
-                            LayoutCachedWidth =2565
-                            LayoutCachedHeight =510
+                            LayoutCachedLeft =516
+                            LayoutCachedTop =192
+                            LayoutCachedWidth =2568
+                            LayoutCachedHeight =504
                             LayoutGroup =1
                             GroupTable =1
                         End
@@ -161,10 +161,10 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     ListWidth =1440
-                    Left =2625
-                    Top =570
-                    Width =3015
-                    Height =315
+                    Left =2628
+                    Top =564
+                    Width =3012
+                    Height =312
                     TabIndex =1
                     Name ="SelLease"
                     RowSourceType ="Table/Query"
@@ -178,10 +178,10 @@ Begin Form
                     Format =">"
                     GroupTable =1
 
-                    LayoutCachedLeft =2625
-                    LayoutCachedTop =570
+                    LayoutCachedLeft =2628
+                    LayoutCachedTop =564
                     LayoutCachedWidth =5640
-                    LayoutCachedHeight =885
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -192,17 +192,17 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =510
-                            Top =570
-                            Width =2055
-                            Height =315
+                            Left =516
+                            Top =564
+                            Width =2052
+                            Height =312
                             Name ="Label4"
                             Caption ="2. Select Lease"
                             GroupTable =1
-                            LayoutCachedLeft =510
-                            LayoutCachedTop =570
-                            LayoutCachedWidth =2565
-                            LayoutCachedHeight =885
+                            LayoutCachedLeft =516
+                            LayoutCachedTop =564
+                            LayoutCachedWidth =2568
+                            LayoutCachedHeight =876
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -220,10 +220,10 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =4
                     ListWidth =4464
-                    Left =2625
-                    Top =945
-                    Width =3015
-                    Height =315
+                    Left =2628
+                    Top =936
+                    Width =3012
+                    Height =312
                     TabIndex =2
                     ForeColor =-2147483617
                     Name ="SelSch"
@@ -241,10 +241,10 @@ Begin Form
                     Format ="General Number"
                     GroupTable =1
 
-                    LayoutCachedLeft =2625
-                    LayoutCachedTop =945
+                    LayoutCachedLeft =2628
+                    LayoutCachedTop =936
                     LayoutCachedWidth =5640
-                    LayoutCachedHeight =1260
+                    LayoutCachedHeight =1248
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -255,17 +255,17 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =510
-                            Top =945
-                            Width =2055
-                            Height =315
+                            Left =516
+                            Top =936
+                            Width =2052
+                            Height =312
                             Name ="Label6"
                             Caption ="3. Select Schedule"
                             GroupTable =1
-                            LayoutCachedLeft =510
-                            LayoutCachedTop =945
-                            LayoutCachedWidth =2565
-                            LayoutCachedHeight =1260
+                            LayoutCachedLeft =516
+                            LayoutCachedTop =936
+                            LayoutCachedWidth =2568
+                            LayoutCachedHeight =1248
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -278,19 +278,19 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =2625
-                    Top =1320
-                    Width =3015
-                    Height =315
+                    Left =2628
+                    Top =1308
+                    Width =3012
+                    Height =312
                     TabIndex =3
                     Name ="SentDate"
                     Format ="Short Date"
                     GroupTable =1
 
-                    LayoutCachedLeft =2625
-                    LayoutCachedTop =1320
+                    LayoutCachedLeft =2628
+                    LayoutCachedTop =1308
                     LayoutCachedWidth =5640
-                    LayoutCachedHeight =1635
+                    LayoutCachedHeight =1620
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -301,17 +301,17 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =510
-                            Top =1320
-                            Width =2055
-                            Height =315
+                            Left =516
+                            Top =1308
+                            Width =2052
+                            Height =312
                             Name ="Label7"
                             Caption ="4. Enter date to Trust:"
                             GroupTable =1
-                            LayoutCachedLeft =510
-                            LayoutCachedTop =1320
-                            LayoutCachedWidth =2565
-                            LayoutCachedHeight =1635
+                            LayoutCachedLeft =516
+                            LayoutCachedTop =1308
+                            LayoutCachedWidth =2568
+                            LayoutCachedHeight =1620
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =1

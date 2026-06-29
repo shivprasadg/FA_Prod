@@ -9,13 +9,13 @@ Private Sub AddClientDvision_Click()
                 MsgBox "There already is a Division named: " & vbNewLine & "'" & Me.NewDivisionName & "'" & vbNewLine & "Please change the name and resubmit.", , "ATLAAS Core"
                 Exit Sub
             End If
-            If IsNull(Me.clientID) Or Me.NewDivisionName & "test" = "test" Then
+            If IsNull(Me.ClientID) Or Me.NewDivisionName & "test" = "test" Then
                 MsgBox "There is NO ClientID or Division Assigned" & vbNewLine & "Form Will Close (Nothing Saved)", , "ATLAAS Core"
                 Call CloseMe_Click
                 Exit Sub
             End If
             Dim SQLz As String
-            SQLz = "INSERT INTO ClientDivisions (DivisionName,ClientGroupID, ClientID) SELECT '" & Me.NewDivisionName & "'," & Me.ClientGroupID & "," & Me.clientID & ";"
+            SQLz = "INSERT INTO ClientDivisions (DivisionName,ClientGroupID, ClientID) SELECT '" & Me.NewDivisionName & "'," & Me.ClientGroupID & "," & Me.ClientID & ";"
             DoCmd.SetWarnings False
             DoCmd.RunSQL (SQLz)
             DoCmd.SetWarnings True

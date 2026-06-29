@@ -101,7 +101,9 @@ Begin Form
                     Width =5700
                     Height =375
                     BackColor =8210719
+                    BorderColor =0
                     Name ="Box6"
+                    GridlineColor =0
                     LayoutCachedWidth =5700
                     LayoutCachedHeight =375
                     BackThemeColorIndex =-1

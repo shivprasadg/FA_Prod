@@ -9,14 +9,14 @@ Private Sub DeleteExtn_Click()
     Committ = MsgBox("Delete the Extension that Starts On: " & Me.StartOrPurposedDate & vbNewLine & "Are you SURE?", vbYesNo + vbCritical, "DELETE!!!")
     If Committ = vbNo Then Exit Sub
     DoCmd.RunSQL ("Delete From UnitExitOption Where LeaseOptionID=" & Me.LeaseOptionID & ";")
-    Me.ExtendListbox.Requery
+    Me.ExtendListBox.Requery
     Me.Form.Requery
 End Sub
 
 Private Sub ExtendListBox_Click()
 Dim RST As DAO.Recordset
     Set RST = Me.RecordsetClone
-    RST.FindFirst "LeaseOptionID = " & Me.ExtendListbox.Column(0) & ""
+    RST.FindFirst "LeaseOptionID = " & Me.ExtendListBox.Column(0) & ""
     Me.Bookmark = RST.Bookmark
     RST.close
     Set RST = Nothing
@@ -52,7 +52,7 @@ Dim SQLx As String
 SQLx = "SELECT LeaseOptionID, OptionSubType AS Type, Format([StartOrPurposedDate],'mm/dd/yy') AS Start, UnitExitOption.TermMonths AS Term, Format([EndOrActualDate],'mm/dd/yy') AS [End], Rent " & _
        "From UnitExitOption WHERE OptionTypeID > 2 And UnitExitOption.UnitID = " & Me.UnitID & " " & _
        "ORDER BY Cdate(Format([StartOrPurposedDate],'mm/dd/yy')) DESC;"
-Me.ExtendListbox.RowSource = SQLx
+Me.ExtendListBox.RowSource = SQLx
     Exit Sub
 FixMe:
     MsgBox "There was an Error with the " & Me.Form.Name & " Form - Error Code:" & Err.Number, vbCritical, "ATLAAS Core Error"

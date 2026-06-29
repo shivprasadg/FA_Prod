@@ -15,7 +15,7 @@ End Sub
 
 
 Private Sub DeleteMe_Click()
-    Response = MsgBox("You're about to Delete Unit# " & Me.UnitUnitNum & "'s " & vbNewLine & Me.OptionTypeDesc & " option entry , " & vbNewLine & "Are you sure?", vbQuestion + vbYesNo + vbCritical, "What? Delete!")
+    Response = MsgBox("You're about to Delete Unit# " & Me.unitunitnum & "'s " & vbNewLine & Me.OptionTypeDesc & " option entry , " & vbNewLine & "Are you sure?", vbQuestion + vbYesNo + vbCritical, "What? Delete!")
 
     SQLset = " WHERE UnitID = " & Me.UnitID & "and OptionTypeID = 0;"
 
@@ -46,7 +46,7 @@ End Sub
 Private Sub Form_Current()
     Me.ReplacedByGroupCBO.Requery
     Me.ReplacedByGroupID.Requery
-    Me.ReplacedByUnitId.Requery
+    Me.ReplacedByUnitID.Requery
     On Error Resume Next
     Me.txtCurrent = Me.UnitID
     On Error GoTo 0
@@ -101,10 +101,10 @@ Call SetModified
 End Sub
 
 Private Sub ReplacedByGroupID_Click()
-    If SCHGrpX <> Me.ReplacedByGroupID.Column(1) And Not IsNull(Me.ReplacedByUnitId) Or IsNull(Me.ReplacedByGroupID.Column(1)) And Not IsNull(Me.ReplacedByUnitId) Then
-        MsgBox "AssetID: " & Me.UnitID & " has been Exchanged with AssetID: " & Me.ReplacedByUnitId & " " & vbNewLine & _
+    If SCHGrpX <> Me.ReplacedByGroupID.Column(1) And Not IsNull(Me.ReplacedByUnitID) Or IsNull(Me.ReplacedByGroupID.Column(1)) And Not IsNull(Me.ReplacedByUnitID) Then
+        MsgBox "AssetID: " & Me.UnitID & " has been Exchanged with AssetID: " & Me.ReplacedByUnitID & " " & vbNewLine & _
                "You cannot change to a different Schedule Group" & vbNewLine & vbNewLine & _
-               "If you want to change the Schedule Group, follow these steps:" & vbNewLine & "1: Clear the matched AssetID: " & Me.ReplacedByUnitId & vbNewLine & _
+               "If you want to change the Schedule Group, follow these steps:" & vbNewLine & "1: Clear the matched AssetID: " & Me.ReplacedByUnitID & vbNewLine & _
                "2: Clear the Estimated and Actual Exchanged dates" & vbNewLine & _
                "3: Select a Schedule Group", vbCritical, "Units Already Exchanged-Matched!"
         Me.Undo
@@ -117,7 +117,7 @@ Private Sub ReplacedByGroupID_Click()
             Me.ReplacedByScheduleID = ""
             Me.StartOrPurposedDate = ""
         End If
-        Me.ReplacedByUnitId.Requery
+        Me.ReplacedByUnitID.Requery
         Call SetModified
     End If
 End Sub
@@ -127,34 +127,34 @@ If Not IsNull(Me.ReplacedByGroupID.Column(1)) Then SCHGrpX = Me.ReplacedByGroupI
 End Sub
 
 Private Sub ReplacedByUnitID_Change()
-    If Me.ReplacedByUnitId.Text & "test" = "test" Then
-        Me.ReplacedByUnitId = Null
+    If Me.ReplacedByUnitID.Text & "test" = "test" Then
+        Me.ReplacedByUnitID = Null
         Me.EndOrActualDate = Null
         Me.StartOrPurposedDate = Null
 
     Else
     Dim AcceptX, InservX As Date
-    AcceptX = Nz(DMin("(UnitAcceptDate)", "Units", "UnitID=" & Me.ReplacedByUnitId & ""), "1/1/1900")
-    InservX = Nz(DMin("(UnitInserv)", "Units", "UnitID=" & Me.ReplacedByUnitId & ""), "1/1/1900")
+    AcceptX = Nz(DMin("(UnitAcceptDate)", "Units", "UnitID=" & Me.ReplacedByUnitID & ""), "1/1/1900")
+    InservX = Nz(DMin("(UnitInserv)", "Units", "UnitID=" & Me.ReplacedByUnitID & ""), "1/1/1900")
         If InservX <> "1/1/1900" And AcceptX <> "1/1/1900" Then Me.EndOrActualDate = CDate(Nz(AcceptX, InservX))
-        Me.StartOrPurposedDate = DMin("(UnitEstDelDate)", "Units", "UnitID=" & Me.ReplacedByUnitId & "")
+        Me.StartOrPurposedDate = DMin("(UnitEstDelDate)", "Units", "UnitID=" & Me.ReplacedByUnitID & "")
     End If
     Call SetModified
       DoCmd.RunCommand acCmdSaveRecord
-      ReplacedByUnitId.Requery
+      ReplacedByUnitID.Requery
 End Sub
 
 Private Sub ReplacedByUnitID_DblClick(Cancel As Integer)
-    If IsNull(ReplacedByUnitId) Then Exit Sub
-    Call OpenUnitsForm(Me.ReplacedByUnitId)
+    If IsNull(ReplacedByUnitID) Then Exit Sub
+    Call OpenUnitsForm(Me.ReplacedByUnitID)
     'DoCmd.OpenForm "UnitsForm", , , "UNITID=" & Me.ReplacedByUnitId & ""
 End Sub
 
 Private Sub AdjBookValueSubmit_Click()
-    If Me.AdjBookValueCbo & "test" = "test" Then
+    If Me.AdjBookValueCBO & "test" = "test" Then
         Exit Sub
     End If
-    SQLset = "SET AdjBookValue = #" & Me.AdjBookValueCbo & "#, " & _
+    SQLset = "SET AdjBookValue = #" & Me.AdjBookValueCBO & "#, " & _
              "UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 0;"
     Response = MsgBox("You're about set the Final Rent Date for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Final Rent Date")
     If Response = vbNo Then Exit Sub

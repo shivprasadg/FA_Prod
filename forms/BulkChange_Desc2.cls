@@ -56,5 +56,5 @@ End Sub
 
 Private Sub UnitID_DblClick(Cancel As Integer)
     Call OpenUnitsForm(Me.UnitID)
-    Me.UnitUnitNum.SetFocus
+    Me.unitunitnum.SetFocus
 End Sub

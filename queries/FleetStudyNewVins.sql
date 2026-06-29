@@ -40,15 +40,7 @@
   FS.Trans
 FROM
   FleetStudyImport_Work AS FS
-  LEFT JOIN (
-    SELECT
-      Units.UnitID, Units.UnitVIN,
-      Units.ClientID, Units.ClientGroupID
-    FROM
-      Units
-    WHERE
-      Units.ClientGroupID = [Forms]![FleetStudy_Importer]![ClientGroupId]
-  ) AS U ON FS.VIN = U.UnitVIN
+  LEFT JOIN [SELECT Units].[UnitID, Units].[UnitVIN, Units].[ClientID, Units].[ClientGroupID FROM Units WHERE Units].[ClientGroupID=[Forms]]![FleetStudy_Importer]![ClientGroupId] AS U ON FS.VIN = U.UnitVIN
 WHERE
   (
     (

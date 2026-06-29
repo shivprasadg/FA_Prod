@@ -140,9 +140,7 @@ Begin Report
                     Top =405
                     Width =15264
                     Height =555
-                    BorderColor =10921638
                     Name ="Box532"
-                    GridlineColor =10921638
                     LayoutCachedLeft =30
                     LayoutCachedTop =405
                     LayoutCachedWidth =15294
@@ -162,7 +160,7 @@ Begin Report
                     FontSize =12
                     FontWeight =700
                     TabIndex =1
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="GroupHeader"
                     ControlSource ="=\"Summary For Schedule \" & [Schedule] & \" - \" & Sum([Unitcount]) & \" Units\""
                     FontName ="Segoe UI"
@@ -170,7 +168,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =90
                     LayoutCachedTop =75
@@ -181,20 +178,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =660
+                    Left =672
                     Top =420
-                    Width =1305
+                    Width =1308
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label7"
                     Caption ="Cost \015\012(grouped)"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =660
+                    LayoutCachedLeft =672
                     LayoutCachedTop =420
-                    LayoutCachedWidth =1965
+                    LayoutCachedWidth =1980
                     LayoutCachedHeight =900
                     ColumnStart =1
                     ColumnEnd =1
@@ -206,20 +201,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =3525
+                    Left =3540
                     Top =420
-                    Width =1305
+                    Width =1308
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label8"
                     Caption ="Synd Sale Price\015\012(grouped)"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3525
+                    LayoutCachedLeft =3540
                     LayoutCachedTop =420
-                    LayoutCachedWidth =4830
+                    LayoutCachedWidth =4848
                     LayoutCachedHeight =900
                     ColumnStart =3
                     ColumnEnd =3
@@ -231,20 +224,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =30
+                    Left =36
                     Top =420
-                    Width =570
+                    Width =576
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label9"
                     Caption ="# Units"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =30
+                    LayoutCachedLeft =36
                     LayoutCachedTop =420
-                    LayoutCachedWidth =600
+                    LayoutCachedWidth =612
                     LayoutCachedHeight =900
                     LayoutGroup =2
                     ThemeFontIndex =-1
@@ -254,20 +245,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =8160
+                    Left =8172
                     Top =420
                     Width =1080
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label16"
                     Caption ="Payment\015\012(grouped)"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =8160
+                    LayoutCachedLeft =8172
                     LayoutCachedTop =420
-                    LayoutCachedWidth =9240
+                    LayoutCachedWidth =9252
                     LayoutCachedHeight =900
                     ColumnStart =6
                     ColumnEnd =6
@@ -279,20 +268,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =9300
+                    Left =9312
                     Top =420
-                    Width =1185
+                    Width =1188
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label19"
                     Caption ="RV $\015\012(grouped)"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =9300
+                    LayoutCachedLeft =9312
                     LayoutCachedTop =420
-                    LayoutCachedWidth =10485
+                    LayoutCachedWidth =10500
                     LayoutCachedHeight =900
                     ColumnStart =7
                     ColumnEnd =7
@@ -310,12 +297,9 @@ Begin Report
                     Left =13380
                     Width =765
                     FontSize =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="SchID"
                     ControlSource ="SchID"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13380
                     LayoutCachedWidth =14145
@@ -324,20 +308,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =12795
+                    Left =12804
                     Top =420
-                    Width =1290
+                    Width =1296
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label26"
                     Caption ="Fee \015\012(grouped)"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =12795
+                    LayoutCachedLeft =12804
                     LayoutCachedTop =420
-                    LayoutCachedWidth =14085
+                    LayoutCachedWidth =14100
                     LayoutCachedHeight =900
                     ColumnStart =10
                     ColumnEnd =10
@@ -349,19 +331,17 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =11400
+                    Left =11412
                     Top =420
-                    Width =1335
+                    Width =1332
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label878"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11400
+                    LayoutCachedLeft =11412
                     LayoutCachedTop =420
-                    LayoutCachedWidth =12735
+                    LayoutCachedWidth =12744
                     LayoutCachedHeight =900
                     ColumnStart =9
                     ColumnEnd =9
@@ -373,20 +353,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =7185
+                    Left =7200
                     Top =420
-                    Width =915
+                    Width =912
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label14"
                     Caption ="LRF"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =7185
+                    LayoutCachedLeft =7200
                     LayoutCachedTop =420
-                    LayoutCachedWidth =8100
+                    LayoutCachedWidth =8112
                     LayoutCachedHeight =900
                     ColumnStart =5
                     ColumnEnd =5
@@ -397,16 +375,15 @@ Begin Report
                     GroupTable =79
                 End
                 Begin EmptyCell
-                    Left =4890
+                    Left =4908
                     Top =420
-                    Width =2229
+                    Width =2232
                     Height =480
                     Name ="EmptyCell2553"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4890
+                    LayoutCachedLeft =4908
                     LayoutCachedTop =420
-                    LayoutCachedWidth =7119
+                    LayoutCachedWidth =7140
                     LayoutCachedHeight =900
                     ColumnStart =4
                     ColumnEnd =4
@@ -415,20 +392,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =10545
+                    Left =10560
                     Top =420
-                    Width =795
+                    Width =792
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label18"
                     Caption ="RV %"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =10545
+                    LayoutCachedLeft =10560
                     LayoutCachedTop =420
-                    LayoutCachedWidth =11340
+                    LayoutCachedWidth =11352
                     LayoutCachedHeight =900
                     ColumnStart =8
                     ColumnEnd =8
@@ -440,20 +415,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =3
-                    Left =14145
+                    Left =14160
                     Top =420
-                    Width =765
+                    Width =768
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label3239"
                     Caption ="Fee %"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =14145
+                    LayoutCachedLeft =14160
                     LayoutCachedTop =420
-                    LayoutCachedWidth =14910
+                    LayoutCachedWidth =14928
                     LayoutCachedHeight =900
                     ColumnStart =11
                     ColumnEnd =11
@@ -465,20 +438,18 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =2025
+                    Left =2040
                     Top =420
                     Width =1440
                     Height =480
                     FontSize =9
-                    BorderColor =8355711
                     Name ="Label3251"
                     Caption ="Vendor Cost \015\012(grouped)"
                     FontName ="Segoe UI"
                     GroupTable =79
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2025
+                    LayoutCachedLeft =2040
                     LayoutCachedTop =420
-                    LayoutCachedWidth =3465
+                    LayoutCachedWidth =3480
                     LayoutCachedHeight =900
                     ColumnStart =2
                     ColumnEnd =2
@@ -513,7 +484,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =345
+            Height =354
             BreakLevel =2
             Name ="GroupFooter0"
             AlternateBackColor =16777215
@@ -524,25 +495,23 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =660
-                    Top =30
-                    Width =1305
-                    Height =285
+                    Left =672
+                    Top =36
+                    Width =1308
+                    Height =288
                     FontSize =9
                     TabIndex =1
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="GroupCost"
                     ControlSource ="OECGroup"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =660
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =1965
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =672
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =1980
+                    LayoutCachedHeight =324
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =3
@@ -557,24 +526,22 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =30
-                    Top =30
-                    Width =570
-                    Height =285
+                    Left =36
+                    Top =36
+                    Width =576
+                    Height =288
                     FontSize =9
                     FontWeight =700
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="UnitCountLine"
                     ControlSource ="UnitCount"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =600
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =612
+                    LayoutCachedHeight =324
                     LayoutGroup =3
                     BorderThemeColorIndex =-1
                     BorderShade =100.0
@@ -587,25 +554,23 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =9165
-                    Top =30
-                    Width =1185
-                    Height =285
+                    Left =9180
+                    Top =36
+                    Width =1188
+                    Height =288
                     FontSize =9
                     TabIndex =7
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="GroupResidual"
                     ControlSource ="RVGroup"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =9165
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =10350
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =9180
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =10368
+                    LayoutCachedHeight =324
                     ColumnStart =7
                     ColumnEnd =7
                     LayoutGroup =3
@@ -620,25 +585,23 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3390
-                    Top =30
-                    Width =1305
-                    Height =285
+                    Left =3408
+                    Top =36
+                    Width =1308
+                    Height =288
                     FontSize =9
                     TabIndex =3
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="SyndSalePrice"
                     ControlSource ="SalePrice"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =3390
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =4695
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =3408
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =4716
+                    LayoutCachedHeight =324
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =3
@@ -654,25 +617,23 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8025
-                    Top =30
+                    Left =8040
+                    Top =36
                     Width =1080
-                    Height =285
+                    Height =288
                     FontSize =9
                     TabIndex =6
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="LeasePaymentForGroup"
                     ControlSource ="PaymentGroup"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =8025
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =9105
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =8040
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9120
+                    LayoutCachedHeight =324
                     ColumnStart =6
                     ColumnEnd =6
                     LayoutGroup =3
@@ -687,25 +648,23 @@ Begin Report
                     OldBorderStyle =0
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13935
-                    Top =30
-                    Width =885
-                    Height =285
+                    Left =13944
+                    Top =36
+                    Width =888
+                    Height =288
                     FontSize =9
                     TabIndex =10
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="FeePct"
                     ControlSource ="=[FeeUnitLine]/[OECGroup]"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =13935
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =14820
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =13944
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =14832
+                    LayoutCachedHeight =324
                     ColumnStart =11
                     ColumnEnd =11
                     LayoutGroup =3
@@ -718,25 +677,23 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =12540
-                    Top =30
-                    Width =1335
-                    Height =285
+                    Left =12552
+                    Top =36
+                    Width =1332
+                    Height =288
                     FontSize =9
                     TabIndex =9
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="FeeUnitLine"
                     ControlSource ="SyndFee"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =12540
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =13875
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =12552
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =13884
+                    LayoutCachedHeight =324
                     ColumnStart =10
                     ColumnEnd =10
                     LayoutGroup =3
@@ -752,25 +709,22 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7050
-                    Top =30
-                    Width =915
-                    Height =285
+                    Left =7068
+                    Top =36
+                    Width =912
+                    Height =288
                     FontSize =9
                     TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text2549"
                     ControlSource ="=[PaymentGroup]/[OECGroup]"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7050
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =7965
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =7068
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7980
+                    LayoutCachedHeight =324
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =3
@@ -782,25 +736,22 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10410
-                    Top =30
-                    Width =795
-                    Height =285
+                    Left =10428
+                    Top =36
+                    Width =792
+                    Height =288
                     FontSize =9
                     TabIndex =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text2582"
                     ControlSource ="=([GroupResidual])/[GroupCost]"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =10410
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =11205
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =10428
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =11220
+                    LayoutCachedHeight =324
                     ColumnStart =8
                     ColumnEnd =8
                     LayoutGroup =3
@@ -808,17 +759,16 @@ Begin Report
                     GroupTable =81
                 End
                 Begin EmptyCell
-                    Left =11265
-                    Top =30
-                    Width =1215
-                    Height =285
+                    Left =11280
+                    Top =36
+                    Width =1212
+                    Height =288
                     Name ="EmptyCell2584"
                     GroupTable =81
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11265
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12480
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =11280
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12492
+                    LayoutCachedHeight =324
                     ColumnStart =9
                     ColumnEnd =9
                     LayoutGroup =3
@@ -831,12 +781,9 @@ Begin Report
                     Width =1320
                     Height =240
                     FontSize =9
-                    BorderColor =8355711
-                    ForeColor =8355711
                     Name ="Label1487"
                     Caption ="──────────────────────"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     LayoutCachedLeft =11160
                     LayoutCachedTop =45
                     LayoutCachedWidth =12480
@@ -849,10 +796,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4755
-                    Top =30
-                    Width =2229
-                    Height =285
+                    Left =4776
+                    Top =36
+                    Width =2232
+                    Height =288
                     FontSize =9
                     TabIndex =4
                     ForeColor =8355711
@@ -860,12 +807,11 @@ Begin Report
                     ControlSource ="=\"────────────────── Group \" & [GroupNum] & \" Subtotals ──────────────────\""
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =4755
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =6984
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =4776
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7008
+                    LayoutCachedHeight =324
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =3
@@ -881,25 +827,23 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2025
-                    Top =30
-                    Width =1304
-                    Height =285
+                    Left =2040
+                    Top =36
+                    Width =1308
+                    Height =288
                     FontSize =9
                     TabIndex =2
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="Text3254"
                     ControlSource ="OECVendorGroup"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =81
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =2025
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =3329
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =2040
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =3348
+                    LayoutCachedHeight =324
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =3
@@ -915,7 +859,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =4522
+            Height =4524
             BreakLevel =1
             Name ="GroupFooter3"
             AlternateBackThemeColorIndex =1
@@ -930,7 +874,6 @@ Begin Report
                     Height =210
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =1643706
                     Name ="Label1156"
                     Caption =" PREPARED BY"
@@ -938,7 +881,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =2340
                     LayoutCachedWidth =3255
@@ -964,7 +906,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =3240
                     LayoutCachedTop =2340
                     LayoutCachedWidth =4485
@@ -986,7 +927,6 @@ Begin Report
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =1643706
                     Name ="Label1158"
                     Caption =" VERIFIED BY"
@@ -994,7 +934,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =2910
                     LayoutCachedWidth =3255
@@ -1020,7 +959,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =3240
                     LayoutCachedTop =2910
                     LayoutCachedWidth =4485
@@ -1050,7 +988,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =2685
                     LayoutCachedTop =3150
                     LayoutCachedWidth =4605
@@ -1072,7 +1009,6 @@ Begin Report
                     Height =360
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =1643706
                     Name ="Label1173"
                     Caption =" "
@@ -1080,7 +1016,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =2550
                     LayoutCachedWidth =2685
@@ -1106,7 +1041,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =2685
                     LayoutCachedTop =2550
                     LayoutCachedWidth =4605
@@ -1128,7 +1062,6 @@ Begin Report
                     Height =360
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =1643706
                     Name ="Label1177"
                     Caption =" "
@@ -1136,7 +1069,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =3150
                     LayoutCachedWidth =3255
@@ -1164,7 +1096,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =1980
                     LayoutCachedWidth =4605
@@ -1185,7 +1116,6 @@ Begin Report
                     Height =915
                     BorderColor =1643706
                     Name ="Box1192"
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =1980
                     LayoutCachedWidth =4605
@@ -1201,7 +1131,6 @@ Begin Report
                     Height =1260
                     BorderColor =1643706
                     Name ="Box1194"
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =2894
                     LayoutCachedWidth =4605
@@ -1220,11 +1149,10 @@ Begin Report
                     Height =315
                     FontSize =9
                     TabIndex =27
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="FullUserName"
                     ControlSource ="CurrentUser"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =120
                     LayoutCachedTop =2565
@@ -1244,11 +1172,10 @@ Begin Report
                     Height =330
                     FontSize =9
                     TabIndex =28
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="DateRan"
                     ControlSource ="=Date()"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =3240
                     LayoutCachedTop =2565
@@ -1261,24 +1188,22 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =660
+                    Left =684
                     Top =60
-                    Width =1305
+                    Width =1308
                     Height =285
                     FontSize =9
                     TabIndex =1
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="ScheduleOECCost"
                     ControlSource ="=Sum([OECGroup])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =660
+                    LayoutCachedLeft =684
                     LayoutCachedTop =60
-                    LayoutCachedWidth =1965
+                    LayoutCachedWidth =1992
                     LayoutCachedHeight =345
                     ColumnStart =1
                     ColumnEnd =1
@@ -1293,23 +1218,21 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =30
+                    Left =36
                     Top =60
-                    Width =570
+                    Width =576
                     Height =285
                     FontSize =9
                     FontWeight =700
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="Text1593"
                     ControlSource ="=Sum([Unitcount])"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =30
+                    LayoutCachedLeft =36
                     LayoutCachedTop =60
-                    LayoutCachedWidth =600
+                    LayoutCachedWidth =612
                     LayoutCachedHeight =345
                     LayoutGroup =1
                     BorderThemeColorIndex =-1
@@ -1322,24 +1245,22 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =9180
+                    Left =9240
                     Top =60
-                    Width =1185
+                    Width =1188
                     Height =285
                     FontSize =9
                     TabIndex =5
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="ResGroup"
                     ControlSource ="=Sum([RVGroup])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =9180
+                    LayoutCachedLeft =9240
                     LayoutCachedTop =60
-                    LayoutCachedWidth =10365
+                    LayoutCachedWidth =10428
                     LayoutCachedHeight =345
                     ColumnStart =6
                     ColumnEnd =6
@@ -1353,25 +1274,23 @@ Begin Report
                 Begin TextBox
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =12525
+                    Left =12600
                     Top =60
-                    Width =1335
+                    Width =1332
                     Height =285
                     FontSize =9
                     FontWeight =700
                     TabIndex =7
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="FeeGroupLine"
                     ControlSource ="=Sum([SyndFee])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =12525
+                    LayoutCachedLeft =12600
                     LayoutCachedTop =60
-                    LayoutCachedWidth =13860
+                    LayoutCachedWidth =13932
                     LayoutCachedHeight =345
                     ColumnStart =9
                     ColumnEnd =9
@@ -1381,31 +1300,56 @@ Begin Report
                     ThemeFontIndex =-1
                     GroupTable =71
                     CurrencySymbol ="$"
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =11340
+                            Top =60
+                            Width =1188
+                            Height =285
+                            FontSize =9
+                            FontWeight =700
+                            ForeColor =10040879
+                            Name ="Label3257"
+                            Caption ="Synd Totals"
+                            FontName ="Segoe UI"
+                            GroupTable =71
+                            LayoutCachedLeft =11340
+                            LayoutCachedTop =60
+                            LayoutCachedWidth =12528
+                            LayoutCachedHeight =345
+                            ColumnStart =8
+                            ColumnEnd =8
+                            LayoutGroup =1
+                            ThemeFontIndex =-1
+                            ForeThemeColorIndex =-1
+                            ForeTint =100.0
+                            GroupTable =71
+                        End
+                    End
                 End
                 Begin TextBox
                     DecimalPlaces =2
                     OldBorderStyle =0
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13920
+                    Left =13992
                     Top =60
-                    Width =885
+                    Width =888
                     Height =285
                     FontSize =9
                     FontWeight =700
                     TabIndex =8
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text1597"
                     ControlSource ="=[FeeGroupLine]/[ScheduleCost]"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =13920
+                    LayoutCachedLeft =13992
                     LayoutCachedTop =60
-                    LayoutCachedWidth =14805
+                    LayoutCachedWidth =14880
                     LayoutCachedHeight =345
                     ColumnStart =10
                     ColumnEnd =10
@@ -1418,24 +1362,22 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2025
+                    Left =2064
                     Top =60
-                    Width =1305
+                    Width =1308
                     Height =285
                     FontSize =9
                     TabIndex =2
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="ScheduleCost"
                     ControlSource ="=Sum([OECVendorGroup])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =2025
+                    LayoutCachedLeft =2064
                     LayoutCachedTop =60
-                    LayoutCachedWidth =3330
+                    LayoutCachedWidth =3372
                     LayoutCachedHeight =345
                     ColumnStart =2
                     ColumnEnd =2
@@ -1451,24 +1393,22 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8040
+                    Left =8088
                     Top =60
                     Width =1080
                     Height =285
                     FontSize =9
                     TabIndex =4
                     BorderColor =10040879
-                    ForeColor =4210752
                     Name ="Text1599"
                     ControlSource ="=Sum([PaymentGroup])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =8040
+                    LayoutCachedLeft =8088
                     LayoutCachedTop =60
-                    LayoutCachedWidth =9120
+                    LayoutCachedWidth =9168
                     LayoutCachedHeight =345
                     ColumnStart =5
                     ColumnEnd =5
@@ -1479,62 +1419,59 @@ Begin Report
                     GroupTable =71
                     CurrencySymbol ="$"
                 End
-                Begin Label
-                    TextAlign =2
-                    Left =3390
-                    Top =60
-                    Width =3608
-                    Height =285
-                    FontSize =9
-                    BorderColor =8355711
-                    ForeColor =10040879
-                    Name ="Label1600"
-                    Caption ="────────────────────── Schedule Totals ──────────────────────"
-                    FontName ="Segoe UI"
-                    GroupTable =71
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3390
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =6998
-                    LayoutCachedHeight =345
-                    ColumnStart =3
-                    ColumnEnd =3
-                    LayoutGroup =1
-                    ThemeFontIndex =-1
-                    ForeThemeColorIndex =-1
-                    ForeTint =100.0
-                    GroupTable =71
-                End
                 Begin TextBox
                     DecimalPlaces =4
                     OldBorderStyle =0
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7065
+                    Left =7104
                     Top =60
-                    Width =915
+                    Width =912
                     Height =285
                     FontSize =9
                     TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text1603"
                     ControlSource ="=Sum([PaymentGroup])/[ScheduleCost]"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7065
+                    LayoutCachedLeft =7104
                     LayoutCachedTop =60
-                    LayoutCachedWidth =7980
+                    LayoutCachedWidth =8016
                     LayoutCachedHeight =345
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
                     ThemeFontIndex =-1
                     GroupTable =71
+                    Begin
+                        Begin Label
+                            TextAlign =2
+                            Left =3432
+                            Top =60
+                            Width =3612
+                            Height =285
+                            FontSize =9
+                            ForeColor =10040879
+                            Name ="Label1600"
+                            Caption ="────────────────────── Schedule Totals ──────────────────────"
+                            FontName ="Segoe UI"
+                            GroupTable =71
+                            LayoutCachedLeft =3432
+                            LayoutCachedTop =60
+                            LayoutCachedWidth =7044
+                            LayoutCachedHeight =345
+                            ColumnStart =3
+                            ColumnEnd =3
+                            LayoutGroup =1
+                            ThemeFontIndex =-1
+                            ForeThemeColorIndex =-1
+                            ForeTint =100.0
+                            GroupTable =71
+                        End
+                    End
                 End
                 Begin TextBox
                     OldBorderStyle =0
@@ -1546,7 +1483,6 @@ Begin Report
                     Width =1335
                     FontSize =9
                     TabIndex =14
-                    BorderColor =10921638
                     ForeColor =1643706
                     Name ="SyndPenaltyLine"
                     ControlSource ="=Sum([TermPenaltyActual])"
@@ -1554,7 +1490,6 @@ Begin Report
                     StatusBarText ="amount/expenses normally reducing the syndication fee - offent money used to sup"
                         "port Remarketing"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =1080
@@ -1576,12 +1511,10 @@ Begin Report
                             Width =2520
                             Height =240
                             FontSize =9
-                            BorderColor =8355711
                             ForeColor =10040879
                             Name ="Label1684"
                             Caption ="- Termination Penalty"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =9944
                             LayoutCachedTop =1080
                             LayoutCachedWidth =12464
@@ -1607,13 +1540,10 @@ Begin Report
                     FontSize =9
                     FontWeight =700
                     TabIndex =16
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="BankFeeLine"
                     ControlSource ="=(Sum([SyndFee])+Sum([StripRentActual]))+Sum([TermPenaltyActual])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =1440
@@ -1634,12 +1564,10 @@ Begin Report
                             Height =285
                             FontSize =9
                             FontWeight =700
-                            BorderColor =8355711
                             ForeColor =10040879
                             Name ="Label1686"
                             Caption ="Net Synd Fee"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =11279
                             LayoutCachedTop =1440
                             LayoutCachedWidth =12464
@@ -1664,13 +1592,10 @@ Begin Report
                     Width =1335
                     FontSize =9
                     TabIndex =19
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="UATLine"
                     ControlSource ="=Sum([UTAGroup])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =1725
@@ -1694,13 +1619,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =20
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text1688"
                     ControlSource ="=IIf([UATLine]>0,[UATLine]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =1725
@@ -1723,13 +1646,10 @@ Begin Report
                     Width =1335
                     FontSize =9
                     TabIndex =22
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="PerdiemLine"
                     ControlSource ="=Sum([PerdiemActive])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =2025
@@ -1753,13 +1673,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =23
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text1691"
                     ControlSource ="=IIf([PerdiemLine]>0,[PerdiemLine]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =2025
@@ -1783,13 +1701,10 @@ Begin Report
                     FontSize =9
                     FontWeight =700
                     TabIndex =32
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="TotalFeeLine"
                     ControlSource ="=[BankFeeLine]+[UATLine]+[PerdiemLine]+[ServFeePV]+[InterimLine]"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =2970
@@ -1810,12 +1725,10 @@ Begin Report
                             Height =285
                             FontSize =9
                             FontWeight =700
-                            BorderColor =8355711
                             ForeColor =10040879
                             Name ="Label1693"
                             Caption ="Schedule Sub Total"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =10785
                             LayoutCachedTop =2970
                             LayoutCachedWidth =12465
@@ -1842,13 +1755,11 @@ Begin Report
                     FontSize =9
                     FontWeight =700
                     TabIndex =33
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text1694"
                     ControlSource ="=[TotalFeeLine]/[ScheduleCost]"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =2970
@@ -1867,7 +1778,6 @@ Begin Report
                     Width =4680
                     Height =15
                     Name ="Box1695"
-                    GridlineColor =10921638
                     LayoutCachedLeft =10140
                     LayoutCachedTop =2910
                     LayoutCachedWidth =14820
@@ -1890,7 +1800,6 @@ Begin Report
                     Name ="Text1696"
                     ControlSource ="[MsgUTA]"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =6959
@@ -1920,13 +1829,10 @@ Begin Report
                     FontSize =9
                     FontWeight =700
                     TabIndex =12
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="GrossFeeLine"
                     ControlSource ="=Sum([SyndFee])+Sum([StripRentActual])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =780
@@ -1945,7 +1851,6 @@ Begin Report
                     Width =1267
                     Height =15
                     Name ="Box1698"
-                    GridlineColor =10921638
                     LayoutCachedLeft =12593
                     LayoutCachedTop =1365
                     LayoutCachedWidth =13860
@@ -1965,13 +1870,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =15
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text1700"
                     ControlSource ="=IIf([SyndPenaltyLine]<>0,[SyndPenaltyLine]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =1080
@@ -1996,13 +1899,11 @@ Begin Report
                     FontSize =9
                     FontWeight =700
                     TabIndex =13
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text1701"
                     ControlSource ="=[GrossFeeLine]/[ScheduleCost]"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =780
@@ -2027,13 +1928,11 @@ Begin Report
                     FontSize =9
                     FontWeight =700
                     TabIndex =17
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text1702"
                     ControlSource ="=[BankFeeLine]/[ScheduleCost]"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =1440
@@ -2047,24 +1946,21 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10425
+                    Left =10488
                     Top =60
-                    Width =795
+                    Width =792
                     Height =285
                     FontSize =9
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="ResGroupPct"
                     ControlSource ="=Sum([RVGroup])/[ScheduleCost]"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =71
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =10425
+                    LayoutCachedLeft =10488
                     LayoutCachedTop =60
-                    LayoutCachedWidth =11220
+                    LayoutCachedWidth =11280
                     LayoutCachedHeight =345
                     ColumnStart =7
                     ColumnEnd =7
@@ -2082,13 +1978,10 @@ Begin Report
                     Width =1335
                     FontSize =9
                     TabIndex =10
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="StripsLine"
                     ControlSource ="=Sum([StripRentActual])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =420
@@ -2112,13 +2005,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =11
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text1908"
                     ControlSource ="=IIf([StripsLine]>0,[StripsLine]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =420
@@ -2146,7 +2037,6 @@ Begin Report
                     Name ="Text1909"
                     ControlSource ="=[MsgStrips]"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =6959
                     LayoutCachedTop =420
@@ -2171,12 +2061,10 @@ Begin Report
                     Height =285
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =10040879
                     Name ="Text1699"
                     Caption ="Synd Fee + Strip(s)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     LayoutCachedLeft =10784
                     LayoutCachedTop =780
                     LayoutCachedWidth =12464
@@ -2195,7 +2083,6 @@ Begin Report
                     Width =1267
                     Height =15
                     Name ="Box1910"
-                    GridlineColor =10921638
                     LayoutCachedLeft =12593
                     LayoutCachedTop =720
                     LayoutCachedWidth =13860
@@ -2214,13 +2101,10 @@ Begin Report
                     Width =1335
                     FontSize =9
                     TabIndex =30
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="ServFeePV2"
                     ControlSource ="=Sum([ServFeePV])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =2625
@@ -2243,13 +2127,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =31
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text2061"
                     ControlSource ="=IIf([ServFeePV2]>0,[ServFeePV2]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =2625
@@ -2272,13 +2154,11 @@ Begin Report
                     Width =1335
                     FontSize =9
                     TabIndex =25
-                    BorderColor =10921638
                     ForeColor =1643706
                     Name ="InterimLine"
                     ControlSource ="=Sum([InterimExpenseGroup])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =2325
@@ -2304,13 +2184,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =26
-                    BorderColor =10921638
                     ForeColor =1643706
                     Name ="Text3219"
                     ControlSource ="=IIf([InterimLine]<>0,[InterimLine]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =2325
@@ -2332,7 +2210,6 @@ Begin Report
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =1643706
                     Name ="Label3220"
                     Caption =" APPROVED  BY"
@@ -2340,7 +2217,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =3525
                     LayoutCachedWidth =3255
@@ -2366,7 +2242,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =3240
                     LayoutCachedTop =3525
                     LayoutCachedWidth =4485
@@ -2396,7 +2271,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =2685
                     LayoutCachedTop =3765
                     LayoutCachedWidth =4605
@@ -2418,7 +2292,6 @@ Begin Report
                     Height =360
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =1643706
                     Name ="Label3223"
                     Caption =" "
@@ -2426,7 +2299,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =3765
                     LayoutCachedWidth =3255
@@ -2444,7 +2316,6 @@ Begin Report
                     Height =660
                     BorderColor =1643706
                     Name ="Box3224"
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =3494
                     LayoutCachedWidth =4605
@@ -2458,7 +2329,6 @@ Begin Report
                     Width =4680
                     Height =15
                     Name ="Box880"
-                    GridlineColor =10921638
                     LayoutCachedLeft =10140
                     LayoutCachedTop =4080
                     LayoutCachedWidth =14820
@@ -2477,13 +2347,10 @@ Begin Report
                     Width =1335
                     FontSize =9
                     TabIndex =36
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="HBResidualLine"
                     ControlSource ="=Sum([HoldbackResidual])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =3510
@@ -2503,12 +2370,10 @@ Begin Report
                             Width =2235
                             Height =240
                             FontSize =9
-                            BorderColor =8355711
                             ForeColor =10040879
                             Name ="Label2067"
                             Caption ="- Holdback Residual"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =10230
                             LayoutCachedTop =3510
                             LayoutCachedWidth =12465
@@ -2533,13 +2398,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =37
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text2068"
                     ControlSource ="=IIf([HBResidualLine]>0,[HBResidualLine]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =3510
@@ -2562,13 +2425,10 @@ Begin Report
                     Width =1335
                     FontSize =9
                     TabIndex =38
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="HBConversionLine"
                     ControlSource ="=Sum([HoldbackConversion])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12525
                     LayoutCachedTop =3810
@@ -2588,12 +2448,10 @@ Begin Report
                             Width =2235
                             Height =240
                             FontSize =9
-                            BorderColor =8355711
                             ForeColor =10040879
                             Name ="Label2072"
                             Caption ="- Holdback Conversion"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =10230
                             LayoutCachedTop =3810
                             LayoutCachedWidth =12465
@@ -2618,13 +2476,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =39
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text2073"
                     ControlSource ="=IIf([HBConversionLine]>0,[HBConversionLine]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =3810
@@ -2648,13 +2504,10 @@ Begin Report
                     Height =285
                     FontSize =9
                     TabIndex =34
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="WitheldLine"
                     ControlSource ="=Sum([WithheldAmount])"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12540
                     LayoutCachedTop =3240
@@ -2674,12 +2527,10 @@ Begin Report
                             Width =1515
                             Height =240
                             FontSize =9
-                            BorderColor =8355711
                             ForeColor =10040879
                             Name ="Label2081"
                             Caption ="- Advanced Rent"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =10965
                             LayoutCachedTop =3240
                             LayoutCachedWidth =12480
@@ -2704,13 +2555,11 @@ Begin Report
                     Width =885
                     FontSize =9
                     TabIndex =35
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text2082"
                     ControlSource ="=IIf([WitheldLine]>0,[WitheldLine]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =13935
                     LayoutCachedTop =3240
@@ -2734,15 +2583,12 @@ Begin Report
                     FontSize =9
                     FontWeight =700
                     TabIndex =46
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="FinalFeeLine"
                     ControlSource ="=[TotalFeeLine]-([HoldbackConversion]+[HoldbackResidual]+[WitheldLine])+Nz([Synd"
                         "MiscValue_1],0)+Nz([SyndMiscValue_2],0)"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =83
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12540
                     LayoutCachedTop =4260
@@ -2765,13 +2611,11 @@ Begin Report
                             Height =240
                             FontSize =9
                             FontWeight =700
-                            BorderColor =8355711
                             ForeColor =10040879
                             Name ="Label3247"
                             Caption ="Group Total Fee"
                             FontName ="Segoe UI"
                             GroupTable =83
-                            GridlineColor =10921638
                             LayoutCachedLeft =9000
                             LayoutCachedTop =4260
                             LayoutCachedWidth =12480
@@ -2792,22 +2636,20 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13935
+                    Left =13932
                     Top =4260
-                    Width =885
+                    Width =888
                     FontSize =9
                     FontWeight =700
                     TabIndex =47
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text3248"
                     ControlSource ="=[FinalFeeLine]/[ScheduleCost]"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =83
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =13935
+                    LayoutCachedLeft =13932
                     LayoutCachedTop =4260
                     LayoutCachedWidth =14820
                     LayoutCachedHeight =4500
@@ -2833,14 +2675,11 @@ Begin Report
                     Height =0
                     FontSize =9
                     TabIndex =41
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="SyndMiscValue_1"
                     ControlSource ="=IIf(Nz([SyndMiscValue1],0)<>0,Sum([SyndMiscValue1]),Null)"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =83
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12540
                     LayoutCachedTop =4140
@@ -2861,22 +2700,20 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13935
+                    Left =13932
                     Top =4140
-                    Width =885
+                    Width =888
                     Height =0
                     FontSize =9
                     TabIndex =42
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="SyndMiscValue_1Pct"
                     ControlSource ="=IIf(Nz([SyndMiscValue_1],0)<>0,[SyndMiscValue_1]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =83
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =13935
+                    LayoutCachedLeft =13932
                     LayoutCachedTop =4140
                     LayoutCachedWidth =14820
                     LayoutCachedHeight =4140
@@ -2905,7 +2742,6 @@ Begin Report
                     ControlSource ="=IIf(Nz([SyndMiscValue1],0)<>0,[SyndMiscLabel1],Null)"
                     FontName ="Segoe UI"
                     GroupTable =83
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =9000
                     LayoutCachedTop =4140
@@ -2933,14 +2769,11 @@ Begin Report
                     Height =0
                     FontSize =9
                     TabIndex =44
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="SyndMiscValue_2"
                     ControlSource ="=IIf(Nz([SyndMiscValue2],0)<>0,Sum([SyndMiscValue2]),Null)"
                     Format ="$#,##0.00;($#,##0.00)"
                     FontName ="Segoe UI"
                     GroupTable =83
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =12540
                     LayoutCachedTop =4200
@@ -2961,22 +2794,20 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13935
+                    Left =13932
                     Top =4200
-                    Width =885
+                    Width =888
                     Height =0
                     FontSize =9
                     TabIndex =45
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="SyndMiscValue_2Pct"
                     ControlSource ="=IIf(Nz([SyndMiscValue_2],0)<>0,[SyndMiscValue_2]/[ScheduleCost],Null)"
                     Format ="Percent"
                     FontName ="Segoe UI"
                     GroupTable =83
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =13935
+                    LayoutCachedLeft =13932
                     LayoutCachedTop =4200
                     LayoutCachedWidth =14820
                     LayoutCachedHeight =4200
@@ -3007,7 +2838,6 @@ Begin Report
                     ControlSource ="=IIf(Nz([SyndMiscValue2],0)<>0,[SyndMiscLabel2],Null)"
                     FontName ="Segoe UI"
                     GroupTable =83
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =9000
                     LayoutCachedTop =4200
@@ -3039,7 +2869,6 @@ Begin Report
                     Name ="Label3218"
                     ControlSource ="[MsgInterim]"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4680
                     LayoutCachedTop =2325
@@ -3070,7 +2899,6 @@ Begin Report
                     Name ="MsgFSL"
                     ControlSource ="MsgFSL"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4680
                     LayoutCachedTop =2625
@@ -3101,7 +2929,6 @@ Begin Report
                     Name ="Text3249"
                     ControlSource ="=[MsgPerdiem]"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =4680
@@ -3118,33 +2945,6 @@ Begin Report
                     ThemeFontIndex =-1
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
-                End
-                Begin Label
-                    TextAlign =3
-                    Left =11280
-                    Top =60
-                    Width =1185
-                    Height =285
-                    FontSize =9
-                    FontWeight =700
-                    BorderColor =8355711
-                    ForeColor =10040879
-                    Name ="Label3257"
-                    Caption ="Synd Totals"
-                    FontName ="Segoe UI"
-                    GroupTable =71
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11280
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =12465
-                    LayoutCachedHeight =345
-                    ColumnStart =8
-                    ColumnEnd =8
-                    LayoutGroup =1
-                    ThemeFontIndex =-1
-                    ForeThemeColorIndex =-1
-                    ForeTint =100.0
-                    GroupTable =71
                 End
             End
         End

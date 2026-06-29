@@ -56,7 +56,7 @@ Public Function CheckATFChanges(GroupIDx As Long, NoticeTypeX As String, Optiona
     Grpx = RST!UnitGroup
     SchIDInt = RST!SchID
     ClientX = RST!CompanyName
-    ClientIDint = RST!clientID
+    ClientIDint = RST!ClientID
     RST.close
     If ReportDate & "test" = "test" Then ReportDate = Date
     If Len(ReportDate) < 10 And DatePart("m", CDate(ReportDate)) < 10 Then ReportDate = "0" & ReportDate
@@ -164,7 +164,7 @@ Public Function CheckATFChanges(GroupIDx As Long, NoticeTypeX As String, Optiona
                 Msgx = Msgx & "From Sch:<b> " & OldX & "</b><BR/>To Sch:<b> " & NewX & "</b><Br /><Br />"
             Else
                 Msgx = Msgx & RST!ActionDesc & "<Br />"
-                If NoticeIDx = 17 Then Msgx = Msgx & "item:<b> " & RST!unitdesc & "</b><Br />"
+                If NoticeIDx = 17 Then Msgx = Msgx & "item:<b> " & RST!UnitDesc & "</b><Br />"
                 Msgx = Msgx & HSpaces(3) & "Prev:<b> " & OldX & "</b><Br />" & HSpaces(3) & "Curr:<b> " & NewX & "</b><Br /><Br />"
             End If
         End If
@@ -200,7 +200,7 @@ Prompt_For_Reason:
         Rst2.MoveLast
         Rst2.MoveFirst
         For x = 1 To Rst2.RecordCount
-            InputText = InputText & "On " & CDate(Rst2!DatePaid) & ", " & Format(Rst2!AmountPaid, "$#,#.#0") & " was paid on Invoice # " & Rst2!UnitInvoiceNum & " for " & Rst2!Units & " units"
+            InputText = InputText & "On " & CDate(Rst2!DatePaid) & ", " & Format(Rst2!AmountPaid, "$#,#.#0") & " was paid on Invoice # " & Rst2!UnitInvoiceNum & " for " & Rst2!UNITS & " units"
         Next
     End If
     If Finalized = 1 Then PDFfileName = "C:\Faas\" & FAUserName & "\Temp\ATF_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDInt) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDInt) & "-" & Format(Date, "mm-dd-yyyy") & ".pdf"
@@ -277,7 +277,7 @@ SendNotice:
         Rst3.MoveFirst
         ReasonRowDetail = "<b>" & Rst3!BankShortName & "</b> Funded Schedule<b> " & Rst3!Schedule & "</b> Group<b> " & Rst3!UnitGroup & "</b> on " & Nz(DLookup("FundDate", "SchGrp", "SGrpId=" & GroupIDx), Date) & ".<br />"
         For x = 1 To Rst3.RecordCount
-            ReasonRowDetail = ReasonRowDetail & "(<b>" & Rst3!Units & "</b>) " & Rst3!UnitDescShortVer & "<br />Totaling <b>" & Format(Rst3!GroupOEC, "$#,#.#0") & "</b><br />"
+            ReasonRowDetail = ReasonRowDetail & "(<b>" & Rst3!UNITS & "</b>) " & Rst3!UnitDescShortVer & "<br />Totaling <b>" & Format(Rst3!GroupOEC, "$#,#.#0") & "</b><br />"
         Next
         ReplyX = ReasonRowDetail
         ReasonColHeader = "Funding Details"
@@ -326,7 +326,7 @@ SendNotice:
         msg1 = msg1 & "<TD ALIGN='Center'>" & OldX & "</TD>"
         msg1 = msg1 & "<TD ALIGN='Center'>" & NewX & "</TD></span>"
         msg1 = msg1 & FontSetting
-        If NoticeIDx <> 15 Then msg1 = msg1 & "<TD ALIGN='Center'>" & RST!unitdesc & "</TD>"
+        If NoticeIDx <> 15 Then msg1 = msg1 & "<TD ALIGN='Center'>" & RST!UnitDesc & "</TD>"
         If NoticeIDx = 15 Then msg1 = msg1 & "<TD ALIGN='Center'>" & DLookup("BLCD", "SchGrp", "sGrpId=" & GroupIDx & "") & "</TD>"
         If ReplyX & "test" <> "test" Then
             msg1 = msg1 & "<TD ALIGN='Left'>" & ReplyX & "</TD>"
@@ -669,7 +669,7 @@ Public Function InsertGroup(FAIDx, NewGroupNo As String, SourceGroupID, SchIDx A
         SQLz = SQLz & ", '" & Forms(FormNmx).LeasePaidAdvArr & "'"
         SQLz = SQLz & ", " & Forms(FormNmx).LeasePymtForGroup & ""
         SQLz = SQLz & ", " & Forms(FormNmx).LRFGroup & ""
-        SQLz = SQLz & ", '" & Forms(FormNmx).sgrpplb & "'"
+        SQLz = SQLz & ", '" & Forms(FormNmx).SGRPPLB & "'"
         SQLz = SQLz & ", '" & Forms(FormNmx).LeaseType & "'"
         SQLz = SQLz & ", " & Nz(Forms(FormNmx).SgrpCommInd, 10) & ""
         SQLz = SQLz & ",  " & Nz(Forms(FormNmx).PerDiemStartsOn, 10) & ""
@@ -1077,7 +1077,7 @@ Public Function CompareSessionProfile(SessionX As Long, Item As String) As Strin
     TempColl.Add Key:="ChildCostChanged", Item:=RST!ChildCostChange
 
     TempColl.Add Key:="WasSyndRent", Item:=RST!sSyndRent
-    TempColl.Add Key:="IsSyndRent", Item:=RST!SYNDRent
+    TempColl.Add Key:="IsSyndRent", Item:=RST!SyndRent
     TempColl.Add Key:="SyndRentChanged", Item:=RST!SyndRentChange
 
     TempColl.Add Key:="WasSchRent", Item:=RST!sSchRent

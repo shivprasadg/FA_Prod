@@ -137,7 +137,7 @@ Public Function MassInsertParts(Optional SchIDx As Long)
     Call ClearBoxes
     Me.Parent.BulkChange_ChildParts.Form.Refresh
     Me.ChildList.Requery
-    Me.SisterPArts.Requery
+    Me.SisterParts.Requery
 End Function
 
 Private Sub ClassCbo_Click()

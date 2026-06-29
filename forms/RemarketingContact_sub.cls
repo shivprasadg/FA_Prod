@@ -16,7 +16,7 @@ MsgBox "You must select a buyer first...", , "No Buyer Selected"
 Exit Sub
 End If
     DoCmd.GotoRecord , , acNewRec
-    Me.clientID = Me.Parent.clientID
+    Me.ClientID = Me.Parent.ClientID
 End Sub
 
 Private Sub contactFirst_AfterUpdate()
@@ -82,18 +82,18 @@ FixMe:
 End Sub
 
 Private Sub DoNotCall_Click()
-If Me.DoNotCall = 0 And Me.ContactNote Like "*|contact is no longer with company|*" Then
-Me.ContactNote = Replace(Me.ContactNote, "|contact is no longer with company|", "")
+If Me.DoNotCall = 0 And Me.contactNote Like "*|contact is no longer with company|*" Then
+Me.contactNote = Replace(Me.contactNote, "|contact is no longer with company|", "")
 End If
 End Sub
 Private Sub contactOptOut_Click()
-If Me.contactOptOut = 0 And Me.ContactNote Like "*|contact is no longer with company|*" Then
-Me.ContactNote = Replace(Me.ContactNote, "|contact is no longer with company|", "")
+If Me.contactOptOut = 0 And Me.contactNote Like "*|contact is no longer with company|*" Then
+Me.contactNote = Replace(Me.contactNote, "|contact is no longer with company|", "")
 End If
 End Sub
 Private Sub contactClassification_Click()
-If Me.contactClassification <> "No Longer with Co." And Me.ContactNote Like "*|contact is no longer with company|*" Then
-Me.ContactNote = Replace(Me.ContactNote, "|contact is no longer with company|", "")
+If Me.contactClassification <> "No Longer with Co." And Me.contactNote Like "*|contact is no longer with company|*" Then
+Me.contactNote = Replace(Me.contactNote, "|contact is no longer with company|", "")
 End If
 End Sub
 Private Sub Form_Current()

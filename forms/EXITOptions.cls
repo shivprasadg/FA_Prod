@@ -32,7 +32,7 @@ Public Sub ExchangeSelected_Click()
     Call ConfrimIT("ExchangeIT")
     If Response = vbNo Then Exit Sub
     Call PlaceSelectedUnits("ExchangeIT")
-    Me.Tabcontrol.Value = 0
+    Me.TabControl.Value = 0
     Call GetUnitCounts
     SQLz = "Select * from ExitOptionsQryExchangeIT Order by UnitID;"
     Me.ExitOptions_subform_Exchange.Form.RecordSource = SQLz
@@ -58,7 +58,7 @@ Public Sub ExtendSelected_Click()
     If Response = vbNo Then Exit Sub
     Call PlaceSelectedUnits("Extend")
     ActionType = "Extend"
-    Me.Tabcontrol.Value = 1
+    Me.TabControl.Value = 1
     SQLz = "Select * From ExitOptionsQryExtend Order By UnitID;"
     Me.ExitOptions_subform_Extend.Form.RecordSource = SQLz
     Call GetUnitCounts
@@ -73,7 +73,7 @@ Public Sub BuyITSelection_Click()
     If Response = vbNo Then Exit Sub
     Call PlaceSelectedUnits("BuyIT")
     ActionType = "BuyIT"
-    Me.Tabcontrol.Value = 4
+    Me.TabControl.Value = 4
     SQLz = "Select * From ExitOptionsQryBuyIT Order by UnitID;"
     Me.ExitOptions_subform_BuyIT.Form.RecordSource = SQLz
     Call GetUnitCounts
@@ -96,7 +96,7 @@ Public Sub TerminateSelected_Click()
     If Response = vbNo Then Exit Sub
     Call PlaceSelectedUnits("Terminate")
     ActionType = "Terminate"
-    Me.Tabcontrol.Value = 2
+    Me.TabControl.Value = 2
     Call GetUnitCounts
     SQLz = "Select * From ExitOptionsQryTerminate Order by UnitID;"
     Me.ExitOptions_subform_Terminate.Form.RecordSource = SQLz
@@ -106,7 +106,7 @@ Public Sub UnitHistory_click()
     If Me.Units_List & "test" = "test" And IsNull(UnitIDz) Then Exit Sub
     Call PlaceSelectedUnits("History")
     Call GetUnitCounts
-    Me.Tabcontrol.Value = 3
+    Me.TabControl.Value = 3
     Me.ExitOptions_subform_History.Visible = True
     Me.UnitCount.ControlSource = "=ExitOptions_subform_History.Form!UnitCount"
 End Sub
@@ -116,7 +116,7 @@ Public Sub History_Click()
     Call GetAll_Click
     Call PlaceSelectedUnits("History")
     Call GetUnitCounts
-    Me.Tabcontrol.Value = 3
+    Me.TabControl.Value = 3
     SQLz = "SELECT vw_ExitOptionHistory.* FROM vw_ExitOptionHistory " & _
            "INNER JOIN EXITOptions_WorkTable ON vw_ExitOptionHistory.UnitID = EXITOptions_WorkTable.UnitID;"
     Me.ExitOptions_subform_History.Form.RecordSource = SQLz
@@ -309,14 +309,14 @@ ShowForms:
     Me.UnitCount.Visible = True
 
     If Typex = "ExchangeIT" Then
-        Me.Tabcontrol.Value = 0
+        Me.TabControl.Value = 0
         Me.ExitOptions_subform_Exchange.Visible = True
         Me.ExitOptions_subform_Exchange.Requery
         Me!ExitOptions_subform_Exchange.Form.ClearBoxes
     End If
 
     If Typex = "Extend" Then
-        Me.Tabcontrol.Value = 1
+        Me.TabControl.Value = 1
         Me.ExitOptions_subform_Extend.Visible = True
         Me.ExitOptions_subform_Extend.Requery
         Me!ExitOptions_subform_Extend.Form.ClearBoxes
@@ -325,13 +325,13 @@ ShowForms:
         On Error GoTo 0
     End If
     If Typex = "Terminate" Then
-        Me.Tabcontrol.Value = 2
+        Me.TabControl.Value = 2
         Me.ExitOptions_subform_Terminate.Visible = True
         Me.ExitOptions_subform_Terminate.Requery
         Me!ExitOptions_subform_Terminate.Form.ClearBoxes
     End If
     If Typex = "BuyIT" Then
-        Me.Tabcontrol.Value = 4
+        Me.TabControl.Value = 4
         Me.ExitOptions_subform_BuyIT.Visible = True
         Me.ExitOptions_subform_BuyIT.Requery
         Me!ExitOptions_subform_BuyIT.Form.ClearBoxes

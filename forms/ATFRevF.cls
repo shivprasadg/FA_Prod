@@ -13,10 +13,10 @@ Call MessageUser("Close")
 End Sub
 
 Private Sub RevID_AfterUpdate()
-If DCount("RevID", "ATF_ChangeReasons", "SchId=" & Me.SchID & " And RevID=" & Me.Revid & "") > 0 Then
+If DCount("RevID", "ATF_ChangeReasons", "SchId=" & Me.SchID & " And RevID=" & Me.RevID & "") > 0 Then
 DoCmd.Beep
-Me.Revid = NextRevID(Me.SchID)
-Me.NewValue = "Note " & Me.Revid
+Me.RevID = NextRevID(Me.SchID)
+Me.NewValue = "Note " & Me.RevID
 DoCmd.Beep
 End If
 End Sub
@@ -25,11 +25,11 @@ Private Sub AddRevision_Click()
     If AskToDoTask("You're about to add a ATF Revision Note.") = False Then Exit Sub
     'If Me(FieldBoX).Value & "TEST" = "TEST" Then
         DoCmd.GotoRecord , , acNewRec
-        Me.Revid = Nz(NextRevID(Me.Parent.SchID), 0)
-        Me.Action = "ATF Note " & Me.Revid
+        Me.RevID = Nz(NextRevID(Me.Parent.SchID), 0)
+        Me.Action = "ATF Note " & Me.RevID
         Me.ChangeDate = Now()
         Me.SysUserCbo = FAUserName
-        Me.NewValue = "Note " & Me.Revid
+        Me.NewValue = "Note " & Me.RevID
         Me.FieldGroup = "Schedule Notes"
         Me.FieldName = "Rev-Notes"
         Me.SchNo = Me.Parent.SchNo
@@ -60,11 +60,11 @@ Private Sub Form_Load()
     If FAUserAccess = 99 Or FAUserAccess = 17 Then
         Me.DeleteRev.Visible = True
         Me.CleanUpNotes.Visible = True
-        Me.Revid.Locked = False
+        Me.RevID.Locked = False
     Else
         Me.DeleteRev.Visible = False
         Me.CleanUpNotes.Visible = False
-        Me.Revid.Locked = True
+        Me.RevID.Locked = True
     End If
 End Sub
 

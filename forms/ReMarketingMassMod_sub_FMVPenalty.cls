@@ -40,9 +40,9 @@ FixMe:
 End Sub
 
 Private Sub TargetSaleSubmit_Click()
-    If TargetSaleCbo & "test" = "test" Then Exit Sub
+    If TargetSaleCBO & "test" = "test" Then Exit Sub
     On Error GoTo FixMe
-    Call UpdateRMKTtbl("RMKT.TargetSale", Me.TargetSaleCbo, , , Me.Parent.Name)
+    Call UpdateRMKTtbl("RMKT.TargetSale", Me.TargetSaleCBO, , , Me.Parent.Name)
     Me.Form.Refresh
 FixMe:
     Exit Sub

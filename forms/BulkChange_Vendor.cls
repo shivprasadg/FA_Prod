@@ -71,7 +71,7 @@ Private Sub DrawDownId_Change()
             SQLy = SQLy & ", cIFAmount = ChildFinalCost "
             SQLy = SQLy & ", cIFBankID = " & Me.DrawDownId.Column(4) & " "
             SQLy = SQLy & "WHERE UnitRef=" & Me.UnitID & " "
-            SQLy = SQLy & "AND ChildVendorRef=" & Me.VendorRef & ";"
+            SQLy = SQLy & "AND ChildVendorRef=" & Me.VendorREF & ";"
             DoCmd.RunSQL (SQLy)
         End If
         DoCmd.RunSQL (SQLz)
@@ -93,7 +93,7 @@ Private Sub Form_ApplyFilter(Cancel As Integer, ApplyType As Integer)
     Dim zFilter As String
     On Error GoTo FixMe    ' if the user is just sorting
     If Me.Form.Filter Like "*VendorName*" Or Me.Form.Filter Like "*DrawDownId*" Then
-        If Me.Form.Filter Like "*VendorName*" Then zFilter = "VendorRef=" & Me.VendorRef
+        If Me.Form.Filter Like "*VendorName*" Then zFilter = "VendorRef=" & Me.VendorREF
         If Me.Form.Filter Like "*DrawDownId*" Then zFilter = "DrawDownId=" & Me.DrawDownId
     Else
         zFilter = Replace(Replace(Replace(Me.Form.Filter, "[Bulk_Update_SelectedUnits].", ""), "]", ""), "[", "")
@@ -174,7 +174,7 @@ End Sub
 
 Private Sub UnitID_DblClick(Cancel As Integer)
     Call OpenUnitsForm(Me.UnitID)
-    Me.UnitUnitNum.SetFocus
+    Me.unitunitnum.SetFocus
 End Sub
 
 Private Sub VendorCostSubmit_Click()

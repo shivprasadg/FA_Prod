@@ -93,16 +93,16 @@ Private Sub MakeCofA_Click()
         DoCmd.SetWarnings True
     End If
     If Me.AskForDate = 0 Then
-    If Me.clientID = 3318 Then ReportX = "CofA_Mass_AirProd"
-    If Me.clientID = 5442 Then ReportX = "CofA_Mass_AirProd"
-    If Me.clientID = 3319 Then ReportX = "CofA_Mass_AirGas"
-    If Me.clientID = 4412 Then ReportX = "CofA_Mass_Dean"
+    If Me.ClientID = 3318 Then ReportX = "CofA_Mass_AirProd"
+    If Me.ClientID = 5442 Then ReportX = "CofA_Mass_AirProd"
+    If Me.ClientID = 3319 Then ReportX = "CofA_Mass_AirGas"
+    If Me.ClientID = 4412 Then ReportX = "CofA_Mass_Dean"
    '' If Me.clientID = 4046 Then ReportX = "CofA_Mass_Dyno"
-    If Me.clientID = 5216 Then ReportX = "CofA_Mass_Linde"
-    If Me.clientID = 5338 Then ReportX = "CofA_Mass_SPD"
-    If Me.clientID = 3674 Then ReportX = "CofA_Mass_Sygma"
-    If Me.clientID = 3686 Then ReportX = "CofA_Mass_UGI"
-    If Me.clientID = 3687 Then ReportX = "CofA_Mass_Unisource"
+    If Me.ClientID = 5216 Then ReportX = "CofA_Mass_Linde"
+    If Me.ClientID = 5338 Then ReportX = "CofA_Mass_SPD"
+    If Me.ClientID = 3674 Then ReportX = "CofA_Mass_Sygma"
+    If Me.ClientID = 3686 Then ReportX = "CofA_Mass_UGI"
+    If Me.ClientID = 3687 Then ReportX = "CofA_Mass_Unisource"
     End If
     If Me.AskForDate = -1 And ReportX = "CofA_Mass" Then ReportX = "CofA_Mass_wDate"
     ' Response = MsgBox("Do you want to insert a 'CofA' date?", vbQuestion + vbYesNo + vbCritical, "Will Print on Form")

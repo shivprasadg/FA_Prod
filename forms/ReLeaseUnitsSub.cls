@@ -18,7 +18,7 @@ End Sub
 
 Private Sub AssetID_DblClick(Cancel As Integer)
    Call OpenUnitsForm(Me.AssetID)
-   Me.UnitVIN.SetFocus
+   Me.unitvin.SetFocus
    End Sub
 
 Private Sub UnitVIN_DblClick(Cancel As Integer)

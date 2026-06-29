@@ -8,7 +8,7 @@ Dim ii         As Integer
 Dim Msgx, ResposeX As String
 
 Private Sub AddNew_Click()
-If DCount("ClientID", "SUFConditions", "ClientID=" & Nz(Me.clientID, 0) & "") > 0 Then
+If DCount("ClientID", "SUFConditions", "ClientID=" & Nz(Me.ClientID, 0) & "") > 0 Then
         MsgBox "There already are SUF Conditions attached to this client", vbCritical, "There are SUF Conditions "
 Exit Sub
 End If
@@ -47,7 +47,7 @@ End If
     SQLz = SQLz & ",Condition8"
     SQLz = SQLz & ",Condition9"
     SQLz = SQLz & ",Condition10"
-    SQLz = SQLz & "," & Me.Parent.clientID & ""
+    SQLz = SQLz & "," & Me.Parent.ClientID & ""
     SQLz = SQLz & ",VechicleType"
     SQLz = SQLz & ",'" & FAUserName & "'"
     SQLz = SQLz & ",'" & Date & "'"
@@ -79,7 +79,7 @@ End Sub
 
 Public Sub SetSuf()
  Dim Lockx  As Boolean
- Me.Form.RecordSource = "Select * From SUFConditions Where ClientId=" & Me.Parent.clientID & ";"
+ Me.Form.RecordSource = "Select * From SUFConditions Where ClientId=" & Me.Parent.ClientID & ";"
     If FAUserAccessLevel < 15 Then Lockx = True Else Lockx = False
     For ii = 1 To 10
         Me("Condition" & ii).Locked = Lockx
@@ -124,7 +124,7 @@ Private Sub SUFReportView_Click()
     Dim ReportX As String
     Dim SQLy   As String
     On Error Resume Next
-    UnitIDx = Nz(DLookup("UnitId", "Units", "UnitStatus = 'A' AND UnitType ='" & Me.VechicleType & "' AND ClientID=" & Me.clientID & ""), 0)
+    UnitIDx = Nz(DLookup("UnitId", "Units", "UnitStatus = 'A' AND UnitType ='" & Me.VechicleType & "' AND ClientID=" & Me.ClientID & ""), 0)
     On Error GoTo 0
     If UnitIDx = 0 Then
         MsgBox "There are no active units for this client", vbCritical, "No Active Units"

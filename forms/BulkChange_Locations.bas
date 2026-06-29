@@ -101,7 +101,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =1185
+            Height =1188
             BackColor =14211288
             Name ="FormHeader"
             Begin
@@ -142,9 +142,9 @@ Begin Form
                     PictureTiling = NotDefault
                     PictureAlignment =0
                     PictureType =2
-                    Top =990
+                    Top =996
                     Width =22176
-                    Height =195
+                    Height =192
                     Name ="Image454"
                     Picture ="LtGrey2_Shadow"
                     GroupTable =6
@@ -154,9 +154,9 @@ Begin Form
                     BottomPadding =0
                     HorizontalAnchor =2
 
-                    LayoutCachedTop =990
+                    LayoutCachedTop =996
                     LayoutCachedWidth =22176
-                    LayoutCachedHeight =1185
+                    LayoutCachedHeight =1188
                     TabIndex =21
                     LayoutGroup =1
                     GroupTable =6

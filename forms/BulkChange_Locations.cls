@@ -196,7 +196,7 @@ FixMe:
 End Sub
 Private Sub IRPSubmit_Click()
     On Error GoTo FixMe
-    Call UpdateMassUnits("Units.UnitIRP", Me.IRPCBO)
+    Call UpdateMassUnits("Units.UnitIRP", Me.IRPCbo)
     ModMade = -1
 FixMe:
     Me.Form.Refresh
@@ -232,7 +232,7 @@ End Sub
 
 Private Sub UnitID_DblClick(Cancel As Integer)
 Call OpenUnitsForm(Me.UnitID)
-Me.UnitUnitNum.SetFocus
+Me.unitunitnum.SetFocus
 End Sub
 
 Private Sub WeightSubmit_Click()

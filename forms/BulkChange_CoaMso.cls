@@ -119,13 +119,13 @@ FixMe:
 End Sub
 
 Private Sub UnitStatus_Click()
-    If Me.unitstatus Like "*R*" Or Me.unitstatus Like "*S*" Then
+    If Me.UnitStatus Like "*R*" Or Me.UnitStatus Like "*S*" Then
         If DCount("UnitRef", "RMKT", "[UNITRef]=" & Me.UnitID & "") = 0 Then
             SQLz = "INSERT INTO Rmkt (UnitRef) SELECT " & Me.UnitID & " AS UnitId;"
             DoCmd.RunSQL (SQLz)
         End If
     End If
-    If Me.unitstatus = "A" Then Call CheckMessage
+    If Me.UnitStatus = "A" Then Call CheckMessage
 End Sub
 
 
@@ -216,9 +216,9 @@ Private Sub TitleAppSubmit_Click()
             SQLz = "Update Units SET UnitTASent = '" & Me.TitleAppSent & "' " & _
                    "WHERE UNITID = " & RST!UnitID
             DoCmd.RunSQL (SQLz)
-            If RST!UnitTitleLogId <> Null Then
+            If RST!UnitTitleLogID <> Null Then
                 SQLz = "Update UnitTitleLog SET UnitTitleLogDate = '" & Me.TitleAppSent & "' " & _
-                       "WHERE UnitTitleLogID = " & RST!UnitTitleLogId
+                       "WHERE UnitTitleLogID = " & RST!UnitTitleLogID
                 DoCmd.RunSQL (SQLz)
             End If
             DoCmd.SetWarnings True
@@ -267,5 +267,5 @@ Private Sub UnitTASent_AfterUpdate()
 End Sub
 Private Sub UnitID_DblClick(Cancel As Integer)
     Call OpenUnitsForm(Me.UnitID)
-    Me.UnitUnitNum.SetFocus
+    Me.unitunitnum.SetFocus
 End Sub

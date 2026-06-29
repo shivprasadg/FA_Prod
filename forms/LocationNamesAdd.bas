@@ -184,6 +184,9 @@ Begin Form
             ShowPageHeaderAndPageFooter =1
         End
         Begin ToggleButton
+            TextFontCharSet =177
+            TextFontFamily =0
+            FontName ="Calibri"
             ForeThemeColorIndex =0
             ForeTint =75.0
             GridlineThemeColorIndex =1
@@ -191,12 +194,10 @@ Begin Form
             UseTheme =1
             Shape =2
             Bevel =1
-            BackColor =-1
             BackThemeColorIndex =4
             BackTint =60.0
             OldBorderStyle =0
             BorderLineStyle =0
-            BorderColor =-1
             BorderThemeColorIndex =4
             BorderTint =60.0
             ThemeFontIndex =1
@@ -209,8 +210,9 @@ Begin Form
             PressedForeThemeColorIndex =1
         End
         Begin Tab
+            TextFontFamily =0
             FontSize =11
-            FontName ="Calibri"
+            FontName ="Cambria"
             ThemeFontIndex =0
             GridlineThemeColorIndex =1
             GridlineShade =65.0
@@ -258,11 +260,11 @@ Begin Form
                     Height =315
                     ColumnOrder =2
                     BackColor =14211288
+                    ForeColor =0
                     Name ="Header"
                     ControlSource ="=\"Adding a Location Name for Client Group:<b> \" & DLookUp(\"ClientGroupName\","
                         "\"ClientGroups\",\"ClientGroupID=\" & [ClientGroupID] & \"\") & \"</b>\""
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =45
@@ -288,11 +290,11 @@ Begin Form
                     ColumnOrder =0
                     FontSize =9
                     TabIndex =1
+                    ForeColor =0
                     Name ="MoveTo"
                     FontName ="Segoe UI"
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8745
                     LayoutCachedWidth =9900
@@ -315,7 +317,6 @@ Begin Form
                     BorderColor =0
                     Name ="Image142"
                     Picture ="LtGrey2_Shadow"
-                    GridlineColor =10921638
                     HorizontalAnchor =2
 
                     LayoutCachedTop =300
@@ -348,6 +349,7 @@ Begin Form
                     Name ="ClientID"
                     StatusBarText ="link to Clients table"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =960
                     LayoutCachedTop =8880
@@ -375,6 +377,7 @@ Begin Form
                     BorderColor =12632256
                     Name ="LocationID"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =1620
                     LayoutCachedTop =8880
@@ -402,6 +405,7 @@ Begin Form
                     BorderColor =12632256
                     Name ="LStateID"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =2340
                     LayoutCachedTop =8880
@@ -429,6 +433,7 @@ Begin Form
                     BorderColor =12632256
                     Name ="LCountyID"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =3060
                     LayoutCachedTop =8880
@@ -456,6 +461,7 @@ Begin Form
                     BorderColor =12632256
                     Name ="LCityID"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =3780
                     LayoutCachedTop =8880
@@ -483,6 +489,7 @@ Begin Form
                     Name ="ClientGroupID"
                     StatusBarText ="link to Clients table"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =300
                     LayoutCachedTop =8880
@@ -500,23 +507,20 @@ Begin Form
                 End
                 Begin Tab
                     OverlapFlags =85
+                    TextFontCharSet =177
                     Top =90
                     Width =15690
                     Height =8505
                     FontSize =1
                     TabIndex =6
                     Name ="TabCtrl1"
-                    GridlineColor =10921638
+                    FontName ="Calibri"
 
                     LayoutCachedTop =90
                     LayoutCachedWidth =15690
                     LayoutCachedHeight =8595
                     ThemeFontIndex =1
-                    BackColor =14277081
                     OldBorderStyle =0
-                    BorderColor =13995605
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
                     ForeThemeColorIndex =1
                     ForeTint =100.0
                     Begin
@@ -526,10 +530,8 @@ Begin Form
                             Top =345
                             Width =15540
                             Height =8175
-                            BorderColor =10921638
                             Name ="Address"
                             Caption ="Select Address"
-                            GridlineColor =10921638
                             LayoutCachedLeft =75
                             LayoutCachedTop =345
                             LayoutCachedWidth =15615
@@ -542,13 +544,13 @@ Begin Form
                                     Top =930
                                     Width =8115
                                     Height =285
+                                    BorderColor =0
                                     Name ="Label272"
                                     Caption ="┌─────── Select An Address ───────┐"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =270
                                     LayoutCachedTop =930
                                     LayoutCachedWidth =8385
@@ -566,13 +568,13 @@ Begin Form
                                     Top =960
                                     Width =5190
                                     Height =285
+                                    BorderColor =0
                                     Name ="Label273"
                                     Caption ="┌─────── Add an Address──────┐"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =10425
                                     LayoutCachedTop =960
                                     LayoutCachedWidth =15615
@@ -585,8 +587,6 @@ Begin Form
                                 End
                                 Begin ToggleButton
                                     OverlapFlags =223
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
                                     Left =255
                                     Top =1230
                                     Width =2880
@@ -597,10 +597,8 @@ Begin Form
                                     Name ="ToggleSortAddress"
                                     DefaultValue ="0"
                                     Caption ="↓↑ Address"
-                                    FontName ="Calibri"
                                     OnClick ="[Event Procedure]"
                                     Tag ="TSort"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =255
                                     LayoutCachedTop =1230
@@ -628,7 +626,6 @@ Begin Form
                                     HoverForeColor =8210719
                                     HoverForeThemeColorIndex =-1
                                     HoverForeTint =100.0
-                                    PressedForeColor =16777215
                                     PressedForeThemeColorIndex =-1
                                     Overlaps =1
                                 End
@@ -643,6 +640,7 @@ Begin Form
                                     Height =7050
                                     FontSize =9
                                     TabIndex =1
+                                    ForeColor =0
                                     Name ="LocationList"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT vw_LocationAddressMatrix.LAddressID, vw_LocationAddressMatrix.LocationID,"
@@ -658,7 +656,6 @@ Begin Form
                                     OnClick ="[Event Procedure]"
                                     LeftPadding =60
                                     RightPadding =75
-                                    GridlineColor =10921638
                                     AllowValueListEdits =0
 
                                     LayoutCachedLeft =255
@@ -683,9 +680,9 @@ Begin Form
                                     Height =330
                                     TabIndex =2
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LAddrLine1"
                                     FontName ="Segoe UI"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =10425
                                     LayoutCachedTop =1350
@@ -708,10 +705,10 @@ Begin Form
                                             Width =912
                                             Height =330
                                             FontSize =9
+                                            BorderColor =0
                                             Name ="Label60"
                                             Caption ="Address 1"
                                             FontName ="Segoe UI"
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =9450
                                             LayoutCachedTop =1350
                                             LayoutCachedWidth =10362
@@ -735,9 +732,9 @@ Begin Form
                                     Height =330
                                     TabIndex =3
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LAddrLine2"
                                     FontName ="Segoe UI"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =10425
                                     LayoutCachedTop =1740
@@ -762,10 +759,10 @@ Begin Form
                                             Width =912
                                             Height =330
                                             FontSize =9
+                                            BorderColor =0
                                             Name ="Label580"
                                             Caption ="Address 2"
                                             FontName ="Segoe UI"
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =9450
                                             LayoutCachedTop =1740
                                             LayoutCachedWidth =10362
@@ -788,10 +785,10 @@ Begin Form
                                     Width =912
                                     Height =330
                                     FontSize =9
+                                    BorderColor =0
                                     Name ="Label8"
                                     Caption ="State"
                                     FontName ="Segoe UI"
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =9450
                                     LayoutCachedTop =2130
                                     LayoutCachedWidth =10362
@@ -818,6 +815,7 @@ Begin Form
                                     Height =330
                                     TabIndex =4
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LState"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT TaxStates.PostalAbbreviation, IIf([RentReceiptAvailable]=True,\"RR\",\"--"
@@ -832,7 +830,6 @@ Begin Form
                                     StatusBarText ="lookup in lookup_state table"
                                     FontName ="Segoe UI"
                                     OnClick ="[Event Procedure]"
-                                    GridlineColor =10921638
                                     AllowValueListEdits =0
 
                                     LayoutCachedLeft =10425
@@ -864,6 +861,7 @@ Begin Form
                                     Height =330
                                     TabIndex =5
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LCity"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT City, CityID, County, CountyID From vw_CCSZ_Lookup WHERE StateID = GROUP "
@@ -871,7 +869,6 @@ Begin Form
                                     ColumnWidths ="3600;0;2880;0"
                                     FontName ="Segoe UI"
                                     OnClick ="[Event Procedure]"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =10425
                                     LayoutCachedTop =2520
@@ -896,10 +893,10 @@ Begin Form
                                             Width =912
                                             Height =330
                                             FontSize =9
+                                            BorderColor =0
                                             Name ="Label42"
                                             Caption ="City"
                                             FontName ="Segoe UI"
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =9450
                                             LayoutCachedTop =2520
                                             LayoutCachedWidth =10362
@@ -930,7 +927,6 @@ Begin Form
                                     LeftPadding =60
                                     RightPadding =75
                                     BottomPadding =120
-                                    GridlineColor =10921638
                                     ImageData = Begin
                                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -1013,6 +1009,7 @@ Begin Form
                                     Height =330
                                     TabIndex =7
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LCounty"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT County, CountyID FROM vw_CCSZ_Lookup WHERE StateID = GROUP BY County, Cou"
@@ -1021,7 +1018,6 @@ Begin Form
                                     StatusBarText ="link to counties table"
                                     FontName ="Segoe UI"
                                     OnClick ="[Event Procedure]"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =10425
                                     LayoutCachedTop =2910
@@ -1046,10 +1042,10 @@ Begin Form
                                             Width =912
                                             Height =330
                                             FontSize =9
+                                            BorderColor =0
                                             Name ="Label43"
                                             Caption ="County"
                                             FontName ="Segoe UI"
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =9450
                                             LayoutCachedTop =2910
                                             LayoutCachedWidth =10362
@@ -1072,10 +1068,10 @@ Begin Form
                                     Width =912
                                     Height =330
                                     FontSize =9
+                                    BorderColor =0
                                     Name ="Label778"
                                     Caption ="Zip"
                                     FontName ="Segoe UI"
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =9450
                                     LayoutCachedTop =3300
                                     LayoutCachedWidth =10362
@@ -1099,10 +1095,10 @@ Begin Form
                                     Height =330
                                     TabIndex =8
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LZip"
                                     AfterUpdate ="[Event Procedure]"
                                     FontName ="Segoe UI"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =10425
                                     LayoutCachedTop =3300
@@ -1121,8 +1117,6 @@ Begin Form
                                 End
                                 Begin ToggleButton
                                     OverlapFlags =223
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
                                     Left =3135
                                     Top =1230
                                     Width =432
@@ -1134,10 +1128,8 @@ Begin Form
                                     Name ="ToggleSortState"
                                     DefaultValue ="0"
                                     Caption ="St"
-                                    FontName ="Calibri"
                                     OnClick ="[Event Procedure]"
                                     Tag ="TSort"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =3135
                                     LayoutCachedTop =1230
@@ -1165,14 +1157,11 @@ Begin Form
                                     HoverForeColor =8210719
                                     HoverForeThemeColorIndex =-1
                                     HoverForeTint =100.0
-                                    PressedForeColor =16777215
                                     PressedForeThemeColorIndex =-1
                                     Overlaps =1
                                 End
                                 Begin ToggleButton
                                     OverlapFlags =223
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
                                     Left =3567
                                     Top =1230
                                     Width =1440
@@ -1184,10 +1173,8 @@ Begin Form
                                     Name ="ToggleSortCity"
                                     DefaultValue ="0"
                                     Caption ="↓↑ City"
-                                    FontName ="Calibri"
                                     OnClick ="[Event Procedure]"
                                     Tag ="TSort"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =3567
                                     LayoutCachedTop =1230
@@ -1215,14 +1202,11 @@ Begin Form
                                     HoverForeColor =8210719
                                     HoverForeThemeColorIndex =-1
                                     HoverForeTint =100.0
-                                    PressedForeColor =16777215
                                     PressedForeThemeColorIndex =-1
                                     Overlaps =1
                                 End
                                 Begin ToggleButton
                                     OverlapFlags =223
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
                                     Left =5007
                                     Top =1230
                                     Width =1440
@@ -1234,10 +1218,8 @@ Begin Form
                                     Name ="ToggleSortCounty"
                                     DefaultValue ="0"
                                     Caption ="↓↑ County"
-                                    FontName ="Calibri"
                                     OnClick ="[Event Procedure]"
                                     Tag ="TSort"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =5007
                                     LayoutCachedTop =1230
@@ -1265,14 +1247,11 @@ Begin Form
                                     HoverForeColor =8210719
                                     HoverForeThemeColorIndex =-1
                                     HoverForeTint =100.0
-                                    PressedForeColor =16777215
                                     PressedForeThemeColorIndex =-1
                                     Overlaps =1
                                 End
                                 Begin ToggleButton
                                     OverlapFlags =223
-                                    TextFontCharSet =177
-                                    TextFontFamily =0
                                     Left =6447
                                     Top =1230
                                     Width =1530
@@ -1284,10 +1263,8 @@ Begin Form
                                     Name ="ToggleSortType"
                                     DefaultValue ="0"
                                     Caption ="↓↑ Type"
-                                    FontName ="Calibri"
                                     OnClick ="[Event Procedure]"
                                     Tag ="TSort"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =6447
                                     LayoutCachedTop =1230
@@ -1315,7 +1292,6 @@ Begin Form
                                     HoverForeColor =8210719
                                     HoverForeThemeColorIndex =-1
                                     HoverForeTint =100.0
-                                    PressedForeColor =16777215
                                     PressedForeThemeColorIndex =-1
                                     Overlaps =1
                                 End
@@ -1331,7 +1307,6 @@ Begin Form
                                     Name ="ClearSorts"
                                     OnClick ="[Event Procedure]"
                                     ControlTipText ="Edit Address"
-                                    GridlineColor =10921638
                                     ImageData = Begin
                                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -1409,11 +1384,9 @@ Begin Form
                                     Height =480
                                     FontSize =18
                                     FontWeight =700
-                                    BorderColor =8355711
                                     ForeColor =8210719
                                     Name ="Label331"
                                     Caption ="↓"
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =1455
                                     LayoutCachedTop =375
                                     LayoutCachedWidth =1800
@@ -1429,9 +1402,7 @@ Begin Form
                             Top =345
                             Width =15540
                             Height =8175
-                            BorderColor =10921638
                             Name ="Name"
-                            GridlineColor =10921638
                             LayoutCachedLeft =75
                             LayoutCachedTop =345
                             LayoutCachedWidth =15615
@@ -1447,13 +1418,13 @@ Begin Form
                                     Height =345
                                     BackColor =15204351
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LocationName"
                                     FontName ="Segoe UI"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =1295
@@ -1482,6 +1453,7 @@ Begin Form
                                     TabIndex =1
                                     BackColor =15204351
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="Locationsn"
                                     StatusBarText ="short name for locaition or Lessee number"
                                     FontName ="Segoe UI"
@@ -1489,7 +1461,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =1699
@@ -1513,6 +1484,7 @@ Begin Form
                                             Width =1200
                                             Height =345
                                             FontSize =8
+                                            BorderColor =0
                                             Name ="Label40"
                                             Caption ="     Short Name"
                                             FontName ="Segoe UI"
@@ -1520,7 +1492,6 @@ Begin Form
                                             TopPadding =0
                                             RightPadding =0
                                             BottomPadding =0
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =230
                                             LayoutCachedTop =1699
                                             LayoutCachedWidth =1430
@@ -1550,6 +1521,7 @@ Begin Form
                                     TabIndex =2
                                     BackColor =15204351
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LAddressID"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT LocationID, LAddrLine1, LState, LCity, LCounty, LPostalCode, ClientGroupI"
@@ -1558,7 +1530,6 @@ Begin Form
                                     ColumnWidths ="0;2160;432;1440;1440;1008;1440"
                                     FontName ="Segoe UI"
                                     OnClick ="[Event Procedure]"
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1470
                                     LayoutCachedTop =2130
@@ -1580,12 +1551,12 @@ Begin Form
                                     Width =1200
                                     Height =405
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label130"
                                     Caption ="Select Address \015\012for Location"
                                     FontName ="Segoe UI"
                                     LeftPadding =0
                                     RightPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =225
                                     LayoutCachedTop =2130
                                     LayoutCachedWidth =1425
@@ -1612,11 +1583,11 @@ Begin Form
                                     Height =1440
                                     TabIndex =3
                                     BorderColor =10855845
+                                    ForeColor =0
                                     Name ="AddressText"
                                     FontName ="Segoe UI"
                                     TopPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     TextFormat =1
 
                                     LayoutCachedLeft =1470
@@ -1646,7 +1617,6 @@ Begin Form
                                     OnClick ="[Event Procedure]"
                                     FontName ="Segoe UI"
                                     ControlTipText ="Edit Address"
-                                    GridlineColor =10921638
                                     ImageData = Begin
                                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -1723,13 +1693,13 @@ Begin Form
                                     Top =950
                                     Width =3780
                                     Height =285
+                                    BorderColor =0
                                     Name ="Label263"
                                     Caption ="┌─────── Location Details ───────┐"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =1625
                                     LayoutCachedTop =950
                                     LayoutCachedWidth =5405
@@ -1747,6 +1717,7 @@ Begin Form
                                     Width =1200
                                     Height =345
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label41"
                                     Caption ="Location Name"
                                     FontName ="Segoe UI"
@@ -1754,7 +1725,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =230
                                     LayoutCachedTop =1295
                                     LayoutCachedWidth =1430
@@ -1788,6 +1758,7 @@ Begin Form
                                     ColumnWidths ="0;0;1728;2448;2448;0;0"
                                     FontName ="Segoe UI"
                                     OnClick ="[Event Procedure]"
+                                    GridlineColor =0
 
                                     LayoutCachedLeft =8280
                                     LayoutCachedTop =2100
@@ -1807,6 +1778,7 @@ Begin Form
                                     Top =1289
                                     Width =6555
                                     Height =435
+                                    BorderColor =0
                                     Name ="Label325"
                                     Caption ="Names Already in Use within Client Group "
                                     FontName ="Segoe UI"
@@ -1814,7 +1786,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =8280
                                     LayoutCachedTop =1289
                                     LayoutCachedWidth =14835
@@ -1843,6 +1814,7 @@ Begin Form
                                     RowSourceType ="Table/Query"
                                     ColumnWidths ="0;0;1728;2448;2448;0;0"
                                     FontName ="Segoe UI"
+                                    GridlineColor =0
 
                                     LayoutCachedLeft =1440
                                     LayoutCachedTop =4590
@@ -1863,11 +1835,9 @@ Begin Form
                                     Height =480
                                     FontSize =18
                                     FontWeight =700
-                                    BorderColor =8355711
                                     ForeColor =8210719
                                     Name ="Label332"
                                     Caption ="↓"
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =5640
                                     LayoutCachedTop =345
                                     LayoutCachedWidth =5985
@@ -1883,9 +1853,7 @@ Begin Form
                             Top =345
                             Width =15540
                             Height =8175
-                            BorderColor =10921638
                             Name ="SetLocationDetails"
-                            GridlineColor =10921638
                             LayoutCachedLeft =75
                             LayoutCachedTop =345
                             LayoutCachedWidth =15615
@@ -1903,13 +1871,13 @@ Begin Form
                                     Width =4125
                                     Height =345
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LocationName2"
                                     FontName ="Segoe UI"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =1295
@@ -1934,6 +1902,7 @@ Begin Form
                                             Width =1200
                                             Height =345
                                             FontSize =8
+                                            BorderColor =0
                                             Name ="Label308"
                                             Caption ="Location Name"
                                             FontName ="Segoe UI"
@@ -1941,7 +1910,6 @@ Begin Form
                                             TopPadding =0
                                             RightPadding =0
                                             BottomPadding =0
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =230
                                             LayoutCachedTop =1295
                                             LayoutCachedWidth =1430
@@ -1967,6 +1935,7 @@ Begin Form
                                     Width =4125
                                     Height =345
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="Locationsn2"
                                     StatusBarText ="short name for locaition or Lessee number"
                                     FontName ="Segoe UI"
@@ -1974,7 +1943,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =1680
@@ -1998,6 +1966,7 @@ Begin Form
                                             Width =1200
                                             Height =345
                                             FontSize =8
+                                            BorderColor =0
                                             Name ="Label306"
                                             Caption ="     Short Name"
                                             FontName ="Segoe UI"
@@ -2005,7 +1974,6 @@ Begin Form
                                             TopPadding =0
                                             RightPadding =0
                                             BottomPadding =0
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =240
                                             LayoutCachedTop =1680
                                             LayoutCachedWidth =1440
@@ -2031,13 +1999,13 @@ Begin Form
                                     Width =4125
                                     Height =345
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LocationStreet"
                                     FontName ="Segoe UI"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =2086
@@ -2059,6 +2027,7 @@ Begin Form
                                             Width =1200
                                             Height =345
                                             FontSize =8
+                                            BorderColor =0
                                             Name ="Label304"
                                             Caption ="         Company"
                                             FontName ="Segoe UI"
@@ -2066,7 +2035,6 @@ Begin Form
                                             TopPadding =0
                                             RightPadding =0
                                             BottomPadding =0
-                                            GridlineColor =10921638
                                             LayoutCachedLeft =240
                                             LayoutCachedTop =2086
                                             LayoutCachedWidth =1440
@@ -2092,6 +2060,7 @@ Begin Form
                                     Width =2175
                                     Height =345
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LPhone"
                                     FontName ="Segoe UI"
                                     InputMask ="!\\(999\") \"000\\-0000;;_"
@@ -2099,7 +2068,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =2896
@@ -2126,6 +2094,7 @@ Begin Form
                                     Width =2175
                                     Height =345
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LFax"
                                     FontName ="Segoe UI"
                                     InputMask ="!\\(999\") \"000\\-0000;;_"
@@ -2133,7 +2102,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =3301
@@ -2160,6 +2128,7 @@ Begin Form
                                     Width =4125
                                     Height =345
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="LEmail"
                                     StatusBarText ="link to counties table"
                                     FontName ="Segoe UI"
@@ -2167,7 +2136,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =3706
@@ -2198,6 +2166,7 @@ Begin Form
                                     Width =4125
                                     Height =345
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="DivisionID"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT DivisionID, DivisionName, ClientID From ClientDivisions WHERE Deleted=Fal"
@@ -2208,7 +2177,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     AllowValueListEdits =0
 
                                     LayoutCachedLeft =1475
@@ -2236,6 +2204,7 @@ Begin Form
                                     Width =4125
                                     Height =345
                                     BorderColor =8210719
+                                    ForeColor =0
                                     Name ="AttenToLine"
                                     StatusBarText ="short name for locaition or Lessee number"
                                     FontName ="Segoe UI"
@@ -2243,7 +2212,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =1475
                                     LayoutCachedTop =2491
@@ -2274,7 +2242,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     ImageData = Begin
                                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -2326,18 +2293,20 @@ Begin Form
                                     ForeTint =100.0
                                     Shape =0
                                     Gradient =0
+                                    BackColor =16777215
                                     BackThemeColorIndex =-1
                                     BackTint =100.0
                                     OldBorderStyle =0
+                                    BorderColor =0
                                     BorderThemeColorIndex =-1
                                     BorderTint =100.0
                                     ThemeFontIndex =-1
+                                    HoverColor =16777215
                                     HoverThemeColorIndex =-1
                                     HoverTint =100.0
+                                    PressedColor =16777215
                                     PressedThemeColorIndex =-1
                                     PressedShade =100.0
-                                    HoverForeColor =4210752
-                                    PressedForeColor =4210752
                                     Overlaps =1
                                 End
                                 Begin CommandButton
@@ -2354,7 +2323,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     ImageData = Begin
                                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -2406,18 +2374,20 @@ Begin Form
                                     ForeTint =100.0
                                     Shape =0
                                     Gradient =0
+                                    BackColor =16777215
                                     BackThemeColorIndex =-1
                                     BackTint =100.0
                                     OldBorderStyle =0
+                                    BorderColor =0
                                     BorderThemeColorIndex =-1
                                     BorderTint =100.0
                                     ThemeFontIndex =-1
+                                    HoverColor =16777215
                                     HoverThemeColorIndex =-1
                                     HoverTint =100.0
+                                    PressedColor =16777215
                                     PressedThemeColorIndex =-1
                                     PressedShade =100.0
-                                    HoverForeColor =4210752
-                                    PressedForeColor =4210752
                                     Overlaps =1
                                 End
                                 Begin CommandButton
@@ -2434,7 +2404,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     ImageData = Begin
                                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -2486,18 +2455,20 @@ Begin Form
                                     ForeTint =100.0
                                     Shape =0
                                     Gradient =0
+                                    BackColor =16777215
                                     BackThemeColorIndex =-1
                                     BackTint =100.0
                                     OldBorderStyle =0
+                                    BorderColor =0
                                     BorderThemeColorIndex =-1
                                     BorderTint =100.0
                                     ThemeFontIndex =-1
+                                    HoverColor =16777215
                                     HoverThemeColorIndex =-1
                                     HoverTint =100.0
+                                    PressedColor =16777215
                                     PressedThemeColorIndex =-1
                                     PressedShade =100.0
-                                    HoverForeColor =4210752
-                                    PressedForeColor =4210752
                                     Overlaps =1
                                 End
                                 Begin CommandButton
@@ -2514,7 +2485,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     ImageData = Begin
                                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -2566,18 +2536,20 @@ Begin Form
                                     ForeTint =100.0
                                     Shape =0
                                     Gradient =0
+                                    BackColor =16777215
                                     BackThemeColorIndex =-1
                                     BackTint =100.0
                                     OldBorderStyle =0
+                                    BorderColor =0
                                     BorderThemeColorIndex =-1
                                     BorderTint =100.0
                                     ThemeFontIndex =-1
+                                    HoverColor =16777215
                                     HoverThemeColorIndex =-1
                                     HoverTint =100.0
+                                    PressedColor =16777215
                                     PressedThemeColorIndex =-1
                                     PressedShade =100.0
-                                    HoverForeColor =4210752
-                                    PressedForeColor =4210752
                                     Overlaps =1
                                 End
                                 Begin Label
@@ -2588,6 +2560,7 @@ Begin Form
                                     Width =1200
                                     Height =345
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label318"
                                     Caption ="        Division"
                                     FontName ="Segoe UI"
@@ -2595,7 +2568,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =240
                                     LayoutCachedTop =4111
                                     LayoutCachedWidth =1440
@@ -2618,13 +2590,13 @@ Begin Form
                                     Top =1020
                                     Width =5625
                                     Height =285
+                                    BorderColor =0
                                     Name ="Label319"
                                     Caption ="   ┌─────── Location Details ──────────────────────"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =1483
                                     LayoutCachedTop =1020
                                     LayoutCachedWidth =7108
@@ -2649,11 +2621,11 @@ Begin Form
                                     Width =4125
                                     Height =2160
                                     BorderColor =10855845
+                                    ForeColor =0
                                     Name ="AddressText2"
                                     FontName ="Segoe UI"
                                     TopPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     TextFormat =1
 
                                     LayoutCachedLeft =1485
@@ -2677,12 +2649,12 @@ Begin Form
                                     Width =1200
                                     Height =795
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label321"
                                     Caption ="Address that wil be used for this location"
                                     FontName ="Segoe UI"
                                     LeftPadding =0
                                     RightPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =240
                                     LayoutCachedTop =4560
                                     LayoutCachedWidth =1440
@@ -2700,13 +2672,13 @@ Begin Form
                                     Top =2445
                                     Width =180
                                     Height =345
+                                    BorderColor =0
                                     Name ="Garage"
                                     StatusBarText ="cooperative"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =6120
                                     LayoutCachedTop =2445
@@ -2725,13 +2697,13 @@ Begin Form
                                     Top =2100
                                     Width =180
                                     Height =345
+                                    BorderColor =0
                                     Name ="Headquarters"
                                     Tag ="Required"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =6120
                                     LayoutCachedTop =2100
@@ -2748,13 +2720,13 @@ Begin Form
                                     Top =2790
                                     Width =180
                                     Height =345
+                                    BorderColor =0
                                     Name ="Billing"
                                     StatusBarText ="up load to Portal"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =6120
                                     LayoutCachedTop =2790
@@ -2774,6 +2746,7 @@ Begin Form
                                     Width =1170
                                     Height =345
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label638"
                                     Caption ="Headquarters"
                                     FontName ="Segoe UI"
@@ -2781,7 +2754,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6300
                                     LayoutCachedTop =2100
                                     LayoutCachedWidth =7470
@@ -2801,6 +2773,7 @@ Begin Form
                                     Width =1170
                                     Height =345
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label647"
                                     Caption ="Billing"
                                     FontName ="Segoe UI"
@@ -2808,7 +2781,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6300
                                     LayoutCachedTop =2790
                                     LayoutCachedWidth =7470
@@ -2829,13 +2801,13 @@ Begin Form
                                     Top =3135
                                     Width =180
                                     Height =345
+                                    BorderColor =0
                                     Name ="Registration"
                                     StatusBarText ="cooperative"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =6120
                                     LayoutCachedTop =3135
@@ -2854,13 +2826,13 @@ Begin Form
                                     Top =3480
                                     Width =180
                                     Height =345
+                                    BorderColor =0
                                     Name ="Title"
                                     Tag ="Required"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =6120
                                     LayoutCachedTop =3480
@@ -2879,13 +2851,13 @@ Begin Form
                                     Top =3825
                                     Width =180
                                     Height =345
+                                    BorderColor =0
                                     Name ="Other"
                                     StatusBarText ="up load to Portal"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
 
                                     LayoutCachedLeft =6120
                                     LayoutCachedTop =3825
@@ -2905,6 +2877,7 @@ Begin Form
                                     Width =1170
                                     Height =345
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label20"
                                     Caption ="Registration"
                                     FontName ="Segoe UI"
@@ -2912,7 +2885,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6300
                                     LayoutCachedTop =3135
                                     LayoutCachedWidth =7470
@@ -2934,6 +2906,7 @@ Begin Form
                                     Width =1170
                                     Height =345
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label21"
                                     Caption ="Title"
                                     FontName ="Segoe UI"
@@ -2941,7 +2914,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6300
                                     LayoutCachedTop =3480
                                     LayoutCachedWidth =7470
@@ -2963,6 +2935,7 @@ Begin Form
                                     Width =1170
                                     Height =345
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label22"
                                     Caption ="Other"
                                     FontName ="Segoe UI"
@@ -2970,7 +2943,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6300
                                     LayoutCachedTop =3825
                                     LayoutCachedWidth =7470
@@ -2992,6 +2964,7 @@ Begin Form
                                     Width =1170
                                     Height =345
                                     FontSize =8
+                                    BorderColor =0
                                     Name ="Label357"
                                     Caption ="Garage"
                                     FontName ="Segoe UI"
@@ -2999,7 +2972,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6300
                                     LayoutCachedTop =2445
                                     LayoutCachedWidth =7470
@@ -3025,6 +2997,7 @@ Begin Form
                                     Width =7305
                                     Height =6345
                                     FontSize =10
+                                    ForeColor =0
                                     BorderColor =14211288
                                     Name ="ClientList"
                                     RowSourceType ="Table/Query"
@@ -3033,6 +3006,7 @@ Begin Form
                                     ColumnWidths ="0;2304;4896"
                                     FontName ="Segoe UI"
                                     OnClick ="[Event Procedure]"
+                                    GridlineColor =0
 
                                     LayoutCachedLeft =8280
                                     LayoutCachedTop =2100
@@ -3053,6 +3027,7 @@ Begin Form
                                     Top =1290
                                     Width =6555
                                     Height =435
+                                    BorderColor =0
                                     Name ="Label261"
                                     Caption ="Select Clients that will use this Location "
                                     FontName ="Segoe UI"
@@ -3060,7 +3035,6 @@ Begin Form
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =8280
                                     LayoutCachedTop =1290
                                     LayoutCachedWidth =14835
@@ -3087,7 +3061,6 @@ Begin Form
                                     LeftPadding =60
                                     RightPadding =75
                                     BottomPadding =120
-                                    GridlineColor =10921638
                                     ImageData = Begin
                                         0x00000000
                                     End
@@ -3130,11 +3103,11 @@ Begin Form
                                     Width =1425
                                     Height =240
                                     FontSize =9
+                                    BorderColor =0
                                     Name ="Label265"
                                     Caption ="└─ multiple ─┘"
                                     LeftPadding =0
                                     RightPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6075
                                     LayoutCachedTop =4095
                                     LayoutCachedWidth =7500
@@ -3153,11 +3126,11 @@ Begin Form
                                     Width =1425
                                     Height =240
                                     FontSize =9
+                                    BorderColor =0
                                     Name ="Label266"
                                     Caption ="selection"
                                     LeftPadding =0
                                     RightPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6075
                                     LayoutCachedTop =4260
                                     LayoutCachedWidth =7500
@@ -3176,7 +3149,6 @@ Begin Form
                                     Width =0
                                     Height =720
                                     Name ="Line322"
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6775
                                     LayoutCachedTop =1164
                                     LayoutCachedWidth =6775
@@ -3191,13 +3163,13 @@ Begin Form
                                     Top =1740
                                     Width =1425
                                     Height =285
+                                    BorderColor =0
                                     Name ="Label264"
                                     Caption ="┌─ Type ─┐"
                                     LeftPadding =0
                                     TopPadding =0
                                     RightPadding =0
                                     BottomPadding =0
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =6075
                                     LayoutCachedTop =1740
                                     LayoutCachedWidth =7500
@@ -3217,11 +3189,9 @@ Begin Form
                                     Height =480
                                     FontSize =18
                                     FontWeight =700
-                                    BorderColor =8355711
                                     ForeColor =8210719
                                     Name ="Label333"
                                     Caption ="↓"
-                                    GridlineColor =10921638
                                     LayoutCachedLeft =9180
                                     LayoutCachedTop =360
                                     LayoutCachedWidth =9525
@@ -3252,7 +3222,6 @@ Begin Form
                     TopPadding =15
                     RightPadding =75
                     BottomPadding =120
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -3341,7 +3310,6 @@ Begin Form
                     TopPadding =15
                     RightPadding =75
                     BottomPadding =120
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -3425,7 +3393,6 @@ Begin Form
                     Name ="StepLabel3"
                     ControlSource ="=\"Step 3: Set Location Types and Disperse to Client(s)\""
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =8835
@@ -3453,7 +3420,6 @@ Begin Form
                     ForeColor =8210719
                     Name ="StepLabel4"
                     ControlSource ="=\"Step 4\""
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =6180
                     LayoutCachedTop =8865
@@ -3480,7 +3446,6 @@ Begin Form
                     Name ="StepLabel2"
                     ControlSource ="=\"Step 2: Set Name for Location\""
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =5175
@@ -3508,7 +3473,6 @@ Begin Form
                     Name ="StepLabel1"
                     ControlSource ="=\"Step 1: Select Location's Address \""
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =1050
@@ -3538,7 +3502,6 @@ Begin Form
                     TopPadding =105
                     RightPadding =165
                     BottomPadding =165
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000505050ff505050ff00000000505050ff505050ff00000000 ,
@@ -3614,10 +3577,9 @@ Begin Form
                     Width =210
                     Height =285
                     FontSize =14
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label326"
                     Caption ="●"
-                    GridlineColor =10921638
                     LayoutCachedLeft =8625
                     LayoutCachedWidth =8835
                     LayoutCachedHeight =285
@@ -3630,10 +3592,9 @@ Begin Form
                     Width =210
                     Height =285
                     FontSize =14
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label327"
                     Caption ="●"
-                    GridlineColor =10921638
                     LayoutCachedLeft =4965
                     LayoutCachedWidth =5175
                     LayoutCachedHeight =285
@@ -3646,10 +3607,9 @@ Begin Form
                     Width =210
                     Height =285
                     FontSize =14
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label328"
                     Caption ="●"
-                    GridlineColor =10921638
                     LayoutCachedLeft =825
                     LayoutCachedWidth =1035
                     LayoutCachedHeight =285

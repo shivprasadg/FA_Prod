@@ -674,10 +674,10 @@ Begin Report
                     TextFontFamily =18
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =210
-                    Top =4590
-                    Width =4995
-                    Height =3030
+                    Left =228
+                    Top =4608
+                    Width =4992
+                    Height =3036
                     TabIndex =10
                     LeftMargin =144
                     TopMargin =72
@@ -695,10 +695,10 @@ Begin Report
                     BottomPadding =0
                     TextFormat =1
 
-                    LayoutCachedLeft =210
-                    LayoutCachedTop =4590
-                    LayoutCachedWidth =5205
-                    LayoutCachedHeight =7620
+                    LayoutCachedLeft =228
+                    LayoutCachedTop =4608
+                    LayoutCachedWidth =5220
+                    LayoutCachedHeight =7644
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -715,10 +715,10 @@ Begin Report
                     TextFontFamily =18
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5205
-                    Top =4590
-                    Width =4995
-                    Height =3030
+                    Left =5232
+                    Top =4608
+                    Width =4992
+                    Height =3036
                     TabIndex =11
                     LeftMargin =144
                     TopMargin =72
@@ -736,10 +736,10 @@ Begin Report
                     BottomPadding =0
                     TextFormat =1
 
-                    LayoutCachedLeft =5205
-                    LayoutCachedTop =4590
-                    LayoutCachedWidth =10200
-                    LayoutCachedHeight =7620
+                    LayoutCachedLeft =5232
+                    LayoutCachedTop =4608
+                    LayoutCachedWidth =10224
+                    LayoutCachedHeight =7644
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -756,9 +756,9 @@ Begin Report
                     TextFontFamily =18
                     BackStyle =0
                     IMESentenceMode =3
-                    Top =4305
-                    Width =10200
-                    Height =285
+                    Top =4308
+                    Width =10224
+                    Height =288
                     TabIndex =9
                     Name ="Text1170"
                     ControlSource ="=[Paragraph5] & \"<br /><br /><br />\""
@@ -770,9 +770,9 @@ Begin Report
                     BottomPadding =0
                     TextFormat =1
 
-                    LayoutCachedTop =4305
-                    LayoutCachedWidth =10200
-                    LayoutCachedHeight =4590
+                    LayoutCachedTop =4308
+                    LayoutCachedWidth =10224
+                    LayoutCachedHeight =4596
                     ColumnEnd =3
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
@@ -780,20 +780,20 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =10200
-                    Top =4590
+                    Left =10224
+                    Top =4608
                     Width =0
-                    Height =3030
+                    Height =3036
                     Name ="EmptyCell1176"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =10200
-                    LayoutCachedTop =4590
-                    LayoutCachedWidth =10200
-                    LayoutCachedHeight =7620
+                    LayoutCachedLeft =10224
+                    LayoutCachedTop =4608
+                    LayoutCachedWidth =10224
+                    LayoutCachedHeight =7644
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -802,18 +802,18 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Top =4590
+                    Top =4608
                     Width =211
-                    Height =3030
+                    Height =3036
                     Name ="EmptyCell1177"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =4590
+                    LayoutCachedTop =4608
                     LayoutCachedWidth =211
-                    LayoutCachedHeight =7620
+                    LayoutCachedHeight =7644
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1

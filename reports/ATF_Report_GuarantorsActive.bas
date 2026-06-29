@@ -113,6 +113,7 @@ Begin Report
                     Height =72
                     FontSize =9
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="LesseeName"
                     ControlSource ="GName"
                     StatusBarText ="Also enter Short Name Nm for Reports - it is required."
@@ -122,7 +123,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =924
                     LayoutCachedWidth =5244
@@ -148,6 +148,7 @@ Begin Report
                     FontSize =9
                     TabIndex =1
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Text13"
                     ControlSource ="clientTaxID"
                     StatusBarText ="Also enter Short Name Nm for Reports - it is required."
@@ -157,7 +158,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5820
                     LayoutCachedWidth =7740
@@ -185,6 +185,7 @@ Begin Report
                     FontSize =9
                     TabIndex =2
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Text25"
                     ControlSource ="ATFID"
                     StatusBarText ="Also enter Short Name Nm for Reports - it is required."
@@ -194,7 +195,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10740
                     LayoutCachedWidth =11340
@@ -225,7 +225,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedWidth =945
@@ -255,7 +254,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5244
                     LayoutCachedWidth =5820

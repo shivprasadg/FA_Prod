@@ -120,6 +120,7 @@ Begin Form
                     Name ="btnStartSearch"
                     Caption ="&Start Search"
                     OnClick ="[Event Procedure]"
+                    UnicodeAccessKey =83
 
                     LayoutCachedLeft =180
                     LayoutCachedTop =5100
@@ -137,6 +138,7 @@ Begin Form
                     Name ="btnClearInputs"
                     Caption ="Clear Inputs/O&utputs"
                     OnClick ="[Event Procedure]"
+                    UnicodeAccessKey =117
 
                     LayoutCachedLeft =180
                     LayoutCachedTop =5940
@@ -731,6 +733,7 @@ Begin Form
                     Name ="btnClearHistory"
                     Caption ="Clear Search &History"
                     OnClick ="[Event Procedure]"
+                    UnicodeAccessKey =72
 
                     LayoutCachedLeft =180
                     LayoutCachedTop =6300

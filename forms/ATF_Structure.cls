@@ -11,7 +11,7 @@ Dim RST        As DAO.Recordset
 Dim Committ As String
 
 Private Sub Axle_DblClick(Cancel As Integer)
-    If Me.axle & "test" <> "test" Then Call SetItems(Me.axle, "Axle", "Axle", "Unit")
+    If Me.Axle & "test" <> "test" Then Call SetItems(Me.Axle, "Axle", "Axle", "Unit")
 End Sub
 
 Public Sub FAIDList_Click()
@@ -44,7 +44,7 @@ Private Sub SetComboBoxes()
     Me.ChildList.RowSource = SQLz
 
     SQLz = "SELECT LocationID, Locationsn AS Location, LocationType, LAddrLine1 AS Adress, LState AS St, LZip AS Zip, LCity AS City " & _
-        "From Locations WHERE LocationType<>'billing' AND LocObsolete=No AND clientRef=" & Nz(Me.clientID, 0) & " " & _
+        "From Locations WHERE LocationType<>'billing' AND LocObsolete=No AND clientRef=" & Nz(Me.ClientID, 0) & " " & _
         "ORDER BY LState, LCity, LocationName;"
     Me.DeliveryLocationID.RowSource = SQLz
     Me.RegTitleLocationID.RowSource = SQLz
@@ -53,7 +53,7 @@ Private Sub SetComboBoxes()
     ClientIDx = Nz(DLookup("LesseeID", "ATF", "ATFID=" & Nz(Me.ATFID, 0)), 0)
     SQLz = "SELECT LocationID, Nz([LocationName],[Locationsn]) & ' - ' & Nz([LAddrLine1],[LAddrLine2]) & ' ' & [LCity] & ', ' & [LState] & ' ' & [LZip] AS [Billing Location], " & _
         "LState As State, LZip, LocationType, LocationName, LCity FROM Locations " & _
-        "WHERE (LocationType ='Billing' Or LocationType='Garage') AND Locations.LocObsolete=No AND ClientRef=" & Nz(Me.clientID, 0) & " ORDER BY Locations.LState;"
+        "WHERE (LocationType ='Billing' Or LocationType='Garage') AND Locations.LocObsolete=No AND ClientRef=" & Nz(Me.ClientID, 0) & " ORDER BY Locations.LState;"
     Me.ScheduleBillingID.RowSource = SQLz
 End Sub
 
@@ -282,7 +282,7 @@ Private Sub UnitDescriptor_DblClick(Cancel As Integer)
     If SetLPAFItems(Me.UnitDescriptor, "UnitDescriptor", "Unit Descriptor", "Unit", Me.ATFUnitSpecID) = 2 Then UndoChange ("Unit Descriptor")
 End Sub
 Private Sub EngineType_DblClick(Cancel As Integer)
-    If SetLPAFItems(Me.ENGINETYPE, "UnitEngineType", "Engine Type", "Unit", Me.ATFUnitSpecID) = 2 Then UndoChange ("Engine Type")
+    If SetLPAFItems(Me.EngineType, "UnitEngineType", "Engine Type", "Unit", Me.ATFUnitSpecID) = 2 Then UndoChange ("Engine Type")
 End Sub
 Private Sub UnitSubType_AfterUpdate()
     If PrevValue <> Me.UnitSubType And pField = "UnitSubType" Then

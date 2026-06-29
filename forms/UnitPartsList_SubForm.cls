@@ -40,7 +40,7 @@ End Sub
 Private Sub MakeWorkTable()
  SQLz = "INSERT INTO MakeModelManagerParts_WorkTable ( UnitID, ChildPartID) " & _
  "SELECT UnitREF, ChildPartID From ChildParts Inner Join Units on ChildParts.UnitREF=Units.UnitID " & _
- "WHERE ClientID = " & Me.ClientCbo.Column(0) & " AND ChildMake='" & Me.Parent.MAKE & "' AND ChildClass='" & Me.Parent.MODEL & "'"
+ "WHERE ClientID = " & Me.ClientCbo.Column(0) & " AND ChildMake='" & Me.Parent.Make & "' AND ChildClass='" & Me.Parent.Model & "'"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True

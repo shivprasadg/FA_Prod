@@ -4,7 +4,6 @@ Begin Form
     PopUp = NotDefault
     RecordSelectors = NotDefault
     DividingLines = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     TabularCharSet =204
     BorderStyle =1

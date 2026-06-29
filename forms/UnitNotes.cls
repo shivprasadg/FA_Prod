@@ -7,7 +7,7 @@ Dim RST As DAO.Recordset
 
 Private Sub AddUnitNote_Click()
  DoCmd.GotoRecord , , acNewRec
- Me.UnitREF = Forms!Unitsform.UnitID
+ Me.UnitRef = Forms!Unitsform.UnitID
  Me.uEmp = FAUserInit
  Me.uNote.SetFocus
 End Sub
@@ -22,7 +22,7 @@ Form_Close_Error:
 End Sub
 Public Function LoadData(UnitIDx As Long)
     On Error Resume Next
-    If Nz(Me.UnitREF, 0) = 0 Or Nz(Me.UnitREF, 0) <> UnitIDx Then
+    If Nz(Me.UnitRef, 0) = 0 Or Nz(Me.UnitRef, 0) <> UnitIDx Then
         Dim SQLz   As String
         On Error GoTo 0
         SQLz = "SELECT * FROM UnitNotes WHERE UnitRef = " & UnitIDx & " ORDER BY uNoteDate DESC;"
@@ -35,10 +35,10 @@ Public Function LoadData(UnitIDx As Long)
 End Function
 
 Private Sub Form_Dirty(Cancel As Integer)
-    If IsNull(Me.UnitREF) Then Me.UnitREF = Forms!Forms!Unitsform.UnitID
+    If IsNull(Me.UnitRef) Then Me.UnitRef = Forms!Forms!Unitsform.UnitID
 End Sub
 Private Sub Form_BeforeUpdate(Cancel As Integer)
-    If Me.Dirty And IsNull(Me.UnitREF) Then Me.UnitREF = Forms!Unitsform.Form.UnitID
+    If Me.Dirty And IsNull(Me.UnitRef) Then Me.UnitRef = Forms!Unitsform.Form.UnitID
 End Sub
 Private Sub NotesList_Click()
 On Error GoTo Fxme

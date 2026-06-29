@@ -22,7 +22,7 @@ With Me.SixTreeView
 .Indentation = 300
 .Appearance = ccFlat
 .HideSelection = False
-.borderStyle = ccFixedSingle
+.BorderStyle = ccFixedSingle
 .HotTracking = True
 .FullRowSelect = True
 .CheckBoxes = False
@@ -78,10 +78,10 @@ Public Sub LoadSixTree(Optional FilterX As String)
     Do Until RST.EOF
          ' Add Client nodes
         If ClientName <> RST!Client Then
-            ClientKey = RST!clientID & "|"
+            ClientKey = RST!ClientID & "|"
             ClientName = ProperCase(RST!Client, 0)
             Set NodX = tv.Nodes.Add(, , ClientKey, ClientName, "Client", "ClientOpen")
-            NodX.Tag = "Client:" & RST!clientID
+            NodX.Tag = "Client:" & RST!ClientID
             MstName = ""
         End If
 
@@ -128,13 +128,13 @@ Public Sub LoadSixTree(Optional FilterX As String)
         On Error GoTo 0
 
         On Error Resume Next
-        If UnitName <> RST!AssetID & " " & RST!unitdesc Then
+        If UnitName <> RST!AssetID & " " & RST!UnitDesc Then
             UnitKey = GrpKey & RST!AssetID & "|"
-            UnitName = RST!AssetID & " " & RST!unitdesc
+            UnitName = RST!AssetID & " " & RST!UnitDesc
             ImageX = "Truck"
-            If RST!unitdesc Like "*Day*" Then ImageX = "DayCab"
-            If RST!unitdesc Like "*Sleep*" Then ImageX = "Sleeper"
-            If RST!unitdesc Like "*Trai*" Then ImageX = "Trailer"
+            If RST!UnitDesc Like "*Day*" Then ImageX = "DayCab"
+            If RST!UnitDesc Like "*Sleep*" Then ImageX = "Sleeper"
+            If RST!UnitDesc Like "*Trai*" Then ImageX = "Trailer"
             Set NodX = tv.Nodes.Add(GrpKey, tvwChild, UnitKey, UnitName, ImageX, ImageX)
             NodX.Tag = "Unit:" & RST!AssetID
         End If

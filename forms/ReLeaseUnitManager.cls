@@ -40,8 +40,8 @@ Private Sub Form_Load()
     Me.BankSearch = ""
     Me.ClientSearch = ""
     Me.TitleNumSearch = ""
-    Me.startDate = ""
-    Me.Enddate = ""
+    Me.StartDate = ""
+    Me.EndDate = ""
     Me.VINSearch = ""
 
 
@@ -62,9 +62,9 @@ Public Sub SetWhere()
     If Me.ClientSearch & "test" <> "test" Then SQLz = SQLz & "AND ClientID=" & Me.ClientSearch & " "
     If Me.TitleNumSearch & "test" <> "test" Then SQLz = SQLz & "AND TitleNumber='" & Me.TitleNumSearch & "' "
     If Me.VINSearch & "test" <> "test" Then SQLz = SQLz & " AND VIN Like'*" & Me.VINSearch & "*' "
-    If IsDate(Me.startDate) And IsDate(Me.Enddate) Then
-        SQLz = SQLz & "AND  LastDate >=#" & Me.startDate & "# AND  LastDate <=#" & Me.Enddate & "# "
-        Header = Header & " and By Date Range: " & Me.startDate & " ~ " & Me.Enddate
+    If IsDate(Me.StartDate) And IsDate(Me.EndDate) Then
+        SQLz = SQLz & "AND  LastDate >=#" & Me.StartDate & "# AND  LastDate <=#" & Me.EndDate & "# "
+        Header = Header & " and By Date Range: " & Me.StartDate & " ~ " & Me.EndDate
     End If
     SQLz = SQLz & " ORDER BY VIN, AssetID"
 End Sub

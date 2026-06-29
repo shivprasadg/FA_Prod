@@ -122,12 +122,9 @@ Begin Report
                     ColumnOrder =0
                     FontSize =12
                     FontWeight =700
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="ATFHeader"
                     ControlSource ="=\"MLA: \" & [ATFDesc] & \"    Schedule: \" & [SchNo] & \"   \" & [SchDescriptio"
                         "n] & IIf([Page]>1,\" - Cont'd\",\"\")"
-                    GridlineColor =10921638
 
                     LayoutCachedWidth =9600
                     LayoutCachedHeight =315
@@ -143,11 +140,8 @@ Begin Report
                     FontSize =12
                     FontWeight =700
                     TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text36"
                     ControlSource ="=\"FAID: \" & [FAID] & IIf([Page]>1,\" - Cont'd\",\"\")"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =9660
                     LayoutCachedWidth =11490
@@ -176,6 +170,7 @@ Begin Report
                     FontSize =9
                     TabIndex =1
                     BorderColor =6108695
+                    ForeColor =0
                     Name ="ATFDate"
                     ControlSource ="ATFDate"
                     Format ="Short Date"
@@ -183,7 +178,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =60
@@ -211,6 +205,7 @@ Begin Report
                     FontSize =9
                     TabIndex =2
                     BorderColor =6108695
+                    ForeColor =0
                     Name ="LPAFDate"
                     ControlSource ="LPAFDate"
                     Format ="Short Date"
@@ -219,7 +214,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4980
@@ -247,7 +241,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =996
                     LayoutCachedTop =300
                     LayoutCachedWidth =3300
@@ -275,7 +268,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =300
                     LayoutCachedWidth =996
@@ -303,7 +295,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =4980
                     LayoutCachedTop =300
                     LayoutCachedWidth =5916
@@ -329,7 +320,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =4425
                     LayoutCachedTop =300
                     LayoutCachedWidth =4980
@@ -356,7 +346,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =3900
                     LayoutCachedTop =300
                     LayoutCachedWidth =4425
@@ -380,6 +369,7 @@ Begin Report
                     Width =555
                     FontSize =9
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="BDEXname"
                     ControlSource ="BDEX"
                     StatusBarText ="Required - The BDEX (Salesperson) for the Client"
@@ -392,7 +382,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4425
                     LayoutCachedTop =540
@@ -416,6 +405,7 @@ Begin Report
                     FontSize =9
                     TabIndex =4
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Combo383"
                     ControlSource ="NumOfUnits"
                     StatusBarText ="Required - The BDEX (Salesperson) for the Client"
@@ -428,7 +418,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =3900
                     LayoutCachedTop =540
@@ -452,6 +441,7 @@ Begin Report
                     FontSize =9
                     TabIndex =3
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="MLIDName"
                     ControlSource ="MLNo"
                     StatusBarText ="deal id"
@@ -461,7 +451,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =996
                     LayoutCachedTop =540
@@ -487,7 +476,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =3300
                     LayoutCachedTop =300
                     LayoutCachedWidth =3900
@@ -512,6 +500,7 @@ Begin Report
                     FontSize =9
                     TabIndex =5
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Text5"
                     ControlSource ="NumofGroups"
                     StatusBarText ="Required - The BDEX (Salesperson) for the Client"
@@ -524,7 +513,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =3300
                     LayoutCachedTop =540
@@ -548,13 +536,13 @@ Begin Report
                     FontSize =9
                     TabIndex =6
                     BorderColor =6108695
+                    ForeColor =0
                     Name ="Text6"
                     ControlSource ="[Assignee_Bank]"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =5916
@@ -580,12 +568,12 @@ Begin Report
                     FontSize =9
                     TabIndex =7
                     BorderColor =6108695
+                    ForeColor =0
                     Name ="Text8"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =7056
@@ -614,7 +602,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =7056
                     LayoutCachedTop =300
                     LayoutCachedWidth =8035
@@ -643,7 +630,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5916
                     LayoutCachedTop =300
@@ -670,7 +656,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =9150
                     LayoutCachedTop =300
                     LayoutCachedWidth =10635
@@ -696,6 +681,7 @@ Begin Report
                     FontSize =9
                     TabIndex =9
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Text38"
                     ControlSource ="=DSum(\"TotalGroupOEC\",\"vw_OEC_Rents_LRF_Cost\",\"SchId=\" & [SchID])"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -709,7 +695,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =9150
                     LayoutCachedTop =540
@@ -734,6 +719,7 @@ Begin Report
                     FontSize =9
                     TabIndex =10
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Text40"
                     ControlSource ="SFDCType"
                     StatusBarText ="Required - The BDEX (Salesperson) for the Client"
@@ -746,7 +732,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8040
                     LayoutCachedTop =540
@@ -772,7 +757,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =8040
                     LayoutCachedTop =300
                     LayoutCachedWidth =9150
@@ -798,6 +782,7 @@ Begin Report
                     FontSize =9
                     TabIndex =11
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Text42"
                     ControlSource ="=IIf(DSum(\"UTASyndGroup\",\"vw_OEC_Rents_LRF_Cost\",\"SchId=\" & [SchID])>0,DSu"
                         "m(\"UTASyndGroup\",\"vw_OEC_Rents_LRF_Cost\",\"SchId=\" & [SchID]),DSum(\"UTAPro"
@@ -813,7 +798,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10635
                     LayoutCachedTop =540
@@ -840,7 +824,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =10635
                     LayoutCachedTop =300
                     LayoutCachedWidth =11520
@@ -861,9 +844,9 @@ Begin Report
                     Height =304
                     FontWeight =700
                     BorderColor =7500402
+                    ForeColor =0
                     Name ="Label1"
                     Caption ="Lease Origination"
-                    GridlineColor =10921638
                     LayoutCachedWidth =11523
                     LayoutCachedHeight =304
                     BackThemeColorIndex =-1
@@ -885,7 +868,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =1140
                     LayoutCachedWidth =924
@@ -909,6 +891,7 @@ Begin Report
                     FontSize =9
                     TabIndex =12
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="LesseeName"
                     ControlSource ="CompanyName"
                     StatusBarText ="Also enter Short Name Nm for Reports - it is required."
@@ -918,7 +901,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =924
                     LayoutCachedTop =1140
@@ -945,6 +927,7 @@ Begin Report
                     FontSize =9
                     TabIndex =13
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="CoLesseeName"
                     ControlSource ="=IIf(Nz([CoLesseeID],0)>0,[CoLessee],Null)"
                     StatusBarText ="Also enter Short Name Nm for Reports - it is required."
@@ -954,7 +937,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =924
                     LayoutCachedTop =1410
@@ -977,9 +959,9 @@ Begin Report
                     Height =304
                     FontWeight =700
                     BorderColor =7500402
+                    ForeColor =0
                     Name ="Label10"
                     Caption ="Lessee Information"
-                    GridlineColor =10921638
                     LayoutCachedTop =825
                     LayoutCachedWidth =11448
                     LayoutCachedHeight =1129
@@ -1002,7 +984,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =5244
                     LayoutCachedTop =1140
                     LayoutCachedWidth =5820
@@ -1025,6 +1006,7 @@ Begin Report
                     FontSize =9
                     TabIndex =14
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="TaxID"
                     ControlSource ="clientTaxID"
                     StatusBarText ="Also enter Short Name Nm for Reports - it is required."
@@ -1034,7 +1016,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5820
                     LayoutCachedTop =1140
@@ -1060,6 +1041,7 @@ Begin Report
                     FontSize =9
                     TabIndex =15
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Text14"
                     ControlSource ="=IIf(Nz([CoLesseeID],0)>0,DLookUp(\"clientTaxID\",\"Clients\",\"ClientId=\" & [C"
                         "oLesseeID]),Null)"
@@ -1070,7 +1052,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5820
                     LayoutCachedTop =1410
@@ -1096,7 +1077,6 @@ Begin Report
                     SourceObject ="Report.ATF_Report_GuarantorsActive"
                     LinkChildFields ="FAID"
                     LinkMasterFields ="FAID"
-                    GridlineColor =10921638
 
                     LayoutCachedTop =1919
                     LayoutCachedWidth =11760
@@ -1121,7 +1101,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedTop =1410
@@ -1154,7 +1133,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5244
                     LayoutCachedTop =1410
@@ -1180,7 +1158,6 @@ Begin Report
                     LinkChildFields ="SCHID"
                     LinkMasterFields ="SCHID"
                     EventProcPrefix ="Report_ATF_Report_ContactsActive"
-                    GridlineColor =10921638
 
                     LayoutCachedTop =2143
                     LayoutCachedWidth =11760
@@ -1196,7 +1173,6 @@ Begin Report
                     SourceObject ="Report.ATF_Report_CoLesseeActive"
                     LinkChildFields ="ScheduleID"
                     LinkMasterFields ="SchID"
-                    GridlineColor =10921638
 
                     LayoutCachedTop =1695
                     LayoutCachedWidth =11760
@@ -1212,6 +1188,7 @@ Begin Report
                     FontSize =8
                     TabIndex =21
                     BorderColor =6108695
+                    ForeColor =0
                     Name ="Text46"
                     ControlSource ="=Now()"
                     Format ="General Date"
@@ -1219,7 +1196,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =7245
@@ -1258,7 +1234,6 @@ Begin Report
                     SourceObject ="Report.ATF_Report_StructureActive"
                     LinkChildFields ="SGrpID"
                     LinkMasterFields ="GroupID"
-                    GridlineColor =10921638
 
                     LayoutCachedWidth =11745
                     LayoutCachedHeight =1364
@@ -1283,7 +1258,6 @@ Begin Report
                     SourceObject ="Report.ATF_Report_BillingActive"
                     LinkChildFields ="SCHID"
                     LinkMasterFields ="SCHID"
-                    GridlineColor =10921638
 
                     LayoutCachedTop =45
                     LayoutCachedWidth =11745
@@ -1311,7 +1285,6 @@ Begin Report
                     SourceObject ="Report.ATF_Report_SchNotesActive"
                     LinkChildFields ="SchID"
                     LinkMasterFields ="SchID"
-                    GridlineColor =10921638
 
                     LayoutCachedTop =315
                     LayoutCachedWidth =11745
@@ -1328,7 +1301,6 @@ Begin Report
                     SourceObject ="Report.ATf_Report_ScheduleSumsActive"
                     LinkChildFields ="SCHID"
                     LinkMasterFields ="SCHID"
-                    GridlineColor =10921638
 
                     LayoutCachedTop =15
                     LayoutCachedWidth =11745
@@ -1354,6 +1326,7 @@ Begin Report
                     Width =1260
                     FontSize =9
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="ATFID"
                     ControlSource ="ATFID"
                     StatusBarText ="deal id"
@@ -1363,7 +1336,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =6435
                     LayoutCachedWidth =7695
@@ -1388,6 +1360,7 @@ Begin Report
                     FontSize =9
                     TabIndex =1
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="Text33"
                     ControlSource ="schID"
                     StatusBarText ="deal id"
@@ -1397,7 +1370,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4935
                     LayoutCachedWidth =6195
@@ -1420,8 +1392,11 @@ Begin Report
                     Width =3600
                     FontSize =9
                     TabIndex =2
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Text66"
                     ControlSource ="=\"Page \" & [Page] & \" of \" & [Pages]"
+                    GridlineColor =0
 
                     LayoutCachedLeft =7890
                     LayoutCachedWidth =11490

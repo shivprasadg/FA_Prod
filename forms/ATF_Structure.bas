@@ -6366,9 +6366,9 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =1920
-                    Top =1005
+                    Top =1008
                     Width =1685
-                    Height =255
+                    Height =252
                     ColumnOrder =7
                     FontSize =9
                     TabIndex =8
@@ -6384,7 +6384,7 @@ Begin Form
                     BottomPadding =0
 
                     LayoutCachedLeft =1920
-                    LayoutCachedTop =1005
+                    LayoutCachedTop =1008
                     LayoutCachedWidth =3605
                     LayoutCachedHeight =1260
                     LayoutGroup =2
@@ -6515,9 +6515,9 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =0
                     IMESentenceMode =3
-                    Left =15
+                    Left =12
                     Top =480
-                    Width =907
+                    Width =912
                     ColumnOrder =1
                     FontSize =9
                     TabIndex =1
@@ -6534,9 +6534,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =15
 
-                    LayoutCachedLeft =15
+                    LayoutCachedLeft =12
                     LayoutCachedTop =480
-                    LayoutCachedWidth =922
+                    LayoutCachedWidth =924
                     LayoutCachedHeight =720
                     LayoutGroup =3
                     BackThemeColorIndex =-1
@@ -6550,7 +6550,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =87
                     TextFontFamily =0
-                    Left =915
+                    Left =936
                     Top =480
                     Width =2640
                     Height =240
@@ -6605,9 +6605,9 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =915
+                    LayoutCachedLeft =936
                     LayoutCachedTop =480
-                    LayoutCachedWidth =3555
+                    LayoutCachedWidth =3576
                     LayoutCachedHeight =720
                     PictureCaptionArrangement =4
                     ColumnStart =1
@@ -6680,8 +6680,8 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =18585
-                            Width =915
+                            Left =18588
+                            Width =912
                             Height =240
                             FontSize =8
                             Name ="Label427"
@@ -6691,7 +6691,7 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =18585
+                            LayoutCachedLeft =18588
                             LayoutCachedWidth =19500
                             LayoutCachedHeight =240
                             ColumnStart =14
@@ -6713,7 +6713,7 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =18045
+                    Left =18048
                     Width =540
                     ColumnOrder =8
                     FontSize =9
@@ -6728,8 +6728,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =18045
-                    LayoutCachedWidth =18585
+                    LayoutCachedLeft =18048
+                    LayoutCachedWidth =18588
                     LayoutCachedHeight =240
                     ColumnStart =13
                     ColumnEnd =13
@@ -6744,8 +6744,8 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =17190
-                            Width =855
+                            Left =17196
+                            Width =852
                             Height =240
                             FontSize =8
                             Name ="Label376"
@@ -6755,8 +6755,8 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =17190
-                            LayoutCachedWidth =18045
+                            LayoutCachedLeft =17196
+                            LayoutCachedWidth =18048
                             LayoutCachedHeight =240
                             ColumnStart =12
                             ColumnEnd =12
@@ -6777,7 +6777,7 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =16650
+                    Left =16656
                     Width =540
                     ColumnOrder =7
                     FontSize =9
@@ -6792,8 +6792,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =16650
-                    LayoutCachedWidth =17190
+                    LayoutCachedLeft =16656
+                    LayoutCachedWidth =17196
                     LayoutCachedHeight =240
                     ColumnStart =11
                     ColumnEnd =11
@@ -6872,8 +6872,8 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =14505
-                            Width =795
+                            Left =14508
+                            Width =792
                             Height =240
                             FontSize =8
                             Name ="Label251"
@@ -6883,7 +6883,7 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =14505
+                            LayoutCachedLeft =14508
                             LayoutCachedWidth =15300
                             LayoutCachedHeight =240
                             ColumnStart =8
@@ -6905,8 +6905,8 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =12630
-                    Width =930
+                    Left =12624
+                    Width =936
                     ColumnOrder =4
                     FontSize =9
                     TabIndex =2
@@ -6923,7 +6923,7 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =12630
+                    LayoutCachedLeft =12624
                     LayoutCachedWidth =13560
                     LayoutCachedHeight =240
                     ColumnStart =5
@@ -6939,8 +6939,8 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =12195
-                            Width =435
+                            Left =12192
+                            Width =432
                             Height =240
                             FontSize =8
                             Name ="Label110"
@@ -6950,8 +6950,8 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =12195
-                            LayoutCachedWidth =12630
+                            LayoutCachedLeft =12192
+                            LayoutCachedWidth =12624
                             LayoutCachedHeight =240
                             ColumnStart =4
                             ColumnEnd =4
@@ -6972,7 +6972,7 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =11655
+                    Left =11652
                     Width =540
                     ColumnOrder =3
                     FontSize =9
@@ -6990,8 +6990,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =11655
-                    LayoutCachedWidth =12195
+                    LayoutCachedLeft =11652
+                    LayoutCachedWidth =12192
                     LayoutCachedHeight =240
                     ColumnStart =3
                     ColumnEnd =3
@@ -7006,7 +7006,7 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =11145
+                            Left =11148
                             Width =504
                             Height =240
                             FontSize =8
@@ -7017,8 +7017,8 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =11145
-                            LayoutCachedWidth =11649
+                            LayoutCachedLeft =11148
+                            LayoutCachedWidth =11652
                             LayoutCachedHeight =240
                             ColumnStart =2
                             ColumnEnd =2
@@ -7039,8 +7039,8 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13995
-                    Width =510
+                    Left =13992
+                    Width =516
                     ColumnOrder =5
                     FontSize =9
                     TabIndex =3
@@ -7054,8 +7054,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =13995
-                    LayoutCachedWidth =14505
+                    LayoutCachedLeft =13992
+                    LayoutCachedWidth =14508
                     LayoutCachedHeight =240
                     ColumnStart =7
                     ColumnEnd =7
@@ -7103,7 +7103,7 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10605
+                    Left =10608
                     Width =540
                     ColumnOrder =2
                     FontSize =9
@@ -7120,8 +7120,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10605
-                    LayoutCachedWidth =11145
+                    LayoutCachedLeft =10608
+                    LayoutCachedWidth =11148
                     LayoutCachedHeight =240
                     ColumnStart =1
                     ColumnEnd =1

@@ -121,11 +121,9 @@ Begin Report
                     FontSize =14
                     FontWeight =700
                     BorderColor =16777215
-                    ForeColor =4210752
                     Name ="Text133"
                     ControlSource ="=\"Summary Report \" & [OpenArgs]"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedTop =75
@@ -148,7 +146,6 @@ Begin Report
                     ForeColor =8355711
                     Name ="Label135"
                     ControlSource ="=\"As of: \" & Date()"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7620
                     LayoutCachedWidth =9930
@@ -164,7 +161,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =840
+            Height =852
             BreakLevel =1
             Name ="GroupHeader0"
             AlternateBackColor =14151142
@@ -172,13 +169,13 @@ Begin Report
             BackTint =20.0
             Begin
                 Begin Label
-                    Left =255
-                    Top =390
-                    Width =1485
-                    Height =450
+                    Left =252
+                    Top =396
+                    Width =1488
+                    Height =456
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label1"
                     Caption ="Account "
                     GroupTable =2
@@ -186,11 +183,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =255
-                    LayoutCachedTop =390
+                    LayoutCachedLeft =252
+                    LayoutCachedTop =396
                     LayoutCachedWidth =1740
-                    LayoutCachedHeight =840
+                    LayoutCachedHeight =852
                     LayoutGroup =1
                     BackThemeColorIndex =4
                     BackTint =40.0
@@ -200,12 +196,12 @@ Begin Report
                 Begin Label
                     TextAlign =1
                     Left =1740
-                    Top =390
+                    Top =396
                     Width =540
-                    Height =450
+                    Height =456
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label2"
                     Caption ="Units"
                     GroupTable =2
@@ -213,11 +209,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1740
-                    LayoutCachedTop =390
+                    LayoutCachedTop =396
                     LayoutCachedWidth =2280
-                    LayoutCachedHeight =840
+                    LayoutCachedHeight =852
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -228,42 +223,13 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =2280
-                    Top =390
-                    Width =1485
-                    Height =450
-                    FontSize =9
-                    FontWeight =700
-                    BorderColor =8355711
-                    Name ="Label3"
-                    Caption ="Total \015\012OEC"
-                    GroupTable =2
-                    LeftPadding =0
-                    TopPadding =0
-                    RightPadding =0
-                    BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2280
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =3765
-                    LayoutCachedHeight =840
-                    ColumnStart =2
-                    ColumnEnd =2
-                    LayoutGroup =1
-                    BackThemeColorIndex =4
-                    BackTint =40.0
-                    ForeTint =100.0
-                    GroupTable =2
-                End
-                Begin Label
-                    TextAlign =2
-                    Left =6750
-                    Top =390
+                    Left =6756
+                    Top =396
                     Width =600
-                    Height =450
+                    Height =456
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label53"
                     Caption ="PD \015\012% "
                     GroupTable =2
@@ -271,11 +237,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6750
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =7350
-                    LayoutCachedHeight =840
+                    LayoutCachedLeft =6756
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =7356
+                    LayoutCachedHeight =852
                     ColumnStart =6
                     ColumnEnd =6
                     LayoutGroup =1
@@ -286,13 +251,13 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =7350
-                    Top =390
+                    Left =7356
+                    Top =396
                     Width =600
-                    Height =450
+                    Height =456
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label57"
                     Caption ="UTA \015\012% "
                     GroupTable =2
@@ -300,11 +265,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =7350
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =7950
-                    LayoutCachedHeight =840
+                    LayoutCachedLeft =7356
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =7956
+                    LayoutCachedHeight =852
                     ColumnStart =7
                     ColumnEnd =7
                     LayoutGroup =1
@@ -315,13 +279,13 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =7950
-                    Top =390
-                    Width =855
-                    Height =450
+                    Left =7956
+                    Top =396
+                    Width =852
+                    Height =456
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label64"
                     Caption ="Total Fee % "
                     GroupTable =2
@@ -329,11 +293,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =7950
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =8805
-                    LayoutCachedHeight =840
+                    LayoutCachedLeft =7956
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =8808
+                    LayoutCachedHeight =852
                     ColumnStart =8
                     ColumnEnd =8
                     LayoutGroup =1
@@ -345,12 +308,12 @@ Begin Report
                 Begin Label
                     TextAlign =2
                     Left =10140
-                    Top =390
+                    Top =396
                     Width =1335
-                    Height =450
+                    Height =456
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label71"
                     Caption ="Total \015\012Fee $"
                     GroupTable =2
@@ -358,11 +321,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =10140
-                    LayoutCachedTop =390
+                    LayoutCachedTop =396
                     LayoutCachedWidth =11475
-                    LayoutCachedHeight =840
+                    LayoutCachedHeight =852
                     ColumnStart =10
                     ColumnEnd =10
                     LayoutGroup =1
@@ -377,12 +339,10 @@ Begin Report
                     Height =360
                     FontSize =12
                     BorderColor =16777215
-                    ForeColor =4210752
                     Name ="Text112"
                     ControlSource ="=\"  <b>\" & IIf([FundStatus]=\"Syndicated\",\"Active \",\"TMT \") & [FundStatus"
                         "] & \"</b> Schedules and Groups\""
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedWidth =11520
@@ -397,13 +357,14 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3765
-                    Top =390
-                    Width =1335
-                    Height =450
+                    Left =3768
+                    Top =396
+                    Width =1332
+                    Height =456
                     FontSize =9
                     FontWeight =700
                     TabIndex =1
+                    ForeColor =0
                     Name ="Label4"
                     ControlSource ="=IIf([FundStatus]=\"Syndicated\",\"Bank\",\"Target Bank\")"
                     GroupTable =2
@@ -411,12 +372,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =3765
-                    LayoutCachedTop =390
+                    LayoutCachedLeft =3768
+                    LayoutCachedTop =396
                     LayoutCachedWidth =5100
-                    LayoutCachedHeight =840
+                    LayoutCachedHeight =852
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -427,19 +387,50 @@ Begin Report
                     BorderShade =100.0
                     ForeTint =100.0
                     GroupTable =2
+                    Begin
+                        Begin Label
+                            TextAlign =2
+                            Left =2280
+                            Top =396
+                            Width =1485
+                            Height =456
+                            FontSize =9
+                            FontWeight =700
+                            ForeColor =0
+                            Name ="Label3"
+                            Caption ="Total \015\012OEC"
+                            GroupTable =2
+                            LeftPadding =0
+                            TopPadding =0
+                            RightPadding =0
+                            BottomPadding =0
+                            LayoutCachedLeft =2280
+                            LayoutCachedTop =396
+                            LayoutCachedWidth =3765
+                            LayoutCachedHeight =852
+                            ColumnStart =2
+                            ColumnEnd =2
+                            LayoutGroup =1
+                            BackThemeColorIndex =4
+                            BackTint =40.0
+                            ForeTint =100.0
+                            GroupTable =2
+                        End
+                    End
                 End
                 Begin TextBox
                     OldBorderStyle =0
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5925
-                    Top =390
-                    Width =825
-                    Height =450
+                    Left =5928
+                    Top =396
+                    Width =828
+                    Height =456
                     FontSize =9
                     FontWeight =700
                     TabIndex =3
+                    ForeColor =0
                     Name ="Label38"
                     ControlSource ="=IIf([FundStatus]=\"Syndicated\",\"Net Synd Fee\",\"Target Fee\")"
                     GroupTable =2
@@ -447,12 +438,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =5925
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =6750
-                    LayoutCachedHeight =840
+                    LayoutCachedLeft =5928
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =6756
+                    LayoutCachedHeight =852
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
@@ -470,12 +460,13 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =5100
-                    Top =390
+                    Top =396
                     Width =825
-                    Height =450
+                    Height =456
                     FontSize =9
                     FontWeight =700
                     TabIndex =2
+                    ForeColor =0
                     Name ="Text150"
                     ControlSource ="=IIf([FundStatus]=\"Syndicated\",\"Gross Fee\",\"Target Fee\")"
                     GroupTable =2
@@ -483,12 +474,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5100
-                    LayoutCachedTop =390
+                    LayoutCachedTop =396
                     LayoutCachedWidth =5925
-                    LayoutCachedHeight =840
+                    LayoutCachedHeight =852
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -502,13 +492,13 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =8805
-                    Top =390
-                    Width =1335
-                    Height =450
+                    Left =8808
+                    Top =396
+                    Width =1332
+                    Height =456
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label158"
                     Caption ="Gross \015\012Fee $"
                     GroupTable =2
@@ -516,11 +506,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =8805
-                    LayoutCachedTop =390
+                    LayoutCachedLeft =8808
+                    LayoutCachedTop =396
                     LayoutCachedWidth =10140
-                    LayoutCachedHeight =840
+                    LayoutCachedHeight =852
                     ColumnStart =9
                     ColumnEnd =9
                     LayoutGroup =1
@@ -549,8 +538,6 @@ Begin Report
                     ColumnWidth =1650
                     FontSize =9
                     TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="UnitCount"
                     ControlSource ="UnitCount"
                     Format ="Standard"
@@ -560,7 +547,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1740
                     LayoutCachedWidth =2280
@@ -584,8 +570,6 @@ Begin Report
                     ColumnWidth =1620
                     FontSize =9
                     TabIndex =2
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="OEC"
                     ControlSource ="OEC"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -595,7 +579,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2280
                     LayoutCachedWidth =3765
@@ -612,13 +595,11 @@ Begin Report
                 Begin TextBox
                     OldBorderStyle =0
                     IMESentenceMode =3
-                    Left =255
-                    Width =1485
+                    Left =252
+                    Width =1488
                     Height =255
                     ColumnWidth =1590
                     FontSize =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="AccountName"
                     ControlSource ="AccountName"
                     FontName ="Segoe UI"
@@ -627,9 +608,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =255
+                    LayoutCachedLeft =252
                     LayoutCachedWidth =1740
                     LayoutCachedHeight =255
                     RowStart =1
@@ -642,13 +622,11 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3765
-                    Width =1335
+                    Left =3768
+                    Width =1332
                     Height =255
                     FontSize =9
                     TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="TargetBank"
                     ControlSource ="TargetBank"
                     FontName ="Segoe UI"
@@ -657,9 +635,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =3765
+                    LayoutCachedLeft =3768
                     LayoutCachedWidth =5100
                     LayoutCachedHeight =255
                     RowStart =1
@@ -675,13 +652,11 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =5925
-                    Width =825
+                    Left =5928
+                    Width =828
                     Height =255
                     FontSize =9
                     TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="NetSyndFeePct"
                     ControlSource ="=[NetSyndFee]/[OEC]"
                     Format ="Percent"
@@ -691,10 +666,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =5925
-                    LayoutCachedWidth =6750
+                    LayoutCachedLeft =5928
+                    LayoutCachedWidth =6756
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -709,13 +683,11 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =6750
+                    Left =6756
                     Width =600
                     Height =255
                     FontSize =9
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text55"
                     ControlSource ="=[PDRent]/[OEC]"
                     Format ="Percent"
@@ -725,10 +697,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =6750
-                    LayoutCachedWidth =7350
+                    LayoutCachedLeft =6756
+                    LayoutCachedWidth =7356
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -743,13 +714,11 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =7350
+                    Left =7356
                     Width =600
                     Height =255
                     FontSize =9
                     TabIndex =7
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text58"
                     ControlSource ="=[UTA]/[OEC]"
                     Format ="Percent"
@@ -759,10 +728,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7350
-                    LayoutCachedWidth =7950
+                    LayoutCachedLeft =7356
+                    LayoutCachedWidth =7956
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -777,13 +745,11 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =7950
-                    Width =855
+                    Left =7956
+                    Width =852
                     Height =255
                     FontSize =9
                     TabIndex =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text65"
                     ControlSource ="=[TotalFee]/[OEC]"
                     Format ="Percent"
@@ -793,10 +759,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7950
-                    LayoutCachedWidth =8805
+                    LayoutCachedLeft =7956
+                    LayoutCachedWidth =8808
                     LayoutCachedHeight =255
                     RowStart =1
                     RowEnd =1
@@ -816,8 +781,6 @@ Begin Report
                     Height =255
                     FontSize =9
                     TabIndex =10
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text72"
                     ControlSource ="TotalFee"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -827,7 +790,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10140
                     LayoutCachedWidth =11475
@@ -851,8 +813,6 @@ Begin Report
                     Height =255
                     FontSize =9
                     TabIndex =4
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text136"
                     ControlSource ="=[SyndFeePlus]/[OEC]"
                     Format ="Percent"
@@ -862,7 +822,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5100
                     LayoutCachedWidth =5925
@@ -880,13 +839,11 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =8805
-                    Width =1335
+                    Left =8808
+                    Width =1332
                     Height =255
                     FontSize =9
                     TabIndex =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text152"
                     ControlSource ="=[SyndFeePlus]"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -896,9 +853,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =8805
+                    LayoutCachedLeft =8808
                     LayoutCachedWidth =10140
                     LayoutCachedHeight =255
                     RowStart =1
@@ -934,11 +890,8 @@ Begin Report
                     Height =270
                     FontSize =9
                     TabIndex =10
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text130"
                     ControlSource ="=[FundStatus] & \" Sub Totals →\""
-                    GridlineColor =10921638
 
                     LayoutCachedTop =50
                     LayoutCachedWidth =1815
@@ -951,12 +904,10 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =1740
-                    Top =15
+                    Top =12
                     Width =540
-                    Height =255
+                    Height =252
                     FontSize =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text78"
                     ControlSource ="=Sum([UnitCount])"
                     Format ="Standard"
@@ -966,12 +917,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1740
-                    LayoutCachedTop =15
+                    LayoutCachedTop =12
                     LayoutCachedWidth =2280
-                    LayoutCachedHeight =270
+                    LayoutCachedHeight =264
                     LayoutGroup =2
                     ThemeFontIndex =-1
                     GroupTable =8
@@ -983,13 +933,11 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =2280
-                    Top =15
+                    Top =12
                     Width =1485
-                    Height =255
+                    Height =252
                     FontSize =9
                     TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text79"
                     ControlSource ="=Sum([OEC])"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -999,12 +947,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2280
-                    LayoutCachedTop =15
+                    LayoutCachedTop =12
                     LayoutCachedWidth =3765
-                    LayoutCachedHeight =270
+                    LayoutCachedHeight =264
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -1017,14 +964,12 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3765
-                    Top =15
-                    Width =1335
-                    Height =255
+                    Left =3768
+                    Top =12
+                    Width =1332
+                    Height =252
                     FontSize =9
                     TabIndex =2
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text80"
                     ControlSource ="=\"\""
                     FontName ="Segoe UI"
@@ -1033,12 +978,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =3765
-                    LayoutCachedTop =15
+                    LayoutCachedLeft =3768
+                    LayoutCachedTop =12
                     LayoutCachedWidth =5100
-                    LayoutCachedHeight =270
+                    LayoutCachedHeight =264
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =2
@@ -1051,14 +995,12 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5925
-                    Top =15
-                    Width =825
-                    Height =255
+                    Left =5928
+                    Top =12
+                    Width =828
+                    Height =252
                     FontSize =9
                     TabIndex =4
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text81"
                     ControlSource ="=Sum([NetSyndFee])/Sum([OEC])"
                     Format ="Percent"
@@ -1068,12 +1010,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =5925
-                    LayoutCachedTop =15
-                    LayoutCachedWidth =6750
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =5928
+                    LayoutCachedTop =12
+                    LayoutCachedWidth =6756
+                    LayoutCachedHeight =264
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =2
@@ -1086,14 +1027,12 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6750
-                    Top =15
+                    Left =6756
+                    Top =12
                     Width =600
-                    Height =255
+                    Height =252
                     FontSize =9
                     TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text82"
                     ControlSource ="=Sum([PDRent])/Sum([OEC])"
                     Format ="Percent"
@@ -1103,12 +1042,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =6750
-                    LayoutCachedTop =15
-                    LayoutCachedWidth =7350
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =6756
+                    LayoutCachedTop =12
+                    LayoutCachedWidth =7356
+                    LayoutCachedHeight =264
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =2
@@ -1121,14 +1059,12 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7350
-                    Top =15
+                    Left =7356
+                    Top =12
                     Width =600
-                    Height =255
+                    Height =252
                     FontSize =9
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text83"
                     ControlSource ="=Sum([UTA])/Sum([OEC])"
                     Format ="Percent"
@@ -1138,12 +1074,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7350
-                    LayoutCachedTop =15
-                    LayoutCachedWidth =7950
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =7356
+                    LayoutCachedTop =12
+                    LayoutCachedWidth =7956
+                    LayoutCachedHeight =264
                     ColumnStart =6
                     ColumnEnd =6
                     LayoutGroup =2
@@ -1156,14 +1091,12 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7950
-                    Top =15
-                    Width =855
-                    Height =255
+                    Left =7956
+                    Top =12
+                    Width =852
+                    Height =252
                     FontSize =9
                     TabIndex =7
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text84"
                     ControlSource ="=Sum([TotalFee])/Sum([OEC])"
                     Format ="Percent"
@@ -1173,12 +1106,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7950
-                    LayoutCachedTop =15
-                    LayoutCachedWidth =8805
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =7956
+                    LayoutCachedTop =12
+                    LayoutCachedWidth =8808
+                    LayoutCachedHeight =264
                     ColumnStart =7
                     ColumnEnd =7
                     LayoutGroup =2
@@ -1192,13 +1124,11 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =10140
-                    Top =15
+                    Top =12
                     Width =1380
-                    Height =255
+                    Height =252
                     FontSize =9
                     TabIndex =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text85"
                     ControlSource ="=Sum([TotalFee])"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -1208,12 +1138,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10140
-                    LayoutCachedTop =15
+                    LayoutCachedTop =12
                     LayoutCachedWidth =11520
-                    LayoutCachedHeight =270
+                    LayoutCachedHeight =264
                     ColumnStart =9
                     ColumnEnd =9
                     LayoutGroup =2
@@ -1227,7 +1156,6 @@ Begin Report
                     Height =60
                     BorderColor =16777215
                     Name ="Box116"
-                    GridlineColor =10921638
                     LayoutCachedTop =270
                     LayoutCachedWidth =11520
                     LayoutCachedHeight =330
@@ -1243,7 +1171,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedWidth =11520
                     BorderTint =50.0
                 End
@@ -1254,13 +1181,11 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =5100
-                    Top =15
+                    Top =12
                     Width =825
-                    Height =255
+                    Height =252
                     FontSize =9
                     TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text147"
                     ControlSource ="=Sum([SyndFeePlus])/Sum([OEC])"
                     Format ="Percent"
@@ -1270,12 +1195,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5100
-                    LayoutCachedTop =15
+                    LayoutCachedTop =12
                     LayoutCachedWidth =5925
-                    LayoutCachedHeight =270
+                    LayoutCachedHeight =264
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =2
@@ -1288,14 +1212,12 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8805
-                    Top =15
-                    Width =1335
-                    Height =255
+                    Left =8808
+                    Top =12
+                    Width =1332
+                    Height =252
                     FontSize =9
                     TabIndex =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text160"
                     ControlSource ="=Sum([SyndFeePlus])"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -1305,12 +1227,11 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =8805
-                    LayoutCachedTop =15
+                    LayoutCachedLeft =8808
+                    LayoutCachedTop =12
                     LayoutCachedWidth =10140
-                    LayoutCachedHeight =270
+                    LayoutCachedHeight =264
                     ColumnStart =8
                     ColumnEnd =8
                     LayoutGroup =2
@@ -1341,8 +1262,6 @@ Begin Report
                     Height =255
                     FontSize =9
                     TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text117"
                     ControlSource ="=Sum([UnitCount])"
                     Format ="Standard"
@@ -1352,7 +1271,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1740
                     LayoutCachedTop =60
@@ -1374,8 +1292,6 @@ Begin Report
                     Height =255
                     FontSize =9
                     TabIndex =2
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text118"
                     ControlSource ="=Sum([OEC])"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -1385,7 +1301,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2280
                     LayoutCachedTop =60
@@ -1403,14 +1318,12 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3765
+                    Left =3768
                     Top =60
-                    Width =1335
+                    Width =1332
                     Height =255
                     FontSize =9
                     TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text119"
                     ControlSource ="=\"\""
                     FontName ="Segoe UI"
@@ -1419,9 +1332,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =3765
+                    LayoutCachedLeft =3768
                     LayoutCachedTop =60
                     LayoutCachedWidth =5100
                     LayoutCachedHeight =315
@@ -1437,14 +1349,12 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5925
+                    Left =5928
                     Top =60
-                    Width =825
+                    Width =828
                     Height =255
                     FontSize =9
                     TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text120"
                     ControlSource ="=Sum([NetSyndFee])/Sum([OEC])"
                     Format ="Percent"
@@ -1454,11 +1364,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =5925
+                    LayoutCachedLeft =5928
                     LayoutCachedTop =60
-                    LayoutCachedWidth =6750
+                    LayoutCachedWidth =6756
                     LayoutCachedHeight =315
                     ColumnStart =4
                     ColumnEnd =4
@@ -1472,14 +1381,12 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6750
+                    Left =6756
                     Top =60
                     Width =600
                     Height =255
                     FontSize =9
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text121"
                     ControlSource ="=Sum([PDRent])/Sum([OEC])"
                     Format ="Percent"
@@ -1489,11 +1396,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =6750
+                    LayoutCachedLeft =6756
                     LayoutCachedTop =60
-                    LayoutCachedWidth =7350
+                    LayoutCachedWidth =7356
                     LayoutCachedHeight =315
                     ColumnStart =5
                     ColumnEnd =5
@@ -1507,14 +1413,12 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7350
+                    Left =7356
                     Top =60
                     Width =600
                     Height =255
                     FontSize =9
                     TabIndex =7
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text122"
                     ControlSource ="=Sum([UTA])/Sum([OEC])"
                     Format ="Percent"
@@ -1524,11 +1428,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7350
+                    LayoutCachedLeft =7356
                     LayoutCachedTop =60
-                    LayoutCachedWidth =7950
+                    LayoutCachedWidth =7956
                     LayoutCachedHeight =315
                     ColumnStart =6
                     ColumnEnd =6
@@ -1542,14 +1445,12 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7950
+                    Left =7956
                     Top =60
-                    Width =855
+                    Width =852
                     Height =255
                     FontSize =9
                     TabIndex =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text123"
                     ControlSource ="=Sum([TotalFee])/Sum([OEC])"
                     Format ="Percent"
@@ -1559,11 +1460,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7950
+                    LayoutCachedLeft =7956
                     LayoutCachedTop =60
-                    LayoutCachedWidth =8805
+                    LayoutCachedWidth =8808
                     LayoutCachedHeight =315
                     ColumnStart =7
                     ColumnEnd =7
@@ -1583,8 +1483,6 @@ Begin Report
                     Height =255
                     FontSize =9
                     TabIndex =10
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text124"
                     ControlSource ="=Sum([TotalFee])"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -1594,7 +1492,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10140
                     LayoutCachedTop =60
@@ -1616,7 +1513,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedWidth =11520
                     BorderTint =75.0
                 End
@@ -1630,7 +1526,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedTop =60
                     LayoutCachedWidth =11520
                     LayoutCachedHeight =60
@@ -1646,11 +1541,8 @@ Begin Report
                     Width =1920
                     Height =259
                     FontSize =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text132"
                     ControlSource ="=\"Synd/ Forecast Totals →\""
-                    GridlineColor =10921638
 
                     LayoutCachedTop =60
                     LayoutCachedWidth =1920
@@ -1665,7 +1557,6 @@ Begin Report
                     TabIndex =11
                     Name ="TFRCompareSummary_Portfolio"
                     SourceObject ="Report.TFRCompareSummary_Portfolio"
-                    GridlineColor =10921638
 
                     LayoutCachedTop =360
                     LayoutCachedWidth =9960
@@ -1683,8 +1574,6 @@ Begin Report
                     Height =255
                     FontSize =9
                     TabIndex =4
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text144"
                     ControlSource ="=Sum([SyndFeePlus])/Sum([OEC])"
                     Format ="Percent"
@@ -1694,7 +1583,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5100
                     LayoutCachedTop =60
@@ -1712,14 +1600,12 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8805
+                    Left =8808
                     Top =60
-                    Width =1335
+                    Width =1332
                     Height =255
                     FontSize =9
                     TabIndex =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text163"
                     ControlSource ="=Sum([SyndFeePlus])"
                     Format ="$#,##0.00;($#,##0.00)"
@@ -1729,9 +1615,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =8805
+                    LayoutCachedLeft =8808
                     LayoutCachedTop =60
                     LayoutCachedWidth =10140
                     LayoutCachedHeight =315

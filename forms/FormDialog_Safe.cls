@@ -444,7 +444,7 @@ End Property
 ' Open Form Event
 '-----------------------------------------------------------------------------
 Private Sub Form_Open(Cancel As Integer)
-    txtMessage.borderStyle = 0 'No border by default
+    txtMessage.BorderStyle = 0 'No border by default
     txtMessage.ScrollBars = 0  'No scrollbar by default
     m_Result = 0
     m_IsRichText = False
@@ -717,7 +717,7 @@ Private Sub Redimension()
         txtMessage.Height = txtMessage.Height - 5
         txtMessage.BackColor = Section("Detail").BackColor
         txtMessage.Enabled = True
-        txtMessage.borderStyle = 1 'show border
+        txtMessage.BorderStyle = 1 'show border
         txtMessage.ScrollBars = 2  'show scrollbar
         txtMessage.SetFocus
     End If

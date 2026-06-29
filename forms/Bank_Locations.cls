@@ -148,7 +148,7 @@ Public Sub SetLocations()
     On Error GoTo Form_Current_Error
 
     Dim ClientX, ClientGroupx As Long
-    ClientX = Nz(Me.Parent.BankId, 0)
+    ClientX = Nz(Me.Parent.BankID, 0)
     'ClientGroupx = Nz(Me.Parent.ClientGroupID, 0)
 
     SQLz = "SELECT L.LocationID, L.LocationType AS Type, L.LocationName AS Name, L.LState AS State, Count(U.UnitID) AS Units"
@@ -167,8 +167,8 @@ Public Sub SetLocations()
     Exit Sub
 Form_Current_Error:
     Dim m      As String
-    If DCount("LocationID", "Locations", "ClientRef=" & Me.Parent.BankId & "") = 0 Then
-        SQLz = "Insert into Locations (ClientRef, LocationType, LocationName, Locationsn, LocationStreet) Select " & Me.Parent.BankId & ",'Billing','Billing','Billing','" & Me.Parent.BankName & "';"
+    If DCount("LocationID", "Locations", "ClientRef=" & Me.Parent.BankID & "") = 0 Then
+        SQLz = "Insert into Locations (ClientRef, LocationType, LocationName, Locationsn, LocationStreet) Select " & Me.Parent.BankID & ",'Billing','Billing','Billing','" & Me.Parent.BankName & "';"
         m = "Error! But Don't Panic, Atlaas Knows what to do..." & vbNewLine
         m = m & "There isn't a 'Billing/Remit Address' assigend to Bank:" & Me.Parent.BankName & vbNewLine
         m = m & "Atlaas Core will assign a Remit Address for you." & vbNewLine & vbNewLine & "Please Press 'OK'"

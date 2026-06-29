@@ -49,5 +49,5 @@ Private Sub DelDealBtn_Click()
 End Sub
 
 Private Sub ClientViewFormBtn_Click()
-    DoCmd.OpenForm "ClientsView", , , "[clientID]=" & Me.clientRef
+    DoCmd.OpenForm "ClientsView", , , "[clientID]=" & Me.clientREF
 End Sub

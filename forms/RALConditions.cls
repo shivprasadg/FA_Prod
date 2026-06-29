@@ -8,7 +8,7 @@ Dim ii         As Integer
 Dim Msgx, ResposeX As String
 
 Private Sub AddNew_Click()
-If DCount("BankID", "RALParagraphs", "BankID=" & Nz(Me.BankId, 0) & "") > 0 Then
+If DCount("BankID", "RALParagraphs", "BankID=" & Nz(Me.BankID, 0) & "") > 0 Then
         MsgBox "There already are RAL Paragraphs attached to this Bank", vbCritical, "There are RAL Paragraphs "
 Exit Sub
 End If
@@ -47,7 +47,7 @@ End If
     SQLz = SQLz & ",Paragraph8"
     SQLz = SQLz & ",Paragraph9"
     SQLz = SQLz & ",Paragraph10"
-    SQLz = SQLz & "," & Me.Parent.BankId & ""
+    SQLz = SQLz & "," & Me.Parent.BankID & ""
     SQLz = SQLz & ",VechicleType"
     SQLz = SQLz & ",'" & FAUserName & "'"
     SQLz = SQLz & ",'" & Date & "'"
@@ -79,7 +79,7 @@ End Sub
 
 Public Sub SetRAL()
  Dim Lockx  As Boolean
- Me.Form.RecordSource = "Select * From RALParagraphs Where BankID=" & Me.Parent.BankId & ";"
+ Me.Form.RecordSource = "Select * From RALParagraphs Where BankID=" & Me.Parent.BankID & ";"
     If FAUserAccessLevel < 15 Then Lockx = True Else Lockx = False
     For ii = 1 To 10
         Me("Paragraph" & ii).Locked = Lockx
@@ -128,7 +128,7 @@ Private Sub RALReportView_Click()
     Dim ReportX As String
     Dim SQLy   As String
     On Error Resume Next
-    UnitIDx = Nz(DLookup("UnitId", "Units", "UnitStatus = 'A' AND UnitType ='" & Me.VechicleType & "' AND BankID=" & Me.BankId & ""), 0)
+    UnitIDx = Nz(DLookup("UnitId", "Units", "UnitStatus = 'A' AND UnitType ='" & Me.VechicleType & "' AND BankID=" & Me.BankID & ""), 0)
     On Error GoTo 0
     If UnitIDx = 0 Then
         MsgBox "There are no active units for this Bank", vbCritical, "No Active Units"

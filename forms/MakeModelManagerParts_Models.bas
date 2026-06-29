@@ -150,15 +150,15 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =2
-                    Left =165
+                    Left =168
                     Top =180
-                    Width =2595
+                    Width =2592
                     Height =240
                     FontSize =10
                     Name ="Label3"
                     Caption ="                           Make"
                     GroupTable =9
-                    LayoutCachedLeft =165
+                    LayoutCachedLeft =168
                     LayoutCachedTop =180
                     LayoutCachedWidth =2760
                     LayoutCachedHeight =420
@@ -173,18 +173,18 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =2
-                    Left =7830
+                    Left =7860
                     Top =180
-                    Width =645
+                    Width =648
                     Height =240
                     FontSize =10
                     ForeColor =8872517
                     Name ="Label148"
                     Caption ="In Use"
                     GroupTable =9
-                    LayoutCachedLeft =7830
+                    LayoutCachedLeft =7860
                     LayoutCachedTop =180
-                    LayoutCachedWidth =8475
+                    LayoutCachedWidth =8508
                     LayoutCachedHeight =420
                     ColumnStart =3
                     ColumnEnd =3
@@ -196,14 +196,14 @@ Begin Form
                     GroupTable =9
                 End
                 Begin EmptyCell
-                    Left =8535
+                    Left =8568
                     Top =180
-                    Width =615
+                    Width =612
                     Name ="EmptyCell201"
                     GroupTable =9
-                    LayoutCachedLeft =8535
+                    LayoutCachedLeft =8568
                     LayoutCachedTop =180
-                    LayoutCachedWidth =9150
+                    LayoutCachedWidth =9180
                     LayoutCachedHeight =420
                     ColumnStart =4
                     ColumnEnd =4
@@ -211,14 +211,14 @@ Begin Form
                     GroupTable =9
                 End
                 Begin EmptyCell
-                    Left =11340
+                    Left =11400
                     Top =180
-                    Width =1095
+                    Width =1092
                     Name ="EmptyCell212"
                     GroupTable =9
-                    LayoutCachedLeft =11340
+                    LayoutCachedLeft =11400
                     LayoutCachedTop =180
-                    LayoutCachedWidth =12435
+                    LayoutCachedWidth =12492
                     LayoutCachedHeight =420
                     ColumnStart =7
                     ColumnEnd =7
@@ -226,14 +226,14 @@ Begin Form
                     GroupTable =9
                 End
                 Begin EmptyCell
-                    Left =10710
+                    Left =10752
                     Top =180
-                    Width =570
+                    Width =576
                     Name ="EmptyCell214"
                     GroupTable =9
-                    LayoutCachedLeft =10710
+                    LayoutCachedLeft =10752
                     LayoutCachedTop =180
-                    LayoutCachedWidth =11280
+                    LayoutCachedWidth =11328
                     LayoutCachedHeight =420
                     ColumnStart =6
                     ColumnEnd =6
@@ -241,13 +241,13 @@ Begin Form
                     GroupTable =9
                 End
                 Begin EmptyCell
-                    Left =9210
+                    Left =9252
                     Top =180
                     Name ="EmptyCell216"
                     GroupTable =9
-                    LayoutCachedLeft =9210
+                    LayoutCachedLeft =9252
                     LayoutCachedTop =180
-                    LayoutCachedWidth =10650
+                    LayoutCachedWidth =10692
                     LayoutCachedHeight =420
                     ColumnStart =5
                     ColumnEnd =5
@@ -261,18 +261,18 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5505
+                    Left =5532
                     Top =180
-                    Width =2265
+                    Width =2268
                     FontSize =10
                     BorderColor =0
                     Name ="AddLabel1"
                     ControlSource ="=IIf(IsNull([ChildPartModelID]),\"▼Select A Type▼\",\"Part Type\")"
                     GroupTable =9
 
-                    LayoutCachedLeft =5505
+                    LayoutCachedLeft =5532
                     LayoutCachedTop =180
-                    LayoutCachedWidth =7770
+                    LayoutCachedWidth =7800
                     LayoutCachedHeight =420
                     ColumnStart =2
                     ColumnEnd =2
@@ -287,17 +287,17 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =2820
+                            Left =2832
                             Top =180
-                            Width =2625
+                            Width =2628
                             Height =240
                             FontSize =10
                             Name ="Label147"
                             Caption ="Model"
                             GroupTable =9
-                            LayoutCachedLeft =2820
+                            LayoutCachedLeft =2832
                             LayoutCachedTop =180
-                            LayoutCachedWidth =5445
+                            LayoutCachedWidth =5460
                             LayoutCachedHeight =420
                             ColumnStart =1
                             ColumnEnd =1
@@ -315,7 +315,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =315
+            Height =318
             Name ="Detail"
             AlternateBackColor =16249583
             Begin
@@ -324,10 +324,10 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5505
-                    Top =30
-                    Width =2265
-                    Height =255
+                    Left =5532
+                    Top =36
+                    Width =2268
+                    Height =252
                     FontSize =9
                     TabIndex =3
                     BorderColor =8355711
@@ -337,10 +337,10 @@ Begin Form
                     RowSource ="SELECT LookUp_ChildPartType.ChildPartType FROM LookUp_ChildPartType;"
                     GroupTable =9
 
-                    LayoutCachedLeft =5505
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =7770
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =5532
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7800
+                    LayoutCachedHeight =288
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -353,10 +353,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =11340
-                    Top =30
-                    Width =1095
-                    Height =255
+                    Left =11400
+                    Top =36
+                    Width =1092
+                    Height =252
                     FontSize =8
                     TabIndex =8
                     Name ="DeletedMe"
@@ -364,10 +364,10 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =9
 
-                    LayoutCachedLeft =11340
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12435
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =11400
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12492
+                    LayoutCachedHeight =288
                     RowStart =1
                     RowEnd =1
                     ColumnStart =7
@@ -394,10 +394,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =165
-                    Top =30
-                    Width =2595
-                    Height =255
+                    Left =168
+                    Top =36
+                    Width =2592
+                    Height =252
                     FontSize =9
                     TabIndex =1
                     BorderColor =8355711
@@ -405,10 +405,10 @@ Begin Form
                     ControlSource ="=IIf(IsNull([ChildPartModelID]),\"Type New Model Here►\",[ChildPartmake])"
                     GroupTable =9
 
-                    LayoutCachedLeft =165
-                    LayoutCachedTop =30
+                    LayoutCachedLeft =168
+                    LayoutCachedTop =36
                     LayoutCachedWidth =2760
-                    LayoutCachedHeight =285
+                    LayoutCachedHeight =288
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -425,20 +425,20 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8535
-                    Top =30
-                    Width =615
-                    Height =255
+                    Left =8568
+                    Top =36
+                    Width =612
+                    Height =252
                     FontSize =9
                     TabIndex =5
                     Name ="MakeID"
                     ControlSource ="ChildPartMakeID"
                     GroupTable =9
 
-                    LayoutCachedLeft =8535
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =9150
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =8568
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9180
+                    LayoutCachedHeight =288
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -454,9 +454,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =9210
-                    Top =30
-                    Height =255
+                    Left =9252
+                    Top =36
+                    Height =252
                     FontSize =10
                     TabIndex =6
                     Name ="SaveUpdate"
@@ -464,10 +464,10 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =9
 
-                    LayoutCachedLeft =9210
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =10650
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =9252
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =10692
+                    LayoutCachedHeight =288
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -495,20 +495,20 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10710
-                    Top =30
-                    Width =570
-                    Height =255
+                    Left =10752
+                    Top =36
+                    Width =576
+                    Height =252
                     FontSize =9
                     TabIndex =7
                     Name ="ChildPartModelID"
                     ControlSource ="ChildPartModelID"
                     GroupTable =9
 
-                    LayoutCachedLeft =10710
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =11280
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =10752
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =11328
+                    LayoutCachedHeight =288
                     RowStart =1
                     RowEnd =1
                     ColumnStart =6
@@ -527,10 +527,10 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2820
-                    Top =30
-                    Width =2625
-                    Height =255
+                    Left =2832
+                    Top =36
+                    Width =2628
+                    Height =252
                     FontSize =9
                     TabIndex =2
                     BorderColor =8355711
@@ -539,10 +539,10 @@ Begin Form
                     OnChange ="[Event Procedure]"
                     GroupTable =9
 
-                    LayoutCachedLeft =2820
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =5445
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =2832
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =5460
+                    LayoutCachedHeight =288
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -587,10 +587,10 @@ Begin Form
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7830
-                    Top =30
-                    Width =645
-                    Height =255
+                    Left =7860
+                    Top =36
+                    Width =648
+                    Height =252
                     FontSize =9
                     TabIndex =4
                     ForeColor =8872517
@@ -599,10 +599,10 @@ Begin Form
                     Format ="Standard"
                     GroupTable =9
 
-                    LayoutCachedLeft =7830
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =8475
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =7860
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =8508
+                    LayoutCachedHeight =288
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3

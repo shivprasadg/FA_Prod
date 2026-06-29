@@ -834,6 +834,7 @@ Begin Form
                     Height =6090
                     FontSize =9
                     TabIndex =6
+                    ForeColor =0
                     Name ="LocationList"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT LocationID, LocationType AS Type, LocationName AS Name, LState AS State, "
@@ -843,7 +844,6 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     LeftPadding =60
                     RightPadding =75
-                    GridlineColor =10921638
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =90
@@ -1240,6 +1240,7 @@ Begin Form
                     Height =5055
                     FontSize =8
                     TabIndex =8
+                    ForeColor =0
                     Name ="UnitsList"
                     RowSourceType ="Table/Query"
                     RowSource ="Select AssetID, MLNO, Schedule, [Unit#], Desc From UnitsParkedLocations Where Ga"
@@ -1248,7 +1249,6 @@ Begin Form
                     OnDblClick ="[Event Procedure]"
                     LeftPadding =60
                     RightPadding =75
-                    GridlineColor =10921638
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =12960
@@ -1518,12 +1518,10 @@ Begin Form
                     Width =7815
                     Height =2760
                     TabIndex =22
-                    BorderColor =10921638
                     Name ="LocationTax"
                     SourceObject ="Form.LocationTax"
                     LinkChildFields ="LocationID"
                     LinkMasterFields ="LocationID"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4710
                     LayoutCachedTop =3750

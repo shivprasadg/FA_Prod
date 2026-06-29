@@ -9,7 +9,7 @@ Private Sub ExportRecallList_Click()
     SQLz = "SELECT Company, RecallNum, Type, Description, NoticeDate, UnitNumber, UnitVin, LocationName, ActionNeeded, ActionCompleted, EngSerialNo " & _
            "INTO TempRecall From RecallExportReport " & _
            "WHERE Company <> '' "
-    If Me.RecallNo & "test" <> "test" Then SQLz = SQLz & "And RecallNum ='" & Me.RecallNo.Column(1) & "' "
+    If Me.recallno & "test" <> "test" Then SQLz = SQLz & "And RecallNum ='" & Me.recallno.Column(1) & "' "
     If Me.Client & "test" <> "test" Then SQLz = SQLz & "And ClientId =" & Me.Client & " "
     If Me.clientCity & "test" <> "test" Then SQLz = SQLz & "And LocationID =" & Me.clientCity & " "
     SQLz = SQLz & " Order By NoticeDate Desc, LocationName ;"
@@ -20,7 +20,7 @@ Private Sub ExportRecallList_Click()
     DoCmd.SetWarnings True
     msg1 = msg1 & "<html><body><p style='color:Navy;font-family:Segoe UI;font-size:20px;'><b>Recall List</b></p>"
     msg1 = msg1 & "<p style='font-family:Segoe UI;font-size:15px'>"
-    msg1 = msg1 & "Subject:<b>&#160;&#160;&#160;&#160;&#160;Recall List RE: " & Me.Client.Column(1) & " - Recall: " & Me.RecallNo.Column(1) & "</b><br />"
+    msg1 = msg1 & "Subject:<b>&#160;&#160;&#160;&#160;&#160;Recall List RE: " & Me.Client.Column(1) & " - Recall: " & Me.recallno.Column(1) & "</b><br />"
     msg1 = msg1 & "Priority:<b>&#160;&#160;&#160;&#160;&#160;&#160;High </b><br/><br/>"
     msg1 = msg1 & "Dear  <br/><br/>The following units are part of a recall notice<br /><br />"
     msg1 = msg1 & "Client: <B>" & Me.Client.Column(1) & "</B><br />"
@@ -31,7 +31,7 @@ Private Sub ExportRecallList_Click()
     msg1 = msg1 & "<p style='font-family:Segoe UI;font-size:9px'><br/>[End Msg]"
     msg1 = msg1 & "Email Created: " & Date & " (via Fleet Advantage Data Manager).<br/><br />"
     msg1 = msg1 & "</body></html>"
-    Call SendEmailMessage("", "Re: " & Me.Client.Column(1) & " - Recall: " & Me.RecallNo.Column(1), msg1, False, True, False, "", , , "C:\Faas\" & FAUserName & "\Temp\RecallExportReport.xlsx")
+    Call SendEmailMessage("", "Re: " & Me.Client.Column(1) & " - Recall: " & Me.recallno.Column(1), msg1, False, True, False, "", , , "C:\Faas\" & FAUserName & "\Temp\RecallExportReport.xlsx")
 End Sub
 
 Private Sub client_Click()

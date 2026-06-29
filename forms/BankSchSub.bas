@@ -122,7 +122,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =532
+            Height =534
             BackColor =15527148
             Name ="FormHeader"
             Begin
@@ -130,9 +130,9 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =4725
+                    Left =4728
                     Top =60
-                    Width =3630
+                    Width =3636
                     Height =450
                     FontSize =9
                     FontWeight =700
@@ -141,9 +141,9 @@ Begin Form
                     Caption ="Description"
                     FontName ="Calibri"
                     GroupTable =1
-                    LayoutCachedLeft =4725
+                    LayoutCachedLeft =4728
                     LayoutCachedTop =60
-                    LayoutCachedWidth =8355
+                    LayoutCachedWidth =8364
                     LayoutCachedHeight =510
                     ColumnStart =9
                     ColumnEnd =9
@@ -205,7 +205,7 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =15045
+                    Left =15060
                     Top =60
                     Width =1500
                     Height =450
@@ -216,9 +216,9 @@ Begin Form
                     Caption ="Equipment Cost"
                     FontName ="Calibri"
                     GroupTable =1
-                    LayoutCachedLeft =15045
+                    LayoutCachedLeft =15060
                     LayoutCachedTop =60
-                    LayoutCachedWidth =16545
+                    LayoutCachedWidth =16560
                     LayoutCachedHeight =510
                     ColumnStart =16
                     ColumnEnd =16
@@ -230,7 +230,7 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =8415
+                    Left =8424
                     Top =60
                     Width =1080
                     Height =450
@@ -241,9 +241,9 @@ Begin Form
                     Caption ="Comm \015\012Date"
                     FontName ="Calibri"
                     GroupTable =1
-                    LayoutCachedLeft =8415
+                    LayoutCachedLeft =8424
                     LayoutCachedTop =60
-                    LayoutCachedWidth =9495
+                    LayoutCachedWidth =9504
                     LayoutCachedHeight =510
                     ColumnStart =10
                     ColumnEnd =10
@@ -255,7 +255,7 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =9555
+                    Left =9564
                     Top =60
                     Width =660
                     Height =450
@@ -266,9 +266,9 @@ Begin Form
                     Caption ="Primary Term"
                     FontName ="Calibri"
                     GroupTable =1
-                    LayoutCachedLeft =9555
+                    LayoutCachedLeft =9564
                     LayoutCachedTop =60
-                    LayoutCachedWidth =10215
+                    LayoutCachedWidth =10224
                     LayoutCachedHeight =510
                     ColumnStart =11
                     ColumnEnd =11
@@ -280,7 +280,7 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =13545
+                    Left =13560
                     Top =60
                     Width =1440
                     Height =450
@@ -291,9 +291,9 @@ Begin Form
                     Caption ="Rent"
                     FontName ="Calibri"
                     GroupTable =1
-                    LayoutCachedLeft =13545
+                    LayoutCachedLeft =13560
                     LayoutCachedTop =60
-                    LayoutCachedWidth =14985
+                    LayoutCachedWidth =15000
                     LayoutCachedHeight =510
                     ColumnStart =15
                     ColumnEnd =15
@@ -305,7 +305,7 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =10275
+                    Left =10284
                     Top =60
                     Width =1200
                     Height =450
@@ -316,9 +316,9 @@ Begin Form
                     Caption ="1st Rent Assigned \015\012"
                     FontName ="Calibri"
                     GroupTable =1
-                    LayoutCachedLeft =10275
+                    LayoutCachedLeft =10284
                     LayoutCachedTop =60
-                    LayoutCachedWidth =11475
+                    LayoutCachedWidth =11484
                     LayoutCachedHeight =510
                     ColumnStart =12
                     ColumnEnd =12
@@ -355,9 +355,9 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =11535
+                    Left =11544
                     Top =60
-                    Width =945
+                    Width =948
                     Height =450
                     FontSize =9
                     FontWeight =700
@@ -366,9 +366,9 @@ Begin Form
                     Caption ="Expiry"
                     FontName ="Calibri"
                     GroupTable =1
-                    LayoutCachedLeft =11535
+                    LayoutCachedLeft =11544
                     LayoutCachedTop =60
-                    LayoutCachedWidth =12480
+                    LayoutCachedWidth =12492
                     LayoutCachedHeight =510
                     ColumnStart =13
                     ColumnEnd =13
@@ -380,9 +380,9 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =12540
+                    Left =12552
                     Top =60
-                    Width =945
+                    Width =948
                     Height =450
                     FontSize =9
                     FontWeight =700
@@ -391,9 +391,9 @@ Begin Form
                     Caption ="ExIT"
                     FontName ="Calibri"
                     GroupTable =1
-                    LayoutCachedLeft =12540
+                    LayoutCachedLeft =12552
                     LayoutCachedTop =60
-                    LayoutCachedWidth =13485
+                    LayoutCachedWidth =13500
                     LayoutCachedHeight =510
                     ColumnStart =14
                     ColumnEnd =14
@@ -564,10 +564,10 @@ Begin Form
                     TextFontCharSet =238
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4725
-                    Top =45
-                    Width =3630
-                    Height =210
+                    Left =4728
+                    Top =48
+                    Width =3636
+                    Height =216
                     FontSize =9
                     TabIndex =10
                     Name ="dealShortDesc"
@@ -576,10 +576,10 @@ Begin Form
                     FontName ="Calibri"
                     GroupTable =1
 
-                    LayoutCachedLeft =4725
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =8355
-                    LayoutCachedHeight =255
+                    LayoutCachedLeft =4728
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =8364
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =9
@@ -596,9 +596,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =780
-                    Top =45
+                    Top =48
                     Width =0
-                    Height =210
+                    Height =216
                     FontSize =9
                     TabIndex =6
                     Name ="MLNo"
@@ -609,9 +609,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =780
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -629,9 +629,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =2220
-                    Top =45
+                    Top =48
                     Width =1620
-                    Height =210
+                    Height =216
                     FontSize =9
                     TabIndex =8
                     Name ="SchNo"
@@ -641,9 +641,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =2220
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =3840
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =7
@@ -661,10 +661,10 @@ Begin Form
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =15045
-                    Top =45
+                    Left =15060
+                    Top =48
                     Width =1500
-                    Height =210
+                    Height =216
                     FontSize =9
                     TabIndex =17
                     BackColor =15858167
@@ -674,10 +674,10 @@ Begin Form
                     FontName ="Calibri"
                     GroupTable =1
 
-                    LayoutCachedLeft =15045
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =16545
-                    LayoutCachedHeight =255
+                    LayoutCachedLeft =15060
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =16560
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =16
@@ -694,9 +694,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =840
-                    Top =45
+                    Top =48
                     Width =1320
-                    Height =210
+                    Height =216
                     FontSize =9
                     TabIndex =7
                     Name ="Client"
@@ -706,9 +706,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =840
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =2160
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =6
@@ -724,9 +724,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =600
-                    Top =45
+                    Top =48
                     Width =0
-                    Height =210
+                    Height =216
                     TabIndex =3
                     Name ="ClientShNm"
                     ControlSource ="ClientShNm"
@@ -734,9 +734,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =600
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =600
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -753,18 +753,18 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =480
-                    Top =45
+                    Top =48
                     Width =0
-                    Height =210
+                    Height =216
                     TabIndex =1
                     Name ="MLID"
                     ControlSource ="MLID"
                     GroupTable =1
 
                     LayoutCachedLeft =480
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =480
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -778,10 +778,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8415
-                    Top =45
+                    Left =8424
+                    Top =48
                     Width =1080
-                    Height =210
+                    Height =216
                     FontSize =9
                     TabIndex =11
                     Name ="BLCD\015\012\015\012\015\012\015\012"
@@ -791,10 +791,10 @@ Begin Form
                     EventProcPrefix ="BLCD________"
                     GroupTable =1
 
-                    LayoutCachedLeft =8415
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =9495
-                    LayoutCachedHeight =255
+                    LayoutCachedLeft =8424
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =9504
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =10
@@ -811,10 +811,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =9555
-                    Top =45
+                    Left =9564
+                    Top =48
                     Width =660
-                    Height =210
+                    Height =216
                     ColumnWidth =1455
                     FontSize =9
                     FontWeight =700
@@ -827,10 +827,10 @@ Begin Form
                     FontName ="Calibri"
                     GroupTable =1
 
-                    LayoutCachedLeft =9555
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =10215
-                    LayoutCachedHeight =255
+                    LayoutCachedLeft =9564
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =10224
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =11
@@ -846,9 +846,9 @@ Begin Form
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13545
-                    Top =45
-                    Height =210
+                    Left =13560
+                    Top =48
+                    Height =216
                     FontSize =9
                     FontWeight =700
                     TabIndex =16
@@ -859,10 +859,10 @@ Begin Form
                     FontName ="Calibri"
                     GroupTable =1
 
-                    LayoutCachedLeft =13545
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =14985
-                    LayoutCachedHeight =255
+                    LayoutCachedLeft =13560
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =15000
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =15
@@ -877,10 +877,10 @@ Begin Form
                     TextFontCharSet =238
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10275
-                    Top =45
+                    Left =10284
+                    Top =48
                     Width =1200
-                    Height =210
+                    Height =216
                     FontSize =9
                     TabIndex =13
                     Name ="SchAssDt"
@@ -890,10 +890,10 @@ Begin Form
                     FontName ="Calibri"
                     GroupTable =1
 
-                    LayoutCachedLeft =10275
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =11475
-                    LayoutCachedHeight =255
+                    LayoutCachedLeft =10284
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =11484
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =12
@@ -910,9 +910,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =3900
-                    Top =45
+                    Top =48
                     Width =765
-                    Height =210
+                    Height =216
                     FontSize =9
                     TabIndex =9
                     Name ="SGrpNO"
@@ -921,9 +921,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =3900
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =4665
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =8
@@ -939,18 +939,18 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =720
-                    Top =45
+                    Top =48
                     Width =0
-                    Height =210
+                    Height =216
                     TabIndex =5
                     Name ="clientID"
                     ControlSource ="Client"
                     GroupTable =1
 
                     LayoutCachedLeft =720
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =720
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -967,9 +967,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =660
-                    Top =45
+                    Top =48
                     Width =0
-                    Height =210
+                    Height =216
                     TabIndex =4
                     Name ="Assignee_Bank\015\012\015\012\015\012\015\012"
                     ControlSource ="Assignee_Bank"
@@ -978,9 +978,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =660
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =660
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -996,10 +996,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =11535
-                    Top =45
-                    Width =945
-                    Height =210
+                    Left =11544
+                    Top =48
+                    Width =948
+                    Height =216
                     FontSize =9
                     TabIndex =14
                     Name ="Exp"
@@ -1008,10 +1008,10 @@ Begin Form
                     FontName ="Calibri"
                     GroupTable =1
 
-                    LayoutCachedLeft =11535
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =12480
-                    LayoutCachedHeight =255
+                    LayoutCachedLeft =11544
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =12492
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =13
@@ -1027,10 +1027,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =12540
-                    Top =45
-                    Width =945
-                    Height =210
+                    Left =12552
+                    Top =48
+                    Width =948
+                    Height =216
                     FontSize =9
                     FontWeight =700
                     TabIndex =15
@@ -1042,10 +1042,10 @@ Begin Form
                     FontName ="Calibri"
                     GroupTable =1
 
-                    LayoutCachedLeft =12540
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =13485
-                    LayoutCachedHeight =255
+                    LayoutCachedLeft =12552
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =13500
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =14
@@ -1062,18 +1062,18 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =540
-                    Top =45
+                    Top =48
                     Width =0
-                    Height =210
+                    Height =216
                     TabIndex =2
                     Name ="SchID"
                     ControlSource ="SchID"
                     GroupTable =1
 
                     LayoutCachedLeft =540
-                    LayoutCachedTop =45
+                    LayoutCachedTop =48
                     LayoutCachedWidth =540
-                    LayoutCachedHeight =255
+                    LayoutCachedHeight =264
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1

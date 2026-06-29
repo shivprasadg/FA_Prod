@@ -10960,8 +10960,11 @@ Begin Report
                     Height =585
                     FontSize =22
                     FontWeight =700
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label0"
                     Caption ="Buyer's Delivery Receipt"
+                    GridlineColor =0
                     LayoutCachedLeft =4200
                     LayoutCachedTop =120
                     LayoutCachedWidth =9180
@@ -10985,6 +10988,7 @@ Begin Report
                     Name ="Printme"
                     Caption ="PrintMe"
                     OnClick ="[Event Procedure]"
+                    GridlineColor =0
 
                     LayoutCachedLeft =10260
                     LayoutCachedTop =900
@@ -11028,8 +11032,10 @@ Begin Report
                     FontSize =10
                     FontWeight =700
                     BackColor =14277081
+                    ForeColor =0
                     Name ="Label99"
                     Caption ="Units"
+                    GridlineColor =0
                     LayoutCachedLeft =10740
                     LayoutCachedTop =120
                     LayoutCachedWidth =11490
@@ -11056,9 +11062,11 @@ Begin Report
                     FontSize =12
                     FontWeight =700
                     TabIndex =1
+                    BorderColor =0
                     ForeColor =-2147483617
                     Name ="Label10"
                     ControlSource ="=Count([vin])"
+                    GridlineColor =0
 
                     LayoutCachedLeft =10800
                     LayoutCachedTop =375
@@ -11083,8 +11091,11 @@ Begin Report
                     ColumnOrder =3
                     FontSize =12
                     TabIndex =4
+                    BorderColor =0
+                    ForeColor =0
                     Name ="clientCompanyName"
                     ControlSource ="BuyerAddr"
+                    GridlineColor =0
 
                     LayoutCachedLeft =4785
                     LayoutCachedTop =885
@@ -11109,8 +11120,10 @@ Begin Report
                     FontSize =10
                     FontWeight =700
                     BorderColor =-2147483617
+                    ForeColor =0
                     Name ="Label1"
                     Caption ="Buyer:"
+                    GridlineColor =0
                     LayoutCachedLeft =4740
                     LayoutCachedTop =660
                     LayoutCachedWidth =5415
@@ -11136,6 +11149,8 @@ Begin Report
                     ColumnOrder =4
                     FontSize =12
                     FontWeight =700
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Text102"
                     ControlSource ="InvoiceRequestNum"
                     ConditionalFormat = Begin
@@ -11145,6 +11160,7 @@ Begin Report
                         0x300000000000
                     End
                     BottomPadding =38
+                    GridlineColor =0
 
                     LayoutCachedLeft =9300
                     LayoutCachedTop =375
@@ -11174,8 +11190,10 @@ Begin Report
                             FontSize =10
                             FontWeight =700
                             BackColor =14277081
+                            ForeColor =0
                             Name ="Label104"
                             Caption ="Number"
+                            GridlineColor =0
                             LayoutCachedLeft =9240
                             LayoutCachedTop =120
                             LayoutCachedWidth =10725
@@ -11203,8 +11221,11 @@ Begin Report
                     ColumnOrder =5
                     FontSize =10
                     TabIndex =3
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Text142"
                     ControlSource ="=\"401 East Las Olas Blvd<br /> Suite 1720 <br />Fort Lauderdale, FL 33301\""
+                    GridlineColor =0
                     TextFormat =1
 
                     LayoutCachedLeft =120
@@ -11233,9 +11254,12 @@ Begin Report
                     FontSize =14
                     FontWeight =700
                     TabIndex =5
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label396"
                     ControlSource ="=\"Received from Fleet Advantage the following listed \" & IIf(Count([vin])=1,\""
                         "Vehicle\",\"Vehicles\") & \", on this Date:__________\""
+                    GridlineColor =0
 
                     LayoutCachedLeft =75
                     LayoutCachedTop =2100
@@ -11272,12 +11296,14 @@ Begin Report
                 Begin Label
                     BackStyle =1
                     TextAlign =1
-                    Left =3945
-                    Width =7815
+                    Left =3948
+                    Width =7812
                     Height =240
                     FontSize =10
                     FontWeight =700
                     BackColor =14277081
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label474"
                     Caption ="Unit Description"
                     GroupTable =28
@@ -11285,8 +11311,7 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3945
+                    LayoutCachedLeft =3948
                     LayoutCachedWidth =11760
                     LayoutCachedHeight =240
                     ColumnStart =3
@@ -11303,12 +11328,14 @@ Begin Report
                 Begin Label
                     BackStyle =1
                     TextAlign =2
-                    Left =1845
+                    Left =1848
                     Width =2100
                     Height =240
                     FontSize =10
                     FontWeight =700
                     BackColor =14277081
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label473"
                     Caption ="Unit VIN"
                     GroupTable =28
@@ -11316,9 +11343,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =1845
-                    LayoutCachedWidth =3945
+                    LayoutCachedLeft =1848
+                    LayoutCachedWidth =3948
                     LayoutCachedHeight =240
                     ColumnStart =2
                     ColumnEnd =2
@@ -11334,12 +11360,14 @@ Begin Report
                 Begin Label
                     BackStyle =1
                     TextAlign =1
-                    Left =765
+                    Left =768
                     Width =1080
                     Height =240
                     FontSize =10
                     FontWeight =700
                     BackColor =14277081
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label472"
                     Caption ="UnitNun"
                     GroupTable =28
@@ -11347,9 +11375,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =765
-                    LayoutCachedWidth =1845
+                    LayoutCachedLeft =768
+                    LayoutCachedWidth =1848
                     LayoutCachedHeight =240
                     ColumnStart =1
                     ColumnEnd =1
@@ -11370,6 +11397,8 @@ Begin Report
                     FontSize =10
                     FontWeight =700
                     BackColor =14277081
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label471"
                     Caption ="Stock#"
                     GroupTable =28
@@ -11377,7 +11406,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedWidth =765
                     LayoutCachedHeight =240
                     LayoutGroup =5
@@ -11403,11 +11431,13 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3945
-                    Width =7815
+                    Left =3948
+                    Width =7812
                     Height =285
                     FontSize =10
                     TabIndex =3
+                    BorderColor =0
+                    ForeColor =0
                     Name ="DescriptionLong"
                     ControlSource ="DescriptionMed"
                     StatusBarText ="unit make"
@@ -11416,9 +11446,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =3945
+                    LayoutCachedLeft =3948
                     LayoutCachedWidth =11760
                     LayoutCachedHeight =285
                     ColumnStart =3
@@ -11436,11 +11465,13 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1845
+                    Left =1848
                     Width =2100
                     Height =285
                     FontSize =10
                     TabIndex =2
+                    BorderColor =0
+                    ForeColor =0
                     Name ="UnitVIN"
                     ControlSource ="VIN"
                     Format =">"
@@ -11450,10 +11481,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1845
-                    LayoutCachedWidth =3945
+                    LayoutCachedLeft =1848
+                    LayoutCachedWidth =3948
                     LayoutCachedHeight =285
                     ColumnStart =2
                     ColumnEnd =2
@@ -11473,6 +11503,8 @@ Begin Report
                     Width =765
                     Height =285
                     FontSize =10
+                    BorderColor =0
+                    ForeColor =0
                     Name ="RmkSm"
                     ControlSource ="UnitId"
                     StatusBarText ="initials of Remarketing Salesperson"
@@ -11481,7 +11513,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedWidth =765
                     LayoutCachedHeight =285
@@ -11498,11 +11529,13 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =765
+                    Left =768
                     Width =1080
                     Height =285
                     FontSize =10
                     TabIndex =1
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Text45"
                     ControlSource ="Unitnum"
                     GroupTable =11
@@ -11510,10 +11543,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =765
-                    LayoutCachedWidth =1845
+                    LayoutCachedLeft =768
+                    LayoutCachedWidth =1848
                     LayoutCachedHeight =285
                     ColumnStart =1
                     ColumnEnd =1
@@ -11554,11 +11586,8 @@ Begin Report
                     Width =3600
                     FontSize =9
                     FontWeight =700
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text143"
                     ControlSource ="=\"Page \" & [Page] & \" of \" & [Pages]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8040
                     LayoutCachedWidth =11640
@@ -11573,11 +11602,8 @@ Begin Report
                     Width =3600
                     FontSize =9
                     TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text305"
                     ControlSource ="=\"Fleet Advantage\""
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedWidth =3660
@@ -11593,11 +11619,9 @@ Begin Report
                     Width =3600
                     FontSize =9
                     TabIndex =2
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Text306"
                     ControlSource ="=\"FA vDR - 0062120\""
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4140
                     LayoutCachedWidth =7740
@@ -11622,6 +11646,8 @@ Begin Report
                     Width =10455
                     Height =960
                     FontSize =9
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Text470"
                     ControlSource ="=\"The above signed Customer has inspected the vehicle(s) and has detemined the "
                         "identification plates and/or marking on the vehicle(s) accurately idenify the ve"
@@ -11634,7 +11660,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =600
                     LayoutCachedTop =6000
@@ -11659,6 +11684,8 @@ Begin Report
                     Height =540
                     FontSize =9
                     TabIndex =1
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Text221"
                     ControlSource ="=\"Equipped to comply with the customers Buyers Order:<b> \" & [InvoiceRequestNu"
                         "m] & \"</b> dated:<b> \" & [InvoiceRequestDate] & \"</b>,<br /> including any am"
@@ -11668,7 +11695,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =960
@@ -11689,12 +11715,12 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =4320
+                    Top =4308
                     Width =8580
-                    Height =330
+                    Height =336
                     FontSize =12
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label442"
                     Caption ="                                                                                "
                         "                        "
@@ -11703,11 +11729,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =4320
+                    LayoutCachedTop =4308
                     LayoutCachedWidth =10020
-                    LayoutCachedHeight =4650
+                    LayoutCachedHeight =4644
                     RowStart =8
                     RowEnd =8
                     LayoutGroup =2
@@ -11718,10 +11743,12 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =4650
+                    Top =4644
                     Width =8580
-                    Height =630
+                    Height =636
                     FontSize =10
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label441"
                     Caption ="    Delivered by (please print name)"
                     GroupTable =26
@@ -11729,9 +11756,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =4650
+                    LayoutCachedTop =4644
                     LayoutCachedWidth =10020
                     LayoutCachedHeight =5280
                     RowStart =9
@@ -11749,12 +11775,12 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =2610
+                    Top =2604
                     Width =8580
-                    Height =315
+                    Height =312
                     FontSize =12
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label436"
                     Caption ="                                                                                "
                         "                        "
@@ -11763,11 +11789,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =2610
+                    LayoutCachedTop =2604
                     LayoutCachedWidth =10020
-                    LayoutCachedHeight =2925
+                    LayoutCachedHeight =2916
                     RowStart =4
                     RowEnd =4
                     LayoutGroup =2
@@ -11778,10 +11803,12 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =2925
+                    Top =2916
                     Width =8580
                     Height =540
                     FontSize =10
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label435"
                     Caption ="    Signed By Customer / Agent (please print name)"
                     GroupTable =26
@@ -11789,11 +11816,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =2925
+                    LayoutCachedTop =2916
                     LayoutCachedWidth =10020
-                    LayoutCachedHeight =3465
+                    LayoutCachedHeight =3456
                     RowStart =5
                     RowEnd =5
                     LayoutGroup =2
@@ -11810,9 +11836,7 @@ Begin Report
                     Top =5880
                     Width =11664
                     Height =43
-                    BorderColor =10921638
                     Name ="Box142"
-                    GridlineColor =10921638
                     LayoutCachedTop =5880
                     LayoutCachedWidth =11664
                     LayoutCachedHeight =5923
@@ -11822,9 +11846,7 @@ Begin Report
                     OldBorderStyle =0
                     Width =11664
                     Height =43
-                    BorderColor =10921638
                     Name ="Box112"
-                    GridlineColor =10921638
                     LayoutCachedWidth =11664
                     LayoutCachedHeight =43
                     BackThemeColorIndex =0
@@ -11838,7 +11860,7 @@ Begin Report
                     Height =315
                     FontSize =12
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label94"
                     Caption ="                                                                                "
                         "                                                            "
@@ -11847,7 +11869,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
                     LayoutCachedTop =960
                     LayoutCachedWidth =10020
@@ -11860,12 +11881,12 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =1755
+                    Top =1752
                     Width =8580
-                    Height =315
+                    Height =312
                     FontSize =12
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label91"
                     Caption ="                                                                                "
                         "                                                            "
@@ -11874,11 +11895,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =1755
+                    LayoutCachedTop =1752
                     LayoutCachedWidth =10020
-                    LayoutCachedHeight =2070
+                    LayoutCachedHeight =2064
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =2
@@ -11889,12 +11909,12 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =3465
+                    Top =3456
                     Width =8580
-                    Height =315
+                    Height =312
                     FontSize =12
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label88"
                     Caption ="X:                                                                              "
                         "                       "
@@ -11903,11 +11923,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =3465
+                    LayoutCachedTop =3456
                     LayoutCachedWidth =10020
-                    LayoutCachedHeight =3780
+                    LayoutCachedHeight =3768
                     RowStart =6
                     RowEnd =6
                     LayoutGroup =2
@@ -11923,7 +11942,7 @@ Begin Report
                     Height =315
                     FontSize =12
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label78"
                     Caption ="X:                                                                              "
                         "                       "
@@ -11932,7 +11951,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
                     LayoutCachedTop =5280
                     LayoutCachedWidth =10020
@@ -11947,10 +11965,12 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =1275
+                    Top =1272
                     Width =8580
                     Height =480
                     FontSize =10
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label314"
                     Caption ="     Physical Place of Delivery"
                     GroupTable =26
@@ -11958,11 +11978,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =1275
+                    LayoutCachedTop =1272
                     LayoutCachedWidth =10020
-                    LayoutCachedHeight =1755
+                    LayoutCachedHeight =1752
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =2
@@ -11978,10 +11997,12 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =5595
+                    Top =5592
                     Width =8580
-                    Height =285
+                    Height =288
                     FontSize =10
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label312"
                     Caption ="     Signed Fleet Advanatge / Agent                                        Date"
                     GroupTable =26
@@ -11989,9 +12010,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =5595
+                    LayoutCachedTop =5592
                     LayoutCachedWidth =10020
                     LayoutCachedHeight =5880
                     RowStart =11
@@ -12009,10 +12029,12 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =2070
+                    Top =2064
                     Width =8580
                     Height =540
                     FontSize =10
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label310"
                     Caption ="     Receiving Customer              "
                     GroupTable =26
@@ -12020,11 +12042,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =2070
+                    LayoutCachedTop =2064
                     LayoutCachedWidth =10020
-                    LayoutCachedHeight =2610
+                    LayoutCachedHeight =2604
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =2
@@ -12040,10 +12061,12 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =1440
-                    Top =3780
+                    Top =3768
                     Width =8580
                     Height =540
                     FontSize =10
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label26"
                     Caption ="     Signed Customer / Agent                                                    "
                         " Date"
@@ -12052,11 +12075,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =1440
-                    LayoutCachedTop =3780
+                    LayoutCachedTop =3768
                     LayoutCachedWidth =10020
-                    LayoutCachedHeight =4320
+                    LayoutCachedHeight =4308
                     RowStart =7
                     RowEnd =7
                     LayoutGroup =2

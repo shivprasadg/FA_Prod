@@ -62,9 +62,9 @@ Private Sub DecodeVINS_Click()
             DoCmd.RunSQL ("Delete From UnitVinDetails WHERE UnitID =" & RST!UnitID)
             DoCmd.SetWarnings True
             If oUseMYear = True Then
-                Call VinDecoder(RST!UnitID, Nz(RST!VIN, "NoVIN"), Nz(RST!MYear, ""), True, False, RST!clientID)
+                Call VinDecoder(RST!UnitID, Nz(RST!VIN, "NoVIN"), Nz(RST!MYear, ""), True, False, RST!ClientID)
             Else
-                Call VinDecoder(RST!UnitID, Nz(RST!VIN, "NoVIN"), , True, False, RST!clientID)
+                Call VinDecoder(RST!UnitID, Nz(RST!VIN, "NoVIN"), , True, False, RST!ClientID)
             End If
             RST.MoveNext
         Next i
@@ -98,9 +98,9 @@ Private Sub CheckVINsOnly_Click()
         Do Until RST.EOF
             Call MessageUser("Update", "VIN: " & RST!VIN, "Unit " & i & " Of " & xCount)
             If Nz(RST!UnitYear, 0) > 0 Then
-                Call VinDecoder(Nz(RST!UnitID, 0), Nz(RST!VIN, "NoVIN"), RST!UnitYear, True, True, Nz(RST!clientID, 0))
+                Call VinDecoder(Nz(RST!UnitID, 0), Nz(RST!VIN, "NoVIN"), RST!UnitYear, True, True, Nz(RST!ClientID, 0))
             Else
-                Call VinDecoder(Nz(RST!UnitID, 0), Nz(RST!VIN, "NoVIN"), , True, True, Nz(RST!clientID, 0))
+                Call VinDecoder(Nz(RST!UnitID, 0), Nz(RST!VIN, "NoVIN"), , True, True, Nz(RST!ClientID, 0))
             End If
             RST.MoveNext
             i = i + 1
@@ -208,7 +208,7 @@ Private Sub PortalReports_Click()
         RST.MoveFirst
         xCount = RST.RecordCount
         Do Until RST.EOF
-            SQLz = "UPDATE Units SET Units.ReportStartDate = #" & RST!startDate & "#, Units.ReportEndDate = #" & RST!Enddate & "# " & _
+            SQLz = "UPDATE Units SET Units.ReportStartDate = #" & RST!StartDate & "#, Units.ReportEndDate = #" & RST!EndDate & "# " & _
                    "WHERE Units.UnitID = " & RST!UnitID & ";"
             Call MessageUser("Update", "Posting Start Dates", "Setting data for AssetID:" & RST!UnitID)
             DoCmd.RunSQL (SQLz)
@@ -223,7 +223,7 @@ Private Sub PortalReports_Click()
         Ycount = RST.RecordCount
         DoCmd.SetWarnings False
         Do Until RST.EOF
-            SQLz = "UPDATE Units SET Units.ReportStartDate = #" & RST!startDate & "#, Units.ReportEndDate = #" & RST!Enddate & "# " & _
+            SQLz = "UPDATE Units SET Units.ReportStartDate = #" & RST!StartDate & "#, Units.ReportEndDate = #" & RST!EndDate & "# " & _
                    "WHERE Units.UnitID = " & RST!UnitID & ";"
             Call MessageUser("Update", "Posting End Dates", "Setting data for AssetID:" & RST!UnitID)
             DoCmd.RunSQL (SQLz)

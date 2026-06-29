@@ -17,7 +17,7 @@ Dim stDocName As String
 Dim stLinkCriteria As String
 
     stDocName = "Contacts_View"
-    stLinkCriteria = "[clientRef]=" & Forms!deals_view![clientRef]
+    stLinkCriteria = "[clientRef]=" & Forms!deals_view![clientREF]
 
     DoCmd.OpenForm stDocName, , , stLinkCriteria
 

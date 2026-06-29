@@ -10,7 +10,7 @@ Begin Report
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =5033
+    Width =5076
     DatasheetFontHeight =11
     ItemSuffix =14
     Left =2595
@@ -109,8 +109,11 @@ Begin Report
                     Width =2160
                     Height =105
                     FontSize =8
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Label119"
                     Caption ="LOC         State   Cnty     City    Act"
+                    GridlineColor =0
                     LayoutCachedLeft =2685
                     LayoutCachedWidth =4845
                     LayoutCachedHeight =105
@@ -135,12 +138,9 @@ Begin Report
                     Height =156
                     ColumnOrder =0
                     FontSize =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Text2"
                     ControlSource ="LocationID"
                     TopPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =2685
@@ -161,12 +161,9 @@ Begin Report
                     ColumnOrder =1
                     FontSize =8
                     TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="CountyID"
                     ControlSource ="LCountyID"
                     TopPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =3657
@@ -187,11 +184,8 @@ Begin Report
                     ColumnOrder =2
                     FontSize =8
                     TabIndex =2
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="TaxTypeID"
                     TopPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4521
@@ -212,12 +206,9 @@ Begin Report
                     ColumnOrder =3
                     FontSize =8
                     TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="CityID"
                     ControlSource ="LCityID"
                     TopPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4089
@@ -229,12 +220,10 @@ Begin Report
                     Width =4530
                     Height =315
                     FontWeight =700
-                    BorderColor =8355711
                     ForeColor =8210719
                     Name ="Label31"
                     Caption ="Taxes ──────────────────────●"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     LayoutCachedWidth =4530
                     LayoutCachedHeight =315
                     ThemeFontIndex =-1
@@ -254,12 +243,9 @@ Begin Report
                     ColumnOrder =4
                     FontSize =8
                     TabIndex =4
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="StateID"
                     ControlSource ="LStateID"
                     TopPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =1980
@@ -272,7 +258,7 @@ Begin Report
         Begin Section
             KeepTogether = NotDefault
             CanGrow = NotDefault
-            Height =1080
+            Height =1092
             Name ="Detail"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
@@ -286,10 +272,10 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =990
-                    Top =300
-                    Width =825
-                    Height =285
+                    Left =996
+                    Top =312
+                    Width =828
+                    Height =288
                     FontSize =10
                     FontWeight =700
                     TabIndex =2
@@ -301,13 +287,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =990
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =1815
-                    LayoutCachedHeight =585
+                    LayoutCachedLeft =996
+                    LayoutCachedTop =312
+                    LayoutCachedWidth =1824
+                    LayoutCachedHeight =600
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -322,19 +307,19 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =990
-                    Top =30
-                    Width =825
+                    Left =996
+                    Top =36
+                    Width =828
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label69"
                     Caption ="Tax Rate"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =990
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =1815
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =996
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =1824
+                    LayoutCachedHeight =276
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -353,25 +338,25 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1875
-                    Top =300
-                    Width =765
-                    Height =285
+                    Left =1884
+                    Top =312
+                    Width =768
+                    Height =288
                     FontSize =10
                     TabIndex =3
+                    ForeColor =0
                     Name ="StateSalesC"
                     ControlSource ="StateSales"
                     Format ="Percent"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =2640
-                    LayoutCachedHeight =585
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =312
+                    LayoutCachedWidth =2652
+                    LayoutCachedHeight =600
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -386,19 +371,19 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =1875
-                    Top =30
-                    Width =765
+                    Left =1884
+                    Top =36
+                    Width =768
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label5"
                     Caption ="State"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =2640
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =2652
+                    LayoutCachedHeight =276
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -417,25 +402,25 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2700
-                    Top =300
-                    Width =765
-                    Height =285
+                    Left =2712
+                    Top =312
+                    Width =768
+                    Height =288
                     FontSize =10
                     TabIndex =4
+                    ForeColor =0
                     Name ="CountySales"
                     ControlSource ="CountySales"
                     Format ="Percent"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2700
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =585
+                    LayoutCachedLeft =2712
+                    LayoutCachedTop =312
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =600
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -450,19 +435,19 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =2700
-                    Top =30
-                    Width =765
+                    Left =2712
+                    Top =36
+                    Width =768
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label7"
                     Caption ="County"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2700
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =2712
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =276
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -481,12 +466,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3495
-                    Top =300
-                    Width =765
-                    Height =285
+                    Left =3516
+                    Top =312
+                    Width =768
+                    Height =288
                     FontSize =10
                     TabIndex =5
+                    ForeColor =0
                     Name ="CitySales"
                     ControlSource ="CitySales"
                     Format ="Percent"
@@ -495,13 +481,12 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3495
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =4260
-                    LayoutCachedHeight =585
+                    LayoutCachedLeft =3516
+                    LayoutCachedTop =312
+                    LayoutCachedWidth =4284
+                    LayoutCachedHeight =600
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -516,21 +501,21 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =3495
-                    Top =30
-                    Width =765
+                    Left =3516
+                    Top =36
+                    Width =768
                     Height =240
                     FontSize =8
+                    BorderColor =0
                     Name ="Label9"
                     Caption ="City"
                     GroupTable =1
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3495
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =4260
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =3516
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =4284
+                    LayoutCachedHeight =276
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -548,10 +533,10 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =990
-                    Top =585
-                    Width =825
-                    Height =15
+                    Left =996
+                    Top =600
+                    Width =828
+                    Height =12
                     FontSize =10
                     FontWeight =700
                     TabIndex =7
@@ -565,13 +550,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =990
-                    LayoutCachedTop =585
-                    LayoutCachedWidth =1815
-                    LayoutCachedHeight =600
+                    LayoutCachedLeft =996
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =1824
+                    LayoutCachedHeight =612
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -593,12 +577,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1875
-                    Top =585
-                    Width =765
-                    Height =15
+                    Left =1884
+                    Top =600
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =8
+                    ForeColor =0
                     Name ="StateAdValoremT"
                     ControlSource ="=IIf([StateAdValorem]=0,Null,[StateAdValorem])"
                     Format ="Percent"
@@ -606,13 +591,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =585
-                    LayoutCachedWidth =2640
-                    LayoutCachedHeight =600
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =2652
+                    LayoutCachedHeight =612
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -634,12 +618,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2700
-                    Top =585
-                    Width =765
-                    Height =15
+                    Left =2712
+                    Top =600
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =9
+                    ForeColor =0
                     Name ="CountyAdValoremT"
                     ControlSource ="=IIf([CountyAdValorem]=0,Null,[CountyAdValorem])"
                     Format ="Percent"
@@ -647,13 +632,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2700
-                    LayoutCachedTop =585
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =600
+                    LayoutCachedLeft =2712
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =612
                     RowStart =2
                     RowEnd =2
                     ColumnStart =3
@@ -675,12 +659,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3495
-                    Top =585
-                    Width =765
-                    Height =15
+                    Left =3516
+                    Top =600
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =10
+                    ForeColor =0
                     Name ="CityAdValoremT"
                     ControlSource ="=IIf([CityAdValorem]=0,Null,[CityAdValorem])"
                     Format ="Percent"
@@ -690,13 +675,12 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3495
-                    LayoutCachedTop =585
-                    LayoutCachedWidth =4260
-                    LayoutCachedHeight =600
+                    LayoutCachedLeft =3516
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =4284
+                    LayoutCachedHeight =612
                     RowStart =2
                     RowEnd =2
                     ColumnStart =4
@@ -717,10 +701,10 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =990
-                    Top =600
-                    Width =825
-                    Height =15
+                    Left =996
+                    Top =612
+                    Width =828
+                    Height =12
                     FontSize =10
                     FontWeight =700
                     TabIndex =12
@@ -734,13 +718,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =990
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =1815
-                    LayoutCachedHeight =615
+                    LayoutCachedLeft =996
+                    LayoutCachedTop =612
+                    LayoutCachedWidth =1824
+                    LayoutCachedHeight =624
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -762,12 +745,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1875
-                    Top =600
-                    Width =765
-                    Height =15
+                    Left =1884
+                    Top =612
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =13
+                    ForeColor =0
                     Name ="StateFHUTt"
                     ControlSource ="=IIf(Nz([FHUTTax],\"\")=\"\",Null,[StateFHUT])"
                     Format ="Percent"
@@ -775,13 +759,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =2640
-                    LayoutCachedHeight =615
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =612
+                    LayoutCachedWidth =2652
+                    LayoutCachedHeight =624
                     RowStart =3
                     RowEnd =3
                     ColumnStart =2
@@ -803,12 +786,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2700
-                    Top =600
-                    Width =765
-                    Height =15
+                    Left =2712
+                    Top =612
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =14
+                    ForeColor =0
                     Name ="CountyFHUTt"
                     ControlSource ="=IIf(Nz([FHUTTax],\"\")=\"\",Null,[CountyFHUT])"
                     Format ="Percent"
@@ -816,13 +800,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2700
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =615
+                    LayoutCachedLeft =2712
+                    LayoutCachedTop =612
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =624
                     RowStart =3
                     RowEnd =3
                     ColumnStart =3
@@ -844,12 +827,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3495
-                    Top =600
-                    Width =765
-                    Height =15
+                    Left =3516
+                    Top =612
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =15
+                    ForeColor =0
                     Name ="CityFHUTt"
                     ControlSource ="=IIf(Nz([FHUTTax],\"\")=\"\",Null,[CityFHUT])"
                     Format ="Percent"
@@ -859,13 +843,12 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3495
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =4260
-                    LayoutCachedHeight =615
+                    LayoutCachedLeft =3516
+                    LayoutCachedTop =612
+                    LayoutCachedWidth =4284
+                    LayoutCachedHeight =624
                     RowStart =3
                     RowEnd =3
                     ColumnStart =4
@@ -886,10 +869,10 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =990
-                    Top =615
-                    Width =825
-                    Height =15
+                    Left =996
+                    Top =624
+                    Width =828
+                    Height =12
                     FontSize =10
                     FontWeight =700
                     TabIndex =17
@@ -903,13 +886,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =990
-                    LayoutCachedTop =615
-                    LayoutCachedWidth =1815
-                    LayoutCachedHeight =630
+                    LayoutCachedLeft =996
+                    LayoutCachedTop =624
+                    LayoutCachedWidth =1824
+                    LayoutCachedHeight =636
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -931,12 +913,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1875
-                    Top =615
-                    Width =765
-                    Height =15
+                    Left =1884
+                    Top =624
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =18
+                    ForeColor =0
                     Name ="StateHUTt"
                     ControlSource ="=IIf(Nz([HUTTax],\"\")=\"\",Null,[StateHUT])"
                     Format ="Percent"
@@ -944,13 +927,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =615
-                    LayoutCachedWidth =2640
-                    LayoutCachedHeight =630
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =624
+                    LayoutCachedWidth =2652
+                    LayoutCachedHeight =636
                     RowStart =4
                     RowEnd =4
                     ColumnStart =2
@@ -972,12 +954,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2700
-                    Top =615
-                    Width =765
-                    Height =15
+                    Left =2712
+                    Top =624
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =19
+                    ForeColor =0
                     Name ="CountyHUTt"
                     ControlSource ="=IIf(Nz([HUTTax],\"\")=\"\",Null,[CountyHUT])"
                     Format ="Percent"
@@ -985,13 +968,12 @@ Begin Report
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2700
-                    LayoutCachedTop =615
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =630
+                    LayoutCachedLeft =2712
+                    LayoutCachedTop =624
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =636
                     RowStart =4
                     RowEnd =4
                     ColumnStart =3
@@ -1013,12 +995,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3495
-                    Top =615
-                    Width =765
-                    Height =15
+                    Left =3516
+                    Top =624
+                    Width =768
+                    Height =12
                     FontSize =10
                     TabIndex =20
+                    ForeColor =0
                     Name ="CityHUTt"
                     ControlSource ="=IIf(Nz([HUTTax],\"\")=\"\",Null,[CityHUT])"
                     Format ="Percent"
@@ -1028,13 +1011,12 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3495
-                    LayoutCachedTop =615
-                    LayoutCachedWidth =4260
-                    LayoutCachedHeight =630
+                    LayoutCachedLeft =3516
+                    LayoutCachedTop =624
+                    LayoutCachedWidth =4284
+                    LayoutCachedHeight =636
                     RowStart =4
                     RowEnd =4
                     ColumnStart =4
@@ -1049,9 +1031,9 @@ Begin Report
                 End
                 Begin CommandButton
                     DisplayWhen =2
-                    Left =4260
-                    Top =30
-                    Width =765
+                    Left =4296
+                    Top =36
+                    Width =768
                     Height =240
                     FontSize =8
                     Name ="EditCity"
@@ -1060,12 +1042,11 @@ Begin Report
                     GroupTable =1
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =4260
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =5025
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =4296
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =5064
+                    LayoutCachedHeight =276
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
@@ -1077,6 +1058,7 @@ Begin Report
                     BackThemeColorIndex =-1
                     BackTint =100.0
                     BorderWidth =1
+                    BorderColor =0
                     BorderThemeColorIndex =-1
                     BorderTint =100.0
                     ThemeFontIndex =-1
@@ -1093,58 +1075,30 @@ Begin Report
                     GroupTable =1
                     Overlaps =1
                 End
-                Begin Label
-                    OverlapFlags =4
-                    TextAlign =3
-                    Left =30
-                    Top =630
-                    Width =1785
-                    Height =225
-                    FontSize =8
-                    Name ="Label32"
-                    Caption ="Rent Receipt Available? "
-                    GroupTable =1
-                    TopPadding =0
-                    BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =630
-                    LayoutCachedWidth =1815
-                    LayoutCachedHeight =855
-                    RowStart =5
-                    RowEnd =5
-                    ColumnEnd =1
-                    LayoutGroup =1
-                    BorderThemeColorIndex =-1
-                    BorderTint =100.0
-                    ForeThemeColorIndex =2
-                    ForeTint =100.0
-                    GroupTable =1
-                End
                 Begin TextBox
                     Locked = NotDefault
                     OldBorderStyle =0
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1875
-                    Top =630
-                    Width =765
-                    Height =225
+                    Left =1884
+                    Top =636
+                    Width =768
+                    Height =228
                     FontSize =10
                     TabIndex =21
+                    ForeColor =0
                     Name ="StateRReceipt"
                     ControlSource ="StateRReceipt"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =630
-                    LayoutCachedWidth =2640
-                    LayoutCachedHeight =855
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =636
+                    LayoutCachedWidth =2652
+                    LayoutCachedHeight =864
                     RowStart =5
                     RowEnd =5
                     ColumnStart =2
@@ -1156,6 +1110,36 @@ Begin Report
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =4
+                            TextAlign =3
+                            Left =36
+                            Top =636
+                            Width =1788
+                            Height =228
+                            FontSize =8
+                            BorderColor =0
+                            Name ="Label32"
+                            Caption ="Rent Receipt Available? "
+                            GroupTable =1
+                            TopPadding =0
+                            BottomPadding =0
+                            LayoutCachedLeft =36
+                            LayoutCachedTop =636
+                            LayoutCachedWidth =1824
+                            LayoutCachedHeight =864
+                            RowStart =5
+                            RowEnd =5
+                            ColumnEnd =1
+                            LayoutGroup =1
+                            BorderThemeColorIndex =-1
+                            BorderTint =100.0
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            GroupTable =1
+                        End
+                    End
                 End
                 Begin TextBox
                     Locked = NotDefault
@@ -1163,24 +1147,24 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2700
-                    Top =630
-                    Width =765
-                    Height =225
+                    Left =2712
+                    Top =636
+                    Width =768
+                    Height =228
                     FontSize =10
                     TabIndex =22
+                    ForeColor =0
                     Name ="CountyRReceipt"
                     ControlSource ="CountyRReceipt"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2700
-                    LayoutCachedTop =630
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =855
+                    LayoutCachedLeft =2712
+                    LayoutCachedTop =636
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =864
                     RowStart =5
                     RowEnd =5
                     ColumnStart =3
@@ -1199,12 +1183,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3495
-                    Top =630
-                    Width =765
-                    Height =225
+                    Left =3516
+                    Top =636
+                    Width =768
+                    Height =228
                     FontSize =10
                     TabIndex =23
+                    ForeColor =0
                     Name ="CityRReceipt"
                     ControlSource ="CityRReceipt"
                     GroupTable =1
@@ -1212,13 +1197,12 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3495
-                    LayoutCachedTop =630
-                    LayoutCachedWidth =4260
-                    LayoutCachedHeight =855
+                    LayoutCachedLeft =3516
+                    LayoutCachedTop =636
+                    LayoutCachedWidth =4284
+                    LayoutCachedHeight =864
                     RowStart =5
                     RowEnd =5
                     ColumnStart =4
@@ -1231,59 +1215,31 @@ Begin Report
                     ForeTint =100.0
                     GroupTable =1
                 End
-                Begin Label
-                    OverlapFlags =4
-                    TextAlign =3
-                    Left =30
-                    Top =855
-                    Width =1785
-                    Height =225
-                    FontSize =8
-                    Name ="Label36"
-                    Caption ="Exception Appliable? "
-                    GroupTable =1
-                    TopPadding =0
-                    BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =855
-                    LayoutCachedWidth =1815
-                    LayoutCachedHeight =1080
-                    RowStart =6
-                    RowEnd =6
-                    ColumnEnd =1
-                    LayoutGroup =1
-                    BorderThemeColorIndex =-1
-                    BorderTint =100.0
-                    ForeThemeColorIndex =2
-                    ForeTint =100.0
-                    GroupTable =1
-                End
                 Begin TextBox
                     Locked = NotDefault
                     OldBorderStyle =0
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1875
-                    Top =855
-                    Width =765
-                    Height =225
+                    Left =1884
+                    Top =864
+                    Width =768
+                    Height =228
                     FontSize =10
                     TabIndex =24
+                    ForeColor =0
                     Name ="StateException"
                     ControlSource ="StateException"
                     Format ="Percent"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =855
-                    LayoutCachedWidth =2640
-                    LayoutCachedHeight =1080
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =864
+                    LayoutCachedWidth =2652
+                    LayoutCachedHeight =1092
                     RowStart =6
                     RowEnd =6
                     ColumnStart =2
@@ -1295,6 +1251,36 @@ Begin Report
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =4
+                            TextAlign =3
+                            Left =36
+                            Top =864
+                            Width =1788
+                            Height =228
+                            FontSize =8
+                            BorderColor =0
+                            Name ="Label36"
+                            Caption ="Exception Appliable? "
+                            GroupTable =1
+                            TopPadding =0
+                            BottomPadding =0
+                            LayoutCachedLeft =36
+                            LayoutCachedTop =864
+                            LayoutCachedWidth =1824
+                            LayoutCachedHeight =1092
+                            RowStart =6
+                            RowEnd =6
+                            ColumnEnd =1
+                            LayoutGroup =1
+                            BorderThemeColorIndex =-1
+                            BorderTint =100.0
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            GroupTable =1
+                        End
+                    End
                 End
                 Begin TextBox
                     Locked = NotDefault
@@ -1302,25 +1288,25 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2700
-                    Top =855
-                    Width =765
-                    Height =225
+                    Left =2712
+                    Top =864
+                    Width =768
+                    Height =228
                     FontSize =10
                     TabIndex =25
+                    ForeColor =0
                     Name ="CountyException"
                     ControlSource ="CountyException"
                     Format ="Percent"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2700
-                    LayoutCachedTop =855
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =1080
+                    LayoutCachedLeft =2712
+                    LayoutCachedTop =864
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =1092
                     RowStart =6
                     RowEnd =6
                     ColumnStart =3
@@ -1339,12 +1325,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3495
-                    Top =855
-                    Width =765
-                    Height =225
+                    Left =3516
+                    Top =864
+                    Width =768
+                    Height =228
                     FontSize =10
                     TabIndex =26
+                    ForeColor =0
                     Name ="CityException"
                     ControlSource ="CityException"
                     Format ="Percent"
@@ -1353,13 +1340,12 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3495
-                    LayoutCachedTop =855
-                    LayoutCachedWidth =4260
-                    LayoutCachedHeight =1080
+                    LayoutCachedLeft =3516
+                    LayoutCachedTop =864
+                    LayoutCachedWidth =4284
+                    LayoutCachedHeight =1092
                     RowStart =6
                     RowEnd =6
                     ColumnStart =4
@@ -1379,24 +1365,24 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =30
-                    Top =300
+                    Left =36
+                    Top =312
                     Width =900
-                    Height =285
+                    Height =288
                     FontSize =8
                     TabIndex =1
+                    BorderColor =0
                     Name ="Label16"
                     ControlSource ="=\"Sales\""
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =930
-                    LayoutCachedHeight =585
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =312
+                    LayoutCachedWidth =936
+                    LayoutCachedHeight =600
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -1413,25 +1399,25 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =30
-                    Top =585
+                    Left =36
+                    Top =600
                     Width =900
-                    Height =15
+                    Height =12
                     FontSize =8
                     TabIndex =6
+                    BorderColor =0
                     Name ="Label17"
                     ControlSource ="=IIf(Nz([AdValorem],\"\")=\"\",Null,\"Ad Valorem\")"
                     Tag ="AdValorem"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =585
-                    LayoutCachedWidth =930
-                    LayoutCachedHeight =600
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =936
+                    LayoutCachedHeight =612
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =1
@@ -1448,25 +1434,25 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =30
-                    Top =600
+                    Left =36
+                    Top =612
                     Width =900
-                    Height =15
+                    Height =12
                     FontSize =8
                     TabIndex =11
+                    BorderColor =0
                     Name ="Label22"
                     ControlSource ="=IIf(Nz([FHUTTax],\"\")=\"\",Null,\"FHUT\")"
                     Tag ="FHUT"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =930
-                    LayoutCachedHeight =615
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =612
+                    LayoutCachedWidth =936
+                    LayoutCachedHeight =624
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =1
@@ -1484,25 +1470,25 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =30
-                    Top =615
+                    Left =36
+                    Top =624
                     Width =900
-                    Height =15
+                    Height =12
                     FontSize =8
                     TabIndex =16
+                    BorderColor =0
                     Name ="Label27"
                     ControlSource ="=IIf(Nz([HUTTax],\"\")=\"\",Null,\"HUT\")"
                     Tag ="HUT"
                     GroupTable =1
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =615
-                    LayoutCachedWidth =930
-                    LayoutCachedHeight =630
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =624
+                    LayoutCachedWidth =936
+                    LayoutCachedHeight =636
                     RowStart =4
                     RowEnd =4
                     LayoutGroup =1
@@ -1513,35 +1499,33 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =30
-                    Top =30
+                    Left =36
+                    Top =36
                     Width =900
                     Name ="EmptyCell275"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =930
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =936
+                    LayoutCachedHeight =276
                     LayoutGroup =1
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =4260
-                    Top =300
-                    Width =765
-                    Height =285
+                    Left =4296
+                    Top =312
+                    Width =768
+                    Height =288
                     Name ="EmptyCell6"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4260
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =5025
-                    LayoutCachedHeight =585
+                    LayoutCachedLeft =4296
+                    LayoutCachedTop =312
+                    LayoutCachedWidth =5064
+                    LayoutCachedHeight =600
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -1550,21 +1534,20 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =4260
-                    Top =585
-                    Width =765
-                    Height =15
+                    Left =4296
+                    Top =600
+                    Width =768
+                    Height =12
                     Name ="EmptyCell7"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4260
-                    LayoutCachedTop =585
-                    LayoutCachedWidth =5025
-                    LayoutCachedHeight =600
+                    LayoutCachedLeft =4296
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =5064
+                    LayoutCachedHeight =612
                     RowStart =2
                     RowEnd =2
                     ColumnStart =5
@@ -1573,21 +1556,20 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =4260
-                    Top =600
-                    Width =765
-                    Height =15
+                    Left =4296
+                    Top =612
+                    Width =768
+                    Height =12
                     Name ="EmptyCell8"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4260
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =5025
-                    LayoutCachedHeight =615
+                    LayoutCachedLeft =4296
+                    LayoutCachedTop =612
+                    LayoutCachedWidth =5064
+                    LayoutCachedHeight =624
                     RowStart =3
                     RowEnd =3
                     ColumnStart =5
@@ -1596,21 +1578,20 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =4260
-                    Top =615
-                    Width =765
-                    Height =15
+                    Left =4296
+                    Top =624
+                    Width =768
+                    Height =12
                     Name ="EmptyCell9"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4260
-                    LayoutCachedTop =615
-                    LayoutCachedWidth =5025
-                    LayoutCachedHeight =630
+                    LayoutCachedLeft =4296
+                    LayoutCachedTop =624
+                    LayoutCachedWidth =5064
+                    LayoutCachedHeight =636
                     RowStart =4
                     RowEnd =4
                     ColumnStart =5
@@ -1619,21 +1600,20 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =4260
-                    Top =630
-                    Width =765
-                    Height =225
+                    Left =4296
+                    Top =636
+                    Width =768
+                    Height =228
                     Name ="EmptyCell10"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4260
-                    LayoutCachedTop =630
-                    LayoutCachedWidth =5025
-                    LayoutCachedHeight =855
+                    LayoutCachedLeft =4296
+                    LayoutCachedTop =636
+                    LayoutCachedWidth =5064
+                    LayoutCachedHeight =864
                     RowStart =5
                     RowEnd =5
                     ColumnStart =5
@@ -1642,21 +1622,20 @@ Begin Report
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =4260
-                    Top =855
-                    Width =765
-                    Height =225
+                    Left =4296
+                    Top =864
+                    Width =768
+                    Height =228
                     Name ="EmptyCell11"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4260
-                    LayoutCachedTop =855
-                    LayoutCachedWidth =5025
-                    LayoutCachedHeight =1080
+                    LayoutCachedLeft =4296
+                    LayoutCachedTop =864
+                    LayoutCachedWidth =5064
+                    LayoutCachedHeight =1092
                     RowStart =6
                     RowEnd =6
                     ColumnStart =5

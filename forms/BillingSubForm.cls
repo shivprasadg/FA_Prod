@@ -115,12 +115,12 @@ Public Function MakeInvoice(ToExcel As Boolean)
     If Me.BillType = "BankBill" Then ReportX = "BankBillReg"
     If Me.BillType = "BankFA Remit" Then ReportX = "BankBill_FARemit"
     If Me.BillType = "BankRentOnly" Then ReportX = "BankBillRentOnly"
-    If Me.BillType = "BankBill" And Me.clientID = 4636 Then ReportX = "FABankBill_ADM"
-    If Me.BillType = "BankBill" And Me.clientID = 4029 And FunStatus = "F" Then ReportX = "FABankBill_Toyota"
+    If Me.BillType = "BankBill" And Me.ClientID = 4636 Then ReportX = "FABankBill_ADM"
+    If Me.BillType = "BankBill" And Me.ClientID = 4029 And FunStatus = "F" Then ReportX = "FABankBill_Toyota"
     If Me.BillType = "BankBill" And Me.groupID & "test" <> "test" Then ReportX = "FABankBillGroup"
 
     If Me.BillType = "Rent" Then ReportX = "FARentBillNew"
-    If Me.BillType = "Rent" And Me.clientID = 4029 And FunStatus = "F" Then ReportX = "FABankBill_Toyota"
+    If Me.BillType = "Rent" And Me.ClientID = 4029 And FunStatus = "F" Then ReportX = "FABankBill_Toyota"
     If Me.BillType = "Rent Group" Then ReportX = "FARentBillNew_Group"
 
     If Me.BillType = "PDSurrender" Then ReportX = "PerDiemSurrenderInvoice"

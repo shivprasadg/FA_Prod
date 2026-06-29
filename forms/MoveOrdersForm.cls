@@ -16,13 +16,13 @@ Private Sub AddNew_Click()
     End If
     Response = MsgBox("You are about to Add a Move Order." & vbNewLine & "Are you sure?", vbQuestion + vbYesNo, "Add Work Order?")
     If Response = vbYes Then
-        Call ParkedLocationMove(Nz(DLookup("LocationParkedID", "Units", "UnitID=" & Me.mAssetID & ""), DLookup("UnitGarageLocationRef", "Units", "UnitID=" & Me.mAssetID & "")), 0, Me.mAssetID)
+        Call ParkedLocationMove(Nz(DLookup("LocationParkedID", "Units", "UnitID=" & Me.mAssetId & ""), DLookup("UnitGarageLocationRef", "Units", "UnitID=" & Me.mAssetId & "")), 0, Me.mAssetId)
         If Me.mEmail & "test" <> "test" Then
             Me.Detail.Visible = True
             Me.Form.Requery
             MsgBox "Please Select the MOVE TO Location you plan to use", vbCritical, "You ain't done yet!"
             Me.AddNew.Visible = False
-            Me.Parent.unitstatus = "EM"
+            Me.Parent.UnitStatus = "EM"
             If mOrderNum = "TBD" Or Me.mStatus = "not ordered" Then Me.SubmitMoveOrder.Visible = True
             Me.mNewLocationID.SetFocus
         Else
@@ -48,7 +48,7 @@ Private Sub DeleteLocation_Click()
 End Sub
 
 Private Sub Form_Load()
-    If Nz(DCount("UnitMoveID", "UnitMoveOrder", "mAssetID=" & Nz(Me.mAssetID, 0) & ""), 0) = 0 Then
+    If Nz(DCount("UnitMoveID", "UnitMoveOrder", "mAssetID=" & Nz(Me.mAssetId, 0) & ""), 0) = 0 Then
         Me.AddNew.Visible = True
         Me.Detail.Visible = False
         Me.SubmitMoveOrder.Visible = False
@@ -65,7 +65,7 @@ Private Sub Form_Load()
     SQLz = SQLz & ", MStatus"
     SQLz = SQLz & ", AssetID"
     SQLz = SQLz & " FROM vw_UnitMoveDashboard"
-    SQLz = SQLz & " WHERE AssetID = " & Me.mAssetID & ""
+    SQLz = SQLz & " WHERE AssetID = " & Me.mAssetId & ""
     SQLz = SQLz & " ORDER BY mStartDate;"
     Me.MoveOrderList.RowSource = SQLz
 End Sub

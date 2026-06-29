@@ -37,7 +37,7 @@ Public Sub FAIDLPAFList_Click()
     '   Set RST = Me.RecordsetClone
     '   RST.FindFirst "FAID = '" & Me.FAIDLPAFList.Column(0) & "'"
     '   Me.Bookmark = RST.Bookmark
-    If Me.AccountId <> Me.SFAccountID Then
+    If Me.AccountID <> Me.SFAccountId Then
         'If Me.SF_ClientLegalName <> Me.ATLAASClient Then
         Dim Msgx, ResposeX As String
         Msgx = "The SF Client and the ATLAAS Core Client do <b>not</b> match<br /> Proceed with import?"
@@ -314,8 +314,8 @@ Private Sub ImportToAtlaas_Click()
     RST.MoveFirst
     For i = 1 To RST.RecordCount
         If RST!ModelYear & "test" = "test" Then Msgx = Msgx & "SF Spec Year" & vbNewLine
-        If RST!MAKE & "test" = "test" Then Msgx = Msgx & "SF Spec Make" & vbNewLine
-        If RST!MODEL & "test" = "test" Then Msgx = Msgx & "SF Spec Model" & vbNewLine
+        If RST!Make & "test" = "test" Then Msgx = Msgx & "SF Spec Make" & vbNewLine
+        If RST!Model & "test" = "test" Then Msgx = Msgx & "SF Spec Model" & vbNewLine
         RST.MoveNext
     Next i
 Errorlevel1:
@@ -779,7 +779,7 @@ DeployUnits:
                       "WHERE ClientGroupId NOT in( Select ClientGroupID FROM Locations WHERE LocationSn='TBD')")
 
         'Get the TBD Location for This ClientGroup
-        TBDLocation = Nz(DLookup("LocationID", "Locations", "LocationSN='TBD' AND ClientGroupID=" & DLookup("ClientGroupID", "vw_SixKeys", "ClientID=" & clientID)), 0)
+        TBDLocation = Nz(DLookup("LocationID", "Locations", "LocationSN='TBD' AND ClientGroupID=" & DLookup("ClientGroupID", "vw_SixKeys", "ClientID=" & ClientID)), 0)
 
         'Set the Temp VIN, UnitNumber OBCNumber and TBD Location for the new units
         DoCmd.RunSQL ("UPDATE Units SET" & _

@@ -39,7 +39,7 @@ Private Sub AddTaxRate_Click()
     DoCmd.RunSQL ("Delete From TaxBaseTemp")
     DoCmd.SetWarnings True
     DoCmd.close acForm, "Tax_Add"
-    DoCmd.OpenForm "Tax_Add", acNormal, , , , , "State|" & Nz(Me.Tax_StateBaseSub!TaxTypeId, 1) & "|" & Me.StateID & "|0|Add"
+    DoCmd.OpenForm "Tax_Add", acNormal, , , , , "State|" & Nz(Me.Tax_StateBaseSub!TaxTypeID, 1) & "|" & Me.StateID & "|0|Add"
 End Sub
 
 Private Sub SelectCountry_Click()

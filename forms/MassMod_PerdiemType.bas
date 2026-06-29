@@ -120,9 +120,9 @@ Begin Form
                     PictureTiling = NotDefault
                     PictureAlignment =0
                     PictureType =2
-                    Top =2085
+                    Top =2088
                     Width =8640
-                    Height =195
+                    Height =192
                     Name ="Image454"
                     Picture ="LtGrey2_Shadow"
                     GroupTable =5
@@ -132,7 +132,7 @@ Begin Form
                     BottomPadding =0
                     HorizontalAnchor =2
 
-                    LayoutCachedTop =2085
+                    LayoutCachedTop =2088
                     LayoutCachedWidth =8640
                     LayoutCachedHeight =2280
                     TabIndex =12
@@ -153,7 +153,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =3300
+                    Left =3324
                     Top =960
                     Width =3720
                     Height =240
@@ -167,9 +167,9 @@ Begin Form
                         0x00000000
                     End
 
-                    LayoutCachedLeft =3300
+                    LayoutCachedLeft =3324
                     LayoutCachedTop =960
-                    LayoutCachedWidth =7020
+                    LayoutCachedWidth =7044
                     LayoutCachedHeight =1200
                     ColumnStart =2
                     ColumnEnd =2
@@ -191,7 +191,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =780
+                    Left =792
                     Top =960
                     Width =2460
                     Height =240
@@ -206,9 +206,9 @@ Begin Form
                         0x00000000
                     End
 
-                    LayoutCachedLeft =780
+                    LayoutCachedLeft =792
                     LayoutCachedTop =960
-                    LayoutCachedWidth =3240
+                    LayoutCachedWidth =3252
                     LayoutCachedHeight =1200
                     ColumnStart =1
                     ColumnEnd =1
@@ -369,8 +369,8 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =1
-                    Left =780
-                    Top =1890
+                    Left =792
+                    Top =1908
                     Width =2460
                     Height =240
                     FontSize =11
@@ -379,10 +379,10 @@ Begin Form
                     Name ="CommBaselbl"
                     Caption ="BLCD Basis"
                     GroupTable =8
-                    LayoutCachedLeft =780
-                    LayoutCachedTop =1890
-                    LayoutCachedWidth =3240
-                    LayoutCachedHeight =2130
+                    LayoutCachedLeft =792
+                    LayoutCachedTop =1908
+                    LayoutCachedWidth =3252
+                    LayoutCachedHeight =2148
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -398,8 +398,8 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =1
-                    Left =3300
-                    Top =1890
+                    Left =3324
+                    Top =1908
                     Width =3720
                     Height =240
                     FontSize =11
@@ -408,10 +408,10 @@ Begin Form
                     Name ="Label4113"
                     Caption ="Per Diem Starts On"
                     GroupTable =8
-                    LayoutCachedLeft =3300
-                    LayoutCachedTop =1890
-                    LayoutCachedWidth =7020
-                    LayoutCachedHeight =2130
+                    LayoutCachedLeft =3324
+                    LayoutCachedTop =1908
+                    LayoutCachedWidth =7044
+                    LayoutCachedHeight =2148
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -427,9 +427,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =1
-                    Left =7080
-                    Top =1890
-                    Width =1140
+                    Left =7116
+                    Top =1908
+                    Width =1152
                     Height =240
                     FontSize =11
                     FontWeight =400
@@ -437,10 +437,10 @@ Begin Form
                     Name ="Label90"
                     Caption ="No Per Diems"
                     GroupTable =8
-                    LayoutCachedLeft =7080
-                    LayoutCachedTop =1890
-                    LayoutCachedWidth =8220
-                    LayoutCachedHeight =2130
+                    LayoutCachedLeft =7116
+                    LayoutCachedTop =1908
+                    LayoutCachedWidth =8268
+                    LayoutCachedHeight =2148
                     RowStart =2
                     RowEnd =2
                     ColumnStart =3
@@ -455,7 +455,7 @@ Begin Form
                     OverlapFlags =247
                     TextAlign =1
                     Left =120
-                    Top =1890
+                    Top =1908
                     Width =600
                     Height =240
                     FontSize =11
@@ -465,9 +465,9 @@ Begin Form
                     Caption ="Group"
                     GroupTable =8
                     LayoutCachedLeft =120
-                    LayoutCachedTop =1890
+                    LayoutCachedTop =1908
                     LayoutCachedWidth =720
-                    LayoutCachedHeight =2130
+                    LayoutCachedHeight =2148
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =2
@@ -484,10 +484,10 @@ Begin Form
                     ColumnCount =2
                     ListRows =2
                     ListWidth =2160
-                    Left =780
-                    Top =1260
+                    Left =792
+                    Top =1272
                     Width =2460
-                    Height =570
+                    Height =576
                     FontSize =10
                     TabIndex =8
                     BackColor =14151142
@@ -499,10 +499,10 @@ Begin Form
                     StatusBarText ="blcd source accepted or in-service"
                     GroupTable =8
 
-                    LayoutCachedLeft =780
-                    LayoutCachedTop =1260
-                    LayoutCachedWidth =3240
-                    LayoutCachedHeight =1830
+                    LayoutCachedLeft =792
+                    LayoutCachedTop =1272
+                    LayoutCachedWidth =3252
+                    LayoutCachedHeight =1848
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -519,10 +519,10 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     ListWidth =4320
-                    Left =3300
-                    Top =1260
+                    Left =3324
+                    Top =1272
                     Width =3720
-                    Height =570
+                    Height =576
                     FontSize =10
                     TabIndex =9
                     BackColor =14151142
@@ -534,10 +534,10 @@ Begin Form
                     StatusBarText ="blcd source accepted or in-service"
                     GroupTable =8
 
-                    LayoutCachedLeft =3300
-                    LayoutCachedTop =1260
-                    LayoutCachedWidth =7020
-                    LayoutCachedHeight =1830
+                    LayoutCachedLeft =3324
+                    LayoutCachedTop =1272
+                    LayoutCachedWidth =7044
+                    LayoutCachedHeight =1848
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -549,19 +549,19 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =7590
-                    Top =1260
-                    Width =630
-                    Height =570
+                    Left =7632
+                    Top =1272
+                    Width =636
+                    Height =576
                     TabIndex =10
                     Name ="SGRPNoPDCBO"
                     ControlTipText ="Will prompt you for a Date to use"
                     GroupTable =8
 
-                    LayoutCachedLeft =7590
-                    LayoutCachedTop =1260
-                    LayoutCachedWidth =8220
-                    LayoutCachedHeight =1830
+                    LayoutCachedLeft =7632
+                    LayoutCachedTop =1272
+                    LayoutCachedWidth =8268
+                    LayoutCachedHeight =1848
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -579,9 +579,9 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =120
-                    Top =1260
+                    Top =1272
                     Width =600
-                    Height =570
+                    Height =576
                     FontSize =10
                     FontWeight =700
                     TabIndex =7
@@ -590,9 +590,9 @@ Begin Form
                     GroupTable =8
 
                     LayoutCachedLeft =120
-                    LayoutCachedTop =1260
+                    LayoutCachedTop =1272
                     LayoutCachedWidth =720
-                    LayoutCachedHeight =1830
+                    LayoutCachedHeight =1848
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =2
@@ -601,16 +601,16 @@ Begin Form
                     GroupTable =8
                 End
                 Begin EmptyCell
-                    Left =7080
-                    Top =1260
-                    Width =450
-                    Height =570
+                    Left =7116
+                    Top =1272
+                    Width =456
+                    Height =576
                     Name ="EmptyCell1064"
                     GroupTable =8
-                    LayoutCachedLeft =7080
-                    LayoutCachedTop =1260
-                    LayoutCachedWidth =7530
-                    LayoutCachedHeight =1830
+                    LayoutCachedLeft =7116
+                    LayoutCachedTop =1272
+                    LayoutCachedWidth =7572
+                    LayoutCachedHeight =1848
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -633,9 +633,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =7080
+                    Left =7116
                     Top =960
-                    Width =1140
+                    Width =1152
                     Height =240
                     FontSize =8
                     FontWeight =700
@@ -648,9 +648,9 @@ Begin Form
                         0x00000000
                     End
 
-                    LayoutCachedLeft =7080
+                    LayoutCachedLeft =7116
                     LayoutCachedTop =960
-                    LayoutCachedWidth =8220
+                    LayoutCachedWidth =8268
                     LayoutCachedHeight =1200
                     ColumnStart =3
                     ColumnEnd =4
@@ -738,8 +738,8 @@ Begin Form
                     ColumnCount =2
                     ListRows =2
                     ListWidth =2160
-                    Left =780
-                    Top =30
+                    Left =792
+                    Top =36
                     Width =2460
                     Height =576
                     FontSize =10
@@ -754,10 +754,10 @@ Begin Form
                     StatusBarText ="blcd source accepted or in-service"
                     GroupTable =6
 
-                    LayoutCachedLeft =780
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =3240
-                    LayoutCachedHeight =606
+                    LayoutCachedLeft =792
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =3252
+                    LayoutCachedHeight =612
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -772,8 +772,8 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     ListWidth =4320
-                    Left =3300
-                    Top =30
+                    Left =3324
+                    Top =36
                     Width =3720
                     Height =576
                     FontSize =10
@@ -788,10 +788,10 @@ Begin Form
                     StatusBarText ="blcd source accepted or in-service"
                     GroupTable =6
 
-                    LayoutCachedLeft =3300
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =7020
-                    LayoutCachedHeight =606
+                    LayoutCachedLeft =3324
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7044
+                    LayoutCachedHeight =612
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -801,9 +801,9 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =93
-                    Left =7590
-                    Top =30
-                    Width =630
+                    Left =7620
+                    Top =36
+                    Width =636
                     Height =576
                     TabIndex =3
                     Name ="SGRPNoPD"
@@ -811,10 +811,10 @@ Begin Form
                     ControlTipText ="Will prompt you for a Date to use"
                     GroupTable =6
 
-                    LayoutCachedLeft =7590
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =8220
-                    LayoutCachedHeight =606
+                    LayoutCachedLeft =7620
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =8256
+                    LayoutCachedHeight =612
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -847,7 +847,7 @@ Begin Form
                     TextAlign =2
                     IMESentenceMode =3
                     Left =120
-                    Top =30
+                    Top =36
                     Width =600
                     Height =576
                     FontSize =14
@@ -858,9 +858,9 @@ Begin Form
                     GroupTable =6
 
                     LayoutCachedLeft =120
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =720
-                    LayoutCachedHeight =606
+                    LayoutCachedHeight =612
                     LayoutGroup =1
                     BackThemeColorIndex =2
                     ForeThemeColorIndex =1
@@ -869,16 +869,16 @@ Begin Form
                     GroupTable =6
                 End
                 Begin EmptyCell
-                    Left =7080
-                    Top =30
-                    Width =450
+                    Left =7104
+                    Top =36
+                    Width =456
                     Height =576
                     Name ="EmptyCell1055"
                     GroupTable =6
-                    LayoutCachedLeft =7080
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =7530
-                    LayoutCachedHeight =606
+                    LayoutCachedLeft =7104
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7560
+                    LayoutCachedHeight =612
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1

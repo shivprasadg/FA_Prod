@@ -830,13 +830,11 @@ Begin Form
                     TabIndex =15
                     BackColor =14211288
                     ForeColor =5855577
-                    BorderColor =10921638
                     Name ="EventList"
                     RowSourceType ="Table/Query"
                     ColumnWidths ="3600;0;0;0;0;0;0"
                     OnDblClick ="[Event Procedure]"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedTop =5210

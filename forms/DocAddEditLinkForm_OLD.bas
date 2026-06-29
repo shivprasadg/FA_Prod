@@ -146,6 +146,7 @@ Begin Form
                     Width =3825
                     Height =525
                     FontSize =18
+                    BorderColor =0
                     ForeColor =8210719
                     Name ="Label465"
                     Caption ="Add / Edit Linked Doc"
@@ -155,7 +156,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedWidth =3945
                     LayoutCachedHeight =525
@@ -177,7 +177,6 @@ Begin Form
                     BorderColor =6108695
                     Name ="Image142"
                     Picture ="LtGrey2_Shadow"
-                    GridlineColor =10921638
                     HorizontalAnchor =2
 
                     LayoutCachedTop =420
@@ -196,15 +195,12 @@ Begin Form
                     Top =60
                     Width =720
                     FontSize =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="DocID"
                     ControlSource ="DocID"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7155
                     LayoutCachedTop =60
@@ -221,15 +217,12 @@ Begin Form
                             Width =495
                             Height =240
                             FontSize =8
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label74"
                             Caption ="DocID"
                             LeftPadding =0
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
                             LayoutCachedLeft =6660
                             LayoutCachedTop =60
                             LayoutCachedWidth =7155
@@ -252,7 +245,7 @@ Begin Form
                     OverlapFlags =95
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1020
+                    Left =1032
                     Top =60
                     Width =7500
                     Height =585
@@ -268,11 +261,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1020
+                    LayoutCachedLeft =1032
                     LayoutCachedTop =60
-                    LayoutCachedWidth =8520
+                    LayoutCachedWidth =8532
                     LayoutCachedHeight =645
                     ColumnStart =1
                     ColumnEnd =1
@@ -302,7 +294,6 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
                             LayoutCachedTop =60
                             LayoutCachedWidth =1020
                             LayoutCachedHeight =645
@@ -323,12 +314,11 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1020
-                    Top =645
+                    Left =1032
+                    Top =660
                     Width =7500
-                    Height =315
+                    Height =312
                     ColumnOrder =2
-                    BorderColor =10921638
                     Name ="dName"
                     ControlSource ="dName"
                     GroupTable =1
@@ -336,12 +326,11 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1020
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =8520
-                    LayoutCachedHeight =960
+                    LayoutCachedLeft =1032
+                    LayoutCachedTop =660
+                    LayoutCachedWidth =8532
+                    LayoutCachedHeight =972
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -356,9 +345,9 @@ Begin Form
                             OldBorderStyle =1
                             OverlapFlags =95
                             TextAlign =1
-                            Top =645
+                            Top =660
                             Width =1020
-                            Height =315
+                            Height =312
                             Name ="Label0"
                             Caption ="FileName"
                             GroupTable =1
@@ -366,10 +355,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
-                            LayoutCachedTop =645
+                            LayoutCachedTop =660
                             LayoutCachedWidth =1020
-                            LayoutCachedHeight =960
+                            LayoutCachedHeight =972
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -388,13 +376,12 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1020
-                    Top =960
+                    Left =1032
+                    Top =984
                     Width =7500
-                    Height =315
+                    Height =312
                     ColumnOrder =3
                     TabIndex =2
-                    BorderColor =10921638
                     Name ="dtype"
                     ControlSource ="dtype"
                     GroupTable =1
@@ -402,12 +389,11 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1020
-                    LayoutCachedTop =960
-                    LayoutCachedWidth =8520
-                    LayoutCachedHeight =1275
+                    LayoutCachedLeft =1032
+                    LayoutCachedTop =984
+                    LayoutCachedWidth =8532
+                    LayoutCachedHeight =1296
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -422,9 +408,9 @@ Begin Form
                             OldBorderStyle =1
                             OverlapFlags =95
                             TextAlign =1
-                            Top =960
+                            Top =984
                             Width =1020
-                            Height =315
+                            Height =312
                             Name ="Label1"
                             Caption ="Doc Type"
                             GroupTable =1
@@ -432,10 +418,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
-                            LayoutCachedTop =960
+                            LayoutCachedTop =984
                             LayoutCachedWidth =1020
-                            LayoutCachedHeight =1275
+                            LayoutCachedHeight =1296
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -454,13 +439,12 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1020
-                    Top =1275
+                    Left =1032
+                    Top =1308
                     Width =7500
-                    Height =675
+                    Height =672
                     ColumnOrder =4
                     TabIndex =3
-                    BorderColor =10921638
                     Name ="dtags"
                     ControlSource ="dtags"
                     GroupTable =1
@@ -468,12 +452,11 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1020
-                    LayoutCachedTop =1275
-                    LayoutCachedWidth =8520
-                    LayoutCachedHeight =1950
+                    LayoutCachedLeft =1032
+                    LayoutCachedTop =1308
+                    LayoutCachedWidth =8532
+                    LayoutCachedHeight =1980
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -488,9 +471,9 @@ Begin Form
                             OldBorderStyle =1
                             OverlapFlags =95
                             TextAlign =1
-                            Top =1275
+                            Top =1308
                             Width =1020
-                            Height =675
+                            Height =672
                             Name ="Label2"
                             Caption ="Dir / Tags"
                             GroupTable =1
@@ -498,10 +481,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
-                            LayoutCachedTop =1275
+                            LayoutCachedTop =1308
                             LayoutCachedWidth =1020
-                            LayoutCachedHeight =1950
+                            LayoutCachedHeight =1980
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =1
@@ -518,15 +500,13 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =855
+                    Left =876
                     Top =2580
-                    Width =619
+                    Width =624
                     Height =195
                     ColumnOrder =5
                     FontSize =8
                     TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="ClientID"
                     ControlSource ="ClientID"
                     GroupTable =2
@@ -534,11 +514,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =855
+                    LayoutCachedLeft =876
                     LayoutCachedTop =2580
-                    LayoutCachedWidth =1474
+                    LayoutCachedWidth =1500
                     LayoutCachedHeight =2775
                     ColumnStart =1
                     ColumnEnd =1
@@ -553,8 +532,6 @@ Begin Form
                             Width =619
                             Height =195
                             FontSize =8
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label9"
                             Caption ="ClientID"
                             GroupTable =2
@@ -562,7 +539,6 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
                             LayoutCachedLeft =240
                             LayoutCachedTop =2580
                             LayoutCachedWidth =859
@@ -576,15 +552,13 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3315
+                    Left =3372
                     Top =2580
-                    Width =615
+                    Width =612
                     Height =195
                     ColumnOrder =6
                     FontSize =8
                     TabIndex =7
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="SchID"
                     ControlSource ="SchID"
                     GroupTable =2
@@ -592,11 +566,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =3315
+                    LayoutCachedLeft =3372
                     LayoutCachedTop =2580
-                    LayoutCachedWidth =3930
+                    LayoutCachedWidth =3984
                     LayoutCachedHeight =2775
                     ColumnStart =5
                     ColumnEnd =5
@@ -606,13 +579,11 @@ Begin Form
                         Begin Label
                             OverlapFlags =93
                             TextAlign =1
-                            Left =2700
+                            Left =2748
                             Top =2580
-                            Width =615
+                            Width =612
                             Height =195
                             FontSize =8
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label10"
                             Caption ="SchID"
                             GroupTable =2
@@ -620,10 +591,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
-                            LayoutCachedLeft =2700
+                            LayoutCachedLeft =2748
                             LayoutCachedTop =2580
-                            LayoutCachedWidth =3315
+                            LayoutCachedWidth =3360
                             LayoutCachedHeight =2775
                             ColumnStart =4
                             ColumnEnd =4
@@ -636,15 +606,13 @@ Begin Form
                     OverlapFlags =87
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =2085
+                    Left =2136
                     Top =2580
-                    Width =615
+                    Width =612
                     Height =195
                     ColumnOrder =7
                     FontSize =8
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="MLID"
                     ControlSource ="MLID"
                     GroupTable =2
@@ -652,11 +620,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =2085
+                    LayoutCachedLeft =2136
                     LayoutCachedTop =2580
-                    LayoutCachedWidth =2700
+                    LayoutCachedWidth =2748
                     LayoutCachedHeight =2775
                     ColumnStart =3
                     ColumnEnd =3
@@ -666,13 +633,11 @@ Begin Form
                         Begin Label
                             OverlapFlags =87
                             TextAlign =1
-                            Left =1470
+                            Left =1500
                             Top =2580
-                            Width =619
+                            Width =624
                             Height =195
                             FontSize =8
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label12"
                             Caption ="MLID"
                             GroupTable =2
@@ -680,10 +645,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
-                            LayoutCachedLeft =1470
+                            LayoutCachedLeft =1500
                             LayoutCachedTop =2580
-                            LayoutCachedWidth =2089
+                            LayoutCachedWidth =2124
                             LayoutCachedHeight =2775
                             ColumnStart =2
                             ColumnEnd =2
@@ -696,15 +660,13 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =4545
+                    Left =4620
                     Top =2580
-                    Width =615
+                    Width =612
                     Height =195
                     ColumnOrder =8
                     FontSize =8
                     TabIndex =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="GroupID"
                     ControlSource ="GroupID"
                     GroupTable =2
@@ -712,11 +674,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =4545
+                    LayoutCachedLeft =4620
                     LayoutCachedTop =2580
-                    LayoutCachedWidth =5160
+                    LayoutCachedWidth =5232
                     LayoutCachedHeight =2775
                     ColumnStart =7
                     ColumnEnd =7
@@ -726,13 +687,11 @@ Begin Form
                         Begin Label
                             OverlapFlags =87
                             TextAlign =1
-                            Left =3930
+                            Left =3984
                             Top =2580
-                            Width =619
+                            Width =624
                             Height =195
                             FontSize =8
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label13"
                             Caption ="GroupID"
                             GroupTable =2
@@ -740,10 +699,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
-                            LayoutCachedLeft =3930
+                            LayoutCachedLeft =3984
                             LayoutCachedTop =2580
-                            LayoutCachedWidth =4549
+                            LayoutCachedWidth =4608
                             LayoutCachedHeight =2775
                             ColumnStart =6
                             ColumnEnd =6
@@ -756,15 +714,13 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =5775
+                    Left =5868
                     Top =2580
                     Width =720
                     Height =195
                     ColumnOrder =9
                     FontSize =8
                     TabIndex =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="UnitID"
                     ControlSource ="UnitID"
                     GroupTable =2
@@ -772,11 +728,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =5775
+                    LayoutCachedLeft =5868
                     LayoutCachedTop =2580
-                    LayoutCachedWidth =6495
+                    LayoutCachedWidth =6588
                     LayoutCachedHeight =2775
                     ColumnStart =9
                     ColumnEnd =9
@@ -786,13 +741,11 @@ Begin Form
                         Begin Label
                             OverlapFlags =87
                             TextAlign =1
-                            Left =5160
+                            Left =5232
                             Top =2580
-                            Width =619
+                            Width =624
                             Height =195
                             FontSize =8
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label14"
                             Caption ="UnitID"
                             GroupTable =2
@@ -800,10 +753,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            GridlineColor =10921638
-                            LayoutCachedLeft =5160
+                            LayoutCachedLeft =5232
                             LayoutCachedTop =2580
-                            LayoutCachedWidth =5779
+                            LayoutCachedWidth =5856
                             LayoutCachedHeight =2775
                             ColumnStart =8
                             ColumnEnd =8
@@ -820,12 +772,14 @@ Begin Form
                     Height =300
                     FontSize =10
                     TabIndex =4
+                    ForeColor =0
                     Name ="GetLink"
                     Caption ="Get Link Details"
                     OnClick ="[Event Procedure]"
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x00000000000000000000000000000000727272ff727272ff727272ff727272ff ,
@@ -907,6 +861,7 @@ Begin Form
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
 
                     LayoutCachedLeft =7140
                     LayoutCachedTop =2520
@@ -943,12 +898,14 @@ Begin Form
                     Height =300
                     FontSize =10
                     TabIndex =11
+                    ForeColor =0
                     Name ="AddLink"
                     Caption ="Add Another Link"
                     OnClick ="[Event Procedure]"
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x00000000000000000000000000000000000000000000000000000000a574451e ,
@@ -1022,12 +979,14 @@ Begin Form
                     Height =300
                     FontSize =10
                     TabIndex =12
+                    ForeColor =0
                     Name ="SaveandClose"
                     Caption =" Save and Close"
                     OnClick ="[Event Procedure]"
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,

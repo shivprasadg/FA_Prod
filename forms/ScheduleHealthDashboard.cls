@@ -95,7 +95,7 @@ DoCmd.OpenForm "GroupForm", , , "Schid=" & Me.SchID & ""
 End Sub
 Private Sub OpenClientsForm()
 DoCmd.close acForm, "ClientsView"
-DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
 End Sub
 Private Sub EarliestDelvDate_DblClick(Cancel As Integer)
 If IsDate(EarliestDelvDate) Then
@@ -120,7 +120,7 @@ Private Function OpenMassMod(GroupIDx As Long)
     End If
     DoCmd.close acForm, "BulkChange_form"
     DoCmd.OpenForm "BulkChange_form"
-    Forms!BulkChange_Form.ClientList = Me.clientID
+    Forms!BulkChange_Form.ClientList = Me.ClientID
     Form_BulkChange_Form.ClientList_Click
     Forms!BulkChange_Form.LeaseList = DLookup("MLID", "vw_Sixkeys", "sGrpID=" & GroupIDx)
     Form_BulkChange_Form.Leaselist_Click

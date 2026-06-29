@@ -411,6 +411,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -440,6 +441,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -478,6 +480,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -547,6 +550,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -909,6 +913,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -1080,6 +1085,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -1128,6 +1134,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -1680,6 +1687,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -1694,6 +1702,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -1782,6 +1791,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -1796,6 +1806,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -1826,6 +1837,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2175,6 +2187,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2220,6 +2233,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2480,6 +2494,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2494,6 +2509,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2508,6 +2524,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2522,6 +2539,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2606,6 +2624,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2620,6 +2639,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2634,6 +2654,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2648,6 +2669,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -2866,6 +2888,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3342,6 +3365,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3356,6 +3380,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3370,6 +3395,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3384,6 +3410,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3398,6 +3425,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3711,6 +3739,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3725,6 +3754,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3739,6 +3769,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3753,6 +3784,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3767,6 +3799,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3781,6 +3814,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3795,6 +3829,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3809,6 +3844,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3823,6 +3859,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3837,6 +3874,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3851,6 +3889,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3865,6 +3904,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3879,6 +3919,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3941,6 +3982,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3955,6 +3997,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3969,6 +4012,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -3983,6 +4027,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -4086,6 +4131,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -4207,6 +4253,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -4221,6 +4268,7 @@
               <od:fieldProperty name="AggregateType" type="4" value="-1"/>
               <od:fieldProperty name="ResultType" type="2" value="0"/>
               <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+              <od:fieldProperty name="Required" type="1" value="1"/>
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
@@ -4239,7 +4287,7 @@
           </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:base64Binary">
-              <xsd:maxLength value="14"/>
+              <xsd:maxLength value="18"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>

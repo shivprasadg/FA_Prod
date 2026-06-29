@@ -17,11 +17,11 @@ Begin Form
     GridY =24
     Width =10272
     DatasheetFontHeight =11
-    ItemSuffix =601
+    ItemSuffix =602
     Left =6252
-    Top =2676
-    Right =16512
-    Bottom =10224
+    Top =2688
+    Right =17244
+    Bottom =10236
     ShortcutMenuBar ="SortClip"
     RecSrcDt = Begin
         0x90faff9076ebe340
@@ -2884,6 +2884,19 @@ Begin Form
                     LayoutCachedTop =2280
                     LayoutCachedWidth =10272
                     LayoutCachedHeight =2580
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9000
+                    Top =3180
+                    Width =1260
+                    Height =300
+                    Name ="Label601"
+                    Caption ="git dev 2  test"
+                    LayoutCachedLeft =9000
+                    LayoutCachedTop =3180
+                    LayoutCachedWidth =10260
+                    LayoutCachedHeight =3480
                 End
             End
         End

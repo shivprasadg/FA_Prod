@@ -7,6 +7,7 @@ Begin Form
     AutoCenter = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
+    OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     TabularCharSet =238
     PictureAlignment =2
@@ -141,9 +142,9 @@ Begin Form
                     PictureTiling = NotDefault
                     PictureAlignment =0
                     PictureType =2
-                    Top =1005
+                    Top =1008
                     Width =22579
-                    Height =195
+                    Height =192
                     Name ="Image454"
                     Picture ="LtGrey2_Shadow"
                     GroupTable =1
@@ -153,7 +154,7 @@ Begin Form
                     BottomPadding =0
                     HorizontalAnchor =2
 
-                    LayoutCachedTop =1005
+                    LayoutCachedTop =1008
                     LayoutCachedWidth =22579
                     LayoutCachedHeight =1200
                     TabIndex =22

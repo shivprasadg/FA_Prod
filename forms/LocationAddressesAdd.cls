@@ -229,7 +229,7 @@ Private Sub SaveMe_Click()
     '   SQLz = SQLz & ",Latitude"
     SQLz = SQLz & ") SELECT "
     SQLz = SQLz & " " & Me.ClientGroupID & " "
-    SQLz = SQLz & "," & Nz(Me.clientID, 0) & " "
+    SQLz = SQLz & "," & Nz(Me.ClientID, 0) & " "
     SQLz = SQLz & ",'" & Me.LAddrLine1 & "' "
     SQLz = SQLz & ",'" & Me.LAddrLine2 & "' "
     SQLz = SQLz & ",'" & Me.LState.Column(0) & "' "

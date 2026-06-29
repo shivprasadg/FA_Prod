@@ -76,7 +76,7 @@ Function EmailToTrust(iSchID As Integer)
     SQLz = SQLz & " Order By [Leasee Schedule No], [FA TitleLog Num] "
     Set RST = CurrentDb.OpenRecordset(SQLz, dbOpenSnapshot)
     RST.MoveFirst
-    iBankId = RST!BankId
+    iBankId = RST!BankID
     LenderX = RST![Lender or Holder Name]
     LeaseeX = RST!Lessee
     MasterLeaseX = RST![Leasee Master Lease Number]
@@ -268,7 +268,7 @@ Public Function GroupFinalizedCheck(GroupIDx As Long, Optional NoDialog As Boole
 
     'SyndX Rules
     If Nz(RST!Assignee_Bank, "") = "" Then SyndX = SyndX & "<li>Group/<b>Assignee Bank</b></li>"
-    If Nz(RST!AssigneeBankId, 5469) = 5649 Then SyndX = SyndX & "<li>Group/<b>Assignee Bank</b></li>"
+    If Nz(RST!AssigneeBankID, 5469) = 5649 Then SyndX = SyndX & "<li>Group/<b>Assignee Bank</b></li>"
     If Nz(RST!AssignmentDate, "") = "" Then SyndX = SyndX & "<li>Group/<b>Assignment Date</b></li>"
     If Nz(RST!BLCD, "") = "" Then SyndX = SyndX & "<li>Group/<b>BLCD</b></li>"
     If Nz(DLookup("BillToAddressID", "schgrp", "sGrpID=" & GroupIDx), 0) = 0 Then SyndX = SyndX & "<li>Group/Billing Rules/<b>Bill To Address</b></li>"

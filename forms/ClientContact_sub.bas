@@ -509,7 +509,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4650
+                    Left =4668
                     Top =5820
                     Width =576
                     Height =195
@@ -525,9 +525,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =4650
+                    LayoutCachedLeft =4668
                     LayoutCachedTop =5820
-                    LayoutCachedWidth =5226
+                    LayoutCachedWidth =5244
                     LayoutCachedHeight =6015
                     ColumnStart =1
                     ColumnEnd =1
@@ -577,7 +577,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6015
+                    Left =6060
                     Top =5820
                     Width =576
                     Height =195
@@ -591,9 +591,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =6015
+                    LayoutCachedLeft =6060
                     LayoutCachedTop =5820
-                    LayoutCachedWidth =6591
+                    LayoutCachedWidth =6636
                     LayoutCachedHeight =6015
                     ColumnStart =3
                     ColumnEnd =3
@@ -610,9 +610,9 @@ Begin Form
                             OldBorderStyle =1
                             OverlapFlags =95
                             TextAlign =1
-                            Left =5220
+                            Left =5256
                             Top =5820
-                            Width =795
+                            Width =792
                             Height =195
                             FontSize =8
                             Name ="Label43"
@@ -622,9 +622,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =5220
+                            LayoutCachedLeft =5256
                             LayoutCachedTop =5820
-                            LayoutCachedWidth =6015
+                            LayoutCachedWidth =6048
                             LayoutCachedHeight =6015
                             ColumnStart =2
                             ColumnEnd =2

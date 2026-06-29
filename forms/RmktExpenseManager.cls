@@ -50,8 +50,8 @@ Private Sub Form_Load()
     Me.ClientSearch = ""
     Me.ExpenseTypeSearch = ""
     Me.InvNumSearch = ""
-    Me.startDate = ""
-    Me.Enddate = ""
+    Me.StartDate = ""
+    Me.EndDate = ""
     Me.VINSearch = ""
     Me.VendorSearch = ""
     Me.RStatusSearch = ""
@@ -102,17 +102,17 @@ Public Sub SetWhere()
     If Me.VendorSearch.Column(0) & "test" <> "test" Then SQLz = SQLz & "AND E.VendorID=" & Me.VendorSearch & " "
     If Me.VINSearch & "test" <> "test" Then SQLz = SQLz & "AND U.UnitVIN Like'*" & Me.VINSearch & "*' "
 
-    If IsDate(Me.startDate) And IsDate(Me.Enddate) Then
-        SQLz = SQLz & "AND  ExpenseDate >=#" & Me.startDate & "# AND  ExpenseDate <=#" & Me.Enddate & "# "
-        Header = Header & " and By Date Range: " & Me.startDate & " ~ " & Me.Enddate
+    If IsDate(Me.StartDate) And IsDate(Me.EndDate) Then
+        SQLz = SQLz & "AND  ExpenseDate >=#" & Me.StartDate & "# AND  ExpenseDate <=#" & Me.EndDate & "# "
+        Header = Header & " and By Date Range: " & Me.StartDate & " ~ " & Me.EndDate
     End If
-    If IsDate(Me.startDate) And Not IsDate(Me.Enddate) Then
-        SQLz = SQLz & "AND  InvoiceDate =#" & Me.startDate & "# "
-        Header = Header & " and Invoice Date: " & Me.startDate
+    If IsDate(Me.StartDate) And Not IsDate(Me.EndDate) Then
+        SQLz = SQLz & "AND  InvoiceDate =#" & Me.StartDate & "# "
+        Header = Header & " and Invoice Date: " & Me.StartDate
     End If
-    If Not IsDate(Me.startDate) And IsDate(Me.Enddate) Then
-        SQLz = SQLz & " AND ExpenseDate =#" & Me.Enddate & "# "
-        Header = Header & " and ExpenseDate: " & Me.Enddate
+    If Not IsDate(Me.StartDate) And IsDate(Me.EndDate) Then
+        SQLz = SQLz & " AND ExpenseDate =#" & Me.EndDate & "# "
+        Header = Header & " and ExpenseDate: " & Me.EndDate
     End If
     If SQLz = "" Then NeedSearch = 0 Else NeedSearch = 1
     SQLz = SQLz & " ORDER BY InvoiceNumber, E.AssetID, ExpenseDate, ClientShNm"

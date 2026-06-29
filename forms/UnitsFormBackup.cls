@@ -26,7 +26,7 @@ MessageUser "Open", "Geting Vin", "Just a sec..."
 DoCmd.SetWarnings False
 DoCmd.RunSQL ("Delete From UnitVindetails Where UnitId=" & Me.UnitID & ";")
 DoCmd.SetWarnings True
-    Call VinDecoder(Me.UnitID, Me.UnitVIN, Me.UnitYr, , , Me.clientID)
+    Call VinDecoder(Me.UnitID, Me.unitvin, Me.UnitYr, , , Me.ClientID)
     Me.VINDecode.Form.Requery
 MessageUser "Close"
 End Sub
@@ -113,7 +113,7 @@ On Error GoTo FixMe
 'Get ChildPart cost and OEC totals
     Me.UnitGarageLocationRef.Locked = False
     If Me.Form.NewRecord = False Then
-        If Me.unitstatus < "C" And UserAccess <= 15 Then Me.UnitGarageLocationRef.Locked = True
+        If Me.UnitStatus < "C" And UserAccess <= 15 Then Me.UnitGarageLocationRef.Locked = True
         Me.OEC = CCur(Nz([UnitFinalCost], 0) + Nz(DSum("childFinalCost", "ChildParts", "[UnitREF]=" & Me.UnitID & ""), 0))
         Me.ChildPartCost = CCur(Nz(Me.OEC, 0) - Nz(Me.UnitFinalCost, 0))
     '    Me.UnitGarageLocationRef.Requery   ' 7/26/2018 LBJ
@@ -200,7 +200,7 @@ Public Sub AddUnits_Click()
     If IsNull(Me.UnitMake) Then Msgx = Msgx & "Make Missing |"
     If IsNull(Me.UnitType) Then Msgx = Msgx & "Type Missing |"
     If Me.UnitType = "Tractor" And IsNull(Me.UnitSubType) Then Msgx = Msgx & "SubType Missing |"
-    If IsNull(Me.VendorRef) Then Msgx = Msgx & "Vendor Missing |"
+    If IsNull(Me.VendorREF) Then Msgx = Msgx & "Vendor Missing |"
     If IsNull(Me.UnitGarageLocationRef) Then Msgx = Msgx & "Garage Missing |"
     If Me.UnitFinalCost.Value <= 0 Then Msgx = Msgx & "Final Cost not set |"
     If Msgx <> "| " Then
@@ -212,10 +212,10 @@ Public Sub AddUnits_Click()
             Me.NoUnits.SetFocus
             Exit Sub
         End If
-        If IsNull(Me.UnitsClientID) Then Me.UnitsClientID = Me.clientID
-        If IsNull(Me.ClientGroupID) Then ClientGroupID = DLookup("ClientGroupId", "vw_ClientGroup_MatchedClients", "ClientId=" & Me.clientID & "")
+        If IsNull(Me.UnitsClientID) Then Me.UnitsClientID = Me.ClientID
+        If IsNull(Me.ClientGroupID) Then ClientGroupID = DLookup("ClientGroupId", "vw_ClientGroup_MatchedClients", "ClientId=" & Me.ClientID & "")
         If Me.Form.NewRecord = True Then NumOfUnits = Me.NoUnits - 1 Else NumOfUnits = Me.NoUnits
-        If Me.unitstatus & "test" = "test" Then Me.unitstatus = "B"
+        If Me.UnitStatus & "test" = "test" Then Me.UnitStatus = "B"
         Me.Form.Refresh
         Committ = MsgBox("You're about Insert " & Me.NoUnits & " Units" & vbNewLine & "Into Group: " & SGrpNO & vbNewLine & "Do you agree?", vbQuestion + vbYesNo + vbCritical, "Adding " & TragetX & "Units?")
         If Committ = vbNo Then Exit Sub
@@ -223,7 +223,7 @@ Public Sub AddUnits_Click()
         If IsNull(Me.UnitBuildDate) Then BuildDateX = "" Else BuildDateX = Me.UnitBuildDate
         If IsNull(Me.UnitEstDelDate) Then EstDateX = "" Else EstDateX = Me.UnitEstDelDate
         If IsNull(Me.UnitPDStartDate) Then PDateX = "" Else PDateX = Me.UnitPDStartDate
-        Me.ClientGroupID = DLookup("ClientGroupId", "ClientGroup_MatchedClients", "[ClientId]=" & Me.clientID & "")
+        Me.ClientGroupID = DLookup("ClientGroupId", "ClientGroup_MatchedClients", "[ClientId]=" & Me.ClientID & "")
         StatusX = "B"
         If Me.MLOrig <> "FA" Then StatusX = "T"
         If Me.MLOrig <> "FA" And Me.MLLessor = "FA LLC" Then StatusX = "R"
@@ -278,16 +278,16 @@ SQLString:
         SQLz = SQLz & ", '" & Me.UnitModel & "'"
         SQLz = SQLz & ", '" & Me.UnitType & "'"
         SQLz = SQLz & ", '" & Me.UnitSubType & "'"
-        SQLz = SQLz & ", '" & Me.MaintProv & "'"
+        SQLz = SQLz & ", '" & Me.MAINTPROV & "'"
         SQLz = SQLz & ", '" & Me.UnitDel & "'"
         SQLz = SQLz & ", " & Me.UnitDep & ""
         SQLz = SQLz & ", #" & Nz(Me.UnitDepdt, #1/1/2050#) & "#"
-        SQLz = SQLz & ", '" & Me.axle & "'"
+        SQLz = SQLz & ", '" & Me.Axle & "'"
         If Nz(Me.UnitUOM, 0) <> 0 Then SQLz = SQLz & "," & Me.UnitUOM & " "
         If Nz(Me.UnitConfiguration, "") <> "" Then SQLz = SQLz & ",'" & Me.UnitConfiguration & "'"
         If Nz(Me.UnitAxleProperty, "") <> "" Then SQLz = SQLz & ",'" & Me.UnitAxleProperty & "'"
         If Nz(Me.UnitDescriptor, "") <> "" Then SQLz = SQLz & ",'" & Replace(Me.UnitDescriptor, "'", "''", 1) & "'"
-        SQLz = SQLz & ",0, 0, 0, -1, 0, 0, " & Me.GroupRef & ", " & Me.VendorRef & ", " & Me.ClientGroupID & ", '" & StatusX & "', " & Me.clientID & ";"
+        SQLz = SQLz & ",0, 0, 0, -1, 0, 0, " & Me.GroupRef & ", " & Me.VendorREF & ", " & Me.ClientGroupID & ", '" & StatusX & "', " & Me.ClientID & ";"
 
         DoCmd.SetWarnings False
         For i = 1 To NumOfUnits
@@ -358,7 +358,7 @@ End Sub
 
 Private Sub AddTitleLogEntry_Click()
     Dim Response, StateX As String
-    If Me.unitstatus = "T" Or Me.unitstatus = "S" Or Me.unitstatus = "R" Or Me.unitstatus = "PS" Then
+    If Me.UnitStatus = "T" Or Me.UnitStatus = "S" Or Me.UnitStatus = "R" Or Me.UnitStatus = "PS" Then
         Response = MsgBox("You are attempting to add a Log for a Unit that may not belong to " & vbNewLine & "Fleet Advantage. This Unit may be a Purchase Lease Back or in Remarketing" & vbNewLine & "Do you want to proceed?", vbQuestion + vbYesNo, "Not a FA unit")
     Else
         Response = MsgBox("You're about to ADD a Title Log Record, Are you Sure?", vbQuestion + vbYesNo, "New Record")
@@ -366,12 +366,12 @@ Private Sub AddTitleLogEntry_Click()
     If Response = vbYes Then
         DoCmd.close acForm, "OPSTitleLogEntry"
         DoCmd.OpenForm "OPSTitleLogEntry", , , , acFormAdd
-        Forms!OPSTitleLogEntry.UnitREF = Me.UnitID
+        Forms!OPSTitleLogEntry.UnitRef = Me.UnitID
         Forms!OPSTitleLogEntry.USERID = FAUserName
         Forms!OPSTitleLogEntry.TitleNumber = Me.UnitTitleNumber
         If IsNull(Me.UnitRegLocationRef) Or Me.UnitRegLocationRef = 0 Then
             On Error Resume Next
-            StateX = Nz(Forms!Unitsform!UNittitleLogForm.Form.TitleState, "")
+            StateX = Nz(Forms!Unitsform!UnitTitleLogForm.Form.TitleState, "")
 CheckStatus:
             On Error GoTo 0
         Else
@@ -385,21 +385,21 @@ End Sub
 
 Private Sub UnitCOABack_AfterUpdate()
     If Me.MLOrig = "FA" Then
-        If IsDate(Me.UnitCOABack) And (Me.unitstatus) = "B" Then Me.unitstatus.Value = "A"
-        If Not IsDate(Me.UnitCOABack) And Not IsDate(Me.UnitCofACopy) And (Me.unitstatus) = "A" Then Me.unitstatus.Value = "B"
+        If IsDate(Me.UnitCOABack) And (Me.UnitStatus) = "B" Then Me.UnitStatus.Value = "A"
+        If Not IsDate(Me.UnitCOABack) And Not IsDate(Me.UnitCofACopy) And (Me.UnitStatus) = "A" Then Me.UnitStatus.Value = "B"
     End If
 End Sub
 
 Private Sub UnitCofACopy_AfterUpdate()
     If Me.MLOrig = "FA" Then
-        If IsDate(Me.UnitCofACopy) And (Me.unitstatus) = "B" Then Me.unitstatus.Value = "A"
-        If Not IsDate(Me.UnitCOABack) And Not IsDate(Me.UnitCofACopy) And (Me.unitstatus) = "A" Then Me.unitstatus.Value = "B"
+        If IsDate(Me.UnitCofACopy) And (Me.UnitStatus) = "B" Then Me.UnitStatus.Value = "A"
+        If Not IsDate(Me.UnitCOABack) And Not IsDate(Me.UnitCofACopy) And (Me.UnitStatus) = "A" Then Me.UnitStatus.Value = "B"
     End If
 End Sub
 Private Sub UnitAcceptDate_AfterUpdate()
     If Me.MLOrig = "FA" Then
-        If IsDate(Me.UnitCofACopy) And Me.unitstatus = "B" Then Me.unitstatus.Value = "A"
-        If IsDate(Me.UnitCOABack) And Me.unitstatus = "B" Then Me.unitstatus.Value = "A"
+        If IsDate(Me.UnitCofACopy) And Me.UnitStatus = "B" Then Me.UnitStatus.Value = "A"
+        If IsDate(Me.UnitCOABack) And Me.UnitStatus = "B" Then Me.UnitStatus.Value = "A"
     End If
 End Sub
 
@@ -412,11 +412,11 @@ Private Sub UnitMake_Click()
 End Sub
 
 Private Sub unitoffleasedt_AfterUpdate()
- If IsDate(Me.Units_RMKT_Sub!parkdt) Then unitstatus = "R"
+ If IsDate(Me.Units_RMKT_Sub!parkdt) Then UnitStatus = "R"
 End Sub
 
 Private Sub UnitStatus_Click()
-    If Me.unitstatus = "A" Then
+    If Me.UnitStatus = "A" Then
         If IsNull(Me.UnitCOABack) And IsNull(UnitCofACopy) Then
             MsgBox "Thus unit cannot be set to 'A' without a COA-Back or a COA-Copy date", vbCritical, "Not yet an Accepted Unit"
             Me.Form.Undo
@@ -430,13 +430,13 @@ Private Sub UnitStatus_Click()
 End Sub
 
 Private Sub UnitStatus_GotFocus()
-PrevStatus = Me.unitstatus
+PrevStatus = Me.UnitStatus
 'If DLookup("[Access Level]", "TBL_Employees", "[User ID] = FAUserName()") = 0 Then
     If FAUserAccessLevel >= 6 Or FAUserAccessGroup Like "*OPS*" Then
-        Me.unitstatus.Locked = False
+        Me.UnitStatus.Locked = False
     Else
-        If Me.unitstatus = "R" Or Me.unitstatus = "S" Then
-            Me.unitstatus.Locked = True
+        If Me.UnitStatus = "R" Or Me.UnitStatus = "S" Then
+            Me.UnitStatus.Locked = True
         End If
     End If
 End Sub
@@ -460,7 +460,7 @@ Private Sub UnitTASent_AfterUpdate()
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
-        Me.UNittitleLogForm.Requery
+        Me.UnitTitleLogForm.Requery
     End If
 End Sub
 
@@ -482,7 +482,7 @@ End Sub
 
 Private Sub CloseMe_Click()
 
-    If Me.unitstatus <> "A" Or Me.unitstatus <> "B" Then
+    If Me.UnitStatus <> "A" Or Me.UnitStatus <> "B" Then
         DoCmd.close acForm, "UnitsForm", acSaveYes
         Exit Sub
     End If
@@ -491,8 +491,8 @@ Private Sub CloseMe_Click()
     If IsNull(Me.UnitYr.Value) Then Msgx = Msgx & "UnitYr Missing |"
     If IsNull(Me.UnitMake) Then Msgx = Msgx & "UnitMake Missing |"
     If IsNull(Me.UnitType) Then Msgx = Msgx & "UnitType Missing |"
-    If IsNull(Me.VendorRef) Then Msgx = Msgx & "Vendor Missing |"
-    If unitstatus = "A" Or unitstatus = "B" Then
+    If IsNull(Me.VendorREF) Then Msgx = Msgx & "Vendor Missing |"
+    If UnitStatus = "A" Or UnitStatus = "B" Then
         If Me.UnitFinalCost.Value <= 0 Then Msgx = Msgx & "Final Cost not set |"
     End If
     If Msgx <> "| " Then
@@ -501,7 +501,7 @@ Private Sub CloseMe_Click()
         DoCmd.close acForm, Me.Form.Name, acSaveNo
         Exit Sub
     End If
-    If (IsNull(Me.UnitGarageLocationRef) Or (Me.UnitGarageLocationRef) = 0) And (Me.unitstatus) = "A" Then
+    If (IsNull(Me.UnitGarageLocationRef) Or (Me.UnitGarageLocationRef) = 0) And (Me.UnitStatus) = "A" Then
         MsgBox "Please update Garage Location before you can close this record", vbCritical, "Location Fields Missing"
         Exit Sub
     End If
@@ -586,31 +586,31 @@ Private Sub UnitGarageLocationRef_Dirty(Cancel As Integer)
 End Sub
 
 Private Sub UnitStatus_BeforeUpdate(Cancel As Integer)
-    If Not IsNull(Me.UnitCOABack) And Not IsNull(Me.UnitAcceptDate) And Not ((Me.MLOrig) = "Portfolio" Or (Me.MLOrig) = "Other") And ((Me.unitstatus) = "T" Or (Me.unitstatus) = "B") Then
+    If Not IsNull(Me.UnitCOABack) And Not IsNull(Me.UnitAcceptDate) And Not ((Me.MLOrig) = "Portfolio" Or (Me.MLOrig) = "Other") And ((Me.UnitStatus) = "T" Or (Me.UnitStatus) = "B") Then
         Cancel = True
-        Me.unitstatus.Undo
+        Me.UnitStatus.Undo
     Else
-        If Not IsNull(Me.UnitCOABack) And Not IsNull(Me.UnitAcceptDate) And ((Me.MLOrig) = "Portfolio" Or (Me.MLOrig) = "Other") And (Me.unitstatus) = "A" Then
+        If Not IsNull(Me.UnitCOABack) And Not IsNull(Me.UnitAcceptDate) And ((Me.MLOrig) = "Portfolio" Or (Me.MLOrig) = "Other") And (Me.UnitStatus) = "A" Then
             Cancel = True
-            Me.unitstatus.Undo
+            Me.UnitStatus.Undo
         End If
     End If
 
-    If (IsNull(Me.UnitGarageLocationRef) Or (Me.UnitGarageLocationRef) = 0) And (Me.unitstatus) = "A" Then
+    If (IsNull(Me.UnitGarageLocationRef) Or (Me.UnitGarageLocationRef) = 0) And (Me.UnitStatus) = "A" Then
         MsgBox "Please add Garage Location and then update the Unit Status"
         Cancel = True
-        Me.unitstatus.Undo
+        Me.UnitStatus.Undo
     End If
-    If IsNull(Me.Units_RMKT_Sub!parkdt) And Me.unitstatus = "P" Then
+    If IsNull(Me.Units_RMKT_Sub!parkdt) And Me.UnitStatus = "P" Then
         MsgBox "You must have a Parked Date set before you can Park ('P') a unit"
         Cancel = True
-        Me.unitstatus.Undo
+        Me.UnitStatus.Undo
     End If
     If PrevStatus = "C" Then
-        If Me.unitstatus <> "C" Then
+        If Me.UnitStatus <> "C" Then
             MsgBox "Once a Unit is a Casualty ('C'), it will remain a 'C' Status Unit, even when Parked or Off Leased."
         End If
-        Me.unitstatus = "C"
+        Me.UnitStatus = "C"
     End If
 
 End Sub

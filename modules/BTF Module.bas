@@ -78,9 +78,9 @@ Public Function RunBTF(BVDate As Date, AssetIDList As String)
     'Create new table
     Set tdf = db.CreateTableDef("BTFTemp")
     'Add fields based on ADO metadata
-    For i = 0 To RST.fields.Count - 1
+    For i = 0 To RST.Fields.Count - 1
         Dim adoFld As ADODB.Field
-        Set adoFld = RST.fields(i)
+        Set adoFld = RST.Fields(i)
 
         Select Case adoFld.Type
             Case adInteger, adSmallInt, adTinyInt
@@ -110,7 +110,7 @@ Public Function RunBTF(BVDate As Date, AssetIDList As String)
             Case Else
                 Set fld = tdf.CreateField(adoFld.Name, dbText, 255)
         End Select
-        tdf.fields.Append fld
+        tdf.Fields.Append fld
     Next i
     db.TableDefs.Append tdf
     '--- Insert rows ---
@@ -120,11 +120,11 @@ Public Function RunBTF(BVDate As Date, AssetIDList As String)
     RST.MoveFirst
     Do Until RST.EOF
         rsDAO.AddNew
-        For i = 0 To RST.fields.Count - 1
-            If IsNull(RST.fields(i).Value) Then
-                rsDAO.fields(RST.fields(i).Name).Value = Null
+        For i = 0 To RST.Fields.Count - 1
+            If IsNull(RST.Fields(i).Value) Then
+                rsDAO.Fields(RST.Fields(i).Name).Value = Null
             Else
-                rsDAO.fields(RST.fields(i).Name).Value = RST.fields(i).Value
+                rsDAO.Fields(RST.Fields(i).Name).Value = RST.Fields(i).Value
             End If
         Next i
         rsDAO.Update

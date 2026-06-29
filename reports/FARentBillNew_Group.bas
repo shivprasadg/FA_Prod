@@ -709,7 +709,7 @@ Begin Report
             CanGrow = NotDefault
             CanShrink = NotDefault
             RepeatSection = NotDefault
-            Height =587
+            Height =590
             BreakLevel =1
             Name ="GroupHeader0"
             Begin
@@ -717,18 +717,18 @@ Begin Report
                     SpecialEffect =5
                     TextAlign =2
                     TextFontFamily =34
-                    Left =10650
+                    Left =10656
                     Top =300
-                    Width =1065
+                    Width =1068
                     Height =272
                     FontSize =9
                     FontWeight =700
                     Name ="Label91"
                     Caption ="Tax:"
                     GroupTable =1
-                    LayoutCachedLeft =10650
+                    LayoutCachedLeft =10656
                     LayoutCachedTop =300
-                    LayoutCachedWidth =11715
+                    LayoutCachedWidth =11724
                     LayoutCachedHeight =572
                     ColumnStart =7
                     ColumnEnd =7
@@ -782,16 +782,16 @@ Begin Report
                 Begin Label
                     SpecialEffect =5
                     TextFontFamily =34
-                    Left =7155
+                    Left =7152
                     Top =300
-                    Width =645
+                    Width =648
                     Height =272
                     FontSize =9
                     FontWeight =700
                     Name ="Label206"
                     Caption ="Status:"
                     GroupTable =1
-                    LayoutCachedLeft =7155
+                    LayoutCachedLeft =7152
                     LayoutCachedTop =300
                     LayoutCachedWidth =7800
                     LayoutCachedHeight =572
@@ -866,16 +866,16 @@ Begin Report
                     SpecialEffect =5
                     TextAlign =2
                     TextFontFamily =34
-                    Left =9030
+                    Left =9024
                     Top =300
-                    Width =630
+                    Width =636
                     Height =272
                     FontSize =9
                     FontWeight =700
                     Name ="Label238"
                     Caption ="Taxed?"
                     GroupTable =1
-                    LayoutCachedLeft =9030
+                    LayoutCachedLeft =9024
                     LayoutCachedTop =300
                     LayoutCachedWidth =9660
                     LayoutCachedHeight =572
@@ -924,9 +924,9 @@ Begin Report
                     TextFontFamily =34
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =12840
+                    Left =12852
                     Top =300
-                    Width =1365
+                    Width =1368
                     Height =272
                     FontSize =9
                     FontWeight =700
@@ -936,9 +936,9 @@ Begin Report
                         "t\")"
                     GroupTable =1
 
-                    LayoutCachedLeft =12840
+                    LayoutCachedLeft =12852
                     LayoutCachedTop =300
-                    LayoutCachedWidth =14205
+                    LayoutCachedWidth =14220
                     LayoutCachedHeight =572
                     ColumnStart =9
                     ColumnEnd =9
@@ -949,18 +949,18 @@ Begin Report
                             SpecialEffect =5
                             TextAlign =2
                             TextFontFamily =34
-                            Left =11775
+                            Left =11784
                             Top =300
-                            Width =1005
+                            Width =1008
                             Height =272
                             FontSize =9
                             FontWeight =700
                             Name ="FeeLabel"
                             Caption ="Serv Fee"
                             GroupTable =1
-                            LayoutCachedLeft =11775
+                            LayoutCachedLeft =11784
                             LayoutCachedTop =300
-                            LayoutCachedWidth =12780
+                            LayoutCachedWidth =12792
                             LayoutCachedHeight =572
                             ColumnStart =8
                             ColumnEnd =8
@@ -973,7 +973,7 @@ Begin Report
         End
         Begin Section
             KeepTogether = NotDefault
-            Height =322
+            Height =336
             Name ="Detail"
             Begin
                 Begin TextBox
@@ -982,18 +982,18 @@ Begin Report
                     TextFontFamily =34
                     IMESentenceMode =3
                     Left =720
-                    Top =30
+                    Top =36
                     Width =780
-                    Height =270
+                    Height =276
                     FontSize =9
                     Name ="UnitUnitNum"
                     ControlSource ="UnitUnitNum"
                     GroupTable =1
 
                     LayoutCachedLeft =720
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =1500
-                    LayoutCachedHeight =300
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -1004,9 +1004,9 @@ Begin Report
                     TextFontFamily =34
                     IMESentenceMode =3
                     Left =1560
-                    Top =30
+                    Top =36
                     Width =2100
-                    Height =270
+                    Height =276
                     ColumnWidth =2130
                     FontSize =9
                     TabIndex =1
@@ -1015,9 +1015,9 @@ Begin Report
                     GroupTable =1
 
                     LayoutCachedLeft =1560
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =3660
-                    LayoutCachedHeight =300
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -1030,9 +1030,9 @@ Begin Report
                     TextFontFamily =34
                     IMESentenceMode =3
                     Left =3720
-                    Top =30
+                    Top =36
                     Width =3375
-                    Height =270
+                    Height =276
                     FontSize =9
                     TabIndex =2
                     Name ="Desc"
@@ -1040,9 +1040,9 @@ Begin Report
                     GroupTable =1
 
                     LayoutCachedLeft =3720
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =7095
-                    LayoutCachedHeight =300
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -1057,9 +1057,9 @@ Begin Report
                     TextFontFamily =34
                     IMESentenceMode =3
                     Left =7860
-                    Top =30
+                    Top =36
                     Width =1109
-                    Height =270
+                    Height =276
                     FontSize =9
                     TabIndex =3
                     Name ="UnitsbillRent"
@@ -1068,9 +1068,9 @@ Begin Report
                     GroupTable =1
 
                     LayoutCachedLeft =7860
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =8969
-                    LayoutCachedHeight =300
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -1084,10 +1084,10 @@ Begin Report
                     TextAlign =3
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =10650
-                    Top =30
-                    Width =1065
-                    Height =270
+                    Left =10656
+                    Top =36
+                    Width =1068
+                    Height =276
                     FontSize =9
                     TabIndex =4
                     Name ="Text139"
@@ -1095,10 +1095,10 @@ Begin Report
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =1
 
-                    LayoutCachedLeft =10650
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =11715
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =10656
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =11724
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =7
@@ -1113,9 +1113,9 @@ Begin Report
                     TextFontFamily =34
                     IMESentenceMode =3
                     Left =9720
-                    Top =30
+                    Top =36
                     Width =870
-                    Height =270
+                    Height =276
                     ColumnWidth =2160
                     FontSize =9
                     TabIndex =7
@@ -1125,9 +1125,9 @@ Begin Report
                     GroupTable =1
 
                     LayoutCachedLeft =9720
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =10590
-                    LayoutCachedHeight =300
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =6
@@ -1140,10 +1140,10 @@ Begin Report
                     TextAlign =3
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =12840
-                    Top =30
-                    Width =1365
-                    Height =270
+                    Left =12852
+                    Top =36
+                    Width =1368
+                    Height =276
                     FontSize =9
                     TabIndex =8
                     Name ="LineTotal"
@@ -1151,10 +1151,10 @@ Begin Report
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =1
 
-                    LayoutCachedLeft =12840
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =14205
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =12852
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =14220
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =9
@@ -1167,10 +1167,10 @@ Begin Report
                     TextAlign =2
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =7155
-                    Top =30
-                    Width =645
-                    Height =270
+                    Left =7152
+                    Top =36
+                    Width =648
+                    Height =276
                     ColumnWidth =1965
                     FontSize =9
                     TabIndex =9
@@ -1178,10 +1178,10 @@ Begin Report
                     ControlSource ="UnitStatus"
                     GroupTable =1
 
-                    LayoutCachedLeft =7155
-                    LayoutCachedTop =30
+                    LayoutCachedLeft =7152
+                    LayoutCachedTop =36
                     LayoutCachedWidth =7800
-                    LayoutCachedHeight =300
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -1194,20 +1194,20 @@ Begin Report
                     TextAlign =2
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =9030
-                    Top =30
-                    Width =630
-                    Height =270
+                    Left =9024
+                    Top =36
+                    Width =636
+                    Height =276
                     FontSize =9
                     TabIndex =6
                     Name ="Text236"
                     ControlSource ="=IIf([UnitsbillRent]>0,IIf([UnitTaxExempt]=-1,\"No\",\"Yes\"),\"--\")"
                     GroupTable =1
 
-                    LayoutCachedLeft =9030
-                    LayoutCachedTop =30
+                    LayoutCachedLeft =9024
+                    LayoutCachedTop =36
                     LayoutCachedWidth =9660
-                    LayoutCachedHeight =300
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -1236,10 +1236,10 @@ Begin Report
                     TextAlign =3
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =11775
-                    Top =30
-                    Width =1005
-                    Height =270
+                    Left =11784
+                    Top =36
+                    Width =1008
+                    Height =276
                     FontSize =9
                     TabIndex =5
                     Name ="FSLFeeX"
@@ -1247,10 +1247,10 @@ Begin Report
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =1
 
-                    LayoutCachedLeft =11775
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12780
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =11784
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12792
+                    LayoutCachedHeight =312
                     RowStart =1
                     RowEnd =1
                     ColumnStart =8

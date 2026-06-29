@@ -9,7 +9,7 @@ Dim CurrentRate As Double
 Private Sub Form_Current()
     On Error GoTo FixMe
     Me.txtCurrent = Me.ID
-    Me.Parent.TaxTypeId = Me.TaxTypeId
+    Me.Parent.TaxTypeID = Me.TaxTypeID
 FixMe:
 End Sub
 
@@ -19,7 +19,7 @@ Private Sub TaxNumber_AfterUpdate()
     If CheckUpdate = "Correction" Then Me.TaxNumber = MakePercent(Me.TaxNumber)
     If CheckUpdate = "AddTax" Then
         DoCmd.close acForm, "Tax_Add"
-        DoCmd.OpenForm "Tax_Add", acNormal, , , , , "State|" & Me.TaxTypeId & "|" & Me.Parent.StateID & "|" & Me.TaxNumber
+        DoCmd.OpenForm "Tax_Add", acNormal, , , , , "State|" & Me.TaxTypeID & "|" & Me.Parent.StateID & "|" & Me.TaxNumber
         Me.Undo
     End If
 End Sub

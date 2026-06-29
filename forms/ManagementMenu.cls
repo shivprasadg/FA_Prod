@@ -696,7 +696,7 @@ Private Sub BDEXExitReport_Click()
     NLoop = RST.RecordCount
     'Get Total Records
     For ii = 1 To NLoop
-        AllRecords = AllRecords + RST!Units
+        AllRecords = AllRecords + RST!UNITS
         RST.MoveNext
     Next ii
 
@@ -758,7 +758,7 @@ Private Sub BDEXExitReport_Click()
             IsLastRpt = False
             ShowXL = False
             TabX = ii
-            RecCountx = RST!Units
+            RecCountx = RST!UNITS
         End If
 
         If ii = NLoop Then

@@ -51,7 +51,7 @@ End Sub
 
 Private Sub Form_Current()
     On Error GoTo FixMe
-    Me.Parent.TaxTypeId = Me.TaxTypeId
+    Me.Parent.TaxTypeID = Me.TaxTypeID
     Me.txtCurrent = Nz(Me.ID, 0)
 FixMe:
 End Sub
@@ -104,7 +104,7 @@ Private Sub TaxNumber_AfterUpdate()
     End If
     Call SetFormLevel
     DoCmd.close acForm, "Tax_Add_Exception"
-    DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , "" & LevelX & "|" & Me.TaxTypeId & "|" & TargetIDx & "|" & Me.TaxNumber & "|" & ModeX
+    DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , "" & LevelX & "|" & Me.TaxTypeID & "|" & TargetIDx & "|" & Me.TaxNumber & "|" & ModeX
     '   If LevelX = "State" Then DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , "State|" & Me.TaxTypeId & "|" & Me.Parent.StateID & "|" & Me.TaxNumber & "|" & ModeX
     '   If LevelX = "County" Then DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , "County|" & Me.TaxTypeId & "|" & Me.Parent.CountyID & "|" & Me.TaxNumber & "|" & ModeX
     'End If
@@ -178,7 +178,7 @@ Private Sub EditMe_Click()
     End If
     DoCmd.SetWarnings True
     DoCmd.close acForm, "Tax_Add_Exception"
-    DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , "" & LevelX & "|" & Me.TaxTypeId & "|" & TargetIDx & "|" & CurrentRate & "|" & ModeX
+    DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , "" & LevelX & "|" & Me.TaxTypeID & "|" & TargetIDx & "|" & CurrentRate & "|" & ModeX
 End Sub
 
 Public Sub TaxNumber_GotFocus()

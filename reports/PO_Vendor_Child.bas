@@ -124,8 +124,8 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =9060
-                    Width =585
+                    Left =9084
+                    Width =588
                     Height =30
                     TabIndex =2
                     BorderColor =9211020
@@ -137,8 +137,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =9060
-                    LayoutCachedWidth =9645
+                    LayoutCachedLeft =9084
+                    LayoutCachedWidth =9672
                     LayoutCachedHeight =30
                     ColumnStart =2
                     ColumnEnd =2
@@ -154,7 +154,7 @@ Begin Report
                     BorderWidth =1
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =7620
+                    Left =7632
                     Height =30
                     TabIndex =1
                     BorderColor =9211020
@@ -167,8 +167,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =7620
-                    LayoutCachedWidth =9060
+                    LayoutCachedLeft =7632
+                    LayoutCachedWidth =9072
                     LayoutCachedHeight =30
                     ColumnStart =1
                     ColumnEnd =1
@@ -187,8 +187,8 @@ Begin Report
                     TextAlign =3
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =9645
-                    Width =1739
+                    Left =9684
+                    Width =1740
                     Height =30
                     TabIndex =3
                     BorderColor =9211020
@@ -201,8 +201,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =9645
-                    LayoutCachedWidth =11384
+                    LayoutCachedLeft =9684
+                    LayoutCachedWidth =11424
                     LayoutCachedHeight =30
                     ColumnStart =3
                     ColumnEnd =3
@@ -219,8 +219,8 @@ Begin Report
                     BorderWidth =1
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =75
-                    Width =7545
+                    Left =72
+                    Width =7548
                     Height =30
                     LeftMargin =72
                     BorderColor =9211020
@@ -232,7 +232,7 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =75
+                    LayoutCachedLeft =72
                     LayoutCachedWidth =7620
                     LayoutCachedHeight =30
                     LayoutGroup =1

@@ -169,7 +169,6 @@ Begin Form
                     Width =8520
                     Height =6960
                     AutoActivate =1
-                    BorderColor =10921638
                     Name ="WebBrowser0"
                     OleData = Begin
                         0x000e0000d0cf11e0a1b11ae1000000000000000000000000000000003e000300 ,
@@ -286,7 +285,6 @@ Begin Form
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000000000000
                     End
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =120
                     LayoutCachedTop =240
@@ -299,21 +297,18 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1440
+                    Left =1452
                     Top =7320
-                    Width =6060
+                    Width =6072
                     Height =315
                     TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="AddressToSearch"
                     ControlSource ="Addr"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1440
+                    LayoutCachedLeft =1452
                     LayoutCachedTop =7320
-                    LayoutCachedWidth =7500
+                    LayoutCachedWidth =7524
                     LayoutCachedHeight =7635
                     ColumnStart =1
                     ColumnEnd =3
@@ -327,12 +322,9 @@ Begin Form
                             Top =7320
                             Width =1020
                             Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label8"
                             Caption ="Address to Search"
                             GroupTable =1
-                            GridlineColor =10921638
                             LayoutCachedLeft =360
                             LayoutCachedTop =7320
                             LayoutCachedWidth =1380
@@ -350,7 +342,6 @@ Begin Form
                     Name ="SetAddr"
                     Caption ="Set Addr"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8880
                     LayoutCachedTop =5580
@@ -380,23 +371,20 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1440
-                    Top =7695
+                    Left =1452
+                    Top =7704
                     Width =2460
-                    Height =315
+                    Height =312
                     TabIndex =4
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Latitude"
                     ControlSource ="Latitude"
                     Format ="General Number"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1440
-                    LayoutCachedTop =7695
-                    LayoutCachedWidth =3900
-                    LayoutCachedHeight =8010
+                    LayoutCachedLeft =1452
+                    LayoutCachedTop =7704
+                    LayoutCachedWidth =3912
+                    LayoutCachedHeight =8016
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -408,19 +396,16 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =1
                             Left =360
-                            Top =7695
+                            Top =7704
                             Width =1020
-                            Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
+                            Height =312
                             Name ="Label11"
                             Caption ="Latitude"
                             GroupTable =1
-                            GridlineColor =10921638
                             LayoutCachedLeft =360
-                            LayoutCachedTop =7695
+                            LayoutCachedTop =7704
                             LayoutCachedWidth =1380
-                            LayoutCachedHeight =8010
+                            LayoutCachedHeight =8016
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -432,23 +417,20 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =5040
-                    Top =7695
+                    Left =5064
+                    Top =7704
                     Width =2460
-                    Height =315
+                    Height =312
                     TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Longitude"
                     ControlSource ="Longitude"
                     Format ="General Number"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =5040
-                    LayoutCachedTop =7695
-                    LayoutCachedWidth =7500
-                    LayoutCachedHeight =8010
+                    LayoutCachedLeft =5064
+                    LayoutCachedTop =7704
+                    LayoutCachedWidth =7524
+                    LayoutCachedHeight =8016
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -459,20 +441,17 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =3960
-                            Top =7695
+                            Left =3972
+                            Top =7704
                             Width =1020
-                            Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
+                            Height =312
                             Name ="Label13"
                             Caption ="Longitude"
                             GroupTable =1
-                            GridlineColor =10921638
-                            LayoutCachedLeft =3960
-                            LayoutCachedTop =7695
-                            LayoutCachedWidth =4980
-                            LayoutCachedHeight =8010
+                            LayoutCachedLeft =3972
+                            LayoutCachedTop =7704
+                            LayoutCachedWidth =4992
+                            LayoutCachedHeight =8016
                             RowStart =1
                             RowEnd =1
                             ColumnStart =2
@@ -490,7 +469,6 @@ Begin Form
                     Name ="GetLatLog"
                     Caption ="Get Lat-Log"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8880
                     LayoutCachedTop =6060
@@ -524,11 +502,8 @@ Begin Form
                     Width =720
                     Height =315
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="ID"
                     ControlSource ="=LocationID"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7680
                     LayoutCachedTop =7740
@@ -541,11 +516,8 @@ Begin Form
                             Top =7320
                             Width =690
                             Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label40"
                             Caption ="ID"
-                            GridlineColor =10921638
                             LayoutCachedLeft =7680
                             LayoutCachedTop =7320
                             LayoutCachedWidth =8370
@@ -561,7 +533,6 @@ Begin Form
                     Name ="MoveNext"
                     Caption ="MoveNext"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8880
                     LayoutCachedTop =6540
@@ -598,15 +569,12 @@ Begin Form
                     Height =4260
                     FontSize =9
                     TabIndex =8
-                    ForeColor =4210752
-                    BorderColor =10921638
                     Name ="LocationsList"
                     RowSourceType ="Table/Query"
                     RowSource ="Select * From GeoCodeLocations Order By LocationSN"
                     ColumnWidths ="0;2448;2592;2160;720;1728;864;720;720"
                     OnDblClick ="[Event Procedure]"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =120
                     LayoutCachedTop =8460
@@ -623,7 +591,6 @@ Begin Form
                     Name ="SortBlank"
                     Caption ="Sort Blank"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8880
                     LayoutCachedTop =7260
@@ -658,7 +625,6 @@ Begin Form
                     Name ="BlankWithUnits"
                     Caption ="Blank With Units"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8880
                     LayoutCachedTop =7680
@@ -694,13 +660,13 @@ Begin Form
                     TabIndex =11
                     BackColor =13434879
                     BorderColor =967423
+                    ForeColor =0
                     Name ="SearchLocation"
                     OnChange ="[Event Procedure]"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =120
                     LayoutCachedTop =8220
@@ -721,10 +687,7 @@ Begin Form
                     Width =2340
                     Height =315
                     TabIndex =12
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="VinToDecode"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =9000
                     LayoutCachedTop =420
@@ -736,11 +699,8 @@ Begin Form
                             Left =8880
                             Width =690
                             Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
                             Name ="Label49"
                             Caption ="Text48"
-                            GridlineColor =10921638
                             LayoutCachedLeft =8880
                             LayoutCachedWidth =9570
                             LayoutCachedHeight =315
@@ -755,7 +715,6 @@ Begin Form
                     Name ="DecodeVIN"
                     Caption ="Decode VIN"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8940
                     LayoutCachedTop =780
@@ -788,7 +747,6 @@ Begin Form
                     Name ="DecodeVIN2"
                     Caption ="Decode VIN2"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8940
                     LayoutCachedTop =1260

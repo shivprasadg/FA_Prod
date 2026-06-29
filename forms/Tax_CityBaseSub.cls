@@ -11,7 +11,7 @@ Dim Response   As String
 Private Sub Form_Current()
     On Error GoTo FixMe
     Me.txtCurrent = Me.ID
-    If Not IsNull(Me.TaxTypeId) Then Me.Parent.TaxTypeId = Me.TaxTypeId
+    If Not IsNull(Me.TaxTypeID) Then Me.Parent.TaxTypeID = Me.TaxTypeID
 FixMe:
 End Sub
 Private Sub EditMe_Click()
@@ -42,7 +42,7 @@ Private Sub EditMe_Click()
     DoCmd.RunSQL ("Delete From TaxBaseTemp")
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
-    DoCmd.OpenForm "Tax_Add", acNormal, , , , , "City|" & Me.Parent.TaxTypeId & "|" & Me.Parent.CityID & "|" & CurrLevelTxRate & "|Edit"
+    DoCmd.OpenForm "Tax_Add", acNormal, , , , , "City|" & Me.Parent.TaxTypeID & "|" & Me.Parent.CityID & "|" & CurrLevelTxRate & "|Edit"
 End Sub
 Public Sub TaxNumber_GotFocus()
     CurrentRate = Me.TaxNumber

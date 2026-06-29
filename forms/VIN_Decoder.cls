@@ -16,13 +16,13 @@ End Sub
 Private Sub DecodeVIN_Click()
 'Me.WebBrowser0.Object.Document.getElementsByName("vin")(0).Value = Me.VINToDecode
     Me.WebBrowser0.Object.Silent = True
-    Me.WebBrowser0.Object.Navigate "http://vinfreecheck.com/decode_vin/""" & Me.VINToDecode & """"
+    Me.WebBrowser0.Object.Navigate "http://vinfreecheck.com/decode_vin/""" & Me.VinToDecode & """"
     Do While Me.WebBrowser0.Object.ReadyState <> 4: DoEvents: Loop
     '      Application.Wait (Now + TimeValue("0:00:02"))
 
     WebString = Me.WebBrowser0.Object.Document.body.innerText
     If WebString Like "*Vin too short*" Then
-        MsgBox VINToDecode & vbNewLine & "VIN Too Short"
+        MsgBox VinToDecode & vbNewLine & "VIN Too Short"
         Exit Sub
     End If
     Dim VinX, YearX, MakeX, ModelX, TrimLevelX, EngineX, CabTypeX, MFGx, SerialX, CheckX, AccuracyX
@@ -58,7 +58,7 @@ Private Sub DecodeVIN_Click()
 End Sub
 
 Private Sub DecodeVIN2_Click()
-    Call DownloadVINCSV("https://vpic.nhtsa.dot.gov/decoder/Decoder/ExportToExcel?ModelYear=2014&VIN=" & Me.VINToDecode & "", "C:\FAAS\scripts\VIN.csv")
+    Call DownloadVINCSV("https://vpic.nhtsa.dot.gov/decoder/Decoder/ExportToExcel?ModelYear=2014&VIN=" & Me.VinToDecode & "", "C:\FAAS\scripts\VIN.csv")
     Dim FileNum As Integer
     Dim DataLine As String
     WebString = ""
@@ -71,8 +71,8 @@ Private Sub DecodeVIN2_Click()
     Wend
     Dim VinX, SerialX, CheckX, EngineX, EngMfgX, FuelX, Typex, GvwX, CabTypeX, MakeX, MFGx, YearX, ModelX, DriveX, BrakeX, AxleConfigX, AssyplantX, Notex, HorsePwrX, StateTemX, CountryX
 
-    VinX = Me.VINToDecode
-    SerialX = Right(Me.VINToDecode, 8)
+    VinX = Me.VinToDecode
+    SerialX = Right(Me.VinToDecode, 8)
 
     CheckX = Split(WebString, ",")(6)
     CheckX = Split(CheckX, "Possible Values")(0)
@@ -231,7 +231,7 @@ Sub GetVinData()
     End With
 
     ' Input the VIN
-    ie.Document.getElementById("VIN").Value = Me.VINToDecode
+    ie.Document.getElementById("VIN").Value = Me.VinToDecode
     ie.Document.getElementById("ModelYear").Value = "2017"
 
     ' Click the "Decode" button
@@ -253,8 +253,8 @@ Sub GetVinData()
     'WebString = ie.Document.getElementById("tblVIN").Value
     Dim VinX, YearX, MakeX, ModelX, bodyx, TrimLevelX, EngineX, CabTypeX, MFGx, SerialX, CheckX, AccuracyX, WeightX
 
-    VinX = Me.VINToDecode
-    SerialX = Right(Me.VINToDecode, 8)
+    VinX = Me.VinToDecode
+    SerialX = Right(Me.VinToDecode, 8)
 
     CheckX = Split(WebString, "VIN CHECK SUM")(1)
     CheckX = Split(CheckX, "DATA ACCURACY")(0)

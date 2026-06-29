@@ -16,7 +16,7 @@ DoCmd.close acForm, (Me.Form.Name)
 End Sub
 
 Private Sub DeletedMe_Click()
-If IsNull(Me.groupTypeID) Then Exit Sub
+If IsNull(Me.GroupTypeID) Then Exit Sub
  Dim Committ, Typex, Msgx As String
  Dim UnitX, Childx As Integer
  UnitX = DCount("UnitId", "Units", "[UnitType]= '" & Me.groupType & "'")
@@ -32,7 +32,7 @@ If IsNull(Me.groupTypeID) Then Exit Sub
         If Committ = vbNo Then
         Exit Sub
     Else
-    SQLz = "Delete * FROM lookup_groupTypes WHERE GroupTypeID = " & Me.groupTypeID & ""
+    SQLz = "Delete * FROM lookup_groupTypes WHERE GroupTypeID = " & Me.GroupTypeID & ""
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
@@ -44,7 +44,7 @@ End Sub
 Private Sub groupType_AfterUpdate()
 If Me.Form.NewRecord Then
 Me.GroupClass = Me.ClassList.Column(1)
-Me.ClassID = Me.ClassList.Column(0)
+Me.ClassId = Me.ClassList.Column(0)
 End If
 End Sub
 

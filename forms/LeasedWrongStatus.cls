@@ -14,12 +14,12 @@ End Sub
 
 Private Sub Buyer_DblClick(Cancel As Integer)
 If Me.Buyer = "None" Then Exit Sub
-   Call OpenBuyersFrom(Me.BuyerId, 0)
+   Call OpenBuyersFrom(Me.BuyerID, 0)
 End Sub
 
 Private Sub CompanyName_DblClick(Cancel As Integer)
     DoCmd.close acForm, "ClientsView"
-    DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+    DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
     Me.Status.SetFocus
 End Sub
 

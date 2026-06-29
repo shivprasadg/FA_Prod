@@ -880,10 +880,10 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10485
-                    Top =3000
-                    Width =1125
-                    Height =255
+                    Left =10500
+                    Top =3024
+                    Width =1128
+                    Height =252
                     ColumnOrder =6
                     FontSize =10
                     TabIndex =10
@@ -896,10 +896,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10485
-                    LayoutCachedTop =3000
-                    LayoutCachedWidth =11610
-                    LayoutCachedHeight =3255
+                    LayoutCachedLeft =10500
+                    LayoutCachedTop =3024
+                    LayoutCachedWidth =11628
+                    LayoutCachedHeight =3276
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -917,9 +917,9 @@ Begin Report
                         Begin Label
                             TextAlign =3
                             Left =7920
-                            Top =3000
+                            Top =3024
                             Width =2565
-                            Height =255
+                            Height =252
                             FontSize =10
                             FontWeight =700
                             BorderColor =0
@@ -932,9 +932,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =7920
-                            LayoutCachedTop =3000
+                            LayoutCachedTop =3024
                             LayoutCachedWidth =10485
-                            LayoutCachedHeight =3255
+                            LayoutCachedHeight =3276
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =4
@@ -1025,9 +1025,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =8700
-                    Top =1575
+                    Top =1572
                     Width =2880
-                    Height =255
+                    Height =252
                     ColumnOrder =8
                     FontSize =10
                     TabIndex =5
@@ -1044,9 +1044,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =8700
-                    LayoutCachedTop =1575
+                    LayoutCachedTop =1572
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =1830
+                    LayoutCachedHeight =1824
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -1063,9 +1063,9 @@ Begin Report
                         Begin Label
                             TextAlign =3
                             Left =7440
-                            Top =1575
+                            Top =1572
                             Width =1260
-                            Height =255
+                            Height =252
                             FontSize =10
                             FontWeight =700
                             BorderColor =0
@@ -1078,9 +1078,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =7440
-                            LayoutCachedTop =1575
+                            LayoutCachedTop =1572
                             LayoutCachedWidth =8700
-                            LayoutCachedHeight =1830
+                            LayoutCachedHeight =1824
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -1130,10 +1130,10 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10485
-                    Top =2715
-                    Width =1125
-                    Height =285
+                    Left =10500
+                    Top =2724
+                    Width =1128
+                    Height =288
                     ColumnOrder =10
                     FontSize =10
                     TabIndex =9
@@ -1146,10 +1146,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10485
-                    LayoutCachedTop =2715
-                    LayoutCachedWidth =11610
-                    LayoutCachedHeight =3000
+                    LayoutCachedLeft =10500
+                    LayoutCachedTop =2724
+                    LayoutCachedWidth =11628
+                    LayoutCachedHeight =3012
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -1167,9 +1167,9 @@ Begin Report
                         Begin Label
                             TextAlign =3
                             Left =7920
-                            Top =2715
+                            Top =2724
                             Width =2565
-                            Height =285
+                            Height =288
                             FontSize =10
                             FontWeight =700
                             BorderColor =0
@@ -1182,9 +1182,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =7920
-                            LayoutCachedTop =2715
+                            LayoutCachedTop =2724
                             LayoutCachedWidth =10485
-                            LayoutCachedHeight =3000
+                            LayoutCachedHeight =3012
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =4
@@ -1203,9 +1203,9 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10485
+                    Left =10500
                     Top =2460
-                    Width =1125
+                    Width =1128
                     Height =255
                     ColumnOrder =11
                     FontSize =10
@@ -1219,9 +1219,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10485
+                    LayoutCachedLeft =10500
                     LayoutCachedTop =2460
-                    LayoutCachedWidth =11610
+                    LayoutCachedWidth =11628
                     LayoutCachedHeight =2715
                     ColumnStart =1
                     ColumnEnd =1
@@ -1273,9 +1273,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =8700
-                    Top =1830
+                    Top =1824
                     Width =2880
-                    Height =255
+                    Height =252
                     ColumnOrder =12
                     FontSize =10
                     TabIndex =6
@@ -1292,9 +1292,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =8700
-                    LayoutCachedTop =1830
+                    LayoutCachedTop =1824
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =2085
+                    LayoutCachedHeight =2076
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -1311,9 +1311,9 @@ Begin Report
                         Begin Label
                             TextAlign =3
                             Left =7440
-                            Top =1830
+                            Top =1824
                             Width =1260
-                            Height =255
+                            Height =252
                             FontSize =10
                             FontWeight =700
                             BorderColor =0
@@ -1326,9 +1326,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =7440
-                            LayoutCachedTop =1830
+                            LayoutCachedTop =1824
                             LayoutCachedWidth =8700
-                            LayoutCachedHeight =2085
+                            LayoutCachedHeight =2076
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -1348,9 +1348,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =8700
-                    Top =2085
+                    Top =2076
                     Width =2880
-                    Height =255
+                    Height =252
                     ColumnOrder =13
                     FontSize =10
                     TabIndex =7
@@ -1366,9 +1366,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =8700
-                    LayoutCachedTop =2085
+                    LayoutCachedTop =2076
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =2340
+                    LayoutCachedHeight =2328
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -1385,9 +1385,9 @@ Begin Report
                         Begin Label
                             TextAlign =3
                             Left =7440
-                            Top =2085
+                            Top =2076
                             Width =1260
-                            Height =255
+                            Height =252
                             FontSize =10
                             FontWeight =700
                             BorderColor =0
@@ -1400,9 +1400,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =7440
-                            LayoutCachedTop =2085
+                            LayoutCachedTop =2076
                             LayoutCachedWidth =8700
-                            LayoutCachedHeight =2340
+                            LayoutCachedHeight =2328
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =1
@@ -1422,9 +1422,9 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6495
+                    Left =6492
                     Top =2700
-                    Width =1365
+                    Width =1368
                     Height =285
                     ColumnOrder =1
                     FontSize =10
@@ -1439,7 +1439,7 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =6495
+                    LayoutCachedLeft =6492
                     LayoutCachedTop =2700
                     LayoutCachedWidth =7860
                     LayoutCachedHeight =2985
@@ -1561,7 +1561,7 @@ Begin Report
                 Begin Label
                     BackStyle =1
                     TextAlign =1
-                    Left =765
+                    Left =768
                     Width =1080
                     Height =240
                     FontSize =10
@@ -1576,8 +1576,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =765
-                    LayoutCachedWidth =1845
+                    LayoutCachedLeft =768
+                    LayoutCachedWidth =1848
                     LayoutCachedHeight =240
                     ColumnStart =1
                     ColumnEnd =1
@@ -1593,7 +1593,7 @@ Begin Report
                 Begin Label
                     BackStyle =1
                     TextAlign =2
-                    Left =1845
+                    Left =1848
                     Width =2100
                     Height =240
                     FontSize =10
@@ -1608,8 +1608,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =1845
-                    LayoutCachedWidth =3945
+                    LayoutCachedLeft =1848
+                    LayoutCachedWidth =3948
                     LayoutCachedHeight =240
                     ColumnStart =2
                     ColumnEnd =2
@@ -1625,8 +1625,8 @@ Begin Report
                 Begin Label
                     BackStyle =1
                     TextAlign =2
-                    Left =3945
-                    Width =6375
+                    Left =3948
+                    Width =6372
                     Height =240
                     FontSize =10
                     FontWeight =700
@@ -1640,7 +1640,7 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =3945
+                    LayoutCachedLeft =3948
                     LayoutCachedWidth =10320
                     LayoutCachedHeight =240
                     ColumnStart =3
@@ -1691,7 +1691,7 @@ Begin Report
         Begin Section
             KeepTogether = NotDefault
             CanGrow = NotDefault
-            Height =285
+            Height =288
             Name ="Detail"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
@@ -1701,8 +1701,8 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3945
-                    Width =6375
+                    Left =3948
+                    Width =6372
                     Height =285
                     FontSize =10
                     TabIndex =3
@@ -1717,7 +1717,7 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =3945
+                    LayoutCachedLeft =3948
                     LayoutCachedWidth =10320
                     LayoutCachedHeight =285
                     RowStart =1
@@ -1773,7 +1773,7 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1845
+                    Left =1848
                     Width =2100
                     Height =285
                     FontSize =10
@@ -1790,8 +1790,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =1845
-                    LayoutCachedWidth =3945
+                    LayoutCachedLeft =1848
+                    LayoutCachedWidth =3948
                     LayoutCachedHeight =285
                     RowStart =1
                     RowEnd =1
@@ -1841,7 +1841,7 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =765
+                    Left =768
                     Width =1080
                     Height =285
                     FontSize =10
@@ -1856,8 +1856,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =765
-                    LayoutCachedWidth =1845
+                    LayoutCachedLeft =768
+                    LayoutCachedWidth =1848
                     LayoutCachedHeight =285
                     RowStart =1
                     RowEnd =1
@@ -1880,7 +1880,7 @@ Begin Report
                     TextAlign =3
                     IMESentenceMode =3
                     Left =10320
-                    Top =285
+                    Top =288
                     Width =1320
                     Height =0
                     FontSize =10
@@ -1897,9 +1897,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =10320
-                    LayoutCachedTop =285
+                    LayoutCachedTop =288
                     LayoutCachedWidth =11640
-                    LayoutCachedHeight =285
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =4
@@ -1913,7 +1913,7 @@ Begin Report
                     GroupTable =11
                 End
                 Begin EmptyCell
-                    Top =285
+                    Top =288
                     Width =765
                     Height =0
                     Name ="EmptyCell635"
@@ -1922,17 +1922,17 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =285
+                    LayoutCachedTop =288
                     LayoutCachedWidth =765
-                    LayoutCachedHeight =285
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =2
                     GroupTable =11
                 End
                 Begin EmptyCell
-                    Left =765
-                    Top =285
+                    Left =768
+                    Top =288
                     Width =1080
                     Height =0
                     Name ="EmptyCell636"
@@ -1941,10 +1941,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =765
-                    LayoutCachedTop =285
-                    LayoutCachedWidth =1845
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =768
+                    LayoutCachedTop =288
+                    LayoutCachedWidth =1848
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -1953,8 +1953,8 @@ Begin Report
                     GroupTable =11
                 End
                 Begin EmptyCell
-                    Left =1845
-                    Top =285
+                    Left =1848
+                    Top =288
                     Width =2100
                     Height =0
                     Name ="EmptyCell637"
@@ -1963,10 +1963,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =1845
-                    LayoutCachedTop =285
-                    LayoutCachedWidth =3945
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =1848
+                    LayoutCachedTop =288
+                    LayoutCachedWidth =3948
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -1981,9 +1981,9 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3945
-                    Top =285
-                    Width =6375
+                    Left =3948
+                    Top =288
+                    Width =6372
                     Height =0
                     FontSize =10
                     TabIndex =5
@@ -1999,10 +1999,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =3945
-                    LayoutCachedTop =285
+                    LayoutCachedLeft =3948
+                    LayoutCachedTop =288
                     LayoutCachedWidth =10320
-                    LayoutCachedHeight =285
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =3
@@ -2032,7 +2032,7 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =2130
+                    Top =2136
                     Width =5700
                     Height =300
                     FontSize =10
@@ -2046,9 +2046,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =2130
+                    LayoutCachedTop =2136
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =2430
+                    LayoutCachedHeight =2436
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =8
@@ -2065,9 +2065,9 @@ Begin Report
                     CanShrink = NotDefault
                     OldBorderStyle =0
                     IMESentenceMode =3
-                    Top =390
-                    Width =5640
-                    Height =1725
+                    Top =396
+                    Width =5652
+                    Height =1728
                     FontSize =9
                     TabIndex =6
                     BorderColor =0
@@ -2086,9 +2086,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =2115
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =2124
                     RowStart =1
                     RowEnd =1
                     ColumnEnd =3
@@ -2105,7 +2105,7 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =2
                     Top =120
-                    Width =5640
+                    Width =5652
                     Height =274
                     FontSize =10
                     FontWeight =700
@@ -2119,7 +2119,7 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedTop =120
-                    LayoutCachedWidth =5640
+                    LayoutCachedWidth =5652
                     LayoutCachedHeight =394
                     ColumnEnd =3
                     LayoutGroup =7
@@ -2136,8 +2136,8 @@ Begin Report
                     CanShrink = NotDefault
                     OldBorderStyle =0
                     IMESentenceMode =3
-                    Top =2115
-                    Width =5640
+                    Top =2124
+                    Width =5652
                     Height =780
                     FontSize =9
                     TabIndex =7
@@ -2153,9 +2153,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =2115
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =2895
+                    LayoutCachedTop =2124
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =2904
                     RowStart =2
                     RowEnd =2
                     ColumnEnd =3
@@ -2173,9 +2173,9 @@ Begin Report
                     CanShrink = NotDefault
                     OldBorderStyle =0
                     IMESentenceMode =3
-                    Top =2895
-                    Width =5640
-                    Height =945
+                    Top =2904
+                    Width =5652
+                    Height =948
                     FontSize =9
                     TabIndex =8
                     BorderColor =0
@@ -2190,9 +2190,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =2895
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =3840
+                    LayoutCachedTop =2904
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =3852
                     RowStart =3
                     RowEnd =3
                     ColumnEnd =3
@@ -2208,9 +2208,9 @@ Begin Report
                 Begin Label
                     FontUnderline = NotDefault
                     TextAlign =2
-                    Top =3840
-                    Width =5640
-                    Height =270
+                    Top =3852
+                    Width =5652
+                    Height =276
                     FontSize =10
                     FontWeight =700
                     BorderColor =0
@@ -2222,9 +2222,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =3840
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =4110
+                    LayoutCachedTop =3852
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =4128
                     RowStart =4
                     RowEnd =4
                     ColumnEnd =3
@@ -2242,9 +2242,9 @@ Begin Report
                     CanShrink = NotDefault
                     OldBorderStyle =0
                     IMESentenceMode =3
-                    Top =4110
-                    Width =5640
-                    Height =810
+                    Top =4128
+                    Width =5652
+                    Height =816
                     FontSize =9
                     TabIndex =9
                     BorderColor =0
@@ -2259,9 +2259,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =4110
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =4920
+                    LayoutCachedTop =4128
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =4944
                     RowStart =5
                     RowEnd =5
                     ColumnEnd =3
@@ -2278,7 +2278,7 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =2730
+                    Top =2736
                     Width =5700
                     Height =360
                     FontSize =10
@@ -2292,9 +2292,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =2730
+                    LayoutCachedTop =2736
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =3090
+                    LayoutCachedHeight =3096
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =8
@@ -2310,7 +2310,7 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =3450
+                    Top =3456
                     Width =5700
                     Height =360
                     FontSize =10
@@ -2324,9 +2324,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =3450
+                    LayoutCachedTop =3456
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =3810
+                    LayoutCachedHeight =3816
                     RowStart =5
                     RowEnd =5
                     LayoutGroup =8
@@ -2342,7 +2342,7 @@ Begin Report
                     FontItalic = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =4110
+                    Top =4116
                     Width =5700
                     Height =360
                     FontSize =10
@@ -2356,9 +2356,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =4110
+                    LayoutCachedTop =4116
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =4470
+                    LayoutCachedHeight =4476
                     RowStart =7
                     RowEnd =7
                     LayoutGroup =8
@@ -2376,10 +2376,10 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10260
-                    Top =1200
-                    Width =1410
-                    Height =285
+                    Left =10272
+                    Top =1260
+                    Width =1416
+                    Height =288
                     FontSize =10
                     FontWeight =700
                     TabIndex =5
@@ -2400,10 +2400,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10260
-                    LayoutCachedTop =1200
-                    LayoutCachedWidth =11670
-                    LayoutCachedHeight =1485
+                    LayoutCachedLeft =10272
+                    LayoutCachedTop =1260
+                    LayoutCachedWidth =11688
+                    LayoutCachedHeight =1548
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -2424,9 +2424,9 @@ Begin Report
                         Begin Label
                             TextAlign =3
                             Left =8160
-                            Top =1200
+                            Top =1260
                             Width =2100
-                            Height =285
+                            Height =288
                             FontSize =10
                             FontWeight =700
                             BorderColor =0
@@ -2439,9 +2439,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =8160
-                            LayoutCachedTop =1200
+                            LayoutCachedTop =1260
                             LayoutCachedWidth =10260
-                            LayoutCachedHeight =1485
+                            LayoutCachedHeight =1548
                             RowStart =4
                             RowEnd =4
                             LayoutGroup =6
@@ -2459,10 +2459,10 @@ Begin Report
                     BorderWidth =1
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =10260
-                    Top =345
-                    Width =1410
-                    Height =285
+                    Left =10272
+                    Top =360
+                    Width =1416
+                    Height =288
                     FontSize =10
                     TabIndex =2
                     ForeColor =0
@@ -2481,10 +2481,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10260
-                    LayoutCachedTop =345
-                    LayoutCachedWidth =11670
-                    LayoutCachedHeight =630
+                    LayoutCachedLeft =10272
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =11688
+                    LayoutCachedHeight =648
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -2507,10 +2507,10 @@ Begin Report
                     BorderWidth =1
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =10260
-                    Top =630
-                    Width =1410
-                    Height =285
+                    Left =10272
+                    Top =660
+                    Width =1416
+                    Height =288
                     FontSize =10
                     TabIndex =3
                     ForeColor =0
@@ -2529,10 +2529,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10260
-                    LayoutCachedTop =630
-                    LayoutCachedWidth =11670
-                    LayoutCachedHeight =915
+                    LayoutCachedLeft =10272
+                    LayoutCachedTop =660
+                    LayoutCachedWidth =11688
+                    LayoutCachedHeight =948
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -2554,9 +2554,9 @@ Begin Report
                             BackStyle =1
                             TextAlign =3
                             Left =8160
-                            Top =630
+                            Top =660
                             Width =2100
-                            Height =285
+                            Height =288
                             FontSize =10
                             FontWeight =700
                             BorderColor =0
@@ -2569,9 +2569,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =8160
-                            LayoutCachedTop =630
+                            LayoutCachedTop =660
                             LayoutCachedWidth =10260
-                            LayoutCachedHeight =915
+                            LayoutCachedHeight =948
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =6
@@ -2590,9 +2590,9 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10260
+                    Left =10272
                     Top =60
-                    Width =1410
+                    Width =1416
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -2606,9 +2606,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10260
+                    LayoutCachedLeft =10272
                     LayoutCachedTop =60
-                    LayoutCachedWidth =11670
+                    LayoutCachedWidth =11688
                     LayoutCachedHeight =345
                     ColumnStart =1
                     ColumnEnd =1
@@ -2656,7 +2656,7 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =3090
+                    Top =3096
                     Width =5700
                     Height =360
                     FontSize =12
@@ -2671,9 +2671,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =3090
+                    LayoutCachedTop =3096
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =3450
+                    LayoutCachedHeight =3456
                     RowStart =4
                     RowEnd =4
                     LayoutGroup =8
@@ -2684,7 +2684,7 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =1830
+                    Top =1836
                     Width =5700
                     Height =300
                     FontSize =12
@@ -2699,9 +2699,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =1830
+                    LayoutCachedTop =1836
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =2130
+                    LayoutCachedHeight =2136
                     LayoutGroup =8
                     ForeTint =100.0
                     GroupTable =20
@@ -2710,7 +2710,7 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =2430
+                    Top =2436
                     Width =5700
                     Height =300
                     FontSize =12
@@ -2725,9 +2725,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =2430
+                    LayoutCachedTop =2436
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =2730
+                    LayoutCachedHeight =2736
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =8
@@ -2738,7 +2738,7 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =3810
+                    Top =3816
                     Width =5700
                     Height =300
                     FontSize =12
@@ -2753,9 +2753,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =3810
+                    LayoutCachedTop =3816
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =4110
+                    LayoutCachedHeight =4116
                     RowStart =6
                     RowEnd =6
                     LayoutGroup =8
@@ -2766,7 +2766,7 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =4470
+                    Top =4476
                     Width =5700
                     Height =360
                     FontSize =12
@@ -2781,9 +2781,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =4470
+                    LayoutCachedTop =4476
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =4830
+                    LayoutCachedHeight =4836
                     RowStart =8
                     RowEnd =8
                     LayoutGroup =8
@@ -2797,7 +2797,7 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =5880
-                    Top =4830
+                    Top =4836
                     Width =5700
                     FontSize =10
                     TabIndex =13
@@ -2812,9 +2812,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =4830
+                    LayoutCachedTop =4836
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =5070
+                    LayoutCachedHeight =5076
                     RowStart =9
                     RowEnd =9
                     LayoutGroup =8
@@ -2830,8 +2830,8 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =3
                     IMESentenceMode =3
-                    Top =6405
-                    Width =5100
+                    Top =6432
+                    Width =5112
                     Height =360
                     FontSize =9
                     FontWeight =700
@@ -2847,9 +2847,9 @@ Begin Report
                     BottomPadding =0
                     TextFormat =1
 
-                    LayoutCachedTop =6405
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =6765
+                    LayoutCachedTop =6432
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =6792
                     RowStart =12
                     RowEnd =12
                     ColumnEnd =2
@@ -2867,8 +2867,8 @@ Begin Report
                     TextFontCharSet =2
                     TextFontFamily =2
                     IMESentenceMode =3
-                    Left =5100
-                    Top =6405
+                    Left =5112
+                    Top =6432
                     Width =540
                     Height =360
                     FontSize =14
@@ -2884,10 +2884,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =5100
-                    LayoutCachedTop =6405
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =6765
+                    LayoutCachedLeft =5112
+                    LayoutCachedTop =6432
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =6792
                     RowStart =12
                     RowEnd =12
                     ColumnStart =3
@@ -2925,7 +2925,7 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =1
                     Left =5880
-                    Top =5790
+                    Top =5796
                     Width =5700
                     Height =420
                     FontSize =12
@@ -2940,9 +2940,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =5790
+                    LayoutCachedTop =5796
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =6210
+                    LayoutCachedHeight =6216
                     RowStart =12
                     RowEnd =12
                     LayoutGroup =8
@@ -2956,7 +2956,7 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =5880
-                    Top =6210
+                    Top =6216
                     Width =5700
                     FontSize =10
                     TabIndex =14
@@ -2971,9 +2971,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =6210
+                    LayoutCachedTop =6216
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =6450
+                    LayoutCachedHeight =6456
                     RowStart =13
                     RowEnd =13
                     LayoutGroup =8
@@ -2989,7 +2989,7 @@ Begin Report
                     FontUnderline = NotDefault
                     TextAlign =2
                     Left =5880
-                    Top =5070
+                    Top =5076
                     Width =5700
                     Height =300
                     FontSize =12
@@ -3003,9 +3003,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =5070
+                    LayoutCachedTop =5076
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =5370
+                    LayoutCachedHeight =5376
                     RowStart =10
                     RowEnd =10
                     LayoutGroup =8
@@ -3015,7 +3015,7 @@ Begin Report
                 Begin Label
                     TextAlign =2
                     Left =5880
-                    Top =5370
+                    Top =5376
                     Width =5700
                     Height =420
                     FontSize =10
@@ -3029,9 +3029,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =5370
+                    LayoutCachedTop =5376
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =5790
+                    LayoutCachedHeight =5796
                     RowStart =11
                     RowEnd =11
                     LayoutGroup =8
@@ -3068,9 +3068,9 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2670
-                    Top =6165
-                    Width =2430
+                    Left =2676
+                    Top =6192
+                    Width =2436
                     FontSize =10
                     FontWeight =700
                     TabIndex =10
@@ -3084,10 +3084,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =2670
-                    LayoutCachedTop =6165
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =6405
+                    LayoutCachedLeft =2676
+                    LayoutCachedTop =6192
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =6432
                     RowStart =11
                     RowEnd =11
                     ColumnStart =2
@@ -3104,7 +3104,7 @@ Begin Report
                         Begin Label
                             TextAlign =1
                             Left =1140
-                            Top =6165
+                            Top =6192
                             Width =1530
                             Height =240
                             FontSize =10
@@ -3118,9 +3118,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =1140
-                            LayoutCachedTop =6165
+                            LayoutCachedTop =6192
                             LayoutCachedWidth =2670
-                            LayoutCachedHeight =6405
+                            LayoutCachedHeight =6432
                             RowStart =11
                             RowEnd =11
                             ColumnStart =1
@@ -3138,9 +3138,9 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =2670
-                    Top =5205
-                    Width =2430
+                    Left =2676
+                    Top =5232
+                    Width =2436
                     Height =240
                     FontSize =10
                     FontWeight =700
@@ -3153,10 +3153,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =2670
-                    LayoutCachedTop =5205
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =5445
+                    LayoutCachedLeft =2676
+                    LayoutCachedTop =5232
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =5472
                     RowStart =7
                     RowEnd =7
                     ColumnStart =2
@@ -3172,9 +3172,9 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =2670
-                    Top =5445
-                    Width =2430
+                    Left =2676
+                    Top =5472
+                    Width =2436
                     Height =240
                     FontSize =10
                     FontWeight =700
@@ -3187,10 +3187,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =2670
-                    LayoutCachedTop =5445
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =5685
+                    LayoutCachedLeft =2676
+                    LayoutCachedTop =5472
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =5712
                     RowStart =8
                     RowEnd =8
                     ColumnStart =2
@@ -3206,9 +3206,9 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =2670
-                    Top =5925
-                    Width =2430
+                    Left =2676
+                    Top =5952
+                    Width =2436
                     Height =240
                     FontSize =10
                     FontWeight =700
@@ -3221,10 +3221,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =2670
-                    LayoutCachedTop =5925
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =6165
+                    LayoutCachedLeft =2676
+                    LayoutCachedTop =5952
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =6192
                     RowStart =10
                     RowEnd =10
                     ColumnStart =2
@@ -3240,9 +3240,9 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =2670
-                    Top =5685
-                    Width =2430
+                    Left =2676
+                    Top =5712
+                    Width =2436
                     Height =240
                     FontSize =10
                     FontWeight =700
@@ -3255,10 +3255,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =2670
-                    LayoutCachedTop =5685
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =5925
+                    LayoutCachedLeft =2676
+                    LayoutCachedTop =5712
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =5952
                     RowStart =9
                     RowEnd =9
                     ColumnStart =2
@@ -3275,7 +3275,7 @@ Begin Report
                 Begin Label
                     TextAlign =1
                     Left =1140
-                    Top =5445
+                    Top =5472
                     Width =1530
                     Height =240
                     FontSize =10
@@ -3289,9 +3289,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =1140
-                    LayoutCachedTop =5445
+                    LayoutCachedTop =5472
                     LayoutCachedWidth =2670
-                    LayoutCachedHeight =5685
+                    LayoutCachedHeight =5712
                     RowStart =8
                     RowEnd =8
                     ColumnStart =1
@@ -3308,7 +3308,7 @@ Begin Report
                 Begin Label
                     TextAlign =1
                     Left =1140
-                    Top =5685
+                    Top =5712
                     Width =1530
                     Height =240
                     FontSize =10
@@ -3322,9 +3322,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =1140
-                    LayoutCachedTop =5685
+                    LayoutCachedTop =5712
                     LayoutCachedWidth =2670
-                    LayoutCachedHeight =5925
+                    LayoutCachedHeight =5952
                     RowStart =9
                     RowEnd =9
                     ColumnStart =1
@@ -3341,7 +3341,7 @@ Begin Report
                 Begin Label
                     TextAlign =1
                     Left =1140
-                    Top =5925
+                    Top =5952
                     Width =1530
                     Height =240
                     FontSize =10
@@ -3355,9 +3355,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =1140
-                    LayoutCachedTop =5925
+                    LayoutCachedTop =5952
                     LayoutCachedWidth =2670
-                    LayoutCachedHeight =6165
+                    LayoutCachedHeight =6192
                     RowStart =10
                     RowEnd =10
                     ColumnStart =1
@@ -3374,7 +3374,7 @@ Begin Report
                 Begin Label
                     TextAlign =1
                     Left =1140
-                    Top =5205
+                    Top =5232
                     Width =1530
                     Height =240
                     FontSize =10
@@ -3388,9 +3388,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =1140
-                    LayoutCachedTop =5205
+                    LayoutCachedTop =5232
                     LayoutCachedWidth =2670
-                    LayoutCachedHeight =5445
+                    LayoutCachedHeight =5472
                     RowStart =7
                     RowEnd =7
                     ColumnStart =1
@@ -3405,7 +3405,7 @@ Begin Report
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Top =5205
+                    Top =5232
                     Width =1140
                     Name ="EmptyCell514"
                     GroupTable =21
@@ -3413,17 +3413,17 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =5205
+                    LayoutCachedTop =5232
                     LayoutCachedWidth =1140
-                    LayoutCachedHeight =5445
+                    LayoutCachedHeight =5472
                     RowStart =7
                     RowEnd =7
                     LayoutGroup =7
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Left =5100
-                    Top =5205
+                    Left =5112
+                    Top =5232
                     Width =540
                     Name ="EmptyCell518"
                     GroupTable =21
@@ -3431,10 +3431,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =5100
-                    LayoutCachedTop =5205
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =5445
+                    LayoutCachedLeft =5112
+                    LayoutCachedTop =5232
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =5472
                     RowStart =7
                     RowEnd =7
                     ColumnStart =3
@@ -3443,7 +3443,7 @@ Begin Report
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Top =5445
+                    Top =5472
                     Width =1140
                     Name ="EmptyCell531"
                     GroupTable =21
@@ -3451,17 +3451,17 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =5445
+                    LayoutCachedTop =5472
                     LayoutCachedWidth =1140
-                    LayoutCachedHeight =5685
+                    LayoutCachedHeight =5712
                     RowStart =8
                     RowEnd =8
                     LayoutGroup =7
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Left =5100
-                    Top =5445
+                    Left =5112
+                    Top =5472
                     Width =540
                     Name ="EmptyCell534"
                     GroupTable =21
@@ -3469,10 +3469,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =5100
-                    LayoutCachedTop =5445
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =5685
+                    LayoutCachedLeft =5112
+                    LayoutCachedTop =5472
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =5712
                     RowStart =8
                     RowEnd =8
                     ColumnStart =3
@@ -3481,7 +3481,7 @@ Begin Report
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Top =5685
+                    Top =5712
                     Width =1140
                     Name ="EmptyCell538"
                     GroupTable =21
@@ -3489,17 +3489,17 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =5685
+                    LayoutCachedTop =5712
                     LayoutCachedWidth =1140
-                    LayoutCachedHeight =5925
+                    LayoutCachedHeight =5952
                     RowStart =9
                     RowEnd =9
                     LayoutGroup =7
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Left =5100
-                    Top =5685
+                    Left =5112
+                    Top =5712
                     Width =540
                     Name ="EmptyCell541"
                     GroupTable =21
@@ -3507,10 +3507,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =5100
-                    LayoutCachedTop =5685
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =5925
+                    LayoutCachedLeft =5112
+                    LayoutCachedTop =5712
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =5952
                     RowStart =9
                     RowEnd =9
                     ColumnStart =3
@@ -3519,7 +3519,7 @@ Begin Report
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Top =5925
+                    Top =5952
                     Width =1140
                     Name ="EmptyCell544"
                     GroupTable =21
@@ -3527,17 +3527,17 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =5925
+                    LayoutCachedTop =5952
                     LayoutCachedWidth =1140
-                    LayoutCachedHeight =6165
+                    LayoutCachedHeight =6192
                     RowStart =10
                     RowEnd =10
                     LayoutGroup =7
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Left =5100
-                    Top =5925
+                    Left =5112
+                    Top =5952
                     Width =540
                     Name ="EmptyCell547"
                     GroupTable =21
@@ -3545,10 +3545,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =5100
-                    LayoutCachedTop =5925
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =6165
+                    LayoutCachedLeft =5112
+                    LayoutCachedTop =5952
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =6192
                     RowStart =10
                     RowEnd =10
                     ColumnStart =3
@@ -3557,7 +3557,7 @@ Begin Report
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Top =6165
+                    Top =6192
                     Width =1140
                     Name ="EmptyCell558"
                     GroupTable =21
@@ -3565,17 +3565,17 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =6165
+                    LayoutCachedTop =6192
                     LayoutCachedWidth =1140
-                    LayoutCachedHeight =6405
+                    LayoutCachedHeight =6432
                     RowStart =11
                     RowEnd =11
                     LayoutGroup =7
                     GroupTable =21
                 End
                 Begin EmptyCell
-                    Left =5100
-                    Top =6165
+                    Left =5112
+                    Top =6192
                     Width =540
                     Name ="EmptyCell561"
                     GroupTable =21
@@ -3583,10 +3583,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =5100
-                    LayoutCachedTop =6165
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =6405
+                    LayoutCachedLeft =5112
+                    LayoutCachedTop =6192
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =6432
                     RowStart =11
                     RowEnd =11
                     ColumnStart =3
@@ -3598,9 +3598,9 @@ Begin Report
                     FontUnderline = NotDefault
                     BackStyle =1
                     TextAlign =2
-                    Top =4920
-                    Width =5640
-                    Height =285
+                    Top =4944
+                    Width =5652
+                    Height =288
                     FontSize =10
                     FontWeight =700
                     BorderColor =0
@@ -3612,9 +3612,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =4920
-                    LayoutCachedWidth =5640
-                    LayoutCachedHeight =5205
+                    LayoutCachedTop =4944
+                    LayoutCachedWidth =5652
+                    LayoutCachedHeight =5232
                     RowStart =6
                     RowEnd =6
                     ColumnEnd =3
@@ -3632,9 +3632,9 @@ Begin Report
                     TextAlign =3
                     IMESentenceMode =3
                     Left =8160
-                    Top =345
+                    Top =360
                     Width =2100
-                    Height =285
+                    Height =288
                     FontSize =10
                     FontWeight =700
                     TabIndex =1
@@ -3649,9 +3649,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =8160
-                    LayoutCachedTop =345
+                    LayoutCachedTop =360
                     LayoutCachedWidth =10260
-                    LayoutCachedHeight =630
+                    LayoutCachedHeight =648
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =6
@@ -3667,10 +3667,10 @@ Begin Report
                     BorderWidth =1
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =10260
-                    Top =915
-                    Width =1410
-                    Height =285
+                    Left =10272
+                    Top =960
+                    Width =1416
+                    Height =288
                     FontSize =10
                     TabIndex =4
                     ForeColor =0
@@ -3689,10 +3689,10 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10260
-                    LayoutCachedTop =915
-                    LayoutCachedWidth =11670
-                    LayoutCachedHeight =1200
+                    LayoutCachedLeft =10272
+                    LayoutCachedTop =960
+                    LayoutCachedWidth =11688
+                    LayoutCachedHeight =1248
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -3714,9 +3714,9 @@ Begin Report
                             BackStyle =1
                             TextAlign =3
                             Left =8160
-                            Top =915
+                            Top =960
                             Width =2100
-                            Height =285
+                            Height =288
                             FontSize =10
                             FontWeight =700
                             BorderColor =0
@@ -3729,9 +3729,9 @@ Begin Report
                             RightPadding =0
                             BottomPadding =0
                             LayoutCachedLeft =8160
-                            LayoutCachedTop =915
+                            LayoutCachedTop =960
                             LayoutCachedWidth =10260
-                            LayoutCachedHeight =1200
+                            LayoutCachedHeight =1248
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =6
@@ -3808,7 +3808,7 @@ Begin Report
         End
         Begin FormFooter
             CanGrow = NotDefault
-            Height =7830
+            Height =7860
             Name ="ReportFooter"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
@@ -3849,7 +3849,7 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =630
+                    Top =636
                     Width =11580
                     Height =648
                     FontSize =9
@@ -3866,9 +3866,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =630
+                    LayoutCachedTop =636
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =1278
+                    LayoutCachedHeight =1284
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =5
@@ -3886,9 +3886,9 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =3855
+                    Top =3876
                     Width =11580
-                    Height =645
+                    Height =648
                     FontSize =9
                     TabIndex =5
                     BorderColor =0
@@ -3903,9 +3903,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =3855
+                    LayoutCachedTop =3876
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =4500
+                    LayoutCachedHeight =4524
                     RowStart =7
                     RowEnd =7
                     LayoutGroup =5
@@ -3920,9 +3920,9 @@ Begin Report
                 Begin Label
                     FontUnderline = NotDefault
                     TextAlign =2
-                    Top =345
+                    Top =348
                     Width =11580
-                    Height =285
+                    Height =288
                     FontSize =10
                     FontWeight =700
                     BorderColor =0
@@ -3934,9 +3934,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =345
+                    LayoutCachedTop =348
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =630
+                    LayoutCachedHeight =636
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =5
@@ -3954,9 +3954,9 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =2565
+                    Top =2580
                     Width =11580
-                    Height =645
+                    Height =648
                     FontSize =9
                     TabIndex =3
                     BorderColor =0
@@ -3979,9 +3979,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =2565
+                    LayoutCachedTop =2580
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =3210
+                    LayoutCachedHeight =3228
                     RowStart =5
                     RowEnd =5
                     LayoutGroup =5
@@ -3999,9 +3999,9 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =3210
+                    Top =3228
                     Width =11580
-                    Height =645
+                    Height =648
                     FontSize =9
                     TabIndex =4
                     BorderColor =0
@@ -4020,9 +4020,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =3210
+                    LayoutCachedTop =3228
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =3855
+                    LayoutCachedHeight =3876
                     RowStart =6
                     RowEnd =6
                     LayoutGroup =5
@@ -4040,9 +4040,9 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =1275
+                    Top =1284
                     Width =11580
-                    Height =645
+                    Height =648
                     FontSize =9
                     TabIndex =1
                     BorderColor =0
@@ -4068,9 +4068,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =1275
+                    LayoutCachedTop =1284
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =1920
+                    LayoutCachedHeight =1932
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =5
@@ -4088,9 +4088,9 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =1920
+                    Top =1932
                     Width =11580
-                    Height =645
+                    Height =648
                     FontSize =9
                     TabIndex =2
                     BorderColor =0
@@ -4119,9 +4119,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =1920
+                    LayoutCachedTop =1932
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =2565
+                    LayoutCachedHeight =2580
                     RowStart =4
                     RowEnd =4
                     LayoutGroup =5
@@ -4136,9 +4136,9 @@ Begin Report
                 Begin Label
                     FontUnderline = NotDefault
                     TextAlign =2
-                    Top =4845
+                    Top =4872
                     Width =11580
-                    Height =285
+                    Height =288
                     FontSize =10
                     FontWeight =700
                     BorderColor =0
@@ -4150,9 +4150,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =4845
+                    LayoutCachedTop =4872
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =5130
+                    LayoutCachedHeight =5160
                     RowStart =9
                     RowEnd =9
                     LayoutGroup =5
@@ -4170,7 +4170,7 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =6930
+                    Top =6960
                     Width =11580
                     Height =900
                     FontSize =9
@@ -4188,9 +4188,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =6930
+                    LayoutCachedTop =6960
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =7830
+                    LayoutCachedHeight =7860
                     RowStart =12
                     RowEnd =12
                     LayoutGroup =5
@@ -4208,7 +4208,7 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =5130
+                    Top =5160
                     Width =11580
                     Height =900
                     FontSize =9
@@ -4230,9 +4230,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =5130
+                    LayoutCachedTop =5160
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =6030
+                    LayoutCachedHeight =6060
                     RowStart =10
                     RowEnd =10
                     LayoutGroup =5
@@ -4250,7 +4250,7 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Top =6030
+                    Top =6060
                     Width =11580
                     Height =900
                     FontSize =9
@@ -4274,9 +4274,9 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedTop =6030
+                    LayoutCachedTop =6060
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =6930
+                    LayoutCachedHeight =6960
                     RowStart =11
                     RowEnd =11
                     LayoutGroup =5
@@ -4291,9 +4291,9 @@ Begin Report
                 Begin Label
                     FontUnderline = NotDefault
                     TextAlign =1
-                    Top =4500
+                    Top =4524
                     Width =11580
-                    Height =345
+                    Height =348
                     FontWeight =700
                     ForeColor =0
                     Name ="Label292"
@@ -4305,9 +4305,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =4500
+                    LayoutCachedTop =4524
                     LayoutCachedWidth =11580
-                    LayoutCachedHeight =4845
+                    LayoutCachedHeight =4872
                     RowStart =8
                     RowEnd =8
                     LayoutGroup =5

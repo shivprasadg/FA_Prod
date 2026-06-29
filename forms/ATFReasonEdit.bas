@@ -7,7 +7,6 @@ Begin Form
     AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     TabularCharSet =163
@@ -104,7 +103,6 @@ Begin Form
                     Top =1260
                     Width =8064
                     Height =195
-                    BorderColor =10921638
                     Name ="Image439"
                     Picture ="LtGrey2_Shadow"
                     GroupTable =1
@@ -112,7 +110,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     HorizontalAnchor =2
 
                     LayoutCachedTop =1260

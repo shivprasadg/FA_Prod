@@ -14,7 +14,7 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =12960
+    Width =12996
     DatasheetFontHeight =11
     ItemSuffix =449
     Left =12360
@@ -191,18 +191,18 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextFontCharSet =238
-                    Left =4200
-                    Top =30
+                    Left =4236
+                    Top =36
                     Width =2460
-                    Height =270
+                    Height =276
                     FontSize =9
                     Name ="Dir_Tags"
                     Caption ="Dir - Tags"
                     GroupTable =6
-                    LayoutCachedLeft =4200
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =6660
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =4236
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =6696
+                    LayoutCachedHeight =312
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -214,19 +214,19 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextFontCharSet =238
-                    Left =840
-                    Top =30
-                    Width =2475
-                    Height =270
+                    Left =864
+                    Top =36
+                    Width =2472
+                    Height =276
                     FontSize =9
                     ForeColor =-2147483615
                     Name ="UnitPlateNum_Label"
                     Caption ="Doc or Directory Name"
                     GroupTable =6
-                    LayoutCachedLeft =840
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =3315
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =864
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =3336
+                    LayoutCachedHeight =312
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -237,19 +237,19 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextFontCharSet =238
-                    Left =6720
-                    Top =30
+                    Left =6768
+                    Top =36
                     Width =1920
-                    Height =270
+                    Height =276
                     FontSize =9
                     ForeColor =-2147483615
                     Name ="UnitYr_Label"
                     Caption =" Description"
                     GroupTable =6
-                    LayoutCachedLeft =6720
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =8640
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =6768
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =8688
+                    LayoutCachedHeight =312
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -259,19 +259,19 @@ Begin Form
                 End
                 Begin Label
                     OverlapFlags =247
-                    Left =8700
-                    Top =30
-                    Width =3855
-                    Height =270
+                    Left =8748
+                    Top =36
+                    Width =3852
+                    Height =276
                     FontSize =9
                     ForeColor =-2147483615
                     Name ="Label86"
                     Caption ="Link"
                     GroupTable =6
-                    LayoutCachedLeft =8700
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12555
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =8748
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12600
+                    LayoutCachedHeight =312
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
@@ -282,19 +282,19 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextFontCharSet =238
-                    Left =3375
-                    Top =30
-                    Width =765
-                    Height =270
+                    Left =3396
+                    Top =36
+                    Width =768
+                    Height =276
                     FontSize =9
                     ForeColor =-2147483615
                     Name ="unitinserv_Label"
                     Caption ="Type"
                     GroupTable =6
-                    LayoutCachedLeft =3375
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =4140
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =3396
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =4164
+                    LayoutCachedHeight =312
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -303,16 +303,16 @@ Begin Form
                     GroupTable =6
                 End
                 Begin EmptyCell
-                    Left =12615
-                    Top =30
-                    Width =285
-                    Height =270
+                    Left =12672
+                    Top =36
+                    Width =288
+                    Height =276
                     Name ="EmptyCell417"
                     GroupTable =6
-                    LayoutCachedLeft =12615
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12900
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =12672
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12960
+                    LayoutCachedHeight =312
                     ColumnStart =6
                     ColumnEnd =6
                     LayoutGroup =1
@@ -322,18 +322,18 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =247
                     TextAlign =2
-                    Left =90
-                    Top =30
-                    Width =690
-                    Height =270
+                    Left =96
+                    Top =36
+                    Width =696
+                    Height =276
                     FontSize =9
                     Name ="Label445"
                     Caption ="Group"
                     GroupTable =6
-                    LayoutCachedLeft =90
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =780
-                    LayoutCachedHeight =300
+                    LayoutCachedLeft =96
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =792
+                    LayoutCachedHeight =312
                     LayoutGroup =1
                     BackThemeColorIndex =6
                     BackShade =75.0
@@ -388,10 +388,10 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8700
-                    Top =30
-                    Width =3855
-                    Height =675
+                    Left =8748
+                    Top =36
+                    Width =3852
+                    Height =696
                     FontSize =9
                     TabIndex =5
                     BorderColor =12765388
@@ -399,10 +399,10 @@ Begin Form
                     ControlSource ="dLink"
                     GroupTable =6
 
-                    LayoutCachedLeft =8700
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12555
-                    LayoutCachedHeight =705
+                    LayoutCachedLeft =8748
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12600
+                    LayoutCachedHeight =732
                     RowStart =1
                     RowEnd =2
                     ColumnStart =5
@@ -418,10 +418,10 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6720
-                    Top =30
+                    Left =6768
+                    Top =36
                     Width =1920
-                    Height =675
+                    Height =696
                     ColumnWidth =990
                     ColumnOrder =12
                     FontSize =9
@@ -430,10 +430,10 @@ Begin Form
                     ControlSource ="dDesc"
                     GroupTable =6
 
-                    LayoutCachedLeft =6720
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =8640
-                    LayoutCachedHeight =705
+                    LayoutCachedLeft =6768
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =8688
+                    LayoutCachedHeight =732
                     RowStart =1
                     RowEnd =2
                     ColumnStart =4
@@ -452,10 +452,10 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4200
-                    Top =30
+                    Left =4236
+                    Top =36
                     Width =2460
-                    Height =675
+                    Height =696
                     ColumnWidth =3000
                     FontSize =9
                     TabIndex =3
@@ -463,10 +463,10 @@ Begin Form
                     ControlSource ="dTags"
                     GroupTable =6
 
-                    LayoutCachedLeft =4200
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =6660
-                    LayoutCachedHeight =705
+                    LayoutCachedLeft =4236
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =6696
+                    LayoutCachedHeight =732
                     RowStart =1
                     RowEnd =2
                     ColumnStart =3
@@ -518,10 +518,10 @@ Begin Form
                     TextFontCharSet =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =3375
-                    Top =30
-                    Width =765
-                    Height =675
+                    Left =3396
+                    Top =36
+                    Width =768
+                    Height =696
                     ColumnWidth =1275
                     FontWeight =700
                     TabIndex =2
@@ -537,10 +537,10 @@ Begin Form
                     End
                     GroupTable =6
 
-                    LayoutCachedLeft =3375
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =4140
-                    LayoutCachedHeight =705
+                    LayoutCachedLeft =3396
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =4164
+                    LayoutCachedHeight =732
                     RowStart =1
                     RowEnd =2
                     ColumnStart =2
@@ -564,10 +564,10 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     TextFontCharSet =0
-                    Left =12615
-                    Top =435
-                    Width =285
-                    Height =270
+                    Left =12672
+                    Top =456
+                    Width =288
+                    Height =276
                     FontSize =8
                     FontWeight =700
                     TabIndex =7
@@ -613,10 +613,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =12615
-                    LayoutCachedTop =435
-                    LayoutCachedWidth =12900
-                    LayoutCachedHeight =705
+                    LayoutCachedLeft =12672
+                    LayoutCachedTop =456
+                    LayoutCachedWidth =12960
+                    LayoutCachedHeight =732
                     RowStart =2
                     RowEnd =2
                     ColumnStart =6
@@ -646,20 +646,20 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =840
-                    Top =30
-                    Width =2475
-                    Height =675
+                    Left =864
+                    Top =36
+                    Width =2472
+                    Height =696
                     FontSize =9
                     TabIndex =1
                     Name ="dName"
                     ControlSource ="dName"
                     GroupTable =6
 
-                    LayoutCachedLeft =840
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =3315
-                    LayoutCachedHeight =705
+                    LayoutCachedLeft =864
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =3336
+                    LayoutCachedHeight =732
                     RowStart =1
                     RowEnd =2
                     ColumnStart =1
@@ -809,10 +809,10 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     TextFontCharSet =0
-                    Left =12615
-                    Top =30
-                    Width =285
-                    Height =345
+                    Left =12672
+                    Top =36
+                    Width =288
+                    Height =348
                     FontSize =8
                     FontWeight =700
                     TabIndex =6
@@ -858,10 +858,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =12615
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12900
-                    LayoutCachedHeight =375
+                    LayoutCachedLeft =12672
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12960
+                    LayoutCachedHeight =384
                     RowStart =1
                     RowEnd =1
                     ColumnStart =6
@@ -889,19 +889,19 @@ Begin Form
                     TextFontCharSet =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =90
-                    Top =30
-                    Width =690
-                    Height =675
+                    Left =96
+                    Top =36
+                    Width =696
+                    Height =696
                     FontWeight =700
                     Name ="Text440"
                     ControlSource ="sGrpNo"
                     GroupTable =6
 
-                    LayoutCachedLeft =90
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =780
-                    LayoutCachedHeight =705
+                    LayoutCachedLeft =96
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =792
+                    LayoutCachedHeight =732
                     RowStart =1
                     RowEnd =2
                     LayoutGroup =1

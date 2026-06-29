@@ -46,13 +46,13 @@ Private Sub ClearSearches(Optional SearchBox As String)
 End Sub
 
 Private Sub OpenBuyer_Click()
-    If Me.BuyerId = "" Or IsNull(Me.BuyerId) Then Exit Sub
+    If Me.BuyerID = "" Or IsNull(Me.BuyerID) Then Exit Sub
     Call OpenBuyersFrom(DLookup("BuyerID", "vw_BuyersOrder", "UnitID=" & Me.AssetID & ""), Nz(DLookup("InvoiceRequestID", "vw_BuyersOrder", "UnitID=" & Me.AssetID & ""), 0))
 End Sub
 
 Private Sub OpenClient_Click()
-  If Me.clientID = "" Or IsNull(Me.clientID) Then Exit Sub
-  DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+  If Me.ClientID = "" Or IsNull(Me.ClientID) Then Exit Sub
+  DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
   DoCmd.SelectObject acForm, "ClientsView"
 End Sub
 
@@ -63,8 +63,8 @@ Private Sub OpenGroup_Click()
 End Sub
 
 Private Sub OpenMasterLease_Click()
-  If Me.clientID = "" Or IsNull(Me.clientID) Then Exit Sub
-  DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+  If Me.ClientID = "" Or IsNull(Me.ClientID) Then Exit Sub
+  DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
   DoCmd.SelectObject acForm, "ClientsView"
   Forms!ClientsView.TabControls.Value = 7
 End Sub
@@ -229,12 +229,12 @@ End Sub
 
 Private Sub UnitsList_Click()
   Me.AssetID = Me.UnitsList.Column(5)
-  Me.clientID = Me.UnitsList.Column(15)
+  Me.ClientID = Me.UnitsList.Column(15)
   Me.MLID = Me.UnitsList.Column(16)
   Me.SchID = Me.UnitsList.Column(17)
   Me.groupID = Me.UnitsList.Column(18)
   Me.LocationID = Me.UnitsList.Column(19)
-  Me.BuyerId = Me.UnitsList.Column(20)
+  Me.BuyerID = Me.UnitsList.Column(20)
 End Sub
 
 Private Sub UnitsList_DblClick(Cancel As Integer)

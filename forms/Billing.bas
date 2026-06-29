@@ -104,7 +104,7 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =13260
-                    Top =405
+                    Top =408
                     Width =1215
                     ColumnOrder =0
                     FontSize =9
@@ -114,9 +114,9 @@ Begin Form
                     GroupTable =1
 
                     LayoutCachedLeft =13260
-                    LayoutCachedTop =405
+                    LayoutCachedTop =408
                     LayoutCachedWidth =14475
-                    LayoutCachedHeight =645
+                    LayoutCachedHeight =648
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
@@ -128,8 +128,8 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =14535
-                    Top =405
+                    Left =14532
+                    Top =408
                     ColumnOrder =3
                     FontSize =9
                     TabIndex =1
@@ -137,10 +137,10 @@ Begin Form
                     Name ="SchNo"
                     GroupTable =1
 
-                    LayoutCachedLeft =14535
-                    LayoutCachedTop =405
-                    LayoutCachedWidth =15975
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =14532
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =15972
+                    LayoutCachedHeight =648
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -154,9 +154,9 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =18045
-                    Top =405
-                    Width =630
+                    Left =18048
+                    Top =408
+                    Width =636
                     ColumnOrder =7
                     FontSize =9
                     TabIndex =5
@@ -164,10 +164,10 @@ Begin Form
                     Name ="BillID"
                     GroupTable =1
 
-                    LayoutCachedLeft =18045
-                    LayoutCachedTop =405
-                    LayoutCachedWidth =18675
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =18048
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =18684
+                    LayoutCachedHeight =648
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
@@ -181,9 +181,9 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =16755
-                    Top =405
-                    Width =630
+                    Left =16752
+                    Top =408
+                    Width =636
                     ColumnOrder =5
                     FontSize =9
                     TabIndex =3
@@ -191,10 +191,10 @@ Begin Form
                     Name ="SchID"
                     GroupTable =1
 
-                    LayoutCachedLeft =16755
-                    LayoutCachedTop =405
-                    LayoutCachedWidth =17385
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =16752
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =17388
+                    LayoutCachedHeight =648
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -225,8 +225,8 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =17445
-                    Top =405
+                    Left =17448
+                    Top =408
                     Width =540
                     ColumnOrder =6
                     FontSize =9
@@ -235,10 +235,10 @@ Begin Form
                     Name ="GroupId"
                     GroupTable =1
 
-                    LayoutCachedLeft =17445
-                    LayoutCachedTop =405
-                    LayoutCachedWidth =17985
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =17448
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =17988
+                    LayoutCachedHeight =648
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -252,8 +252,8 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =16035
-                    Top =405
+                    Left =16032
+                    Top =408
                     Width =660
                     ColumnOrder =4
                     FontSize =9
@@ -262,10 +262,10 @@ Begin Form
                     Name ="clientId"
                     GroupTable =1
 
-                    LayoutCachedLeft =16035
-                    LayoutCachedTop =405
-                    LayoutCachedWidth =16695
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =16032
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =16692
+                    LayoutCachedHeight =648
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1

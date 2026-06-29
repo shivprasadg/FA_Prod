@@ -103,16 +103,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =2
-                    Left =4680
+                    Left =4716
                     Top =660
-                    Width =1395
+                    Width =1392
                     Height =285
                     Name ="Label0"
                     Caption ="Unit#"
                     GroupTable =1
-                    LayoutCachedLeft =4680
+                    LayoutCachedLeft =4716
                     LayoutCachedTop =660
-                    LayoutCachedWidth =6075
+                    LayoutCachedWidth =6108
                     LayoutCachedHeight =945
                     ColumnStart =4
                     ColumnEnd =4
@@ -122,16 +122,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =2
-                    Left =30
+                    Left =36
                     Top =660
-                    Width =2475
+                    Width =2472
                     Height =285
                     Name ="Label1"
                     Caption ="VIN"
                     GroupTable =1
-                    LayoutCachedLeft =30
+                    LayoutCachedLeft =36
                     LayoutCachedTop =660
-                    LayoutCachedWidth =2505
+                    LayoutCachedWidth =2508
                     LayoutCachedHeight =945
                     LayoutGroup =1
                     GroupTable =1
@@ -139,16 +139,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =2
-                    Left =6135
+                    Left =6180
                     Top =660
-                    Width =1305
+                    Width =1308
                     Height =285
                     Name ="Label2"
                     Caption ="COA Back"
                     GroupTable =1
-                    LayoutCachedLeft =6135
+                    LayoutCachedLeft =6180
                     LayoutCachedTop =660
-                    LayoutCachedWidth =7440
+                    LayoutCachedWidth =7488
                     LayoutCachedHeight =945
                     ColumnStart =5
                     ColumnEnd =5
@@ -158,16 +158,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =2
-                    Left =7500
+                    Left =7560
                     Top =660
-                    Width =750
+                    Width =756
                     Height =285
                     Name ="Label3"
                     Caption ="Status"
                     GroupTable =1
-                    LayoutCachedLeft =7500
+                    LayoutCachedLeft =7560
                     LayoutCachedTop =660
-                    LayoutCachedWidth =8250
+                    LayoutCachedWidth =8316
                     LayoutCachedHeight =945
                     ColumnStart =6
                     ColumnEnd =6
@@ -178,18 +178,18 @@ Begin Form
                     OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
-                    Left =3960
+                    Left =3972
                     Top =660
-                    Width =660
+                    Width =672
                     Height =285
                     FontSize =9
                     FontWeight =700
                     Name ="Label4"
                     Caption =" Acct"
                     GroupTable =1
-                    LayoutCachedLeft =3960
+                    LayoutCachedLeft =3972
                     LayoutCachedTop =660
-                    LayoutCachedWidth =4620
+                    LayoutCachedWidth =4644
                     LayoutCachedHeight =945
                     ColumnStart =2
                     ColumnEnd =3
@@ -199,16 +199,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =2
-                    Left =2565
+                    Left =2580
                     Top =660
-                    Width =1335
+                    Width =1332
                     Height =285
                     Name ="Label6"
                     Caption ="Accept Date"
                     GroupTable =1
-                    LayoutCachedLeft =2565
+                    LayoutCachedLeft =2580
                     LayoutCachedTop =660
-                    LayoutCachedWidth =3900
+                    LayoutCachedWidth =3912
                     LayoutCachedHeight =945
                     ColumnStart =1
                     ColumnEnd =1
@@ -274,16 +274,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =2
-                    Left =8310
+                    Left =8388
                     Top =660
                     Width =1320
                     Height =285
                     Name ="Label13"
                     Caption ="COA Copy"
                     GroupTable =1
-                    LayoutCachedLeft =8310
+                    LayoutCachedLeft =8388
                     LayoutCachedTop =660
-                    LayoutCachedWidth =9630
+                    LayoutCachedWidth =9708
                     LayoutCachedHeight =945
                     ColumnStart =7
                     ColumnEnd =7
@@ -458,7 +458,7 @@ Begin Form
             End
         End
         Begin Section
-            Height =390
+            Height =396
             Name ="Detail"
             Begin
                 Begin TextBox
@@ -466,10 +466,10 @@ Begin Form
                     TextFontCharSet =238
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =4680
-                    Top =45
-                    Width =1395
-                    Height =315
+                    Left =4716
+                    Top =48
+                    Width =1392
+                    Height =312
                     FontWeight =700
                     TabIndex =3
                     BackColor =15527148
@@ -479,9 +479,9 @@ Begin Form
                     ControlSource ="UnitNo"
                     GroupTable =1
 
-                    LayoutCachedLeft =4680
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =6075
+                    LayoutCachedLeft =4716
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =6108
                     LayoutCachedHeight =360
                     RowStart =1
                     RowEnd =1
@@ -493,18 +493,18 @@ Begin Form
                 Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
-                    Left =30
-                    Top =45
-                    Width =2475
-                    Height =315
+                    Left =36
+                    Top =48
+                    Width =2472
+                    Height =312
                     BorderColor =-2147483615
                     Name ="UnitVIN"
                     ControlSource ="UnitVIN"
                     GroupTable =1
 
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =2505
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =2508
                     LayoutCachedHeight =360
                     RowStart =1
                     RowEnd =1
@@ -515,10 +515,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =6135
-                    Top =45
-                    Width =1305
-                    Height =315
+                    Left =6180
+                    Top =48
+                    Width =1308
+                    Height =312
                     TabIndex =4
                     BackColor =13434879
                     BorderColor =-2147483615
@@ -529,9 +529,9 @@ Begin Form
                     OnGotFocus ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =6135
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =7440
+                    LayoutCachedLeft =6180
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =7488
                     LayoutCachedHeight =360
                     RowStart =1
                     RowEnd =1
@@ -545,10 +545,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =7500
-                    Top =45
-                    Width =750
-                    Height =315
+                    Left =7560
+                    Top =48
+                    Width =756
+                    Height =312
                     ColumnWidth =1965
                     TabIndex =5
                     BorderColor =-2147483615
@@ -556,9 +556,9 @@ Begin Form
                     ControlSource ="UnitStatus"
                     GroupTable =1
 
-                    LayoutCachedLeft =7500
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =8250
+                    LayoutCachedLeft =7560
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =8316
                     LayoutCachedHeight =360
                     RowStart =1
                     RowEnd =1
@@ -571,10 +571,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =2565
-                    Top =45
-                    Width =1335
-                    Height =315
+                    Left =2580
+                    Top =48
+                    Width =1332
+                    Height =312
                     TabIndex =1
                     BorderColor =-2147483615
                     Name ="UnitAcceptDate"
@@ -583,9 +583,9 @@ Begin Form
                     AfterUpdate ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =2565
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =3900
+                    LayoutCachedLeft =2580
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =3912
                     LayoutCachedHeight =360
                     RowStart =1
                     RowEnd =1
@@ -597,18 +597,18 @@ Begin Form
                 Begin CheckBox
                     Locked = NotDefault
                     OverlapFlags =85
-                    Left =4200
-                    Top =45
+                    Left =4224
+                    Top =48
                     Width =420
-                    Height =315
+                    Height =312
                     TabIndex =2
                     Name ="UnitDocAccpt"
                     ControlSource ="UnitDocAccpt"
                     GroupTable =1
 
-                    LayoutCachedLeft =4200
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =4620
+                    LayoutCachedLeft =4224
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =4644
                     LayoutCachedHeight =360
                     RowStart =1
                     RowEnd =1
@@ -620,16 +620,16 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =3960
-                    Top =45
-                    Width =187
-                    Height =315
+                    Left =3972
+                    Top =48
+                    Width =192
+                    Height =312
                     Name ="EmptyCell11"
                     GroupTable =1
                     GridlineColor =0
-                    LayoutCachedLeft =3960
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =4147
+                    LayoutCachedLeft =3972
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =4164
                     LayoutCachedHeight =360
                     RowStart =1
                     RowEnd =1
@@ -644,10 +644,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =8310
-                    Top =45
+                    Left =8388
+                    Top =48
                     Width =1320
-                    Height =315
+                    Height =312
                     TabIndex =6
                     BorderColor =-2147483615
                     Name ="UnitCofACopy"
@@ -656,9 +656,9 @@ Begin Form
                     AfterUpdate ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =8310
-                    LayoutCachedTop =45
-                    LayoutCachedWidth =9630
+                    LayoutCachedLeft =8388
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =9708
                     LayoutCachedHeight =360
                     RowStart =1
                     RowEnd =1

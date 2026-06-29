@@ -7,12 +7,12 @@ Option Compare Database
 Private Sub AssetID_DblClick(Cancel As Integer)
 Call OpenUnitsForm(Me.AssetID)
 'DoCmd.OpenForm "UnitsForm", , , "UnitID=" & Me.AssetID & ""
-Me.UnitVIN.SetFocus
+Me.unitvin.SetFocus
 
 End Sub
 
 Private Sub RmktSaleDt_AfterUpdate()
-If IsDate(Me.rmktsaledt) Then Me.unitstatus = "S" Else Me.unitstatus = "R"
+If IsDate(Me.RmktSaleDt) Then Me.UnitStatus = "S" Else Me.UnitStatus = "R"
 End Sub
 
 Private Sub UNSaleUnit_Click()

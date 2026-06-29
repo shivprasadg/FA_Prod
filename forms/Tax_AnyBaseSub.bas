@@ -167,12 +167,11 @@ Begin Form
                     Height =435
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label3"
                     Caption ="Starts \015\012ON"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =4935
                     LayoutCachedTop =30
                     LayoutCachedWidth =6015
@@ -192,7 +191,9 @@ Begin Form
                     ColumnOrder =1
                     FontSize =8
                     BorderColor =12632256
+                    ForeColor =0
                     Name ="txtCurrent"
+                    GridlineColor =0
 
                     LayoutCachedLeft =5535
                     LayoutCachedTop =60
@@ -215,12 +216,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="TaxNumberLabel"
                     Caption ="Tax"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =4080
                     LayoutCachedTop =30
                     LayoutCachedWidth =4915
@@ -238,12 +238,11 @@ Begin Form
                     Height =240
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label169"
                     Caption ="Active"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =7095
                     LayoutCachedTop =225
                     LayoutCachedWidth =7708
@@ -261,12 +260,11 @@ Begin Form
                     Height =216
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label206"
                     Caption ="Rate %"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =4080
                     LayoutCachedTop =246
                     LayoutCachedWidth =4915
@@ -284,12 +282,11 @@ Begin Form
                     Height =435
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label210"
                     Caption ="Ends\015\012ON"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =6015
                     LayoutCachedTop =30
                     LayoutCachedWidth =7095
@@ -307,12 +304,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label212"
                     Caption ="Tax"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =2355
                     LayoutCachedTop =30
                     LayoutCachedWidth =4080
@@ -330,12 +326,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label213"
                     Caption ="Description"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =2355
                     LayoutCachedTop =255
                     LayoutCachedWidth =4080
@@ -357,11 +352,11 @@ Begin Form
                     ColumnOrder =0
                     FontWeight =700
                     TabIndex =1
+                    ForeColor =0
                     Name ="StateNameLabel"
                     ControlSource ="BaseName"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedTop =86
@@ -383,12 +378,11 @@ Begin Form
                     Height =240
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label224"
                     Caption ="Tax Break-Out / Note"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =11340
                     LayoutCachedTop =225
                     LayoutCachedWidth =13455
@@ -416,14 +410,13 @@ Begin Form
                     Height =255
                     FontSize =10
                     TabIndex =14
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="TaxNote"
                     ControlSource ="TaxNote"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =11358
@@ -449,7 +442,6 @@ Begin Form
                     Height =255
                     FontSize =10
                     TabIndex =12
-                    BorderColor =10921638
                     ForeColor =8355711
                     Name ="Warning"
                     ControlSource ="TaxStatus"
@@ -457,7 +449,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7680
                     LayoutCachedWidth =8745
@@ -480,14 +471,13 @@ Begin Form
                     Height =255
                     FontSize =10
                     TabIndex =8
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="TaxAbbreviation"
                     ControlSource ="TaxAbbreviation"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2340
                     LayoutCachedWidth =4065
@@ -507,12 +497,14 @@ Begin Form
                     Height =256
                     FontSize =8
                     TabIndex =10
+                    ForeColor =0
                     Name ="EditMe"
                     Caption ="Edit"
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Edit This Base Tax"
                     TopPadding =0
                     BottomPadding =0
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -593,7 +585,7 @@ Begin Form
                     FontSize =9
                     FontWeight =700
                     TabIndex =3
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="StartsOn"
                     ControlSource ="StartsOn"
                     Format ="Short Date"
@@ -601,7 +593,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4935
                     LayoutCachedWidth =6015
@@ -625,14 +616,13 @@ Begin Form
                     Height =255
                     FontSize =10
                     TabIndex =1
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="TaxFullName"
                     ControlSource ="TaxFullName"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedWidth =2310
@@ -657,12 +647,9 @@ Begin Form
                     Width =153
                     Height =231
                     FontSize =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Id"
                     ControlSource ="Id"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =11100
                     LayoutCachedTop =15
@@ -676,14 +663,12 @@ Begin Form
                     Width =210
                     Height =225
                     TabIndex =4
-                    BorderColor =10921638
                     Name ="IsActive"
                     ControlSource ="IsActive"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7335
                     LayoutCachedTop =30
@@ -706,12 +691,9 @@ Begin Form
                     Height =231
                     FontSize =8
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="TaxStatesID"
                     ControlSource ="TaxStatesID"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =11391
                     LayoutCachedWidth =11529
@@ -729,7 +711,7 @@ Begin Form
                     FontSize =9
                     FontWeight =700
                     TabIndex =7
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="EndsOn"
                     ControlSource ="EndsOn"
                     Format ="Short Date"
@@ -738,7 +720,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =6015
                     LayoutCachedWidth =7095
@@ -771,6 +752,7 @@ Begin Form
                         0x5b00490044005d003d005b00740078007400430075007200720065006e007400 ,
                         0x5d0000000000
                     End
+                    GridlineColor =0
 
                     LayoutCachedTop =240
                     LayoutCachedWidth =16848
@@ -803,6 +785,7 @@ Begin Form
                     TabIndex =2
                     BackColor =11525325
                     BorderColor =9211020
+                    ForeColor =0
                     Name ="TaxNumber"
                     ControlSource ="BaseTaxRate"
                     Format ="Percent"
@@ -814,7 +797,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4080
                     LayoutCachedWidth =4915
@@ -842,12 +824,9 @@ Begin Form
                     Height =231
                     FontSize =8
                     TabIndex =9
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="TaxTypeId"
                     ControlSource ="TaxTypeId"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =11253
                     LayoutCachedWidth =11391
@@ -865,12 +844,9 @@ Begin Form
                     Height =231
                     FontSize =8
                     TabIndex =11
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="LinkID"
                     ControlSource ="LinkID"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =11529
                     LayoutCachedWidth =11667
@@ -882,12 +858,14 @@ Begin Form
                     Height =256
                     FontSize =8
                     TabIndex =13
+                    ForeColor =0
                     Name ="AddExemption"
                     Caption ="Add Exemption"
                     OnClick ="[Event Procedure]"
                     ControlTipText ="Add Exemption to this Base Tax"
                     TopPadding =0
                     BottomPadding =0
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,

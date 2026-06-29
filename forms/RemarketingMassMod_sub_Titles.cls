@@ -9,7 +9,7 @@ Public RST    As DAO.Recordset
 
 Private Sub EntryReasonId_Click()
    Me.EntryReason = Me.EntryReasonId.Column(1)
-   Me.EntryTypeId = Me.EntryReasonId.Column(2)
+   Me.EntryTypeID = Me.EntryReasonId.Column(2)
    Me.ExpectedReturn = Me.EntryReasonId.Column(3)
 End Sub
 
@@ -112,9 +112,9 @@ End Sub
 
 Private Sub LogTitleEvent_Click()
 Dim WrongDirection, DirX  As String
-If Me.EntryTypeId = Null Then Exit Sub
-If Me.EntryTypeId = 1 And Me.LastDirection = "In" Then WrongDirection = "You're Trying to Log IN a Title That is Already 'IN'"
-If Me.EntryTypeId = 2 And Me.LastDirection = "Out" Then WrongDirection = "You're Trying to Log OUT a Title That is Already 'OUT'"
+If Me.EntryTypeID = Null Then Exit Sub
+If Me.EntryTypeID = 1 And Me.LastDirection = "In" Then WrongDirection = "You're Trying to Log IN a Title That is Already 'IN'"
+If Me.EntryTypeID = 2 And Me.LastDirection = "Out" Then WrongDirection = "You're Trying to Log OUT a Title That is Already 'OUT'"
 
     If WrongDirection <> "" Then
         MsgBox WrongDirection & vbNewLine & "No action was taken", vbCritical, "You got peanut butter in my chocolate"
@@ -134,7 +134,7 @@ If Me.EntryTypeId = 2 And Me.LastDirection = "Out" Then WrongDirection = "You're
     DoCmd.SetWarnings True
     'Call UpdateUnitTitleState
     'Call UpdateUnitTitleNum
-    If Me.EntryTypeId = 1 Then DirX = "In" Else DirX = "Out"
+    If Me.EntryTypeID = 1 Then DirX = "In" Else DirX = "Out"
     MsgBox "Title # " & Me.UnitTitleNumber & " has been checked " & DirX & vbNewLine & " The unit Will be removed from the list", , " Checked In"
     DoCmd.SetWarnings False
     SQLz = "Delete from RMKTUnitTitleLog_Work Where AssetID=" & Me.UnitID.Value

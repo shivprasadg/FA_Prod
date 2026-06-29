@@ -118,7 +118,7 @@ Decode:
         For i = 1 To xCount
             Call MessageUser("Update", "VIN: " & RST!VIN, "Unit " & i & " Of " & xCount)
             If SaveToServer = True Then
-                Call VinDecoder(RST!UnitID, Nz(RST!VIN, "NoVIN"), RST!UnitYear, True, False, RST!clientID)
+                Call VinDecoder(RST!UnitID, Nz(RST!VIN, "NoVIN"), RST!UnitYear, True, False, RST!ClientID)
                 If UpdateEng = True Then
                 Dim VDUEng As String
                 VDUEng = Nz(DLookup("EngX", "vw_VinDecodedEngineUnit", "UnitID=" & RST!UnitID & " "), "Not Provided")
@@ -133,9 +133,9 @@ Decode:
                 End If
             Else
                 If Nz(RST!UnitYear, 0) > 0 Then
-                    Call VinDecoder(0, Nz(RST!VIN, "NoVIN"), RST!UnitYear, True, True, Nz(RST!clientID, 0))
+                    Call VinDecoder(0, Nz(RST!VIN, "NoVIN"), RST!UnitYear, True, True, Nz(RST!ClientID, 0))
                 Else
-                    Call VinDecoder(0, Nz(RST!VIN, "NoVIN"), , True, True, Nz(RST!clientID, 0))
+                    Call VinDecoder(0, Nz(RST!VIN, "NoVIN"), , True, True, Nz(RST!ClientID, 0))
                 End If
             End If
             RST.MoveNext

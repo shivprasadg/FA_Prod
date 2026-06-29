@@ -776,8 +776,10 @@ Begin Form
                     Width =25980
                     Height =14415
                     TabIndex =24
+                    BorderColor =0
                     Name ="RMKTExpenseSub"
                     SourceObject ="Form.RMKTExpenseSub"
+                    GridlineColor =0
 
                     LayoutCachedTop =1380
                     LayoutCachedWidth =25980
@@ -959,8 +961,8 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3210
-                    Width =990
+                    Left =3228
+                    Width =996
                     Height =255
                     FontSize =9
                     TabIndex =3
@@ -972,8 +974,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =3210
-                    LayoutCachedWidth =4200
+                    LayoutCachedLeft =3228
+                    LayoutCachedWidth =4224
                     LayoutCachedHeight =255
                     ColumnStart =3
                     ColumnEnd =3
@@ -994,8 +996,8 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2220
-                    Width =990
+                    Left =2232
+                    Width =996
                     Height =255
                     FontSize =9
                     TabIndex =2
@@ -1007,8 +1009,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =2220
-                    LayoutCachedWidth =3210
+                    LayoutCachedLeft =2232
+                    LayoutCachedWidth =3228
                     LayoutCachedHeight =255
                     ColumnStart =2
                     ColumnEnd =2
@@ -1029,8 +1031,8 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1230
-                    Width =990
+                    Left =1236
+                    Width =996
                     Height =255
                     FontSize =9
                     TabIndex =1
@@ -1042,8 +1044,8 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =1230
-                    LayoutCachedWidth =2220
+                    LayoutCachedLeft =1236
+                    LayoutCachedWidth =2232
                     LayoutCachedHeight =255
                     ColumnStart =1
                     ColumnEnd =1
@@ -1271,10 +1273,10 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     ColumnCount =2
-                    Left =20670
-                    Top =1050
+                    Left =20676
+                    Top =1068
                     Width =1860
-                    Height =255
+                    Height =252
                     FontSize =9
                     TabIndex =14
                     BorderColor =967423
@@ -1291,10 +1293,10 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =20670
-                    LayoutCachedTop =1050
-                    LayoutCachedWidth =22530
-                    LayoutCachedHeight =1305
+                    LayoutCachedLeft =20676
+                    LayoutCachedTop =1068
+                    LayoutCachedWidth =22536
+                    LayoutCachedHeight =1320
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =3
@@ -1310,7 +1312,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =215
                     TextAlign =2
-                    Left =20670
+                    Left =20676
                     Top =780
                     Width =1860
                     Height =270
@@ -1323,9 +1325,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =20670
+                    LayoutCachedLeft =20676
                     LayoutCachedTop =780
-                    LayoutCachedWidth =22530
+                    LayoutCachedWidth =22536
                     LayoutCachedHeight =1050
                     LayoutGroup =3
                     ThemeFontIndex =-1
@@ -1646,7 +1648,7 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     ColumnCount =2
-                    Left =20670
+                    Left =20676
                     Top =360
                     Width =1860
                     Height =255
@@ -1666,9 +1668,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =20670
+                    LayoutCachedLeft =20676
                     LayoutCachedTop =360
-                    LayoutCachedWidth =22530
+                    LayoutCachedWidth =22536
                     LayoutCachedHeight =615
                     LayoutGroup =4
                     ThemeFontIndex =-1
@@ -1772,9 +1774,9 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     ColumnCount =2
-                    Left =7530
+                    Left =7536
                     Top =1080
-                    Width =1365
+                    Width =1368
                     Height =255
                     FontSize =9
                     TabIndex =26
@@ -1789,9 +1791,9 @@ Begin Form
                     OnChange ="[Event Procedure]"
                     GroupTable =6
 
-                    LayoutCachedLeft =7530
+                    LayoutCachedLeft =7536
                     LayoutCachedTop =1080
-                    LayoutCachedWidth =8895
+                    LayoutCachedWidth =8904
                     LayoutCachedHeight =1335
                     LayoutGroup =5
                     ThemeFontIndex =-1

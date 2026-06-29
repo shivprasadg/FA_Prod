@@ -28,7 +28,7 @@ End Sub
 
 Public Sub SetLease()
     Me.Form.RecordSource = ""
-    SQLz = "SELECT MLID, Client, MLNo, MLOrig FROM MstrLease WHERE Client=" & Me.Parent.clientID & " ORDER BY MstrLease.MLOrig, MstrLease.MLNo;"
+    SQLz = "SELECT MLID, Client, MLNo, MLOrig FROM MstrLease WHERE Client=" & Me.Parent.ClientID & " ORDER BY MstrLease.MLOrig, MstrLease.MLNo;"
     Me.MasterLeaseList.RowSource = SQLz
     Me.MLAmendf.Form.AmendmentsList.RowSource = ""
 End Sub
@@ -37,7 +37,7 @@ Private Sub MasterLeaseList_Click()
            "Clients ON MstrLease.MLGuarantor = Clients.clientID WHERE MLID = " & Me.MasterLeaseList & ";"
     Me.Form.RecordSource = SQLz
     SQLz = "SELECT FullName, Title, contactID, ClientID FROM ClientContacts_Base " & _
-           "WHERE ClientID= " & Me.clientID & " Order by FullName;"
+           "WHERE ClientID= " & Me.ClientID & " Order by FullName;"
     Me.MLSigner.RowSource = SQLz
     Me.MLSigner2.RowSource = SQLz
     Me.MLSigner3.RowSource = SQLz

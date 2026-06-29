@@ -59,7 +59,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin Section
-            Height =1545
+            Height =1566
             Name ="Detail"
             Begin
                 Begin TextBox
@@ -114,10 +114,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1965
-                    Top =825
+                    Left =1980
+                    Top =840
                     Width =1500
-                    Height =315
+                    Height =312
                     FontSize =10
                     TabIndex =2
                     BorderColor =12566463
@@ -130,10 +130,10 @@ Begin Form
                     DefaultValue ="0"
                     GroupTable =1
 
-                    LayoutCachedLeft =1965
-                    LayoutCachedTop =825
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =1140
+                    LayoutCachedLeft =1980
+                    LayoutCachedTop =840
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =1152
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -146,18 +146,18 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =525
-                            Top =825
-                            Width =1379
-                            Height =315
+                            Left =528
+                            Top =840
+                            Width =1380
+                            Height =312
                             FontSize =10
                             Name ="Label2"
                             Caption ="Up Front:"
                             GroupTable =1
-                            LayoutCachedLeft =525
-                            LayoutCachedTop =825
-                            LayoutCachedWidth =1904
-                            LayoutCachedHeight =1140
+                            LayoutCachedLeft =528
+                            LayoutCachedTop =840
+                            LayoutCachedWidth =1908
+                            LayoutCachedHeight =1152
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -171,10 +171,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1965
-                    Top =1200
+                    Left =1980
+                    Top =1224
                     Width =1500
-                    Height =315
+                    Height =312
                     FontSize =10
                     TabIndex =3
                     BorderColor =12566463
@@ -187,10 +187,10 @@ Begin Form
                     DefaultValue ="0"
                     GroupTable =1
 
-                    LayoutCachedLeft =1965
-                    LayoutCachedTop =1200
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =1515
+                    LayoutCachedLeft =1980
+                    LayoutCachedTop =1224
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =1536
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -203,18 +203,18 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =525
-                            Top =1200
-                            Width =1379
-                            Height =315
+                            Left =528
+                            Top =1224
+                            Width =1380
+                            Height =312
                             FontSize =10
                             Name ="Label3"
                             Caption ="@ Funding:"
                             GroupTable =1
-                            LayoutCachedLeft =525
-                            LayoutCachedTop =1200
-                            LayoutCachedWidth =1904
-                            LayoutCachedHeight =1515
+                            LayoutCachedLeft =528
+                            LayoutCachedTop =1224
+                            LayoutCachedWidth =1908
+                            LayoutCachedHeight =1536
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -228,10 +228,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1965
-                    Top =450
+                    Left =1980
+                    Top =456
                     Width =1500
-                    Height =314
+                    Height =312
                     FontSize =10
                     TabIndex =4
                     BorderColor =12566463
@@ -241,10 +241,10 @@ Begin Form
                     StatusBarText ="basis for intial commission calculationa"
                     GroupTable =1
 
-                    LayoutCachedLeft =1965
-                    LayoutCachedTop =450
-                    LayoutCachedWidth =3465
-                    LayoutCachedHeight =764
+                    LayoutCachedLeft =1980
+                    LayoutCachedTop =456
+                    LayoutCachedWidth =3480
+                    LayoutCachedHeight =768
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -255,18 +255,18 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =525
-                            Top =450
-                            Width =1379
-                            Height =314
+                            Left =528
+                            Top =456
+                            Width =1380
+                            Height =312
                             FontSize =10
                             Name ="Label5"
                             Caption ="Esti Comm %:"
                             GroupTable =1
-                            LayoutCachedLeft =525
-                            LayoutCachedTop =450
-                            LayoutCachedWidth =1904
-                            LayoutCachedHeight =764
+                            LayoutCachedLeft =528
+                            LayoutCachedTop =456
+                            LayoutCachedWidth =1908
+                            LayoutCachedHeight =768
                             LayoutGroup =1
                             GridlineThemeColorIndex =1
                             GridlineShade =65.0

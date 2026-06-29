@@ -48,11 +48,11 @@ Private Sub ExitOptionsDashboard_Click()
     OpenArgX = "FALease"
     If Me.LeaseList.Column(2) <> "FA" Then OpenArgX = "Portfolio"
     DoCmd.OpenForm "ExitOptionsManager", , , , , , "OpenArgX"
-    If Me.clientID & "test" <> "test" Then
+    If Me.ClientID & "test" <> "test" Then
         AddReportLog "ExitOptionsDashboard_Click"
-        Forms!ExitOptionsManager.ClientList = Me.clientID
+        Forms!ExitOptionsManager.ClientList = Me.ClientID
         Form_ExitOptionsManager.ClientList_Click
-        If OpenArgX = "Portfolio" Then Forms!ExitOptionsManager.LeaseTypetoShow = 2 Else Forms!ExitOptionsManager.LeaseTypetoShow = 1
+        If OpenArgX = "Portfolio" Then Forms!ExitOptionsManager.LeaseTypeToShow = 2 Else Forms!ExitOptionsManager.LeaseTypeToShow = 1
         Form_ExitOptionsManager.LeaseTypeToShow_Click
         If Me.groupID & "test" <> "test" Then
             Forms!ExitOptionsManager.SchGrpList = Me.groupID
@@ -107,7 +107,7 @@ Private Sub OpenMassMod_Click()
     AddReportLog "OpenMassMod_Click"
     DoCmd.close acForm, "BulkChange_form"
     DoCmd.OpenForm "BulkChange_form"
-    Forms!BulkChange_Form.ClientList = Me.clientID
+    Forms!BulkChange_Form.ClientList = Me.ClientID
     Form_BulkChange_Form.ClientList_Click
     Forms!BulkChange_Form.LeaseList = Me.MLID
     Form_BulkChange_Form.Leaselist_Click
@@ -141,8 +141,8 @@ End Sub
 Public Sub ClientUnitSummary_Click()
 Dim XLS As String
     Dim Countx As Integer
-SQLz = "Select * From Client_LPAF Where ClientId=" & Me.clientID & ";"
-Countx = DCount("clientID", "Client_LPAF", "ClientId=" & Me.clientID)
+SQLz = "Select * From Client_LPAF Where ClientId=" & Me.ClientID & ";"
+Countx = DCount("clientID", "Client_LPAF", "ClientId=" & Me.ClientID)
 If Nz(Countx, 0) <= 0 Then
 MsgBox "No Matching Units", vbInformation, "No Result"
 Exit Sub
@@ -356,7 +356,7 @@ End Sub
 Public Sub SchCheck_Click()
     Dim ReportX As String
     If Me.SchID & "test" = "test" Then Exit Sub
-    If Me.clientID = 4029 Then ReportX = "SchedCheckTLS" Else ReportX = "SchedCheck2"
+    If Me.ClientID = 4029 Then ReportX = "SchedCheckTLS" Else ReportX = "SchedCheck2"
     AddReportLog "SchCheck_Click"
     DoCmd.OpenReport ReportX, acViewPreview, "", "SchID=" & Me.SchID
 End Sub
@@ -439,7 +439,7 @@ Public Sub ClientList_Click()
     Me.ScheduleList.RowSource = ""
     Me.SignOffForm.Form.RecordSource = "Select * From vw_UnitGroupHealth Where GroupId=0"
     Me.ScheduleInfo_SubForm.Form.RecordSource = "Select * From ScheduleInfo Where SchID =0;"
-    Me.clientID = Me.ClientList
+    Me.ClientID = Me.ClientList
     Me.ClientGroupID = Me.ClientList.Column(4)
     Me.MLID = ""
     Me.SchID = ""
@@ -518,7 +518,7 @@ Private Sub GroupList_Click()
 End Sub
 
 Private Sub ClearLabel_Click()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchVin = ""
     Me.SearchUnitNum = ""
     Me.SearchMYear = ""
@@ -547,7 +547,7 @@ Private Sub Units_List_DblClick(Cancel As Integer)
     Me.SearchVin.SetFocus
 End Sub
 Public Function SearchUnits_List(sField As String)
-    If sField <> "AssetID" Then Me.SearchAssetId = ""
+    If sField <> "AssetID" Then Me.SearchAssetID = ""
     If sField <> "VIN" Then Me.SearchVin = ""
     If sField <> "UnitNum" Then Me.SearchUnitNum = ""
     If sField <> "MYear" Then Me.SearchMYear = ""

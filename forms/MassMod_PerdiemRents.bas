@@ -138,9 +138,9 @@ Begin Form
                     PictureAlignment =0
                     PictureType =2
                     Left =60
-                    Top =1245
+                    Top =1248
                     Width =19080
-                    Height =195
+                    Height =192
                     Name ="Image454"
                     Picture ="LtGrey2_Shadow"
                     GroupTable =5
@@ -151,7 +151,7 @@ Begin Form
                     HorizontalAnchor =2
 
                     LayoutCachedLeft =60
-                    LayoutCachedTop =1245
+                    LayoutCachedTop =1248
                     LayoutCachedWidth =19140
                     LayoutCachedHeight =1440
                     TabIndex =15

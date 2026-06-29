@@ -83,7 +83,7 @@ Set dbsUnits = CurrentDb
 Set rstTypes = dbsUnits.OpenRecordset("Expenses", dbOpenDynaset, dbSeeChanges)
 rstTypes.AddNew
 rstTypes!GroupsRef = Me![groupID]
-rstTypes!DealsRef = Me![dealRef]
+rstTypes!DealsRef = Me![DealRef]
 rstTypes.Update
 MsgBox "A blank expense has been added", vbOKOnly
 Forms!Groups_view.Expenses_sub.Requery
@@ -205,7 +205,7 @@ Dim StrFormName
 Dim StrFilter
 
 StrFormName = "Locations_view"
-StrFilter = "[clientRef]=" & Me.clientRef
+StrFilter = "[clientRef]=" & Me.clientREF
 
     DoCmd.OpenForm StrFormName, acNormal, , StrFilter, , acNormal
 

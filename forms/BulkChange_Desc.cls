@@ -198,7 +198,7 @@ End Sub
 
 Private Sub UnitID_DblClick(Cancel As Integer)
     Call OpenUnitsForm(Me.UnitID)
-    Me.UnitUnitNum.SetFocus
+    Me.unitunitnum.SetFocus
 End Sub
 
 Private Sub UnitMake_AfterUpdate()
@@ -206,7 +206,7 @@ Private Sub UnitMake_AfterUpdate()
 End Sub
 
 Private Sub UnitStatus_BeforeUpdate(Cancel As Integer)
-    If Me.unitstatus Like "*R*" Or Me.unitstatus Like "*P*" Or Me.unitstatus Like "*S*" Then
+    If Me.UnitStatus Like "*R*" Or Me.UnitStatus Like "*P*" Or Me.UnitStatus Like "*S*" Then
         MsgBox "You cannot use a Remarketing Unit Status here" & vbNewLine & "Use the Remarketing Mass Mode form, or" & vbNewLine & "you may use the Units form directly", vbCritical, "Danger"
         Me.Undo
         Exit Sub

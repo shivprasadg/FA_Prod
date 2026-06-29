@@ -75,7 +75,7 @@ End Sub
 
 Private Sub UnitID_DblClick(Cancel As Integer)
     Call OpenUnitsForm(Me.UnitID)
-    Me.UnitVIN.SetFocus
+    Me.unitvin.SetFocus
 End Sub
 
 Private Sub DrawDownSubmit_Click()

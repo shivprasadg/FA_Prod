@@ -194,7 +194,7 @@ Public Function SetNetBuyOut(Optional noMsg As Boolean)
     If noMsg = False Then MsgBox "Net-BuyOut set", vbOKOnly, "ATLAAS Core"
 End Function
 
-Public Function getOPSMetricsReport(Optional startDate As String, Optional Enddate As String) As String
+Public Function getOPSMetricsReport(Optional StartDate As String, Optional EndDate As String) As String
     Dim cmd As ADODB.command
     Dim db As String
     'Dim RST As DAO.Recordset
@@ -212,8 +212,8 @@ Public Function getOPSMetricsReport(Optional startDate As String, Optional Endda
         .ActiveConnection = "Provider=sqloledb;Server=" & cConnection(0) & ";Database=" & db & ";" & cConnection(1) & ";ConnectPolicy=Redirect;TrustServerCertificate=yes;MARS_Connection=yes;Network Packet Size=16384;"
         .CommandType = adCmdStoredProc
         .CommandText = "dbo.OPSMetricsReport"
-        If startDate <> "" Then .Parameters.Append .CreateParameter("@Start", adDate, adParamInput, 255, CDate(startDate))
-        If Enddate <> "" Then .Parameters.Append .CreateParameter("@End", adDate, adParamInput, 255, CDate(Enddate))
+        If StartDate <> "" Then .Parameters.Append .CreateParameter("@Start", adDate, adParamInput, 255, CDate(StartDate))
+        If EndDate <> "" Then .Parameters.Append .CreateParameter("@End", adDate, adParamInput, 255, CDate(EndDate))
         Set RST = .Execute
     End With
     If Not RST.EOF Then
@@ -222,9 +222,9 @@ Public Function getOPSMetricsReport(Optional startDate As String, Optional Endda
         Set xlBook = xlApp.Workbooks.Add
         Set xlSheet = xlBook.Worksheets(1) ' Add column headers
             xlApp.Visible = True
-        For i = 0 To RST.fields.Count - 1
-            xlSheet.Cells(1, i + 1).Value = RST.fields(i).Name
-            xlSheet.Cells(2, i + 1).Value = RST.fields(i).Value
+        For i = 0 To RST.Fields.Count - 1
+            xlSheet.Cells(1, i + 1).Value = RST.Fields(i).Name
+            xlSheet.Cells(2, i + 1).Value = RST.Fields(i).Value
         Next i
         xlSheet.Cells.EntireColumn.AutoFit
         Set rng = xlSheet.Range("A1:N2") ' Adjust the range as needed

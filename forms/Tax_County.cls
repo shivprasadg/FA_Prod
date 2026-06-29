@@ -18,7 +18,7 @@ Private Sub AddTaxRate_Click()
     DoCmd.RunSQL ("Delete From TaxBaseTemp")
     DoCmd.SetWarnings True
     DoCmd.close acForm, "Tax_Add"
-    DoCmd.OpenForm "Tax_Add", acNormal, , , , , "County|" & Nz(Me.Tax_CountyBaseSub!TaxTypeId, 0) & "|" & Me.CountyID & "|0|Add"
+    DoCmd.OpenForm "Tax_Add", acNormal, , , , , "County|" & Nz(Me.Tax_CountyBaseSub!TaxTypeID, 0) & "|" & Me.CountyID & "|0|Add"
 End Sub
 Private Sub CloseMe_Click()
 DoCmd.close acForm, Me.Form.Name

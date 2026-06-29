@@ -7,17 +7,17 @@ Dim SQLz As String
 
 Private Sub AddDocLink_Click()
     DoCmd.close acForm, "DocAddEditLinkForm"
-    DoCmd.OpenForm "DocAddEditLinkForm", acNormal, , , acFormAdd, , Me.clientID & "|" & Me.MLID & "|" & Me.SchID & "|0|0|" & Me.Form.Name & "|Add"
+    DoCmd.OpenForm "DocAddEditLinkForm", acNormal, , , acFormAdd, , Me.ClientID & "|" & Me.MLID & "|" & Me.SchID & "|0|0|" & Me.Form.Name & "|Add"
 End Sub
 
 Private Sub Form_Current()
-    SQLz = "SELECT Deals.faid, Deals.dealShortDesc From Deals WHERE ClientRef=" & Me.clientID & " ORDER BY Deals.faid DESC;"
+    SQLz = "SELECT Deals.faid, Deals.dealShortDesc From Deals WHERE ClientRef=" & Me.ClientID & " ORDER BY Deals.faid DESC;"
     Me.SchFAID.RowSource = SQLz
     Me.GroupFundList.Requery
     Me.BillingRules.Visible = False
     If FAUserAccessLevel = 99 And Me.MLOrig <> "FA" Then Me.BillingRules.Visible = True
 
-    SQLz = "SELECT contactID, FullName, Title, ClientID FROM ClientContacts_Base WHERE ClientID= " & Me.clientID & " Order by FullName;"
+    SQLz = "SELECT contactID, FullName, Title, ClientID FROM ClientContacts_Base WHERE ClientID= " & Me.ClientID & " Order by FullName;"
     Me.SchSigner.RowSource = SQLz
     Me.SchSigner2.RowSource = SQLz
     Me.SchSigner3.RowSource = SQLz
@@ -84,7 +84,7 @@ Private Sub GroupFundList_DblClick(Cancel As Integer)
     If Me.GroupFundList.Column(4) & "test" <> "test" Then
         DoCmd.close acForm, "GroupForm"
         DoCmd.OpenForm "GroupForm", , , "sGrpID=" & Me.GroupFundList.Column(4)
-        Forms!GroupForm.Tabcontrol.Value = 5
+        Forms!GroupForm.TabControl.Value = 5
     End If
 End Sub
 
@@ -108,12 +108,12 @@ Private Sub SchSigner3_Click()
 End Sub
 
 Private Sub UnitSummary_Click()
-    Call MakeScheduleUnitSummary(Me.clientID, Me.SchID, Me.SchNo)
+    Call MakeScheduleUnitSummary(Me.ClientID, Me.SchID, Me.SchNo)
 End Sub
 
 Private Sub OpenClientsForm_Click()
     DoCmd.close acForm, "ClientsView"
-    DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+    DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
 End Sub
 
 Private Sub RentReport_Click()

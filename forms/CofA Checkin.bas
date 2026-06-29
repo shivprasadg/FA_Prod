@@ -119,7 +119,6 @@ Begin Form
                     BorderColor =6108695
                     Name ="Image142"
                     Picture ="1_DkBlue_Shadow"
-                    GridlineColor =10921638
                     HorizontalAnchor =2
 
                     LayoutCachedTop =420

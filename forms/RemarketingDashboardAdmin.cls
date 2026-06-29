@@ -48,7 +48,7 @@ Private Sub LocCity_Click()
 End Sub
 
 Private Sub Odometer_Click()
-    Me.ODOMETER.ControlTipText = "ODO mileage collected from " & DLookup("ODOSource", "RemarketingReportAllUnits", "UnitId=" & Me.UnitID) & " on " & DLookup("ODOReadDate", "RemarketingReportAllUnits", "UnitId=" & Me.UnitID)
+    Me.Odometer.ControlTipText = "ODO mileage collected from " & DLookup("ODOSource", "RemarketingReportAllUnits", "UnitId=" & Me.UnitID) & " on " & DLookup("ODOReadDate", "RemarketingReportAllUnits", "UnitId=" & Me.UnitID)
 End Sub
 
 Private Sub OpenMassMod_Click()
@@ -240,7 +240,7 @@ Public Sub SETSQL()
     If Countx > 0 Then Call ReSelectItems("lstMake")
 
     Call GetSelectedCount("lstModel")
-    Me.LstModel.RowSource = "SELECT UnitModel From RemarketingReportAllUnits " & WhereX & " GROUP BY UnitModel ORDER BY UnitModel;"
+    Me.lstModel.RowSource = "SELECT UnitModel From RemarketingReportAllUnits " & WhereX & " GROUP BY UnitModel ORDER BY UnitModel;"
     If Countx > 0 Then Call ReSelectItems("lstModel")
 
     Call GetSelectedCount("lstModelYear")
@@ -385,9 +385,9 @@ Private Sub MakeBuild()
     MakeX = strSQL
 End Sub
 Private Sub ModelBuild()
-    If Coalesce(Me.LstModel, "") = "" Then
+    If Coalesce(Me.lstModel, "") = "" Then
         strSQL = " AND ("
-        With Me.LstModel
+        With Me.lstModel
             For intRow = 0 To .ListCount - 1
                 If .Selected(intRow) Then
                     strSQL = strSQL & "([UnitModel]='" & .Column(0, intRow) & "') OR "
@@ -494,7 +494,7 @@ Private Sub StateBuild()
 End Sub
 Private Sub Buyer_DblClick(Cancel As Integer)
     If Nz(Me.Buyer, "") & "TEST" = "TEST" Then Exit Sub
-    Call OpenBuyersFrom(Me.BuyerId, 0)
+    Call OpenBuyersFrom(Me.BuyerID, 0)
 End Sub
 Private Sub SUF0_Click()
     Call SUFRecvStart_Click
@@ -568,7 +568,7 @@ End Sub
 Private Sub SourceCompany_DblClick(Cancel As Integer)
     If Me.SourceCompany & "TEST" = "TEST" Then Exit Sub
     DoCmd.close acForm, "ClientsView"
-    DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+    DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
     Me.UnitID.SetFocus
 End Sub
 Private Sub TargetValueList_Click()

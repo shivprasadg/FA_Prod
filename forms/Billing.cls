@@ -34,7 +34,7 @@ Private Sub Form_Load()
      '   Me.BillInfoBtn.Visible = True
        End If
 Me.SelLease.RowSource = ""
-Me.clientID = Null
+Me.ClientID = Null
 Me.MLNo = Null
 Me.SchID = Null
 Me.SchNo = Null
@@ -46,7 +46,7 @@ Private Sub SelClient_Click()
 SQLz = "SELECT MLID, MLNo, Client From MstrLease " & _
        "WHERE MLOrig = 'fa' and Client=" & Me.SelClient.Column(0) & " ORDER BY MstrLease.MLNo;"
 Me.SelLease.RowSource = SQLz
-Me.clientID = Me.SelClient.Column(0)
+Me.ClientID = Me.SelClient.Column(0)
 Me.SelSch.RowSource = ""
 Me.MLNo = Null
 Me.SchID = Null

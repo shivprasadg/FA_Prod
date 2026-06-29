@@ -15,11 +15,11 @@ Private Sub AddContactBtn_DblClick(Cancel As Integer)
 End Sub
 
 Private Sub AddContactBtnFA_Click()
-    DoCmd.OpenForm "clientRef", acNormal, , "clientRef = " & Me.BankId, acFormPropertySettings, acDialog
+    DoCmd.OpenForm "clientRef", acNormal, , "clientRef = " & Me.BankID, acFormPropertySettings, acDialog
 End Sub
 
 Private Sub AddContactBtnFA_DblClick(Cancel As Integer)
-    DoCmd.OpenForm "contact_view", acNormal, , "clientRef = " & Me.BankId, acFormPropertySettings, acDialog
+    DoCmd.OpenForm "contact_view", acNormal, , "clientRef = " & Me.BankID, acFormPropertySettings, acDialog
 End Sub
 
 
@@ -65,13 +65,13 @@ Private Sub CloseMe_Click()
 End Sub
 
 Private Sub EditContactsBtn_Click()
-    DoCmd.OpenForm "contact_view", acNormal, , clientRef = " & Me.BankId, acFormPropertySettings, acDialog"
+    DoCmd.OpenForm "contact_view", acNormal, , clientREF = " & Me.BankId, acFormPropertySettings, acDialog"
 End Sub
 
 Private Sub DrawDownMaker_Click()
     DoCmd.close acForm, "DrawDownMaker"
     DoCmd.OpenForm "DrawDownMaker"
-    Forms!DrawDownMaker.BankList = Me.BankId
+    Forms!DrawDownMaker.BankList = Me.BankID
     Form_DrawDownMaker.BankList_Click
 End Sub
 
@@ -81,17 +81,17 @@ Private Sub DrawDownManager_Click()
 End Sub
 
 Private Sub EditContactsBtnBnk_Click()
-    DoCmd.OpenForm "bankcontact_view", acNormal, , "clientRef = " & Me.BankId, acFormPropertySettings, acDialog
+    DoCmd.OpenForm "bankcontact_view", acNormal, , "clientRef = " & Me.BankID, acFormPropertySettings, acDialog
 End Sub
 
 Private Sub EditLocBtn_Click()
-    DoCmd.OpenForm "Location form", acNormal, , "clientRef = " & Me.BankId, acFormPropertySettings, acDialog
+    DoCmd.OpenForm "Location form", acNormal, , "clientRef = " & Me.BankID, acFormPropertySettings, acDialog
 End Sub
 
 Private Sub Form_Current()
     Dim RAddr  As String
-    If DCount("LocationID", "Locations", "LocationType='Billing' AND ClientREF=" & Me.BankId) > 0 Then
-        SQLz = "Select * From Locations Where ClientRef=" & Nz(Me.BankId, 0) & " AND LocationType='Billing';"
+    If DCount("LocationID", "Locations", "LocationType='Billing' AND ClientREF=" & Me.BankID) > 0 Then
+        SQLz = "Select * From Locations Where ClientRef=" & Nz(Me.BankID, 0) & " AND LocationType='Billing';"
         Set RST = CurrentDb.OpenRecordset(SQLz, dbOpenSnapshot)
         RST.MoveFirst
         RAddr = RST!LocationStreet & vbNewLine
@@ -104,7 +104,7 @@ Private Sub Form_Current()
     Me.RemitAddress = RAddr
     RST.close
     Set RST = Nothing
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchVin = ""
     Me.SearchUnitNum = ""
     Me.SearchSchedule = ""
@@ -216,7 +216,7 @@ BatchRun:
     If Me.RequestType = 7 Then Otherx = Me.OtherReason
     Dim Name2Use As String
     If FAUserFullName = "Leo Johnson" Then Name2Use = "Ysis Jackson" Else Name2Use = FAUserFullName
-    Call MakeTitleRequestLetter(Me.BankId, Me.RequestType, Otherx, , Name2Use)
+    Call MakeTitleRequestLetter(Me.BankID, Me.RequestType, Otherx, , Name2Use)
 End Function
 
 Private Sub PickModeToggle_Click()
@@ -236,7 +236,7 @@ Private Sub PickModeToggle_Click()
 End Sub
 
 Public Function SearchList(sField As String)
-    If sField <> "AssetID" Then Me.SearchAssetId = ""
+    If sField <> "AssetID" Then Me.SearchAssetID = ""
     If sField <> "VIN" Then Me.SearchVin = ""
     If sField <> "UnitNum" Then Me.SearchUnitNum = ""
     If sField <> "Schedule" Then Me.SearchSchedule = ""
@@ -244,7 +244,7 @@ Public Function SearchList(sField As String)
     If Len(Me("Search" & sField).Text) >= 1 And Len(Me("Search" & sField).Text) < 3 Then Exit Function
     SQLz = "SELECT AssetID, Vin, UnitNum,uStatus, Client, Schedule & '|' & Group, GroupID " & _
         "From UnitTitleHistoryLastEntry " & _
-        "WHERE (EntryReasonId=1 or EntryReasonId=4 or  EntryReasonId=25 or EntryReasonId=36) AND BankID =" & Me.BankId & " AND " & sField & " Like '*" & Me("Search" & sField).Text & "*' " & _
+        "WHERE (EntryReasonId=1 or EntryReasonId=4 or  EntryReasonId=25 or EntryReasonId=36) AND BankID =" & Me.BankID & " AND " & sField & " Like '*" & Me("Search" & sField).Text & "*' " & _
         "Order By " & sField & ""
     Me.Units_List.RowSource = SQLz
     Call updateGetall

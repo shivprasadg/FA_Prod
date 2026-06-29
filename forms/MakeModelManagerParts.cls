@@ -37,16 +37,16 @@ Private Sub MakeList_Click()
     Me.AddBox.Visible = False
     Me.AddMissingModel.Visible = False
     Me.NoMatchModelsList = 0
-    Me.MAKE = Me.MakeList.Column(1)
-    Me.MODEL = Null
+    Me.Make = Me.MakeList.Column(1)
+    Me.Model = Null
     Me.UnitPartsList_SubForm.Form.Requery
    ' Me.UnitPartsList_SubForm.Form.MakeCbo = ""
     Me.UnitPartsList_SubForm.Form.ModelCbo = ""
 End Sub
 
 Private Sub ModelList_Click()
-    Me.MODEL = Me.ModelList.Column(1)
-    Call MessageUser("Open", "Getting '" & Me.MODEL & "' details", "just a moment...", False)
+    Me.Model = Me.ModelList.Column(1)
+    Call MessageUser("Open", "Getting '" & Me.Model & "' details", "just a moment...", False)
     Call DelWorkTable
     Call MakeWorkTable
     'Me.UnitPartsList_SubForm.Form.Requery
@@ -54,7 +54,7 @@ Private Sub ModelList_Click()
 Call MessageUser("Close")
 End Sub
 Private Sub MakeWorkTable()
-    SQLz = "INSERT INTO MakeModelManagerParts_WorkTable ( UnitID, ChildPartID ) SELECT UnitREF, ChildPartID From ChildParts Where ChildMake='" & Me.MAKE & "' AND ChildClass='" & Me.MODEL & "'"
+    SQLz = "INSERT INTO MakeModelManagerParts_WorkTable ( UnitID, ChildPartID ) SELECT UnitREF, ChildPartID From ChildParts Where ChildMake='" & Me.Make & "' AND ChildClass='" & Me.Model & "'"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True

@@ -53,7 +53,7 @@ Private Sub Form_Current()
     SQLz = ""
     SQLz = SQLz & "SELECT ClientID, clientCompanyName AS CoLessee, clientTaxID As TaxID, ClientGroupId "
     SQLz = SQLz & "FROM  Clients "
-    SQLz = SQLz & "WHERE ClientGroupID= " & DLookup("ClientGroupID", "Clients", "ClientID=" & Me.Parent.clientID & "") & " "
+    SQLz = SQLz & "WHERE ClientGroupID= " & DLookup("ClientGroupID", "Clients", "ClientID=" & Me.Parent.ClientID & "") & " "
     SQLz = SQLz & "ORDER BY clientCompanyName"
     Me.CoLesseeID.RowSource = SQLz
     SQLz = ""

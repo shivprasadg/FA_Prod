@@ -796,7 +796,7 @@ Public Function MoveToDraw(DrawIDx As Long, Optional Invoicex As String)
     ListBoxClear (Forms!DrawDownManager.OpenUnitsList)
     SQLz = "Select * FROM DrawDowns WHERE DrawDownID=" & DrawIDx & ";"
     Set RST = CurrentDb.OpenRecordset(SQLz, dbOpenSnapshot)
-    Me.ClientList = RST!clientID
+    Me.ClientList = RST!ClientID
     Call ClientList_Click
     Me.LeaseList = RST!MLID
     Call SetListboxes("MLID", RST!MLID)
@@ -1075,7 +1075,7 @@ Private Sub UpdateListBoxes()
 End Sub
 
 Public Function SearchOpenUnitsList(sField As String)
-    If sField <> "AssetID" Then Me.SearchAssetId = ""
+    If sField <> "AssetID" Then Me.SearchAssetID = ""
     If sField <> "VIN" Then Me.SearchVin = ""
     If sField <> "UnitNum" Then Me.SearchUnitNum = ""
     If sField <> "Invoice" Then Me.SearchInvoice = ""

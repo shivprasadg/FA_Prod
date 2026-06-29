@@ -12,7 +12,7 @@
     "NameLocal": "mnuFormToolbar",
     "Position": 1,
     "Protection": 2,
-    "RowIndex": 10,
+    "RowIndex": 5,
     "Top": -9,
     "Type": 0,
     "Visible": false,
@@ -53,7 +53,7 @@
         "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
-        "Caption": "Data&sheet View",
+        "Caption": "View Data&sheet",
         "DescriptionText": "",
         "Enabled": false,
         "FaceId": 498,
@@ -72,16 +72,16 @@
         "State": 0,
         "Style": 0,
         "Tag": "",
-        "TooltipText": "Data&sheet View",
+        "TooltipText": "View Data&sheet",
         "Top": -9,
         "Type": 1,
         "Visible": true,
         "Width": 23,
         "Id": 498,
-        "ImagePath": "rel:mnuFormToolbar_Images\\Datasheet View"
+        "ImagePath": "rel:mnuFormToolbar_Images\\View Datasheet"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "Cu&t",
@@ -174,7 +174,7 @@
         "ImagePath": "rel:mnuFormToolbar_Images\\Paste"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "Sort &Ascending",
@@ -236,7 +236,7 @@
         "ImagePath": "rel:mnuFormToolbar_Images\\Sort Descending"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "Filter By &Selection",
@@ -360,12 +360,12 @@
         "ImagePath": "rel:mnuFormToolbar_Images\\Toggle Filter"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "&Find...",
         "DescriptionText": "",
-        "Enabled": true,
+        "Enabled": false,
         "FaceId": 141,
         "Height": 22,
         "HelpContextId": 0,
@@ -453,7 +453,7 @@
         "ImagePath": "rel:mnuFormToolbar_Images\\New Record"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "&Close",
@@ -473,9 +473,9 @@
         "Priority": 3,
         "ShortcutText": "",
         "State": 0,
-        "Style": 2,
+        "Style": 0,
         "Tag": "",
-        "TooltipText": "Close Master View",
+        "TooltipText": "Close",
         "Top": -9,
         "Type": 1,
         "Visible": true,

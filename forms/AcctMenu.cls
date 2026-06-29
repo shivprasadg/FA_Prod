@@ -96,7 +96,7 @@ Private Sub PotentialBillingExcel_Click()
     MessageUser "Close"
 End Sub
 Private Sub Ctl_InvoicedReport_Click()
-    If Me.startDate & "test" = "test" Or Me.Enddate & "test" = "test" Then
+    If Me.StartDate & "test" = "test" Or Me.EndDate & "test" = "test" Then
         MsgBox "You must have an BOTH a Start and End Date", vbInformation, "Date Req"
         Exit Sub
     End If
@@ -106,14 +106,14 @@ Private Sub Ctl_InvoicedReport_Click()
     SQLz = SQLz & " From Bills As B"
     SQLz = SQLz & " Inner Join vw_SixKeys as S On B.BillSchRef = S.SchID"
     SQLz = SQLz & " Where Not Billto Is Null"
-    SQLz = SQLz & " AND Billfrom >=#" & Me.startDate & "# AND Billfrom <=#" & Me.Enddate & "# "
+    SQLz = SQLz & " AND Billfrom >=#" & Me.StartDate & "# AND Billfrom <=#" & Me.EndDate & "# "
     SQLz = SQLz & " Group By  ClientShortName,Schedule,BillType,BankShortName,BillNo,Billdt"
     SQLz = SQLz & ",Billfrom,Billto,BillDueDt,BillSent,BillID"
     SQLz = SQLz & " Order By ClientShortName, Schedule, BillType, Billfrom"
     MessageUser "Open", "Getting Invoiced Report", "This will be a moment..."
     XLS = "|A,BL|"
     AddReportLog "InvoicedReport"
-    Call SendReport2Excel(SQLz, "Invoiced", "Invoiced From " & Me.startDate & " to: " & Me.Enddate, True, XLS, 0, False)
+    Call SendReport2Excel(SQLz, "Invoiced", "Invoiced From " & Me.StartDate & " to: " & Me.EndDate, True, XLS, 0, False)
     MessageUser "Close"
 End Sub
 
@@ -202,13 +202,13 @@ Private Sub RemarketingInvReport_Click()
 End Sub
 
 Private Sub ReserveReport_Click()
-    If Me.startDate & "test" = "test" Or Me.Enddate & "test" = "test" Then
+    If Me.StartDate & "test" = "test" Or Me.EndDate & "test" = "test" Then
         MsgBox "You must have an BOTH a Start and End Date", vbInformation, "Date Req"
         Exit Sub
     End If
     Dim XLS, DateX As String
     Dim sCount As Integer
-    DateX = Format(Me.startDate, "MMM-DD-YYYY") & "~" & Format(Me.Enddate, "MMM-DD-YYYY")
+    DateX = Format(Me.StartDate, "MMM-DD-YYYY") & "~" & Format(Me.EndDate, "MMM-DD-YYYY")
     'sCount = DCount("AssetId", "AcctRMKTInventoryReserveRpt")
     XLS = "|B,BC|B,TX|C,TC|E,BL|D,TC|H,$E|K,BC|L,BL|M,$E|N,BL|Q,$E|R,P1R|T,$E|U,$E|V,$E|"
     AddReportLog "AcctRMKTInventoryReserveRpt"

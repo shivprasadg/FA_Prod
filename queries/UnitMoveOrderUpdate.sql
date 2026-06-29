@@ -7,14 +7,11 @@
   MoveOrderImport.Status,
   MoveOrderImport.Miles
 FROM
-  (
-    SELECT
-      UnitID,
-      UnitVIN,
-      Right([UnitVin], 8) AS Veight
-    FROM
-      Units
-    WHERE
-      UnitStatus = "EM"
-  ) AS U
+  [SELECT UnitID, UnitVIN, Right([UnitVin],
+  8
+) AS Veight
+FROM
+  Units
+WHERE
+  UnitStatus = "EM" ] AS U
   INNER JOIN MoveOrderImport ON U.Veight = MoveOrderImport.[Serial#];

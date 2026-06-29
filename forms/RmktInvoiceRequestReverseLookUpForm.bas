@@ -142,7 +142,6 @@ Begin Form
                     BorderColor =6108695
                     Name ="Image142"
                     Picture ="1_DkBlue_Shadow"
-                    GridlineColor =10921638
                     HorizontalAnchor =2
 
                     LayoutCachedTop =540
@@ -158,11 +157,9 @@ Begin Form
                     Width =3660
                     Height =360
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label7"
                     Caption ="Invoiced Units - Reverse Lookup"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     LayoutCachedLeft =960
                     LayoutCachedTop =300
                     LayoutCachedWidth =4620
@@ -178,11 +175,9 @@ Begin Form
                     Height =360
                     FontSize =14
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label8"
                     Caption ="Remarketing"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     LayoutCachedLeft =960
                     LayoutCachedWidth =4620
                     LayoutCachedHeight =360
@@ -196,14 +191,12 @@ Begin Form
                     Left =120
                     Width =780
                     Height =540
-                    BorderColor =10921638
                     Name ="EventImage"
                     GroupTable =2
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ControlSource ="ImageType"
 
                     LayoutCachedLeft =120
@@ -235,14 +228,11 @@ Begin Form
                     FontSize =9
                     TabIndex =11
                     BoundColumn =2
-                    ForeColor =4210752
-                    BorderColor =10921638
                     Name ="InvoicedUnitsList"
                     RowSourceType ="Table/Query"
                     RowSource ="Select * From RmktInvoiceRequestReverseLookUp Where UnitDesc Like'*2010*' Order "
                         "By UnitDesc;"
                     ColumnWidths ="0;1440;576;1008;864;864;864;2160;4320"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =300
                     LayoutCachedTop =1462
@@ -260,12 +250,12 @@ Begin Form
                     TabIndex =4
                     BackColor =13434879
                     BorderColor =967423
+                    ForeColor =0
                     Name ="AssetSearch"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4188
                     LayoutCachedTop =1200
@@ -289,12 +279,12 @@ Begin Form
                     TabIndex =9
                     BackColor =13434879
                     BorderColor =967423
+                    ForeColor =0
                     Name ="VINSearch"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5916
                     LayoutCachedTop =1207
@@ -320,12 +310,12 @@ Begin Form
                     TabIndex =10
                     BackColor =13434879
                     BorderColor =967423
+                    ForeColor =0
                     Name ="DescSearch"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =8076
                     LayoutCachedTop =1207
@@ -349,12 +339,12 @@ Begin Form
                     TabIndex =8
                     BackColor =13434879
                     BorderColor =967423
+                    ForeColor =0
                     Name ="UnitNumSearch"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5052
                     LayoutCachedTop =1207
@@ -379,10 +369,12 @@ Begin Form
                     FontSize =8
                     FontWeight =700
                     BackColor =15527148
+                    BorderColor =0
                     ForeColor =12349952
                     Name ="ClearUnAssignedUnits"
                     Caption ="Clear▼"
                     ControlTipText ="Click to clear the selection below"
+                    GridlineColor =0
                     LayoutCachedLeft =13380
                     LayoutCachedTop =1080
                     LayoutCachedWidth =13920
@@ -406,12 +398,12 @@ Begin Form
                     TabIndex =5
                     BackColor =13434879
                     BorderColor =967423
+                    ForeColor =0
                     Name ="BuyerSearch"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =300
                     LayoutCachedTop =1207
@@ -435,12 +427,12 @@ Begin Form
                     TabIndex =6
                     BackColor =13434879
                     BorderColor =967423
+                    ForeColor =0
                     Name ="ReqSearch"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1740
                     LayoutCachedTop =1207
@@ -464,12 +456,12 @@ Begin Form
                     TabIndex =7
                     BackColor =13434879
                     BorderColor =967423
+                    ForeColor =0
                     Name ="InvNumSearch"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2316
                     LayoutCachedTop =1207
@@ -490,9 +482,11 @@ Begin Form
                     Width =8550
                     Height =225
                     FontSize =9
+                    BorderColor =0
                     Name ="Label88"
                     Caption =" ┌──── Search   ───┬─────┬───────────────────┬─────────┬─────────────┬──────────"
                         "──────────────┐"
+                    GridlineColor =0
                     LayoutCachedLeft =600
                     LayoutCachedTop =960
                     LayoutCachedWidth =9150
@@ -508,12 +502,13 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =330
-                    Top =450
-                    Width =1426
-                    Height =270
+                    Left =336
+                    Top =456
+                    Width =1428
+                    Height =276
                     FontSize =8
                     FontWeight =700
+                    ForeColor =0
                     Name ="OpenBuyer"
                     Caption ="Go To Buyer"
                     GroupTable =1
@@ -521,15 +516,14 @@ Begin Form
                     TopPadding =0
                     RightPadding =15
                     BottomPadding =15
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x00000000
                     End
 
-                    LayoutCachedLeft =330
-                    LayoutCachedTop =450
-                    LayoutCachedWidth =1756
-                    LayoutCachedHeight =720
+                    LayoutCachedLeft =336
+                    LayoutCachedTop =456
+                    LayoutCachedWidth =1764
+                    LayoutCachedHeight =732
                     LayoutGroup =1
                     ForeTint =100.0
                     Shape =0
@@ -555,13 +549,14 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =1770
-                    Top =450
-                    Width =1570
-                    Height =270
+                    Left =1788
+                    Top =456
+                    Width =1572
+                    Height =276
                     FontSize =8
                     FontWeight =700
                     TabIndex =1
+                    ForeColor =0
                     Name ="OpenInvoice"
                     Caption ="Go To Invoice"
                     GroupTable =1
@@ -569,15 +564,14 @@ Begin Form
                     TopPadding =0
                     RightPadding =15
                     BottomPadding =15
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x00000000
                     End
 
-                    LayoutCachedLeft =1770
-                    LayoutCachedTop =450
-                    LayoutCachedWidth =3340
-                    LayoutCachedHeight =720
+                    LayoutCachedLeft =1788
+                    LayoutCachedTop =456
+                    LayoutCachedWidth =3360
+                    LayoutCachedHeight =732
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -604,21 +598,20 @@ Begin Form
                     Overlaps =1
                 End
                 Begin EmptyCell
-                    Left =3360
-                    Top =450
-                    Width =810
-                    Height =270
+                    Left =3372
+                    Top =456
+                    Width =816
+                    Height =276
                     Name ="EmptyCell12"
                     GroupTable =1
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =15
                     BottomPadding =15
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3360
-                    LayoutCachedTop =450
-                    LayoutCachedWidth =4170
-                    LayoutCachedHeight =720
+                    LayoutCachedLeft =3372
+                    LayoutCachedTop =456
+                    LayoutCachedWidth =4188
+                    LayoutCachedHeight =732
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -626,13 +619,14 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =4185
-                    Top =450
-                    Width =3855
-                    Height =270
+                    Left =4212
+                    Top =456
+                    Width =3852
+                    Height =276
                     FontSize =8
                     FontWeight =700
                     TabIndex =2
+                    ForeColor =0
                     Name ="OpenUnit"
                     Caption ="Go To Unit"
                     GroupTable =1
@@ -640,15 +634,14 @@ Begin Form
                     TopPadding =0
                     RightPadding =15
                     BottomPadding =15
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x00000000
                     End
 
-                    LayoutCachedLeft =4185
-                    LayoutCachedTop =450
-                    LayoutCachedWidth =8040
-                    LayoutCachedHeight =720
+                    LayoutCachedLeft =4212
+                    LayoutCachedTop =456
+                    LayoutCachedWidth =8064
+                    LayoutCachedHeight =732
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -676,13 +669,14 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =8055
-                    Top =450
-                    Width =3460
-                    Height =270
+                    Left =8088
+                    Top =456
+                    Width =3456
+                    Height =276
                     FontSize =8
                     FontWeight =700
                     TabIndex =3
+                    ForeColor =0
                     Name ="OpenSchedule"
                     Caption ="Go To Schedule Control"
                     GroupTable =1
@@ -690,15 +684,14 @@ Begin Form
                     TopPadding =0
                     RightPadding =15
                     BottomPadding =15
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x00000000
                     End
 
-                    LayoutCachedLeft =8055
-                    LayoutCachedTop =450
-                    LayoutCachedWidth =11515
-                    LayoutCachedHeight =720
+                    LayoutCachedLeft =8088
+                    LayoutCachedTop =456
+                    LayoutCachedWidth =11544
+                    LayoutCachedHeight =732
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -737,8 +730,10 @@ Begin Form
                     FontWeight =700
                     TabIndex =12
                     BorderColor =14277081
+                    ForeColor =0
                     Name ="UnitsShown"
                     ControlSource ="=[InvoicedUnitsList].[ListCount]"
+                    GridlineColor =0
 
                     LayoutCachedLeft =12985
                     LayoutCachedTop =480
@@ -764,9 +759,11 @@ Begin Form
                             FontSize =7
                             BackColor =14211288
                             BorderColor =14211288
+                            ForeColor =0
                             Name ="Label63"
                             Caption ="Units"
                             FontName ="Segoe UI"
+                            GridlineColor =0
                             LayoutCachedLeft =12960
                             LayoutCachedTop =300
                             LayoutCachedWidth =13710

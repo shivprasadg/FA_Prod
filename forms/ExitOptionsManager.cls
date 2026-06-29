@@ -28,7 +28,7 @@ Private Sub Form_Current()
     Me.GroupIDx = Me.groupID
     'dd = DLookup("MLNO", "vw_SixKeys", "SchID=" & Me.SchID)
     OpenExitTxt = "Open EXIT Options: "
-    If Me.LeaseTypetoShow = 1 Then OpenExitTxt = "Open EXIT Options: " Else OpenExitTxt = "Select an Options"
+    If Me.LeaseTypeToShow = 1 Then OpenExitTxt = "Open EXIT Options: " Else OpenExitTxt = "Select an Options"
     If Nz(Me.SchGrpList.Column(0), 0) <> 0 Then
         Me.OpenExitOptions.caption = OpenExitTxt & ClientList.Column(1) & " | " & Me.ScheduleGroup
         Else
@@ -178,13 +178,13 @@ End Sub
 Private Sub ScheduleGroup_DblClick(Cancel As Integer)
     DoCmd.close acForm, "GroupForm"
     DoCmd.OpenForm "GroupForm", , , "SchID=" & Me.SchID, , , Me.groupID
-    Forms!GroupForm.Tabcontrol.Value = 8
+    Forms!GroupForm.TabControl.Value = 8
 End Sub
 
 Private Sub NewSchGrp_DblClick(Cancel As Integer)
     DoCmd.close acForm, "GroupForm"
     DoCmd.OpenForm "GroupForm", , , "SchID=" & Me.ReplacedByScheduleID, , , Me.ReplacedByGroupID
-    Forms!GroupForm.Tabcontrol.Value = 8
+    Forms!GroupForm.TabControl.Value = 8
 End Sub
 
 Public Sub SchGrpList_Click()
@@ -499,7 +499,7 @@ Public Function fExportToExcel(Optional MakeEmail As Boolean)
                 m2 = m2 & "<TD ALIGN=""Left"">" & RST!Client & "</TD>"
                 m2 = m2 & "<TD ALIGN=""Left"">" & RST!Schedule & "|" & RST!UnitGroup & "</TD>"
                 m2 = m2 & "<TD ALIGN=""Left""><b>" & RST!AssetID & "</b></TD>"
-                m2 = m2 & "<TD ALIGN=""Center"">" & RST!Year & " " & RST!MAKE & " " & RST!MODEL & " " & RST!SubType & " " & RST!Type & "</TD>"
+                m2 = m2 & "<TD ALIGN=""Center"">" & RST!Year & " " & RST!Make & " " & RST!Model & " " & RST!SubType & " " & RST!Type & "</TD>"
                 m2 = m2 & "<TD ALIGN=""Center"">" & RST!CurrRentType & "</TD>"
                 m2 = m2 & "<TD ALIGN=""Center""><b>" & RST!uStatus & "</b></TD>"
                 m2 = m2 & "<TD ALIGN=""Center"">" & RST![Primary Exp] & "</TD>"
@@ -554,7 +554,7 @@ Public Function fExportToExcel(Optional MakeEmail As Boolean)
                 m3 = m3 & "<TD ALIGN=""Left"">" & RST!Client & "</TD>"
                 m3 = m3 & "<TD ALIGN=""Left"">" & RST!Schedule & "|" & RST!UnitGroup & "</TD>"
                 m3 = m3 & "<TD ALIGN=""Left""><b>" & RST!AssetID & "</b></TD>"
-                m3 = m3 & "<TD ALIGN=""Center"">" & RST!Year & " " & RST!MAKE & " " & RST!MODEL & " " & RST!SubType & " " & RST!Type & "</TD>"
+                m3 = m3 & "<TD ALIGN=""Center"">" & RST!Year & " " & RST!Make & " " & RST!Model & " " & RST!SubType & " " & RST!Type & "</TD>"
                 m3 = m3 & "<TD ALIGN=""Center"">" & RST!CurrRentType & "</TD>"
                 m3 = m3 & "<TD ALIGN=""Center""><b>" & RST!uStatus & "</b></TD>"
                 m3 = m3 & "<TD style=""background-color:yellow;"" ALIGN=""Center"">" & RST![Primary Exp] & "</TD>"
@@ -740,7 +740,7 @@ End Sub
 Private Sub NewUnit_DblClick(Cancel As Integer)
     If Me.NewUnit & "test" = "test" Then Exit Sub
     Call OpenUnitsForm(Me.NewUnit)
-    Me.UnitUnitNum.SetFocus
+    Me.unitunitnum.SetFocus
 End Sub
 
 Private Sub SearchClient_Change()

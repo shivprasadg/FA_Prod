@@ -13,7 +13,7 @@ End Sub
 Private Sub Form_Load()
     If Not IsNull(Me.OpenArgs) Then
         Me.TaxLevel = SplitString(Me.OpenArgs, "|", 0)
-        Me.TaxTypeId = SplitString(Me.OpenArgs, "|", 1)
+        Me.TaxTypeID = SplitString(Me.OpenArgs, "|", 1)
         Me.TaxLevelLookupID = SplitString(Me.OpenArgs, "|", 2)
         Me.BaseTaxRate = Format(SplitString(Me.OpenArgs, "|", 3), "#0.####0%")
         Me.Mode = SplitString(Me.OpenArgs, "|", 4)
@@ -21,16 +21,16 @@ Private Sub Form_Load()
     'If Me.Mode = "Add" Then Me.StartsOnDate = ""
     If Me.Mode = "Edit" Then
         Me.DeleteMe.Enabled = True
-        Me.TaxTypeId.Enabled = False
+        Me.TaxTypeID.Enabled = False
         Call SetRecordSource
     Else
         Me.DeleteMe.Enabled = False
-        Me.TaxTypeId.Enabled = True
+        Me.TaxTypeID.Enabled = True
     End If
-    If TaxLevel = "City" And DCount("ID", "TaxCitiesBase", "TaxCityID=" & TaxLevelLookupID) = 0 Then Me.TaxTypeId = 6
-    If TaxLevel = "State" And DCount("ID", "TaxStatesBase", "TaxStatesID=" & TaxLevelLookupID) = 0 Then Me.TaxTypeId = 6
-    If TaxLevel = "County" And DCount("ID", "TaxCountiesBase", "TaxCountyID=" & TaxLevelLookupID) = 0 Then Me.TaxTypeId = 6
-    If Me.TaxTypeId = 6 Then Call SetRecordSource
+    If TaxLevel = "City" And DCount("ID", "TaxCitiesBase", "TaxCityID=" & TaxLevelLookupID) = 0 Then Me.TaxTypeID = 6
+    If TaxLevel = "State" And DCount("ID", "TaxStatesBase", "TaxStatesID=" & TaxLevelLookupID) = 0 Then Me.TaxTypeID = 6
+    If TaxLevel = "County" And DCount("ID", "TaxCountiesBase", "TaxCountyID=" & TaxLevelLookupID) = 0 Then Me.TaxTypeID = 6
+    If Me.TaxTypeID = 6 Then Call SetRecordSource
 End Sub
 Private Sub CloseMe_Click()
     DoCmd.close acForm, Me.Form.Name
@@ -43,7 +43,7 @@ Private Sub DeleteMe_Click()
     Dim ResposeX As VbMsgBoxResultEx
     Dim msg1   As String
     msg1 = msg1 & "<b><Font Size=3>Delete!</font></b><br/>"
-    msg1 = msg1 & "You are about to delete a<b> " & Me.TaxLevel & " " & TaxTypeId.Column(1) & "</b><br/>"
+    msg1 = msg1 & "You are about to delete a<b> " & Me.TaxLevel & " " & TaxTypeID.Column(1) & "</b><br/>"
     msg1 = msg1 & "  <b>Are you sure?</b><br/>"
     msg1 = msg1 & "  Please select..."
     ResposeX = Dialog.RichBox(msg1, vbCustom + vbExclamation, AtlaasVersion, , , 0, 1, 0, 0, "Yes", "No")
@@ -58,10 +58,10 @@ Private Sub DeleteMe_Click()
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
         Call RefreshTaxForms
-        If ActiveTaxStatus(Me.TaxLevel, TaxTypeId, TaxLevelLookupID) Like "*Valid*" Then
-            ResposeX = Dialog.RichBox(ActiveTaxStatus(Me.TaxLevel, TaxTypeId, TaxLevelLookupID), vbCustom + vbInformation, AtlaasVersion, , , 0, 1, 0, 0, "OK")
+        If ActiveTaxStatus(Me.TaxLevel, TaxTypeID, TaxLevelLookupID) Like "*Valid*" Then
+            ResposeX = Dialog.RichBox(ActiveTaxStatus(Me.TaxLevel, TaxTypeID, TaxLevelLookupID), vbCustom + vbInformation, AtlaasVersion, , , 0, 1, 0, 0, "OK")
         Else
-            ResposeX = Dialog.RichBox(ActiveTaxStatus(Me.TaxLevel, TaxTypeId, TaxLevelLookupID), vbCustom + vbExclamation, AtlaasVersion, , , 0, 1, 0, 0, "OK")
+            ResposeX = Dialog.RichBox(ActiveTaxStatus(Me.TaxLevel, TaxTypeID, TaxLevelLookupID), vbCustom + vbExclamation, AtlaasVersion, , , 0, 1, 0, 0, "OK")
         End If
         DoCmd.close acForm, Me.Form.Name
     End If
@@ -114,21 +114,21 @@ End Sub
 
 Private Sub SetRecordSource()
     If Me.TaxLevel = "State" Then
-        Me.EventDescription = Me.Mode & "ing a <b>" & Me.TaxTypeId.Column(1) & "</b> Rate to <b>" & Me.TaxLevel & " </b>of <b>" & DLookup("State", "vw_CCSZ_Lookup", "StateID=" & Me.TaxLevelLookupID) & "</b>"
+        Me.EventDescription = Me.Mode & "ing a <b>" & Me.TaxTypeID.Column(1) & "</b> Rate to <b>" & Me.TaxLevel & " </b>of <b>" & DLookup("State", "vw_CCSZ_Lookup", "StateID=" & Me.TaxLevelLookupID) & "</b>"
         SQLz = "SELECT * From vw_Tax_StateBaseQ " & _
-               "WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxStatesID=" & TaxLevelLookupID & " " & _
+               "WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxStatesID=" & TaxLevelLookupID & " " & _
                "ORDER BY StartsOn DESC;"
     End If
     If Me.TaxLevel = "County" Then
-        Me.EventDescription = "Adding a <b>" & Me.TaxTypeId.Column(1) & "</b> Rate to <b>" & DLookup("County", "vw_CCSZ_Lookup", "CountyID=" & Me.TaxLevelLookupID) & " County</b>"
+        Me.EventDescription = "Adding a <b>" & Me.TaxTypeID.Column(1) & "</b> Rate to <b>" & DLookup("County", "vw_CCSZ_Lookup", "CountyID=" & Me.TaxLevelLookupID) & " County</b>"
         SQLz = "SELECT * From vw_Tax_CountyBaseQ " & _
-               "WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxCountyID=" & TaxLevelLookupID & " " & _
+               "WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxCountyID=" & TaxLevelLookupID & " " & _
                "ORDER BY StartsOn DESC;"
     End If
     If Me.TaxLevel = "City" Then
-        Me.EventDescription = "Adding a <b>" & Me.TaxTypeId.Column(1) & "</b> Rate to <b>" & Me.TaxLevel & " </b>of <b>" & DLookup("City", "vw_CCSZ_Lookup", "CityID=" & Me.TaxLevelLookupID) & "</b>"
+        Me.EventDescription = "Adding a <b>" & Me.TaxTypeID.Column(1) & "</b> Rate to <b>" & Me.TaxLevel & " </b>of <b>" & DLookup("City", "vw_CCSZ_Lookup", "CityID=" & Me.TaxLevelLookupID) & "</b>"
         SQLz = "SELECT * From vw_Tax_CityBaseQ " & _
-               "WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxCityID=" & TaxLevelLookupID & " " & _
+               "WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxCityID=" & TaxLevelLookupID & " " & _
                "ORDER BY StartsOn DESC;"
     End If
     Me.Tax_AnySub.Form.RecordSource = SQLz
@@ -147,9 +147,9 @@ Public Sub ValidateNewTax()
     Dim xi     As Integer
     Me.PreviousTaxID = 0
     Me.ValidateMsg = ""
-    If Me.TaxLevel = "State" Then SQLz = "SELECT * From vw_Tax_StateBaseQ WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxStatesID=" & TaxLevelLookupID & " AND IsActive = True AND ID<>" & Me.EditedTaxID & " "
-    If Me.TaxLevel = "County" Then SQLz = "SELECT * From vw_Tax_CountyBaseQ WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxCountyID=" & TaxLevelLookupID & " AND IsActive = True AND ID<>" & Me.EditedTaxID & " "
-    If Me.TaxLevel = "City" Then SQLz = "SELECT * From vw_Tax_CityBaseQ WHERE TaxTypeID =" & Me.TaxTypeId & " AND TaxCityID=" & TaxLevelLookupID & " AND IsActive = True AND ID<>" & Me.EditedTaxID & " "
+    If Me.TaxLevel = "State" Then SQLz = "SELECT * From vw_Tax_StateBaseQ WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxStatesID=" & TaxLevelLookupID & " AND IsActive = True AND ID<>" & Me.EditedTaxID & " "
+    If Me.TaxLevel = "County" Then SQLz = "SELECT * From vw_Tax_CountyBaseQ WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxCountyID=" & TaxLevelLookupID & " AND IsActive = True AND ID<>" & Me.EditedTaxID & " "
+    If Me.TaxLevel = "City" Then SQLz = "SELECT * From vw_Tax_CityBaseQ WHERE TaxTypeID =" & Me.TaxTypeID & " AND TaxCityID=" & TaxLevelLookupID & " AND IsActive = True AND ID<>" & Me.EditedTaxID & " "
     SQLz = SQLz & "Order By EndsOn Desc"
     FlawTest = 0
     Set RST = CurrentDb.OpenRecordset(SQLz, dbOpenSnapshot)
@@ -188,7 +188,7 @@ Public Sub ValidateNewTax()
 DoMsg:
     Select Case FlawTest
     Case 0
-        msg1 = msg1 & "<font color=green><b>Valid!</b></font> This<b> " & Me.TaxTypeId.Column(1) & "</b> rate of <b>" & Format(Me.BaseTaxRate, "##.0###%") & "</b> with a start on date of <b>" & Me.StartsOnDate & "</b>"
+        msg1 = msg1 & "<font color=green><b>Valid!</b></font> This<b> " & Me.TaxTypeID.Column(1) & "</b> rate of <b>" & Format(Me.BaseTaxRate, "##.0###%") & "</b> with a start on date of <b>" & Me.StartsOnDate & "</b>"
         If IsDate(Me.EndsOnDate) Then msg1 = msg1 & ", with an<b> expiration date</b> of<b> " & Me.EndsOnDate & "</b>" Else msg1 = msg1 & ". Currently set to continue in perpetuity"
         If isTaxActive(Me.StartsOn, Nz(Me.EndsOn, "1/1/2050")) = False Then
             msg1 = msg1 & "<br/><b>Note:</b> this tax will <b>not</b> be active!"
@@ -197,7 +197,7 @@ DoMsg:
         End If
         'msg1 = msg1 & "<br/>" & HSpaces(10) & "There were no previous<b> " & Me.TaxTypeId.Column(1) & "</b> rates set for this " & Me.TaxLevel
     Case 1
-        msg1 = msg1 & "<font color=green><b>Valid!</b></font> This<b> " & Me.TaxTypeId.Column(1) & "</b> rate of <b>" & Format(Me.BaseTaxRate, "##.0###%") & "</b> with a start on date of  <b>" & Me.StartsOnDate & "</b>"
+        msg1 = msg1 & "<font color=green><b>Valid!</b></font> This<b> " & Me.TaxTypeID.Column(1) & "</b> rate of <b>" & Format(Me.BaseTaxRate, "##.0###%") & "</b> with a start on date of  <b>" & Me.StartsOnDate & "</b>"
         If IsDate(Me.EndsOnDate) Then msg1 = msg1 & ", with an<b> expiration date</b> of<b> " & Me.EndsOnDate & "</b>" Else msg1 = msg1 & ". Currently set to continue in perpetuity"
         If isTaxActive(Me.StartsOn, Nz(Me.EndsOn, "1/1/2050")) = False Then
             msg1 = msg1 & "<br/><b>Note:</b> this tax will <b>not</b> be active!"
@@ -300,7 +300,7 @@ Private Sub SaveTax_Click()
         DoCmd.SetWarnings True
     End If
     Call RefreshTaxForms
-    Call Dialog.RichBox("<font size=2>This<b> " & Me.TaxLevel & "'s " & Me.TaxTypeId.Column(1) & "</font></b><br />has been saved, the from will now close", vbCustom + vbInformation, AtlaasVersion, , , 0, 1, 0, 0, "OK")
+    Call Dialog.RichBox("<font size=2>This<b> " & Me.TaxLevel & "'s " & Me.TaxTypeID.Column(1) & "</font></b><br />has been saved, the from will now close", vbCustom + vbInformation, AtlaasVersion, , , 0, 1, 0, 0, "OK")
     DoCmd.close acForm, Me.Form.Name
 End Sub
 

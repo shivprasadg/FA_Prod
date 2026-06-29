@@ -158,6 +158,7 @@ Begin Form
                         "MstrLease.MLOrig, MstrLease.MLNo;"
                     ColumnWidths ="0;0;1728;720"
                     OnClick ="[Event Procedure]"
+                    GridlineColor =0
                     AllowValueListEdits =0
                     InheritValueList =0
 
@@ -185,10 +186,8 @@ Begin Form
                     Height =195
                     FontSize =8
                     TabIndex =1
-                    BorderColor =10921638
                     Name ="MLID"
                     ControlSource ="MLID"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =17745
                     LayoutCachedTop =60
@@ -207,12 +206,10 @@ Begin Form
                     Width =16560
                     Height =6690
                     TabIndex =2
-                    BorderColor =10921638
                     Name ="ClientsView_Schedules2"
                     SourceObject ="Form.ClientsView_Schedules2"
                     LinkChildFields ="MLID"
                     LinkMasterFields ="MLID"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2580
                     LayoutCachedTop =660
@@ -229,9 +226,11 @@ Begin Form
                     FontSize =26
                     FontWeight =700
                     BackColor =-2147483633
+                    BorderColor =0
                     ForeColor =-2147483600
                     Name ="ScheduleLbl"
                     Caption ="Select a Schedule"
+                    GridlineColor =0
                     LayoutCachedLeft =30
                     LayoutCachedTop =45
                     LayoutCachedWidth =6705
@@ -261,6 +260,7 @@ Begin Form
                     TopPadding =15
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x00000000
                     End
@@ -302,9 +302,11 @@ Begin Form
                     FontSize =26
                     FontWeight =700
                     BackColor =-2147483633
+                    BorderColor =0
                     ForeColor =-2147483600
                     Name ="Label3"
                     Caption ="◄ Select Master Lease"
+                    GridlineColor =0
                     LayoutCachedLeft =2640
                     LayoutCachedTop =870
                     LayoutCachedWidth =9435
@@ -333,7 +335,6 @@ Begin Form
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedTop =6030
@@ -370,12 +371,14 @@ Begin Form
                     FontSize =9
                     FontWeight =700
                     TabIndex =5
+                    ForeColor =0
                     Name ="LPAF"
                     Caption ="Unit Summary"
                     OnClick ="[Event Procedure]"
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
+                    GridlineColor =0
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000048772209487622364774216646732196 ,

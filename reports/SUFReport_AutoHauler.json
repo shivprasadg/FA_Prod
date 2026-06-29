@@ -4,12 +4,6 @@
     "Description": "SUFReport_AutoHauler Print Settings"
   },
   "Items": {
-    "Device": {
-      "DriverName": "winspool",
-      "DeviceName": "\\\\FA-FILE\\KONICA C554 Color",
-      "Port": "192.168.2.225",
-      "Default": false
-    },
     "Printer": {
       "Orientation": "Portrait",
       "PaperSize": "Letter"

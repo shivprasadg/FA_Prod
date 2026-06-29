@@ -10,7 +10,7 @@ Private Sub Report_Open(Cancel As Integer)
     If Not IsNull(Me.OpenArgs) Then Me.Report.RecordSource = Me.OpenArgs
 End Sub
 Private Sub Report_Load()
-    If Nz(Me.clientID, "") = 4971 Then
+    If Nz(Me.ClientID, "") = 4971 Then
         Me.McLaneGrey.Height = 2555
         Me.McLaneLine.Visible = True
         Me.McLaneBox.Visible = True

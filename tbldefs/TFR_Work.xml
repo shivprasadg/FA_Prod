@@ -3,613 +3,1563 @@
   <xsd:element name="dataroot">
     <xsd:complexType>
       <xsd:sequence>
-        <xsd:element ref="TFR_Work" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+        <xsd:element ref="TFR_Work" minOccurs="0" maxOccurs="unbounded"/>
       </xsd:sequence>
-      <xsd:attribute name="generated" type="xsd:dateTime"></xsd:attribute>
+      <xsd:attribute name="generated" type="xsd:dateTime"/>
     </xsd:complexType>
   </xsd:element>
   <xsd:element name="TFR_Work">
     <xsd:annotation>
-      <xsd:appinfo></xsd:appinfo>
+      <xsd:appinfo>
+        <od:tableProperty name="Orientation" type="2" value="0"/>
+      </xsd:appinfo>
     </xsd:annotation>
     <xsd:complexType>
       <xsd:sequence>
-        <xsd:element name="DataDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="DataDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="AccountName" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="ActualDeliveryDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="ActualDeliveryDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="AllowType" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="Assigned_Indicator" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="1"></xsd:maxLength>
+              <xsd:maxLength value="1"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="AssignmentDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="AssignmentDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="Axle" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
+              <xsd:maxLength value="536870910"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="Bank" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="BankContract" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="101"></xsd:maxLength>
+              <xsd:maxLength value="101"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="BankID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
+        <xsd:element name="BankID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="BDEX" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="BDEXComm" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
+        <xsd:element name="BDEXComm" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="BDEXCommPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="BLCD" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
-        <xsd:element name="BLCD_Projected" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
-        <xsd:element name="Bonus" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
+        <xsd:element name="BLCD" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="BLCD_Projected" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="Bonus" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="ClientGroup" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="100"></xsd:maxLength>
+              <xsd:maxLength value="100"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="ClientGroupId" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="clientID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="DealCommission" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
+        <xsd:element name="ClientGroupId" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="clientID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="DealCommission" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="DealLOEx" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="DescAbbrv" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="81"></xsd:maxLength>
+              <xsd:maxLength value="81"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="EstDelQtr" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="7"></xsd:maxLength>
+              <xsd:maxLength value="7"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="FAID" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="FMSS" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="FMSSProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="FMSS" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="FMSSProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="FMSSTerm" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="0"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="0"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="FMSSTotal" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="FundDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
-        <xsd:element name="FundDate_Projected" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="FMSSTotal" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="FundDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="FundDate_Projected" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="FundingStatus" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="17"></xsd:maxLength>
+              <xsd:maxLength value="17"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="FYear" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="GroupID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="GroupOEC" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="GroupPartCost" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="IndexRate" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="InterimAmount" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="InterimExp" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="FYear" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="GroupID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="GroupOEC" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="GroupPartCost" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="IndexRate" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="InterimAmount" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="InterimExp" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="InterimExpPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="InterimIntRate" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="LeaseExp" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="InterimIntRate" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LeaseExp" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="LeaseTerm" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="0"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="0"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LeaseTermPrimary" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="0"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="0"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LeaseType" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="LOUnitCost" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="LoPDUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="LoUATUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="LOUnitCost" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LoPDUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LoUATUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="LRF" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LPAFMonth" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="8"></xsd:maxLength>
+              <xsd:maxLength value="8"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LPAFQtr" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="7"></xsd:maxLength>
+              <xsd:maxLength value="7"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="LPAFYear" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="LPAFSigned" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="LPAFYear" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LPAFSigned" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="Make" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
+              <xsd:maxLength value="536870910"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="MaxEstDelDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
-        <xsd:element name="MilesAllowed" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="MilesAllowedTerm" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="MinAcceptedDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
-        <xsd:element name="MinPaidDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="MaxEstDelDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MilesAllowed" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MilesAllowedTerm" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MinAcceptedDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MinPaidDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="Model" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
+              <xsd:maxLength value="536870910"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="MYear" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
+              <xsd:maxLength value="536870910"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="NetSyndFee" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="NetSyndFeeDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="NetSyndFee" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="NetSyndFeeDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="NetSyndFeeVar" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="NetSyndPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="NetSyndProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="NetTotalFee" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
+        <xsd:element name="NetSyndProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="NetTotalFee" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="NetTotalPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="NPV" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="NPVDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="NPV" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="NPVDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="NPVPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="NPVProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="NPVProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="NPVVar" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="NumStrips" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="OEC" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="OECPerUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="PDDays" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="PDDaysAvg" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="PDRent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="PDRentActual" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="PDRentDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="NumStrips" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="OEC" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="OECPerUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PDDays" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PDDaysAvg" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PDRent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PDRentActual" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PDRentDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="PDRentPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="PDRentProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="PDRentSynd" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="PDRentProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PDRentSynd" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="PDRentVar" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="PmtAmt" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="PmtAmtFMSS" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="PVRate" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="Residual" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="RV" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="PmtAmt" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PmtAmtFMSS" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PVRate" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="Residual" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="RV" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="RVPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="RVProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="RVPerUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="SalePrice" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="RVProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="RVPerUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SalePrice" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="Sch_Grp" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="103"></xsd:maxLength>
+              <xsd:maxLength value="103"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="Schedule" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="ScheduleGroupPaymentTerm" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="SchIn" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
-        <xsd:element name="SchID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="SchRent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="ServFeePassTroughYN" minOccurs="1" od:jetType="yesno" od:sqlSType="bit" od:nonNullable="yes" type="xsd:boolean"></xsd:element>
+        <xsd:element name="ScheduleGroupPaymentTerm" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SchIn" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SchID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SchRent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="ServFeePassTroughYN" minOccurs="1" od:jetType="yesno" od:sqlSType="bit" od:nonNullable="yes" type="xsd:boolean">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="1"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="SGrpBonus" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="SGrpID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
+        <xsd:element name="SGrpID" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="SLB" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="1"></xsd:maxLength>
+              <xsd:maxLength value="1"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="Spread" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="SpreadIRR" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="SpreadProj" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="StillActive" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int"></xsd:element>
-        <xsd:element name="StripRent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="Spread" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SpreadIRR" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SpreadProj" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="StillActive" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="StripRent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="StripRentPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="SubType" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
+              <xsd:maxLength value="536870910"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="SWAP" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="SyndFee" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="SyndFeeDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="SWAP" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SyndFee" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SyndFeeDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="SyndFeePct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="SyndFeeProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="SyndFeeSynd" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="SyndFeeProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SyndFeeSynd" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="SyndFeeVar" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="SyndRent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="SyndRent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="SyndFeeVendorPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="TargetFundDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime"></xsd:element>
+        <xsd:element name="TargetFundDate" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="TargetFundMonth" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="8"></xsd:maxLength>
+              <xsd:maxLength value="8"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="TermPenalty" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="TermPenaltyDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="TermPenalty" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="TermPenaltyDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="TermPenaltyPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="TermPenaltyProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="TermPenaltySynd" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="TermPenaltyProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="TermPenaltySynd" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="TermPenaltyVar" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="TotalFee" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="TotalFeeDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="TotalFee" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="TotalFeeDelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="TotalFeePct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="TotalFeeProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="TotalFeeProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="TotalFeeVar" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="TotalVendorCost" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="TotalVendorCost" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="Type" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
+              <xsd:maxLength value="536870910"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="UnitCount" minOccurs="0" od:jetType="integer" od:sqlSType="smallint" type="xsd:short"></xsd:element>
+        <xsd:element name="UnitCount" minOccurs="0" od:jetType="integer" od:sqlSType="smallint" type="xsd:short">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="UnitDesc" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
+              <xsd:maxLength value="536870910"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="UnitGroup" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="UTA" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="UTADelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="UTA" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="UTADelta" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="UTApct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="UTAProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="UTASynd" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="UTAProj" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="UTASynd" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="UTAVar" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="VendorCostUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="VendorCostUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="SwapType" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="Yield" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="YieldIRR" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
-        <xsd:element name="SyndFeePlus" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="Yield" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="YieldIRR" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SyndFeePlus" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="LoPDPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LoSyndPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LoSyndStripPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LoSyndNetPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LoTermPenaltyPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LoUTAPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
         <xsd:element name="LoTotalFeePct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="LoAmount" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="LoAmount" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="SwapTypeLO" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="LOIndexRate" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
+        <xsd:element name="LOIndexRate" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="SchLRF" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="10"></xsd:totalDigits>
-              <xsd:fractionDigits value="5"></xsd:fractionDigits>
+              <xsd:totalDigits value="10"/>
+              <xsd:fractionDigits value="5"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="LOYield" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double"></xsd:element>
+        <xsd:element name="LOYield" minOccurs="0" od:jetType="double" od:sqlSType="float" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="LOBonus" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="50"></xsd:maxLength>
+              <xsd:maxLength value="50"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="LoSyndNet" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="LoSyndNet" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="RVVendorPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="18"></xsd:totalDigits>
-              <xsd:fractionDigits value="4"></xsd:fractionDigits>
+              <xsd:totalDigits value="18"/>
+              <xsd:fractionDigits value="4"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="RVLOUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="RVLOUnit" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="RVLOUnitPct" minOccurs="0" od:jetType="decimal" od:sqlSType="decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:decimal">
-              <xsd:totalDigits value="10"></xsd:totalDigits>
-              <xsd:fractionDigits value="3"></xsd:fractionDigits>
+              <xsd:totalDigits value="10"/>
+              <xsd:fractionDigits value="3"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="LORent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="RVProjPct" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
-        <xsd:element name="UnitCost" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double"></xsd:element>
+        <xsd:element name="LORent" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="RVProjPct" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="UnitCost" minOccurs="0" od:jetType="currency" od:sqlSType="money" type="xsd:double">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
         <xsd:element name="ODORange" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <od:fieldProperty name="Required" type="1" value="0"/>
+            </xsd:appinfo>
+          </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="12"></xsd:maxLength>
+              <xsd:maxLength value="12"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>

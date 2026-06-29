@@ -266,7 +266,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =93
+                    OverlapFlags =85
                     Left =231
                     Top =4185
                     Width =3195
@@ -574,7 +574,7 @@ Begin Form
                     CanShrink = NotDefault
                     FontItalic = NotDefault
                     OldBorderStyle =0
-                    OverlapFlags =87
+                    OverlapFlags =85
                     TextFontCharSet =238
                     TextAlign =2
                     BackStyle =0
@@ -690,7 +690,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    OverlapFlags =215
+                    OverlapFlags =223
                     Left =216
                     Top =3660
                     Width =1920

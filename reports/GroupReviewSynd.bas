@@ -180,10 +180,10 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1035
-                    Top =4755
+                    Left =1032
+                    Top =4764
                     Width =1080
-                    Height =225
+                    Height =228
                     FontSize =10
                     FontWeight =700
                     TabIndex =39
@@ -198,10 +198,10 @@ Begin Report
                     BottomPadding =0
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1035
-                    LayoutCachedTop =4755
-                    LayoutCachedWidth =2115
-                    LayoutCachedHeight =4980
+                    LayoutCachedLeft =1032
+                    LayoutCachedTop =4764
+                    LayoutCachedWidth =2112
+                    LayoutCachedHeight =4992
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -210,6 +210,34 @@ Begin Report
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =2
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            TextFontFamily =34
+                            Left =240
+                            Top =4764
+                            Width =795
+                            Height =228
+                            FontSize =10
+                            Name ="Label23"
+                            Caption ="BLCD"
+                            GroupTable =2
+                            LeftPadding =0
+                            TopPadding =0
+                            RightPadding =0
+                            BottomPadding =0
+                            LayoutCachedLeft =240
+                            LayoutCachedTop =4764
+                            LayoutCachedWidth =1035
+                            LayoutCachedHeight =4992
+                            RowStart =4
+                            RowEnd =4
+                            LayoutGroup =4
+                            GridlineThemeColorIndex =1
+                            GridlineShade =65.0
+                            GroupTable =2
+                        End
+                    End
                 End
                 Begin TextBox
                     OldBorderStyle =1
@@ -217,9 +245,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =240
-                    Top =2160
-                    Width =1860
-                    Height =345
+                    Top =2172
+                    Width =1884
+                    Height =348
                     FontSize =12
                     FontWeight =700
                     TabIndex =21
@@ -234,9 +262,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =240
-                    LayoutCachedTop =2160
-                    LayoutCachedWidth =2100
-                    LayoutCachedHeight =2505
+                    LayoutCachedTop =2172
+                    LayoutCachedWidth =2124
+                    LayoutCachedHeight =2520
                     RowStart =1
                     RowEnd =1
                     ColumnEnd =1
@@ -251,9 +279,9 @@ Begin Report
                     TextAlign =2
                     IMESentenceMode =3
                     Left =240
-                    Top =2715
+                    Top =2760
                     Width =487
-                    Height =390
+                    Height =396
                     FontSize =12
                     FontWeight =700
                     TabIndex =23
@@ -271,9 +299,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =240
-                    LayoutCachedTop =2715
+                    LayoutCachedTop =2760
                     LayoutCachedWidth =727
-                    LayoutCachedHeight =3105
+                    LayoutCachedHeight =3156
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =2
@@ -288,10 +316,10 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1035
-                    Top =4530
+                    Left =1032
+                    Top =4536
                     Width =1080
-                    Height =225
+                    Height =228
                     FontSize =10
                     FontWeight =700
                     TabIndex =38
@@ -307,10 +335,10 @@ Begin Report
                     BottomPadding =0
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1035
-                    LayoutCachedTop =4530
-                    LayoutCachedWidth =2115
-                    LayoutCachedHeight =4755
+                    LayoutCachedLeft =1032
+                    LayoutCachedTop =4536
+                    LayoutCachedWidth =2112
+                    LayoutCachedHeight =4764
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -319,15 +347,43 @@ Begin Report
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =2
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            TextFontFamily =34
+                            Left =240
+                            Top =4536
+                            Width =795
+                            Height =228
+                            FontSize =10
+                            Name ="Label25"
+                            Caption ="Assigned"
+                            GroupTable =2
+                            LeftPadding =0
+                            TopPadding =0
+                            RightPadding =0
+                            BottomPadding =0
+                            LayoutCachedLeft =240
+                            LayoutCachedTop =4536
+                            LayoutCachedWidth =1035
+                            LayoutCachedHeight =4764
+                            RowStart =3
+                            RowEnd =3
+                            LayoutGroup =4
+                            GridlineThemeColorIndex =1
+                            GridlineShade =65.0
+                            GroupTable =2
+                        End
+                    End
                 End
                 Begin TextBox
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1035
-                    Top =4305
+                    Left =1032
+                    Top =4308
                     Width =1080
-                    Height =225
+                    Height =228
                     FontSize =10
                     FontWeight =700
                     TabIndex =37
@@ -342,10 +398,10 @@ Begin Report
                     BottomPadding =0
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1035
-                    LayoutCachedTop =4305
-                    LayoutCachedWidth =2115
-                    LayoutCachedHeight =4530
+                    LayoutCachedLeft =1032
+                    LayoutCachedTop =4308
+                    LayoutCachedWidth =2112
+                    LayoutCachedHeight =4536
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -354,6 +410,34 @@ Begin Report
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =2
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            TextFontFamily =34
+                            Left =240
+                            Top =4308
+                            Width =795
+                            Height =228
+                            FontSize =10
+                            Name ="Label31"
+                            Caption ="Fund"
+                            GroupTable =2
+                            LeftPadding =0
+                            TopPadding =0
+                            RightPadding =0
+                            BottomPadding =0
+                            LayoutCachedLeft =240
+                            LayoutCachedTop =4308
+                            LayoutCachedWidth =1035
+                            LayoutCachedHeight =4536
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =4
+                            GridlineThemeColorIndex =1
+                            GridlineShade =65.0
+                            GroupTable =2
+                        End
+                    End
                 End
                 Begin TextBox
                     TextAlign =3
@@ -381,38 +465,12 @@ Begin Report
                     GridlineShade =65.0
                 End
                 Begin Label
-                    TextAlign =3
-                    TextFontFamily =34
-                    Left =240
-                    Top =4755
-                    Width =795
-                    Height =225
-                    FontSize =10
-                    Name ="Label23"
-                    Caption ="BLCD"
-                    GroupTable =2
-                    LeftPadding =0
-                    TopPadding =0
-                    RightPadding =0
-                    BottomPadding =0
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =4755
-                    LayoutCachedWidth =1035
-                    LayoutCachedHeight =4980
-                    RowStart =4
-                    RowEnd =4
-                    LayoutGroup =4
-                    GridlineThemeColorIndex =1
-                    GridlineShade =65.0
-                    GroupTable =2
-                End
-                Begin Label
                     BackStyle =1
                     OldBorderStyle =1
                     TextAlign =2
                     Left =240
                     Top =1860
-                    Width =1860
+                    Width =1884
                     Height =300
                     BackColor =12349952
                     ForeColor =16777215
@@ -425,7 +483,7 @@ Begin Report
                     BottomPadding =0
                     LayoutCachedLeft =240
                     LayoutCachedTop =1860
-                    LayoutCachedWidth =2100
+                    LayoutCachedWidth =2124
                     LayoutCachedHeight =2160
                     ColumnEnd =1
                     LayoutGroup =2
@@ -433,58 +491,6 @@ Begin Report
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =64
-                End
-                Begin Label
-                    TextAlign =3
-                    TextFontFamily =34
-                    Left =240
-                    Top =4530
-                    Width =795
-                    Height =225
-                    FontSize =10
-                    Name ="Label25"
-                    Caption ="Assigned"
-                    GroupTable =2
-                    LeftPadding =0
-                    TopPadding =0
-                    RightPadding =0
-                    BottomPadding =0
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =4530
-                    LayoutCachedWidth =1035
-                    LayoutCachedHeight =4755
-                    RowStart =3
-                    RowEnd =3
-                    LayoutGroup =4
-                    GridlineThemeColorIndex =1
-                    GridlineShade =65.0
-                    GroupTable =2
-                End
-                Begin Label
-                    TextAlign =3
-                    TextFontFamily =34
-                    Left =240
-                    Top =4305
-                    Width =795
-                    Height =225
-                    FontSize =10
-                    Name ="Label31"
-                    Caption ="Fund"
-                    GroupTable =2
-                    LeftPadding =0
-                    TopPadding =0
-                    RightPadding =0
-                    BottomPadding =0
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =4305
-                    LayoutCachedWidth =1035
-                    LayoutCachedHeight =4530
-                    RowStart =2
-                    RowEnd =2
-                    LayoutGroup =4
-                    GridlineThemeColorIndex =1
-                    GridlineShade =65.0
-                    GroupTable =2
                 End
                 Begin Label
                     TextAlign =3
@@ -750,20 +756,20 @@ Begin Report
                     TextFontFamily =0
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6705
-                    Top =555
-                    Width =870
-                    Height =315
+                    Left =6792
+                    Top =564
+                    Width =876
+                    Height =312
                     TabIndex =6
                     Name ="SGrpBonus"
                     ControlSource ="Bonus"
                     StatusBarText ="Bonus Depreciation"
                     GroupTable =9
 
-                    LayoutCachedLeft =6705
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =7575
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =6792
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =7668
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =7
@@ -781,19 +787,19 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1305
-                    Top =555
+                    Left =1320
+                    Top =564
                     Width =840
-                    Height =315
+                    Height =312
                     FontWeight =700
                     Name ="SGrpIndex"
                     ControlSource ="Index"
                     GroupTable =9
 
-                    LayoutCachedLeft =1305
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =2145
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =1320
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =2160
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -803,6 +809,31 @@ Begin Report
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =9
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            TextAlign =2
+                            Left =240
+                            Top =564
+                            Width =1005
+                            Height =312
+                            ForeColor =16777215
+                            Name ="Label86"
+                            Caption ="Synd"
+                            GroupTable =9
+                            LayoutCachedLeft =240
+                            LayoutCachedTop =564
+                            LayoutCachedWidth =1245
+                            LayoutCachedHeight =876
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =1
+                            BackThemeColorIndex =0
+                            GridlineThemeColorIndex =1
+                            GridlineShade =65.0
+                            GroupTable =9
+                        End
+                    End
                 End
                 Begin TextBox
                     OldBorderStyle =1
@@ -810,10 +841,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2205
-                    Top =555
-                    Width =1095
-                    Height =315
+                    Left =2232
+                    Top =564
+                    Width =1092
+                    Height =312
                     FontWeight =700
                     TabIndex =1
                     Name ="SGrpIndDt"
@@ -822,10 +853,10 @@ Begin Report
                     GroupTable =9
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2205
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =3300
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =2232
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =3324
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -842,20 +873,20 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3360
-                    Top =555
-                    Width =615
-                    Height =315
+                    Left =3396
+                    Top =564
+                    Width =612
+                    Height =312
                     FontWeight =700
                     TabIndex =2
                     Name ="SGprIndYr"
                     ControlSource ="IndexYear"
                     GroupTable =9
 
-                    LayoutCachedLeft =3360
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =3975
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =3396
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =4008
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -873,10 +904,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5820
-                    Top =555
-                    Width =825
-                    Height =315
+                    Left =5892
+                    Top =564
+                    Width =828
+                    Height =312
                     FontWeight =700
                     TabIndex =5
                     Name ="SgrpYield"
@@ -884,10 +915,10 @@ Begin Report
                     Format ="Percent"
                     GroupTable =9
 
-                    LayoutCachedLeft =5820
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =6645
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =5892
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =6720
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =6
@@ -902,18 +933,18 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =6705
+                    Left =6792
                     Top =180
-                    Width =870
+                    Width =876
                     Height =315
                     BackColor =12349952
                     ForeColor =16777215
                     Name ="Label33"
                     Caption ="Bonus"
                     GroupTable =9
-                    LayoutCachedLeft =6705
+                    LayoutCachedLeft =6792
                     LayoutCachedTop =180
-                    LayoutCachedWidth =7575
+                    LayoutCachedWidth =7668
                     LayoutCachedHeight =495
                     ColumnStart =7
                     ColumnEnd =7
@@ -926,7 +957,7 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =1305
+                    Left =1320
                     Top =180
                     Width =840
                     Height =315
@@ -935,9 +966,9 @@ Begin Report
                     Name ="Label34"
                     Caption ="Index"
                     GroupTable =9
-                    LayoutCachedLeft =1305
+                    LayoutCachedLeft =1320
                     LayoutCachedTop =180
-                    LayoutCachedWidth =2145
+                    LayoutCachedWidth =2160
                     LayoutCachedHeight =495
                     ColumnStart =1
                     ColumnEnd =1
@@ -950,18 +981,18 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =2205
+                    Left =2232
                     Top =180
-                    Width =1095
+                    Width =1092
                     Height =315
                     BackColor =12349952
                     ForeColor =16777215
                     Name ="Label35"
                     Caption ="Date"
                     GroupTable =9
-                    LayoutCachedLeft =2205
+                    LayoutCachedLeft =2232
                     LayoutCachedTop =180
-                    LayoutCachedWidth =3300
+                    LayoutCachedWidth =3324
                     LayoutCachedHeight =495
                     ColumnStart =2
                     ColumnEnd =2
@@ -974,18 +1005,18 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =3360
+                    Left =3396
                     Top =180
-                    Width =615
+                    Width =612
                     Height =315
                     BackColor =12349952
                     ForeColor =16777215
                     Name ="Label36"
                     Caption ="Year"
                     GroupTable =9
-                    LayoutCachedLeft =3360
+                    LayoutCachedLeft =3396
                     LayoutCachedTop =180
-                    LayoutCachedWidth =3975
+                    LayoutCachedWidth =4008
                     LayoutCachedHeight =495
                     ColumnStart =3
                     ColumnEnd =3
@@ -998,18 +1029,18 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =5820
+                    Left =5892
                     Top =180
-                    Width =825
+                    Width =828
                     Height =315
                     BackColor =12349952
                     ForeColor =16777215
                     Name ="Label37"
                     Caption ="Yield"
                     GroupTable =9
-                    LayoutCachedLeft =5820
+                    LayoutCachedLeft =5892
                     LayoutCachedTop =180
-                    LayoutCachedWidth =6645
+                    LayoutCachedWidth =6720
                     LayoutCachedHeight =495
                     ColumnStart =6
                     ColumnEnd =6
@@ -1025,10 +1056,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4845
-                    Top =555
-                    Width =915
-                    Height =315
+                    Left =4908
+                    Top =564
+                    Width =912
+                    Height =312
                     FontWeight =700
                     TabIndex =4
                     Name ="Text54"
@@ -1036,10 +1067,10 @@ Begin Report
                     Format ="Percent"
                     GroupTable =9
 
-                    LayoutCachedLeft =4845
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =5760
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =4908
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =5820
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -1057,10 +1088,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4035
-                    Top =555
-                    Width =750
-                    Height =315
+                    Left =4080
+                    Top =564
+                    Width =756
+                    Height =312
                     FontWeight =700
                     TabIndex =3
                     Name ="IndexRate"
@@ -1068,10 +1099,10 @@ Begin Report
                     Format ="Percent"
                     GroupTable =9
 
-                    LayoutCachedLeft =4035
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =4785
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =4080
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =4836
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -1089,10 +1120,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6705
-                    Top =930
-                    Width =870
-                    Height =259
+                    Left =6792
+                    Top =948
+                    Width =876
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =16
@@ -1102,10 +1133,10 @@ Begin Report
                     StatusBarText ="Bonus Depreciation"
                     GroupTable =9
 
-                    LayoutCachedLeft =6705
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =7575
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =6792
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =7668
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =7
@@ -1125,10 +1156,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1305
-                    Top =930
+                    Left =1320
+                    Top =948
                     Width =840
-                    Height =259
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =10
@@ -1137,10 +1168,10 @@ Begin Report
                     ControlSource ="SalesIndex"
                     GroupTable =9
 
-                    LayoutCachedLeft =1305
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =2145
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =1320
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =2160
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -1151,6 +1182,36 @@ Begin Report
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =9
+                    Begin
+                        Begin Label
+                            FontItalic = NotDefault
+                            OldBorderStyle =1
+                            TextAlign =2
+                            TextFontFamily =34
+                            Left =240
+                            Top =948
+                            Width =1005
+                            Height =264
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =9211020
+                            Name ="Label87"
+                            Caption ="LO Target"
+                            GroupTable =9
+                            LayoutCachedLeft =240
+                            LayoutCachedTop =948
+                            LayoutCachedWidth =1245
+                            LayoutCachedHeight =1212
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =1
+                            BorderThemeColorIndex =0
+                            BorderTint =50.0
+                            GridlineThemeColorIndex =1
+                            GridlineShade =65.0
+                            GroupTable =9
+                        End
+                    End
                 End
                 Begin TextBox
                     FontItalic = NotDefault
@@ -1159,10 +1220,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2205
-                    Top =930
-                    Width =1095
-                    Height =259
+                    Left =2232
+                    Top =948
+                    Width =1092
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =11
@@ -1173,10 +1234,10 @@ Begin Report
                     GroupTable =9
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2205
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =3300
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =2232
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =3324
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -1195,10 +1256,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3360
-                    Top =930
-                    Width =615
-                    Height =259
+                    Left =3396
+                    Top =948
+                    Width =612
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =12
@@ -1207,10 +1268,10 @@ Begin Report
                     ControlSource ="SalesIndexYear"
                     GroupTable =9
 
-                    LayoutCachedLeft =3360
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =3975
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =3396
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =4008
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =3
@@ -1230,10 +1291,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4035
-                    Top =930
-                    Width =750
-                    Height =259
+                    Left =4080
+                    Top =948
+                    Width =756
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =13
@@ -1243,10 +1304,10 @@ Begin Report
                     Format ="Percent"
                     GroupTable =9
 
-                    LayoutCachedLeft =4035
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =4785
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =4080
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =4836
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =4
@@ -1266,10 +1327,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5820
-                    Top =930
-                    Width =825
-                    Height =259
+                    Left =5892
+                    Top =948
+                    Width =828
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =15
@@ -1279,10 +1340,10 @@ Begin Report
                     Format ="Percent"
                     GroupTable =9
 
-                    LayoutCachedLeft =5820
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =6645
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =5892
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =6720
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =6
@@ -1302,10 +1363,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4845
-                    Top =930
-                    Width =915
-                    Height =259
+                    Left =4908
+                    Top =948
+                    Width =912
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =14
@@ -1315,65 +1376,14 @@ Begin Report
                     Format ="Percent"
                     GroupTable =9
 
-                    LayoutCachedLeft =4845
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =5760
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =4908
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =5820
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =5
                     ColumnEnd =5
-                    LayoutGroup =1
-                    BorderThemeColorIndex =0
-                    BorderTint =50.0
-                    GridlineThemeColorIndex =1
-                    GridlineShade =65.0
-                    GroupTable =9
-                End
-                Begin Label
-                    BackStyle =1
-                    TextAlign =2
-                    Left =240
-                    Top =555
-                    Width =1005
-                    Height =315
-                    ForeColor =16777215
-                    Name ="Label86"
-                    Caption ="Synd"
-                    GroupTable =9
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =1245
-                    LayoutCachedHeight =870
-                    RowStart =1
-                    RowEnd =1
-                    LayoutGroup =1
-                    BackThemeColorIndex =0
-                    GridlineThemeColorIndex =1
-                    GridlineShade =65.0
-                    GroupTable =9
-                End
-                Begin Label
-                    FontItalic = NotDefault
-                    OldBorderStyle =1
-                    TextAlign =2
-                    TextFontFamily =34
-                    Left =240
-                    Top =930
-                    Width =1005
-                    Height =259
-                    FontSize =10
-                    FontWeight =700
-                    ForeColor =9211020
-                    Name ="Label87"
-                    Caption ="LO Target"
-                    GroupTable =9
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =1245
-                    LayoutCachedHeight =1189
-                    RowStart =2
-                    RowEnd =2
                     LayoutGroup =1
                     BorderThemeColorIndex =0
                     BorderTint =50.0
@@ -1385,7 +1395,7 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1035
+                    Left =1032
                     Top =4080
                     Width =1080
                     Height =225
@@ -1404,9 +1414,9 @@ Begin Report
                     BottomPadding =0
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =1035
+                    LayoutCachedLeft =1032
                     LayoutCachedTop =4080
-                    LayoutCachedWidth =2115
+                    LayoutCachedWidth =2112
                     LayoutCachedHeight =4305
                     RowStart =1
                     RowEnd =1
@@ -1544,7 +1554,6 @@ Begin Report
                     Height =315
                     Name ="EmptyCell163"
                     GroupTable =9
-                    GridlineColor =10921638
                     LayoutCachedLeft =240
                     LayoutCachedTop =180
                     LayoutCachedWidth =1245
@@ -1556,18 +1565,18 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =4035
+                    Left =4080
                     Top =180
-                    Width =750
+                    Width =756
                     Height =315
                     BackColor =12349952
                     ForeColor =16777215
                     Name ="Label56"
                     Caption ="Rate"
                     GroupTable =9
-                    LayoutCachedLeft =4035
+                    LayoutCachedLeft =4080
                     LayoutCachedTop =180
-                    LayoutCachedWidth =4785
+                    LayoutCachedWidth =4836
                     LayoutCachedHeight =495
                     ColumnStart =4
                     ColumnEnd =4
@@ -1580,18 +1589,18 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =4845
+                    Left =4908
                     Top =180
-                    Width =915
+                    Width =912
                     Height =315
                     BackColor =12349952
                     ForeColor =16777215
                     Name ="Label55"
                     Caption ="Spread"
                     GroupTable =9
-                    LayoutCachedLeft =4845
+                    LayoutCachedLeft =4908
                     LayoutCachedTop =180
-                    LayoutCachedWidth =5760
+                    LayoutCachedWidth =5820
                     LayoutCachedHeight =495
                     ColumnStart =5
                     ColumnEnd =5
@@ -1604,10 +1613,10 @@ Begin Report
                     OldBorderStyle =1
                     TextAlign =1
                     TextFontFamily =34
-                    Left =720
-                    Top =2505
+                    Left =744
+                    Top =2532
                     Width =1380
-                    Height =795
+                    Height =828
                     FontSize =8
                     FontWeight =700
                     Name ="Label419"
@@ -1618,10 +1627,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =720
-                    LayoutCachedTop =2505
-                    LayoutCachedWidth =2100
-                    LayoutCachedHeight =3300
+                    LayoutCachedLeft =744
+                    LayoutCachedTop =2532
+                    LayoutCachedWidth =2124
+                    LayoutCachedHeight =3360
                     RowStart =2
                     RowEnd =4
                     ColumnStart =1
@@ -1835,10 +1844,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7635
-                    Top =555
+                    Left =7740
+                    Top =564
                     Width =1200
-                    Height =315
+                    Height =312
                     FontWeight =700
                     TabIndex =7
                     Name ="Text627"
@@ -1846,10 +1855,10 @@ Begin Report
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =9
 
-                    LayoutCachedLeft =7635
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =8835
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =7740
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =8940
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =8
@@ -1868,10 +1877,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =7635
-                    Top =930
+                    Left =7740
+                    Top =948
                     Width =1200
-                    Height =259
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =17
@@ -1881,10 +1890,10 @@ Begin Report
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =9
 
-                    LayoutCachedLeft =7635
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =8835
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =7740
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =8940
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =8
@@ -1901,7 +1910,7 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =7635
+                    Left =7740
                     Top =180
                     Width =1200
                     Height =315
@@ -1910,9 +1919,9 @@ Begin Report
                     Name ="Label629"
                     Caption ="Residual"
                     GroupTable =9
-                    LayoutCachedLeft =7635
+                    LayoutCachedLeft =7740
                     LayoutCachedTop =180
-                    LayoutCachedWidth =8835
+                    LayoutCachedWidth =8940
                     LayoutCachedHeight =495
                     ColumnStart =8
                     ColumnEnd =8
@@ -1927,10 +1936,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8895
-                    Top =555
-                    Width =1395
-                    Height =315
+                    Left =9012
+                    Top =564
+                    Width =1392
+                    Height =312
                     FontWeight =700
                     TabIndex =8
                     Name ="Text647"
@@ -1938,10 +1947,10 @@ Begin Report
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =9
 
-                    LayoutCachedLeft =8895
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =10290
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =9012
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =10404
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =9
@@ -1960,10 +1969,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8895
-                    Top =930
-                    Width =1395
-                    Height =259
+                    Left =9012
+                    Top =948
+                    Width =1392
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =18
@@ -1973,10 +1982,10 @@ Begin Report
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =9
 
-                    LayoutCachedLeft =8895
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =10290
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =9012
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =10404
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =9
@@ -1993,18 +2002,18 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =8895
+                    Left =9012
                     Top =180
-                    Width =1395
+                    Width =1392
                     Height =315
                     BackColor =12349952
                     ForeColor =16777215
                     Name ="Label649"
                     Caption ="Fee"
                     GroupTable =9
-                    LayoutCachedLeft =8895
+                    LayoutCachedLeft =9012
                     LayoutCachedTop =180
-                    LayoutCachedWidth =10290
+                    LayoutCachedWidth =10404
                     LayoutCachedHeight =495
                     ColumnStart =9
                     ColumnEnd =9
@@ -2185,7 +2194,7 @@ Begin Report
                     TextFontFamily =34
                     Left =240
                     Top =3780
-                    Width =1875
+                    Width =1872
                     Height =300
                     BackColor =12349952
                     ForeColor =16777215
@@ -2198,7 +2207,7 @@ Begin Report
                     BottomPadding =0
                     LayoutCachedLeft =240
                     LayoutCachedTop =3780
-                    LayoutCachedWidth =2115
+                    LayoutCachedWidth =2112
                     LayoutCachedHeight =4080
                     ColumnEnd =1
                     LayoutGroup =4
@@ -2364,10 +2373,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10350
-                    Top =555
-                    Width =765
-                    Height =315
+                    Left =10476
+                    Top =564
+                    Width =768
+                    Height =312
                     FontWeight =700
                     TabIndex =9
                     Name ="Text964"
@@ -2375,10 +2384,10 @@ Begin Report
                     Format ="Percent"
                     GroupTable =9
 
-                    LayoutCachedLeft =10350
-                    LayoutCachedTop =555
-                    LayoutCachedWidth =11115
-                    LayoutCachedHeight =870
+                    LayoutCachedLeft =10476
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =11244
+                    LayoutCachedHeight =876
                     RowStart =1
                     RowEnd =1
                     ColumnStart =10
@@ -2393,18 +2402,18 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =10350
+                    Left =10476
                     Top =180
-                    Width =765
+                    Width =768
                     Height =315
                     BackColor =12349952
                     ForeColor =16777215
                     Name ="Label965"
                     Caption ="Fee%"
                     GroupTable =9
-                    LayoutCachedLeft =10350
+                    LayoutCachedLeft =10476
                     LayoutCachedTop =180
-                    LayoutCachedWidth =11115
+                    LayoutCachedWidth =11244
                     LayoutCachedHeight =495
                     ColumnStart =10
                     ColumnEnd =10
@@ -2420,10 +2429,10 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10350
-                    Top =930
-                    Width =765
-                    Height =259
+                    Left =10476
+                    Top =948
+                    Width =768
+                    Height =264
                     FontSize =9
                     FontWeight =700
                     TabIndex =19
@@ -2433,10 +2442,10 @@ Begin Report
                     Format ="Percent"
                     GroupTable =9
 
-                    LayoutCachedLeft =10350
-                    LayoutCachedTop =930
-                    LayoutCachedWidth =11115
-                    LayoutCachedHeight =1189
+                    LayoutCachedLeft =10476
+                    LayoutCachedTop =948
+                    LayoutCachedWidth =11244
+                    LayoutCachedHeight =1212
                     RowStart =2
                     RowEnd =2
                     ColumnStart =10
@@ -2925,10 +2934,10 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8940
-                    Top =7080
+                    Left =8952
+                    Top =7092
                     Width =1620
-                    Height =285
+                    Height =288
                     FontWeight =700
                     TabIndex =68
                     Name ="FinalFee"
@@ -2943,10 +2952,10 @@ Begin Report
                     End
                     GroupTable =96
 
-                    LayoutCachedLeft =8940
-                    LayoutCachedTop =7080
-                    LayoutCachedWidth =10560
-                    LayoutCachedHeight =7365
+                    LayoutCachedLeft =8952
+                    LayoutCachedTop =7092
+                    LayoutCachedWidth =10572
+                    LayoutCachedHeight =7380
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -2964,19 +2973,19 @@ Begin Report
                         Begin Label
                             TextAlign =3
                             TextFontFamily =34
-                            Left =5370
-                            Top =7080
-                            Width =3510
-                            Height =285
+                            Left =5376
+                            Top =7092
+                            Width =3516
+                            Height =288
                             FontSize =10
                             FontWeight =700
                             Name ="Label1218"
                             Caption ="Group Total Fee"
                             GroupTable =96
-                            LayoutCachedLeft =5370
-                            LayoutCachedTop =7080
-                            LayoutCachedWidth =8880
-                            LayoutCachedHeight =7365
+                            LayoutCachedLeft =5376
+                            LayoutCachedTop =7092
+                            LayoutCachedWidth =8892
+                            LayoutCachedHeight =7380
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =5
@@ -2992,10 +3001,10 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10620
-                    Top =7080
-                    Width =810
-                    Height =285
+                    Left =10632
+                    Top =7092
+                    Width =816
+                    Height =288
                     FontSize =10
                     FontWeight =700
                     TabIndex =69
@@ -3004,10 +3013,10 @@ Begin Report
                     Format ="Percent"
                     GroupTable =96
 
-                    LayoutCachedLeft =10620
-                    LayoutCachedTop =7080
-                    LayoutCachedWidth =11430
-                    LayoutCachedHeight =7365
+                    LayoutCachedLeft =10632
+                    LayoutCachedTop =7092
+                    LayoutCachedWidth =11448
+                    LayoutCachedHeight =7380
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -3204,7 +3213,7 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8940
+                    Left =8952
                     Top =7020
                     Width =1620
                     Height =0
@@ -3216,9 +3225,9 @@ Begin Report
                     FontName ="Segoe UI"
                     GroupTable =96
 
-                    LayoutCachedLeft =8940
+                    LayoutCachedLeft =8952
                     LayoutCachedTop =7020
-                    LayoutCachedWidth =10560
+                    LayoutCachedWidth =10572
                     LayoutCachedHeight =7020
                     ColumnStart =1
                     ColumnEnd =1
@@ -3240,9 +3249,9 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10620
+                    Left =10632
                     Top =7020
-                    Width =810
+                    Width =816
                     Height =0
                     FontSize =9
                     TabIndex =64
@@ -3252,9 +3261,9 @@ Begin Report
                     FontName ="Segoe UI"
                     GroupTable =96
 
-                    LayoutCachedLeft =10620
+                    LayoutCachedLeft =10632
                     LayoutCachedTop =7020
-                    LayoutCachedWidth =11430
+                    LayoutCachedWidth =11448
                     LayoutCachedHeight =7020
                     ColumnStart =2
                     ColumnEnd =2
@@ -3274,9 +3283,9 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5370
+                    Left =5376
                     Top =7020
-                    Width =3510
+                    Width =3516
                     Height =0
                     FontSize =9
                     TabIndex =62
@@ -3286,9 +3295,9 @@ Begin Report
                     FontName ="Segoe UI"
                     GroupTable =96
 
-                    LayoutCachedLeft =5370
+                    LayoutCachedLeft =5376
                     LayoutCachedTop =7020
-                    LayoutCachedWidth =8880
+                    LayoutCachedWidth =8892
                     LayoutCachedHeight =7020
                     LayoutGroup =5
                     BackThemeColorIndex =1
@@ -3304,8 +3313,8 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8940
-                    Top =7050
+                    Left =8952
+                    Top =7056
                     Width =1620
                     Height =0
                     TabIndex =66
@@ -3316,10 +3325,10 @@ Begin Report
                     TopPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =8940
-                    LayoutCachedTop =7050
-                    LayoutCachedWidth =10560
-                    LayoutCachedHeight =7050
+                    LayoutCachedLeft =8952
+                    LayoutCachedTop =7056
+                    LayoutCachedWidth =10572
+                    LayoutCachedHeight =7056
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -3335,9 +3344,9 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10620
-                    Top =7050
-                    Width =810
+                    Left =10632
+                    Top =7056
+                    Width =816
                     Height =0
                     FontSize =9
                     TabIndex =67
@@ -3349,10 +3358,10 @@ Begin Report
                     TopPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10620
-                    LayoutCachedTop =7050
-                    LayoutCachedWidth =11430
-                    LayoutCachedHeight =7050
+                    LayoutCachedLeft =10632
+                    LayoutCachedTop =7056
+                    LayoutCachedWidth =11448
+                    LayoutCachedHeight =7056
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -3373,9 +3382,9 @@ Begin Report
                     TextAlign =3
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5370
-                    Top =7050
-                    Width =3510
+                    Left =5376
+                    Top =7056
+                    Width =3516
                     Height =0
                     FontSize =9
                     TabIndex =65
@@ -3387,10 +3396,10 @@ Begin Report
                     TopPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =5370
-                    LayoutCachedTop =7050
-                    LayoutCachedWidth =8880
-                    LayoutCachedHeight =7050
+                    LayoutCachedLeft =5376
+                    LayoutCachedTop =7056
+                    LayoutCachedWidth =8892
+                    LayoutCachedHeight =7056
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =5
@@ -3472,9 +3481,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =240
-                    Top =2505
+                    Top =2532
                     Width =487
-                    Height =210
+                    Height =216
                     FontSize =12
                     FontWeight =700
                     TabIndex =22
@@ -3491,9 +3500,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =240
-                    LayoutCachedTop =2505
+                    LayoutCachedTop =2532
                     LayoutCachedWidth =727
-                    LayoutCachedHeight =2715
+                    LayoutCachedHeight =2748
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =2
@@ -3508,9 +3517,9 @@ Begin Report
                     BackStyle =0
                     IMESentenceMode =3
                     Left =240
-                    Top =3105
+                    Top =3168
                     Width =487
-                    Height =195
+                    Height =192
                     FontSize =12
                     FontWeight =700
                     TabIndex =24
@@ -3527,9 +3536,9 @@ Begin Report
                     BottomPadding =0
 
                     LayoutCachedLeft =240
-                    LayoutCachedTop =3105
+                    LayoutCachedTop =3168
                     LayoutCachedWidth =727
-                    LayoutCachedHeight =3300
+                    LayoutCachedHeight =3360
                     RowStart =4
                     RowEnd =4
                     LayoutGroup =2

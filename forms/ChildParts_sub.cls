@@ -24,7 +24,7 @@ End Sub
 
 Public Function LoadData(UnitIDx As Long)
     On Error Resume Next
-    If Nz(Me.UnitREF, 0) = 0 Or Nz(Me.UnitREF, 0) <> UnitIDx Then
+    If Nz(Me.UnitRef, 0) = 0 Or Nz(Me.UnitRef, 0) <> UnitIDx Then
 
         SQLz = "SELECT ChildPartID, ChildMake AS Make, ChildClass as Class, ChildType as [Type], childFinalCost AS Cost "
         SQLz = SQLz & "FROM ChildParts "
@@ -37,7 +37,7 @@ Public Function LoadData(UnitIDx As Long)
         Me.Form.RecordSource = SQLz
 
     End If
-    If Me.Form.NewRecord = False And Nz(Me.UnitREF, 0) <> 0 Then Me.ChildPartSum = DSum("childFinalCost", "ChildParts", "[UnitREF]=" & UnitIDx & "")
+    If Me.Form.NewRecord = False And Nz(Me.UnitRef, 0) <> 0 Then Me.ChildPartSum = DSum("childFinalCost", "ChildParts", "[UnitREF]=" & UnitIDx & "")
     On Error GoTo 0
     Exit Function
 FixMe:
@@ -59,7 +59,7 @@ End Sub
 
 Private Sub Form_Current()
    On Error Resume Next
-   If Me.Form.NewRecord = False And Nz(Me.UnitREF, 0) <> 0 Then Me.ChildPartSum = DSum("childFinalCost", "ChildParts", "[UnitREF]=" & [UnitREF] & "")
+   If Me.Form.NewRecord = False And Nz(Me.UnitRef, 0) <> 0 Then Me.ChildPartSum = DSum("childFinalCost", "ChildParts", "[UnitREF]=" & [UnitRef] & "")
    On Error GoTo 0
 End Sub
 

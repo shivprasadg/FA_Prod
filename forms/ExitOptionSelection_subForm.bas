@@ -80,7 +80,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =945
+            Height =978
             Name ="Detail"
             Begin
                 Begin Label
@@ -109,12 +109,13 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =720
-                    Top =30
-                    Width =1395
-                    Height =255
+                    Left =744
+                    Top =36
+                    Width =1392
+                    Height =252
                     FontSize =10
                     BorderColor =12632256
+                    ForeColor =0
                     Name ="OptionSelected"
                     ControlSource ="OptionSelected"
                     RowSourceType ="Table/Query"
@@ -122,12 +123,11 @@ Begin Form
                         "ptionTypes;"
                     OnClick ="[Event Procedure]"
                     GroupTable =6
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =720
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =2115
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =744
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =2136
+                    LayoutCachedHeight =288
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -142,19 +142,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =30
-                            Top =30
-                            Width =630
-                            Height =255
+                            Left =36
+                            Top =36
+                            Width =636
+                            Height =252
                             FontSize =8
                             Name ="Label226"
                             Caption ="Type"
                             FontName ="Segoe UI"
                             GroupTable =6
-                            LayoutCachedLeft =30
-                            LayoutCachedTop =30
-                            LayoutCachedWidth =660
-                            LayoutCachedHeight =285
+                            LayoutCachedLeft =36
+                            LayoutCachedTop =36
+                            LayoutCachedWidth =672
+                            LayoutCachedHeight =288
                             LayoutGroup =1
                             ForeThemeColorIndex =2
                             GridlineThemeColorIndex =1
@@ -168,9 +168,9 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =720
-                    Top =345
-                    Width =1395
+                    Left =744
+                    Top =360
+                    Width =1392
                     FontSize =10
                     TabIndex =2
                     Name ="UnitNotSent"
@@ -179,10 +179,10 @@ Begin Form
                     StatusBarText ="Dt Notice sent to Assignee"
                     GroupTable =6
 
-                    LayoutCachedLeft =720
-                    LayoutCachedTop =345
-                    LayoutCachedWidth =2115
-                    LayoutCachedHeight =585
+                    LayoutCachedLeft =744
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =2136
+                    LayoutCachedHeight =600
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -196,19 +196,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =30
-                            Top =345
-                            Width =630
+                            Left =36
+                            Top =360
+                            Width =636
                             Height =240
                             FontSize =8
                             Name ="Label228"
                             Caption ="Sent"
                             FontName ="Segoe UI"
                             GroupTable =6
-                            LayoutCachedLeft =30
-                            LayoutCachedTop =345
-                            LayoutCachedWidth =660
-                            LayoutCachedHeight =585
+                            LayoutCachedLeft =36
+                            LayoutCachedTop =360
+                            LayoutCachedWidth =672
+                            LayoutCachedHeight =600
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -224,10 +224,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =720
-                    Top =645
-                    Width =1395
-                    Height =270
+                    Left =744
+                    Top =672
+                    Width =1392
+                    Height =276
                     FontSize =10
                     TabIndex =3
                     Name ="Text256"
@@ -236,10 +236,10 @@ Begin Form
                     StatusBarText ="notice of Ex or Ext"
                     GroupTable =6
 
-                    LayoutCachedLeft =720
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =2115
-                    LayoutCachedHeight =915
+                    LayoutCachedLeft =744
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =2136
+                    LayoutCachedHeight =948
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -253,19 +253,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =30
-                            Top =645
-                            Width =630
-                            Height =270
+                            Left =36
+                            Top =672
+                            Width =636
+                            Height =276
                             FontSize =8
                             Name ="Label257"
                             Caption ="Replied"
                             FontName ="Segoe UI"
                             GroupTable =6
-                            LayoutCachedLeft =30
-                            LayoutCachedTop =645
-                            LayoutCachedWidth =660
-                            LayoutCachedHeight =915
+                            LayoutCachedLeft =36
+                            LayoutCachedTop =672
+                            LayoutCachedWidth =672
+                            LayoutCachedHeight =948
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -331,13 +331,13 @@ Begin Form
                     FontWeight =700
                     TabIndex =1
                     BorderColor =12632256
+                    ForeColor =0
                     Name ="OptionTerm"
                     ControlSource ="OptionTerm"
                     RowSourceType ="Value List"
                     RowSource ="3;6;9;12;15;18;21;24;36;48;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23"
                         ";24;25;26;27;28;29;30;31;32;33;34;35;36"
                     Tag ="Medit"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2610
                     LayoutCachedWidth =3270
@@ -367,6 +367,7 @@ Begin Form
                     FontSize =10
                     TabIndex =5
                     BorderColor =12632256
+                    ForeColor =0
                     Name ="ExchangedByUnitId"
                     ControlSource ="ExchangedByUnitId"
                     RowSourceType ="Table/Query"
@@ -377,7 +378,6 @@ Begin Form
                     ColumnWidths ="864;864;1008;1152;1008;1008"
                     StatusBarText ="notice of Ex or Ext"
                     OnDblClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =3210
                     LayoutCachedTop =645

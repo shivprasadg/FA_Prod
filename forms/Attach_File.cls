@@ -59,12 +59,12 @@ Private Sub Form_Current()
  If ranCurrent = True Then Exit Sub     ' prevents double execution
     ranCurrent = True
     If IsOpen("ClientsView") Then
-        clientRef.DefaultValue = Forms!ClientsView.clientID
+        clientREF.DefaultValue = Forms!ClientsView.ClientID
     End If
 
     If IsOpen("Deals_view") Then
-        dealRef.DefaultValue = Forms!deals_view.dealID
-        clientRef.DefaultValue = Forms!deals_view.clientRef
+        DealRef.DefaultValue = Forms!deals_view.dealID
+        clientREF.DefaultValue = Forms!deals_view.clientREF
     End If
 
 End Sub

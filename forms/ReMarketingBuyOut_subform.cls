@@ -40,7 +40,7 @@ End Sub
 
 Private Sub BuyOutDateSubmit_Click()
     Dim Response, SQLset As String
-    SQLset = "SET BuyOutDate =#" & BuyOutDateCBO & "#;"
+    SQLset = "SET BuyOutDate =#" & BuyOutDateCbo & "#;"
     If Me.BuyOutDate & "test" = "test" Then
         SQLset = "SET BuyOutDate = null;"
          Response = MsgBox("You're about to clear the Buy Out Dates, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Clear Dates?")
@@ -195,9 +195,9 @@ Private Sub Send2Excel_Click()
 End Sub
 
 Private Sub InvoicePaidDate_AfterUpdate()
-    If IsDate(InvoicePaidDate) And Me.unitstatus = "K" Then Me.unitstatus = "KS"
-    If IsDate(InvoicePaidDate) And Me.unitstatus = "R" Then Me.unitstatus = "S"
-    If IsDate(InvoicePaidDate) And Me.unitstatus Like "E*" Then Me.unitstatus = "S"
+    If IsDate(InvoicePaidDate) And Me.UnitStatus = "K" Then Me.UnitStatus = "KS"
+    If IsDate(InvoicePaidDate) And Me.UnitStatus = "R" Then Me.UnitStatus = "S"
+    If IsDate(InvoicePaidDate) And Me.UnitStatus Like "E*" Then Me.UnitStatus = "S"
 End Sub
 
 Private Sub UnitID_DblClick(Cancel As Integer)

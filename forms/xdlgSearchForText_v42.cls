@@ -1129,7 +1129,7 @@ Public Sub SearchTables()
             Next prp
 
             'Analyze each field and its properties in the table
-            For Each fld In tdf.fields
+            For Each fld In tdf.Fields
                 For Each prp In fld.Properties
                     If InStr(prp.Value, Me.drpSearchText) > 0 Then
                         If Err = 0 Then

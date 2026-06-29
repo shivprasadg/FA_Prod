@@ -94,14 +94,14 @@ Begin Form
             Name ="FormHeader"
         End
         Begin Section
-            Height =2523
+            Height =2538
             Name ="Detail"
             Begin
                 Begin TextBox
                     OverlapFlags =93
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =3660
+                    Left =3672
                     Top =600
                     Width =960
                     Height =285
@@ -114,9 +114,9 @@ Begin Form
                     GroupTable =1
                     BottomPadding =150
 
-                    LayoutCachedLeft =3660
+                    LayoutCachedLeft =3672
                     LayoutCachedTop =600
-                    LayoutCachedWidth =4620
+                    LayoutCachedWidth =4632
                     LayoutCachedHeight =885
                     ColumnStart =2
                     ColumnEnd =2
@@ -156,7 +156,7 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =5220
+                    Left =5244
                     Top =600
                     Height =285
                     FontSize =10
@@ -170,9 +170,9 @@ Begin Form
                     GroupTable =1
                     BottomPadding =150
 
-                    LayoutCachedLeft =5220
+                    LayoutCachedLeft =5244
                     LayoutCachedTop =600
-                    LayoutCachedWidth =6660
+                    LayoutCachedWidth =6684
                     LayoutCachedHeight =885
                     ColumnStart =4
                     ColumnEnd =4
@@ -184,7 +184,7 @@ Begin Form
                         Begin Label
                             OverlapFlags =93
                             TextAlign =1
-                            Left =4680
+                            Left =4692
                             Top =600
                             Width =480
                             Height =285
@@ -195,9 +195,9 @@ Begin Form
                             FontName ="Segoe UI"
                             GroupTable =1
                             BottomPadding =150
-                            LayoutCachedLeft =4680
+                            LayoutCachedLeft =4692
                             LayoutCachedTop =600
-                            LayoutCachedWidth =5160
+                            LayoutCachedWidth =5172
                             LayoutCachedHeight =885
                             ColumnStart =3
                             ColumnEnd =3
@@ -214,9 +214,9 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3660
-                    Top =1065
-                    Width =10770
+                    Left =3672
+                    Top =1080
+                    Width =10788
                     Height =1308
                     FontSize =10
                     TabIndex =3
@@ -227,10 +227,10 @@ Begin Form
                     GroupTable =1
                     BottomPadding =150
 
-                    LayoutCachedLeft =3660
-                    LayoutCachedTop =1065
-                    LayoutCachedWidth =14430
-                    LayoutCachedHeight =2373
+                    LayoutCachedLeft =3672
+                    LayoutCachedTop =1080
+                    LayoutCachedWidth =14460
+                    LayoutCachedHeight =2388
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -244,7 +244,7 @@ Begin Form
                             OverlapFlags =93
                             TextAlign =3
                             Left =2280
-                            Top =1065
+                            Top =1080
                             Width =1320
                             Height =1308
                             FontSize =8
@@ -255,9 +255,9 @@ Begin Form
                             GroupTable =1
                             BottomPadding =150
                             LayoutCachedLeft =2280
-                            LayoutCachedTop =1065
+                            LayoutCachedTop =1080
                             LayoutCachedWidth =3600
-                            LayoutCachedHeight =2373
+                            LayoutCachedHeight =2388
                             RowStart =1
                             RowEnd =1
                             ColumnStart =1
@@ -313,15 +313,15 @@ Begin Form
                     ForeShade =65.0
                 End
                 Begin EmptyCell
-                    Left =6720
+                    Left =6744
                     Top =600
                     Height =285
                     Name ="EmptyCell30"
                     GroupTable =1
                     BottomPadding =150
-                    LayoutCachedLeft =6720
+                    LayoutCachedLeft =6744
                     LayoutCachedTop =600
-                    LayoutCachedWidth =8160
+                    LayoutCachedWidth =8184
                     LayoutCachedHeight =885
                     ColumnStart =5
                     ColumnEnd =5
@@ -329,15 +329,15 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =8220
+                    Left =8244
                     Top =600
                     Height =285
                     Name ="EmptyCell32"
                     GroupTable =1
                     BottomPadding =150
-                    LayoutCachedLeft =8220
+                    LayoutCachedLeft =8244
                     LayoutCachedTop =600
-                    LayoutCachedWidth =9660
+                    LayoutCachedWidth =9684
                     LayoutCachedHeight =885
                     ColumnStart =6
                     ColumnEnd =6
@@ -345,16 +345,16 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =9720
+                    Left =9744
                     Top =600
-                    Width =4710
+                    Width =4716
                     Height =285
                     Name ="EmptyCell34"
                     GroupTable =1
                     BottomPadding =150
-                    LayoutCachedLeft =9720
+                    LayoutCachedLeft =9744
                     LayoutCachedTop =600
-                    LayoutCachedWidth =14430
+                    LayoutCachedWidth =14460
                     LayoutCachedHeight =885
                     ColumnStart =7
                     ColumnEnd =7
@@ -456,7 +456,7 @@ Begin Form
                     Left =360
                     Top =600
                     Width =1860
-                    Height =1773
+                    Height =1788
                     FontSize =10
                     TabIndex =2
                     Name ="AmendmentsList"
@@ -472,7 +472,7 @@ Begin Form
                     LayoutCachedLeft =360
                     LayoutCachedTop =600
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =2373
+                    LayoutCachedHeight =2388
                     RowEnd =1
                     LayoutGroup =1
                     GroupTable =1

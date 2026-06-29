@@ -68,7 +68,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =292
+            Height =300
             Name ="Detail"
             Begin
                 Begin TextBox
@@ -91,9 +91,9 @@ Begin Report
                     TextAlign =1
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =3150
-                    Top =30
-                    Width =3555
+                    Left =3156
+                    Top =36
+                    Width =3552
                     FontSize =9
                     TabIndex =2
                     ForeColor =7500402
@@ -101,10 +101,10 @@ Begin Report
                     ControlSource ="ChildDesc"
                     GroupTable =2
 
-                    LayoutCachedLeft =3150
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =6705
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =3156
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =6708
+                    LayoutCachedHeight =276
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -117,9 +117,9 @@ Begin Report
                     TextAlign =3
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =8475
-                    Top =30
-                    Width =1110
+                    Left =8484
+                    Top =36
+                    Width =1116
                     FontSize =9
                     TabIndex =4
                     ForeColor =7500402
@@ -128,10 +128,10 @@ Begin Report
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =2
 
-                    LayoutCachedLeft =8475
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =9585
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =8484
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9600
+                    LayoutCachedHeight =276
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -144,7 +144,7 @@ Begin Report
                     TextFontFamily =34
                     IMESentenceMode =3
                     Left =1140
-                    Top =30
+                    Top =36
                     Width =1950
                     FontSize =9
                     TabIndex =1
@@ -155,9 +155,9 @@ Begin Report
                     GroupTable =2
 
                     LayoutCachedLeft =1140
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =3090
-                    LayoutCachedHeight =270
+                    LayoutCachedHeight =276
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
@@ -167,9 +167,9 @@ Begin Report
                     TextAlign =1
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =6765
-                    Top =30
-                    Width =1650
+                    Left =6768
+                    Top =36
+                    Width =1656
                     FontSize =9
                     TabIndex =3
                     ForeColor =7500402
@@ -177,10 +177,10 @@ Begin Report
                     ControlSource ="ChildInvoiceNum"
                     GroupTable =2
 
-                    LayoutCachedLeft =6765
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =8415
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =6768
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =8424
+                    LayoutCachedHeight =276
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -192,8 +192,8 @@ Begin Report
                     TextAlign =2
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =9645
-                    Top =30
+                    Left =9660
+                    Top =36
                     Width =840
                     FontSize =9
                     TabIndex =5
@@ -204,10 +204,10 @@ Begin Report
                     GroupTable =2
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =9645
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =10485
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =9660
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =10500
+                    LayoutCachedHeight =276
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1

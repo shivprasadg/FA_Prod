@@ -881,11 +881,9 @@ Begin Form
                     Left =1200
                     Top =945
                     TabIndex =2
-                    BorderColor =10921638
                     Name ="ckDismiss"
                     AfterUpdate ="[Event Procedure]"
                     DefaultValue ="False"
-                    GridlineColor =10921638
                     VerticalAnchor =1
 
                     LayoutCachedLeft =1200

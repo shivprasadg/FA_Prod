@@ -26,7 +26,7 @@ Private Function CheckAcceptedDate() As Boolean
     For x = 1 To RST.RecordCount
         If IsDate(Nz(RST![UnitCOABack], RST!UnitCofACopy)) And Not IsDate(RST!UnitAcceptDate) Then
             x = RST.RecordCount
-            MsgBox "You Must enter an Accepted Date!" & vbNewLine & "VIN:" & RST!UnitVIN, vbCritical, "Missing Data"
+            MsgBox "You Must enter an Accepted Date!" & vbNewLine & "VIN:" & RST!unitvin, vbCritical, "Missing Data"
             CheckAcceptedDate = False
         Else
             RST.MoveNext

@@ -63,8 +63,8 @@ Private Sub LocVINBtn_Click()
     Me.TitleCheckInSub.Visible = True
     Me.TitleCheckInSub.Form.UnitTitleLogDate = Date
     Me.TitleCheckInSub.Form.UnitID = RST!UnitID
-    Me.TitleCheckInSub.Form.unitdesc = RST!UnitDescShortVer
-    Me.TitleCheckInSub.Form.UnitVIN = RST!VIN
+    Me.TitleCheckInSub.Form.UnitDesc = RST!UnitDescShortVer
+    Me.TitleCheckInSub.Form.unitvin = RST!VIN
     Me.TitleCheckInSub.Form.UnitYr = RST!MYear
     Me.TitleCheckInSub.Form.SchGrp = RST!ClientShortName & " | " & RST!Schedule & " | " & RST!UnitGroup
     Me.TitleCheckInSub.Form.UnitTitleNumber = DLookup("UnitTitleNumber", "Units", "UnitVIN='" & Me.seekvin & "'")

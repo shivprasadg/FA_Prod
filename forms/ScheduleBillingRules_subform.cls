@@ -6,7 +6,7 @@ Option Compare Database
 Dim SQLz, msg, BillScriptX, PDScriptX As String
 
 Private Sub Form_AfterInsert()
-If IsNull(Me.clientID) Then
+If IsNull(Me.ClientID) Then
 Call RunScript
 Call SaveUpdate_Click
 End If
@@ -34,13 +34,13 @@ If Me.Parent.MLOrig <> "FA" Then Exit Sub
         If x < 0 Then Exit Sub
         Dim ClientIDx, ScheduleIDx As Integer
         ReDim UnitGroupIdX(1 To x) As Integer
-            ClientIDx = Me.Parent.clientID
+            ClientIDx = Me.Parent.ClientID
             ScheduleIDx = Me.Parent.SchID
         For i = 1 To x
             UnitGroupIdX(i) = GroupList.ItemData(i)
         Next i
         GroupList.Selected(1) = True
-        Me.UnitGroupId = UnitGroupIdX(1)
+        Me.UnitGroupID = UnitGroupIdX(1)
         Me.PerDiemType = 1
         Call PerDiemType_Click
         Me.BillType = 1
@@ -64,11 +64,11 @@ If Me.Parent.MLOrig <> "FA" Then Exit Sub
                 'Me.GroupList
             Next i
         End If
-        If IsNull(Me.clientID) Then Me.clientID = ClientIDx
+        If IsNull(Me.ClientID) Then Me.ClientID = ClientIDx
     Else
     Call RunScript
     End If
-    Me.PerdiemFee.SetFocus
+    Me.PerDiemFee.SetFocus
 
 End Sub
 
@@ -163,7 +163,7 @@ Private Sub PerDiemType_Click()
     Me.PerDiemStartOn = 2
     Me.PerDiemFeeToUse = 3
     Me.PerDiemFeeLabel = 3
-    Me.PerdiemFee = 65
+    Me.PerDiemFee = 65
     Me.PerDiemShowFeeColumn = 1
     Me.PerDiemFeeTaxable = 0
     Me.PerDiemRefundFee = 0
@@ -192,7 +192,7 @@ Private Sub SaveUpdate_Click()
     ReDim UnitGroupIdX(1 To x), ClientIDx(1 To x), ScheduleIDx(1 To x) As Integer
     For i = 1 To x
          UnitGroupIdX(i) = GroupList.ItemData(i)
-         ClientIDx(i) = Me.Parent.clientID
+         ClientIDx(i) = Me.Parent.ClientID
          ScheduleIDx(i) = Me.Parent.SchID
        ' GroupList.Selected(i) = True
     Next i
@@ -240,7 +240,7 @@ Private Sub SaveUpdate_Click()
        '  UnitGroupIdX(i) = GroupList.ItemData(i)
         GroupList.Selected(1) = True
         DoCmd.GotoRecord , , acFirst
-        Me.PerdiemFee.SetFocus
+        Me.PerDiemFee.SetFocus
    ' Next i
 FixMe:
 'Set RST = Nothing
@@ -439,7 +439,7 @@ Private Sub RunPdScript()
     End If
 
     msg = msg & "Fee Type: <B>" & Me.PerDiemFeeToUse.Column(1) & "</B><ul>"
-    msg = msg & "<li>Fee Amount: <B>" & Format(Me.PerdiemFee, "$#,#.#0") & "</B></li>"
+    msg = msg & "<li>Fee Amount: <B>" & Format(Me.PerDiemFee, "$#,#.#0") & "</B></li>"
     msg = msg & "<li>Billed the<B> ENTIRE </B> term of the Per Diem</li>"
     If Me.PerDiemShowFeeColumn = 0 Then
         msg = msg & "<li>The Fee column will be<b> Hidden & Combined</B> as 'Rent'</li>"

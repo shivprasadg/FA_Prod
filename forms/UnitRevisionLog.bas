@@ -7,7 +7,6 @@ Begin Form
     AutoCenter = NotDefault
     NavigationButtons = NotDefault
     DividingLines = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
@@ -163,9 +162,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =2310
-                    Top =270
-                    Width =1965
+                    Left =2304
+                    Top =276
+                    Width =1968
                     Height =240
                     FontSize =9
                     ForeColor =0
@@ -177,10 +176,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =2310
-                    LayoutCachedTop =270
-                    LayoutCachedWidth =4275
-                    LayoutCachedHeight =510
+                    LayoutCachedLeft =2304
+                    LayoutCachedTop =276
+                    LayoutCachedWidth =4272
+                    LayoutCachedHeight =516
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -195,7 +194,7 @@ Begin Form
                     OverlapFlags =247
                     TextAlign =2
                     Left =5880
-                    Top =270
+                    Top =276
                     Width =2805
                     Height =240
                     FontSize =9
@@ -209,9 +208,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
                     LayoutCachedLeft =5880
-                    LayoutCachedTop =270
+                    LayoutCachedTop =276
                     LayoutCachedWidth =8685
-                    LayoutCachedHeight =510
+                    LayoutCachedHeight =516
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -225,9 +224,9 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Left =8685
-                    Top =270
-                    Width =2805
+                    Left =8688
+                    Top =276
+                    Width =2808
                     Height =240
                     FontSize =9
                     ForeColor =0
@@ -239,10 +238,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =8685
-                    LayoutCachedTop =270
-                    LayoutCachedWidth =11490
-                    LayoutCachedHeight =510
+                    LayoutCachedLeft =8688
+                    LayoutCachedTop =276
+                    LayoutCachedWidth =11496
+                    LayoutCachedHeight =516
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -257,8 +256,8 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =255
                     TextAlign =2
-                    Left =11490
-                    Top =270
+                    Left =11508
+                    Top =276
                     Width =1440
                     Height =240
                     FontSize =9
@@ -270,10 +269,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =11490
-                    LayoutCachedTop =270
-                    LayoutCachedWidth =12930
-                    LayoutCachedHeight =510
+                    LayoutCachedLeft =11508
+                    LayoutCachedTop =276
+                    LayoutCachedWidth =12948
+                    LayoutCachedHeight =516
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -289,9 +288,9 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =247
                     TextAlign =2
-                    Left =4275
-                    Top =270
-                    Width =1605
+                    Left =4272
+                    Top =276
+                    Width =1608
                     Height =240
                     FontSize =9
                     Name ="Label7"
@@ -302,10 +301,10 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =4275
-                    LayoutCachedTop =270
+                    LayoutCachedLeft =4272
+                    LayoutCachedTop =276
                     LayoutCachedWidth =5880
-                    LayoutCachedHeight =510
+                    LayoutCachedHeight =516
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -321,8 +320,8 @@ Begin Form
                     OverlapFlags =119
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =11490
-                    Top =30
+                    Left =11508
+                    Top =36
                     ColumnOrder =4
                     FontSize =9
                     TabIndex =3
@@ -341,10 +340,10 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =11490
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12930
-                    LayoutCachedHeight =270
+                    LayoutCachedLeft =11508
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12948
+                    LayoutCachedHeight =276
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
@@ -359,8 +358,8 @@ Begin Form
                         Begin Label
                             OverlapFlags =93
                             TextAlign =3
-                            Top =30
-                            Width =11490
+                            Top =36
+                            Width =11496
                             Height =240
                             FontSize =9
                             BorderColor =0
@@ -372,9 +371,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedTop =30
-                            LayoutCachedWidth =11490
-                            LayoutCachedHeight =270
+                            LayoutCachedTop =36
+                            LayoutCachedWidth =11496
+                            LayoutCachedHeight =276
                             ColumnEnd =4
                             LayoutGroup =1
                             ThemeFontIndex =-1
@@ -547,7 +546,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =247
                     TextAlign =2
-                    Top =270
+                    Top =276
                     Width =2304
                     Height =240
                     FontSize =9
@@ -560,9 +559,9 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedTop =270
+                    LayoutCachedTop =276
                     LayoutCachedWidth =2304
-                    LayoutCachedHeight =510
+                    LayoutCachedHeight =516
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1

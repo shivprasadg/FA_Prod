@@ -36,13 +36,13 @@ Private Sub EditMe_Click()
     DoCmd.RunSQL ("Delete From TaxBaseTemp")
     DoCmd.RunSQL (SQLz)
      DoCmd.SetWarnings True
-    DoCmd.OpenForm "Tax_Add", acNormal, , , , , "State|" & Me.Parent.TaxTypeId & "|" & Me.Parent.StateID & "|" & CurrLevelTxRate & "|Edit"
+    DoCmd.OpenForm "Tax_Add", acNormal, , , , , "State|" & Me.Parent.TaxTypeID & "|" & Me.Parent.StateID & "|" & CurrLevelTxRate & "|Edit"
 End Sub
 
 Private Sub Form_Current()
     On Error GoTo FixMe
     Me.txtCurrent = Me.ID
-    Me.Parent.TaxTypeId = Me.TaxTypeId
+    Me.Parent.TaxTypeID = Me.TaxTypeID
 FixMe:
 End Sub
 

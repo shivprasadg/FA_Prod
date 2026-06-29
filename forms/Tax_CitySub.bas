@@ -170,12 +170,11 @@ Begin Form
                     Height =435
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label3"
                     Caption ="Tax Cert\015\012Renewal"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =5685
                     LayoutCachedTop =30
                     LayoutCachedWidth =7080
@@ -195,7 +194,9 @@ Begin Form
                     ColumnOrder =0
                     FontSize =8
                     BorderColor =12632256
+                    ForeColor =0
                     Name ="txtCurrent"
+                    GridlineColor =0
 
                     LayoutCachedLeft =5520
                     LayoutCachedTop =60
@@ -218,12 +219,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="StateNameLabel"
                     Caption ="City (county)"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =30
                     LayoutCachedWidth =2955
@@ -241,12 +241,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="TaxNumberLabel"
                     Caption ="City"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =2940
                     LayoutCachedTop =30
                     LayoutCachedWidth =5415
@@ -264,12 +263,11 @@ Begin Form
                     Height =435
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label169"
                     Caption ="Rent Receipt"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =7095
                     LayoutCachedTop =30
                     LayoutCachedWidth =8040
@@ -287,12 +285,11 @@ Begin Form
                     Height =216
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label206"
                     Caption ="Tax ID Number"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =2940
                     LayoutCachedTop =246
                     LayoutCachedWidth =5415
@@ -310,12 +307,11 @@ Begin Form
                     Height =225
                     FontSize =9
                     FontWeight =700
-                    BorderColor =8355711
+                    ForeColor =0
                     Name ="Label207"
                     Caption ="Name"
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =60
                     LayoutCachedTop =255
                     LayoutCachedWidth =2955
@@ -343,6 +339,7 @@ Begin Form
                     FontWeight =700
                     TabIndex =3
                     BorderColor =10319446
+                    ForeColor =0
                     Name ="SalesTaxOrUseTaxRenewDate"
                     ControlSource ="SalesTaxOrUseTaxRenewDate"
                     Format ="Short Date"
@@ -351,7 +348,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =5685
                     LayoutCachedWidth =7080
@@ -377,7 +373,7 @@ Begin Form
                     Height =255
                     FontSize =10
                     TabIndex =1
-                    BorderColor =10921638
+                    ForeColor =0
                     Name ="CityName"
                     ControlSource ="City2"
                     ControlTipText ="Double-Click to Edit Event"
@@ -385,7 +381,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedWidth =2955
@@ -408,6 +403,7 @@ Begin Form
                     FontSize =10
                     TabIndex =2
                     BorderColor =10319446
+                    ForeColor =0
                     Name ="SalesTaxOrUseTaxNumber"
                     ControlSource ="SalesTaxOrUseTaxNumber"
                     ControlTipText ="Tax Cert Number provided to FA from this City"
@@ -415,7 +411,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2940
                     LayoutCachedWidth =5415
@@ -441,12 +436,9 @@ Begin Form
                     Width =273
                     Height =231
                     FontSize =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="ID"
                     ControlSource ="ID"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7095
                     LayoutCachedWidth =7368
@@ -472,6 +464,7 @@ Begin Form
                         0x5b00490044005d003d005b00740078007400430075007200720065006e007400 ,
                         0x5d0000000000
                     End
+                    GridlineColor =0
 
                     LayoutCachedTop =240
                     LayoutCachedWidth =8154
@@ -497,14 +490,12 @@ Begin Form
                     Width =390
                     Height =195
                     TabIndex =4
-                    BorderColor =10921638
                     Name ="RentReceiptAvailable"
                     ControlSource ="RentReceiptAvailable"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7500
                     LayoutCachedTop =50
@@ -527,12 +518,9 @@ Begin Form
                     Height =231
                     FontSize =8
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="TaxCountyID"
                     ControlSource ="TaxCountyID"
                     TopPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =7725
                     LayoutCachedWidth =7998

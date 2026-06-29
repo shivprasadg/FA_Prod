@@ -11,7 +11,7 @@ Begin Report
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =15308
+    Width =15354
     DatasheetFontHeight =11
     ItemSuffix =124
     Left =4080
@@ -113,6 +113,7 @@ Begin Report
                     Height =135
                     BorderColor =10319446
                     Name ="Box30"
+                    GridlineColor =0
                     LayoutCachedTop =585
                     LayoutCachedWidth =15300
                     LayoutCachedHeight =720
@@ -130,8 +131,10 @@ Begin Report
                     Height =810
                     FontSize =32
                     FontWeight =700
+                    BorderColor =0
                     Name ="Label31"
                     Caption ="Deal to BLCD Report"
+                    GridlineColor =0
                     LayoutCachedTop =15
                     LayoutCachedWidth =9360
                     LayoutCachedHeight =825
@@ -150,8 +153,10 @@ Begin Report
                     Height =810
                     FontSize =32
                     FontWeight =700
+                    BorderColor =0
                     Name ="Label231"
                     Caption ="Deal to BLCD Report"
+                    GridlineColor =0
                     LayoutCachedWidth =8625
                     LayoutCachedHeight =810
                     ThemeFontIndex =-1
@@ -384,9 +389,11 @@ Begin Report
                     ColumnOrder =0
                     FontSize =8
                     FontWeight =700
+                    BorderColor =0
                     ForeColor =16777215
                     Name ="Text71"
                     ControlSource ="=\"| Internal Use Only |\""
+                    GridlineColor =0
 
                     LayoutCachedLeft =11310
                     LayoutCachedTop =540
@@ -407,7 +414,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =885
+            Height =888
             BackColor =15527148
             Name ="GroupHeader0"
             AlternateBackThemeColorIndex =1
@@ -424,13 +431,10 @@ Begin Report
                     ColumnWidth =3495
                     FontSize =16
                     FontWeight =700
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Client"
                     ControlSource ="Client"
                     StatusBarText ="Short Name for Reporting"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =105
                     LayoutCachedTop =45
@@ -440,13 +444,12 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =6210
-                    Top =645
-                    Width =1170
+                    Left =6216
+                    Top =648
+                    Width =1176
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label2"
                     Caption ="Deal Entered"
                     FontName ="Segoe UI"
@@ -455,11 +458,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6210
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =7380
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =6216
+                    LayoutCachedTop =648
+                    LayoutCachedWidth =7392
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -472,23 +474,21 @@ Begin Report
                 End
                 Begin Label
                     Left =240
-                    Top =645
+                    Top =648
                     Width =5940
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label1"
                     Caption ="Description"
                     FontName ="Segoe UI"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =240
-                    LayoutCachedTop =645
+                    LayoutCachedTop =648
                     LayoutCachedWidth =6180
-                    LayoutCachedHeight =885
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -499,24 +499,22 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =8340
-                    Top =645
+                    Left =8364
+                    Top =648
                     Width =1140
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label20"
                     Caption ="Deal Awarded"
                     FontName ="Segoe UI"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =8340
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =9480
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =8364
+                    LayoutCachedTop =648
+                    LayoutCachedWidth =9504
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -529,24 +527,22 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =7410
-                    Top =645
-                    Width =870
+                    Left =7428
+                    Top =648
+                    Width =876
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label32"
                     Caption ="Days"
                     FontName ="Segoe UI"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =7410
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =8280
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =7428
+                    LayoutCachedTop =648
+                    LayoutCachedWidth =8304
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -559,24 +555,22 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =9540
-                    Top =645
-                    Width =870
+                    Left =9564
+                    Top =648
+                    Width =876
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label35"
                     Caption ="Days"
                     FontName ="Segoe UI"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =9540
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =10410
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =9564
+                    LayoutCachedTop =648
+                    LayoutCachedWidth =10440
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -589,24 +583,22 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =10470
-                    Top =645
-                    Width =1155
+                    Left =10500
+                    Top =648
+                    Width =1164
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label34"
                     Caption ="1st Schedule"
                     FontName ="Segoe UI"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =10470
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =11625
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =10500
+                    LayoutCachedTop =648
+                    LayoutCachedWidth =11664
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =6
@@ -619,24 +611,22 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =11685
-                    Top =645
-                    Width =870
+                    Left =11724
+                    Top =648
+                    Width =876
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label38"
                     Caption ="Days"
                     FontName ="Segoe UI"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11685
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =12555
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =11724
+                    LayoutCachedTop =648
+                    LayoutCachedWidth =12600
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =8
@@ -649,24 +639,22 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =12615
-                    Top =645
-                    Width =1155
+                    Left =12660
+                    Top =648
+                    Width =1164
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label37"
                     Caption ="1st BLCD"
                     FontName ="Segoe UI"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =12615
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =13770
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =12660
+                    LayoutCachedTop =648
+                    LayoutCachedWidth =13824
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =9
@@ -679,12 +667,11 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =6210
-                    Top =390
-                    Width =2685
-                    Height =255
+                    Left =6216
+                    Top =396
+                    Width =2700
+                    Height =252
                     FontSize =10
-                    BorderColor =8355711
                     Name ="Label85"
                     Caption ="             ┌────┐┌────┐"
                     FontName ="Arial"
@@ -692,11 +679,10 @@ Begin Report
                     LeftPadding =0
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6210
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =8895
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =6216
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =8916
+                    LayoutCachedHeight =648
                     ColumnStart =1
                     ColumnEnd =3
                     LayoutGroup =1
@@ -707,24 +693,22 @@ Begin Report
                     GroupTable =2
                 End
                 Begin Label
-                    Left =13830
-                    Top =645
+                    Left =13884
+                    Top =648
                     Width =1440
                     Height =240
                     FontSize =8
                     FontWeight =700
-                    BorderColor =8355711
                     Name ="Label36"
                     Caption ="Last ATF Rev."
                     FontName ="Segoe UI"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =13830
-                    LayoutCachedTop =645
-                    LayoutCachedWidth =15270
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =13884
+                    LayoutCachedTop =648
+                    LayoutCachedWidth =15324
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =11
@@ -737,53 +721,50 @@ Begin Report
                 End
                 Begin EmptyCell
                     Left =240
-                    Top =390
+                    Top =396
                     Width =5940
-                    Height =255
+                    Height =252
                     Name ="EmptyCell92"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =240
-                    LayoutCachedTop =390
+                    LayoutCachedTop =396
                     LayoutCachedWidth =6180
-                    LayoutCachedHeight =645
+                    LayoutCachedHeight =648
                     LayoutGroup =1
                     GroupTable =2
                 End
                 Begin EmptyCell
-                    Left =13830
-                    Top =390
-                    Height =255
+                    Left =13884
+                    Top =396
+                    Height =252
                     Name ="EmptyCell100"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =13830
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =15270
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =13884
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =15324
+                    LayoutCachedHeight =648
                     ColumnStart =11
                     ColumnEnd =11
                     LayoutGroup =1
                     GroupTable =2
                 End
                 Begin EmptyCell
-                    Left =13245
-                    Top =390
-                    Width =525
-                    Height =255
+                    Left =13296
+                    Top =396
+                    Width =528
+                    Height =252
                     Name ="EmptyCell103"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =13245
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =13770
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =13296
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =13824
+                    LayoutCachedHeight =648
                     ColumnStart =10
                     ColumnEnd =10
                     LayoutGroup =1
@@ -791,23 +772,21 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =11100
-                    Top =390
-                    Width =2092
-                    Height =255
+                    Left =11136
+                    Top =396
+                    Width =2100
+                    Height =252
                     FontSize =10
-                    BorderColor =8355711
                     Name ="Label104"
                     Caption ="   ┌────┐┌────┐"
                     FontName ="Arial"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =11100
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =13192
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =11136
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =13236
+                    LayoutCachedHeight =648
                     ColumnStart =7
                     ColumnEnd =9
                     LayoutGroup =1
@@ -819,23 +798,21 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =8955
-                    Top =390
-                    Width =2092
-                    Height =255
+                    Left =8976
+                    Top =396
+                    Width =2100
+                    Height =252
                     FontSize =10
-                    BorderColor =8355711
                     Name ="Label106"
                     Caption ="   ┌────┐┌────┐"
                     FontName ="Arial"
                     GroupTable =2
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =8955
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =11047
-                    LayoutCachedHeight =645
+                    LayoutCachedLeft =8976
+                    LayoutCachedTop =396
+                    LayoutCachedWidth =11076
+                    LayoutCachedHeight =648
                     ColumnStart =4
                     ColumnEnd =6
                     LayoutGroup =1
@@ -857,14 +834,12 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =6210
-                    Top =30
-                    Width =1170
-                    Height =255
+                    Left =6216
+                    Top =36
+                    Width =1176
+                    Height =252
                     FontSize =10
                     TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="DealEntered"
                     ControlSource ="DealEntered"
                     Format ="Short Date"
@@ -872,13 +847,12 @@ Begin Report
                     GroupTable =2
                     LeftPadding =0
                     RightPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =6210
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =7380
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =6216
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7392
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -891,23 +865,20 @@ Begin Report
                     OldBorderStyle =0
                     IMESentenceMode =3
                     Left =240
-                    Top =30
+                    Top =36
                     Width =5940
-                    Height =255
+                    Height =252
                     ColumnWidth =6960
                     FontSize =10
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="DealDesc"
                     ControlSource ="DealDesc"
                     FontName ="Segoe UI"
                     GroupTable =2
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =240
-                    LayoutCachedTop =30
+                    LayoutCachedTop =36
                     LayoutCachedWidth =6180
-                    LayoutCachedHeight =285
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =1
@@ -918,26 +889,23 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =8340
-                    Top =30
+                    Left =8364
+                    Top =36
                     Width =1140
-                    Height =255
+                    Height =252
                     FontSize =10
                     TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="ResultDate"
                     ControlSource ="ResultDate"
                     Format ="General Date"
                     FontName ="Segoe UI"
                     GroupTable =2
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =8340
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =9480
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =8364
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9504
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =3
@@ -950,24 +918,21 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =7410
-                    Top =30
-                    Width =870
-                    Height =255
+                    Left =7428
+                    Top =36
+                    Width =876
+                    Height =252
                     FontSize =10
                     TabIndex =2
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="DaysToAward"
                     ControlSource ="DaysToAward"
                     FontName ="Segoe UI"
                     GroupTable =2
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =7410
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =8280
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =7428
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =8304
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2
@@ -980,14 +945,12 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =9540
-                    Top =30
-                    Width =870
-                    Height =255
+                    Left =9564
+                    Top =36
+                    Width =876
+                    Height =252
                     FontSize =10
                     TabIndex =4
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="LPAFDays"
                     ControlSource ="LPAFDays"
                     FontName ="Segoe UI"
@@ -999,12 +962,11 @@ Begin Report
                         0x2200700065006e00640069006e006700220000000000
                     End
                     GroupTable =2
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =9540
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =10410
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =9564
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =10440
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =5
@@ -1023,15 +985,13 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =10470
-                    Top =30
-                    Width =1155
-                    Height =255
+                    Left =10500
+                    Top =36
+                    Width =1164
+                    Height =252
                     ColumnWidth =1785
                     FontSize =10
                     TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="ScheduleAdded"
                     ControlSource ="ScheduleAdded"
                     FontName ="Segoe UI"
@@ -1042,12 +1002,11 @@ Begin Report
                         0x2200500045004e00440049004e004700220000000000
                     End
                     GroupTable =2
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =10470
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =11625
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =10500
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =11664
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =6
@@ -1065,24 +1024,21 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =11685
-                    Top =30
-                    Width =870
-                    Height =255
+                    Left =11724
+                    Top =36
+                    Width =876
+                    Height =252
                     FontSize =10
                     TabIndex =6
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="OPSDays"
                     ControlSource ="OPSDays"
                     FontName ="Segoe UI"
                     GroupTable =2
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11685
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =12555
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =11724
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12600
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =8
@@ -1095,14 +1051,12 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =12615
-                    Top =30
-                    Width =1155
-                    Height =255
+                    Left =12660
+                    Top =36
+                    Width =1164
+                    Height =252
                     FontSize =10
                     TabIndex =7
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="BLCD"
                     ControlSource ="BLCD"
                     FontName ="Segoe UI"
@@ -1113,12 +1067,11 @@ Begin Report
                         0x2200500045004e00440049004e004700220000000000
                     End
                     GroupTable =2
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =12615
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =13770
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =12660
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =13824
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =9
@@ -1136,23 +1089,20 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =13830
-                    Top =30
-                    Height =255
+                    Left =13884
+                    Top =36
+                    Height =252
                     FontSize =10
                     TabIndex =8
-                    BorderColor =10921638
-                    ForeColor =4210752
                     Name ="Assignee"
                     ControlSource ="ATFRev"
                     FontName ="Segoe UI"
                     GroupTable =2
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =13830
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =15270
-                    LayoutCachedHeight =285
+                    LayoutCachedLeft =13884
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =15324
+                    LayoutCachedHeight =288
                     RowStart =2
                     RowEnd =2
                     ColumnStart =11

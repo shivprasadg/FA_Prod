@@ -35,8 +35,8 @@ End Sub
 Public Sub LPAF_Click()
 Dim XLS As String
     Dim Countx As Integer
-SQLz = "Select * From Client_LPAF Where ClientId=" & Me.Parent.clientID & ";"
-Countx = DCount("clientID", "Client_LPAF", "ClientId=" & Me.Parent.clientID)
+SQLz = "Select * From Client_LPAF Where ClientId=" & Me.Parent.ClientID & ";"
+Countx = DCount("clientID", "Client_LPAF", "ClientId=" & Me.Parent.ClientID)
 If Nz(Countx, 0) <= 0 Then
 MsgBox "No Matching Units", vbInformation, "No Result"
 Exit Sub

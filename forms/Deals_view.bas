@@ -587,7 +587,7 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =900
-                    Top =1500
+                    Top =1512
                     Width =900
                     FontWeight =700
                     TabIndex =4
@@ -602,9 +602,9 @@ Begin Form
                     GroupTable =4
 
                     LayoutCachedLeft =900
-                    LayoutCachedTop =1500
+                    LayoutCachedTop =1512
                     LayoutCachedWidth =1800
-                    LayoutCachedHeight =1740
+                    LayoutCachedHeight =1752
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -620,9 +620,9 @@ Begin Form
                     TextAlign =2
                     IMESentenceMode =3
                     Left =900
-                    Top =2160
+                    Top =2172
                     Width =1152
-                    Height =255
+                    Height =252
                     TabIndex =7
                     Name ="RFPDate"
                     ControlSource ="dealRFPDate"
@@ -630,9 +630,9 @@ Begin Form
                     GroupTable =11
 
                     LayoutCachedLeft =900
-                    LayoutCachedTop =2160
+                    LayoutCachedTop =2172
                     LayoutCachedWidth =2052
-                    LayoutCachedHeight =2415
+                    LayoutCachedHeight =2424
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =2
@@ -647,20 +647,20 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =2115
-                    Top =2160
-                    Width =1155
-                    Height =255
+                    Left =2124
+                    Top =2172
+                    Width =1152
+                    Height =252
                     TabIndex =8
                     Name ="dealLPAFDue"
                     ControlSource ="dealLPAFDue"
                     Format ="Short Date"
                     GroupTable =11
 
-                    LayoutCachedLeft =2115
-                    LayoutCachedTop =2160
-                    LayoutCachedWidth =3270
-                    LayoutCachedHeight =2415
+                    LayoutCachedLeft =2124
+                    LayoutCachedTop =2172
+                    LayoutCachedWidth =3276
+                    LayoutCachedHeight =2424
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -677,10 +677,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =3330
-                    Top =2160
-                    Width =1155
-                    Height =255
+                    Left =3348
+                    Top =2172
+                    Width =1152
+                    Height =252
                     TabIndex =9
                     Name ="dealLPAFcomp"
                     ControlSource ="dealLPAFcomp"
@@ -688,10 +688,10 @@ Begin Form
                     StatusBarText ="2/29/12 added date completed"
                     GroupTable =11
 
-                    LayoutCachedLeft =3330
-                    LayoutCachedTop =2160
-                    LayoutCachedWidth =4485
-                    LayoutCachedHeight =2415
+                    LayoutCachedLeft =3348
+                    LayoutCachedTop =2172
+                    LayoutCachedWidth =4500
+                    LayoutCachedHeight =2424
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -710,10 +710,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =4545
-                    Top =2160
-                    Width =1155
-                    Height =255
+                    Left =4572
+                    Top =2172
+                    Width =1152
+                    Height =252
                     TabIndex =10
                     Name ="dealLPAFSent"
                     ControlSource ="dealLPAFSent"
@@ -754,10 +754,10 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =4545
-                    LayoutCachedTop =2160
-                    LayoutCachedWidth =5700
-                    LayoutCachedHeight =2415
+                    LayoutCachedLeft =4572
+                    LayoutCachedTop =2172
+                    LayoutCachedWidth =5724
+                    LayoutCachedHeight =2424
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -776,10 +776,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =5760
-                    Top =2160
-                    Width =1155
-                    Height =255
+                    Left =5796
+                    Top =2172
+                    Width =1152
+                    Height =252
                     TabIndex =11
                     BackColor =14151142
                     Name ="dealEstDelDate"
@@ -787,10 +787,10 @@ Begin Form
                     Format ="Short Date"
                     GroupTable =11
 
-                    LayoutCachedLeft =5760
-                    LayoutCachedTop =2160
-                    LayoutCachedWidth =6915
-                    LayoutCachedHeight =2415
+                    LayoutCachedLeft =5796
+                    LayoutCachedTop =2172
+                    LayoutCachedWidth =6948
+                    LayoutCachedHeight =2424
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -809,7 +809,7 @@ Begin Form
                     TextAlign =3
                     IMESentenceMode =3
                     Left =900
-                    Top =2820
+                    Top =2832
                     Width =780
                     TabIndex =17
                     Name ="dealMPY"
@@ -818,9 +818,9 @@ Begin Form
                     GroupTable =32
 
                     LayoutCachedLeft =900
-                    LayoutCachedTop =2820
+                    LayoutCachedTop =2832
                     LayoutCachedWidth =1680
-                    LayoutCachedHeight =3060
+                    LayoutCachedHeight =3072
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =3
@@ -835,18 +835,18 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =1740
-                    Top =2820
+                    Left =1752
+                    Top =2832
                     Width =480
                     TabIndex =18
                     Name ="dealTerm"
                     ControlSource ="dealTerm"
                     GroupTable =32
 
-                    LayoutCachedLeft =1740
-                    LayoutCachedTop =2820
-                    LayoutCachedWidth =2220
-                    LayoutCachedHeight =3060
+                    LayoutCachedLeft =1752
+                    LayoutCachedTop =2832
+                    LayoutCachedWidth =2232
+                    LayoutCachedHeight =3072
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -863,8 +863,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =2280
-                    Top =2820
+                    Left =2304
+                    Top =2832
                     Width =1020
                     FontWeight =700
                     TabIndex =19
@@ -873,10 +873,10 @@ Begin Form
                     AfterUpdate ="[Event Procedure]"
                     GroupTable =32
 
-                    LayoutCachedLeft =2280
-                    LayoutCachedTop =2820
-                    LayoutCachedWidth =3300
-                    LayoutCachedHeight =3060
+                    LayoutCachedLeft =2304
+                    LayoutCachedTop =2832
+                    LayoutCachedWidth =3324
+                    LayoutCachedHeight =3072
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -894,8 +894,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =3360
-                    Top =2820
+                    Left =3396
+                    Top =2832
                     TabIndex =20
                     Name ="dealUnitPrice"
                     ControlSource ="dealUnitPrice"
@@ -903,10 +903,10 @@ Begin Form
                     AfterUpdate ="[Event Procedure]"
                     GroupTable =32
 
-                    LayoutCachedLeft =3360
-                    LayoutCachedTop =2820
-                    LayoutCachedWidth =4800
-                    LayoutCachedHeight =3060
+                    LayoutCachedLeft =3396
+                    LayoutCachedTop =2832
+                    LayoutCachedWidth =4836
+                    LayoutCachedHeight =3072
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -1337,8 +1337,8 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =4860
-                    Top =2820
+                    Left =4908
+                    Top =2832
                     Width =1560
                     TabIndex =21
                     Name ="Text182"
@@ -1346,10 +1346,10 @@ Begin Form
                     Format ="$#,##0.00;($#,##0.00)"
                     GroupTable =32
 
-                    LayoutCachedLeft =4860
-                    LayoutCachedTop =2820
-                    LayoutCachedWidth =6420
-                    LayoutCachedHeight =3060
+                    LayoutCachedLeft =4908
+                    LayoutCachedTop =2832
+                    LayoutCachedWidth =6468
+                    LayoutCachedHeight =3072
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -1463,18 +1463,18 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1860
-                    Top =1500
+                    Left =1872
+                    Top =1512
                     Width =6300
                     TabIndex =5
                     Name ="Text200"
                     ControlSource ="dealShortDesc"
                     GroupTable =4
 
-                    LayoutCachedLeft =1860
-                    LayoutCachedTop =1500
-                    LayoutCachedWidth =8160
-                    LayoutCachedHeight =1740
+                    LayoutCachedLeft =1872
+                    LayoutCachedTop =1512
+                    LayoutCachedWidth =8172
+                    LayoutCachedHeight =1752
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -1509,16 +1509,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =1860
+                    Left =1872
                     Top =1200
                     Width =6300
                     Height =240
                     Name ="Label201"
                     Caption ="Desc:"
                     GroupTable =4
-                    LayoutCachedLeft =1860
+                    LayoutCachedLeft =1872
                     LayoutCachedTop =1200
-                    LayoutCachedWidth =8160
+                    LayoutCachedWidth =8172
                     LayoutCachedHeight =1440
                     ColumnStart =1
                     ColumnEnd =1
@@ -1532,16 +1532,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =2115
+                    Left =2124
                     Top =1860
-                    Width =1155
+                    Width =1152
                     Height =240
                     Name ="Label112"
                     Caption ="LPAF Due"
                     GroupTable =11
-                    LayoutCachedLeft =2115
+                    LayoutCachedLeft =2124
                     LayoutCachedTop =1860
-                    LayoutCachedWidth =3270
+                    LayoutCachedWidth =3276
                     LayoutCachedHeight =2100
                     ColumnStart =1
                     ColumnEnd =1
@@ -1555,16 +1555,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =3330
+                    Left =3348
                     Top =1860
-                    Width =1155
+                    Width =1152
                     Height =240
                     Name ="Label179"
                     Caption ="LPAF Complete"
                     GroupTable =11
-                    LayoutCachedLeft =3330
+                    LayoutCachedLeft =3348
                     LayoutCachedTop =1860
-                    LayoutCachedWidth =4485
+                    LayoutCachedWidth =4500
                     LayoutCachedHeight =2100
                     ColumnStart =2
                     ColumnEnd =2
@@ -1578,16 +1578,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =4545
+                    Left =4572
                     Top =1860
-                    Width =1155
+                    Width =1152
                     Height =240
                     Name ="Label115"
                     Caption ="LPAF Sent"
                     GroupTable =11
-                    LayoutCachedLeft =4545
+                    LayoutCachedLeft =4572
                     LayoutCachedTop =1860
-                    LayoutCachedWidth =5700
+                    LayoutCachedWidth =5724
                     LayoutCachedHeight =2100
                     ColumnStart =3
                     ColumnEnd =3
@@ -1622,16 +1622,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =5760
+                    Left =5796
                     Top =1860
-                    Width =1155
+                    Width =1152
                     Height =240
                     Name ="Label160"
                     Caption ="Est Delivery"
                     GroupTable =11
-                    LayoutCachedLeft =5760
+                    LayoutCachedLeft =5796
                     LayoutCachedTop =1860
-                    LayoutCachedWidth =6915
+                    LayoutCachedWidth =6948
                     LayoutCachedHeight =2100
                     ColumnStart =4
                     ColumnEnd =4
@@ -1666,16 +1666,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =1740
+                    Left =1752
                     Top =2520
                     Width =480
                     Height =240
                     Name ="Label172"
                     Caption ="Term"
                     GroupTable =32
-                    LayoutCachedLeft =1740
+                    LayoutCachedLeft =1752
                     LayoutCachedTop =2520
-                    LayoutCachedWidth =2220
+                    LayoutCachedWidth =2232
                     LayoutCachedHeight =2760
                     ColumnStart =1
                     ColumnEnd =1
@@ -1689,16 +1689,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =2280
+                    Left =2304
                     Top =2520
                     Width =1020
                     Height =240
                     Name ="Label149"
                     Caption ="Quantity"
                     GroupTable =32
-                    LayoutCachedLeft =2280
+                    LayoutCachedLeft =2304
                     LayoutCachedTop =2520
-                    LayoutCachedWidth =3300
+                    LayoutCachedWidth =3324
                     LayoutCachedHeight =2760
                     ColumnStart =2
                     ColumnEnd =2
@@ -1712,16 +1712,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =3360
+                    Left =3396
                     Top =2520
                     Width =1440
                     Height =240
                     Name ="Label150"
                     Caption ="Unit Price"
                     GroupTable =32
-                    LayoutCachedLeft =3360
+                    LayoutCachedLeft =3396
                     LayoutCachedTop =2520
-                    LayoutCachedWidth =4800
+                    LayoutCachedWidth =4836
                     LayoutCachedHeight =2760
                     ColumnStart =3
                     ColumnEnd =3
@@ -1735,16 +1735,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =4860
+                    Left =4908
                     Top =2520
                     Width =1560
                     Height =240
                     Name ="Label183"
                     Caption ="Total Deal"
                     GroupTable =32
-                    LayoutCachedLeft =4860
+                    LayoutCachedLeft =4908
                     LayoutCachedTop =2520
-                    LayoutCachedWidth =6420
+                    LayoutCachedWidth =6468
                     LayoutCachedHeight =2760
                     ColumnStart =4
                     ColumnEnd =4

@@ -757,9 +757,9 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =2355
+                    Left =2376
                     Top =480
-                    Width =619
+                    Width =624
                     Height =195
                     FontSize =8
                     TabIndex =1
@@ -771,9 +771,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =2355
+                    LayoutCachedLeft =2376
                     LayoutCachedTop =480
-                    LayoutCachedWidth =2974
+                    LayoutCachedWidth =3000
                     LayoutCachedHeight =675
                     ColumnStart =1
                     ColumnEnd =1
@@ -808,9 +808,9 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =4815
+                    Left =4872
                     Top =480
-                    Width =615
+                    Width =612
                     Height =195
                     FontSize =8
                     TabIndex =3
@@ -822,9 +822,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =4815
+                    LayoutCachedLeft =4872
                     LayoutCachedTop =480
-                    LayoutCachedWidth =5430
+                    LayoutCachedWidth =5484
                     LayoutCachedHeight =675
                     ColumnStart =5
                     ColumnEnd =5
@@ -834,9 +834,9 @@ Begin Form
                         Begin Label
                             OverlapFlags =93
                             TextAlign =1
-                            Left =4200
+                            Left =4248
                             Top =480
-                            Width =615
+                            Width =612
                             Height =195
                             FontSize =8
                             Name ="Label10"
@@ -846,9 +846,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =4200
+                            LayoutCachedLeft =4248
                             LayoutCachedTop =480
-                            LayoutCachedWidth =4815
+                            LayoutCachedWidth =4860
                             LayoutCachedHeight =675
                             ColumnStart =4
                             ColumnEnd =4
@@ -861,9 +861,9 @@ Begin Form
                     OverlapFlags =87
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3585
+                    Left =3636
                     Top =480
-                    Width =615
+                    Width =612
                     Height =195
                     FontSize =8
                     TabIndex =2
@@ -875,9 +875,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =3585
+                    LayoutCachedLeft =3636
                     LayoutCachedTop =480
-                    LayoutCachedWidth =4200
+                    LayoutCachedWidth =4248
                     LayoutCachedHeight =675
                     ColumnStart =3
                     ColumnEnd =3
@@ -887,9 +887,9 @@ Begin Form
                         Begin Label
                             OverlapFlags =87
                             TextAlign =1
-                            Left =2970
+                            Left =3000
                             Top =480
-                            Width =619
+                            Width =624
                             Height =195
                             FontSize =8
                             Name ="Label12"
@@ -899,9 +899,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =2970
+                            LayoutCachedLeft =3000
                             LayoutCachedTop =480
-                            LayoutCachedWidth =3589
+                            LayoutCachedWidth =3624
                             LayoutCachedHeight =675
                             ColumnStart =2
                             ColumnEnd =2
@@ -914,9 +914,9 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =6045
+                    Left =6120
                     Top =480
-                    Width =615
+                    Width =612
                     Height =195
                     FontSize =8
                     TabIndex =4
@@ -928,9 +928,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =6045
+                    LayoutCachedLeft =6120
                     LayoutCachedTop =480
-                    LayoutCachedWidth =6660
+                    LayoutCachedWidth =6732
                     LayoutCachedHeight =675
                     ColumnStart =7
                     ColumnEnd =7
@@ -940,9 +940,9 @@ Begin Form
                         Begin Label
                             OverlapFlags =87
                             TextAlign =1
-                            Left =5430
+                            Left =5484
                             Top =480
-                            Width =619
+                            Width =624
                             Height =195
                             FontSize =8
                             Name ="Label13"
@@ -952,9 +952,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =5430
+                            LayoutCachedLeft =5484
                             LayoutCachedTop =480
-                            LayoutCachedWidth =6049
+                            LayoutCachedWidth =6108
                             LayoutCachedHeight =675
                             ColumnStart =6
                             ColumnEnd =6
@@ -967,7 +967,7 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7275
+                    Left =7368
                     Top =480
                     Width =720
                     Height =195
@@ -981,9 +981,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =7275
+                    LayoutCachedLeft =7368
                     LayoutCachedTop =480
-                    LayoutCachedWidth =7995
+                    LayoutCachedWidth =8088
                     LayoutCachedHeight =675
                     ColumnStart =9
                     ColumnEnd =9
@@ -993,9 +993,9 @@ Begin Form
                         Begin Label
                             OverlapFlags =87
                             TextAlign =1
-                            Left =6660
+                            Left =6732
                             Top =480
-                            Width =619
+                            Width =624
                             Height =195
                             FontSize =8
                             Name ="Label14"
@@ -1005,9 +1005,9 @@ Begin Form
                             TopPadding =0
                             RightPadding =0
                             BottomPadding =0
-                            LayoutCachedLeft =6660
+                            LayoutCachedLeft =6732
                             LayoutCachedTop =480
-                            LayoutCachedWidth =7279
+                            LayoutCachedWidth =7356
                             LayoutCachedHeight =675
                             ColumnStart =8
                             ColumnEnd =8

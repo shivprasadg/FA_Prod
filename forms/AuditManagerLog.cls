@@ -25,8 +25,8 @@ End Sub
 
 Private Sub ActionDate_DblClick(Cancel As Integer)
     Call ClearSearchBoxes("All")
-    Me.Search_ActionDATE = SplitString(Me.ActionDate, " ", 0)
-    Call SetRecordSource("AND ActionDate Like '*" & Me.Search_ActionDATE & "*' ")
+    Me.Search_ActionDate = SplitString(Me.ActionDate, " ", 0)
+    Call SetRecordSource("AND ActionDate Like '*" & Me.Search_ActionDate & "*' ")
 End Sub
 
 Private Sub ClearResetForm_Click()
@@ -225,7 +225,7 @@ End Sub
 
 Private Sub Search_ActionDate_afterUpdate()
     Call ClearSearchBoxes(Me.ActiveControl.Name)
-    Call SetRecordSource("AND ActionDate Like '*" & Me.Search_ActionDATE & "*' ")
+    Call SetRecordSource("AND ActionDate Like '*" & Me.Search_ActionDate & "*' ")
 End Sub
 
 Private Sub ClearSearchBoxes(Excludeme As String)

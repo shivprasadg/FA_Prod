@@ -12,7 +12,7 @@ End Sub
 
 Private Sub AddContact_Click()
  DoCmd.GotoRecord , , acNewRec
- Me.clientID = Me.Parent.clientID
+ Me.ClientID = Me.Parent.ClientID
 End Sub
 
 Private Sub contactFirst_AfterUpdate()
@@ -66,7 +66,7 @@ Private Sub Form_Current()
 Me.ConObsoleteDt.Locked = True
 Me.ContactObsolete.Locked = True
 SQLz = "SELECT contactID, clientRef, contactClassification, contactFullName AS Contact FROM Location_contacts " & _
-       "WHERE clientRef=" & Me.Parent.clientID & " Order by contactFullName ;"
+       "WHERE clientRef=" & Me.Parent.ClientID & " Order by contactFullName ;"
 Me.ContactsList.RowSource = SQLz
 'Me.Form.Repaint
 End Sub

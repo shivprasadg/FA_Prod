@@ -618,7 +618,7 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =765
+                    Left =768
                     Top =2820
                     Width =1080
                     Height =285
@@ -631,9 +631,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =765
+                    LayoutCachedLeft =768
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =1845
+                    LayoutCachedWidth =1848
                     LayoutCachedHeight =3105
                     ColumnStart =1
                     ColumnEnd =1
@@ -648,7 +648,7 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =1845
+                    Left =1848
                     Top =2820
                     Width =2100
                     Height =285
@@ -661,9 +661,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =1845
+                    LayoutCachedLeft =1848
                     LayoutCachedTop =2820
-                    LayoutCachedWidth =3945
+                    LayoutCachedWidth =3948
                     LayoutCachedHeight =3105
                     ColumnStart =2
                     ColumnEnd =2
@@ -678,9 +678,9 @@ Begin Report
                     BackStyle =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =3945
+                    Left =3948
                     Top =2820
-                    Width =4755
+                    Width =4752
                     Height =285
                     FontSize =10
                     FontWeight =700
@@ -691,7 +691,7 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =3945
+                    LayoutCachedLeft =3948
                     LayoutCachedTop =2820
                     LayoutCachedWidth =8700
                     LayoutCachedHeight =3105
@@ -948,8 +948,8 @@ Begin Report
                     TextAlign =1
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =3945
-                    Width =4755
+                    Left =3948
+                    Width =4752
                     Height =285
                     FontSize =10
                     TabIndex =3
@@ -962,7 +962,7 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =3945
+                    LayoutCachedLeft =3948
                     LayoutCachedWidth =8700
                     LayoutCachedHeight =285
                     ColumnStart =3
@@ -976,7 +976,7 @@ Begin Report
                     TextAlign =1
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =1845
+                    Left =1848
                     Width =2100
                     Height =285
                     FontSize =10
@@ -991,8 +991,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =1845
-                    LayoutCachedWidth =3945
+                    LayoutCachedLeft =1848
+                    LayoutCachedWidth =3948
                     LayoutCachedHeight =285
                     ColumnStart =2
                     ColumnEnd =2
@@ -1028,7 +1028,7 @@ Begin Report
                     TextAlign =2
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =765
+                    Left =768
                     Width =1080
                     Height =285
                     FontSize =10
@@ -1041,8 +1041,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =765
-                    LayoutCachedWidth =1845
+                    LayoutCachedLeft =768
+                    LayoutCachedWidth =1848
                     LayoutCachedHeight =285
                     ColumnStart =1
                     ColumnEnd =1

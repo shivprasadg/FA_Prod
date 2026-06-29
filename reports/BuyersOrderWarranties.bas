@@ -88,10 +88,12 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =3945
+                    Left =3948
                     Width =5280
                     Height =285
                     FontSize =10
+                    BorderColor =0
+                    ForeColor =0
                     Name ="DescriptionLong"
                     ControlSource ="wDesc"
                     StatusBarText ="unit make"
@@ -100,10 +102,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =3945
-                    LayoutCachedWidth =9225
+                    LayoutCachedLeft =3948
+                    LayoutCachedWidth =9228
                     LayoutCachedHeight =285
                     ColumnStart =3
                     ColumnEnd =3
@@ -136,7 +137,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =10320
                     LayoutCachedWidth =11700
@@ -157,11 +157,13 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =9225
-                    Width =1094
+                    Left =9228
+                    Width =1092
                     Height =285
                     FontSize =10
                     TabIndex =2
+                    BorderColor =0
+                    ForeColor =0
                     Name ="TargetSale"
                     Format ="Standard"
                     StatusBarText ="price Rmk Sm should get for unit"
@@ -170,10 +172,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =9225
-                    LayoutCachedWidth =10319
+                    LayoutCachedLeft =9228
+                    LayoutCachedWidth =10320
                     LayoutCachedHeight =285
                     ColumnStart =4
                     ColumnEnd =4
@@ -190,11 +191,13 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1845
+                    Left =1848
                     Width =2100
                     Height =285
                     FontSize =10
                     TabIndex =3
+                    BorderColor =0
+                    ForeColor =0
                     Name ="UnitVIN"
                     Format =">"
                     StatusBarText ="VIN number must be unique in table"
@@ -203,10 +206,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1845
-                    LayoutCachedWidth =3945
+                    LayoutCachedLeft =1848
+                    LayoutCachedWidth =3948
                     LayoutCachedHeight =285
                     ColumnStart =2
                     ColumnEnd =2
@@ -228,6 +230,8 @@ Begin Report
                     Height =285
                     FontSize =10
                     TabIndex =4
+                    BorderColor =0
+                    ForeColor =0
                     Name ="UnitID"
                     ControlSource ="UnitID"
                     StatusBarText ="initials of Remarketing Salesperson"
@@ -236,7 +240,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedWidth =765
                     LayoutCachedHeight =285
@@ -254,11 +257,13 @@ Begin Report
                     OldBorderStyle =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =765
+                    Left =768
                     Width =1080
                     Height =285
                     FontSize =10
                     TabIndex =5
+                    BorderColor =0
+                    ForeColor =0
                     Name ="Text45"
                     ControlSource ="BuyersOrderID"
                     GroupTable =1
@@ -266,10 +271,9 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =765
-                    LayoutCachedWidth =1845
+                    LayoutCachedLeft =768
+                    LayoutCachedWidth =1848
                     LayoutCachedHeight =285
                     ColumnStart =1
                     ColumnEnd =1

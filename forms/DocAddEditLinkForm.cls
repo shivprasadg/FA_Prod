@@ -13,7 +13,7 @@ Dim RequestX As String
 
 Private Sub AddLink_Click()
 ' DoCmd.GotoRecord , , acNewRec
-    Me.clientID = Split(Me.OpenArgs, "|")(0)
+    Me.ClientID = Split(Me.OpenArgs, "|")(0)
     Me.MLID = Split(Me.OpenArgs, "|")(1)
     Me.SchID = Split(Me.OpenArgs, "|")(2)
     Me.groupID = Split(Me.OpenArgs, "|")(3)
@@ -50,7 +50,7 @@ Public Sub Form_Load()
         FormX = Split(Me.OpenArgs, "|")(5)
         If RequestX = "Add" Then
             DoCmd.GotoRecord , , acNewRec
-            Me.clientID = Split(Me.OpenArgs, "|")(0)
+            Me.ClientID = Split(Me.OpenArgs, "|")(0)
             Me.MLID = Split(Me.OpenArgs, "|")(1)
             Me.SchID = Split(Me.OpenArgs, "|")(2)
             Me.groupID = Split(Me.OpenArgs, "|")(3)
@@ -104,7 +104,7 @@ Private Sub GetLinkInfo(Optional xDir As Boolean)
 End Sub
 Private Sub InsertRecord()
     SQLz = "INSERT INTO DocLinks (ClientID, MLID, SchID, GroupID, UnitID, dtags, dName, dtype, dlink) "
-    SQLz = SQLz & "Select " & Me.clientID & "," & Me.MLID & "," & Me.SchID & "," & Me.groupID & "," & Me.UnitID & ",'" & Me.dtags & "',"
+    SQLz = SQLz & "Select " & Me.ClientID & "," & Me.MLID & "," & Me.SchID & "," & Me.groupID & "," & Me.UnitID & ",'" & Me.dtags & "',"
     SQLz = SQLz & "'" & Me.dName & "', '" & Me.dtype & "', '" & Me.dLink & "';"
     DoCmd.SetWarnings False
     'DoCmd.RunSQL (SQLz)

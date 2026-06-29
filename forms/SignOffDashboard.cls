@@ -7,7 +7,7 @@ Option Compare Database
     Dim XLS   As String
 Private Sub CompanyName_Click()
     MessageUser "Open", "Opening Client's Form", "just a moment.."
-    DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+    DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
     MessageUser "Close"
 End Sub
 

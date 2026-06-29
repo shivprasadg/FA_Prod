@@ -44,7 +44,7 @@ Private Sub SetupTreeview()
         .Indentation = 300
         .Appearance = ccFlat
         .HideSelection = False
-        .borderStyle = ccFixedSingle
+        .BorderStyle = ccFixedSingle
         .HotTracking = True
         .FullRowSelect = True
         .CheckBoxes = False
@@ -183,10 +183,10 @@ Public Sub LoadSixTree(Optional FilterX As String)
     Do Until RST.EOF
         ' Add Client nodes
         If ClientName <> RST!Client Then
-            ClientKey = RST!clientID & "|"
+            ClientKey = RST!ClientID & "|"
             ClientName = ProperCase(RST!Client, 0)
             Set NodX = tv.Nodes.Add(, , ClientKey, ClientName, "Client", "ClientOpen")
-            NodX.Tag = "Client:" & RST!clientID
+            NodX.Tag = "Client:" & RST!ClientID
             MstName = ""
         End If
         ' Add Lease node
@@ -236,16 +236,16 @@ Public Sub LoadSixTree(Optional FilterX As String)
         '  If UnitName <> RST!AssetID & " " & RST!unitdesc Then
         '      UnitKey = GrpKey & RST!AssetID & "|"
         '      UnitName = RST!AssetID & " " & RST!unitdesc
-        If UnitName <> RST!unitdesc Then
-            UnitKey = GrpKey & RST!unitdesc & "|"
-            UnitName = RST!unitdesc
+        If UnitName <> RST!UnitDesc Then
+            UnitKey = GrpKey & RST!UnitDesc & "|"
+            UnitName = RST!UnitDesc
             ImageX = "Truck"
-            If RST!unitdesc Like "*Daycab*" Then ImageX = "DayCab"
-            If RST!unitdesc Like "*Sleeper*" Then ImageX = "Sleeper"
-            If RST!unitdesc Like "*Trailer*" Then ImageX = "Trailer"
-            If RST!unitdesc Like "*Auto*" Then ImageX = "Trailer"
-            If RST!unitdesc Like "*Straight*" Then ImageX = "Straight"
-            If RST!unitdesc Like "*Warrant*" Then ImageX = "Doc"
+            If RST!UnitDesc Like "*Daycab*" Then ImageX = "DayCab"
+            If RST!UnitDesc Like "*Sleeper*" Then ImageX = "Sleeper"
+            If RST!UnitDesc Like "*Trailer*" Then ImageX = "Trailer"
+            If RST!UnitDesc Like "*Auto*" Then ImageX = "Trailer"
+            If RST!UnitDesc Like "*Straight*" Then ImageX = "Straight"
+            If RST!UnitDesc Like "*Warrant*" Then ImageX = "Doc"
             Set NodX = tv.Nodes.Add(GrpKey, tvwChild, UnitKey, UnitName, ImageX, ImageX)
             '     NodX.Tag = "Unit:" & RST!AssetID
             ' If iNode = 0 Then iNode = 1 Else iNode = 0
@@ -327,7 +327,7 @@ Private Sub ReportsList_Click()
         Call MakeScheduleWorkTable(Me.SchID)
         DoCmd.OpenReport "ScheduleSerialNumbers", acViewPreview, "", "SchID=" & Me.SchID, acNormal
     Case "SchCheck_Click"
-        If Me.clientID = 4029 Then ReportX = "SchedCheckTLS" Else ReportX = "SchedCheck2"
+        If Me.ClientID = 4029 Then ReportX = "SchedCheckTLS" Else ReportX = "SchedCheck2"
         DoCmd.close acForm, ReportX
         DoCmd.OpenReport ReportX, acViewPreview, "", "SchID=" & Me.SchID
     Case "DocsUnitList_Click"
@@ -340,7 +340,7 @@ Private Sub ReportsList_Click()
         Call MakeScheduleWorkTable(Me.SchID)
         Call MakeCustodianSubmission(Me.SchID)
     Case "ClientUnitSummary_Click"
-        Call MakeClientUnitSummary(Me.clientID)
+        Call MakeClientUnitSummary(Me.ClientID)
     Case Else
         MsgBox "No Schedule or Group Selected", vbInformation, AtlaasVersion
     End Select
@@ -352,11 +352,11 @@ Private Sub SearchAssetId_Change()
     Me.SearchUnit = ""
     Me.SearchMYear = ""
     SQLz = "SELECT AssetID, VIN, UnitNum, Make, MYear, SchID FROM vw_SixKeys " & _
-           "Where SchID=" & Me.SchID & " AND AssetID Like '*" & Me.SearchAssetId.Text & "*' Order BY AssetID;"
+           "Where SchID=" & Me.SchID & " AND AssetID Like '*" & Me.SearchAssetID.Text & "*' Order BY AssetID;"
     Me.Units_List.RowSource = SQLz
 End Sub
 Private Sub SearchVIN_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     ' Me.SearchVin = ""
     Me.SearchUnit = ""
     Me.SearchMYear = ""
@@ -366,7 +366,7 @@ Private Sub SearchVIN_Change()
 End Sub
 
 Private Sub SearchUnit_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchVin = ""
     ' Me.SearchUnit = ""
     Me.SearchMYear = ""
@@ -376,7 +376,7 @@ Private Sub SearchUnit_Change()
 End Sub
 
 Private Sub SearchMYear_Change()
-    Me.SearchAssetId = ""
+    Me.SearchAssetID = ""
     Me.SearchVin = ""
     Me.SearchUnit = ""
     'Me.SearchMYear = ""
@@ -483,13 +483,13 @@ Private Sub AfterTreeClick()
 Call ClearBoxes
 Call SetCbo(1)
     If ClientIDx <> 0 Then
-        If Nz(Me.clientID, 0) <> ClientIDx Then Call ShowClientInfo
-        Me.clientID = ClientIDx
-        Me.ClientGroupID = DLookup("ClientGroupID", "vw_SixKeys", "ClientId=" & Me.clientID)
-        Me.SelectedNode = "Co:<B>" & DLookup("ClientShortName", "vw_SixKeys", "ClientId=" & Me.clientID)
+        If Nz(Me.ClientID, 0) <> ClientIDx Then Call ShowClientInfo
+        Me.ClientID = ClientIDx
+        Me.ClientGroupID = DLookup("ClientGroupID", "vw_SixKeys", "ClientId=" & Me.ClientID)
+        Me.SelectedNode = "Co:<B>" & DLookup("ClientShortName", "vw_SixKeys", "ClientId=" & Me.ClientID)
     Else
         Me.ScheduleClientInfo_SubForm.Form.Visible = False
-        Me.clientID = 0
+        Me.ClientID = 0
         Me.ClientGroupID = 0
     End If
     If MLIDx <> 0 Then

@@ -316,7 +316,7 @@ End Sub
 
 Private Sub MoveUnits_Click()
 DoCmd.OpenForm "MoveLocations"
-Forms!MoveLocations.SelectClient = Me.clientID
+Forms!MoveLocations.SelectClient = Me.ClientID
 Forms!MoveLocations.SelectClient_Click
 'Forms!MoveLocations.LocationList = Me.LocationID
 'Forms!MoveLocations.LocationList_Click

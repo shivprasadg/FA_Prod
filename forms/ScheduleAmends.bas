@@ -193,7 +193,7 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2640
+                    Left =2652
                     Top =540
                     Width =2580
                     Height =270
@@ -207,9 +207,9 @@ Begin Form
                     ControlTipText ="Amendment Number"
                     GroupTable =1
 
-                    LayoutCachedLeft =2640
+                    LayoutCachedLeft =2652
                     LayoutCachedTop =540
-                    LayoutCachedWidth =5220
+                    LayoutCachedWidth =5232
                     LayoutCachedHeight =810
                     ColumnStart =1
                     ColumnEnd =1
@@ -247,10 +247,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2640
-                    Top =1200
+                    Left =2652
+                    Top =1236
                     Width =2580
-                    Height =315
+                    Height =312
                     TabIndex =6
                     Name ="RevDt"
                     ControlSource ="AmendmentDate"
@@ -260,10 +260,10 @@ Begin Form
                     ControlTipText ="Date the Amendment was enterd into ATLAAS"
                     GroupTable =1
 
-                    LayoutCachedLeft =2640
-                    LayoutCachedTop =1200
-                    LayoutCachedWidth =5220
-                    LayoutCachedHeight =1515
+                    LayoutCachedLeft =2652
+                    LayoutCachedTop =1236
+                    LayoutCachedWidth =5232
+                    LayoutCachedHeight =1548
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -277,18 +277,18 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =1800
-                            Top =1200
+                            Top =1236
                             Width =780
-                            Height =315
+                            Height =312
                             FontSize =9
                             FontWeight =700
                             Name ="Label3"
                             Caption ="Entered:"
                             GroupTable =1
                             LayoutCachedLeft =1800
-                            LayoutCachedTop =1200
+                            LayoutCachedTop =1236
                             LayoutCachedWidth =2580
-                            LayoutCachedHeight =1515
+                            LayoutCachedHeight =1548
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -302,9 +302,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =1800
-                    Top =2700
-                    Width =3420
-                    Height =255
+                    Top =2772
+                    Width =3432
+                    Height =252
                     FontSize =9
                     FontWeight =700
                     TabIndex =11
@@ -318,9 +318,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =1800
-                    LayoutCachedTop =2700
-                    LayoutCachedWidth =5220
-                    LayoutCachedHeight =2955
+                    LayoutCachedTop =2772
+                    LayoutCachedWidth =5232
+                    LayoutCachedHeight =3024
                     RowStart =6
                     RowEnd =6
                     ColumnEnd =1
@@ -346,9 +346,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =85
                     Left =1800
-                    Top =3015
-                    Width =3420
-                    Height =255
+                    Top =3096
+                    Width =3432
+                    Height =252
                     FontSize =9
                     FontWeight =700
                     TabIndex =12
@@ -362,9 +362,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =1800
-                    LayoutCachedTop =3015
-                    LayoutCachedWidth =5220
-                    LayoutCachedHeight =3270
+                    LayoutCachedTop =3096
+                    LayoutCachedWidth =5232
+                    LayoutCachedHeight =3348
                     RowStart =7
                     RowEnd =7
                     ColumnEnd =1
@@ -445,10 +445,10 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2640
-                    Top =870
+                    Left =2652
+                    Top =888
                     Width =2580
-                    Height =270
+                    Height =276
                     TabIndex =5
                     Name ="AmendmentName"
                     ControlSource ="AmendmentName"
@@ -458,10 +458,10 @@ Begin Form
                     ControlTipText ="Amendment Document Name"
                     GroupTable =1
 
-                    LayoutCachedLeft =2640
-                    LayoutCachedTop =870
-                    LayoutCachedWidth =5220
-                    LayoutCachedHeight =1140
+                    LayoutCachedLeft =2652
+                    LayoutCachedTop =888
+                    LayoutCachedWidth =5232
+                    LayoutCachedHeight =1164
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -475,18 +475,18 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =1800
-                            Top =870
+                            Top =888
                             Width =780
-                            Height =270
+                            Height =276
                             FontSize =9
                             FontWeight =700
                             Name ="Label69"
                             Caption ="Name:"
                             GroupTable =1
                             LayoutCachedLeft =1800
-                            LayoutCachedTop =870
+                            LayoutCachedTop =888
                             LayoutCachedWidth =2580
-                            LayoutCachedHeight =1140
+                            LayoutCachedHeight =1164
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -502,10 +502,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2640
-                    Top =1950
+                    Left =2652
+                    Top =2004
                     Width =2580
-                    Height =315
+                    Height =312
                     TabIndex =8
                     Name ="AmendmentSent"
                     ControlSource ="AmendmentSent"
@@ -515,10 +515,10 @@ Begin Form
                     ControlTipText ="Date the Amendment was sent out"
                     GroupTable =1
 
-                    LayoutCachedLeft =2640
-                    LayoutCachedTop =1950
-                    LayoutCachedWidth =5220
-                    LayoutCachedHeight =2265
+                    LayoutCachedLeft =2652
+                    LayoutCachedTop =2004
+                    LayoutCachedWidth =5232
+                    LayoutCachedHeight =2316
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -532,18 +532,18 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =1800
-                            Top =1950
+                            Top =2004
                             Width =780
-                            Height =315
+                            Height =312
                             FontSize =9
                             FontWeight =700
                             Name ="Label81"
                             Caption ="Sent:"
                             GroupTable =1
                             LayoutCachedLeft =1800
-                            LayoutCachedTop =1950
+                            LayoutCachedTop =2004
                             LayoutCachedWidth =2580
-                            LayoutCachedHeight =2265
+                            LayoutCachedHeight =2316
                             RowStart =4
                             RowEnd =4
                             LayoutGroup =1
@@ -559,10 +559,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2640
-                    Top =1575
+                    Left =2652
+                    Top =1620
                     Width =2580
-                    Height =315
+                    Height =312
                     TabIndex =7
                     Name ="AmendmentEffective"
                     ControlSource ="AmendmentEffective"
@@ -572,10 +572,10 @@ Begin Form
                     ControlTipText ="Date the Amendment became Effective"
                     GroupTable =1
 
-                    LayoutCachedLeft =2640
-                    LayoutCachedTop =1575
-                    LayoutCachedWidth =5220
-                    LayoutCachedHeight =1890
+                    LayoutCachedLeft =2652
+                    LayoutCachedTop =1620
+                    LayoutCachedWidth =5232
+                    LayoutCachedHeight =1932
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -589,18 +589,18 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =1800
-                            Top =1575
+                            Top =1620
                             Width =780
-                            Height =315
+                            Height =312
                             FontSize =9
                             FontWeight =700
                             Name ="Label87"
                             Caption ="Effective:"
                             GroupTable =1
                             LayoutCachedLeft =1800
-                            LayoutCachedTop =1575
+                            LayoutCachedTop =1620
                             LayoutCachedWidth =2580
-                            LayoutCachedHeight =1890
+                            LayoutCachedHeight =1932
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =1
@@ -616,10 +616,10 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2640
-                    Top =2325
+                    Left =2652
+                    Top =2388
                     Width =2580
-                    Height =315
+                    Height =312
                     TabIndex =9
                     Name ="AmendmentBack"
                     ControlSource ="AmendmentBack"
@@ -629,10 +629,10 @@ Begin Form
                     ControlTipText ="Date the Amendment was returned"
                     GroupTable =1
 
-                    LayoutCachedLeft =2640
-                    LayoutCachedTop =2325
-                    LayoutCachedWidth =5220
-                    LayoutCachedHeight =2640
+                    LayoutCachedLeft =2652
+                    LayoutCachedTop =2388
+                    LayoutCachedWidth =5232
+                    LayoutCachedHeight =2700
                     RowStart =5
                     RowEnd =5
                     ColumnStart =1
@@ -646,18 +646,18 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =1800
-                            Top =2325
+                            Top =2388
                             Width =780
-                            Height =315
+                            Height =312
                             FontSize =9
                             FontWeight =700
                             Name ="Label93"
                             Caption ="Back:"
                             GroupTable =1
                             LayoutCachedLeft =1800
-                            LayoutCachedTop =2325
+                            LayoutCachedTop =2388
                             LayoutCachedWidth =2580
-                            LayoutCachedHeight =2640
+                            LayoutCachedHeight =2700
                             RowStart =5
                             RowEnd =5
                             LayoutGroup =1

@@ -148,7 +148,7 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1875
+                    Left =1884
                     Top =60
                     Width =5580
                     Height =315
@@ -160,9 +160,9 @@ Begin Form
                     LeftPadding =0
                     RightPadding =0
 
-                    LayoutCachedLeft =1875
+                    LayoutCachedLeft =1884
                     LayoutCachedTop =60
-                    LayoutCachedWidth =7455
+                    LayoutCachedWidth =7464
                     LayoutCachedHeight =375
                     ColumnStart =1
                     ColumnEnd =1
@@ -201,10 +201,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1875
-                    Top =435
+                    Left =1884
+                    Top =444
                     Width =5580
-                    Height =315
+                    Height =312
                     FontSize =12
                     FontWeight =700
                     TabIndex =1
@@ -214,10 +214,10 @@ Begin Form
                     LeftPadding =0
                     RightPadding =0
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =435
-                    LayoutCachedWidth =7455
-                    LayoutCachedHeight =750
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =444
+                    LayoutCachedWidth =7464
+                    LayoutCachedHeight =756
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -229,9 +229,9 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =1
                             Left =180
-                            Top =435
+                            Top =444
                             Width =1695
-                            Height =315
+                            Height =312
                             FontSize =10
                             FontWeight =700
                             Name ="Label112"
@@ -241,9 +241,9 @@ Begin Form
                             LeftPadding =0
                             RightPadding =0
                             LayoutCachedLeft =180
-                            LayoutCachedTop =435
+                            LayoutCachedTop =444
                             LayoutCachedWidth =1875
-                            LayoutCachedHeight =750
+                            LayoutCachedHeight =756
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -259,10 +259,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1875
-                    Top =810
+                    Left =1884
+                    Top =828
                     Width =5580
-                    Height =315
+                    Height =312
                     FontSize =12
                     FontWeight =700
                     TabIndex =2
@@ -272,10 +272,10 @@ Begin Form
                     LeftPadding =0
                     RightPadding =0
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =810
-                    LayoutCachedWidth =7455
-                    LayoutCachedHeight =1125
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =828
+                    LayoutCachedWidth =7464
+                    LayoutCachedHeight =1140
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -287,9 +287,9 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =1
                             Left =180
-                            Top =810
+                            Top =828
                             Width =1695
-                            Height =315
+                            Height =312
                             FontSize =10
                             FontWeight =700
                             Name ="Label136"
@@ -299,9 +299,9 @@ Begin Form
                             LeftPadding =0
                             RightPadding =0
                             LayoutCachedLeft =180
-                            LayoutCachedTop =810
+                            LayoutCachedTop =828
                             LayoutCachedWidth =1875
-                            LayoutCachedHeight =1125
+                            LayoutCachedHeight =1140
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -317,10 +317,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1875
-                    Top =1185
+                    Left =1884
+                    Top =1212
                     Width =5580
-                    Height =315
+                    Height =312
                     FontSize =12
                     FontWeight =700
                     TabIndex =3
@@ -330,10 +330,10 @@ Begin Form
                     LeftPadding =0
                     RightPadding =0
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =1185
-                    LayoutCachedWidth =7455
-                    LayoutCachedHeight =1500
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =1212
+                    LayoutCachedWidth =7464
+                    LayoutCachedHeight =1524
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -345,9 +345,9 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =1
                             Left =180
-                            Top =1185
+                            Top =1212
                             Width =1695
-                            Height =315
+                            Height =312
                             FontSize =10
                             FontWeight =700
                             Name ="Label138"
@@ -357,9 +357,9 @@ Begin Form
                             LeftPadding =0
                             RightPadding =0
                             LayoutCachedLeft =180
-                            LayoutCachedTop =1185
+                            LayoutCachedTop =1212
                             LayoutCachedWidth =1875
-                            LayoutCachedHeight =1500
+                            LayoutCachedHeight =1524
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =1
@@ -375,10 +375,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1875
-                    Top =1560
+                    Left =1884
+                    Top =1596
                     Width =5580
-                    Height =1125
+                    Height =1128
                     FontSize =12
                     FontWeight =700
                     TabIndex =4
@@ -388,10 +388,10 @@ Begin Form
                     LeftPadding =0
                     RightPadding =0
 
-                    LayoutCachedLeft =1875
-                    LayoutCachedTop =1560
-                    LayoutCachedWidth =7455
-                    LayoutCachedHeight =2685
+                    LayoutCachedLeft =1884
+                    LayoutCachedTop =1596
+                    LayoutCachedWidth =7464
+                    LayoutCachedHeight =2724
                     RowStart =4
                     RowEnd =4
                     ColumnStart =1
@@ -403,9 +403,9 @@ Begin Form
                             OverlapFlags =247
                             TextAlign =1
                             Left =180
-                            Top =1560
+                            Top =1596
                             Width =1695
-                            Height =1125
+                            Height =1128
                             FontSize =10
                             FontWeight =700
                             Name ="Label140"
@@ -415,9 +415,9 @@ Begin Form
                             LeftPadding =0
                             RightPadding =0
                             LayoutCachedLeft =180
-                            LayoutCachedTop =1560
+                            LayoutCachedTop =1596
                             LayoutCachedWidth =1875
-                            LayoutCachedHeight =2685
+                            LayoutCachedHeight =2724
                             RowStart =4
                             RowEnd =4
                             LayoutGroup =1

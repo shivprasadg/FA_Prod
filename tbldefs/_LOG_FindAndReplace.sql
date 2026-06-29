@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [_LOG_FindAndReplace] (
   [SeqID] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
-  [SessionTimeStamp] DATETIME CONSTRAINT [SessionIndex] NOT NULL,
+  [SessionTimeStamp] DATETIME,
   [EntryType] VARCHAR (8),
   [Container] VARCHAR (24),
   [DocumentName] VARCHAR (150),

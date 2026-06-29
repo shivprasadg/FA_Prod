@@ -49,7 +49,7 @@ Private Sub AddExemption_Click()
     DoCmd.RunSQL ("Delete From TaxExceptionsTemp")
     DoCmd.SetWarnings True
     DoCmd.close acForm, "Tax_Add_Exception"
-    DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , LevelX & "|" & Me.TaxTypeId & "|" & Me.LinkID & "|" & Nz(Me.TaxNumber, 0) & "|Add"
+    DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , LevelX & "|" & Me.TaxTypeID & "|" & Me.LinkID & "|" & Nz(Me.TaxNumber, 0) & "|Add"
 '    DoCmd.OpenForm "Tax_Add_Exception", acNormal, , , , , "State|" & Nz(Me.Tax_StateBaseSub!TaxTypeId, 1) & "|" & Me.StateID & "|" & CurrLevelTxRate & "|Add"
 
 End Sub
@@ -91,13 +91,13 @@ End If
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
 
-    DoCmd.OpenForm "Tax_Add", acNormal, , , , , LevelX & "|" & Me.Parent.TaxTypeId & "|" & Me.LinkID & "|" & Me.TaxNumber & "|Edit"
+    DoCmd.OpenForm "Tax_Add", acNormal, , , , , LevelX & "|" & Me.Parent.TaxTypeID & "|" & Me.LinkID & "|" & Me.TaxNumber & "|Edit"
 End Sub
 
 Private Sub Form_Current()
     On Error GoTo FixMe
     Me.txtCurrent = Me.ID
-    Me.Parent.TaxTypeId = Me.TaxTypeId
+    Me.Parent.TaxTypeID = Me.TaxTypeID
  '   Call SetFormLevel
 FixMe:
 End Sub

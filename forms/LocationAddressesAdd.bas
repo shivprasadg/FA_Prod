@@ -178,6 +178,9 @@ Begin Form
             ShowPageHeaderAndPageFooter =1
         End
         Begin ToggleButton
+            TextFontCharSet =177
+            TextFontFamily =0
+            FontName ="Calibri"
             ForeThemeColorIndex =0
             ForeTint =75.0
             GridlineThemeColorIndex =1
@@ -185,12 +188,10 @@ Begin Form
             UseTheme =1
             Shape =2
             Bevel =1
-            BackColor =-1
             BackThemeColorIndex =4
             BackTint =60.0
             OldBorderStyle =0
             BorderLineStyle =0
-            BorderColor =-1
             BorderThemeColorIndex =4
             BorderTint =60.0
             ThemeFontIndex =1
@@ -224,11 +225,11 @@ Begin Form
                     Height =315
                     ColumnOrder =1
                     BackColor =14211288
+                    ForeColor =0
                     Name ="Header"
                     ControlSource ="=\"Adding an address for Clientgroup:<b> \" & DLookUp(\"ClientGroupName\",\"Clie"
                         "ntGroups\",\"ClientGroupID=\" & [ClientGroupID] & \"\") & \"</b>\""
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     TextFormat =1
 
                     LayoutCachedLeft =45
@@ -254,11 +255,11 @@ Begin Form
                     ColumnOrder =0
                     FontSize =9
                     TabIndex =1
+                    ForeColor =0
                     Name ="MoveTo"
                     FontName ="Segoe UI"
                     TopPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =4185
                     LayoutCachedWidth =5340
@@ -292,10 +293,10 @@ Begin Form
                     Height =330
                     TabIndex =5
                     BorderColor =8210719
+                    ForeColor =0
                     Name ="LZip"
                     AfterUpdate ="[Event Procedure]"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1275
                     LayoutCachedTop =2385
@@ -322,9 +323,9 @@ Begin Form
                     Width =5190
                     Height =330
                     BorderColor =8210719
+                    ForeColor =0
                     Name ="LAddrLine1"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1275
                     LayoutCachedTop =435
@@ -347,10 +348,10 @@ Begin Form
                             Width =912
                             Height =330
                             FontSize =9
+                            BorderColor =0
                             Name ="Label60"
                             Caption ="Address 1"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =300
                             LayoutCachedTop =435
                             LayoutCachedWidth =1212
@@ -374,9 +375,9 @@ Begin Form
                     Height =330
                     TabIndex =1
                     BorderColor =8210719
+                    ForeColor =0
                     Name ="LAddrLine2"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1275
                     LayoutCachedTop =825
@@ -401,10 +402,10 @@ Begin Form
                             Width =912
                             Height =330
                             FontSize =9
+                            BorderColor =0
                             Name ="Label580"
                             Caption ="Address 2"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =300
                             LayoutCachedTop =825
                             LayoutCachedWidth =1212
@@ -433,6 +434,7 @@ Begin Form
                     Height =330
                     TabIndex =3
                     BorderColor =8210719
+                    ForeColor =0
                     Name ="LCity"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT City, CityID, County, CountyID From vw_CCSZ_Lookup WHERE StateID =3 GROUP"
@@ -440,7 +442,6 @@ Begin Form
                     ColumnWidths ="3600;0;2880;0"
                     FontName ="Segoe UI"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1275
                     LayoutCachedTop =1605
@@ -465,10 +466,10 @@ Begin Form
                             Width =912
                             Height =330
                             FontSize =9
+                            BorderColor =0
                             Name ="Label42"
                             Caption ="City"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =300
                             LayoutCachedTop =1605
                             LayoutCachedWidth =1212
@@ -497,6 +498,7 @@ Begin Form
                     Height =330
                     TabIndex =4
                     BorderColor =8210719
+                    ForeColor =0
                     Name ="LCounty"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT County, CountyID From vw_CCSZ_Lookup WHERE StateID =3 GROUP BY County, Co"
@@ -505,7 +507,6 @@ Begin Form
                     StatusBarText ="link to counties table"
                     FontName ="Segoe UI"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1275
                     LayoutCachedTop =1995
@@ -530,10 +531,10 @@ Begin Form
                             Width =912
                             Height =330
                             FontSize =9
+                            BorderColor =0
                             Name ="Label43"
                             Caption ="County"
                             FontName ="Segoe UI"
-                            GridlineColor =10921638
                             LayoutCachedLeft =300
                             LayoutCachedTop =1995
                             LayoutCachedWidth =1212
@@ -562,6 +563,7 @@ Begin Form
                     Height =330
                     TabIndex =2
                     BorderColor =8210719
+                    ForeColor =0
                     Name ="LState"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT TaxStates.PostalAbbreviation, IIf([RentReceiptAvailable]=True,\"RR\",\"--"
@@ -576,7 +578,6 @@ Begin Form
                     StatusBarText ="lookup in lookup_state table"
                     FontName ="Segoe UI"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =1275
@@ -602,10 +603,10 @@ Begin Form
                     Width =912
                     Height =330
                     FontSize =9
+                    BorderColor =0
                     Name ="Label778"
                     Caption ="Zip"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     LayoutCachedLeft =300
                     LayoutCachedTop =2385
                     LayoutCachedWidth =1212
@@ -626,10 +627,10 @@ Begin Form
                     Width =912
                     Height =330
                     FontSize =9
+                    BorderColor =0
                     Name ="Label8"
                     Caption ="State"
                     FontName ="Segoe UI"
-                    GridlineColor =10921638
                     LayoutCachedLeft =300
                     LayoutCachedTop =1215
                     LayoutCachedWidth =1212
@@ -655,6 +656,7 @@ Begin Form
                     Name ="ClientID"
                     StatusBarText ="link to Clients table"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =1155
                     LayoutCachedTop =2850
@@ -682,6 +684,7 @@ Begin Form
                     BorderColor =12632256
                     Name ="LAddressID"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =1815
                     LayoutCachedTop =2850
@@ -709,6 +712,7 @@ Begin Form
                     BorderColor =12632256
                     Name ="LStateID"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =2535
                     LayoutCachedTop =2850
@@ -736,6 +740,7 @@ Begin Form
                     BorderColor =12632256
                     Name ="LCountyID"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =3255
                     LayoutCachedTop =2850
@@ -763,6 +768,7 @@ Begin Form
                     BorderColor =12632256
                     Name ="LCityID"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =3975
                     LayoutCachedTop =2850
@@ -790,7 +796,6 @@ Begin Form
                     BorderColor =14211288
                     Name ="Image142"
                     Picture ="LtGrey2_Shadow"
-                    GridlineColor =10921638
                     HorizontalAnchor =2
 
                     LayoutCachedWidth =7200
@@ -813,6 +818,7 @@ Begin Form
                     Name ="ClientGroupID"
                     StatusBarText ="link to Clients table"
                     FontName ="Tahoma"
+                    GridlineColor =0
 
                     LayoutCachedLeft =450
                     LayoutCachedTop =2850
@@ -844,7 +850,6 @@ Begin Form
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,

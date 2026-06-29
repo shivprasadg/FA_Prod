@@ -276,10 +276,10 @@ Begin Form
                 Begin CommandButton
                     TabStop = NotDefault
                     OverlapFlags =85
-                    Left =3375
-                    Top =1335
-                    Width =1695
-                    Height =315
+                    Left =3384
+                    Top =1368
+                    Width =1692
+                    Height =312
                     FontSize =9
                     TabIndex =1
                     ForeColor =0
@@ -331,10 +331,10 @@ Begin Form
                         0xab5989ffab5989ff
                     End
 
-                    LayoutCachedLeft =3375
-                    LayoutCachedTop =1335
-                    LayoutCachedWidth =5070
-                    LayoutCachedHeight =1650
+                    LayoutCachedLeft =3384
+                    LayoutCachedTop =1368
+                    LayoutCachedWidth =5076
+                    LayoutCachedHeight =1680
                     PictureCaptionArrangement =5
                     RowStart =3
                     RowEnd =3
@@ -374,8 +374,8 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =60
-                    Top =225
-                    Width =5010
+                    Top =240
+                    Width =5016
                     Height =1008
                     FontSize =9
                     BorderColor =967423
@@ -390,9 +390,9 @@ Begin Form
                     HorizontalAnchor =1
 
                     LayoutCachedLeft =60
-                    LayoutCachedTop =225
-                    LayoutCachedWidth =5070
-                    LayoutCachedHeight =1233
+                    LayoutCachedTop =240
+                    LayoutCachedWidth =5076
+                    LayoutCachedHeight =1248
                     RowStart =1
                     RowEnd =1
                     ColumnEnd =2
@@ -406,9 +406,9 @@ Begin Form
                 End
                 Begin EmptyCell
                     Left =60
-                    Top =1335
+                    Top =1368
                     Width =1485
-                    Height =315
+                    Height =312
                     Name ="EmptyCell7"
                     GroupTable =1
                     LeftPadding =0
@@ -416,9 +416,9 @@ Begin Form
                     HorizontalAnchor =1
                     VerticalAnchor =1
                     LayoutCachedLeft =60
-                    LayoutCachedTop =1335
+                    LayoutCachedTop =1368
                     LayoutCachedWidth =1545
-                    LayoutCachedHeight =1650
+                    LayoutCachedHeight =1680
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =1
@@ -428,7 +428,7 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     Left =60
-                    Width =5010
+                    Width =5016
                     Height =225
                     FontSize =9
                     FontWeight =700
@@ -443,7 +443,7 @@ Begin Form
                     BottomPadding =0
                     HorizontalAnchor =1
                     LayoutCachedLeft =60
-                    LayoutCachedWidth =5070
+                    LayoutCachedWidth =5076
                     LayoutCachedHeight =225
                     ColumnEnd =2
                     LayoutGroup =1
@@ -456,20 +456,20 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =1605
-                    Top =1335
+                    Left =1608
+                    Top =1368
                     Width =1740
-                    Height =315
+                    Height =312
                     Name ="EmptyCell13"
                     GroupTable =1
                     RightPadding =0
                     BottomPadding =45
                     HorizontalAnchor =1
                     VerticalAnchor =1
-                    LayoutCachedLeft =1605
-                    LayoutCachedTop =1335
-                    LayoutCachedWidth =3345
-                    LayoutCachedHeight =1650
+                    LayoutCachedLeft =1608
+                    LayoutCachedTop =1368
+                    LayoutCachedWidth =3348
+                    LayoutCachedHeight =1680
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -479,7 +479,7 @@ Begin Form
                 End
                 Begin EmptyCell
                     Left =60
-                    Top =1260
+                    Top =1284
                     Width =1485
                     Height =0
                     Name ="EmptyCell14"
@@ -488,17 +488,17 @@ Begin Form
                     BottomPadding =45
                     HorizontalAnchor =1
                     LayoutCachedLeft =60
-                    LayoutCachedTop =1260
+                    LayoutCachedTop =1284
                     LayoutCachedWidth =1545
-                    LayoutCachedHeight =1260
+                    LayoutCachedHeight =1284
                     RowStart =2
                     RowEnd =2
                     LayoutGroup =1
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =1605
-                    Top =1260
+                    Left =1608
+                    Top =1284
                     Width =1740
                     Height =0
                     Name ="EmptyCell15"
@@ -506,10 +506,10 @@ Begin Form
                     RightPadding =0
                     BottomPadding =45
                     HorizontalAnchor =1
-                    LayoutCachedLeft =1605
-                    LayoutCachedTop =1260
-                    LayoutCachedWidth =3345
-                    LayoutCachedHeight =1260
+                    LayoutCachedLeft =1608
+                    LayoutCachedTop =1284
+                    LayoutCachedWidth =3348
+                    LayoutCachedHeight =1284
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -518,19 +518,19 @@ Begin Form
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =3375
-                    Top =1260
-                    Width =1695
+                    Left =3384
+                    Top =1284
+                    Width =1692
                     Height =0
                     Name ="EmptyCell16"
                     GroupTable =1
                     RightPadding =0
                     BottomPadding =45
                     HorizontalAnchor =1
-                    LayoutCachedLeft =3375
-                    LayoutCachedTop =1260
-                    LayoutCachedWidth =5070
-                    LayoutCachedHeight =1260
+                    LayoutCachedLeft =3384
+                    LayoutCachedTop =1284
+                    LayoutCachedWidth =5076
+                    LayoutCachedHeight =1284
                     RowStart =2
                     RowEnd =2
                     ColumnStart =2

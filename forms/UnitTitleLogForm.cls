@@ -8,7 +8,7 @@ Dim SQLz As String
 
 Private Sub DeleteRecord_Click()
 On Error GoTo FixMe
-DoCmd.RunSQL ("Delete From UnitTitleLog WHERE UnitTitleLogId=" & Me.UnitTitleLogId & ";")
+DoCmd.RunSQL ("Delete From UnitTitleLog WHERE UnitTitleLogId=" & Me.UnitTitleLogID & ";")
 FixMe:
 End Sub
 Public Function LoadData(UnitIDx As Long)
@@ -49,7 +49,7 @@ End Sub
 Private Sub OpenLogEdit()
 If FAUserAccessLevel > 15 Then
 DoCmd.close acForm, "OPSTitleLogEntry"
-DoCmd.OpenForm "OPSTitleLogEntry", acNormal, , "UnitTitleLogId=" & Me.UnitTitleLogId
+DoCmd.OpenForm "OPSTitleLogEntry", acNormal, , "UnitTitleLogId=" & Me.UnitTitleLogID
 End If
 End Sub
 

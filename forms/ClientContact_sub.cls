@@ -15,16 +15,16 @@ End Sub
 
 Private Sub AddContact_Click()
     DoCmd.GotoRecord , , acNewRec
-    Me.clientID = Me.Parent.clientID
+    Me.ClientID = Me.Parent.ClientID
 End Sub
 
 Public Sub SetContacts()
     Me.ConObsoleteDt.Locked = True
     Me.ContactObsolete.Locked = True
     SQLz = "SELECT contactID, clientRef, contactClassification As Classification, contactFullName AS Contact FROM Location_contacts " & _
-           "WHERE clientRef=" & Me.Parent.clientID & " Order by contactFirst, contactLast ;"
+           "WHERE clientRef=" & Me.Parent.ClientID & " Order by contactFirst, contactLast ;"
     Me.ContactsList.RowSource = SQLz
-    Me.Form.RecordSource = "Select * From Location_Contacts Where clientRef=" & Me.Parent.clientID & ""
+    Me.Form.RecordSource = "Select * From Location_Contacts Where clientRef=" & Me.Parent.ClientID & ""
 End Sub
 
 
@@ -112,7 +112,7 @@ Private Sub LocationCBO_Click()
     Dim Msgx As String
     Dim LinkTypeX As Integer
     Msgx = ""
-    If IsNull(Me.LocationCbo.Column(0)) Then Msgx = Msgx & vbNewLine & "   Location"
+    If IsNull(Me.LocationCBO.Column(0)) Then Msgx = Msgx & vbNewLine & "   Location"
     If IsNull(Me.contactID) Then Msgx = Msgx & vbNewLine & "   Contact to Link"
     If IsNull(Me.contactClassification) Then Msgx = Msgx & vbNewLine & "   Type of Link to use"
    LinkTypeX = DLookup("LinkTypeID", "ContactsLinkedToLocationTypes", "LinkType='" & Me.contactClassification & "'")
@@ -121,18 +121,18 @@ Private Sub LocationCBO_Click()
         MsgBox Msgx, vbCritical, "Missing Data"
         Exit Sub
     End If
-    If DLookup("ContactID", "ContactsLinkedToLocation", "ContactID=" & Me.contactID & " AND LinkTypeID =" & LinkTypeX & " AND LocationID=" & Me.LocationCbo.Column(0)) Then
-        MsgBox Me.contactFirst & " " & Me.contactLast & vbNewLine & "Is already linked  to " & Me.LocationCbo.Column(1) & vbNewLine & "as a '" & Me.contactClassification & "' contact type" & vbNewLine & vbNewLine & "Canceled...", vbCritical, "We've Done this already"
+    If DLookup("ContactID", "ContactsLinkedToLocation", "ContactID=" & Me.contactID & " AND LinkTypeID =" & LinkTypeX & " AND LocationID=" & Me.LocationCBO.Column(0)) Then
+        MsgBox Me.contactFirst & " " & Me.contactLast & vbNewLine & "Is already linked  to " & Me.LocationCBO.Column(1) & vbNewLine & "as a '" & Me.contactClassification & "' contact type" & vbNewLine & vbNewLine & "Canceled...", vbCritical, "We've Done this already"
         Exit Sub
     End If
 
     SQLz = "INSERT INTO ContactsLinkedToLocation ( ContactID, LocationID, LinkTypeID ) " & _
-           "SELECT " & Me.contactID & ", " & Me.LocationCbo.Column(0) & ", " & LinkTypeX & ";"
+           "SELECT " & Me.contactID & ", " & Me.LocationCBO.Column(0) & ", " & LinkTypeX & ";"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
     Me.LinkedLocationsList.Requery
-    Me.Parent.Locations_sub.Form.LinkEdContactsList.Requery
+    Me.Parent.Locations_sub.Form.LinkedContactsList.Requery
     Me.ContactDetail = ""
 End Sub
 Private Sub UnLinkedContact_Click()
@@ -146,7 +146,7 @@ Private Sub UnLinkedContact_Click()
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
     Me.LinkedLocationsList.Requery
-    Me.Parent.Locations_sub.Form.LinkEdContactsList.Requery
+    Me.Parent.Locations_sub.Form.LinkedContactsList.Requery
     Me.ContactDetail = ""
 
 End Sub
@@ -175,7 +175,7 @@ Private Sub ContactsList_Click()
     Me.ContactDetail = ""
     SQLz = "SELECT LocationID, LocationName, LocationStreet, LAddrLine1, LAddrLine2, LCity, LState, LZip " & _
            "From Locations WHERE ClientGroupID=" & Me.Parent.ClientGroupID & " AND LocObsolete = False;"
-    Me.LocationCbo.RowSource = SQLz
+    Me.LocationCBO.RowSource = SQLz
     SQLz = "SELECT LocationID, ContactID, LinkType, Locationsn & ' (' & [LocationType] & ')' AS Location, City & ', ' & State AS City-State, LinkTypeID "
     SQLz = SQLz & "FROM ContactsLinkedToLocationQuery "
     SQLz = SQLz & "WHERE C.ContactID =" & Me.contactID & " "
@@ -200,7 +200,7 @@ Private Sub DeleteContact_Click()
         DoCmd.RunSQL (SQLz)
         Me.ContactsList.Requery
         DoCmd.SetWarnings True
-        Me.ContactsList = DMax("contactID", "Location_contacts", "clientRef=" & Me.Parent.clientID)
+        Me.ContactsList = DMax("contactID", "Location_contacts", "clientRef=" & Me.Parent.ClientID)
         Call ContactsList_Click
         Me.Form.Refresh
     Else

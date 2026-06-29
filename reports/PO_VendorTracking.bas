@@ -7197,8 +7197,8 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =9075
-                    Width =585
+                    Left =9108
+                    Width =588
                     Height =315
                     BackColor =12566463
                     Name ="Label86"
@@ -7208,8 +7208,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =9075
-                    LayoutCachedWidth =9660
+                    LayoutCachedLeft =9108
+                    LayoutCachedWidth =9696
                     LayoutCachedHeight =315
                     ColumnStart =2
                     ColumnEnd =2
@@ -7226,8 +7226,8 @@ Begin Report
                     BorderWidth =1
                     TextAlign =1
                     TextFontFamily =34
-                    Left =90
-                    Width =7545
+                    Left =96
+                    Width =7548
                     Height =315
                     LeftMargin =72
                     BackColor =12566463
@@ -7238,8 +7238,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =90
-                    LayoutCachedWidth =7635
+                    LayoutCachedLeft =96
+                    LayoutCachedWidth =7644
                     LayoutCachedHeight =315
                     LayoutGroup =1
                     BorderThemeColorIndex =0
@@ -7254,7 +7254,7 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =7635
+                    Left =7656
                     Width =1440
                     Height =315
                     BackColor =12566463
@@ -7265,8 +7265,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =7635
-                    LayoutCachedWidth =9075
+                    LayoutCachedLeft =7656
+                    LayoutCachedWidth =9096
                     LayoutCachedHeight =315
                     ColumnStart =1
                     ColumnEnd =1
@@ -7283,7 +7283,7 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     TextFontFamily =34
-                    Left =9660
+                    Left =9708
                     Width =1740
                     Height =315
                     BackColor =12566463
@@ -7294,8 +7294,8 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =9660
-                    LayoutCachedWidth =11400
+                    LayoutCachedLeft =9708
+                    LayoutCachedWidth =11448
                     LayoutCachedHeight =315
                     ColumnStart =3
                     ColumnEnd =3
@@ -7318,8 +7318,8 @@ Begin Report
                     BorderWidth =1
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =9075
-                    Width =585
+                    Left =9108
+                    Width =588
                     Height =315
                     TabIndex =2
                     BorderColor =9211020
@@ -7331,8 +7331,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =9075
-                    LayoutCachedWidth =9660
+                    LayoutCachedLeft =9108
+                    LayoutCachedWidth =9696
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -7348,7 +7348,7 @@ Begin Report
                     BorderWidth =1
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =7635
+                    Left =7656
                     Height =315
                     TabIndex =1
                     BorderColor =9211020
@@ -7361,8 +7361,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =7635
-                    LayoutCachedWidth =9075
+                    LayoutCachedLeft =7656
+                    LayoutCachedWidth =9096
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -7381,7 +7381,7 @@ Begin Report
                     TextAlign =3
                     TextFontFamily =34
                     IMESentenceMode =3
-                    Left =9660
+                    Left =9708
                     Width =1740
                     Height =315
                     TabIndex =3
@@ -7395,8 +7395,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =9660
-                    LayoutCachedWidth =11400
+                    LayoutCachedLeft =9708
+                    LayoutCachedWidth =11448
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -7413,8 +7413,8 @@ Begin Report
                     BorderWidth =1
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =90
-                    Width =7545
+                    Left =96
+                    Width =7548
                     Height =315
                     LeftMargin =72
                     BorderColor =9211020
@@ -7426,8 +7426,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =90
-                    LayoutCachedWidth =7635
+                    LayoutCachedLeft =96
+                    LayoutCachedWidth =7644
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -7587,7 +7587,6 @@ Begin Report
                     SourceObject ="Report.PO_Vendor_Child"
                     LinkChildFields ="PONumber"
                     LinkMasterFields ="PONum1"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =14
                     LayoutCachedWidth =11534

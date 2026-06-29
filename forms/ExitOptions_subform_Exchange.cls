@@ -15,7 +15,7 @@ End Sub
 
 
 Private Sub DeleteMe_Click()
-    Response = MsgBox("You're about to Delete Unit# " & Me.UnitUnitNum & "'s " & vbNewLine & Me.OptionTypeDesc & " option entry , " & vbNewLine & "Are you sure?", vbQuestion + vbYesNo + vbCritical, "What? Delete!")
+    Response = MsgBox("You're about to Delete Unit# " & Me.unitunitnum & "'s " & vbNewLine & Me.OptionTypeDesc & " option entry , " & vbNewLine & "Are you sure?", vbQuestion + vbYesNo + vbCritical, "What? Delete!")
 
     SQLset = " WHERE UnitID = " & Me.UnitID & "and OptionTypeID = 1;"
 
@@ -46,7 +46,7 @@ End Sub
 Private Sub Form_Current()
     Me.ReplacedByGroupCBO.Requery
     Me.ReplacedByGroupID.Requery
-    Me.ReplacedByUnitId.Requery
+    Me.ReplacedByUnitID.Requery
     Me.txtCurrent = Me.UnitID
 End Sub
 
@@ -107,17 +107,17 @@ Call SetModified
 End Sub
 
 Private Sub ReplacedByGroupID_Click()
-If SCHGrpX <> Me.ReplacedByGroupID.Column(1) And Not IsNull(Me.ReplacedByUnitId) Then
-MsgBox "AssetID: " & Me.UnitID & " has been Exchanged with AssetID: " & Me.ReplacedByUnitId & " " & vbNewLine & _
+If SCHGrpX <> Me.ReplacedByGroupID.Column(1) And Not IsNull(Me.ReplacedByUnitID) Then
+MsgBox "AssetID: " & Me.UnitID & " has been Exchanged with AssetID: " & Me.ReplacedByUnitID & " " & vbNewLine & _
        "You cannot change to a different Schedule Group" & vbNewLine & vbNewLine & _
-       "If you want to change the Schedule Group, follow these steps:" & vbNewLine & "1: Clear the matched AssetID: " & Me.ReplacedByUnitId & vbNewLine & _
+       "If you want to change the Schedule Group, follow these steps:" & vbNewLine & "1: Clear the matched AssetID: " & Me.ReplacedByUnitID & vbNewLine & _
        "2: Clear the Estimated and Actual Exchanged dates" & vbNewLine & _
        "3: Select a Schedule Group", vbCritical, "Units Already Exchanged-Matched!"
 Me.Undo
 Exit Sub
 Else
     Me.ReplacedByScheduleID = Me.ReplacedByGroupID.Column(3)
-    Me.ReplacedByUnitId.Requery
+    Me.ReplacedByUnitID.Requery
     Me.StartOrPurposedDate = DLookup("Min(UnitEstDelDate)", "Units", "GroupRef=" & ReplacedByGroupID & "")
     Call SetModified
 End If
@@ -128,8 +128,8 @@ If Not IsNull(Me.ReplacedByGroupID.Column(1)) Then SCHGrpX = Me.ReplacedByGroupI
 End Sub
 
 Private Sub ReplacedByUnitID_Change()
-    If Me.ReplacedByUnitId.Text & "test" = "test" Then
-         Me.ReplacedByUnitId = Null
+    If Me.ReplacedByUnitID.Text & "test" = "test" Then
+         Me.ReplacedByUnitID = Null
          Me.EndOrActualDate = Null
          Me.StartOrPurposedDate = Null
          Me.UnitPDStartDate = Null
@@ -141,7 +141,7 @@ Private Sub ReplacedByUnitID_Change()
          Dim RST As Recordset
          DoCmd.RunCommand acCmdSaveRecord
          Set RST = CurrentDb.OpenRecordset("Select * " & _
-                   " From vw_EXchangeITDates Where ReplacedByUnitId=" & Me.ReplacedByUnitId & ";")
+                   " From vw_EXchangeITDates Where ReplacedByUnitId=" & Me.ReplacedByUnitID & ";")
          BLCDx = RST!oBLCD
          GroupIDi = RST!oGroupID
          AdvArr = DLookup("LeasePaidAdvArr", "SchGrp", "sGrpID=" & GroupIDi)
@@ -161,12 +161,12 @@ Private Sub ReplacedByUnitID_Change()
     End If
     Call SetModified
     DoCmd.RunCommand acCmdSaveRecord
-    ReplacedByUnitId.Requery
+    ReplacedByUnitID.Requery
 End Sub
 
 Private Sub ReplacedByUnitID_DblClick(Cancel As Integer)
-    If IsNull(ReplacedByUnitId) Then Exit Sub
-    Call OpenUnitsForm(Me.ReplacedByUnitId)
+    If IsNull(ReplacedByUnitID) Then Exit Sub
+    Call OpenUnitsForm(Me.ReplacedByUnitID)
     'DoCmd.OpenForm "UnitsForm", , , "UNITID=" & Me.ReplacedByUnitId & ""
 End Sub
 

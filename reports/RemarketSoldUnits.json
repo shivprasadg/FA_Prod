@@ -4,12 +4,6 @@
     "Description": "RemarketSoldUnits Print Settings"
   },
   "Items": {
-    "Device": {
-      "DriverName": "winspool",
-      "DeviceName": "\\\\FA-FILE\\1720 KONICA Color",
-      "Port": "192.168.2.227",
-      "Default": false
-    },
     "Printer": {
       "Orientation": "Landscape",
       "PaperSize": "Letter"

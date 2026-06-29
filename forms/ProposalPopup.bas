@@ -144,8 +144,9 @@ Begin Form
             ShowPageHeaderAndPageFooter =1
         End
         Begin Tab
+            TextFontFamily =0
             FontSize =11
-            FontName ="Calibri"
+            FontName ="Cambria"
             ThemeFontIndex =0
             GridlineThemeColorIndex =1
             GridlineShade =65.0
@@ -177,7 +178,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =757
+            Height =759
             BackColor =14211288
             Name ="FormHeader"
             AlternateBackThemeColorIndex =1
@@ -191,6 +192,7 @@ Begin Form
                     Height =495
                     FontSize =18
                     FontWeight =700
+                    BorderColor =0
                     ForeColor =8210719
                     Name ="Label465"
                     Caption ="Proposal"
@@ -199,7 +201,6 @@ Begin Form
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =360
                     LayoutCachedWidth =3180
                     LayoutCachedHeight =495
@@ -226,12 +227,12 @@ Begin Form
                     FontSize =12
                     FontWeight =700
                     BorderColor =12566463
+                    ForeColor =0
                     Name ="BuyerCbo"
                     ControlSource ="=DLookUp(\"ClientShNm\",\"Buyers\",\"ClientID=\" & [buyerID])"
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =4
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =1020
                     LayoutCachedTop =360
@@ -256,12 +257,12 @@ Begin Form
                             Width =780
                             Height =375
                             FontSize =9
+                            BorderColor =0
                             Name ="Caller_Label"
                             Caption ="Buyer"
                             FontName ="Segoe UI"
                             Tag =";RegenerateCaption;"
                             GroupTable =4
-                            GridlineColor =10921638
                             LayoutCachedLeft =180
                             LayoutCachedTop =360
                             LayoutCachedWidth =960
@@ -288,7 +289,6 @@ Begin Form
                     Name ="SaveUpdate"
                     Caption ="  Save | Update"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -350,8 +350,10 @@ Begin Form
                     PressedColor =8872517
                     PressedThemeColorIndex =-1
                     PressedShade =100.0
+                    HoverForeColor =16777215
                     HoverForeThemeColorIndex =-1
                     HoverForeTint =100.0
+                    PressedForeColor =16777215
                     PressedForeThemeColorIndex =-1
                     PressedForeTint =100.0
                     QuickStyle =30
@@ -373,25 +375,25 @@ Begin Form
                     IMEMode =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1500
-                    Top =1110
+                    Left =1512
+                    Top =1152
                     Width =3600
                     Height =300
                     FontSize =9
                     TabIndex =5
                     BorderColor =12566463
+                    ForeColor =0
                     Name ="EventDueDate"
                     ControlSource ="FirstContactDate"
                     Format ="Long Date"
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1500
-                    LayoutCachedTop =1110
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =1410
+                    LayoutCachedLeft =1512
+                    LayoutCachedTop =1152
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =1452
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -409,21 +411,21 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =120
-                            Top =1110
+                            Top =1152
                             Width =1320
                             Height =300
                             FontSize =9
+                            BorderColor =0
                             Name ="Due Date_Label"
                             Caption =" Date"
                             FontName ="Segoe UI"
                             Tag =";RegenerateCaption;"
                             EventProcPrefix ="Due_Date_Label"
                             GroupTable =1
-                            GridlineColor =10921638
                             LayoutCachedLeft =120
-                            LayoutCachedTop =1110
+                            LayoutCachedTop =1152
                             LayoutCachedWidth =1440
-                            LayoutCachedHeight =1410
+                            LayoutCachedHeight =1452
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =1
@@ -444,14 +446,15 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     ColumnCount =2
-                    Left =1500
-                    Top =750
+                    Left =1512
+                    Top =780
                     Width =3600
                     Height =300
                     FontSize =10
                     TabIndex =3
                     BoundColumn =2
                     BorderColor =12566463
+                    ForeColor =0
                     Name ="ContactCBO"
                     ControlSource ="FirstContactID"
                     RowSourceType ="Table/Query"
@@ -462,14 +465,13 @@ Begin Form
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =1
-                    GridlineColor =10921638
                     ListItemsEditForm ="Customer Details"
                     InheritValueList =0
 
-                    LayoutCachedLeft =1500
-                    LayoutCachedTop =750
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =1050
+                    LayoutCachedLeft =1512
+                    LayoutCachedTop =780
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =1080
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -487,20 +489,20 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =120
-                            Top =750
+                            Top =780
                             Width =1320
                             Height =300
                             FontSize =9
+                            BorderColor =0
                             Name ="Label100"
                             Caption ="First Contact"
                             FontName ="Segoe UI"
                             Tag =";RegenerateCaption;"
                             GroupTable =1
-                            GridlineColor =10921638
                             LayoutCachedLeft =120
-                            LayoutCachedTop =750
+                            LayoutCachedTop =780
                             LayoutCachedWidth =1440
-                            LayoutCachedHeight =1050
+                            LayoutCachedHeight =1080
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -526,10 +528,12 @@ Begin Form
                     TabIndex =7
                     BackColor =15728639
                     BorderColor =967423
+                    ForeColor =0
                     Name ="ProposalNotes"
                     ControlSource ="ProposalNotes"
                     FontName ="Segoe UI"
                     Tag ="EditYN"
+                    GridlineColor =0
 
                     LayoutCachedLeft =300
                     LayoutCachedTop =1500
@@ -551,14 +555,15 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     ColumnCount =2
-                    Left =6360
-                    Top =750
+                    Left =6384
+                    Top =780
                     Width =3600
                     Height =300
                     FontSize =10
                     TabIndex =4
                     BoundColumn =2
                     BorderColor =12566463
+                    ForeColor =0
                     Name ="Combo0"
                     ControlSource ="LastContactID"
                     RowSourceType ="Table/Query"
@@ -569,14 +574,13 @@ Begin Form
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =1
-                    GridlineColor =10921638
                     ListItemsEditForm ="Customer Details"
                     InheritValueList =0
 
-                    LayoutCachedLeft =6360
-                    LayoutCachedTop =750
-                    LayoutCachedWidth =9960
-                    LayoutCachedHeight =1050
+                    LayoutCachedLeft =6384
+                    LayoutCachedTop =780
+                    LayoutCachedWidth =9984
+                    LayoutCachedHeight =1080
                     RowStart =2
                     RowEnd =2
                     ColumnStart =3
@@ -593,22 +597,22 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =3
-                            Left =5160
-                            Top =750
+                            Left =5172
+                            Top =780
                             Width =1140
                             Height =300
                             FontSize =9
                             BackColor =14277081
+                            BorderColor =0
                             Name ="Label1"
                             Caption ="Last Contact"
                             FontName ="Segoe UI"
                             Tag =";RegenerateCaption;"
                             GroupTable =1
-                            GridlineColor =10921638
-                            LayoutCachedLeft =5160
-                            LayoutCachedTop =750
-                            LayoutCachedWidth =6300
-                            LayoutCachedHeight =1050
+                            LayoutCachedLeft =5172
+                            LayoutCachedTop =780
+                            LayoutCachedWidth =6312
+                            LayoutCachedHeight =1080
                             RowStart =2
                             RowEnd =2
                             ColumnStart =2
@@ -630,25 +634,25 @@ Begin Form
                     IMEMode =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6360
-                    Top =1110
+                    Left =6384
+                    Top =1152
                     Width =3600
                     Height =300
                     FontSize =9
                     TabIndex =6
                     BorderColor =12566463
+                    ForeColor =0
                     Name ="Text20"
                     ControlSource ="LastContactDate"
                     Format ="Long Date"
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =6360
-                    LayoutCachedTop =1110
-                    LayoutCachedWidth =9960
-                    LayoutCachedHeight =1410
+                    LayoutCachedLeft =6384
+                    LayoutCachedTop =1152
+                    LayoutCachedWidth =9984
+                    LayoutCachedHeight =1452
                     RowStart =3
                     RowEnd =3
                     ColumnStart =3
@@ -665,21 +669,21 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =3
-                            Left =5160
-                            Top =1110
+                            Left =5172
+                            Top =1152
                             Width =1140
                             Height =300
                             FontSize =9
+                            BorderColor =0
                             Name ="Label21"
                             Caption =" Date"
                             FontName ="Segoe UI"
                             Tag =";RegenerateCaption;"
                             GroupTable =1
-                            GridlineColor =10921638
-                            LayoutCachedLeft =5160
-                            LayoutCachedTop =1110
-                            LayoutCachedWidth =6300
-                            LayoutCachedHeight =1410
+                            LayoutCachedLeft =5172
+                            LayoutCachedTop =1152
+                            LayoutCachedWidth =6312
+                            LayoutCachedHeight =1452
                             RowStart =3
                             RowEnd =3
                             ColumnStart =2
@@ -700,24 +704,24 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1500
-                    Top =30
-                    Width =8460
+                    Left =1512
+                    Top =36
+                    Width =8472
                     Height =300
                     FontSize =9
                     BorderColor =12566463
+                    ForeColor =0
                     Name ="ProposalName"
                     ControlSource ="ProposalName"
                     StatusBarText ="Double-click to go to details"
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =1500
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =9960
-                    LayoutCachedHeight =330
+                    LayoutCachedLeft =1512
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9984
+                    LayoutCachedHeight =336
                     ColumnStart =1
                     ColumnEnd =3
                     LayoutGroup =1
@@ -733,20 +737,20 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =120
-                            Top =30
+                            Top =36
                             Width =1320
                             Height =300
                             FontSize =9
+                            BorderColor =0
                             Name ="Label25"
                             Caption ="Proposal Name"
                             FontName ="Segoe UI"
                             Tag =";RegenerateCaption;"
                             GroupTable =1
-                            GridlineColor =10921638
                             LayoutCachedLeft =120
-                            LayoutCachedTop =30
+                            LayoutCachedTop =36
                             LayoutCachedWidth =1440
-                            LayoutCachedHeight =330
+                            LayoutCachedHeight =336
                             LayoutGroup =1
                             ThemeFontIndex =-1
                             BackThemeColorIndex =-1
@@ -758,67 +762,6 @@ Begin Form
                         End
                     End
                 End
-                Begin Label
-                    OverlapFlags =85
-                    TextAlign =3
-                    Left =5160
-                    Top =390
-                    Width =1140
-                    Height =300
-                    FontSize =9
-                    Name ="Status_Label"
-                    Caption ="Status"
-                    FontName ="Segoe UI"
-                    Tag =";RegenerateCaption;"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =5160
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =6300
-                    LayoutCachedHeight =690
-                    RowStart =1
-                    RowEnd =1
-                    ColumnStart =2
-                    ColumnEnd =2
-                    LayoutGroup =1
-                    ThemeFontIndex =-1
-                    BackThemeColorIndex =-1
-                    BorderThemeColorIndex =-1
-                    BorderTint =100.0
-                    ForeThemeColorIndex =2
-                    ForeTint =100.0
-                    GroupTable =1
-                End
-                Begin Label
-                    OverlapFlags =85
-                    TextAlign =3
-                    Left =120
-                    Top =390
-                    Width =1320
-                    Height =300
-                    FontSize =9
-                    Name ="Assigned To_Label"
-                    Caption ="Assigned To"
-                    FontName ="Segoe UI"
-                    Tag =";RegenerateCaption;"
-                    EventProcPrefix ="Assigned_To_Label"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =120
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =1440
-                    LayoutCachedHeight =690
-                    RowStart =1
-                    RowEnd =1
-                    LayoutGroup =1
-                    ThemeFontIndex =-1
-                    BackThemeColorIndex =-1
-                    BorderThemeColorIndex =-1
-                    BorderTint =100.0
-                    ForeThemeColorIndex =2
-                    ForeTint =100.0
-                    GroupTable =1
-                End
                 Begin ComboBox
                     LimitToList = NotDefault
                     OverlapFlags =85
@@ -826,14 +769,15 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     ColumnCount =2
-                    Left =1500
-                    Top =390
+                    Left =1512
+                    Top =408
                     Width =3600
                     Height =300
                     ColumnOrder =2
                     FontSize =9
                     TabIndex =2
                     BorderColor =12566463
+                    ForeColor =0
                     Name ="SalesPerson"
                     ControlSource ="SalesPerson"
                     RowSourceType ="Table/Query"
@@ -847,14 +791,13 @@ Begin Form
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =1
-                    GridlineColor =10921638
                     SeparatorCharacters =255
                     ListItemsEditForm ="Employee Details"
 
-                    LayoutCachedLeft =1500
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =690
+                    LayoutCachedLeft =1512
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =5112
+                    LayoutCachedHeight =708
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -867,6 +810,38 @@ Begin Form
                     ForeThemeColorIndex =-1
                     ForeShade =100.0
                     GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =120
+                            Top =408
+                            Width =1320
+                            Height =300
+                            FontSize =9
+                            BorderColor =0
+                            Name ="Assigned To_Label"
+                            Caption ="Assigned To"
+                            FontName ="Segoe UI"
+                            Tag =";RegenerateCaption;"
+                            EventProcPrefix ="Assigned_To_Label"
+                            GroupTable =1
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =408
+                            LayoutCachedWidth =1440
+                            LayoutCachedHeight =708
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =1
+                            ThemeFontIndex =-1
+                            BackThemeColorIndex =-1
+                            BorderThemeColorIndex =-1
+                            BorderTint =100.0
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            GroupTable =1
+                        End
+                    End
                 End
                 Begin Subform
                     OverlapFlags =85
@@ -876,10 +851,8 @@ Begin Form
                     Width =5835
                     Height =3720
                     TabIndex =8
-                    BorderColor =10921638
                     Name ="EventHistory_Proposal"
                     SourceObject ="Form.EventHistory_Proposal"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =300
                     LayoutCachedTop =4080
@@ -898,14 +871,11 @@ Begin Form
                     Height =3750
                     FontSize =8
                     TabIndex =9
-                    ForeColor =4210752
-                    BorderColor =10921638
                     Name ="ProposalUnitsList"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT * FROM Buyer2Proposal_Query WHERE ProposalID = 5 ;"
                     ColumnWidths ="648;3168;432;0;432;0"
                     OnDblClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =6240
                     LayoutCachedTop =4080
@@ -921,13 +891,14 @@ Begin Form
                     Height =240
                     FontSize =8
                     FontWeight =700
+                    BorderColor =0
+                    ForeColor =0
                     Name ="LockIt"
                     Caption ="Unlocked"
                     LeftPadding =0
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =10545
                     LayoutCachedTop =840
                     LayoutCachedWidth =11340
@@ -947,6 +918,7 @@ Begin Form
                     Height =420
                     FontSize =9
                     TabIndex =10
+                    ForeColor =0
                     Name ="LockUnLockBtn"
                     Caption ="L"
                     OnClick ="[Event Procedure]"
@@ -955,7 +927,6 @@ Begin Form
                     LeftPadding =60
                     RightPadding =75
                     BottomPadding =120
-                    GridlineColor =10921638
                     ImageData = Begin
                         0x2800000010000000100000000100200000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -1025,25 +996,25 @@ Begin Form
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6360
-                    Top =390
+                    Left =6384
+                    Top =408
                     Width =3600
                     Height =300
                     FontWeight =700
                     TabIndex =1
                     BorderColor =12566463
+                    ForeColor =0
                     Name ="ProposalStatus"
                     ControlSource ="=DLookUp(\"ProposalStatus\",\"BuyerProposalAutoStatus\",\"ProposalID=\" & [propo"
                         "salID])"
                     DefaultValue ="\"Sent to Buyer\""
                     FontName ="Segoe UI"
                     GroupTable =1
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =6360
-                    LayoutCachedTop =390
-                    LayoutCachedWidth =9960
-                    LayoutCachedHeight =690
+                    LayoutCachedLeft =6384
+                    LayoutCachedTop =408
+                    LayoutCachedWidth =9984
+                    LayoutCachedHeight =708
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -1056,6 +1027,39 @@ Begin Form
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =5172
+                            Top =408
+                            Width =1140
+                            Height =300
+                            FontSize =9
+                            BorderColor =0
+                            Name ="Status_Label"
+                            Caption ="Status"
+                            FontName ="Segoe UI"
+                            Tag =";RegenerateCaption;"
+                            GroupTable =1
+                            LayoutCachedLeft =5172
+                            LayoutCachedTop =408
+                            LayoutCachedWidth =6312
+                            LayoutCachedHeight =708
+                            RowStart =1
+                            RowEnd =1
+                            ColumnStart =2
+                            ColumnEnd =2
+                            LayoutGroup =1
+                            ThemeFontIndex =-1
+                            BackThemeColorIndex =-1
+                            BorderThemeColorIndex =-1
+                            BorderTint =100.0
+                            ForeThemeColorIndex =2
+                            ForeTint =100.0
+                            GroupTable =1
+                        End
+                    End
                 End
             End
         End
@@ -1073,7 +1077,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10095
+                    Left =10092
                     Top =60
                     Width =504
                     FontSize =8
@@ -1084,11 +1088,10 @@ Begin Form
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =9
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =10095
+                    LayoutCachedLeft =10092
                     LayoutCachedTop =60
-                    LayoutCachedWidth =10599
+                    LayoutCachedWidth =10596
                     LayoutCachedHeight =300
                     ColumnStart =1
                     ColumnEnd =1
@@ -1110,12 +1113,12 @@ Begin Form
                             Width =675
                             Height =240
                             FontSize =8
+                            BorderColor =0
                             Name ="Label63"
                             Caption ="BuyerID"
                             FontName ="Segoe UI"
                             Tag =";RegenerateCaption;"
                             GroupTable =9
-                            GridlineColor =10921638
                             LayoutCachedLeft =9360
                             LayoutCachedTop =60
                             LayoutCachedWidth =10035
@@ -1138,7 +1141,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =11310
+                    Left =11304
                     Top =60
                     Width =504
                     FontSize =8
@@ -1150,11 +1153,10 @@ Begin Form
                     FontName ="Segoe UI"
                     Tag ="EditYN"
                     GroupTable =9
-                    GridlineColor =10921638
 
-                    LayoutCachedLeft =11310
+                    LayoutCachedLeft =11304
                     LayoutCachedTop =60
-                    LayoutCachedWidth =11814
+                    LayoutCachedWidth =11808
                     LayoutCachedHeight =300
                     ColumnStart =3
                     ColumnEnd =3
@@ -1171,20 +1173,20 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =3
-                            Left =10665
+                            Left =10656
                             Top =60
-                            Width =585
+                            Width =588
                             Height =240
                             FontSize =8
+                            BorderColor =0
                             Name ="Label65"
                             Caption ="ProposalID"
                             FontName ="Segoe UI"
                             Tag =";RegenerateCaption;"
                             GroupTable =9
-                            GridlineColor =10921638
-                            LayoutCachedLeft =10665
+                            LayoutCachedLeft =10656
                             LayoutCachedTop =60
-                            LayoutCachedWidth =11250
+                            LayoutCachedWidth =11244
                             LayoutCachedHeight =300
                             ColumnStart =2
                             ColumnEnd =2

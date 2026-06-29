@@ -307,10 +307,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =990
-                    Top =150
-                    Width =3810
-                    Height =345
+                    Left =1008
+                    Top =156
+                    Width =3804
+                    Height =348
                     ColumnWidth =5415
                     Name ="UnitVIN"
                     ControlSource ="UnitVIN"
@@ -318,21 +318,41 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =990
-                    LayoutCachedTop =150
-                    LayoutCachedWidth =4800
-                    LayoutCachedHeight =495
+                    LayoutCachedLeft =1008
+                    LayoutCachedTop =156
+                    LayoutCachedWidth =4812
+                    LayoutCachedHeight =504
                     ColumnStart =1
                     ColumnEnd =3
                     LayoutGroup =1
                     GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =120
+                            Top =156
+                            Width =810
+                            Height =348
+                            Name ="UnitVIN_Label"
+                            Caption ="VIN"
+                            GroupTable =1
+                            BottomPadding =38
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =156
+                            LayoutCachedWidth =930
+                            LayoutCachedHeight =504
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =2835
-                    Top =1740
-                    Width =735
-                    Height =315
+                    Left =2856
+                    Top =1728
+                    Width =732
+                    Height =312
                     TabIndex =10
                     Name ="UnitVINLocked"
                     ControlSource ="UnitVINLocked"
@@ -341,10 +361,10 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =2835
-                    LayoutCachedTop =1740
-                    LayoutCachedWidth =3570
-                    LayoutCachedHeight =2055
+                    LayoutCachedLeft =2856
+                    LayoutCachedTop =1728
+                    LayoutCachedWidth =3588
+                    LayoutCachedHeight =2040
                     RowStart =4
                     RowEnd =4
                     ColumnStart =2
@@ -357,19 +377,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =3
-                            Left =990
-                            Top =1740
-                            Width =1777
-                            Height =315
+                            Left =1008
+                            Top =1728
+                            Width =1776
+                            Height =312
                             Name ="Label13"
                             Caption ="VIN Locked"
                             GroupTable =1
                             RightPadding =38
                             BottomPadding =38
-                            LayoutCachedLeft =990
-                            LayoutCachedTop =1740
-                            LayoutCachedWidth =2767
-                            LayoutCachedHeight =2055
+                            LayoutCachedLeft =1008
+                            LayoutCachedTop =1728
+                            LayoutCachedWidth =2784
+                            LayoutCachedHeight =2040
                             RowStart =4
                             RowEnd =4
                             ColumnStart =1
@@ -387,10 +407,10 @@ Begin Form
                     TextFontCharSet =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =3645
-                    Top =1350
-                    Width =1155
-                    Height =315
+                    Left =3660
+                    Top =1344
+                    Width =1152
+                    Height =312
                     ColumnWidth =1965
                     FontWeight =700
                     TabIndex =8
@@ -400,10 +420,10 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =3645
-                    LayoutCachedTop =1350
-                    LayoutCachedWidth =4800
-                    LayoutCachedHeight =1665
+                    LayoutCachedLeft =3660
+                    LayoutCachedTop =1344
+                    LayoutCachedWidth =4812
+                    LayoutCachedHeight =1656
                     RowStart =3
                     RowEnd =3
                     ColumnStart =3
@@ -416,19 +436,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =2835
-                            Top =1350
-                            Width =735
-                            Height =315
+                            Left =2856
+                            Top =1344
+                            Width =732
+                            Height =312
                             Name ="Label14"
                             Caption ="Status"
                             GroupTable =1
                             RightPadding =38
                             BottomPadding =38
-                            LayoutCachedLeft =2835
-                            LayoutCachedTop =1350
-                            LayoutCachedWidth =3570
-                            LayoutCachedHeight =1665
+                            LayoutCachedLeft =2856
+                            LayoutCachedTop =1344
+                            LayoutCachedWidth =3588
+                            LayoutCachedHeight =1656
                             RowStart =3
                             RowEnd =3
                             ColumnStart =2
@@ -444,9 +464,9 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =6435
+                    Left =6456
                     Top =960
-                    Width =1485
+                    Width =1476
                     Height =315
                     TabIndex =6
                     Name ="UnitVINVer"
@@ -457,9 +477,9 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =6435
+                    LayoutCachedLeft =6456
                     LayoutCachedTop =960
-                    LayoutCachedWidth =7920
+                    LayoutCachedWidth =7932
                     LayoutCachedHeight =1275
                     RowStart =2
                     RowEnd =2
@@ -473,18 +493,18 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =4875
+                            Left =4884
                             Top =960
-                            Width =1485
+                            Width =1500
                             Height =315
                             Name ="Label18"
                             Caption ="Date Verified"
                             GroupTable =1
                             RightPadding =38
                             BottomPadding =38
-                            LayoutCachedLeft =4875
+                            LayoutCachedLeft =4884
                             LayoutCachedTop =960
-                            LayoutCachedWidth =6360
+                            LayoutCachedWidth =6384
                             LayoutCachedHeight =1275
                             RowStart =2
                             RowEnd =2
@@ -501,10 +521,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =6435
-                    Top =1350
-                    Width =1485
-                    Height =315
+                    Left =6456
+                    Top =1344
+                    Width =1476
+                    Height =312
                     TabIndex =9
                     Name ="UnitMSORecd"
                     ControlSource ="UnitMSORecd"
@@ -515,10 +535,10 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =6435
-                    LayoutCachedTop =1350
-                    LayoutCachedWidth =7920
-                    LayoutCachedHeight =1665
+                    LayoutCachedLeft =6456
+                    LayoutCachedTop =1344
+                    LayoutCachedWidth =7932
+                    LayoutCachedHeight =1656
                     RowStart =3
                     RowEnd =3
                     ColumnStart =6
@@ -531,19 +551,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =4875
-                            Top =1350
-                            Width =1485
-                            Height =315
+                            Left =4884
+                            Top =1344
+                            Width =1500
+                            Height =312
                             Name ="Label19"
                             Caption ="MSO Rec'd"
                             GroupTable =1
                             RightPadding =38
                             BottomPadding =38
-                            LayoutCachedLeft =4875
-                            LayoutCachedTop =1350
-                            LayoutCachedWidth =6360
-                            LayoutCachedHeight =1665
+                            LayoutCachedLeft =4884
+                            LayoutCachedTop =1344
+                            LayoutCachedWidth =6384
+                            LayoutCachedHeight =1656
                             RowStart =3
                             RowEnd =3
                             ColumnStart =4
@@ -561,10 +581,10 @@ Begin Form
                     TextFontCharSet =0
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =7065
-                    Top =150
-                    Width =855
-                    Height =345
+                    Left =7080
+                    Top =156
+                    Width =852
+                    Height =348
                     FontWeight =700
                     TabIndex =2
                     Name ="UnitYr"
@@ -573,10 +593,10 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =7065
-                    LayoutCachedTop =150
-                    LayoutCachedWidth =7920
-                    LayoutCachedHeight =495
+                    LayoutCachedLeft =7080
+                    LayoutCachedTop =156
+                    LayoutCachedWidth =7932
+                    LayoutCachedHeight =504
                     ColumnStart =7
                     ColumnEnd =7
                     LayoutGroup =1
@@ -587,19 +607,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =6435
-                            Top =150
-                            Width =555
-                            Height =345
+                            Left =6456
+                            Top =156
+                            Width =552
+                            Height =348
                             Name ="Label20"
                             Caption ="YEAR"
                             GroupTable =1
                             RightPadding =38
                             BottomPadding =38
-                            LayoutCachedLeft =6435
-                            LayoutCachedTop =150
-                            LayoutCachedWidth =6990
-                            LayoutCachedHeight =495
+                            LayoutCachedLeft =6456
+                            LayoutCachedTop =156
+                            LayoutCachedWidth =7008
+                            LayoutCachedHeight =504
                             ColumnStart =6
                             ColumnEnd =6
                             LayoutGroup =1
@@ -614,10 +634,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =990
-                    Top =570
-                    Width =3810
-                    Height =315
+                    Left =1008
+                    Top =576
+                    Width =3804
+                    Height =312
                     TabIndex =3
                     Name ="UnitMake"
                     ControlSource ="UnitMake"
@@ -626,10 +646,10 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =990
-                    LayoutCachedTop =570
-                    LayoutCachedWidth =4800
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =1008
+                    LayoutCachedTop =576
+                    LayoutCachedWidth =4812
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -643,17 +663,17 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =1
                             Left =120
-                            Top =570
+                            Top =576
                             Width =810
-                            Height =315
+                            Height =312
                             Name ="Label21"
                             Caption ="Make"
                             GroupTable =1
                             BottomPadding =38
                             LayoutCachedLeft =120
-                            LayoutCachedTop =570
+                            LayoutCachedTop =576
                             LayoutCachedWidth =930
-                            LayoutCachedHeight =885
+                            LayoutCachedHeight =888
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -668,9 +688,9 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =990
+                    Left =1008
                     Top =960
-                    Width =3810
+                    Width =3804
                     Height =315
                     TabIndex =5
                     Name ="UnitModel"
@@ -680,9 +700,9 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =990
+                    LayoutCachedLeft =1008
                     LayoutCachedTop =960
-                    LayoutCachedWidth =4800
+                    LayoutCachedWidth =4812
                     LayoutCachedHeight =1275
                     RowStart =2
                     RowEnd =2
@@ -721,10 +741,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =6435
-                    Top =1740
-                    Width =1485
-                    Height =315
+                    Left =6456
+                    Top =1728
+                    Width =1476
+                    Height =312
                     TabIndex =11
                     Name ="UnitMSOCopy"
                     ControlSource ="UnitMSOCopy"
@@ -735,10 +755,10 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =6435
-                    LayoutCachedTop =1740
-                    LayoutCachedWidth =7920
-                    LayoutCachedHeight =2055
+                    LayoutCachedLeft =6456
+                    LayoutCachedTop =1728
+                    LayoutCachedWidth =7932
+                    LayoutCachedHeight =2040
                     RowStart =4
                     RowEnd =4
                     ColumnStart =6
@@ -751,19 +771,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =4875
-                            Top =1740
-                            Width =1485
-                            Height =315
+                            Left =4884
+                            Top =1728
+                            Width =1500
+                            Height =312
                             Name ="Label23"
                             Caption ="MSO Copy "
                             GroupTable =1
                             RightPadding =38
                             BottomPadding =38
-                            LayoutCachedLeft =4875
-                            LayoutCachedTop =1740
-                            LayoutCachedWidth =6360
-                            LayoutCachedHeight =2055
+                            LayoutCachedLeft =4884
+                            LayoutCachedTop =1728
+                            LayoutCachedWidth =6384
+                            LayoutCachedHeight =2040
                             RowStart =4
                             RowEnd =4
                             ColumnStart =4
@@ -780,10 +800,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =3
                     IMESentenceMode =3
-                    Left =6435
-                    Top =570
-                    Width =1485
-                    Height =315
+                    Left =6456
+                    Top =576
+                    Width =1476
+                    Height =312
                     TabIndex =4
                     Name ="UnitGVW"
                     ControlSource ="UnitGVW"
@@ -793,10 +813,10 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =6435
-                    LayoutCachedTop =570
-                    LayoutCachedWidth =7920
-                    LayoutCachedHeight =885
+                    LayoutCachedLeft =6456
+                    LayoutCachedTop =576
+                    LayoutCachedWidth =7932
+                    LayoutCachedHeight =888
                     RowStart =1
                     RowEnd =1
                     ColumnStart =6
@@ -809,19 +829,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =4875
-                            Top =570
-                            Width =1485
-                            Height =315
+                            Left =4884
+                            Top =576
+                            Width =1500
+                            Height =312
                             Name ="Label24"
                             Caption ="GVW:"
                             GroupTable =1
                             RightPadding =38
                             BottomPadding =38
-                            LayoutCachedLeft =4875
-                            LayoutCachedTop =570
-                            LayoutCachedWidth =6360
-                            LayoutCachedHeight =885
+                            LayoutCachedLeft =4884
+                            LayoutCachedTop =576
+                            LayoutCachedWidth =6384
+                            LayoutCachedHeight =888
                             RowStart =1
                             RowEnd =1
                             ColumnStart =4
@@ -839,10 +859,10 @@ Begin Form
                     TextFontCharSet =238
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =5790
-                    Top =150
-                    Width =570
-                    Height =345
+                    Left =5808
+                    Top =156
+                    Width =576
+                    Height =348
                     FontWeight =700
                     TabIndex =1
                     BackColor =7883872
@@ -853,16 +873,41 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =5790
-                    LayoutCachedTop =150
-                    LayoutCachedWidth =6360
-                    LayoutCachedHeight =495
+                    LayoutCachedLeft =5808
+                    LayoutCachedTop =156
+                    LayoutCachedWidth =6384
+                    LayoutCachedHeight =504
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
                     GridlineThemeColorIndex =1
                     GridlineShade =65.0
                     GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =4884
+                            Top =156
+                            Width =852
+                            Height =348
+                            Name ="Label26"
+                            Caption ="State"
+                            GroupTable =1
+                            RightPadding =38
+                            BottomPadding =38
+                            LayoutCachedLeft =4884
+                            LayoutCachedTop =156
+                            LayoutCachedWidth =5736
+                            LayoutCachedHeight =504
+                            ColumnStart =4
+                            ColumnEnd =4
+                            LayoutGroup =1
+                            GridlineThemeColorIndex =1
+                            GridlineShade =65.0
+                            GroupTable =1
+                        End
+                    End
                 End
                 Begin TextBox
                     Locked = NotDefault
@@ -870,10 +915,10 @@ Begin Form
                     TextFontCharSet =0
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =990
-                    Top =1350
-                    Width =1777
-                    Height =315
+                    Left =1008
+                    Top =1344
+                    Width =1776
+                    Height =312
                     TabIndex =7
                     Name ="UnitID"
                     ControlSource ="UnitID"
@@ -883,10 +928,10 @@ Begin Form
                     RightPadding =38
                     BottomPadding =38
 
-                    LayoutCachedLeft =990
-                    LayoutCachedTop =1350
-                    LayoutCachedWidth =2767
-                    LayoutCachedHeight =1665
+                    LayoutCachedLeft =1008
+                    LayoutCachedTop =1344
+                    LayoutCachedWidth =2784
+                    LayoutCachedHeight =1656
                     RowStart =3
                     RowEnd =3
                     ColumnStart =1
@@ -901,17 +946,17 @@ Begin Form
                             TextFontCharSet =0
                             TextAlign =1
                             Left =120
-                            Top =1350
+                            Top =1344
                             Width =810
-                            Height =315
+                            Height =312
                             Name ="Label28"
                             Caption ="AssetID"
                             GroupTable =1
                             BottomPadding =38
                             LayoutCachedLeft =120
-                            LayoutCachedTop =1350
+                            LayoutCachedTop =1344
                             LayoutCachedWidth =930
-                            LayoutCachedHeight =1665
+                            LayoutCachedHeight =1656
                             RowStart =3
                             RowEnd =3
                             LayoutGroup =1
@@ -921,84 +966,41 @@ Begin Form
                         End
                     End
                 End
-                Begin Label
-                    OverlapFlags =85
-                    TextAlign =1
-                    Left =120
-                    Top =150
-                    Width =810
-                    Height =345
-                    Name ="UnitVIN_Label"
-                    Caption ="VIN"
-                    GroupTable =1
-                    BottomPadding =38
-                    LayoutCachedLeft =120
-                    LayoutCachedTop =150
-                    LayoutCachedWidth =930
-                    LayoutCachedHeight =495
-                    LayoutGroup =1
-                    GroupTable =1
-                End
                 Begin EmptyCell
                     Left =120
-                    Top =1740
+                    Top =1728
                     Width =810
-                    Height =315
+                    Height =312
                     Name ="EmptyCell79"
                     GroupTable =1
                     BottomPadding =38
-                    GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =1740
+                    LayoutCachedTop =1728
                     LayoutCachedWidth =930
-                    LayoutCachedHeight =2055
+                    LayoutCachedHeight =2040
                     RowStart =4
                     RowEnd =4
                     LayoutGroup =1
                     GroupTable =1
                 End
                 Begin EmptyCell
-                    Left =3645
-                    Top =1740
-                    Width =1155
-                    Height =315
+                    Left =3660
+                    Top =1728
+                    Width =1152
+                    Height =312
                     Name ="EmptyCell82"
                     GroupTable =1
                     RightPadding =38
                     BottomPadding =38
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3645
-                    LayoutCachedTop =1740
-                    LayoutCachedWidth =4800
-                    LayoutCachedHeight =2055
+                    LayoutCachedLeft =3660
+                    LayoutCachedTop =1728
+                    LayoutCachedWidth =4812
+                    LayoutCachedHeight =2040
                     RowStart =4
                     RowEnd =4
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
-                    GroupTable =1
-                End
-                Begin Label
-                    OverlapFlags =85
-                    TextAlign =1
-                    Left =4875
-                    Top =150
-                    Width =847
-                    Height =345
-                    Name ="Label26"
-                    Caption ="State"
-                    GroupTable =1
-                    RightPadding =38
-                    BottomPadding =38
-                    LayoutCachedLeft =4875
-                    LayoutCachedTop =150
-                    LayoutCachedWidth =5722
-                    LayoutCachedHeight =495
-                    ColumnStart =4
-                    ColumnEnd =4
-                    LayoutGroup =1
-                    GridlineThemeColorIndex =1
-                    GridlineShade =65.0
                     GroupTable =1
                 End
             End

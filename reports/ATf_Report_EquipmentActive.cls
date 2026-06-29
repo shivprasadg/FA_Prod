@@ -37,7 +37,7 @@ End Sub
 
 Private Sub GroupFooter1_Print(Cancel As Integer, PrintCount As Integer)
 If Me.GroupsIn > 1 Then
-Call MakeVertLine(2, Me.Units.Top, Me.Units.Left, (1440 * 8))
+Call MakeVertLine(2, Me.UNITS.Top, Me.UNITS.Left, (1440 * 8))
 'Call MakeVertLine(4, Me.Units.Height + 50, 0, (1440 * 8))
 End If
 End Sub

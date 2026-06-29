@@ -17,16 +17,13 @@
   MoveOrderImport.TOWABLE,
   MoveOrderImport.InStorage
 FROM
-  (
-    SELECT
-      UnitID,
-      UnitVIN,
-      Right([UnitVin], 8) AS Veight
-    FROM
-      Units
-    WHERE
-      UnitStatus Like "E*"
-  ) AS U
+  [SELECT UnitID, UnitVIN, Right([UnitVin],
+  8
+) AS Veight
+FROM
+  Units
+WHERE
+  UnitStatus Like "E*" ] AS U
   RIGHT JOIN MoveOrderImport ON U.Veight = MoveOrderImport.[Serial#]
 WHERE
   (

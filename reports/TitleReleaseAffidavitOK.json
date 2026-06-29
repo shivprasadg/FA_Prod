@@ -4,12 +4,6 @@
     "Description": "TitleReleaseAffidavitOK Print Settings"
   },
   "Items": {
-    "Device": {
-      "DriverName": "winspool",
-      "DeviceName": "\\\\fa-dc01\\KONICA C554 Color",
-      "Port": "IP_192.168.2.225",
-      "Default": false
-    },
     "Printer": {
       "Orientation": "Portrait",
       "PaperSize": "Letter"

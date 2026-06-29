@@ -14,8 +14,8 @@ End Sub
 
 Private Sub ClearAll_Click()
     Me.InvoiceNum = ""
-    Me.startDate = ""
-    Me.Enddate = ""
+    Me.StartDate = ""
+    Me.EndDate = ""
     Me.Vendor = ""
     Me.Bank = ""
 End Sub
@@ -42,9 +42,9 @@ End Sub
 
 
 Private Sub Exit2Excel_Click()
-    If Nz(Me.startDate, "1/1/1900") <> "1/1/1900" And Nz(Me.Enddate, "1/1/1900") <> "1/1/1900" Then
+    If Nz(Me.StartDate, "1/1/1900") <> "1/1/1900" And Nz(Me.EndDate, "1/1/1900") <> "1/1/1900" Then
 
-        Call MakeExitExcelReport(, , , Me.startDate, Me.Enddate, 4)
+        Call MakeExitExcelReport(, , , Me.StartDate, Me.EndDate, 4)
     Else
         Call MakeExitExcelReport(, , , , , 4)
     End If
@@ -63,11 +63,11 @@ Private Sub MakeSUFEmail_Click()
 End Sub
 
 Private Sub MonthlySoldReport_Click()
- If Not IsDate(Me.startDate) Or Not IsDate(Me.Enddate) Then
+ If Not IsDate(Me.StartDate) Or Not IsDate(Me.EndDate) Then
         MsgBox "You must have BOTH a Start and End Date Set", vbCritical, "No Dates, No Service"
         Exit Sub
  End If
-    Call Remarketing_SOLDReport_Sales("UnitStatus in ('S','D') AND InvoicePaid >=#" & Me.startDate & "# AND InvoicePaid<=#" & Me.Enddate & "# ")
+    Call Remarketing_SOLDReport_Sales("UnitStatus in ('S','D') AND InvoicePaid >=#" & Me.StartDate & "# AND InvoicePaid<=#" & Me.EndDate & "# ")
 End Sub
 
 Private Sub BTF_BuyersOrder_Click()
@@ -117,9 +117,9 @@ Private Sub RMKTBankReport_Click()
     Call SetSQLx
     SQLz = SQLx
     SQLz = SQLz & "WHERE BankID=" & Me.Bank & " "
-    If IsDate(Me.startDate) And IsDate(Me.Enddate) Then
-        SQLz = SQLz & "AND  ExpenseDate >=#" & Me.startDate & "# AND  ExpenseDate <=#" & Me.Enddate & "# "
-        Header = Header & " and By Date Range: " & Me.startDate & " ~ " & Me.Enddate
+    If IsDate(Me.StartDate) And IsDate(Me.EndDate) Then
+        SQLz = SQLz & "AND  ExpenseDate >=#" & Me.StartDate & "# AND  ExpenseDate <=#" & Me.EndDate & "# "
+        Header = Header & " and By Date Range: " & Me.StartDate & " ~ " & Me.EndDate
     End If
     SQLz = SQLz & "ORDER BY InvoiceNumber, ExpenseDate, ClientShortname, vw_SixKeys.AssetID"
     SendReport2Excel SQLz, "Vendor", Header, True, XLS, 0
@@ -153,24 +153,24 @@ Private Sub RMKTVendorReport_Click()
     Call SetSQLx
     SQLz = SQLx
     SQLz = SQLz & "WHERE Vendors.VendorID=" & Me.Vendor & " "
-    If IsDate(Me.startDate) And IsDate(Me.Enddate) Then
-        SQLz = SQLz & "AND  ExpenseDate >=#" & Me.startDate & "# AND  ExpenseDate <=#" & Me.Enddate & "# "
-        Header = Header & " and By Date Range: " & Me.startDate & " ~ " & Me.Enddate
+    If IsDate(Me.StartDate) And IsDate(Me.EndDate) Then
+        SQLz = SQLz & "AND  ExpenseDate >=#" & Me.StartDate & "# AND  ExpenseDate <=#" & Me.EndDate & "# "
+        Header = Header & " and By Date Range: " & Me.StartDate & " ~ " & Me.EndDate
     End If
     SQLz = SQLz & "ORDER BY InvoiceNumber, ExpenseDate, ClientShortname, vw_SixKeys.AssetID"
     SendReport2Excel SQLz, "Vendor", Header, True, XLS, 0
     MessageUser "Close"
 End Sub
 Private Sub RMKTExpenseDate_Report_Click()
-    If Not IsDate(Me.startDate) Or Not IsDate(Me.Enddate) Then
+    If Not IsDate(Me.StartDate) Or Not IsDate(Me.EndDate) Then
         MsgBox "You must have BOTH a Start and End Date Set", vbCritical, "No Dates, No Service"
         Exit Sub
     End If
-    Header = "Expenses By Date: " & Me.startDate & " ~ " & Me.Enddate
+    Header = "Expenses By Date: " & Me.StartDate & " ~ " & Me.EndDate
     MessageUser "Open", "Creating RMKT Invoice Date Report", "...Getting Data..."
     Call SetSQLx
     SQLz = SQLx
-    SQLz = SQLz & "WHERE ExpenseDate >=#" & Me.startDate & "# AND  ExpenseDate <=#" & Me.Enddate & "# "
+    SQLz = SQLz & "WHERE ExpenseDate >=#" & Me.StartDate & "# AND  ExpenseDate <=#" & Me.EndDate & "# "
     SQLz = SQLz & "ORDER BY ExpenseDate, VendorName, ClientShortname, vw_SixKeys.AssetID"
     SendReport2Excel SQLz, "Expense Dates", Header, True, XLS, 0
     MessageUser "Close"
@@ -200,8 +200,8 @@ End Sub
 Private Sub Form_Load()
     Call ClearAll_Click
    '' Call FixParkedUnits(True)
-    Me.Enddate = Date + 5
-    Me.startDate = DateAdd("d", -30, Date)
+    Me.EndDate = Date + 5
+    Me.StartDate = DateAdd("d", -30, Date)
 
 
     Me.OverRideCbo = "No OverRide"
@@ -211,8 +211,8 @@ Private Sub Form_Load()
         '   Me.Enddate.Visible = False
     Else
        'Me.GetDekra1.Visible = True
-        Me.startDate.Visible = True
-          Me.Enddate.Visible = True
+        Me.StartDate.Visible = True
+          Me.EndDate.Visible = True
     End If
     If FAUserAccess < 80 Then
         Me.OverRideCbo.Visible = False
@@ -247,11 +247,11 @@ Private Sub GetDekra1_Click()
 End Sub
 
 Private Sub StartDate_AfterUpdate()
-   Me.Enddate = DateAdd("m", 1, Me.startDate) - 1
+   Me.EndDate = DateAdd("m", 1, Me.StartDate) - 1
 End Sub
 
 Private Sub SUFReturned_Click()
-    If Not IsDate(Me.startDate) Or Not IsDate(Me.Enddate) Then
+    If Not IsDate(Me.StartDate) Or Not IsDate(Me.EndDate) Then
         MsgBox "You must have BOTH a Start and End Date Set", vbCritical, "No Dates, No Service"
         Exit Sub
     End If
@@ -278,9 +278,9 @@ Private Sub SUFReturned_Click()
     SQLz = SQLz & ", OverMilesCost AS [Over Mile Charge]" 'U
     SQLz = SQLz & " From vw_ExitReport0 as E"
     SQLz = SQLz & " Where Mlorig='FA' AND ParkedDate is not null"
-    SQLz = SQLz & " AND  SUFBack >=#" & Me.startDate & "# AND  SUFBack <=#" & Me.Enddate & "# "
+    SQLz = SQLz & " AND  SUFBack >=#" & Me.StartDate & "# AND  SUFBack <=#" & Me.EndDate & "# "
     SQLz = SQLz & " AND NOT SUFBack is null"
-    Header = "SUF Returned Report " & Me.startDate & " ~ " & Me.Enddate
+    Header = "SUF Returned Report " & Me.StartDate & " ~ " & Me.EndDate
     XLS = ""
     XLS = XLS & "|A,DD3|E,BC|F,TC|G,TX|K,SR|H,TC|J,TC|L,SR|M,TC|N,TC|O,BC|P,SR|Q,BC|R,SR|S,SR|T,SR|U,$E"
     XLS = XLS & "|A,W20|E,W09|K,W10|H,W10|J,W10|L,W10|M,W10|N,W10|O,W06|P,W10|Q,W07|S,W10|T,W10|U,W11"

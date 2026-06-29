@@ -80,8 +80,8 @@ Public Function LoadData(UnitIDx As Long)
     Call Me.RmktExpense.Form.LoadData(UnitIDx)
     On Error Resume Next
     Me.BuyOrdersList.Requery
-    If Nz(Me.UnitREF, 0) = 0 Or Nz(Me.UnitREF, 0) <> UnitIDx Then
-        If IsNull(Me.UnitREF) Or Me.Form.NewRecord = True Then Exit Function
+    If Nz(Me.UnitRef, 0) = 0 Or Nz(Me.UnitRef, 0) <> UnitIDx Then
+        If IsNull(Me.UnitRef) Or Me.Form.NewRecord = True Then Exit Function
         Call SetGainLoss
         Me.BuyOrdersList.Requery
         Call SetLocks
@@ -95,7 +95,7 @@ FixMe:
 End Function
 Private Sub Form_Current()
     Me.BuyOrdersList.Requery
-    If IsNull(Me.UnitREF) Or Me.Form.NewRecord = True Then Exit Sub
+    If IsNull(Me.UnitRef) Or Me.Form.NewRecord = True Then Exit Sub
    ' Call SetGainLoss
 End Sub
 Public Sub SetGainLoss()
@@ -105,8 +105,8 @@ Public Sub SetGainLoss()
     Dim NBONumber As Double
     If Me.Dirty = True Then Me.Dirty = False
     If Nz(Me.SoldPrice, 0) > 0 Then GLNumber = Me.SoldPrice - Nz(Me.AdjBookValue, 0)
-    If IsDate(DLookup("unitoffleasedt", "Units", "UnitId=" & UnitREF)) Then
-        NBONumber = Nz(DLookup("PDSurrenderAmt", "vw_PerDiemSurrender", "Not InspectionPassed Is Null and UnitId=" & Me.UnitREF), 0)
+    If IsDate(DLookup("unitoffleasedt", "Units", "UnitId=" & UnitRef)) Then
+        NBONumber = Nz(DLookup("PDSurrenderAmt", "vw_PerDiemSurrender", "Not InspectionPassed Is Null and UnitId=" & Me.UnitRef), 0)
     End If
     BONumber = Nz(Me.BuyOutCost, 0)
     ABVNumber = Nz(Me.TermPenalty, 0)
@@ -123,16 +123,16 @@ Private Sub BuyerREF_DblClick(Cancel As Integer)
 End Sub
 
 Private Sub BuyOutDate_AfterUpdate()
-    If Not IsNull(Me.BuyOutDate) And (Forms!Unitsform.[unitstatus] = "TR" Or Forms!Unitsform.[unitstatus] = "T") Then
-        Forms!Unitsform.[unitstatus] = "R"
+    If Not IsNull(Me.BuyOutDate) And (Forms!Unitsform.[UnitStatus] = "TR" Or Forms!Unitsform.[UnitStatus] = "T") Then
+        Forms!Unitsform.[UnitStatus] = "R"
     Else
         Exit Sub
     End If
 End Sub
 
 Private Sub BuyOutDate_Dirty(Cancel As Integer)
-    If Not IsNull(Me.BuyOutDate) And (Forms!Unitsform.[unitstatus] = "TR" Or Not IsNull(Me.BuyOutDate) And Forms!Unitsform.[unitstatus] = "T") Then
-        Forms!Unitsform.[unitstatus] = "R"
+    If Not IsNull(Me.BuyOutDate) And (Forms!Unitsform.[UnitStatus] = "TR" Or Not IsNull(Me.BuyOutDate) And Forms!Unitsform.[UnitStatus] = "T") Then
+        Forms!Unitsform.[UnitStatus] = "R"
     Else
         Exit Sub
     End If
@@ -140,9 +140,9 @@ End Sub
 
 Private Sub InvoicePaidDate_AfterUpdate()
     If IsDate(Me.InvoicePaidDate) Then
-        Me.Parent.unitstatus = "S"
+        Me.Parent.UnitStatus = "S"
     Else
-        If Me.Parent.unitstatus = "S" Then Me.Parent.unitstatus = "R"
+        If Me.Parent.UnitStatus = "S" Then Me.Parent.UnitStatus = "R"
     End If
 End Sub
 
@@ -153,16 +153,16 @@ Private Sub InvoiceInvoicePaidDate_AfterUpdate()
     Call CheckSoldStatus
 End Sub
 Private Sub CheckSoldStatus()
-    If IsDate(Me.InvoiceSentDate) And Not IsDate(Me.InvoicePaidDate) Then Parent.unitstatus = "PS"
-    If IsDate(Me.InvoiceSentDate) And IsDate(Me.InvoicePaidDate) Then Parent.unitstatus = "S"
-    If Not IsDate(Me.InvoiceSentDate) And Not IsDate(Me.InvoicePaidDate) And IsDate(BuyOutDate) Then Parent.unitstatus = "R"
+    If IsDate(Me.InvoiceSentDate) And Not IsDate(Me.InvoicePaidDate) Then Parent.UnitStatus = "PS"
+    If IsDate(Me.InvoiceSentDate) And IsDate(Me.InvoicePaidDate) Then Parent.UnitStatus = "S"
+    If Not IsDate(Me.InvoiceSentDate) And Not IsDate(Me.InvoicePaidDate) And IsDate(BuyOutDate) Then Parent.UnitStatus = "R"
 End Sub
 
 Private Sub PakrDt_AfterUpdate()
-    If Me.Parent.unitstatus = "S" Or Me.Parent.unitstatus = "PS" Or Me.Parent.unitstatus = "D" Or Me.Parent.unitstatus = "R" Then Exit Sub
+    If Me.Parent.UnitStatus = "S" Or Me.Parent.UnitStatus = "PS" Or Me.Parent.UnitStatus = "D" Or Me.Parent.UnitStatus = "R" Then Exit Sub
     If IsDate(Me.PakrDt) Then
         MsgBox "This will Change the Unit's Status to 'P' (Parked)", vbInformation, "Unit Status Change"
-        Me.Parent.unitstatus = "P"
+        Me.Parent.UnitStatus = "P"
         Exit Sub
     End If
 
@@ -194,7 +194,7 @@ Private Sub TermPenalty_AfterUpdate()
             Exit Sub
         Else
             SQLz = "INSERT INTO ExitOptionsTermPenaltyChanges ( UnitID, UserID, ChangeDate, PrevValue, NewValue )  " & _
-                   "SELECT " & Me.UnitREF & ", " & FAUserIDx & ", #" & Date & "#, " & ValueX & "," & Me.TermPenalty & ";"
+                   "SELECT " & Me.UnitRef & ", " & FAUserIDx & ", #" & Date & "#, " & ValueX & "," & Me.TermPenalty & ";"
             DoCmd.SetWarnings False
             DoCmd.RunSQL (SQLz)
             DoCmd.SetWarnings True
@@ -202,11 +202,11 @@ Private Sub TermPenalty_AfterUpdate()
             'make email message
             msg1 = msg1 & "<html><body><p style='color:RED;font-family:Segoe UI;font-size:20px;'><b>Termination Penalty Change</b></p>"
             msg1 = msg1 & "<p style='font-family:Segoe UI;font-size:12px'>To: Jim Wharton<br />"
-            msg1 = msg1 & "Subject:&#160;&#160;&#160;&#160;&#160;&#160;Termination Penalty Changed, Re AssetID:<b> " & Me.UnitREF & "</b><br />"
+            msg1 = msg1 & "Subject:&#160;&#160;&#160;&#160;&#160;&#160;Termination Penalty Changed, Re AssetID:<b> " & Me.UnitRef & "</b><br />"
             msg1 = msg1 & "Priority:<b>&#160;&#160;&#160;&#160;&#160;&#160;High </b><br/><br/>"
             msg1 = msg1 & "Dear Jim,<br/><br/>There was a change submitted to a Remarketing Unit's Term-Penalty, the details are below.<br /><br />"
             msg1 = msg1 & "Company " & Me.Parent.UnitSouceInfo & "<br />"
-            msg1 = msg1 & "AssetID: <B>" & Me.UnitREF & "</B><br />"
+            msg1 = msg1 & "AssetID: <B>" & Me.UnitRef & "</B><br />"
             msg1 = msg1 & "Prev Value: <B>" & Format(ValueX, "$#,#.#0") & "</B><br />"
             msg1 = msg1 & "New Value: <B>" & Format(Me.TermPenalty, "$#,#.#0") & "</B><br />"
             msg1 = msg1 & "User who made change: <B>" & FAUserFullName & "</B><br />"
@@ -233,6 +233,6 @@ Public Function ConfrimIT(ByVal FieldBoX As String, ByVal TragetX As String) As 
 End Function
 
 Private Sub UNSaleUnit_Click()
-    Call UnSellAUnit(Me.UnitREF)
+    Call UnSellAUnit(Me.UnitRef)
     Me.Refresh
 End Sub

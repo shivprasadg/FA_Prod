@@ -33,35 +33,7 @@
   IsSplit.Split
 FROM
   vw_DrawDowns_Invoices AS DDI
-  LEFT JOIN (
-    SELECT
-      DISTINCTROW DrawCnt.UnitInvoiceNum,
-      Count(*) AS Split
-    FROM
-      (
-        SELECT
-          DISTINCT Units.UnitInvoiceNum,
-          Units.DrawDownId
-        FROM
-          Units
-      ) AS DrawCnt
-    WHERE
-      (
-        (
-          (DrawCnt.DrawDownId)> 0
-        )
-      )
-    GROUP BY
-      DrawCnt.UnitInvoiceNum
-    HAVING
-      (
-        (
-          (
-            Count(*)
-          )> 1
-        )
-      )
-  ) AS IsSplit ON DDI.Invoice = IsSplit.UnitInvoiceNum
+  LEFT JOIN [SELECT DISTINCTROW DrawCnt].[UnitInvoiceNum, Count(*) AS Split FROM (SELECT DISTINCT Units].[UnitInvoiceNum, Units].[DrawDownId FROM Units)  AS DrawCnt WHERE (((DrawCnt].[DrawDownId)>0)) GROUP BY DrawCnt].[UnitInvoiceNum HAVING (((Count(*))>1))] AS IsSplit ON DDI.Invoice = IsSplit.UnitInvoiceNum
 GROUP BY
   DDI.Invoice,
   DDI.Vendor,

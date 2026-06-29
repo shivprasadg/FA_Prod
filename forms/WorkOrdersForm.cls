@@ -17,13 +17,13 @@ Private Sub AddNew_Click()
         Response = MsgBox("You are about to Add a Work Order." & vbNewLine & "Are you sure?", vbQuestion + vbYesNo, "Add Work Order?")
         If Response = vbYes Then
             DoCmd.GotoRecord , , acNewRec
-            Me.wAssetID = Forms!Unitsform.Form.UnitID
+            Me.wAssetId = Forms!Unitsform.Form.UnitID
             Me.wStartDate = Date
             Me.wStatus = "Pending"
-            Me.wClientID = DLookup("ClientID", "vw_SixKeys", "AssetID=" & Me.wAssetID & "")
-            Me.wClientIDGroupID = DLookup("ClientGroupID", "vw_SixKeys", "AssetID=" & Me.wAssetID & "")
+            Me.wClientID = DLookup("ClientID", "vw_SixKeys", "AssetID=" & Me.wAssetId & "")
+            Me.wClientIDGroupID = DLookup("ClientGroupID", "vw_SixKeys", "AssetID=" & Me.wAssetId & "")
             DoCmd.RunCommand acCmdSaveRecord
-            Me.wNotes = "Work Order WO-" & Me.wAssetID & "-" & Me.WorkOrderID & " creadted by " & FAUserName
+            Me.wNotes = "Work Order WO-" & Me.wAssetId & "-" & Me.WorkOrderID & " creadted by " & FAUserName
             Me.wONumber = "WO-" & Forms!Unitsform.Form.UnitID & "-" & Me.WorkOrderID
             Me.WorkOrderItemsSub.Visible = True
         End If
@@ -42,7 +42,7 @@ Private Sub Form_BeforeUpdate(Cancel As Integer)
 End Sub
 
 Private Sub Form_Load()
- If Nz(DCount("WorkOrderID", "WorkOrders", "wAssetID=" & Nz(Me.wAssetID, 0) & ""), 0) = 0 Then
+ If Nz(DCount("WorkOrderID", "WorkOrders", "wAssetID=" & Nz(Me.wAssetId, 0) & ""), 0) = 0 Then
      Me.AddNew.Visible = True
      'Me.WorkOrderItemsSub.Visible = False
      Me.Detail.Visible = False
@@ -98,7 +98,7 @@ End Sub
 
 Private Sub SaveMe_Click()
     Dim Validate As String
-    If Nz(Me.VendorRef, 0) = 0 Then Validate = Validate & "   Vendor" & vbNewLine
+    If Nz(Me.VendorREF, 0) = 0 Then Validate = Validate & "   Vendor" & vbNewLine
     If Nz(Me.ExpenseType, 0) = 0 Then Validate = Validate & "   Expense Type" & vbNewLine
     If Nz(Me.ExpenseDate, 0) = 0 Then Validate = Validate & "   Expense Date" & vbNewLine
     If Nz(Me.Expense, 0) = 0 Then Validate = Validate & "   Expense Amount" & vbNewLine

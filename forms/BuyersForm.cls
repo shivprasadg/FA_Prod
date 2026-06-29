@@ -39,11 +39,11 @@ Private Sub AddNewBuyer_Click()
 End Sub
 
 Public Sub BuyerList_Click()
-    SQLz = "Select * From Buyer WHERE BuyerID = " & Nz(Me.BuyerList, Me.BuyerId) & ";"
+    SQLz = "Select * From Buyer WHERE BuyerID = " & Nz(Me.BuyerList, Me.BuyerID) & ";"
     Me.Form.RecordSource = SQLz
 
     SQLz = "SELECT contactID, clientRef, contactClassification, contactFullName AS Contact, [clientRef] " & _
-           "FROM Location_contacts WHERE clientRef=" & Nz(Me.BuyerList, Me.BuyerId) & " ORDER BY contactFullName;"
+           "FROM Location_contacts WHERE clientRef=" & Nz(Me.BuyerList, Me.BuyerID) & " ORDER BY contactFullName;"
     Me.ContactDetails.Form.ContactsList.RowSource = SQLz
     Me.RemarketingInvoiceRequest_Sub.Form.BuyersOrderUnits_Sub.Form.Visible = False
 FixMe:

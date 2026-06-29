@@ -158,10 +158,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1620
-                    Top =825
-                    Width =3945
-                    Height =315
+                    Left =1644
+                    Top =840
+                    Width =3960
+                    Height =312
                     ColumnWidth =4335
                     FontSize =10
                     TabIndex =2
@@ -170,10 +170,10 @@ Begin Form
                     FontName ="Segoe UI"
                     GroupTable =1
 
-                    LayoutCachedLeft =1620
-                    LayoutCachedTop =825
-                    LayoutCachedWidth =5565
-                    LayoutCachedHeight =1140
+                    LayoutCachedLeft =1644
+                    LayoutCachedTop =840
+                    LayoutCachedWidth =5604
+                    LayoutCachedHeight =1152
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -184,20 +184,20 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =3
-                            Left =30
-                            Top =825
-                            Width =1530
-                            Height =315
+                            Left =36
+                            Top =840
+                            Width =1536
+                            Height =312
                             FontSize =10
                             FontWeight =700
                             ForeColor =8210719
                             Name ="Label5"
                             Caption ="TaxID"
                             GroupTable =1
-                            LayoutCachedLeft =30
-                            LayoutCachedTop =825
-                            LayoutCachedWidth =1560
-                            LayoutCachedHeight =1140
+                            LayoutCachedLeft =36
+                            LayoutCachedTop =840
+                            LayoutCachedWidth =1572
+                            LayoutCachedHeight =1152
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1
@@ -207,10 +207,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =3660
-                    Top =1200
-                    Width =1905
-                    Height =315
+                    Left =3696
+                    Top =1224
+                    Width =1908
+                    Height =312
                     FontSize =9
                     TabIndex =4
                     Name ="SaveCoLessee"
@@ -220,10 +220,10 @@ Begin Form
                     ControlTipText ="Save this Co Lessee"
                     GroupTable =1
 
-                    LayoutCachedLeft =3660
-                    LayoutCachedTop =1200
-                    LayoutCachedWidth =5565
-                    LayoutCachedHeight =1515
+                    LayoutCachedLeft =3696
+                    LayoutCachedTop =1224
+                    LayoutCachedWidth =5604
+                    LayoutCachedHeight =1536
                     PictureCaptionArrangement =5
                     RowStart =3
                     RowEnd =3
@@ -288,10 +288,10 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =3
                     ListWidth =5760
-                    Left =1620
-                    Top =75
-                    Width =3945
-                    Height =315
+                    Left =1644
+                    Top =72
+                    Width =3960
+                    Height =312
                     FontSize =10
                     BackColor =16249583
                     Name ="CoLesseeID"
@@ -307,46 +307,48 @@ Begin Form
                     ControlTipText ="Also enter Short Name Nm for Reports - it is required."
                     GroupTable =1
 
-                    LayoutCachedLeft =1620
-                    LayoutCachedTop =75
-                    LayoutCachedWidth =5565
-                    LayoutCachedHeight =390
+                    LayoutCachedLeft =1644
+                    LayoutCachedTop =72
+                    LayoutCachedWidth =5604
+                    LayoutCachedHeight =384
                     ColumnStart =1
                     ColumnEnd =2
                     LayoutGroup =1
                     BorderThemeColorIndex =1
                     BorderShade =85.0
                     GroupTable =1
-                End
-                Begin Label
-                    OverlapFlags =85
-                    TextAlign =3
-                    Left =30
-                    Top =75
-                    Width =1530
-                    Height =315
-                    FontSize =10
-                    FontWeight =700
-                    ForeColor =8210719
-                    Name ="Label29"
-                    Caption ="Co/Sub Lessee "
-                    GroupTable =1
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =75
-                    LayoutCachedWidth =1560
-                    LayoutCachedHeight =390
-                    LayoutGroup =1
-                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =36
+                            Top =72
+                            Width =1536
+                            Height =312
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =8210719
+                            Name ="Label29"
+                            Caption ="Co/Sub Lessee "
+                            GroupTable =1
+                            LayoutCachedLeft =36
+                            LayoutCachedTop =72
+                            LayoutCachedWidth =1572
+                            LayoutCachedHeight =384
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
                 End
                 Begin ComboBox
                     RowSourceTypeInt =1
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =1620
-                    Top =450
-                    Width =3945
-                    Height =315
+                    Left =1644
+                    Top =456
+                    Width =3960
+                    Height =312
                     FontSize =10
                     TabIndex =1
                     BackColor =16249583
@@ -358,10 +360,10 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GroupTable =1
 
-                    LayoutCachedLeft =1620
-                    LayoutCachedTop =450
-                    LayoutCachedWidth =5565
-                    LayoutCachedHeight =765
+                    LayoutCachedLeft =1644
+                    LayoutCachedTop =456
+                    LayoutCachedWidth =5604
+                    LayoutCachedHeight =768
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -374,20 +376,20 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =3
-                            Left =30
-                            Top =450
-                            Width =1530
-                            Height =315
+                            Left =36
+                            Top =456
+                            Width =1536
+                            Height =312
                             FontSize =10
                             FontWeight =700
                             ForeColor =8210719
                             Name ="Label4"
                             Caption ="Leesee Type "
                             GroupTable =1
-                            LayoutCachedLeft =30
-                            LayoutCachedTop =450
-                            LayoutCachedWidth =1560
-                            LayoutCachedHeight =765
+                            LayoutCachedLeft =36
+                            LayoutCachedTop =456
+                            LayoutCachedWidth =1572
+                            LayoutCachedHeight =768
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -396,17 +398,16 @@ Begin Form
                     End
                 End
                 Begin EmptyCell
-                    Left =30
-                    Top =1200
-                    Width =1530
-                    Height =315
+                    Left =36
+                    Top =1224
+                    Width =1536
+                    Height =312
                     Name ="EmptyCell37"
                     GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =30
-                    LayoutCachedTop =1200
-                    LayoutCachedWidth =1560
-                    LayoutCachedHeight =1515
+                    LayoutCachedLeft =36
+                    LayoutCachedTop =1224
+                    LayoutCachedWidth =1572
+                    LayoutCachedHeight =1536
                     RowStart =3
                     RowEnd =3
                     LayoutGroup =1
@@ -422,8 +423,6 @@ Begin Form
                     Height =1725
                     FontSize =10
                     TabIndex =8
-                    ForeColor =4210752
-                    BorderColor =10921638
                     Name ="CoLesseeList"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT ScheduleCoLessee.INDX, ScheduleCoLessee.CoLesseeLabel, Clients.clientComp"
@@ -433,7 +432,6 @@ Begin Form
                     ColumnWidths ="0;1440;3600;0"
                     FontName ="Segoe UI"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =135
                     LayoutCachedTop =1680
@@ -443,10 +441,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =1620
-                    Top =1200
+                    Left =1644
+                    Top =1224
                     Width =1980
-                    Height =315
+                    Height =312
                     FontSize =9
                     TabIndex =3
                     Name ="AddNew"
@@ -456,10 +454,10 @@ Begin Form
                     ControlTipText ="Add a Co Lessee"
                     GroupTable =1
 
-                    LayoutCachedLeft =1620
-                    LayoutCachedTop =1200
-                    LayoutCachedWidth =3600
-                    LayoutCachedHeight =1515
+                    LayoutCachedLeft =1644
+                    LayoutCachedTop =1224
+                    LayoutCachedWidth =3624
+                    LayoutCachedHeight =1536
                     PictureCaptionArrangement =5
                     RowStart =3
                     RowEnd =3

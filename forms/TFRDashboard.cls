@@ -412,7 +412,7 @@ End Sub
 Private Sub AccountName_DblClick(Cancel As Integer)
     If Me.AccountName & "TEST" = "TEST" Then Exit Sub
     DoCmd.close acForm, "ClientsView"
-    DoCmd.OpenForm "ClientsView", , , , , , Me.clientID
+    DoCmd.OpenForm "ClientsView", , , , , , Me.ClientID
     Me.UnitID.SetFocus
 End Sub
 

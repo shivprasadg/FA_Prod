@@ -350,9 +350,7 @@ Begin Report
                     Width =10800
                     Height =300
                     BackColor =14277081
-                    BorderColor =10921638
                     Name ="Box48"
-                    GridlineColor =10921638
                     LayoutCachedTop =420
                     LayoutCachedWidth =10800
                     LayoutCachedHeight =720

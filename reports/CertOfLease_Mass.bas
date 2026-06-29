@@ -140,8 +140,8 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =165
-                    Top =3795
+                    Left =168
+                    Top =3792
                     Width =1500
                     Height =600
                     BackColor =14211288
@@ -154,10 +154,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =165
-                    LayoutCachedTop =3795
-                    LayoutCachedWidth =1665
-                    LayoutCachedHeight =4395
+                    LayoutCachedLeft =168
+                    LayoutCachedTop =3792
+                    LayoutCachedWidth =1668
+                    LayoutCachedHeight =4392
                     LayoutGroup =2
                     ThemeFontIndex =-1
                     BackThemeColorIndex =-1
@@ -172,9 +172,9 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =1665
-                    Top =3795
-                    Width =885
+                    Left =1680
+                    Top =3792
+                    Width =888
                     Height =600
                     BackColor =14211288
                     BorderColor =9211020
@@ -186,10 +186,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =1665
-                    LayoutCachedTop =3795
-                    LayoutCachedWidth =2550
-                    LayoutCachedHeight =4395
+                    LayoutCachedLeft =1680
+                    LayoutCachedTop =3792
+                    LayoutCachedWidth =2568
+                    LayoutCachedHeight =4392
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -206,8 +206,8 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =2550
-                    Top =3795
+                    Left =2580
+                    Top =3792
                     Width =2040
                     Height =600
                     BackColor =14211288
@@ -220,10 +220,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =2550
-                    LayoutCachedTop =3795
-                    LayoutCachedWidth =4590
-                    LayoutCachedHeight =4395
+                    LayoutCachedLeft =2580
+                    LayoutCachedTop =3792
+                    LayoutCachedWidth =4620
+                    LayoutCachedHeight =4392
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =2
@@ -240,9 +240,9 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =10245
-                    Top =3795
-                    Width =1110
+                    Left =10320
+                    Top =3792
+                    Width =1116
                     Height =600
                     BackColor =14211288
                     BorderColor =9211020
@@ -254,10 +254,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =10245
-                    LayoutCachedTop =3795
-                    LayoutCachedWidth =11355
-                    LayoutCachedHeight =4395
+                    LayoutCachedLeft =10320
+                    LayoutCachedTop =3792
+                    LayoutCachedWidth =11436
+                    LayoutCachedHeight =4392
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =2
@@ -274,9 +274,9 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =4590
-                    Top =3795
-                    Width =3585
+                    Left =4632
+                    Top =3792
+                    Width =3588
                     Height =600
                     BackColor =14211288
                     BorderColor =9211020
@@ -288,10 +288,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =4590
-                    LayoutCachedTop =3795
-                    LayoutCachedWidth =8175
-                    LayoutCachedHeight =4395
+                    LayoutCachedLeft =4632
+                    LayoutCachedTop =3792
+                    LayoutCachedWidth =8220
+                    LayoutCachedHeight =4392
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =2
@@ -308,9 +308,9 @@ Begin Report
                     OldBorderStyle =1
                     BorderWidth =1
                     TextAlign =2
-                    Left =8175
-                    Top =3795
-                    Width =2070
+                    Left =8232
+                    Top =3792
+                    Width =2076
                     Height =600
                     BackColor =14211288
                     BorderColor =9211020
@@ -322,10 +322,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    LayoutCachedLeft =8175
-                    LayoutCachedTop =3795
-                    LayoutCachedWidth =10245
-                    LayoutCachedHeight =4395
+                    LayoutCachedLeft =8232
+                    LayoutCachedTop =3792
+                    LayoutCachedWidth =10308
+                    LayoutCachedHeight =4392
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =2
@@ -1051,7 +1051,7 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =165
+                    Left =168
                     Width =1500
                     Height =315
                     FontSize =10
@@ -1066,8 +1066,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =165
-                    LayoutCachedWidth =1665
+                    LayoutCachedLeft =168
+                    LayoutCachedWidth =1668
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -1085,8 +1085,8 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1665
-                    Width =885
+                    Left =1680
+                    Width =888
                     Height =315
                     FontSize =10
                     TabIndex =1
@@ -1101,8 +1101,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =1665
-                    LayoutCachedWidth =2550
+                    LayoutCachedLeft =1680
+                    LayoutCachedWidth =2568
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -1122,7 +1122,7 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2550
+                    Left =2580
                     Width =2040
                     Height =315
                     FontSize =10
@@ -1138,8 +1138,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =2550
-                    LayoutCachedWidth =4590
+                    LayoutCachedLeft =2580
+                    LayoutCachedWidth =4620
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -1159,8 +1159,8 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4590
-                    Width =3585
+                    Left =4632
+                    Width =3588
                     Height =315
                     TabIndex =3
                     BorderColor =9211020
@@ -1174,8 +1174,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =4590
-                    LayoutCachedWidth =8175
+                    LayoutCachedLeft =4632
+                    LayoutCachedWidth =8220
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -1198,8 +1198,8 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =8175
-                    Width =2070
+                    Left =8232
+                    Width =2076
                     Height =315
                     FontSize =10
                     TabIndex =4
@@ -1215,8 +1215,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =8175
-                    LayoutCachedWidth =10245
+                    LayoutCachedLeft =8232
+                    LayoutCachedWidth =10308
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -1236,8 +1236,8 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10245
-                    Width =1110
+                    Left =10320
+                    Width =1116
                     Height =315
                     FontSize =10
                     TabIndex =5
@@ -1253,8 +1253,8 @@ Begin Report
                     RightPadding =0
                     BottomPadding =0
 
-                    LayoutCachedLeft =10245
-                    LayoutCachedWidth =11355
+                    LayoutCachedLeft =10320
+                    LayoutCachedWidth =11436
                     LayoutCachedHeight =315
                     RowStart =1
                     RowEnd =1
@@ -1288,10 +1288,10 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =165
-                    Top =30
+                    Left =168
+                    Top =36
                     Width =11160
-                    Height =285
+                    Height =288
                     BorderColor =0
                     ForeColor =0
                     Name ="Text1"
@@ -1300,10 +1300,10 @@ Begin Report
                     GroupTable =6
                     TextFormat =1
 
-                    LayoutCachedLeft =165
-                    LayoutCachedTop =30
-                    LayoutCachedWidth =11325
-                    LayoutCachedHeight =315
+                    LayoutCachedLeft =168
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =11328
+                    LayoutCachedHeight =324
                     ColumnEnd =1
                     LayoutGroup =1
                     BackThemeColorIndex =-1
@@ -1321,10 +1321,10 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =165
-                    Top =375
-                    Width =5925
-                    Height =285
+                    Left =168
+                    Top =384
+                    Width =5928
+                    Height =288
                     TabIndex =1
                     BorderColor =0
                     ForeColor =0
@@ -1334,10 +1334,10 @@ Begin Report
                     RightPadding =0
                     TextFormat =1
 
-                    LayoutCachedLeft =165
-                    LayoutCachedTop =375
-                    LayoutCachedWidth =6090
-                    LayoutCachedHeight =660
+                    LayoutCachedLeft =168
+                    LayoutCachedTop =384
+                    LayoutCachedWidth =6096
+                    LayoutCachedHeight =672
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =1
@@ -1356,10 +1356,10 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6090
-                    Top =375
-                    Width =5235
-                    Height =285
+                    Left =6096
+                    Top =384
+                    Width =5232
+                    Height =288
                     TabIndex =2
                     BorderColor =0
                     ForeColor =0
@@ -1369,10 +1369,10 @@ Begin Report
                     LeftPadding =0
                     TextFormat =1
 
-                    LayoutCachedLeft =6090
-                    LayoutCachedTop =375
-                    LayoutCachedWidth =11325
-                    LayoutCachedHeight =660
+                    LayoutCachedLeft =6096
+                    LayoutCachedTop =384
+                    LayoutCachedWidth =11328
+                    LayoutCachedHeight =672
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -1393,10 +1393,10 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =165
-                    Top =720
+                    Left =168
+                    Top =732
                     Width =11160
-                    Height =285
+                    Height =288
                     TabIndex =3
                     BorderColor =0
                     ForeColor =0
@@ -1409,10 +1409,10 @@ Begin Report
                     GroupTable =6
                     TextFormat =1
 
-                    LayoutCachedLeft =165
-                    LayoutCachedTop =720
-                    LayoutCachedWidth =11325
-                    LayoutCachedHeight =1005
+                    LayoutCachedLeft =168
+                    LayoutCachedTop =732
+                    LayoutCachedWidth =11328
+                    LayoutCachedHeight =1020
                     RowStart =2
                     RowEnd =2
                     ColumnEnd =1
@@ -1432,10 +1432,10 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =165
-                    Top =1065
+                    Left =168
+                    Top =1080
                     Width =11160
-                    Height =287
+                    Height =288
                     TabIndex =4
                     BorderColor =0
                     ForeColor =0
@@ -1444,10 +1444,10 @@ Begin Report
                     GroupTable =6
                     TextFormat =1
 
-                    LayoutCachedLeft =165
-                    LayoutCachedTop =1065
-                    LayoutCachedWidth =11325
-                    LayoutCachedHeight =1352
+                    LayoutCachedLeft =168
+                    LayoutCachedTop =1080
+                    LayoutCachedWidth =11328
+                    LayoutCachedHeight =1368
                     RowStart =3
                     RowEnd =3
                     ColumnEnd =1

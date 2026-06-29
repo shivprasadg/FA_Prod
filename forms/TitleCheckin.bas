@@ -271,10 +271,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =10080
-                    Top =510
+                    Left =10104
+                    Top =516
                     Width =780
-                    Height =315
+                    Height =312
                     FontSize =10
                     TabIndex =2
                     BackColor =15073023
@@ -285,10 +285,10 @@ Begin Form
                     FontName ="Segoe UI"
                     GroupTable =1
 
-                    LayoutCachedLeft =10080
-                    LayoutCachedTop =510
-                    LayoutCachedWidth =10860
-                    LayoutCachedHeight =825
+                    LayoutCachedLeft =10104
+                    LayoutCachedTop =516
+                    LayoutCachedWidth =10884
+                    LayoutCachedHeight =828
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -301,19 +301,19 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =3
-                            Left =8580
-                            Top =510
+                            Left =8592
+                            Top =516
                             Width =1440
-                            Height =315
+                            Height =312
                             FontSize =10
                             Name ="Label19"
                             Caption ="Titled State"
                             FontName ="Segoe UI"
                             GroupTable =1
-                            LayoutCachedLeft =8580
-                            LayoutCachedTop =510
-                            LayoutCachedWidth =10020
-                            LayoutCachedHeight =825
+                            LayoutCachedLeft =8592
+                            LayoutCachedTop =516
+                            LayoutCachedWidth =10032
+                            LayoutCachedHeight =828
                             RowStart =1
                             RowEnd =1
                             ColumnStart =2
@@ -327,9 +327,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =10920
-                    Top =885
-                    Width =3060
+                    Left =10956
+                    Top =900
+                    Width =3072
                     FontSize =10
                     TabIndex =5
                     Name ="LocVINBtn"
@@ -338,10 +338,10 @@ Begin Form
                     FontName ="Segoe UI"
                     GroupTable =1
 
-                    LayoutCachedLeft =10920
-                    LayoutCachedTop =885
-                    LayoutCachedWidth =13980
-                    LayoutCachedHeight =1245
+                    LayoutCachedLeft =10956
+                    LayoutCachedTop =900
+                    LayoutCachedWidth =14028
+                    LayoutCachedHeight =1260
                     RowStart =2
                     RowEnd =2
                     ColumnStart =4
@@ -368,10 +368,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =12240
-                    Top =510
+                    Left =12288
+                    Top =516
                     Width =1740
-                    Height =315
+                    Height =312
                     FontSize =10
                     TabIndex =3
                     BackColor =15073023
@@ -383,10 +383,10 @@ Begin Form
                     FontName ="Segoe UI"
                     GroupTable =1
 
-                    LayoutCachedLeft =12240
-                    LayoutCachedTop =510
-                    LayoutCachedWidth =13980
-                    LayoutCachedHeight =825
+                    LayoutCachedLeft =12288
+                    LayoutCachedTop =516
+                    LayoutCachedWidth =14028
+                    LayoutCachedHeight =828
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -399,20 +399,20 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =3
-                            Left =10920
-                            Top =510
+                            Left =10956
+                            Top =516
                             Width =1260
-                            Height =315
+                            Height =312
                             FontSize =10
                             Name ="Titled to Trust_Label"
                             Caption ="Titled to Trust"
                             FontName ="Segoe UI"
                             EventProcPrefix ="Titled_to_Trust_Label"
                             GroupTable =1
-                            LayoutCachedLeft =10920
-                            LayoutCachedTop =510
-                            LayoutCachedWidth =12180
-                            LayoutCachedHeight =825
+                            LayoutCachedLeft =10956
+                            LayoutCachedTop =516
+                            LayoutCachedWidth =12216
+                            LayoutCachedHeight =828
                             RowStart =1
                             RowEnd =1
                             ColumnStart =4
@@ -523,10 +523,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7575
-                    Top =510
-                    Width =945
-                    Height =315
+                    Left =7584
+                    Top =516
+                    Width =948
+                    Height =312
                     FontSize =10
                     TabIndex =1
                     BackColor =15073023
@@ -536,10 +536,10 @@ Begin Form
                     GroupTable =1
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =7575
-                    LayoutCachedTop =510
-                    LayoutCachedWidth =8520
-                    LayoutCachedHeight =825
+                    LayoutCachedLeft =7584
+                    LayoutCachedTop =516
+                    LayoutCachedWidth =8532
+                    LayoutCachedHeight =828
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -553,18 +553,18 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =6540
-                            Top =510
+                            Top =516
                             Width =975
-                            Height =315
+                            Height =312
                             FontSize =10
                             Name ="Label3"
                             Caption ="Enter Year"
                             FontName ="Segoe UI"
                             GroupTable =1
                             LayoutCachedLeft =6540
-                            LayoutCachedTop =510
+                            LayoutCachedTop =516
                             LayoutCachedWidth =7515
-                            LayoutCachedHeight =825
+                            LayoutCachedHeight =828
                             RowStart =1
                             RowEnd =1
                             LayoutGroup =1
@@ -579,9 +579,9 @@ Begin Form
                     TextAlign =1
                     TextFontFamily =50
                     IMESentenceMode =3
-                    Left =7575
+                    Left =7584
                     Top =60
-                    Width =6405
+                    Width =6444
                     Height =420
                     FontSize =16
                     BackColor =15073023
@@ -594,9 +594,9 @@ Begin Form
                     BottomPadding =0
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =7575
+                    LayoutCachedLeft =7584
                     LayoutCachedTop =60
-                    LayoutCachedWidth =13980
+                    LayoutCachedWidth =14028
                     LayoutCachedHeight =480
                     ColumnStart =1
                     ColumnEnd =5
@@ -657,9 +657,9 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =7575
-                    Top =885
-                    Width =3285
+                    Left =7584
+                    Top =900
+                    Width =3300
                     Height =360
                     FontSize =10
                     TabIndex =4
@@ -670,10 +670,10 @@ Begin Form
                     GroupTable =1
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =7575
-                    LayoutCachedTop =885
-                    LayoutCachedWidth =10860
-                    LayoutCachedHeight =1245
+                    LayoutCachedLeft =7584
+                    LayoutCachedTop =900
+                    LayoutCachedWidth =10884
+                    LayoutCachedHeight =1260
                     RowStart =2
                     RowEnd =2
                     ColumnStart =1
@@ -687,7 +687,7 @@ Begin Form
                             OverlapFlags =85
                             TextAlign =3
                             Left =6540
-                            Top =885
+                            Top =900
                             Width =975
                             Height =360
                             FontSize =10
@@ -696,9 +696,9 @@ Begin Form
                             FontName ="Segoe UI"
                             GroupTable =1
                             LayoutCachedLeft =6540
-                            LayoutCachedTop =885
+                            LayoutCachedTop =900
                             LayoutCachedWidth =7515
-                            LayoutCachedHeight =1245
+                            LayoutCachedHeight =1260
                             RowStart =2
                             RowEnd =2
                             LayoutGroup =1

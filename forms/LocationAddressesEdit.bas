@@ -905,9 +905,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1140
-                    Top =8520
-                    Width =750
+                    Left =1152
+                    Top =8532
+                    Width =756
                     FontSize =8
                     TabIndex =25
                     BorderColor =15527148
@@ -922,10 +922,10 @@ Begin Form
                     BottomPadding =0
                     VerticalAnchor =1
 
-                    LayoutCachedLeft =1140
-                    LayoutCachedTop =8520
-                    LayoutCachedWidth =1890
-                    LayoutCachedHeight =8760
+                    LayoutCachedLeft =1152
+                    LayoutCachedTop =8532
+                    LayoutCachedWidth =1908
+                    LayoutCachedHeight =8772
                     RowStart =1
                     RowEnd =1
                     ColumnStart =1
@@ -945,9 +945,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1890
-                    Top =8520
-                    Width =510
+                    Left =1920
+                    Top =8532
+                    Width =516
                     FontSize =8
                     TabIndex =26
                     BorderColor =15527148
@@ -961,10 +961,10 @@ Begin Form
                     BottomPadding =0
                     VerticalAnchor =1
 
-                    LayoutCachedLeft =1890
-                    LayoutCachedTop =8520
-                    LayoutCachedWidth =2400
-                    LayoutCachedHeight =8760
+                    LayoutCachedLeft =1920
+                    LayoutCachedTop =8532
+                    LayoutCachedWidth =2436
+                    LayoutCachedHeight =8772
                     RowStart =1
                     RowEnd =1
                     ColumnStart =2
@@ -984,9 +984,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2400
-                    Top =8520
-                    Width =510
+                    Left =2448
+                    Top =8532
+                    Width =516
                     FontSize =8
                     TabIndex =27
                     BorderColor =15527148
@@ -1000,10 +1000,10 @@ Begin Form
                     BottomPadding =0
                     VerticalAnchor =1
 
-                    LayoutCachedLeft =2400
-                    LayoutCachedTop =8520
-                    LayoutCachedWidth =2910
-                    LayoutCachedHeight =8760
+                    LayoutCachedLeft =2448
+                    LayoutCachedTop =8532
+                    LayoutCachedWidth =2964
+                    LayoutCachedHeight =8772
                     RowStart =1
                     RowEnd =1
                     ColumnStart =3
@@ -1023,9 +1023,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2910
-                    Top =8520
-                    Width =510
+                    Left =2976
+                    Top =8532
+                    Width =516
                     FontSize =8
                     TabIndex =28
                     BorderColor =15527148
@@ -1039,10 +1039,10 @@ Begin Form
                     BottomPadding =0
                     VerticalAnchor =1
 
-                    LayoutCachedLeft =2910
-                    LayoutCachedTop =8520
-                    LayoutCachedWidth =3420
-                    LayoutCachedHeight =8760
+                    LayoutCachedLeft =2976
+                    LayoutCachedTop =8532
+                    LayoutCachedWidth =3492
+                    LayoutCachedHeight =8772
                     RowStart =1
                     RowEnd =1
                     ColumnStart =4
@@ -1062,9 +1062,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3420
-                    Top =8520
-                    Width =510
+                    Left =3504
+                    Top =8532
+                    Width =516
                     FontSize =8
                     TabIndex =29
                     BorderColor =15527148
@@ -1078,10 +1078,10 @@ Begin Form
                     BottomPadding =0
                     VerticalAnchor =1
 
-                    LayoutCachedLeft =3420
-                    LayoutCachedTop =8520
-                    LayoutCachedWidth =3930
-                    LayoutCachedHeight =8760
+                    LayoutCachedLeft =3504
+                    LayoutCachedTop =8532
+                    LayoutCachedWidth =4020
+                    LayoutCachedHeight =8772
                     RowStart =1
                     RowEnd =1
                     ColumnStart =5
@@ -1123,7 +1123,7 @@ Begin Form
                     BackStyle =0
                     IMESentenceMode =3
                     Left =480
-                    Top =8520
+                    Top =8532
                     Width =660
                     FontSize =8
                     TabIndex =24
@@ -1140,9 +1140,9 @@ Begin Form
                     VerticalAnchor =1
 
                     LayoutCachedLeft =480
-                    LayoutCachedTop =8520
+                    LayoutCachedTop =8532
                     LayoutCachedWidth =1140
-                    LayoutCachedHeight =8760
+                    LayoutCachedHeight =8772
                     RowStart =1
                     RowEnd =1
                     LayoutGroup =2
@@ -1423,19 +1423,19 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =85
-                    Left =2190
-                    Top =7005
+                    Left =2184
+                    Top =7008
                     Width =240
-                    Height =255
+                    Height =252
                     TabIndex =17
                     BorderColor =8210719
                     Name ="ObsoleteYN"
                     ControlSource ="LocObsolete"
                     GroupTable =2
 
-                    LayoutCachedLeft =2190
-                    LayoutCachedTop =7005
-                    LayoutCachedWidth =2430
+                    LayoutCachedLeft =2184
+                    LayoutCachedTop =7008
+                    LayoutCachedWidth =2424
                     LayoutCachedHeight =7260
                     ColumnStart =1
                     ColumnEnd =1
@@ -1448,19 +1448,19 @@ Begin Form
                             BackStyle =1
                             OverlapFlags =93
                             TextAlign =1
-                            Left =1215
-                            Top =7005
-                            Width =915
-                            Height =255
+                            Left =1212
+                            Top =7008
+                            Width =912
+                            Height =252
                             FontSize =8
                             BorderColor =0
                             Name ="Obsolete"
                             Caption ="Obsolete"
                             FontName ="Segoe UI"
                             GroupTable =2
-                            LayoutCachedLeft =1215
-                            LayoutCachedTop =7005
-                            LayoutCachedWidth =2130
+                            LayoutCachedLeft =1212
+                            LayoutCachedTop =7008
+                            LayoutCachedWidth =2124
                             LayoutCachedHeight =7260
                             LayoutGroup =1
                             ThemeFontIndex =-1
@@ -1479,9 +1479,9 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2970
-                    Top =7005
-                    Height =255
+                    Left =2964
+                    Top =7008
+                    Height =252
                     FontSize =9
                     TabIndex =18
                     ForeColor =0
@@ -1491,9 +1491,9 @@ Begin Form
                     FontName ="Segoe UI"
                     GroupTable =2
 
-                    LayoutCachedLeft =2970
-                    LayoutCachedTop =7005
-                    LayoutCachedWidth =4410
+                    LayoutCachedLeft =2964
+                    LayoutCachedTop =7008
+                    LayoutCachedWidth =4404
                     LayoutCachedHeight =7260
                     ColumnStart =3
                     ColumnEnd =3
@@ -1511,19 +1511,19 @@ Begin Form
                             BackStyle =1
                             OverlapFlags =85
                             TextAlign =1
-                            Left =2490
-                            Top =7005
+                            Left =2484
+                            Top =7008
                             Width =420
-                            Height =255
+                            Height =252
                             FontSize =8
                             BorderColor =0
                             Name ="LTaxRate"
                             Caption ="Date"
                             FontName ="Segoe UI"
                             GroupTable =2
-                            LayoutCachedLeft =2490
-                            LayoutCachedTop =7005
-                            LayoutCachedWidth =2910
+                            LayoutCachedLeft =2484
+                            LayoutCachedTop =7008
+                            LayoutCachedWidth =2904
                             LayoutCachedHeight =7260
                             ColumnStart =2
                             ColumnEnd =2
@@ -1545,7 +1545,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2190
+                    Left =2184
                     Top =7320
                     Width =2220
                     FontSize =9
@@ -1556,9 +1556,9 @@ Begin Form
                     FontName ="Segoe UI"
                     GroupTable =2
 
-                    LayoutCachedLeft =2190
+                    LayoutCachedLeft =2184
                     LayoutCachedTop =7320
-                    LayoutCachedWidth =4410
+                    LayoutCachedWidth =4404
                     LayoutCachedHeight =7560
                     RowStart =1
                     RowEnd =1
@@ -1578,9 +1578,9 @@ Begin Form
                             BackStyle =1
                             OverlapFlags =85
                             TextAlign =1
-                            Left =1215
+                            Left =1212
                             Top =7320
-                            Width =915
+                            Width =912
                             Height =240
                             FontSize =8
                             BorderColor =0
@@ -1588,9 +1588,9 @@ Begin Form
                             Caption ="   Reason "
                             FontName ="Segoe UI"
                             GroupTable =2
-                            LayoutCachedLeft =1215
+                            LayoutCachedLeft =1212
                             LayoutCachedTop =7320
-                            LayoutCachedWidth =2130
+                            LayoutCachedWidth =2124
                             LayoutCachedHeight =7560
                             RowStart =1
                             RowEnd =1
@@ -2107,9 +2107,9 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =85
                     TextAlign =1
-                    Left =1890
+                    Left =1920
                     Top =8280
-                    Width =510
+                    Width =516
                     Height =240
                     FontSize =8
                     FontWeight =700
@@ -2123,9 +2123,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
                     VerticalAnchor =1
-                    LayoutCachedLeft =1890
+                    LayoutCachedLeft =1920
                     LayoutCachedTop =8280
-                    LayoutCachedWidth =2400
+                    LayoutCachedWidth =2436
                     LayoutCachedHeight =8520
                     ColumnStart =2
                     ColumnEnd =2
@@ -2175,9 +2175,9 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =85
                     TextAlign =1
-                    Left =1140
+                    Left =1152
                     Top =8280
-                    Width =750
+                    Width =756
                     Height =240
                     FontSize =8
                     FontWeight =700
@@ -2191,9 +2191,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
                     VerticalAnchor =1
-                    LayoutCachedLeft =1140
+                    LayoutCachedLeft =1152
                     LayoutCachedTop =8280
-                    LayoutCachedWidth =1890
+                    LayoutCachedWidth =1908
                     LayoutCachedHeight =8520
                     ColumnStart =1
                     ColumnEnd =1
@@ -2207,9 +2207,9 @@ Begin Form
                     GroupTable =3
                 End
                 Begin EmptyCell
-                    Left =2400
+                    Left =2448
                     Top =8280
-                    Width =510
+                    Width =516
                     Name ="EmptyCell203"
                     GroupTable =3
                     LeftPadding =0
@@ -2217,9 +2217,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
                     VerticalAnchor =1
-                    LayoutCachedLeft =2400
+                    LayoutCachedLeft =2448
                     LayoutCachedTop =8280
-                    LayoutCachedWidth =2910
+                    LayoutCachedWidth =2964
                     LayoutCachedHeight =8520
                     ColumnStart =3
                     ColumnEnd =3
@@ -2227,9 +2227,9 @@ Begin Form
                     GroupTable =3
                 End
                 Begin EmptyCell
-                    Left =2910
+                    Left =2976
                     Top =8280
-                    Width =510
+                    Width =516
                     Name ="EmptyCell207"
                     GroupTable =3
                     LeftPadding =0
@@ -2237,9 +2237,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
                     VerticalAnchor =1
-                    LayoutCachedLeft =2910
+                    LayoutCachedLeft =2976
                     LayoutCachedTop =8280
-                    LayoutCachedWidth =3420
+                    LayoutCachedWidth =3492
                     LayoutCachedHeight =8520
                     ColumnStart =4
                     ColumnEnd =4
@@ -2247,9 +2247,9 @@ Begin Form
                     GroupTable =3
                 End
                 Begin EmptyCell
-                    Left =3420
+                    Left =3504
                     Top =8280
-                    Width =510
+                    Width =516
                     Name ="EmptyCell211"
                     GroupTable =3
                     LeftPadding =0
@@ -2257,9 +2257,9 @@ Begin Form
                     RightPadding =0
                     BottomPadding =0
                     VerticalAnchor =1
-                    LayoutCachedLeft =3420
+                    LayoutCachedLeft =3504
                     LayoutCachedTop =8280
-                    LayoutCachedWidth =3930
+                    LayoutCachedWidth =4020
                     LayoutCachedHeight =8520
                     ColumnStart =5
                     ColumnEnd =5

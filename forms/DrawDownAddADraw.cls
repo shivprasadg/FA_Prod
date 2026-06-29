@@ -70,7 +70,7 @@ Public Function LoadData(TaskType As String, IDtoUSEx As Long)
         Me.FundDate = Nz(RST!FundedDate, "none")
         Me.CreatedBy = FAUserName
         Me.CreatedOn = Date
-        Me.clientID = RST!clientID
+        Me.ClientID = RST!ClientID
         Me.MLID = RST!MLID
         Me.SchID = RST!SchID
         Me.groupID = RST!groupID
@@ -90,7 +90,7 @@ Public Function LoadData(TaskType As String, IDtoUSEx As Long)
         Me.DrawBankId.ControlSource = "DrawBankId"
         Me.DateDrawn.ControlSource = "DateDrawn"
         Me.DrawDownId.ControlSource = "DrawDownId"
-        Me.clientID.ControlSource = "clientID"
+        Me.ClientID.ControlSource = "clientID"
         Me.MLID.ControlSource = "MLID"
         Me.SchID.ControlSource = "SchID"
         Me.groupID.ControlSource = "groupID"
@@ -99,7 +99,7 @@ Public Function LoadData(TaskType As String, IDtoUSEx As Long)
         Me.DrawBankAccountNumber.ControlSource = "DrawBankAccountNumber"
         Me.DrawCreditLimit.ControlSource = "DrawCreditLimit"
         Me.DrawPaidOff.ControlSource = "DrawPaidOff"
-        Me.Client = DLookup("ClientShNm", "Clients", "ClientID=" & Me.clientID)
+        Me.Client = DLookup("ClientShNm", "Clients", "ClientID=" & Me.ClientID)
         Me.FundDate = DLookup("FundDate", "SchGrp", "SGrpId=" & Me.groupID)
         Me.Assignee = DLookup("Assignee_Bank", "SchGrp", "SGrpId=" & Me.groupID)
     End If
@@ -134,7 +134,7 @@ Private Sub SaveMe_Click()
             SQLz = SQLz & ",CreatedBy,DrawTypeId"
             SQLz = SQLz & ",groupID,SchID) "
             SQLz = SQLz & "Select "
-            SQLz = SQLz & Me.MLID & "," & Me.clientID & "," & Me.DrawBankId & ",'" & Me.DrawName & "' "
+            SQLz = SQLz & Me.MLID & "," & Me.ClientID & "," & Me.DrawBankId & ",'" & Me.DrawName & "' "
             SQLz = SQLz & "," & Me.DrawNumber & ",'" & Me.DrawBankAccountNumber & "'"
             SQLz = SQLz & ",'" & Me.DrawRequestNumber & "','" & Me.FAID & "'"
             SQLz = SQLz & "," & Nz(Me.DrawCreditLimit, 0) & ",'" & Me.CreatedOn & "'"

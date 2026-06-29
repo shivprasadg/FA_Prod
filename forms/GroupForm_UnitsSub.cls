@@ -8,7 +8,7 @@ Private Sub UnitID_DblClick(Cancel As Integer)
   ' DoCmd.close acForm, "UnitsForm"
    Call OpenUnitsForm(Me.UnitID)
    'DoCmd.OpenForm "UnitsForm", , , "UNITID=" & Me.UnitID
-   Me.UnitVIN.SetFocus
+   Me.unitvin.SetFocus
    End Sub
 
 Private Sub UnitVIN_DblClick(Cancel As Integer)

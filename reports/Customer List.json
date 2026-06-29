@@ -11,7 +11,8 @@
       "Default": false
     },
     "Printer": {
-      "Orientation": "Portrait"
+      "Orientation": "Portrait",
+      "PaperSize": "Letter"
     },
     "Margins": {
       "LeftMargin": 0.1667,

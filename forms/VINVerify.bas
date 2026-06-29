@@ -203,10 +203,8 @@ Begin Form
                     Left =2700
                     Top =30
                     TabIndex =3
-                    BorderColor =10921638
                     Name ="LessThan17"
                     OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
 
                     LayoutCachedLeft =2700
                     LayoutCachedTop =30

@@ -4,14 +4,8 @@
     "Description": "CofA_Mass Print Settings"
   },
   "Items": {
-    "Device": {
-      "DriverName": "winspool",
-      "DeviceName": "Adobe PDF",
-      "Port": "Documents\\*.pdf",
-      "Default": false
-    },
     "Printer": {
-      "Orientation": "Portrait"
+      "Orientation": 0
     },
     "Margins": {
       "LeftMargin": 0.25,

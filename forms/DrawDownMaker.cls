@@ -28,7 +28,7 @@ NextNum = Nz(DLookup("DrawNumber", "DrawMaxNumber", "DrawRequestNumber='" & Me.D
                vbNewLine & "Are you sure?", vbQuestion + vbYesNo + vbCritical, "Is Cloning Even Legal?")
        If Response = vbNo Then Exit Sub
 SQLz = "INSERT INTO DrawDowns ( DrawBankId, MLID, ClientID, DrawTypeId, DrawBankAccountNumber, DrawCreditLimit, DrawRequestNumber, CreatedBy, CreatedOn, DrawName, DrawNumber ) " & _
-       "SELECT " & Me.DrawBankId & " as Bank, " & Me.MLIDCbo & " AS MLease, " & Me.clientID & " AS Client, " & Me.DrawTypeId & " AS type, '" & Me.DrawBankAccountNumber & "' AS Account, '" & Me.DrawCreditLimit & "' AS Limit, " & _
+       "SELECT " & Me.DrawBankId & " as Bank, " & Me.MLIDCbo & " AS MLease, " & Me.ClientID & " AS Client, " & Me.DrawTypeId & " AS type, '" & Me.DrawBankAccountNumber & "' AS Account, '" & Me.DrawCreditLimit & "' AS Limit, " & _
        "'" & Me.DrawRequestNumber & "' AS Request, '" & Forms!FAMainMenu.USERID & "' AS User, #" & Date & "# AS Created, '" & Me.DrawName & "' AS Name, " & NextNum & " AS Dnumber;"
 
 DoCmd.RunSQL (SQLz)

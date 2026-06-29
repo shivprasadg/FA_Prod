@@ -45,9 +45,9 @@ FixMe:
     Exit Sub
 End Sub
 Private Sub CheckSoldStatus()
-    If IsDate(Me.InvoiceSentDate) And Not IsDate(Me.InvoicePaidDate) Then Me.unitstatus = "PS"
-    If IsDate(Me.InvoiceSentDate) And IsDate(Me.InvoicePaidDate) Then Me.unitstatus = "S"
-    If Not IsDate(Me.InvoiceSentDate) And Not IsDate(Me.InvoicePaidDate) And IsDate(BuyOutDate) Then Me.unitstatus = "EZ"
+    If IsDate(Me.InvoiceSentDate) And Not IsDate(Me.InvoicePaidDate) Then Me.UnitStatus = "PS"
+    If IsDate(Me.InvoiceSentDate) And IsDate(Me.InvoicePaidDate) Then Me.UnitStatus = "S"
+    If Not IsDate(Me.InvoiceSentDate) And Not IsDate(Me.InvoicePaidDate) And IsDate(BuyOutDate) Then Me.UnitStatus = "EZ"
 End Sub
 
 Private Sub RmktSPRAdjSubmit_Click()
@@ -84,10 +84,10 @@ FixMe:
 End Sub
 Private Sub RmkSmSubmit_Click()
     On Error GoTo FixMe
-    If Me.RmkSmCbo & "test" = "test" Then
+    If Me.RmkSmCBO & "test" = "test" Then
         Call UpdateRMKTtbl("Rmkt.RmkSm", Null, , , Me.Parent.Name)
     Else
-        Call UpdateRMKTtbl("Rmkt.RmkSm", Me.RmkSmCbo, , , Me.Parent.Name)
+        Call UpdateRMKTtbl("Rmkt.RmkSm", Me.RmkSmCBO, , , Me.Parent.Name)
     End If
     Me.Form.Refresh
 FixMe:

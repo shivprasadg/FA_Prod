@@ -10,7 +10,7 @@ Private Sub Form_Current()
     Call RemitTo_Click
     Call FeeToUse_Click
     Call RunScript
-    Me.PerdiemFee.SetFocus
+    Me.PerDiemFee.SetFocus
 End Sub
 Private Sub Form_Open(Cancel As Integer)
     Call EnableDisableOptionse("On", "RentFee")
@@ -269,7 +269,7 @@ Private Sub RunPdScript()
     End If
 
     msg = msg & "Fee Type: <B>" & Me.PerDiemFeeToUse.Column(1) & "</B><ul>"
-    msg = msg & "<li>Fee Amount: <B>" & Format(Me.PerdiemFee, "$#,#.#0") & "</B></li>"
+    msg = msg & "<li>Fee Amount: <B>" & Format(Me.PerDiemFee, "$#,#.#0") & "</B></li>"
     msg = msg & "<li>Billed the<B> ENTIRE </B> term of the Per Diem</li>"
     If Me.PerDiemShowFeeColumn = 0 Then
         msg = msg & "<li>The Fee column will be<b> Hidden & Combined </B> with the Rent</li>"
@@ -280,7 +280,7 @@ Private Sub RunPdScript()
 Done:
     msg = msg & ""
     Me.DescPerDiem = msg
-    PDScriptX = Me.PerDiemType.Column(1) & "," & Me.PerDiemStartOn.Column(1) & "," & Me.PerDiemFeeToUse.Column(1) & "," & Me.PerdiemFee & "," & Me.PerDiemFeeLabel.Column(1) & "," & _
+    PDScriptX = Me.PerDiemType.Column(1) & "," & Me.PerDiemStartOn.Column(1) & "," & Me.PerDiemFeeToUse.Column(1) & "," & Me.PerDiemFee & "," & Me.PerDiemFeeLabel.Column(1) & "," & _
                 Me.PerDiemShowFeeColumn.Column(1) & "," & PerDiemFeeTaxable.Column(1) & "," & PerDiemRefundFee.Column(1)
 
 End Sub
@@ -371,6 +371,6 @@ Private Sub SplitFeeScript()
 End Sub
 
 Private Sub RemitTo_Click()
-    If Me.RemitTo = 1 Then Me.Remittee = DLookup("Assignee_Bank", "SchGrp", "SGrpID=" & Me.[UnitGroupId] & "") Else Me.Remittee = "Fleet"
+    If Me.RemitTo = 1 Then Me.Remittee = DLookup("Assignee_Bank", "SchGrp", "SGrpID=" & Me.[UnitGroupID] & "") Else Me.Remittee = "Fleet"
     Call RunScript
 End Sub

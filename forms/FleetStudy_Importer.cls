@@ -20,7 +20,7 @@ End Sub
 
 Private Sub GrabVINStoDecode_Click()
     DoCmd.RunSQL ("Delete * From Unit_Vin_temp")
-    SQLz = "INSERT INTO Unit_Vin_temp (ClientID, VIN, UnitNum, UnitYear) SELECT " & Me.clientID & ",VIN, UnitNumber, UnitYear From FleetStudyImport"
+    SQLz = "INSERT INTO Unit_Vin_temp (ClientID, VIN, UnitNum, UnitYear) SELECT " & Me.ClientID & ",VIN, UnitNumber, UnitYear From FleetStudyImport"
     DoCmd.RunSQL (SQLz)
 End Sub
 Private Sub CheckVINsOnly_Click()
@@ -39,9 +39,9 @@ Private Sub CheckVINsOnly_Click()
         Do Until RST.EOF
             Call MessageUser("Update", "VIN: " & RST!VIN, "Unit " & i & " Of " & xCount)
             If Nz(RST!UnitYear, 0) > 0 Then
-                Call VinDecoder(Nz(RST!UnitID, 0), Nz(RST!VIN, "NoVIN"), RST!UnitYear, True, True, Nz(RST!clientID, 0))
+                Call VinDecoder(Nz(RST!UnitID, 0), Nz(RST!VIN, "NoVIN"), RST!UnitYear, True, True, Nz(RST!ClientID, 0))
             Else
-                Call VinDecoder(Nz(RST!UnitID, 0), Nz(RST!VIN, "NoVIN"), , True, True, Nz(RST!clientID, 0))
+                Call VinDecoder(Nz(RST!UnitID, 0), Nz(RST!VIN, "NoVIN"), , True, True, Nz(RST!ClientID, 0))
             End If
             RST.MoveNext
             i = i + 1
@@ -160,7 +160,7 @@ Private Sub MoveUnits_Click()
         SQLz = SQLz & ", CDate('1/1/' & ([unityear]-1)) AS BuildDate"
         SQLz = SQLz & ", " & Me.GroupList.Column(0) & " AS GroupID"
         SQLz = SQLz & ", " & Me.ClientGroupID & " As ClientGrp"
-        SQLz = SQLz & ", " & Me.clientID & " as ClientID"
+        SQLz = SQLz & ", " & Me.ClientID & " as ClientID"
         SQLz = SQLz & ", Nz(ObcUnitNumber,nz(UnitNumber,'')) as ObcUnitNum "
         If Nz(Me.DivisionOwnerID, 0) > 0 Then SQLz = SQLz & "," & Me.DivisionOwnerID & " As DivisionOwnerID "
         SQLz = SQLz & "FROM FleetStudyImport_Work As FSW Where FSW.VIN = '" & Me.UnitList.ItemData(ItemIndex) & "' ;"
@@ -331,7 +331,7 @@ End Sub
 Private Sub SubmitCompany_Click()
     On Error GoTo FixMe
     DoCmd.RunCommand acCmdSaveRecord
-    Me.ClientList = Me.clientID
+    Me.ClientList = Me.ClientID
     Call ClientList_Click
 FixMe:
 End Sub
@@ -372,7 +372,7 @@ Public Function MakeWorkTable()
             "FS.Ownership, FS.Division, FS.State, FS.Plate, FS.ReeferHours ,FS.BankLessor, FS.LeaseType " & _
             "FROM FleetStudyImportBase AS FS;"
         DoCmd.RunSQL (SQLz)
-        DoCmd.RunSQL ("Update FleetStudyImport_Work Set ClientID = " & Me.clientID & ", ClientGroupID=" & Me.ClientGroupID & "")
+        DoCmd.RunSQL ("Update FleetStudyImport_Work Set ClientID = " & Me.ClientID & ", ClientGroupID=" & Me.ClientGroupID & "")
         DoCmd.RunSQL ("UPDATE FleetStudyImportLocID INNER JOIN FleetStudyImport_Work " & _
             "ON FleetStudyImportLocID.VIN = FleetStudyImport_Work.VIN " & _
             "SET FleetStudyImport_Work.LocationID = [FleetStudyImportLocID].[LocationID];")
@@ -392,7 +392,7 @@ Private Sub PostImport_Click()
         MsgBox "You must select a Master Lease and a Schedule First", vbInformation, "You're silly"
         Exit Sub
     End If
-    If Me.LeaseList.Column(2) = "FA" Then Call SetUnitsInGroup(Me.clientID, "FA") Else Call SetUnitsInGroup(Me.clientID, "NotFA")
+    If Me.LeaseList.Column(2) = "FA" Then Call SetUnitsInGroup(Me.ClientID, "FA") Else Call SetUnitsInGroup(Me.ClientID, "NotFA")
 End Sub
 
 Public Function SortListBox(CtrlNameX As String, ListBoxX As String, FieldNamex As String)
@@ -449,7 +449,7 @@ Private Sub UpdateModel_Click()
 
     SQLz = SQLz & "SET Units.UnitModel = [D].[model] "
 
-    SQLz = SQLz & "WHERE U.ClientID=" & Me.clientID & ";"
+    SQLz = SQLz & "WHERE U.ClientID=" & Me.ClientID & ";"
 
     DoCmd.RunSQL (SQLz)
 End Sub
@@ -487,13 +487,13 @@ Private Sub SubmitMasterLease_Click()
         Exit Sub
     Else
         SQLz = "INSERT INTO MstrLease ( Client, MLOrig, MLNo, MLDt, MLType ) " & _
-            "VALUES ( " & Me.clientID.Value & ", '" & Me.MLOrg.Value & "', '" & Me.MLNo.Value & "', #" & Date & "#, " & Me.MLType & " );"
+            "VALUES ( " & Me.ClientID.Value & ", '" & Me.MLOrg.Value & "', '" & Me.MLNo.Value & "', #" & Date & "#, " & Me.MLType & " );"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
         Me.LeaseList.Requery
         Me.SchNo = "Track1"
-        Me.FAID = "Trk-" & Me.clientID & Left(Me.CompanyName, 3)
+        Me.FAID = "Trk-" & Me.ClientID & Left(Me.CompanyName, 3)
         Me.ShortDesc = Me.ClientShNm & " Tracked (" & DCount("UnitNumber", "FleetStudyImport") & ") Units"
         Me.MLID = DLookup("MLID", "MstrLease", "[MLNo]='" & Me.MLNo & "'")
         Me.ScheduleList.Requery
@@ -552,7 +552,7 @@ Private Sub AddSchedule_Click()
         Exit Sub
     End If
     Me.SchNo = "Track1"
-    Me.FAID = "Trk-" & Me.clientID & Left(Me.CompanyName, 3)
+    Me.FAID = "Trk-" & Me.ClientID & Left(Me.CompanyName, 3)
     Me.ShortDesc = Me.ClientShNm & " Tracked (" & DCount("UnitNumber", "FleetStudyImport") & ") Units"
     Me.MLID = Me.LeaseList.Column(0)
     Me.MLID = DLookup("MLID", "MstrLease", "[MLNo]='" & Me.MLNo & "'")
@@ -741,7 +741,7 @@ End Sub
 Private Sub SubmitLocation_Click()
 
     SQLz = "INSERT INTO Locations ( LocationType, LocationName, LCity, LState, LZip, LCounty, LCountry, LPhone, ClientRef  ) " & _
-        "VALUES ( 'Garage', '" & Me.LocName.Value & "', '" & Me.LocCity.Value & "', '" & Me.LocState & "', '" & Me.LocZip & "', '" & Me.LocCounty & "', '" & Me.LocCountry & "', '" & Me.LocPhone & "', " & Me.clientID & " );"
+        "VALUES ( 'Garage', '" & Me.LocName.Value & "', '" & Me.LocCity.Value & "', '" & Me.LocState & "', '" & Me.LocZip & "', '" & Me.LocCounty & "', '" & Me.LocCountry & "', '" & Me.LocPhone & "', " & Me.ClientID & " );"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True

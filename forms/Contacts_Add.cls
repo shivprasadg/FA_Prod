@@ -38,7 +38,7 @@ Private Sub Form_Load()
 
 
 If IsOpen("deals_view") Then
-    clientRef = Forms!deals_view.clientRef
+    clientREF = Forms!deals_view.clientREF
 End If
 
 End Sub

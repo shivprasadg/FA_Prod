@@ -101,10 +101,10 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =2325
-                    Top =105
-                    Width =1365
-                    Height =270
+                    Left =2340
+                    Top =108
+                    Width =1368
+                    Height =276
                     TabIndex =2
                     BackColor =11271167
                     Name ="uNoteDate"
@@ -116,10 +116,10 @@ Begin Form
                     GroupTable =2
                     BottomPadding =150
 
-                    LayoutCachedLeft =2325
-                    LayoutCachedTop =105
-                    LayoutCachedWidth =3690
-                    LayoutCachedHeight =375
+                    LayoutCachedLeft =2340
+                    LayoutCachedTop =108
+                    LayoutCachedWidth =3708
+                    LayoutCachedHeight =384
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =2
@@ -130,20 +130,20 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =1830
-                            Top =105
-                            Width =435
-                            Height =270
+                            Left =1836
+                            Top =108
+                            Width =432
+                            Height =276
                             FontSize =9
                             FontWeight =700
                             Name ="Label0"
                             Caption ="Date"
                             GroupTable =2
                             BottomPadding =150
-                            LayoutCachedLeft =1830
-                            LayoutCachedTop =105
-                            LayoutCachedWidth =2265
-                            LayoutCachedHeight =375
+                            LayoutCachedLeft =1836
+                            LayoutCachedTop =108
+                            LayoutCachedWidth =2268
+                            LayoutCachedHeight =384
                             LayoutGroup =2
                             GridlineThemeColorIndex =1
                             GridlineShade =65.0
@@ -176,20 +176,20 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =8460
-                    Top =105
-                    Width =525
-                    Height =270
+                    Left =8520
+                    Top =108
+                    Width =528
+                    Height =276
                     TabIndex =5
                     Name ="UnitRef"
                     ControlSource ="UnitRef"
                     GroupTable =2
                     BottomPadding =150
 
-                    LayoutCachedLeft =8460
-                    LayoutCachedTop =105
-                    LayoutCachedWidth =8985
-                    LayoutCachedHeight =375
+                    LayoutCachedLeft =8520
+                    LayoutCachedTop =108
+                    LayoutCachedWidth =9048
+                    LayoutCachedHeight =384
                     ColumnStart =6
                     ColumnEnd =6
                     LayoutGroup =2
@@ -199,9 +199,9 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =95
-                    Left =5610
-                    Top =105
-                    Height =270
+                    Left =5652
+                    Top =108
+                    Height =276
                     FontSize =9
                     FontWeight =700
                     TabIndex =3
@@ -213,10 +213,10 @@ Begin Form
                     RightPadding =75
                     BottomPadding =150
 
-                    LayoutCachedLeft =5610
-                    LayoutCachedTop =105
-                    LayoutCachedWidth =7050
-                    LayoutCachedHeight =375
+                    LayoutCachedLeft =5652
+                    LayoutCachedTop =108
+                    LayoutCachedWidth =7092
+                    LayoutCachedHeight =384
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =2
@@ -241,10 +241,10 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =85
                     TextAlign =1
-                    Left =1830
-                    Top =495
-                    Width =285
-                    Height =1140
+                    Left =1836
+                    Top =492
+                    Width =288
+                    Height =1143
                     FontSize =8
                     Name ="Label1744"
                     Caption =" └─ Notes"
@@ -252,9 +252,9 @@ Begin Form
                     GroupTable =1
                     LeftPadding =0
                     RightPadding =0
-                    LayoutCachedLeft =1830
-                    LayoutCachedTop =495
-                    LayoutCachedWidth =2115
+                    LayoutCachedLeft =1836
+                    LayoutCachedTop =492
+                    LayoutCachedWidth =2124
                     LayoutCachedHeight =1635
                     RowEnd =3
                     LayoutGroup =1
@@ -292,10 +292,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =87
-                    Left =7155
-                    Top =105
-                    Width =1245
-                    Height =270
+                    Left =7200
+                    Top =108
+                    Width =1248
+                    Height =276
                     FontSize =9
                     FontWeight =700
                     TabIndex =4
@@ -305,10 +305,10 @@ Begin Form
                     GroupTable =2
                     BottomPadding =150
 
-                    LayoutCachedLeft =7155
-                    LayoutCachedTop =105
-                    LayoutCachedWidth =8400
-                    LayoutCachedHeight =375
+                    LayoutCachedLeft =7200
+                    LayoutCachedTop =108
+                    LayoutCachedWidth =8448
+                    LayoutCachedHeight =384
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =2
@@ -334,9 +334,9 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =4080
-                    Top =105
-                    Height =270
+                    Left =4116
+                    Top =108
+                    Height =276
                     TabIndex =1
                     BackColor =11271167
                     Name ="uEmp"
@@ -346,10 +346,10 @@ Begin Form
                     GroupTable =2
                     BottomPadding =150
 
-                    LayoutCachedLeft =4080
-                    LayoutCachedTop =105
-                    LayoutCachedWidth =5520
-                    LayoutCachedHeight =375
+                    LayoutCachedLeft =4116
+                    LayoutCachedTop =108
+                    LayoutCachedWidth =5556
+                    LayoutCachedHeight =384
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =2
@@ -360,20 +360,20 @@ Begin Form
                         Begin Label
                             OverlapFlags =85
                             TextAlign =1
-                            Left =3750
-                            Top =105
-                            Width =270
-                            Height =270
+                            Left =3768
+                            Top =108
+                            Width =276
+                            Height =276
                             FontSize =9
                             FontWeight =700
                             Name ="Label10"
                             Caption ="By"
                             GroupTable =2
                             BottomPadding =150
-                            LayoutCachedLeft =3750
-                            LayoutCachedTop =105
-                            LayoutCachedWidth =4020
-                            LayoutCachedHeight =375
+                            LayoutCachedLeft =3768
+                            LayoutCachedTop =108
+                            LayoutCachedWidth =4044
+                            LayoutCachedHeight =384
                             ColumnStart =2
                             ColumnEnd =2
                             LayoutGroup =2

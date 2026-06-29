@@ -185,9 +185,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =93
                     Left =780
-                    Top =255
+                    Top =252
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     Name ="VinVerifyForm"
                     Caption ="Verify VIN (MSO Check In)"
@@ -217,9 +217,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =255
+                    LayoutCachedTop =252
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =585
+                    LayoutCachedHeight =588
                     Alignment =1
                     LayoutGroup =1
                     ForeThemeColorIndex =2
@@ -244,9 +244,9 @@ Begin Form
                     Enabled = NotDefault
                     OverlapFlags =93
                     Left =780
-                    Top =3765
+                    Top =3924
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =9
                     Name ="CallsbyCo"
@@ -260,9 +260,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =3765
+                    LayoutCachedTop =3924
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =4095
+                    LayoutCachedHeight =4260
                     Alignment =1
                     RowStart =9
                     RowEnd =9
@@ -288,9 +288,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =223
                     Left =780
-                    Top =645
+                    Top =660
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =1
                     Name ="Command12"
@@ -324,9 +324,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =645
+                    LayoutCachedTop =660
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =975
+                    LayoutCachedHeight =996
                     Alignment =1
                     RowStart =1
                     RowEnd =1
@@ -352,9 +352,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =223
                     Left =780
-                    Top =1035
+                    Top =1068
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =2
                     Name ="Command17"
@@ -388,9 +388,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =1035
+                    LayoutCachedTop =1068
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =1365
+                    LayoutCachedHeight =1404
                     Alignment =1
                     RowStart =2
                     RowEnd =2
@@ -417,9 +417,9 @@ Begin Form
                     Enabled = NotDefault
                     OverlapFlags =215
                     Left =780
-                    Top =4155
+                    Top =4332
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =10
                     Name ="Command19"
@@ -453,9 +453,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =4155
+                    LayoutCachedTop =4332
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =4485
+                    LayoutCachedHeight =4668
                     Alignment =1
                     RowStart =10
                     RowEnd =10
@@ -481,9 +481,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =93
                     Left =780
-                    Top =2595
+                    Top =2700
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =6
                     Name ="Command23"
@@ -517,9 +517,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =2595
+                    LayoutCachedTop =2700
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =2925
+                    LayoutCachedHeight =3036
                     Alignment =1
                     RowStart =6
                     RowEnd =6
@@ -546,9 +546,9 @@ Begin Form
                     Enabled = NotDefault
                     OverlapFlags =223
                     Left =780
-                    Top =2985
+                    Top =3108
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =7
                     Name ="Command25"
@@ -582,9 +582,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =2985
+                    LayoutCachedTop =3108
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =3315
+                    LayoutCachedHeight =3444
                     Alignment =1
                     RowStart =7
                     RowEnd =7
@@ -610,9 +610,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =223
                     Left =780
-                    Top =1425
+                    Top =1476
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =3
                     Name ="SerialNumberEntry"
@@ -625,9 +625,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =1425
+                    LayoutCachedTop =1476
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =1755
+                    LayoutCachedHeight =1812
                     Alignment =1
                     RowStart =3
                     RowEnd =3
@@ -653,9 +653,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =95
                     Left =780
-                    Top =2205
+                    Top =2292
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =5
                     Name ="Command33"
@@ -689,9 +689,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =2205
+                    LayoutCachedTop =2292
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =2535
+                    LayoutCachedHeight =2628
                     Alignment =1
                     RowStart =5
                     RowEnd =5
@@ -718,9 +718,9 @@ Begin Form
                     Enabled = NotDefault
                     OverlapFlags =215
                     Left =780
-                    Top =3375
+                    Top =3516
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =8
                     Name ="Command39"
@@ -754,9 +754,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =3375
+                    LayoutCachedTop =3516
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =3705
+                    LayoutCachedHeight =3852
                     Alignment =1
                     RowStart =8
                     RowEnd =8
@@ -782,9 +782,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =780
-                    Top =1815
+                    Top =1884
                     Width =5820
-                    Height =330
+                    Height =336
                     FontSize =12
                     TabIndex =4
                     Name ="Command15"
@@ -818,9 +818,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =780
-                    LayoutCachedTop =1815
+                    LayoutCachedTop =1884
                     LayoutCachedWidth =6600
-                    LayoutCachedHeight =2145
+                    LayoutCachedHeight =2220
                     Alignment =1
                     RowStart =4
                     RowEnd =4

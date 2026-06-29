@@ -209,9 +209,9 @@ Private Sub MaketitleRequest_Click()
         For i = 1 To RST.RecordCount
             DoCmd.SetWarnings False
             DoCmd.RunSQL ("Delete From Pick_Units_WorkTable;")
-            DoCmd.RunSQL ("Insert into Pick_Units_WorkTable (UnitID) Select UnitID From BuyersOrderMassMod1 WHERE AssigneeBankID=" & RST!AssigneeBankId & ";")
+            DoCmd.RunSQL ("Insert into Pick_Units_WorkTable (UnitID) Select UnitID From BuyersOrderMassMod1 WHERE AssigneeBankID=" & RST!AssigneeBankID & ";")
             DoCmd.SetWarnings True
-            Call MakeTitleRequestLetter(RST!AssigneeBankId, 1, "", "TitleReleaseRequest_" & i)
+            Call MakeTitleRequestLetter(RST!AssigneeBankID, 1, "", "TitleReleaseRequest_" & i)
             RST.MoveNext
         Next i
     'Shell "explorer.exe """ & "C:\FAAS\" & FAUserName & "\temp\" & """, vbNormalFocus"
@@ -232,7 +232,7 @@ Private Sub MakeSingleTitleRequest_Click()
     DoCmd.RunSQL ("Delete From Pick_Units_WorkTable;")
     DoCmd.RunSQL ("Insert into Pick_Units_WorkTable (UnitID) Select " & RST!UnitID & ";")
     DoCmd.SetWarnings True
-    Call MakeTitleRequestLetter(RST!AssigneeBankId, 1, "", "TitleReleaseRequest_single")
+    Call MakeTitleRequestLetter(RST!AssigneeBankID, 1, "", "TitleReleaseRequest_single")
     'Shell "explorer.exe """ & "C:\FAAS\" & FAUserName & "\temp" & """, vbNormalFocus"
 End Sub
 Private Sub RMKTTabControl_Change()

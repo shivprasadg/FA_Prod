@@ -28,7 +28,7 @@ Private Sub Form_Current()
 End Sub
 
 Private Sub ParkedDate_AfterUpdate()
-    If IsDate(Me.ParkedDate) And Me.unitstatus = "A" Or Me.unitstatus = "TR" Then SQLz -"Update Units Set UnitStatus='EP' WHERE UnitId=" & Me.UnitID & ";"
+    If IsDate(Me.ParkedDate) And Me.UnitStatus = "A" Or Me.UnitStatus = "TR" Then SQLz -"Update Units Set UnitStatus='EP' WHERE UnitId=" & Me.UnitID & ";"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
@@ -64,12 +64,12 @@ End Sub
 
 Private Sub ParkedDateSubmit_Click()
     On Error GoTo FixMe
-    If Me.ParkedDateCBO & "test" = "test" Then
+    If Me.ParkedDateCbo & "test" = "test" Then
        Call UpdateRMKTtbl("RMKT.ParkDT", Null, , , Me.Parent.Name)
        Call UpdateRUnitTbl("Units.UnitStatus", "TR", "WHERE (UnitStatus = 'P' Or NOT UnitStatus Like '*E*')", , Me.Parent.Name)
     End If
     If IsDate(Me.SufSentCBO) Then
-       Call UpdateRMKTtbl("RMKT.ParkDT", Me.ParkedDateCBO, , , Me.Parent.Name)
+       Call UpdateRMKTtbl("RMKT.ParkDT", Me.ParkedDateCbo, , , Me.Parent.Name)
        Call UpdateRUnitTbl("Units.UnitStatus", "EP", "WHERE (UnitStatus = 'TR' Or Units.UnitStatus = 'A')", , Me.Parent.Name)
     End If
     Me.Form.Refresh
@@ -79,12 +79,12 @@ End Sub
 
 Private Sub SUFReturnedSubmit_Click()
     On Error GoTo FixMe
-    If Me.SufReturnedCBO & "test" = "test" Then
+    If Me.SUFReturnedCbo & "test" = "test" Then
        Call UpdateRMKTtbl("RMKT.[SUF Returned]", Null, , , Me.Parent.Name)
        Call UpdateRUnitTbl("Units.UnitStatus", "ES")
     End If
-    If IsDate(Me.SufReturnedCBO) Then
-       Call UpdateRMKTtbl("RMKT.[SUF Returned]", Me.SufReturnedCBO, , , Me.Parent.Name)
+    If IsDate(Me.SUFReturnedCbo) Then
+       Call UpdateRMKTtbl("RMKT.[SUF Returned]", Me.SUFReturnedCbo, , , Me.Parent.Name)
        Call UpdateRUnitTbl("Units.UnitStatus", "EP")
     End If
     Me.Form.Refresh

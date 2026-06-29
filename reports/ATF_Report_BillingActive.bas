@@ -115,7 +115,7 @@ Begin Report
             KeepTogether = NotDefault
             CanGrow = NotDefault
             CanShrink = NotDefault
-            Height =540
+            Height =552
             Name ="GroupHeader0"
             AlternateBackShade =95.0
             BackThemeColorIndex =1
@@ -129,9 +129,9 @@ Begin Report
                     Height =330
                     FontWeight =700
                     BorderColor =7500402
+                    ForeColor =0
                     Name ="Label15"
                     Caption ="Billing "
-                    GridlineColor =10921638
                     LayoutCachedLeft =360
                     LayoutCachedWidth =9408
                     LayoutCachedHeight =330
@@ -144,9 +144,9 @@ Begin Report
                 Begin Label
                     TextAlign =1
                     Left =420
-                    Top =330
+                    Top =336
                     Width =2445
-                    Height =210
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label247"
@@ -156,11 +156,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =420
-                    LayoutCachedTop =330
+                    LayoutCachedTop =336
                     LayoutCachedWidth =2865
-                    LayoutCachedHeight =540
+                    LayoutCachedHeight =552
                     LayoutGroup =1
                     BorderThemeColorIndex =-1
                     BorderTint =100.0
@@ -170,10 +169,10 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =2865
-                    Top =330
-                    Width =630
-                    Height =210
+                    Left =2868
+                    Top =336
+                    Width =636
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label248"
@@ -183,11 +182,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =2865
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =3495
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =2868
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =3504
+                    LayoutCachedHeight =552
                     ColumnStart =1
                     ColumnEnd =1
                     LayoutGroup =1
@@ -199,10 +197,10 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =3495
-                    Top =330
-                    Width =645
-                    Height =210
+                    Left =3504
+                    Top =336
+                    Width =648
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label27"
@@ -212,11 +210,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =3495
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =4140
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =3504
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =4152
+                    LayoutCachedHeight =552
                     ColumnStart =2
                     ColumnEnd =2
                     LayoutGroup =1
@@ -228,10 +225,10 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =9240
-                    Top =330
-                    Width =2235
-                    Height =210
+                    Left =9252
+                    Top =336
+                    Width =2232
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label269"
@@ -241,11 +238,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =9240
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =11475
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =9252
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =11484
+                    LayoutCachedHeight =552
                     ColumnStart =7
                     ColumnEnd =7
                     LayoutGroup =1
@@ -257,10 +253,10 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =1
-                    Left =6225
-                    Top =330
-                    Width =3015
-                    Height =210
+                    Left =6240
+                    Top =336
+                    Width =3012
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label289"
@@ -270,11 +266,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =6225
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =9240
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =6240
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =9252
+                    LayoutCachedHeight =552
                     ColumnStart =6
                     ColumnEnd =6
                     LayoutGroup =1
@@ -286,10 +281,10 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =4140
-                    Top =330
-                    Width =645
-                    Height =210
+                    Left =4152
+                    Top =336
+                    Width =648
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label296"
@@ -299,11 +294,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4140
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =4785
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =4152
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =4800
+                    LayoutCachedHeight =552
                     ColumnStart =3
                     ColumnEnd =3
                     LayoutGroup =1
@@ -315,10 +309,10 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =4785
-                    Top =330
-                    Width =705
-                    Height =210
+                    Left =4800
+                    Top =336
+                    Width =708
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label304"
@@ -328,11 +322,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =4785
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =5490
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =4800
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =5508
+                    LayoutCachedHeight =552
                     ColumnStart =4
                     ColumnEnd =4
                     LayoutGroup =1
@@ -344,10 +337,10 @@ Begin Report
                 End
                 Begin Label
                     TextAlign =2
-                    Left =5490
-                    Top =330
-                    Width =735
-                    Height =210
+                    Left =5508
+                    Top =336
+                    Width =732
+                    Height =216
                     FontSize =8
                     BorderColor =16777215
                     Name ="Label314"
@@ -357,11 +350,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
-                    LayoutCachedLeft =5490
-                    LayoutCachedTop =330
-                    LayoutCachedWidth =6225
-                    LayoutCachedHeight =540
+                    LayoutCachedLeft =5508
+                    LayoutCachedTop =336
+                    LayoutCachedWidth =6240
+                    LayoutCachedHeight =552
                     ColumnStart =5
                     ColumnEnd =5
                     LayoutGroup =1
@@ -385,7 +377,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     LayoutCachedLeft =3600
                     LayoutCachedTop =120
                     LayoutCachedWidth =6075
@@ -404,9 +395,9 @@ Begin Report
                     Height =330
                     FontWeight =700
                     BorderColor =7500402
+                    ForeColor =0
                     Name ="Label330"
                     Caption =" Taxes"
-                    GridlineColor =10921638
                     LayoutCachedLeft =9408
                     LayoutCachedWidth =11466
                     LayoutCachedHeight =330
@@ -438,6 +429,7 @@ Begin Report
                     Height =230
                     FontSize =8
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="BillingAddress"
                     ControlSource ="BillingAddress"
                     FontName ="Tahoma"
@@ -446,7 +438,6 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
                     LayoutCachedLeft =420
@@ -471,12 +462,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2865
-                    Width =630
+                    Left =2868
+                    Width =636
                     Height =230
                     FontSize =8
                     TabIndex =1
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="Method"
                     ControlSource ="PayMethod"
                     FontName ="Tahoma"
@@ -485,11 +477,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =2865
-                    LayoutCachedWidth =3495
+                    LayoutCachedLeft =2868
+                    LayoutCachedWidth =3504
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -509,12 +500,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3495
-                    Width =645
+                    Left =3504
+                    Width =648
                     Height =230
                     FontSize =8
                     TabIndex =2
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="contactPrimaryPhone"
                     ControlSource ="FAServicer"
                     FontName ="Tahoma"
@@ -523,11 +515,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3495
-                    LayoutCachedWidth =4140
+                    LayoutCachedLeft =3504
+                    LayoutCachedWidth =4152
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -549,12 +540,13 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =6225
-                    Width =3015
+                    Left =6240
+                    Width =3012
                     Height =230
                     FontSize =8
                     TabIndex =6
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="BillingInstructions"
                     ControlSource ="BillingInstructions"
                     FontName ="Tahoma"
@@ -563,11 +555,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =6225
-                    LayoutCachedWidth =9240
+                    LayoutCachedLeft =6240
+                    LayoutCachedWidth =9252
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -589,12 +580,13 @@ Begin Report
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =9240
-                    Width =2235
+                    Left =9252
+                    Width =2232
                     Height =230
                     FontSize =8
                     TabIndex =7
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="TaxInstructions"
                     ControlSource ="TaxInstructions"
                     FontName ="Tahoma"
@@ -603,11 +595,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =9240
-                    LayoutCachedWidth =11475
+                    LayoutCachedLeft =9252
+                    LayoutCachedWidth =11484
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -628,12 +619,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4140
-                    Width =645
+                    Left =4152
+                    Width =648
                     Height =230
                     FontSize =8
                     TabIndex =3
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="Text297"
                     ControlSource ="FAInvoicing"
                     FontName ="Tahoma"
@@ -642,11 +634,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =4140
-                    LayoutCachedWidth =4785
+                    LayoutCachedLeft =4152
+                    LayoutCachedWidth =4800
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -667,12 +658,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4785
-                    Width =705
+                    Left =4800
+                    Width =708
                     Height =230
                     FontSize =8
                     TabIndex =4
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="Text305"
                     ControlSource ="FACollecting"
                     FontName ="Tahoma"
@@ -681,11 +673,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =4785
-                    LayoutCachedWidth =5490
+                    LayoutCachedLeft =4800
+                    LayoutCachedWidth =5508
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
@@ -706,12 +697,13 @@ Begin Report
                     TextAlign =2
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =5490
-                    Width =735
+                    Left =5508
+                    Width =732
                     Height =230
                     FontSize =8
                     TabIndex =5
                     BorderColor =14211288
+                    ForeColor =0
                     Name ="Text315"
                     ControlSource ="FA3rdParty"
                     FontName ="Tahoma"
@@ -720,11 +712,10 @@ Begin Report
                     TopPadding =0
                     RightPadding =0
                     BottomPadding =0
-                    GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =5490
-                    LayoutCachedWidth =6225
+                    LayoutCachedLeft =5508
+                    LayoutCachedWidth =6240
                     LayoutCachedHeight =230
                     RowStart =1
                     RowEnd =1
