@@ -2,9 +2,9 @@
 Beginning build from Source
 ATLAAS_Shiv_v1.accdb
 VCS Version 4.1.2
-Full Path: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb
-Export Folder: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\
-6/29/2026 10:33:55 AM
+Full Path: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb
+Export Folder: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\
+6/29/2026 10:49:08 AM
 -------------------------------------
 Saving backup of original database...
 Saved as ATLAAS_Shiv_v1_VCSBackup.accdb.
@@ -188,7 +188,7 @@ Importing imex specs...
   81.json
   9.json
   91.json
-  Spec 83.json
+  Spec 15.json
   Temp spec.json
   Temp spec0.json
 [17]
@@ -500,12 +500,6 @@ Importing tables...
   UnitMoveOrderMatrix.json
   UnitNotes.json
   UnitRecalls.json
-  Units.json
-
--------------------------------------
-ERROR: 3626 - The operation failed. There are too many indexes on table 'Units'. Delete some of the indexes on the table and try the operation again.
-Source: clsDbTableDef.ImportLinkedTable
--------------------------------------
   UnitTitleHistoryLastEntry.json
   UnitTitleHistoryLastRecv.json
   UnitTitleHistoryLastSent.json
@@ -711,7 +705,7 @@ Source: clsDbTableDef.ImportLinkedTable
   WorkOrderItems.json
   WorkOrders.json
   Zipcodes.json
-[512]
+[511]
 -------------------------------------
 Importing queries...          
   AcceptedDate_vs_InserviceDate_part1.bas
@@ -998,6 +992,26 @@ Importing queries...
   DrawDowns_Invoices_Drawn.bas
   DrawDowns_Invoices_Open.bas
   DrawDowns_Invoices_Open_Drawn.bas
+
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+-------------------------------------
+ERROR: Import issue with 'DrawDowns_Invoices_Open_Drawn'
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Skipping import of 'DrawDowns_Invoices_Open_Drawn'. Your application may not run or complile.
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Build error in: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\queries\DrawDowns_Invoices_Open_Drawn.bas
+Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
+-------------------------------------
   DrawDowns_MstLeases.bas
   DrawDowns_Schedules.bas
   DrawDowns_Units_Drawn.bas
@@ -1109,6 +1123,26 @@ Importing queries...
   FleetStudyImport_Test.bas
   FleetStudyList.bas
   FleetStudyNewVins.bas
+
+
+-------------------------------------
+ERROR: Unhandled error, likely before `On Error` directive
+Source: .Unknown.LogUnhandledErrors
+-------------------------------------
+-------------------------------------
+ERROR: Import issue with 'FleetStudyNewVins'
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Skipping import of 'FleetStudyNewVins'. Your application may not run or complile.
+Source: modVCSUtility.LoadComponentFromText
+-------------------------------------
+
+-------------------------------------
+ERROR: Build error in: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\queries\FleetStudyNewVins.bas
+Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
+-------------------------------------
   FleetStudyNewVinsBase.bas
   FleetStudyUnitNumMatch.bas
   FleetStudyUnitNum_NoMatch.bas
@@ -1267,103 +1301,6 @@ Importing queries...
   movesunitq.bas
   MTM Fix.bas
   Newcontactq.bas
-  NewDekraInspectionsImport.bas
-
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Source: .Unknown.LogUnhandledErrors
--------------------------------------
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Source: .Unknown.LogUnhandledErrors
--------------------------------------
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-Retrying import for: NewDekraInspectionsImport
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsImport'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsImport. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-
--------------------------------------
-ERROR: Skipping import of 'NewDekraInspectionsImport'. Your application may not run or complile.
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Build error in: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\queries\NewDekraInspectionsImport.bas
-Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
--------------------------------------
-  NewDekraInspectionsNoMatch.bas
-
--------------------------------------
-ERROR: Import issue with 'NewDekraInspectionsNoMatch'
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Error 2128: Microsoft Access encountered errors while importing NewDekraInspectionsNoMatch. Source: .Unknown.LogUnhandledErrors
--------------------------------------
-
--------------------------------------
-ERROR: Skipping import of 'NewDekraInspectionsNoMatch'. Your application may not run or complile.
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Build error in: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\queries\NewDekraInspectionsNoMatch.bas
-Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
--------------------------------------
   NewULookupQ.bas
   Non_Reporting_Units.bas
   OpenVendorTrackingUpdate_AllDates.bas
@@ -1729,27 +1666,6 @@ Error 2467: The expression you entered refers to an object that is closed or doe
   UnitsAndChildUnionQuery.bas
   UnitsAtLocations.bas
   UnitsFieldsToDelete.bas
-  UnitsForm.bas
-
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Source: .Unknown.LogUnhandledErrors
--------------------------------------
--------------------------------------
-ERROR: Import issue with 'UnitsForm'
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Skipping import of 'UnitsForm'. Your application may not run or complile.
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Build error in: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\queries\UnitsForm.bas
-Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
--------------------------------------
   UnitsFormGarageLocations.bas
   UnitsForm_back.bas
   UnitsForm_OLD.bas
@@ -1812,7 +1728,7 @@ Error 2467: The expression you entered refers to an object that is closed or doe
   YREndDelq.bas
   YrVendorsq.bas
   ZipFips.bas
-[983]
+[980]
 -------------------------------------
 Importing forms...            
   AcctAuth.bas
@@ -1893,6 +1809,7 @@ Importing forms...
   DrawDownAddADraw.bas
   DrawDownMaker.bas
   DrawDownManager.bas
+  Editdnu.bas
   EFExportProgress.bas
   ElectronciTitlePopUp.bas
   Employee Dropdown Maint.bas
@@ -1926,7 +1843,6 @@ Importing forms...
   GroupRevisionLog.bas
   Groups_view.bas
   InspectionsSubForm.bas
-  Invoice - Add%2FEditdnu.bas
   Invoice.bas
   ITFunctions.bas
   LeasedWrongStatus.bas
@@ -2141,11 +2057,6 @@ Importing reports...
   BankBillReg.bas
   BankBillReg_Summary.bas
   BankBillRentOnly.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   BankBillRentOnly_Summary.bas
   BankBill_FARemit.bas
   BillingRulesInvoice.bas
@@ -2155,21 +2066,11 @@ Source: clsDevMode.LoadFromPrinter
   BillServFeeOnly.bas
   BillServFeeOnly_Summary.bas
   BillWarranty.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   BuyerRmkSales.bas
   BuyersDeliveryReceipt.bas
   BuyersOrder.bas
   BuyersOrderWarranties.bas
   CertOfLease_Mass.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE.domain.local\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   CofA-Toyota_Archive.bas
   CofA.bas
   CofASubr.bas
@@ -2177,26 +2078,11 @@ Source: clsDevMode.LoadFromPrinter
   CofA_CoLesseeSign.bas
   CofA_Dynamic.bas
   CofA_Mass.bas
-
--------------------------------------
-WARNING: Could not find printer 'Adobe PDF' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   CofA_Mass_AirGas.bas
   CofA_Mass_AirProd.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   CofA_Mass_Dean.bas
   CofA_Mass_Dyno.bas
   CofA_Mass_Linde.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   CofA_Mass_new.bas
   CofA_Mass_Sch.bas
   CofA_Mass_Sch_wDate.bas
@@ -2205,11 +2091,6 @@ Source: clsDevMode.LoadFromPrinter
   CofA_Mass_UGI.bas
   CofA_Mass_Unisource.bas
   CofA_Mass_wDate.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   Completed for PeriodMgmt-CP.bas
   CompletedATFSchedule_KPI_Report.bas
   CONTACTPRNT.bas
@@ -2221,11 +2102,6 @@ Source: clsDevMode.LoadFromPrinter
   ElectronicTitleRequestOK.bas
   ElectronicTitleRequestOK_HDR.bas
   EXITBankNoticeReport.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   FA Bank Bill_New.bas
   FA ProfileRank.bas
   FA Rent Bill-TLSassigned.bas
@@ -2261,23 +2137,8 @@ Source: clsDevMode.LoadFromPrinter
   LabelsToCustodian.bas
   Lease Schedule 1 - Equipment Acceptance Notification.bas
   LeaseBillingInvoice.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   LeaseReportByYear.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   LeaseReportByYear_Company.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   Line Usage.bas
   LiquidityReport.bas
   LO NOTECHECK.bas
@@ -2338,33 +2199,13 @@ Source: clsDevMode.LoadFromPrinter
   RemarketingBillOfSale_pld.bas
   remarketing_SoldUnits_template.bas
   RemarketSoldUnits.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1720 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   Rent Bill.bas
   Rent-ToyotaAncillary.bas
   RentInvoice.bas
-
--------------------------------------
-WARNING: Could not find printer '\\fa-dc01\KONICA C554 Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   RentInvoiceGroup.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   RentInvoiceSummary.bas
   RentInvoiceSummaryGroup.bas
   RentInvoice_Uccc.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   Rmkt Relocate Units.bas
   RmktBkSubRpt.bas
   RmktBOSRpt.bas
@@ -2373,11 +2214,6 @@ Source: clsDevMode.LoadFromPrinter
   RmktInvoice.bas
   RmktInvoiceReprint.bas
   RmktInvoiceRequestRpt.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE.domain.local\1730 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   RmktInvoiceRpt-Reprint.bas
   RmktInvoiceRpt-Reprint2.bas
   RmktTitleCoverLetter.bas
@@ -2391,17 +2227,7 @@ Source: clsDevMode.LoadFromPrinter
   ScheduleEconomicsSyndReport.bas
   ScheduleEconomicsSyndReportSub.bas
   SUFReport.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\KONICA C554 Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   SUFReport_AutoHauler.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE\KONICA C554 Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   SUFReport_Mclane.bas
   SUFRpt.bas
   SUFwConditions.bas
@@ -2410,23 +2236,8 @@ Source: clsDevMode.LoadFromPrinter
   TFRCompare.bas
   TFRCompareSummary.bas
   TFRCompareSummary_Portfolio.bas
-
--------------------------------------
-WARNING: Could not find printer '\\FA-FILE.domain.local\1720 KONICA Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   TitleReleaseAffidavit.bas
-
--------------------------------------
-WARNING: Could not find printer '\\fa-dc01\KONICA C554 Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   TitleReleaseAffidavitOK.bas
-
--------------------------------------
-WARNING: Could not find printer '\\fa-dc01\KONICA C554 Color' on this system.
-Source: clsDevMode.LoadFromPrinter
--------------------------------------
   TitleReleaseRequest.bas
   TitleReleaseRequestUnits.bas
   Toyota Checklist.bas
@@ -2446,9 +2257,7 @@ Importing relations...
   MstrLeaseMLAmends.json
   MstrLeaseSchedule.json
   ScheduleSchGrp.json
-  SchGrpUnits.json
-  UnitsChildParts.json
-[9]
+[7]
 -------------------------------------
 Importing doc properties...   
   documents.json
@@ -2460,101 +2269,76 @@ Importing nav pane groups...
 -------------------------------------
 Importing hidden attributes...
   hidden-attributes.json
-
--------------------------------------
-ERROR: Error setting hidden attribute for ~TMPCLP130581
-Error 2950: Reserved Error Source: clsDbHiddenAttribute
--------------------------------------
-
--------------------------------------
-ERROR: Error setting hidden attribute for ~TMPCLP524531
-Error 2950: Reserved Error Source: clsDbHiddenAttribute
--------------------------------------
-
--------------------------------------
-ERROR: Error setting hidden attribute for ~TMPCLP624641
-Error 2950: Reserved Error Source: clsDbHiddenAttribute
--------------------------------------
 [1]
 -------------------------------------
-Done. (323.26 seconds)
+Done. (394.66 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Category                      Count     Seconds
 --------------------------------------------------
-DB Connections                1         89.57
-Reports                       208       78.71
-Forms                         299       55.67
-Queries                       983       46.90
-Tables                        512       41.98
-Modules                       58        2.41
-CommandBars                   10        2.14
-Shared Images                 52        1.31
-Doc Properties                1         0.79
-IMEX Specs                    17        0.51
-Relations                     9         0.42
-Hidden Attributes             1         0.25
-Macros                        3         0.15
-DB Properties                 1         0.08
-VBE References                1         0.07
-Nav Pane Groups               1         0.05
-Themes                        1         0.03
-VB Project                    1         0.01
-Project                       1         0.01
+Forms                         299       92.44
+Reports                       208       74.71
+DB Connections                1         73.74
+Queries                       980       73.37
+Tables                        511       58.73
+CommandBars                   10        4.85
+Modules                       58        4.43
+Shared Images                 52        2.42
+Doc Properties                1         1.53
+IMEX Specs                    17        1.01
+Relations                     7         0.52
+Hidden Attributes             1         0.47
+Macros                        3         0.22
+DB Properties                 1         0.18
+VBE References                1         0.14
+Nav Pane Groups               1         0.09
+Themes                        1         0.05
+VB Project                    1         0.03
+Project                       1         0.03
 --------------------------------------------------
-TOTALS:                       2160      321.06
+TOTALS:                       2154      388.98
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-App.LoadFromText()            1494      106.76
-Read File                     1673      29.72
-Read File Bytes               3201      25.23
+App.LoadFromText()            1490      140.43
+Read File                     1670      47.52
+Read File Bytes               3191      38.27
 modVCSUtility.LoadComponentFr 
-omText                        1492      21.87
-Building CommandBar           10        1.67
-Get File List                 18        1.47
-Save Stream to File           1498      1.23
-Delete File                   3519      1.22
-Get File Property Hash        2156      1.05
-Increment Progress            2160      0.87
-Import VBE Module             58        0.78
-modFileAccess.VerifyPath      3523      0.64
-Write File                    527       0.55
-Parse JSON                    745       0.51
-Load Stream from File         1498      0.48
-Console Updates               73        0.36
-Get VBA Hash                  565       0.35
-Convert to JSON               4506      0.34
-Compute SHA256                4376      0.29
-Get Modified Date             5035      0.24
-Enc. utf-8 as utf-16          1498      0.24
-Create new database           1         0.19
-Copy Stream                   1498      0.11
-Get Unused Resource Name      52        0.05
-Scan Source Files             1         0.05
-Parse JSON ISO Date           2163      0.04
-Add GUID References           18        0.03
-Parse VBA Module              58        0.03
-Clear References              1         0.01
+omText                        1490      14.32
+Building CommandBar           10        4.08
+Get File List                 18        3.70
+Get File Property Hash        2152      2.20
+Save Stream to File           1490      2.10
+Delete File                   3508      2.01
+Increment Progress            2154      1.48
+Parse JSON                    742       1.47
+Import VBE Module             58        1.40
+modFileAccess.VerifyPath      3507      1.13
+Write File                    527       1.00
+Convert to JSON               4488      0.77
+Compute SHA256                4368      0.68
+Get VBA Hash                  565       0.66
+Load Stream from File         1490      0.65
+Get Modified Date             5029      0.53
+Enc. utf-8 as utf-16          1490      0.36
+Parse JSON ISO Date           4269      0.27
+Create new database           1         0.24
+Copy Stream                   1490      0.23
+Console Updates               28        0.22
+Scan Source Files             1         0.15
+Get Unused Resource Name      52        0.10
+Add GUID References           18        0.06
+Parse VBA Module              58        0.06
+Clear References              1         0.02
 App.SaveAsText()              1         0.00
 Check for linked table        1         0.00
 modFileAccess.GetUncPath      3         0.00
 --------------------------------------------------
-Other Operations                        126.88
+Other Operations                        128.56
 --------------------------------------------------
 
-
-WARNING: The performance monitoring for operations still
-had items in the call stack. This typically happens when
-performance logging is started for an operation, but not
-closed at the conclusion of the operation.
-The call stack currently contains the following 4 items:
- - modVCSUtility.LoadComponentFromText
- - App.LoadFromText()
- - App.LoadFromText()
- - App.LoadFromText()
 

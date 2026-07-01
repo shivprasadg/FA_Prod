@@ -4,7 +4,7 @@
   L.LocationName
 FROM
   FleetStudyImport_Work AS FS
-  INNER JOIN Locations AS L ON (
+  INNER JOIN Locations AS L ON (FS.Location = L.LocationName)
+  AND (
     FS.ClientGroupID = L.ClientGroupID
-  )
-  AND (FS.Location = L.LocationName);
+  );

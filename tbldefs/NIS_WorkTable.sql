@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [NIS_WorkTable] (
-  [Inspection] VARCHAR,
+  [Inspection] VARCHAR (255),
   [Status] VARCHAR (255),
-  [Invoice #] VARCHAR,
-  [VIN] VARCHAR,
+  [Invoice #] VARCHAR (255),
+  [VIN] VARCHAR (255),
   [Photo] LONG,
   [Year] LONG,
   [Make] VARCHAR (255),

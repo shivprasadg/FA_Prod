@@ -5,7 +5,8 @@
   },
   "Items": {
     "Printer": {
-      "Orientation": 0
+      "Orientation": 0,
+      "PaperSize": "Letter"
     },
     "Margins": {
       "LeftMargin": 0.25,
