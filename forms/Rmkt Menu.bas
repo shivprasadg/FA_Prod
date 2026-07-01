@@ -19,7 +19,7 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =604
     Left =2580
-    Top =3024
+    Top =3012
     Right =22788
     Bottom =11664
     ShortcutMenuBar ="SortClip"
@@ -2905,7 +2905,7 @@ Begin Form
                     Width =1092
                     Height =300
                     Name ="Label602"
-                    Caption ="++"
+                    Caption ="++++==="
                     LayoutCachedLeft =9060
                     LayoutCachedTop =3960
                     LayoutCachedWidth =10152
@@ -2918,7 +2918,7 @@ Begin Form
                     Width =1068
                     Height =300
                     Name ="Label603"
-                    Caption ="+"
+                    Caption ="++++++=="
                     LayoutCachedLeft =9120
                     LayoutCachedTop =4560
                     LayoutCachedWidth =10188
