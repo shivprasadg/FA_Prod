@@ -17,7 +17,7 @@ FROM
       OptionTypeID > 2
     GROUP BY
       Ex.UnitID
-  ) AS X ON (
+  ) AS X ON (UO.UnitID = X.UnitID)
+  AND (
     X.MaxEndDate = UO.EndOrActualDate
-  )
-  AND (UO.UnitID = X.UnitID);
+  );

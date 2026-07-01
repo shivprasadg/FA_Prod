@@ -1,6 +1,6 @@
 ﻿dbMemo "SQL" ="SELECT FS.VIN, L.LocationID, L.LocationName\015\012FROM FleetStudyImport_Work AS"
-    " FS INNER JOIN Locations AS L ON (FS.ClientGroupID = L.ClientGroupID) AND (FS.Lo"
-    "cation = L.LocationName);\015\012"
+    " FS INNER JOIN Locations AS L ON (FS.Location = L.LocationName) AND (FS.ClientGr"
+    "oupID = L.ClientGroupID);\015\012"
 dbMemo "Connect" =""
 dbBoolean "ReturnsRecords" ="-1"
 dbInteger "ODBCTimeout" ="60"

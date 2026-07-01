@@ -20,8 +20,8 @@ Begin Form
     ItemSuffix =604
     Left =2580
     Top =3024
-    Right =19548
-    Bottom =13104
+    Right =22788
+    Bottom =11664
     ShortcutMenuBar ="SortClip"
     RecSrcDt = Begin
         0x90faff9076ebe340
@@ -2905,7 +2905,7 @@ Begin Form
                     Width =1092
                     Height =300
                     Name ="Label602"
-                    Caption ="Leo Dev 1 +"
+                    Caption ="++"
                     LayoutCachedLeft =9060
                     LayoutCachedTop =3960
                     LayoutCachedWidth =10152
@@ -2918,7 +2918,7 @@ Begin Form
                     Width =1068
                     Height =300
                     Name ="Label603"
-                    Caption ="Leo dev 2 +"
+                    Caption ="+"
                     LayoutCachedLeft =9120
                     LayoutCachedTop =4560
                     LayoutCachedWidth =10188
