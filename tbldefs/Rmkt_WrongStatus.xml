@@ -878,7 +878,7 @@
           </xsd:annotation>
           <xsd:simpleType>
             <xsd:restriction base="xsd:base64Binary">
-              <xsd:maxLength value="22"/>
+              <xsd:maxLength value="26"/>
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>

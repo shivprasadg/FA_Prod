@@ -29,7 +29,7 @@ Private Const C_VBE_CONST_TAG = "__INSERTCONSTLINE__"
 Private Const C_VBE_INSERT_MENU As Long = 30005
 Sub AddReportLog(sReportName As String)
     DoCmd.SetWarnings False
-    DoCmd.RunSQL ("Insert INTO ReportsRanLog (ReportName, DateRan,FaUser) Select '" & sReportName & "','" & Now() & "', '" & FAUserName & "';")
+    DoCmd.RunSQL ("Insert INTO ReportsRanLog (ReportName, DateRan,FaUser) Select '" & sReportName & "','" & Now() & "', '" & FaUserName & "';")
     DoCmd.SetWarnings True
 End Sub
 

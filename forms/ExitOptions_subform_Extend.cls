@@ -50,7 +50,7 @@ SetStart:
                 GoTo SetStart
             Else
                 ReplaceEndX = CDate(DateStartX) - 1
-                ReplaceEndNoteX = FAUserName & " changed the prev extension's EOL date from " & Me.EndOrActualDate & " to " & CDate(DateStartX) - 1 & " to match new lease extension parameters"
+                ReplaceEndNoteX = FaUserName & " changed the prev extension's EOL date from " & Me.EndOrActualDate & " to " & CDate(DateStartX) - 1 & " to match new lease extension parameters"
             End If
         End If
     Else
@@ -90,7 +90,7 @@ SetResi:
         Me.OptionTypeID = iOption
         Me.UIDX = Me.UnitID & "-" & iOption
         SQLz = "INSERT INTO UnitExitOption ( UserName, UnitID, OptionTypeID, OptionTypeDesc, StartOrPurposedDate, EndOrActualDate, TermMonths, Rent, Fees, Residual, DatePosted, OptionSubType, Notes, UIDX ) " & _
-               "SELECT '" & FAUserName & "', " & Me.UnitID & ", " & iOption & ", '" & ExtType & "', '" & DateStartX & "', '" & DateAdd("M", TermX, DateStartX) - 1 & "', " & TermX & ", '" & Rentx & "', '" & FeeX & "', '" & ResiX & "','" & Now() & "', '" & ExtSubType & "','This is the 2nd Extension','" & Me.UnitID & "-3';"
+               "SELECT '" & FaUserName & "', " & Me.UnitID & ", " & iOption & ", '" & ExtType & "', '" & DateStartX & "', '" & DateAdd("M", TermX, DateStartX) - 1 & "', " & TermX & ", '" & Rentx & "', '" & FeeX & "', '" & ResiX & "','" & Now() & "', '" & ExtSubType & "','This is the 2nd Extension','" & Me.UnitID & "-3';"
         Me.Form.Requery
         DoCmd.SetWarnings False
         DoCmd.RunSQL ("UPDATE EXITOptions_WorkTable SET UID3='" & Me.UnitID & "-" & iOption & "' WHERE UnitID=" & Me.UnitID & ";")
@@ -206,7 +206,7 @@ End Sub
 Public Sub OptionSubType_Click()
     Dim RST    As DAO.Recordset
     Me.Term = ""
-    SQLz = "Select * From SchGrp WHERE sGrpID = " & Me.groupID & ""
+    SQLz = "Select * From SchGrp WHERE sGrpID = " & Me.GroupID & ""
     Set RST = CurrentDb.OpenRecordset(SQLz, dbOpenSnapshot)
     RST.MoveLast
     DateEndX = DateAdd("m", RST!LeaseTermPrimary, RST!BLCD)
@@ -247,7 +247,7 @@ Public Sub OptionTypeDescSubmit_Click()
         Exit Sub
     End If
      Dim Response, SQLset As String
-    SQLset = "SET OptionTypeDesc = '" & Me.OptionTypeDescCBO & "', UserName='" & FAUserName & "', dateposted='" & Now() & "' WHERE OptionTypeID = " & Me.OptionTypeID & ";"
+    SQLset = "SET OptionTypeDesc = '" & Me.OptionTypeDescCBO & "', UserName='" & FaUserName & "', dateposted='" & Now() & "' WHERE OptionTypeID = " & Me.OptionTypeID & ";"
     Response = MsgBox("You're about set the Exteded Lease Type for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Type?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -265,7 +265,7 @@ Private Sub OptionSubTypeSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET OptionSubType = '" & Me.OptionSubTypeCbo & "', UserName='" & FAUserName & "', dateposted='" & Now() & "' WHERE OptionTypeID = " & Me.OptionTypeID & ";"
+    SQLset = "SET OptionSubType = '" & Me.OptionSubTypeCbo & "', UserName='" & FaUserName & "', dateposted='" & Now() & "' WHERE OptionTypeID = " & Me.OptionTypeID & ";"
     Response = MsgBox("You're about set the Exteded Lease SUB Type for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Type?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -287,7 +287,7 @@ Private Sub RentSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET Rent= '" & Me.RentCBO & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
+    SQLset = "SET Rent= '" & Me.RentCBO & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
     Response = MsgBox("You're about set the Rent for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Extended Rent?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -311,7 +311,7 @@ Private Sub SaveUpdateMe_Click()
 End Sub
 
 Private Sub StartOrPurposedDate_BeforeUpdate(Cancel As Integer)
-    DateEndX = DateAdd("m", DLookup("LeaseTermPrimary", "SchGrp", "sGrpID = " & Me.groupID), DLookup("BLCD", "SchGrp", "sGrpID = " & Me.groupID))
+    DateEndX = DateAdd("m", DLookup("LeaseTermPrimary", "SchGrp", "sGrpID = " & Me.GroupID), DLookup("BLCD", "SchGrp", "sGrpID = " & Me.GroupID))
     If IsDate(DateEndX) Then
         If Me.StartOrPurposedDate < DateEndX Then
             MsgBox "The date you selected: " & StartOrPurposedDate & " is BEFORE" & vbNewLine & _
@@ -377,7 +377,7 @@ Private Sub TermSubmit_Click()
     Dim Response, SQLset As String
     SQLset = "SET TermMonths = " & Me.TermCBO.Column(0) & ", "
     If IsDate(Me.StartOrPurposedDateCBO) Then SQLset = SQLset & "StartOrPurposedDate= '" & StartOrPurposedDateCBO & "', EndOrActualDate='" & DateAdd("M", Me.TermCBO, Me.StartOrPurposedDateCBO) - 1 & "', "
-    SQLset = SQLset & "UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
+    SQLset = SQLset & "UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
     Response = MsgBox("You're about set the Term in Month for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Extended Term?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -396,7 +396,7 @@ Private Sub PurposedSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET StartOrPurposedDate = '" & Me.StartOrPurposedDateCBO & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
+    SQLset = "SET StartOrPurposedDate = '" & Me.StartOrPurposedDateCBO & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
     Response = MsgBox("You're about set the Extended Start Date for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Date?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -454,7 +454,7 @@ Private Sub ResidualSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET Residual = " & Me.ResidualCBO & ", UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
+    SQLset = "SET Residual = " & Me.ResidualCBO & ", UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
     Response = MsgBox("You're about set the Residual for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Residual?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -471,7 +471,7 @@ Private Sub NotesSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET Notes = '" & Me.NotesCbo & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
+    SQLset = "SET Notes = '" & Me.NotesCbo & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 3;"
     Response = MsgBox("You're about set the Notes for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Notes?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -530,6 +530,6 @@ Private Sub UnitID_DblClick(Cancel As Integer)
     'Me.UnitNum.SetFocus
 End Sub
 Public Sub SetModified()
-    Me.UserName = FAUserName
+    Me.UserName = FaUserName
     Me.DatePosted = Now
 End Sub

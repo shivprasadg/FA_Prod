@@ -50,7 +50,7 @@ Private Sub Form_Load()
 'Call GetCount
     FilterChange = False
     SQLy = "SELECT * FROM DocLinks "
-    If Me.Parent.Form.Name = "GroupForm" Then SQLy = SQLy & " Where GroupId = " & Me.Parent.groupID
+    If Me.Parent.Form.Name = "GroupForm" Then SQLy = SQLy & " Where GroupId = " & Me.Parent.GroupID
     If Me.Parent.Form.Name = "Schedule_Form" Then SQLy = SQLy & " Where SchId = " & Me.Parent.SchID
     If Me.Parent.Form.Name = "MstrLease" Then SQLy = SQLy & " Where MLID = " & Me.Parent.MLID
     If Me.Parent.Form.Name = "LinkedDocsManager" Then SQLy = SQLy & " Where SCHID = " & Me.Parent.SchID

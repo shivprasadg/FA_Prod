@@ -53,10 +53,10 @@ If HS = "Show" Then
 HS = "Hide"
 Me.Detail.Height = 500
 Me.Reason.Height = 260
-Me.FAUserName.Height = 260
+Me.FaUserName.Height = 260
 Else
 Me.Reason.Height = 0
-Me.FAUserName.Height = 0
+Me.FaUserName.Height = 0
 Me.Detail.Height = 250
 HS = "Show"
 End If

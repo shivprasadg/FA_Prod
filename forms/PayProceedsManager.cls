@@ -77,7 +77,7 @@ Public Sub ClientList_Click()
     Me.DrawList.RowSource = ""
     Me.Units_List.RowSource = ""
     Me.SchID = Null
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.UnitID = Null
     Me.SchNo = Me.ClientList.Column(1)
     Call ClearWorkTable
@@ -192,7 +192,7 @@ Public Sub Leaselist_Click()
     Me.ScheduleList.RowSource = SQLz
 
     Me.SchID = Null
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.UnitID = Null
 
     Me.SchNo = Me.ClientList.Column(1) & " MLNo: " & LeaseList.Column(1)
@@ -249,10 +249,10 @@ Private Sub MakePPLetter_Click()
     Dim myApp  As Word.Application
     Dim myDoc  As Word.Document
     DoCmd.SetWarnings False
-    DoCmd.OutputTo acOutputReport, "PayProceeds_Letter", acFormatPDF, "C:\FAAS\" & FAUserName & "\temp\PayProceeds_Letter.pdf"
+    DoCmd.OutputTo acOutputReport, "PayProceeds_Letter", acFormatPDF, "C:\FAAS\" & FaUserName & "\temp\PayProceeds_Letter.pdf"
     DoCmd.SetWarnings True
     Set myApp = CreateObject("Word.Application")
-    Set myDoc = myApp.Documents.Add("C:\FAAS\" & FAUserName & "\temp\PayProceeds_Letter.pdf")
+    Set myDoc = myApp.Documents.Add("C:\FAAS\" & FaUserName & "\temp\PayProceeds_Letter.pdf")
     myApp.Visible = True
 End Sub
 Private Sub MakePPCert_Click()
@@ -268,10 +268,10 @@ Private Sub MakePPCert_Click()
     Dim myApp  As Word.Application
     Dim myDoc  As Word.Document
     DoCmd.SetWarnings False
-    DoCmd.OutputTo acOutputReport, "PayProceeds_Cert", acFormatPDF, "C:\FAAS\" & FAUserName & "\temp\PayProceeds_Cert.pdf"
+    DoCmd.OutputTo acOutputReport, "PayProceeds_Cert", acFormatPDF, "C:\FAAS\" & FaUserName & "\temp\PayProceeds_Cert.pdf"
     DoCmd.SetWarnings True
     Set myApp = CreateObject("Word.Application")
-    Set myDoc = myApp.Documents.Add("C:\FAAS\" & FAUserName & "\temp\PayProceeds_Cert.pdf")
+    Set myDoc = myApp.Documents.Add("C:\FAAS\" & FaUserName & "\temp\PayProceeds_Cert.pdf")
     myApp.Visible = True
 End Sub
 
@@ -295,7 +295,7 @@ End Sub
 
 Public Sub ScheduleList_Click()
     Me.SchID = Me.ScheduleList
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.UnitID = Null
     Me.SchNo = Me.ClientList.Column(1) & " MLNo: " & LeaseList.Column(1) & " Sch(s): "
     If Me.PickModeToggle = True Then

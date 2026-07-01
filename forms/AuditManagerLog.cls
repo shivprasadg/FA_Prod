@@ -77,33 +77,33 @@ Private Sub fieldname_Click()
             If Me.FieldName Like "*Rent*" Or Me.FieldName Like "*Cost*" Then
                 FieldGroupX = "Rent Change"
                 ViewX = "vw_FAID_RevRents"
-                If Me.Parent.groupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.groupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
+                If Me.Parent.GroupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.GroupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
             End If
         End If
 
         If Me.FieldName Like "*Resi*" Then
             FieldGroupX = "Residual Change"
             ViewX = "vw_FAID_RevResidual"
-            If Me.Parent.groupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.groupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
+            If Me.Parent.GroupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.GroupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
         End If
 
         If Me.FieldName Like "*Vendor*" Or Me.FieldName Like "*delivery*" Then
             FieldGroupX = "Vendor Change"
             ViewX = "vw_FAID_RevUnitVendor"
-            If Me.Parent.groupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.groupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
+            If Me.Parent.GroupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.GroupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
             SQLx = "SELECT AssetID, OldValue As Prev, NewValue As New, '" & Me.FieldName & "' As FieldName, sysUser, ActionDate, GroupID "
         End If
 
         If Me.FieldGroup = "UnitSpec" Then
             FieldGroupX = "Unit Spec Change"
             ViewX = "vw_FAID_RevUnitSpec"
-            If Me.Parent.groupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.groupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
+            If Me.Parent.GroupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.GroupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
             SQLx = "SELECT AssetID, OldValue As Prev, NewValue As New, '" & Me.FieldName & "' As FieldName, sysUser, ActionDate, GroupID "
         End If
         If Me.FieldGroup = "Structure" Then
             FieldGroupX = "Structure"
             ViewX = "vw_FAID_RevMoveGrps"
-            If Me.Parent.groupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.groupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
+            If Me.Parent.GroupID & "t" <> "t" Then UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.GroupID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
             SQLx = "SELECT AssetID, OldValue As Prev, NewValue As New, '" & Me.FieldName & "' As FieldName, sysUser, ActionDate, GroupID "
         End If
         DateTimeStart = Left(Me.ActionDate, Len(Me.ActionDate) - 5) & "00 " & Right(Me.ActionDate, 2)
@@ -115,7 +115,7 @@ Private Sub fieldname_Click()
         'RealFieldX = DLookup("FAIDField", "ATF_FAID_FieldMatrix", "FieldLabel='" & Me.FieldName & "'")
 
         SQLx = SQLx & "FROM  " & ViewX & " " & _
-               "WHERE GroupID=" & Me.Parent.groupID & " AND FieldName='" & Me.FieldName & "' " & _
+               "WHERE GroupID=" & Me.Parent.GroupID & " AND FieldName='" & Me.FieldName & "' " & _
                "AND DateValue(ActionDate) =  DateValue('" & Me.ActionDate & "') Order By AssetID, ActionDate Desc;"
 
         If Me.FieldGroup = "Terms" Then
@@ -124,7 +124,7 @@ Private Sub fieldname_Click()
             ' UnitIDStartLng = Nz(DMin("AssetID", ViewX, "GroupID=" & Me.Parent.SGrpID & " AND FieldName='" & Me.FieldName & "' AND ActionJustDate = '" & JustDate & "'"), 0)
             SQLx = "SELECT FieldName, OldValue As Prev, NewValue As New, '" & Me.FieldName & "' As FieldType, sysUser, ActionDate, GroupID " & _
                    "FROM  vw_FAID_RevTerms " & _
-                   "WHERE GroupID=" & Me.Parent.groupID & " " & _
+                   "WHERE GroupID=" & Me.Parent.GroupID & " " & _
                    "AND DateValue(ActionDate) =  DateValue('" & Me.ActionDate & "') Order By ActionDate Desc;"
             Me.Parent.UnitRevDetail.ColumnWidths = "1.3in;1.0in;1.0in;0in;0;1in;0"
         End If
@@ -135,7 +135,7 @@ Private Sub fieldname_Click()
             If Me.FieldName = "Synd Swaps" Then EcoType = "Not FieldName Like '*(sales)*'"
             SQLx = "SELECT FieldName, OldValue As Prev, NewValue As New, '" & Me.FieldName & "' As FieldType, sysUser, ActionDate, GroupID " & _
                    "FROM  vw_FAID_RevEconomics " & _
-                   "WHERE GroupID=" & Me.Parent.groupID & " AND " & EcoType & " " & _
+                   "WHERE GroupID=" & Me.Parent.GroupID & " AND " & EcoType & " " & _
                    "AND DateValue(ActionDate) =  DateValue('" & Me.ActionDate & "') Order By ActionDate Desc;"
             Me.Parent.UnitRevDetail.ColumnWidths = "1.3in;1.0in;1.0in;0in;0;1in;0"
         End If
@@ -245,7 +245,7 @@ End Sub
 
 Public Sub GetCount()
     Dim RST    As Object
-    If Me.Parent.SchID <> "" Or Me.Parent.groupID <> "" Then
+    If Me.Parent.SchID <> "" Or Me.Parent.GroupID <> "" Then
         Set RST = Me.RecordsetClone
         On Error Resume Next
         RST.MoveLast

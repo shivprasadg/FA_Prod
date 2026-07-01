@@ -9,7 +9,7 @@ Public Function GetSchedulDirectoryOLd(SearchString As String) As String
             Dim Committ As String
            Set wb = New Selenium.EdgeDriver
            ' Set WB = New Selenium.PhantomJSDriver
-            wb.start
+            wb.Start
             wb.Get "https://fleetadvantage.sharepoint.com/Customers/Forms/AllItems.aspx"
             'WB.Wait (2000)
             wb.FindElementByXPath("/html/body/div[1]/div/div[1]/div/div[1]/div[2]/div/div/div/div/div/div[2]/div/div[2]/div/div/form/input").SendKeys SearchString
@@ -105,7 +105,7 @@ Public Function GetSharePointLink(URL As String, Optional JustDir As Boolean, Op
             Dim wb As WebDriver
             Set wb = New Selenium.EdgeDriver
             ' Set WB = New Selenium.PhantomJSDriver
-            wb.start
+            wb.Start
             If Linktype = "AllType" Then wb.Get RawLink Else wb.Get URL
             WebString = wb.PageSource
             If isTest = True Then GoTo WriteMe
@@ -191,7 +191,7 @@ WriteMe:
     intFileNum = FreeFile
     'change Output to Append if you want to add to an existing file
     ' rather than creating a new file each time
-    Open "C:\Faas\" & FAUserName & "\Temp\WebText.txt" For Output As intFileNum
+    Open "C:\Faas\" & FaUserName & "\Temp\WebText.txt" For Output As intFileNum
     Print #intFileNum, WebString
     Close intFileNum
 

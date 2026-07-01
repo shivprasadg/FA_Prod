@@ -54,7 +54,7 @@ Private Sub FinalRentDateSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET FinalRentDate = '" & Me.FinalRentDateCBO & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
+    SQLset = "SET FinalRentDate = '" & Me.FinalRentDateCBO & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
     Response = MsgBox("You're about set the Final Rent Date for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Final Rent Date?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -92,7 +92,7 @@ Private Sub OptionSubTypeSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET OptionSubType = '" & Me.OptionSubTypeCbo & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
+    SQLset = "SET OptionSubType = '" & Me.OptionSubTypeCbo & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
     Response = MsgBox("You're about set the end Of Lease Type for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Type?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -208,7 +208,7 @@ Private Sub PurposedSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET StartOrPurposedDate = '" & Me.StartOrPurposedDateCBO & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
+    SQLset = "SET StartOrPurposedDate = '" & Me.StartOrPurposedDateCBO & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
     Response = MsgBox("You're about set the Projected Termination Date for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Date?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -225,7 +225,7 @@ Private Sub ActualDateSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET EndOrActualDate = '" & Me.EndOrActualDateCBO & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
+    SQLset = "SET EndOrActualDate = '" & Me.EndOrActualDateCBO & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
     Response = MsgBox("You're about set the Actual Termination Date for the Lease for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Date?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -260,7 +260,7 @@ Private Sub ResidualSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET Residual = " & Me.ResidualCBO & ", UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
+    SQLset = "SET Residual = " & Me.ResidualCBO & ", UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
     Response = MsgBox("You're about set the Residual for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Residual?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -277,7 +277,7 @@ Private Sub NotesSubmit_Click()
         Exit Sub
     End If
     Dim Response, SQLset As String
-    SQLset = "SET Notes = '" & Me.NotesCbo & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
+    SQLset = "SET Notes = '" & Me.NotesCbo & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 2;"
     Response = MsgBox("You're about set the Notes for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Notes?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -302,6 +302,6 @@ Private Sub UnitID_DblClick(Cancel As Integer)
     'Me.UnitNum.SetFocus
 End Sub
 Public Sub SetModified()
-    Me.UserName = FAUserName
+    Me.UserName = FaUserName
     Me.DatePosted = Now()
 End Sub

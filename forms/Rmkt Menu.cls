@@ -77,9 +77,9 @@ Private Sub BTF_BuyersOrder_Click()
     If grpAccess Like "*TMT*" _
     Or grpAccess Like "*ITT*" _
     Or grpAccess Like "*ACCT*" _
-    Or FAUserName = "ytj" _
-    Or FAUserName = "fmaloney" _
-    Or FAUserName = "tvanahn" Then
+    Or FaUserName = "ytj" _
+    Or FaUserName = "fmaloney" _
+    Or FaUserName = "tvanahn" Then
        DoCmd.close acForm, "BTF_BuyersOrder"
        DoCmd.OpenForm "BTF_BuyersOrder"
     Else

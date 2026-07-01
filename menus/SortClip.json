@@ -7,7 +7,7 @@
     "AdaptiveMenu": false,
     "Context": "",
     "Enabled": true,
-    "Height": 181,
+    "Height": 351,
     "Left": 515,
     "NameLocal": "SortClip",
     "Position": 5,
@@ -106,7 +106,7 @@
         "ImagePath": "rel:SortClip_Images\\Paste"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "Sort &Ascending",
@@ -164,7 +164,7 @@
         "ImagePath": "rel:SortClip_Images\\Sort Descending"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "&Remove Filter/Sort",
@@ -217,7 +217,7 @@
         "TooltipText": "AutoFilter",
         "Type": 1,
         "Visible": true,
-        "Width": 154,
+        "Width": 213,
         "Id": 11761,
         "ImagePath": "rel:SortClip_Images\\AutoFilter"
       },
@@ -246,7 +246,7 @@
         "TooltipText": "Bet&ween...",
         "Type": 1,
         "Visible": true,
-        "Width": 155,
+        "Width": 213,
         "Id": 10062,
         "ImagePath": "rel:SortClip_Images\\Between"
       },
@@ -275,7 +275,7 @@
         "TooltipText": "Sort &Descending",
         "Type": 1,
         "Visible": true,
-        "Width": 113,
+        "Width": 213,
         "Id": 10068,
         "ImagePath": "rel:SortClip_Images\\ÿ"
       },
@@ -304,7 +304,7 @@
         "TooltipText": "Sort &Descending",
         "Type": 1,
         "Visible": true,
-        "Width": 123,
+        "Width": 213,
         "Id": 10071,
         "ImagePath": "rel:SortClip_Images\\ÿ_9"
       },
@@ -333,7 +333,7 @@
         "TooltipText": "Sort &Descending",
         "Type": 1,
         "Visible": true,
-        "Width": 99,
+        "Width": 213,
         "Id": 10076,
         "ImagePath": "rel:SortClip_Images\\ÿ_10"
       },
@@ -362,7 +362,7 @@
         "TooltipText": "Sort &Descending",
         "Type": 1,
         "Visible": true,
-        "Width": 99,
+        "Width": 213,
         "Id": 10089,
         "ImagePath": "rel:SortClip_Images\\ÿ_11"
       }

@@ -11,7 +11,7 @@ Sub Lomenuloger()
 
     UserlogDet.AddNew
     UserlogDet("Date").Value = Now()
-    UserlogDet("UserName").Value = FAUserName
+    UserlogDet("UserName").Value = FaUserName
     UserlogDet.Update
 End Sub
 
@@ -26,6 +26,6 @@ Sub Loreportloger()
 
     UserlogDet.AddNew
     UserlogDet("Date").Value = Now()
-    UserlogDet("UserName").Value = FAUserName
+    UserlogDet("UserName").Value = FaUserName
     UserlogDet.Update
 End Sub

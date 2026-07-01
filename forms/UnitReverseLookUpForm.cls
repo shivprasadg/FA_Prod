@@ -57,8 +57,8 @@ Private Sub OpenClient_Click()
 End Sub
 
 Private Sub OpenGroup_Click()
-  If Me.groupID = "" Or IsNull(Me.groupID) Then Exit Sub
-  DoCmd.OpenForm "GroupForm", , , "SGrpid=" & Me.groupID
+  If Me.GroupID = "" Or IsNull(Me.GroupID) Then Exit Sub
+  DoCmd.OpenForm "GroupForm", , , "SGrpid=" & Me.GroupID
   DoCmd.SelectObject acForm, "GroupForm"
 End Sub
 
@@ -232,7 +232,7 @@ Private Sub UnitsList_Click()
   Me.ClientID = Me.UnitsList.Column(15)
   Me.MLID = Me.UnitsList.Column(16)
   Me.SchID = Me.UnitsList.Column(17)
-  Me.groupID = Me.UnitsList.Column(18)
+  Me.GroupID = Me.UnitsList.Column(18)
   Me.LocationID = Me.UnitsList.Column(19)
   Me.BuyerID = Me.UnitsList.Column(20)
 End Sub

@@ -24,7 +24,7 @@ Private Sub CompanyName_DblClick(Cancel As Integer)
 End Sub
 
 Private Sub ExcelExport_Click()
-FormatExcel "RemarketWrongStatusUnits", "C:\Faas\" & FAUserName & "\Temp\WrongStatus.xlsx", "wrong", , , , "Remaketing Wrong Status Units", True
+FormatExcel "RemarketWrongStatusUnits", "C:\Faas\" & FaUserName & "\Temp\WrongStatus.xlsx", "wrong", , , , "Remaketing Wrong Status Units", True
 End Sub
 
 Private Sub Form_Current()

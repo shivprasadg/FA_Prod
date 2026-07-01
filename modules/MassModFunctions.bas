@@ -37,7 +37,7 @@ Public Function CheckInterimFunded(PartDesc As String)
     msg1 = msg1 & HSpaces(5) & "IF Units: <B>" & RST!IFUnits & "</B><Br /><Br />"
     msg1 = msg1 & HSpaces(5) & "Part Added: <B> " & PartDesc & "</B><Br />"
     msg1 = msg1 & HSpaces(5) & "Date Added: <B> " & Date & "</B><Br />"
-    msg1 = msg1 & HSpaces(5) & "Added By: <B>" & FAUserName & "</B><Br />"
+    msg1 = msg1 & HSpaces(5) & "Added By: <B>" & FaUserName & "</B><Br />"
     msg1 = msg1 & "<p style=""font-family:Segoe UI;font-size:8px""><br/>[End Msg] "
     msg1 = msg1 & "Email Created: " & Date & " (via ATLAAS Core Data Manager).<br/><br />"
     msg1 = msg1 & "<p style=""font-family:Segoe UI;font-size:12px"">"

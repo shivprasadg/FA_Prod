@@ -367,7 +367,7 @@ Private Sub AddTitleLogEntry_Click()
         DoCmd.close acForm, "OPSTitleLogEntry"
         DoCmd.OpenForm "OPSTitleLogEntry", , , , acFormAdd
         Forms!OPSTitleLogEntry.UnitRef = Me.UnitID
-        Forms!OPSTitleLogEntry.USERID = FAUserName
+        Forms!OPSTitleLogEntry.USERID = FaUserName
         Forms!OPSTitleLogEntry.TitleNumber = Me.UnitTitleNumber
         If IsNull(Me.UnitRegLocationRef) Or Me.UnitRegLocationRef = 0 Then
             On Error Resume Next
@@ -412,7 +412,7 @@ Private Sub UnitMake_Click()
 End Sub
 
 Private Sub unitoffleasedt_AfterUpdate()
- If IsDate(Me.Units_RMKT_Sub!parkdt) Then UnitStatus = "R"
+ If IsDate(Me.Units_RMKT_Sub!ParkDT) Then UnitStatus = "R"
 End Sub
 
 Private Sub UnitStatus_Click()
@@ -456,7 +456,7 @@ Private Sub UnitTASent_AfterUpdate()
         End If
         SQLz = ""
         SQLz = SQLz & "INSERT INTO UnitTitleLog ( UnitRef,  Reason,  UnitTitleLogDate,  EntryTypeId,  EntryReasonId,  ExpectedReturn,  UserID )"
-        SQLz = SQLz & "SELECT " & Me.UnitID & ", 'Title Application Sent', #" & Me.UnitTASent & "#, 2, 18, True, '" & FAUserName & "';"
+        SQLz = SQLz & "SELECT " & Me.UnitID & ", 'Title Application Sent', #" & Me.UnitTASent & "#, 2, 18, True, '" & FaUserName & "';"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
@@ -540,7 +540,7 @@ Private Sub UCCC_Dirty(Cancel As Integer)
         UCCClogDet.AddNew
         UCCClogDet("Unitref").Value = Forms!Unitsform!Text373
         UCCClogDet("OldUCCC").Value = Forms!Unitsform!UCCC
-        UCCClogDet("User").Value = FAUserName
+        UCCClogDet("User").Value = FaUserName
         UCCClogDet.Update
 
     End If
@@ -601,7 +601,7 @@ Private Sub UnitStatus_BeforeUpdate(Cancel As Integer)
         Cancel = True
         Me.UnitStatus.Undo
     End If
-    If IsNull(Me.Units_RMKT_Sub!parkdt) And Me.UnitStatus = "P" Then
+    If IsNull(Me.Units_RMKT_Sub!ParkDT) And Me.UnitStatus = "P" Then
         MsgBox "You must have a Parked Date set before you can Park ('P') a unit"
         Cancel = True
         Me.UnitStatus.Undo

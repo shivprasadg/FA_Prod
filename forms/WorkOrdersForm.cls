@@ -23,7 +23,7 @@ Private Sub AddNew_Click()
             Me.wClientID = DLookup("ClientID", "vw_SixKeys", "AssetID=" & Me.wAssetId & "")
             Me.wClientIDGroupID = DLookup("ClientGroupID", "vw_SixKeys", "AssetID=" & Me.wAssetId & "")
             DoCmd.RunCommand acCmdSaveRecord
-            Me.wNotes = "Work Order WO-" & Me.wAssetId & "-" & Me.WorkOrderID & " creadted by " & FAUserName
+            Me.wNotes = "Work Order WO-" & Me.wAssetId & "-" & Me.WorkOrderID & " creadted by " & FaUserName
             Me.wONumber = "WO-" & Forms!Unitsform.Form.UnitID & "-" & Me.WorkOrderID
             Me.WorkOrderItemsSub.Visible = True
         End If

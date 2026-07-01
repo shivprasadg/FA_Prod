@@ -255,10 +255,10 @@ Public Function MakeInvoice(ToExcel As Boolean)
             SQLz = SQLz & "FROM vw_PerdiemSurrenderInvoice WHERE BillID = " & Me.BillID & ";"
             XLS = "|I,BC|O,BC|P,P3|Q,$E|R,PC|S,$E|T,$E|U,$E|V,$E|"
         End If
-        If RST!BillType = "PerDiem" And RST!groupID & "test" <> "test" Then
+        If RST!BillType = "PerDiem" And RST!GroupID & "test" <> "test" Then
         SQLz = "SELECT vw_PerdiemInvoice.SGrpID, * "
         SQLz = SQLz & "FROM vw_PerdiemInvoice "
-        SQLz = SQLz & "WHERE (((vw_PerdiemInvoice.SGrpID)= " & RST!groupID & ") AND ((vw_PerdiemInvoice.BillID)= " & [Forms]![Billing]![BillID] & ")) ;"
+        SQLz = SQLz & "WHERE (((vw_PerdiemInvoice.SGrpID)= " & RST!GroupID & ") AND ((vw_PerdiemInvoice.BillID)= " & [Forms]![Billing]![BillID] & ")) ;"
         End If
         If RST!BillType = "PerDiem" Then
            SQLz = "SELECT * FROM vw_PerdiemInvoice WHERE BillID=" & RST!BillID & ";"

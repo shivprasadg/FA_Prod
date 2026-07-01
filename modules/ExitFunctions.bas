@@ -417,10 +417,10 @@ Public Function fSufReport(Optional isTest As Boolean)
     Call KillFiles("\\fa-poseidon\Atlaas\Temp", "SUFReport*.xlsx")
     subjectx = "Notice: IMPORTANT - Possible Invalid SUFs Report"
     If isTest = True Then
-        If FAUserName = "ytj" Then
+        If FaUserName = "ytj" Then
             ContactEmailX = "yjackson@FleetAdvantage.com"
         Else
-            ContactEmailX = FAUserName & "@FleetAdvantage.com"
+            ContactEmailX = FaUserName & "@FleetAdvantage.com"
         End If
         CcEmailX = ""
     Else
@@ -1037,7 +1037,7 @@ Public Function MakeExitExcelReport(Optional ClientIDi As Long, Optional ClientG
         XLS = XLS & "|EL,HH"
         XLS = XLS & "|"
     End If
-    SendReport2Excel SQLz, "Exit Report ", Headerx, True, XLS, 0, False, , , , "C:\Faas\" & FAUserName & "\Temp\ExitReport.xlsx"
+    SendReport2Excel SQLz, "Exit Report ", Headerx, True, XLS, 0, False, , , , "C:\Faas\" & FaUserName & "\Temp\ExitReport.xlsx"
     MessageUser "Close"
 End Function
 
@@ -1342,7 +1342,7 @@ Public Function MakeExitMDAReport(Optional ClientIDi As Long, Optional ClientGro
     XLS = XLS & "EC,TC|EC,cLabel:End=EC:3:Division |"
     XLS = XLS & "ED,TL|ED,cLabel:End=ED:3:Unote |"
     XLS = XLS & "EE,cLabel:End=EE:3:ClientGroupID|EE,HH|"
-    SendReport2Excel SQLz, "Exit Matt Report ", Headerx, True, XLS, 0, False, , , , "C:\Faas\" & FAUserName & "\Temp\ExitMattReport.xlsx"
+    SendReport2Excel SQLz, "Exit Matt Report ", Headerx, True, XLS, 0, False, , , , "C:\Faas\" & FaUserName & "\Temp\ExitMattReport.xlsx"
     MessageUser "Close"
 End Function
 
@@ -1488,7 +1488,7 @@ Public Function MakeExitAMG(Optional ClientGroupIDi As Long, Optional ClientX As
     XLS = XLS & "|BA,HH|BA,cLabel:End=BA:3:ClientGroupID"
     XLS = XLS & "|"
 
-    SendReport2Excel SQLz, "ExitAMG ", Headerx, True, XLS, 0, False, , , , "C:\Faas\" & FAUserName & "\Temp\ExitAMG.xlsx"
+    SendReport2Excel SQLz, "ExitAMG ", Headerx, True, XLS, 0, False, , , , "C:\Faas\" & FaUserName & "\Temp\ExitAMG.xlsx"
     MessageUser "Close"
 End Function
 Public Function MakeExitOptionLocal(Optional Override As Boolean, Optional JustUpDate As Boolean)

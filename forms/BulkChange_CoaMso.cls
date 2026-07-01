@@ -232,7 +232,7 @@ Private Sub TitleAppSubmit_Click()
         DoCmd.RunSQL (SQLz)
 
         SQLz = "INSERT INTO UnitTitleLog ( UnitRef, EntryTypeId, EntryReasonId, EntryReason, UnitTitleLogDate, ExpectedReturn, UserID ) " & _
-            "SELECT Bulk_Update_WorkTable.UnitID, 2, 18, 'Title Application Sent', #" & Me.TitleAppSent & "#, -1, '" & FAUserName & "' " & _
+            "SELECT Bulk_Update_WorkTable.UnitID, 2, 18, 'Title Application Sent', #" & Me.TitleAppSent & "#, -1, '" & FaUserName & "' " & _
             "FROM Bulk_Update_WorkTable LEFT JOIN UnitTitleAppSentQ ON Bulk_Update_WorkTable.UnitID = UnitTitleAppSentQ.UnitRef " & _
             "WHERE (((UnitTitleAppSentQ.UnitRef) Is Null));"
 
@@ -258,7 +258,7 @@ Private Sub UnitTASent_AfterUpdate()
         End If
         SQLz = ""
         SQLz = SQLz & "INSERT INTO UnitTitleLog ( UnitRef,  EntryReason,  UnitTitleLogDate,  EntryTypeId,  EntryReasonId,  ExpectedReturn,  UserID )"
-        SQLz = SQLz & "SELECT " & Me.UnitID & ", 'Title Application Sent', #" & Me.UnitTASent & "#, 2, 18, True, '" & FAUserName & "';"
+        SQLz = SQLz & "SELECT " & Me.UnitID & ", 'Title Application Sent', #" & Me.UnitTASent & "#, 2, 18, True, '" & FaUserName & "';"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         ModMade = -1

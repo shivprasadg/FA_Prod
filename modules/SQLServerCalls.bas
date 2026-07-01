@@ -307,8 +307,8 @@ Public Function SendRequestPayOffEmail(Optional Emailto As Integer)
         .ActiveConnection.CommandTimeout = 300
 
         If Emailto > 0 Then
-            .Parameters.Append .CreateParameter("@EmailTo", adVarChar, adParamInput, 500, FAUserName & "@Fleetadvantage.com")
-            If FAUserName = "yjackson" Or FAUserName = "ytj" Then
+            .Parameters.Append .CreateParameter("@EmailTo", adVarChar, adParamInput, 500, FaUserName & "@Fleetadvantage.com")
+            If FaUserName = "yjackson" Or FaUserName = "ytj" Then
                 .Parameters.Append .CreateParameter("@CopyTo", adVarChar, adParamInput, 500, "ljohnson@fleetadvantage.com;afischer@FleetAdvantage.com")
             Else
                 .Parameters.Append .CreateParameter("@CopyTo", adVarChar, adParamInput, 500, "ljohnson@fleetadvantage.com")

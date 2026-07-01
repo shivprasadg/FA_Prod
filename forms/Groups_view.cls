@@ -50,7 +50,7 @@ Private Sub AddCreditRequestBtn_Click()
 Set dbsUnits = CurrentDb
 Set rstTypes = dbsUnits.OpenRecordset("CreditRequests", dbOpenDynaset, dbSeeChanges)
 rstTypes.AddNew
-rstTypes!GroupRef = Me![groupID]
+rstTypes!GroupRef = Me![GroupID]
 rstTypes.Update
 MsgBox "The new Credit Request has been added", vbOKOnly
 Forms!Groups_view.Credit_Request_sub.Requery
@@ -66,7 +66,7 @@ Private Sub AddAUnitBtn_Click()
 Set dbsUnits = CurrentDb
 Set rstTypes = dbsUnits.OpenRecordset("Units", dbOpenDynaset, dbSeeChanges)
 rstTypes.AddNew
-rstTypes!GroupRef = Me![groupID]
+rstTypes!GroupRef = Me![GroupID]
 rstTypes.Update
 MsgBox "The new unit has been added", vbOKOnly
 Forms!Groups_view.Units_sub.Requery
@@ -82,7 +82,7 @@ Private Sub AddExpenseBtn_Click()
 Set dbsUnits = CurrentDb
 Set rstTypes = dbsUnits.OpenRecordset("Expenses", dbOpenDynaset, dbSeeChanges)
 rstTypes.AddNew
-rstTypes!GroupsRef = Me![groupID]
+rstTypes!GroupsRef = Me![GroupID]
 rstTypes!DealsRef = Me![DealRef]
 rstTypes.Update
 MsgBox "A blank expense has been added", vbOKOnly
@@ -107,7 +107,7 @@ Dim strForm
 Dim strCriteria
 
 strForm = "Units"
-strCriteria = "[groupRef]=" & Forms!Groups_view.groupID
+strCriteria = "[groupRef]=" & Forms!Groups_view.GroupID
 
 DoCmd.OpenForm strForm, , , strCriteria, , acDialog
 End Sub
@@ -171,7 +171,7 @@ On Error GoTo Err_OpenUnitsSubbtn_Click
 
     stDocName = "Units"
 
-    stLinkCriteria = "[GroupREF]=" & Me![groupID]
+    stLinkCriteria = "[GroupREF]=" & Me![GroupID]
     DoCmd.OpenForm stDocName, , , stLinkCriteria
 
 Exit_OpenUnitsSubbtn_Click:

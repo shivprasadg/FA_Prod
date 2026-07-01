@@ -27,7 +27,7 @@ End Sub
 Private Sub ChildAssetSearch_Change()
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Open " & _
         "WHERE AssetID Like '*" & Me.ChildAssetSearch.Text & "*'" & _
-        "AND GroupID=" & Me.groupID & " " & _
+        "AND GroupID=" & Me.GroupID & " " & _
         "Order By AssetID,ChildType,CInvoice;"
     Me.OpenPartsList.RowSource = SQLz
 End Sub
@@ -36,7 +36,7 @@ Private Sub ChildAssetSearch2_Change()
     ClearSearchBoxes (Me.ActiveControl.Name)
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Drawn " & _
         "WHERE AssetID Like '*" & Me.ChildAssetSearch2.Text & "*'" & _
-        "AND DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.groupID & " " & _
+        "AND DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.GroupID & " " & _
         "Order By AssetID,ChildType,CInvoice;"
     Me.DrawnPartsList.RowSource = SQLz
     Call RunningTotal
@@ -45,7 +45,7 @@ End Sub
 Private Sub ChildInvoiceSearch_Change()
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Open " & _
         "WHERE CInvoice Like '*" & Me.ChildInvoiceSearch.Text & "*'" & _
-        "AND GroupID=" & Me.groupID & " " & _
+        "AND GroupID=" & Me.GroupID & " " & _
         "Order By CInvoice,AssetID, ChildType;"
     Me.OpenPartsList.RowSource = SQLz
 End Sub
@@ -53,7 +53,7 @@ Private Sub CInvoiceSearch2_Change()
     ClearSearchBoxes (Me.ActiveControl.Name)
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Drawn " & _
         "WHERE CInvoice Like '*" & Me.CInvoiceSearch2.Text & "*'" & _
-        "AND DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.groupID & " " & _
+        "AND DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.GroupID & " " & _
         "Order By CInvoice,AssetID,ChildType;"
     Me.DrawnPartsList.RowSource = SQLz
     Call RunningTotal
@@ -61,7 +61,7 @@ End Sub
 Private Sub ChildUnitNumSearch_Change()
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Open " & _
         "WHERE UnitNum Like '*" & Me.ChildUnitNumSearch.Text & "*'" & _
-        "AND GroupID=" & Me.groupID & " " & _
+        "AND GroupID=" & Me.GroupID & " " & _
         "Order By UnitNum,ChildType,CInvoice;"
     Me.OpenPartsList.RowSource = SQLz
 End Sub
@@ -70,7 +70,7 @@ Private Sub ChildUnitNumSearch2_Change()
     ClearSearchBoxes (Me.ActiveControl.Name)
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Drawn " & _
         "WHERE UnitNum Like '*" & Me.ChildUnitNumSearch2.Text & "*'" & _
-        "AND DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.groupID & " " & _
+        "AND DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.GroupID & " " & _
         "Order By UnitNum,ChildType,CInvoice;"
     Me.DrawnPartsList.RowSource = SQLz
     Call RunningTotal
@@ -79,7 +79,7 @@ End Sub
 Private Sub ChildVINSearch_Change()
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Open " & _
         "WHERE VIN Like '*" & Me.ChildVINSearch.Text & "*'" & _
-        "AND GroupID=" & Me.groupID & " " & _
+        "AND GroupID=" & Me.GroupID & " " & _
         "Order By VIN,ChildType,CInvoice;"
     Me.OpenPartsList.RowSource = SQLz
 End Sub
@@ -88,7 +88,7 @@ Private Sub ChildVINSearch2_Change()
     ClearSearchBoxes (Me.ActiveControl.Name)
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Drawn " & _
         "WHERE VIN Like '*" & Me.ChildVINSearch2.Text & "*'" & _
-        "AND DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.groupID & " " & _
+        "AND DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.GroupID & " " & _
         "Order By UnitNum, ChildType,CInvoice;"
     Me.DrawnPartsList.RowSource = SQLz
     Call RunningTotal
@@ -98,7 +98,7 @@ End Sub
 
 Private Sub ClearChildType_Click()
     ListBoxClear (Forms!DrawDownManager.ChildPartTypeList)
-    If Nz(Me.groupID, 0) > 0 Then SetChildPartLists (Me.groupID)
+    If Nz(Me.GroupID, 0) > 0 Then SetChildPartLists (Me.GroupID)
 End Sub
 
 Private Sub ClearInvalidDraw_Click()
@@ -185,7 +185,7 @@ AskDate:
                 "          Please enter that date, below." & vbNewLine & _
                 "          The Fund Date or Todays is the default." & vbNewLine & vbNewLine & _
                 "          (You MUST use a date or 'Cancel')" _
-                , "Date Paid Off:", Nz(DLookup("FundDate", "SchGrp", "SGrpid=" & Me.groupID), Date))
+                , "Date Paid Off:", Nz(DLookup("FundDate", "SchGrp", "SGrpid=" & Me.GroupID), Date))
             'If Not IsDate(DatePaidOff) Then GoTo AskDate
             DoCmd.SetWarnings False
             SQLz = "Update Units Set UnitPayOff='" & DatePaidOff & "' Where DrawDownId=" & Me.DrawDownId
@@ -234,7 +234,7 @@ Private Sub Form_Load()
     Me.OpenPartsList.RowSource = ""
     Me.OpenUnitsLabel.caption = ""
     AttachedInvoices_Label.caption = ""
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.SchID = Null
     Me.MLID = Null
 
@@ -303,7 +303,7 @@ Private Function SetListboxes(Typex As String, IDX As Long)
         Me.OpenUnitsLabel.caption = "Open Units... select a Group"
         Me.DrawnUnitsLabel.caption = "Units in Draw... select a Group"
         Me.SchNum = ""
-        Me.groupID = Null
+        Me.GroupID = Null
 
         ListBoxClear (Forms!DrawDownManager.DrawDownList)
 
@@ -315,7 +315,7 @@ Private Function SetListboxes(Typex As String, IDX As Long)
             Me.GroupList.RowSource = ""
             Me.MLID = Null
             Me.SchID = Null
-            Me.groupID = Null
+            Me.GroupID = Null
             Exit Function
         End If
         If Typex = "MLID" Then
@@ -327,7 +327,7 @@ Private Function SetListboxes(Typex As String, IDX As Long)
             Me.GroupList.RowSource = ""
             Me.MLID = Me.LeaseList.Column(0)
             Me.SchID = Null
-            Me.groupID = Null
+            Me.GroupID = Null
             Exit Function
         End If
         If Typex = "Sch" Then
@@ -339,13 +339,13 @@ Private Function SetListboxes(Typex As String, IDX As Long)
             Me.SchID = IDX
             Me.SchNum = Me.ScheduleList.Column(1)
             Me.SchID = IDX
-            Me.groupID = Null
+            Me.GroupID = Null
         End If
     Else
         '---- The Group List is Clicked ----
         Dim CaptionSufix As String
         Dim DrawSchGrpName As String
-        Me.groupID = IDX
+        Me.GroupID = IDX
         DrawSchGrpName = "Sch " & Me.ScheduleList.Column(1) & " Grp: " & Me.GroupList.Column(1)
         Me.InvoiceLabel.caption = "Invoices for Units in Sch: " & Me.ScheduleList.Column(1) & " Grp: " & Me.GroupList.Column(1)
         If CInt(Me.GroupList.Column(3)) = 0 Then CaptionSufix = "All units Drawn on"
@@ -409,12 +409,12 @@ Private Function SetListboxes(Typex As String, IDX As Long)
 End Function
 Private Function SetChildPartLists(GroupIDx As Long)
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Open " & _
-        "WHERE GroupID=" & Me.groupID & " " & _
+        "WHERE GroupID=" & Me.GroupID & " " & _
         "Order By AssetID,ChildType,CInvoice;"
     Me.OpenPartsList.RowSource = SQLz
 
     SQLz = "SELECT * FROM DrawDowns_ChildParts_Drawn " & _
-        "WHERE DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.groupID & " " & _
+        "WHERE DrawDownID=" & Me.DrawDownId & " and GroupID=" & Me.GroupID & " " & _
         "Order By AssetID,ChildType,CInvoice;"
     Me.DrawnPartsList.RowSource = SQLz
 
@@ -466,7 +466,7 @@ Private Sub MarkVendorPaid_Click()
 End Sub
 
 Private Sub OpenMassMod_Click()
-    If Me.groupID & "test" = "test" Then
+    If Me.GroupID & "test" = "test" Then
         MsgBox "Sorry, but you must first select a group", , "No Group, No Service :("
         Exit Sub
     End If
@@ -479,7 +479,7 @@ Private Sub OpenMassMod_Click()
     Form_BulkChange_Form.Leaselist_Click
     Forms!BulkChange_Form.ScheduleList = Me.SchID
     Form_BulkChange_Form.ScheduleList_Click
-    Forms!BulkChange_Form.GroupList = Me.groupID
+    Forms!BulkChange_Form.GroupList = Me.GroupID
     Form_BulkChange_Form.GroupList_Click
     Form_BulkChange_Form.GetAll_Click
 End Sub
@@ -539,7 +539,7 @@ Private Sub DrawDownList_Click()
         Me.DrawPaidOff = RST!DrawPaidOff
         Me.MLID = Me.LeaseList
         Me.DrawCreditLimit = RST!DrawCreditLimit
-        Me.GroupFunded = DLookup("FundDate", "SchGrp", "SGrpid=" & Me.groupID)
+        Me.GroupFunded = DLookup("FundDate", "SchGrp", "SGrpid=" & Me.GroupID)
         RST.close
     End If
     Set RST = Nothing
@@ -610,7 +610,7 @@ Private Function SelectParts_Open(InvoiceNum As String)
     Dim InvCount, x, Y As Integer
     ListBoxClear (Forms!DrawDownManager.OpenPartsList)
     SQLz = "Select ChildPartID FROM DrawDowns_ChildParts_Open " & _
-        "WHERE GroupID=" & Me.groupID & " " & _
+        "WHERE GroupID=" & Me.GroupID & " " & _
         "AND CInvoice='" & InvoiceNum & "' " & _
         "Order By CInvoice,AssetID,ChildType;"
     '  "AND ChildType='" & Me.ChildPartTypeList.Column(5) & "' " & _
@@ -802,8 +802,8 @@ Public Function MoveToDraw(DrawIDx As Long, Optional Invoicex As String)
     Call SetListboxes("MLID", RST!MLID)
     Me.ScheduleList = RST!SchID
     Call SetListboxes("Sch", RST!SchID)
-    Me.GroupList = RST!groupID
-    Call SetListboxes("Grp", RST!groupID)
+    Me.GroupList = RST!GroupID
+    Call SetListboxes("Grp", RST!GroupID)
     Me.DrawDownList = RST!DrawDownId
     Call DrawDownList_Click
     If Invoicex <> "" Then
@@ -823,9 +823,9 @@ Private Sub AttachedInvoicesList_Click()
     Call ClearSearchBoxes
 End Sub
 Private Sub AddDrawDownBtn_Click()
-    If Me.groupID & "test" = "test" Then Exit Sub
+    If Me.GroupID & "test" = "test" Then Exit Sub
     DoCmd.close acForm, "DrawDownAddaDraw"
-    Call DoCmd.OpenForm("DrawDownAddaDraw", , , , , , "Add>" & Me.groupID)
+    Call DoCmd.OpenForm("DrawDownAddaDraw", , , , , , "Add>" & Me.GroupID)
 End Sub
 
 Private Sub EditMe_Click()
@@ -918,7 +918,7 @@ Private Function AddPartsToDraw(DrawIDx As Long, Optional CopyInvToParts As Bool
 
     On Error GoTo fixme1
     Call UpdateListBoxes
-    Call SetChildPartLists(Me.groupID)
+    Call SetChildPartLists(Me.GroupID)
     Exit Function
 fixme1:
 End Function
@@ -950,7 +950,7 @@ Private Sub RemoveParts_Click()
     Next ItemVar
     On Error GoTo fixme1
     Call UpdateListBoxes
-    Call SetChildPartLists(Me.groupID)
+    Call SetChildPartLists(Me.GroupID)
     Me.ChildInvoiceList.Requery
     Exit Sub
 fixme1:
@@ -1084,7 +1084,7 @@ Public Function SearchOpenUnitsList(sField As String)
     SQLz = "SELECT AssetID, VIN, UnitNum, Invoice, Format(OEC,'$#,#') As Cost " & _
         "FROM DrawDowns_Units_All " & _
         "WHERE DrawDownID Is Null AND SchId=" & Me.ScheduleList & " AND " & sField & " LIKE '*" & Me("Search" & sField).Text & "*' "
-    If Me.groupID <> "" Then SQLz = SQLz & " AND SGrpID =" & Me.groupID & " "
+    If Me.GroupID <> "" Then SQLz = SQLz & " AND SGrpID =" & Me.GroupID & " "
     SQLz = SQLz & " ORDER BY " & sField & ";"
     Me.OpenUnitsList.RowSource = SQLz
     Call RunningTotal
@@ -1148,11 +1148,11 @@ Private Sub SearchUnitVendorPytDate_Change()
     Call SearchDrawnUnitsList("UnitVendorPytDate")
 End Sub
 Public Sub RunningTotal()
-    Dim Totalcost As Currency
+    Dim TotalCost As Currency
     Dim SelectedCost As Currency
     Dim SelectedCostWParts As Currency
     Dim DrawnCostWParts As Currency
-    Totalcost = 0
+    TotalCost = 0
     SelectedCost = 0
     SelectedCostWParts = 0
     DrawnCostWParts = 0
@@ -1163,7 +1163,7 @@ Public Sub RunningTotal()
     If DrawnUnitsList.ListCount > 0 Then
         Dim iRow As Integer
         For iRow = 0 To (DrawnUnitsList.ListCount)
-            If Nz(DrawnUnitsList.Column(4, iRow), 0) <> "$" Then Totalcost = Totalcost + Nz(DrawnUnitsList.Column(4, iRow), 0)
+            If Nz(DrawnUnitsList.Column(4, iRow), 0) <> "$" Then TotalCost = TotalCost + Nz(DrawnUnitsList.Column(4, iRow), 0)
             If DrawnUnitsList.Selected(iRow) = True And Nz(DrawnUnitsList.Column(4, iRow), 0) <> "$" Then
                 SelectedCost = SelectedCost + Nz(DrawnUnitsList.Column(4, iRow), 0)
                 If Nz(Me.DrawDownId, "") = "" Then
@@ -1174,16 +1174,16 @@ Public Sub RunningTotal()
             End If
         Next
     End If
-    Me.DrawnUnitCost = Totalcost
+    Me.DrawnUnitCost = TotalCost
     Me.DrawSelectedCost = SelectedCost
     Me.DrawnSelectedCostWParts = SelectedCost + DrawnCostWParts
 
-    Totalcost = 0
+    TotalCost = 0
     SelectedCost = 0
     If OpenUnitsList.ListCount > 0 Then
         For iRow = 0 To (OpenUnitsList.ListCount)
             If Nz(OpenUnitsList.Column(4, iRow), 0) <> "$" Then
-                Totalcost = Totalcost + Nz(OpenUnitsList.Column(4, iRow), 0)
+                TotalCost = TotalCost + Nz(OpenUnitsList.Column(4, iRow), 0)
             End If
             If OpenUnitsList.Selected(iRow) = True And Nz(OpenUnitsList.Column(4, iRow), 0) <> "$" Then
                 SelectedCost = SelectedCost + Nz(OpenUnitsList.Column(4, iRow), 0)
@@ -1191,17 +1191,17 @@ Public Sub RunningTotal()
             End If
         Next
     End If
-    Me.AvailUnitCost = Totalcost
+    Me.AvailUnitCost = TotalCost
     Me.OpenSelectedCost = SelectedCost
     OpenSelectedCostWParts = SelectedCostWParts
     'Remarked 8/18/2019
-    Totalcost = 0
+    TotalCost = 0
     If DrawnPartsList.ListCount > 0 Then
         For iRow = 1 To (DrawnPartsList.ListCount)
-            Totalcost = Totalcost + Nz(DrawnPartsList.Column(6, iRow), 0)
+            TotalCost = TotalCost + Nz(DrawnPartsList.Column(6, iRow), 0)
         Next
     End If
-    Me.ChildPartsCost = Totalcost
+    Me.ChildPartsCost = TotalCost
 End Sub
 Private Sub GetUnitCounts()
     Dim LabelOpen, LabelOpenParts, LabelDrawn, LabelDrawnParts As String
@@ -1233,15 +1233,15 @@ Private Sub GetUnitCounts()
     Call RunningTotal
 End Sub
 Public Sub ChildPartTypeList_Click()
-    If Nz(Me.groupID, 0) > 0 Then
+    If Nz(Me.GroupID, 0) > 0 Then
         SQLz = "SELECT * FROM DrawDowns_ChildParts_Open " & _
-            "WHERE GroupID=" & Me.groupID & " " & _
+            "WHERE GroupID=" & Me.GroupID & " " & _
             "AND VendorId= " & Me.ChildPartTypeList & " " & _
             "AND ChildType='" & Me.ChildPartTypeList.Column(5) & "' " & _
             "Order By CInvoice,AssetID;"
         Me.OpenPartsList.RowSource = SQLz
         SQLz = "SELECT * FROM DrawDowns_ChildParts_Drawn " & _
-            "WHERE GroupID=" & Me.groupID & " " & _
+            "WHERE GroupID=" & Me.GroupID & " " & _
             "AND VendorId= " & Me.ChildPartTypeList & " " & _
             "AND ChildType='" & Me.ChildPartTypeList.Column(5) & "' " & _
             "Order By CInvoice,AssetID;"

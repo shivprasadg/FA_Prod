@@ -19,7 +19,7 @@ End Sub
 Private Sub FundingStatus_DblClick(Cancel As Integer)
 Dim Msgx As String
 If Me.FundingStatus = "F" Then Msgx = "... then again, you already knew that :)"
-If GroupFinalizedCheck(Me.groupID) = "Good" Then MsgBox "This Group checks out 'Good'" & vbNewLine & " (you may finalize)" & Msgx, vbInformation, AtlaasVersion
+If GroupFinalizedCheck(Me.GroupID) = "Good" Then MsgBox "This Group checks out 'Good'" & vbNewLine & " (you may finalize)" & Msgx, vbInformation, AtlaasVersion
 End Sub
 
 Private Sub GetData_Click()
@@ -65,7 +65,7 @@ End Sub
 
 Private Sub Form_Current()
     On Error Resume Next
-    Me.txtCurrent = Me.groupID
+    Me.txtCurrent = Me.GroupID
     On Error GoTo 0
 End Sub
 
@@ -418,7 +418,7 @@ End Sub
 
 Private Sub Sch_Grp_DblClick(Cancel As Integer)
     DoCmd.close acForm, "GroupForm"
-    DoCmd.OpenForm "GroupForm", , , "sGrpID=" & Me.groupID & ""
+    DoCmd.OpenForm "GroupForm", , , "sGrpID=" & Me.GroupID & ""
       Me.UnitID.SetFocus
 End Sub
 '_________________________

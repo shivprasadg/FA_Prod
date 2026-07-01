@@ -13,7 +13,7 @@ Dim Committ As String
 
 Private Sub AddDocLink_Click()
     DoCmd.close acForm, "DocAddEditLinkForm"
-    DoCmd.OpenForm "DocAddEditLinkForm", acNormal, , , acFormAdd, , Me.ClientID & "|" & Me.MLID & "|" & Me.SchID & "|" & Me.groupID & "|0|" & Me.Form.Name & "|Add"
+    DoCmd.OpenForm "DocAddEditLinkForm", acNormal, , , acFormAdd, , Me.ClientID & "|" & Me.MLID & "|" & Me.SchID & "|" & Me.GroupID & "|0|" & Me.Form.Name & "|Add"
 End Sub
 
 Private Sub AssigneeBankID_Click()
@@ -23,7 +23,7 @@ End Sub
 Private Sub CloneSchGroup_Click()
     If FAUserAccessGroup Like "*ITT*" Or FAUserAccessGroup Like "*TMT*" Or FAUserAccessGroup Like "*OPS*" Then
         DoCmd.close acForm, "CloneScheduleGroups"
-        DoCmd.OpenForm "CloneScheduleGroups", , , , , , Me.SchID & "|" & Me.groupID
+        DoCmd.OpenForm "CloneScheduleGroups", , , , , , Me.SchID & "|" & Me.GroupID
     End If
 End Sub
 
@@ -31,7 +31,7 @@ Private Sub CopyThisGroup_Click()
 Exit Sub
     If FAUserAccessGroup Like "*ITT*" Or FAUserAccessGroup Like "*TMT*" Or FAUserAccessGroup Like "*OPS*" Then
         DoCmd.close acForm, "GroupAdd_Form"
-        DoCmd.OpenForm "GroupAdd_Form", , , , , , Me.SchID & "|" & Me.groupID
+        DoCmd.OpenForm "GroupAdd_Form", , , , , , Me.SchID & "|" & Me.GroupID
     End If
 End Sub
 
@@ -144,7 +144,7 @@ End Sub
 Private Sub MakeWorkTable()
     DoCmd.SetWarnings False
     DoCmd.RunSQL ("Delete * From UnitGroup_WorkTable")
-    DoCmd.RunSQL ("Insert into UnitGroup_WorkTable (UnitID, GroupID) Select UnitID, GroupRef From Units Where GroupRef =" & Me.groupID & "")
+    DoCmd.RunSQL ("Insert into UnitGroup_WorkTable (UnitID, GroupID) Select UnitID, GroupRef From Units Where GroupRef =" & Me.GroupID & "")
     DoCmd.SetWarnings True
 End Sub
 Private Sub AddChildPart_Click()
@@ -153,7 +153,7 @@ End Sub
 
 Private Sub AddParts_Click()
     DoCmd.close acForm, "ChildPartsToGroupPO"
-    DoCmd.OpenForm "ChildPartsToGroupPO", acNormal, , , , , Me.groupID & "|" & Me.PONum1
+    DoCmd.OpenForm "ChildPartsToGroupPO", acNormal, , , , , Me.GroupID & "|" & Me.PONum1
 End Sub
 
 Private Sub AssignmentDate___AfterUpdate()
@@ -179,7 +179,7 @@ Private Sub CloseMe_Click()
     Call CheckDocsFields("IndemnificationDocYN", "IDF", True)
     If TickedX = "Stop" Then Exit Sub
     Call CheckFunded
-    Call MakePaymentAdjustment(Me.groupID)
+    Call MakePaymentAdjustment(Me.GroupID)
     DoCmd.close acForm, Me.Form.Name
   End Sub
 
@@ -190,7 +190,7 @@ Private Sub CofaSign_Click()
     If Committ = vbNo Then
         Exit Sub
     Else
-        SQLz = "UPDATE Units SET Units.CofASigner = " & Me.CofaSign.Column(0) & " WHERE (((Units.GroupREF)=" & Me.groupID & "));"
+        SQLz = "UPDATE Units SET Units.CofASigner = " & Me.CofaSign.Column(0) & " WHERE (((Units.GroupREF)=" & Me.GroupID & "));"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
@@ -220,7 +220,7 @@ Private Sub ExitOptionsConsole_Click()
     DoCmd.OpenForm "ExitOptionsManager"
     Forms!ExitOptionsManager.ClientList = Me.ClientID
     Form_ExitOptionsManager.ClientList_Click
-    Forms!ExitOptionsManager.SchGrpList = Me.groupID
+    Forms!ExitOptionsManager.SchGrpList = Me.GroupID
     Form_ExitOptionsManager.SchGrpList_Click
 End Sub
 
@@ -245,7 +245,7 @@ End Sub
 
 Private Sub FinalEconomicsReportBtn_Click()
     If Me.Form.Dirty = True Then Me.Form.Dirty = False
-    Call FinalEconomicsReport(Me.SchID, Me.groupID, Me.SGrpNO)
+    Call FinalEconomicsReport(Me.SchID, Me.GroupID, Me.SGrpNO)
   End Sub
 
 
@@ -371,9 +371,9 @@ Private Sub Validate_Click()
     Dim Msgx As String
     DoCmd.Save acForm, Me.Form.Name
 
-    If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & Me.groupID) = "FA" Then
+    If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & Me.GroupID) = "FA" Then
         If Me.AssignedIndicator = "F" Then Msgx = "... then again, you already knew that :)"
-        If GroupFinalizedCheck(Me.groupID) = "Good" Then MsgBox "This Group checks out 'Good'" & vbNewLine & " (you may finalize)" & Msgx, vbInformation, AtlaasVersion
+        If GroupFinalizedCheck(Me.GroupID) = "Good" Then MsgBox "This Group checks out 'Good'" & vbNewLine & " (you may finalize)" & Msgx, vbInformation, AtlaasVersion
     Else
         MsgBox "This is not a 'FA' Group" & vbNewLine & "(you cannot finalized a tracked Units)", vbCritical, AtlaasVersion
         Me.FundDate.Undo
@@ -391,10 +391,10 @@ Private Sub AssignedIndicator_Click()
         If Me.AssignedIndicator = "F" Then
             'And Nz(Me.BLCD, #1/1/2050#) > #1/25/2016# Then  'Ignore older Groups
             'And GroupSignOffCheck(Me.groupID, "SignOff6") Like "*has NOT detected*"
-            If GroupFinalizedCheck(Me.groupID) = "Good" Then
-                Call MarkGroupDraftAsPaid(Me.groupID)
-                Call StartSignOff(Me.groupID, "SignOff6")
-                Call StartSignOff(Me.groupID, "SignOff7")
+            If GroupFinalizedCheck(Me.GroupID) = "Good" Then
+                Call MarkGroupDraftAsPaid(Me.GroupID)
+                Call StartSignOff(Me.GroupID, "SignOff6")
+                Call StartSignOff(Me.GroupID, "SignOff7")
             Else
                 Me.AssignedIndicator = CurrentIndicator
             End If
@@ -414,7 +414,7 @@ Public Sub CheckFunded()
         Me.SyndActualLbl1.caption = "Synd Final"
         Me.SyndActualLbl2.caption = "Synd Final"
         Call LockUnLock(True)
-        If IsGroupBLCDSet(Me.groupID) = True And WasGroupBLCDNoticeSent(Me.groupID) = False Then Call BLCDSyndFinalMessage(Me.groupID)
+        If IsGroupBLCDSet(Me.GroupID) = True And WasGroupBLCDNoticeSent(Me.GroupID) = False Then Call BLCDSyndFinalMessage(Me.GroupID)
     Else
         Me.SyndActualLbl1.caption = "Synd Projected"
         Me.SyndActualLbl2.caption = "Synd Projected"
@@ -463,7 +463,7 @@ Public Sub LockUnLock(LockIt As Boolean)
 End Sub
 Private Sub FundDate_BeforeUpdate(Cancel As Integer)
     If Me.FundDate <> "" Then
-        If GroupFinalizedCheck(Me.groupID) <> "Good" Then
+        If GroupFinalizedCheck(Me.GroupID) <> "Good" Then
             Call Dialog.RichBox("Sorry, but you can't enter a <b>Final Fund Date</b> just yet", vbCustom + vbCritical, "A Final Fund Date = Syndication!", , , 0, 1, 0, 0, "Undo")
             Me.Form.Undo
         Else
@@ -599,7 +599,7 @@ Private Sub PerdiemActual_AfterUpdate()
     Call CalcSyndFees
 End Sub
 Private Sub CheckPerdiem()
-    Me.PerDiemCalculated = CDbl(Nz(DLookup("PerDiemUnit", "PerDiem_Days_Rate_Group", "GroupRef=" & Me.groupID), 0))
+    Me.PerDiemCalculated = CDbl(Nz(DLookup("PerDiemUnit", "PerDiem_Days_Rate_Group", "GroupRef=" & Me.GroupID), 0))
     If Nz(Me.PerDiemActual, 0) <> Me.PerDiemCalculated And Me.PerDiemCalculated > 0 Then
         Me.PerDiemActual.BackColor = RGB(255, 255, 153)
     Else
@@ -652,7 +652,7 @@ End Sub
 
 
 Private Sub CalcSyndFees()
-    If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & Me.groupID) = "FA" Then Me.SalePrice = [CalcOEC] + [SynFee]
+    If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & Me.GroupID) = "FA" Then Me.SalePrice = [CalcOEC] + [SynFee]
     Me.SynFee.Requery
     Me.SyndNetFee.Requery
     Me.ActualServiceFee.Requery
@@ -813,7 +813,7 @@ Private Sub OpenMassMod_Click()
     Form_BulkChange_Form.Leaselist_Click
     Forms!BulkChange_Form.ScheduleList = Me.SchID
     Form_BulkChange_Form.ScheduleList_Click
-    Forms!BulkChange_Form.GroupList = Me.groupID
+    Forms!BulkChange_Form.GroupList = Me.GroupID
     Form_BulkChange_Form.GroupList_Click
     Form_BulkChange_Form.GetAll_Click
 End Sub

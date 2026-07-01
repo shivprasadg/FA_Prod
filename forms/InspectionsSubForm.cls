@@ -14,10 +14,10 @@ Private Sub AddInspection_Click()
     Committ = MsgBox("You are about to add in Inspection Num " & xNum & vbNewLine & "Do you agree?", vbYesNo + vbQuestion, "Adding a Inspection")
     If Committ = vbNo Then Exit Sub
     PrevLink = Nz(DLookup("iWeblink", "UnitInspections", "Not iWeblink is Null and AssetID=" & Forms!Unitsform.Form.UnitID), "")
-    Notex = "This Inspection Num (" & xNum & ") was manually added in by: " & FAUserName & " on: " & Date & ""
+    Notex = "This Inspection Num (" & xNum & ") was manually added in by: " & FaUserName & " on: " & Date & ""
     If PrevLink <> "" Then Notex = Notex & vbNewLine & "Note: - the web link is from a previous inspection"
     SQLz = "Insert Into UnitInspections (AssetID, InspNum,RequestedBy, iResultID, iVendorID, iDate, iTypeID, InvoiceNumber, iNotes2, iWeblink) "
-    SQLz = SQLz & "Select " & Forms!Unitsform.Form.UnitID & "," & xNum & ",'" & FAUserName & "', 3, 253,'" & Date & "', 4 "
+    SQLz = SQLz & "Select " & Forms!Unitsform.Form.UnitID & "," & xNum & ",'" & FaUserName & "', 3, 253,'" & Date & "', 4 "
     SQLz = SQLz & ", 'FA-" & Me.InspnID & "'"
     SQLz = SQLz & ",'" & Notex & "', '" & PrevLink & "'"
     DoCmd.SetWarnings False

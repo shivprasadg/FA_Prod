@@ -272,7 +272,7 @@ Public Function MakeTFRShort(Optional StartDateRange As String, Optional EndDate
     SqlNull = SqlNull & SqlClient & SqlBank
     SQLx = SQLx & " WHERE Assigned_Indicator = 'F' " & SqlDate
     Call MessageUser("Update", "Short TRF For All Groups", "Setting Funded, just a sec...")
-    Call SendReport2Excel(SQLx, "ShortTFR", "Short TFR " & TitleX & TitleDateX, True, XLS, 0, 0, 0, , , "C:\Faas\" & FAUserName & "\Temp\ShortTFRReport.xlsx")
+    Call SendReport2Excel(SQLx, "ShortTFR", "Short TFR " & TitleX & TitleDateX, True, XLS, 0, 0, 0, , , "C:\Faas\" & FaUserName & "\Temp\ShortTFRReport.xlsx")
     Call MessageUser("Close")
 End Function
 Public Function MakeTMTTFR(Optional StartDateRange As String, Optional EndDateRange As String, Optional ClientGroupIDi As Integer, Optional BankIDi As Integer, Optional FundStatus As Integer)
@@ -504,7 +504,7 @@ Public Function MakeTMTTFR(Optional StartDateRange As String, Optional EndDateRa
     SqlNull = SqlNull & SqlClient & SqlBank
     If FundStatus = 2 Then SQLz = SQLz & " WHERE NOT Assigned_Indicator is Null " & SqlDate Else SQLz = SQLz & " WHERE Assigned_Indicator = 'F' " & SqlDate
     Call MessageUser("Update", "TMT-TRF For All Groups", "Setting Funded, just a sec...")
-    Call SendReport2Excel(SQLz, "TMT-TFR", "TMT-TFR " & TitleX & TitleDateX, True, XLS, 0, 0, 0, , , "C:\Faas\" & FAUserName & "\Temp\TMT-TFR-Report.xlsx")
+    Call SendReport2Excel(SQLz, "TMT-TFR", "TMT-TFR " & TitleX & TitleDateX, True, XLS, 0, 0, 0, , , "C:\Faas\" & FaUserName & "\Temp\TMT-TFR-Report.xlsx")
     Call MessageUser("Close")
 End Function
 Public Function TFRExcel(Optional StartDateRange As String, Optional EndDateRange As String, Optional ClientGroupIDi As Integer, Optional BankIDi As Integer)
@@ -735,26 +735,26 @@ Final:
     If NumRpts <= 1 Then IsLastRpt = True Else IsLastRpt = False
     If Go4 = 1 Then
         Call MessageUser("Update", "TRF For Forecast Groups", "Setting Forecast Tab, Just a bit...")
-        Call SendReport2Excel(SQLy, "Forecast", "Forecast " & TitleX, True, XLS, 0, IsLastRpt, Go4, IsLastRpt, , "C:\Faas\" & FAUserName & "\Temp\TFRReport.xlsx")
+        Call SendReport2Excel(SQLy, "Forecast", "Forecast " & TitleX, True, XLS, 0, IsLastRpt, Go4, IsLastRpt, , "C:\Faas\" & FaUserName & "\Temp\TFRReport.xlsx")
         If NumRpts > 1 Then NumRpts = NumRpts - 1
     End If
 
     If NumRpts <= 1 Then IsLastRpt = True Else IsLastRpt = False
     If Go3 = 1 Then
         Call MessageUser("Update", "TRF For Inventory Groups", "Setting Inventory Tab, working...")
-        Call SendReport2Excel(Sqlb, "Inventory", "Inventory " & TitleX, True, XLS, 0, IsLastRpt, Go4 + Go3, IsLastRpt, , "C:\Faas\" & FAUserName & "\Temp\TFRReport.xlsx")
+        Call SendReport2Excel(Sqlb, "Inventory", "Inventory " & TitleX, True, XLS, 0, IsLastRpt, Go4 + Go3, IsLastRpt, , "C:\Faas\" & FaUserName & "\Temp\TFRReport.xlsx")
         If NumRpts > 1 Then NumRpts = NumRpts - 1
     End If
     If NumRpts <= 1 Then IsLastRpt = True Else IsLastRpt = False
     If Go2 = 1 Then
         Call MessageUser("Update", "TRF For Hold Groups", "Making Inventory Tab, closer...")
-        Call SendReport2Excel(SqlA, "FA Hold", "Hold " & TitleX, True, XLS, 0, IsLastRpt, Go4 + Go3 + Go2, IsLastRpt, , "C:\Faas\" & FAUserName & "\Temp\TFRReport.xlsx")
+        Call SendReport2Excel(SqlA, "FA Hold", "Hold " & TitleX, True, XLS, 0, IsLastRpt, Go4 + Go3 + Go2, IsLastRpt, , "C:\Faas\" & FaUserName & "\Temp\TFRReport.xlsx")
         If NumRpts > 1 Then NumRpts = NumRpts - 1
     End If
     If NumRpts <= 1 Then IsLastRpt = True Else IsLastRpt = False
     If Go1 = 1 Then
         Call MessageUser("Update", "TRF For All Groups", "Setting Funded, just a sec...")
-        Call SendReport2Excel(SQLx, "TFR All", "All Statuses " & TitleX & TitleDateX, True, XLS, 0, 0, Go4 + Go3 + Go2 + Go1, IsLastRpt, , "C:\Faas\" & FAUserName & "\Temp\TFRReport.xlsx")
+        Call SendReport2Excel(SQLx, "TFR All", "All Statuses " & TitleX & TitleDateX, True, XLS, 0, 0, Go4 + Go3 + Go2 + Go1, IsLastRpt, , "C:\Faas\" & FaUserName & "\Temp\TFRReport.xlsx")
         'Call MessageUser("Update", "TRF For Funded Groups", "Setting Funded, just a sec...")
         'Call SendReport2Excel(SQLx, "Final", "Funded " & TitleX & TitleDateX, True, XLS, 0, IsLastRpt, Go4 + Go3 + Go2 + Go1, IsLastRpt, , "C:\Faas\" & FAUserName & "\Temp\TFRReport.xlsx")
     End If

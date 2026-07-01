@@ -820,7 +820,7 @@ Insert_RevNote0:
         SQLz = SQLz & ",'" & RST!SchNo & "'"
         SQLz = SQLz & ",#" & Now() & "#"
         SQLz = SQLz & ",'" & Schx & Grpx & UnitX & "'"
-        SQLz = SQLz & ", '" & FAUserName & "'"
+        SQLz = SQLz & ", '" & FaUserName & "'"
         SQLz = SQLz & ", 'Rev-Notes'"
         SQLz = SQLz & ", 'Schedule Notes'"
         SQLz = SQLz & ", 'Note 0'"

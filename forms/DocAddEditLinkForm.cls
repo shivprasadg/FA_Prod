@@ -16,7 +16,7 @@ Private Sub AddLink_Click()
     Me.ClientID = Split(Me.OpenArgs, "|")(0)
     Me.MLID = Split(Me.OpenArgs, "|")(1)
     Me.SchID = Split(Me.OpenArgs, "|")(2)
-    Me.groupID = Split(Me.OpenArgs, "|")(3)
+    Me.GroupID = Split(Me.OpenArgs, "|")(3)
     Me.UnitID = Split(Me.OpenArgs, "|")(4)
     Me.dLink = ""
     Me.dtags = ""
@@ -53,7 +53,7 @@ Public Sub Form_Load()
             Me.ClientID = Split(Me.OpenArgs, "|")(0)
             Me.MLID = Split(Me.OpenArgs, "|")(1)
             Me.SchID = Split(Me.OpenArgs, "|")(2)
-            Me.groupID = Split(Me.OpenArgs, "|")(3)
+            Me.GroupID = Split(Me.OpenArgs, "|")(3)
             Me.UnitID = Split(Me.OpenArgs, "|")(4)
             Me.ScheduleDesc = "Sch " & DLookup("Schno", "Schedule", "SchId=" & Me.SchID) & " + " & DLookup("SchShortDesc", "Schedule", "SchId=" & Me.SchID)
            End If
@@ -104,7 +104,7 @@ Private Sub GetLinkInfo(Optional xDir As Boolean)
 End Sub
 Private Sub InsertRecord()
     SQLz = "INSERT INTO DocLinks (ClientID, MLID, SchID, GroupID, UnitID, dtags, dName, dtype, dlink) "
-    SQLz = SQLz & "Select " & Me.ClientID & "," & Me.MLID & "," & Me.SchID & "," & Me.groupID & "," & Me.UnitID & ",'" & Me.dtags & "',"
+    SQLz = SQLz & "Select " & Me.ClientID & "," & Me.MLID & "," & Me.SchID & "," & Me.GroupID & "," & Me.UnitID & ",'" & Me.dtags & "',"
     SQLz = SQLz & "'" & Me.dName & "', '" & Me.dtype & "', '" & Me.dLink & "';"
     DoCmd.SetWarnings False
     'DoCmd.RunSQL (SQLz)

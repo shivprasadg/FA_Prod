@@ -49,7 +49,7 @@ End If
     SQLz = SQLz & ",Paragraph10"
     SQLz = SQLz & "," & Me.Parent.BankID & ""
     SQLz = SQLz & ",VechicleType"
-    SQLz = SQLz & ",'" & FAUserName & "'"
+    SQLz = SQLz & ",'" & FaUserName & "'"
     SQLz = SQLz & ",'" & Date & "'"
     SQLz = SQLz & "FROM RALConditions WHERE RALCondID=1"
     DoCmd.SetWarnings False

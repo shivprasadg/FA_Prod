@@ -11,7 +11,7 @@ Private Sub CloseMe_Click()
 End Sub
 
 Private Sub GroupList_Click()
-Me.groupID = Me.GroupList.Column(0)
+Me.GroupID = Me.GroupList.Column(0)
 Me.BillingSubForm.Form.Filter = "GroupID = " & Me.GroupList.Column(0) & ""
 Me.BillingSubForm.Form.FilterOn = True
 End Sub
@@ -38,7 +38,7 @@ Me.ClientID = Null
 Me.MLNo = Null
 Me.SchID = Null
 Me.SchNo = Null
-Me.groupID = Null
+Me.GroupID = Null
 
 End Sub
 
@@ -51,7 +51,7 @@ Me.SelSch.RowSource = ""
 Me.MLNo = Null
 Me.SchID = Null
 Me.SchNo = Null
-Me.groupID = Null
+Me.GroupID = Null
 Me.GroupList.Requery
 End Sub
 
@@ -75,7 +75,7 @@ End Sub
 Private Sub SelSch_Click()
 Me.SchID = Me.SelSch.Column(0)
 Me.SchNo = Me.SelSch.Column(1)
-Me.groupID = Null
+Me.GroupID = Null
 Me.GroupList = ""
 Me.BillingSubForm.Requery
 Me.GroupList.Requery

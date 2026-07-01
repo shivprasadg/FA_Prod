@@ -406,7 +406,7 @@ Private Sub AddTitleLogEntry_Click()
     DoCmd.close acForm, "OPSTitleLogEntry"
     DoCmd.OpenForm "OPSTitleLogEntry", , , , acFormAdd
     Forms!OPSTitleLogEntry.UnitRef = Me.UnitID
-    Forms!OPSTitleLogEntry.USERID = FAUserName
+    Forms!OPSTitleLogEntry.USERID = FaUserName
     Forms!OPSTitleLogEntry.TitleNumber = Me.UnitTitleNumber
     If IsNull(Me.UnitRegLocationRef) Or Me.UnitRegLocationRef = 0 Then
         On Error Resume Next
@@ -486,7 +486,7 @@ Private Sub unitoffleasedt_AfterUpdate()
         Me.Form.Units_RMKT_Sub.Requery
     End If
 
-    If IsDate(Me.Units_RMKT_Sub!parkdt) Then
+    If IsDate(Me.Units_RMKT_Sub!ParkDT) Then
         Select Case UCase(Me.UnitStatus)
             Case "S", "D", "C", "N"   ' Do nothing
             Case Else
@@ -517,7 +517,7 @@ Public Sub SetSlbInspBuyOut(AssetIDx As Long, GroupIDx As Long, ClearOffLease As
     If DLookup("LeaseType", "SchGrp", "sGrpid=" & GroupIDx) <> "SLB Insp" Then Exit Sub
     Dim BLCDx As Date
     Dim OffLeaseDateX As Date
-    Dim PdRent As Currency
+    Dim PDRent As Currency
     Dim VCost As Currency
     Dim PrevBuyOut As Currency
     Dim Committ As String
@@ -531,8 +531,8 @@ Public Sub SetSlbInspBuyOut(AssetIDx As Long, GroupIDx As Long, ClearOffLease As
     BLCDx = RST!BLCD
     OffLeaseDateX = Nz(RST!OffLeaseActual, Date)
     VCost = RST!VendorCost + Nz(PartsCost, 0)
-    PdRent = DLookup("PerDiemSurrender", "Units", "UnitID=" & AssetIDx)
-    RentIncome = (DateDiff("d", BLCDx, OffLeaseDateX) + 1) * PdRent
+    PDRent = DLookup("PerDiemSurrender", "Units", "UnitID=" & AssetIDx)
+    RentIncome = (DateDiff("d", BLCDx, OffLeaseDateX) + 1) * PDRent
     PrevBuyOut = Nz(DLookup("BuyOutCost", "RMKT", "UnitREf=" & AssetIDx), 0)
     RST.close
     Set RST = Nothing
@@ -621,7 +621,7 @@ Private Sub UnitTASent_AfterUpdate()
         End If
         SQLz = ""
         SQLz = SQLz & "INSERT INTO UnitTitleLog ( UnitRef,  Reason,  UnitTitleLogDate,  EntryTypeId,  EntryReasonId,  ExpectedReturn,  UserID )"
-        SQLz = SQLz & "SELECT " & Me.UnitID & ", 'Title Application Sent', #" & Me.UnitTASent & "#, 2, 18, True, '" & FAUserName & "';"
+        SQLz = SQLz & "SELECT " & Me.UnitID & ", 'Title Application Sent', #" & Me.UnitTASent & "#, 2, 18, True, '" & FaUserName & "';"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
@@ -705,7 +705,7 @@ Private Sub UCCC_Dirty(Cancel As Integer)
         UCCClogDet.AddNew
         UCCClogDet("Unitref").Value = Forms!Unitsform!Text373
         UCCClogDet("OldUCCC").Value = Forms!Unitsform!UCCC
-        UCCClogDet("User").Value = FAUserName
+        UCCClogDet("User").Value = FaUserName
         UCCClogDet.Update
 
     End If
@@ -799,7 +799,7 @@ Private Sub UnitStatus_BeforeUpdate(Cancel As Integer)
             Call InsertRMKTUnit(Me.UnitID)
             Call Units_RMKT_Sub.Form.LoadData(Me.UnitID)
         End If
-        If IsNull(Me.Units_RMKT_Sub!parkdt) And Me.UnitStatus = "P" Then
+        If IsNull(Me.Units_RMKT_Sub!ParkDT) And Me.UnitStatus = "P" Then
             MsgBox "You must have a Parked Date set before you can Park ('P') a unit"
             Cancel = True
             Me.UnitStatus.Undo

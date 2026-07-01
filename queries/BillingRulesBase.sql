@@ -96,10 +96,10 @@ FROM
                     (
                       vw_SixKeys
                       LEFT JOIN BillingRulesClient ON (
-                        vw_SixKeys.SchID = BillingRulesClient.ScheduleId
+                        vw_SixKeys.clientID = BillingRulesClient.ClientId
                       )
                       AND (
-                        vw_SixKeys.clientID = BillingRulesClient.ClientId
+                        vw_SixKeys.SchID = BillingRulesClient.ScheduleId
                       )
                     )
                     INNER JOIN Units ON vw_SixKeys.AssetID = Units.UnitID

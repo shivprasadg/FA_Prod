@@ -163,7 +163,7 @@ End Sub
 Private Sub ScheduleList_Click()
 '    SQLz = "SELECT SGrpID, SGrpNO FROM SchGrp WHERE SGrpSchID=" & Me.ScheduleList & " ORDER BY SGrpNO ;"
     Me.GroupList.Requery
-    Me.groupID = 0
+    Me.GroupID = 0
 Call ClearFormData
 End Sub
 Private Sub GroupList_Click()
@@ -172,7 +172,7 @@ SQLz = "SELECT ChildPartID, UnitID, ChildType, ChildMake, ChildClass, childFinal
        "WHERE GroupREF=[Forms]![ChildPartsToGroupPO]![GroupList] AND ChildParts.PONumber Is Null " & _
        "ORDER BY ChildParts.ChildType, ChildParts.ChildMake, ChildParts.ChildClass;"
 Me.UnitsList.RowSource = SQLz
-Me.groupID = Nz(Me.GroupList, 0)
+Me.GroupID = Nz(Me.GroupList, 0)
 Me.SearchUnitID = ""
 Me.SearchPartType = ""
 Me.SearchChildClass = ""

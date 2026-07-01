@@ -19,7 +19,7 @@ Private Sub ModifyExch_Click()
     Form_EXITOptions.Leaselist_Click
     Forms!ExitOptions.ScheduleList = SchIDz
     Form_EXITOptions.ScheduleList_Click
-    Forms!ExitOptions.GroupList = Me.groupID
+    Forms!ExitOptions.GroupList = Me.GroupID
     Form_EXITOptions.GroupList_Click
     Form_EXITOptions.RemoteSelectUnit (Me.UnitID)
     Form_EXITOptions.ExchangeSelected_Click
@@ -41,7 +41,7 @@ Private Sub ModifyEXTD_Click()
     Form_EXITOptions.Leaselist_Click
     Forms!ExitOptions.ScheduleList = SchIDz
     Form_EXITOptions.ScheduleList_Click
-    Forms!ExitOptions.GroupList = Me.groupID
+    Forms!ExitOptions.GroupList = Me.GroupID
     Form_EXITOptions.GroupList_Click
     Form_EXITOptions.RemoteSelectUnit (Me.UnitID)
     Form_EXITOptions.ExtendSelected_Click
@@ -62,7 +62,7 @@ Private Sub ModifyTERM_Click()
     Form_EXITOptions.Leaselist_Click
     Forms!ExitOptions.ScheduleList = SchIDz
     Form_EXITOptions.ScheduleList_Click
-    Forms!ExitOptions.GroupList = Me.groupID
+    Forms!ExitOptions.GroupList = Me.GroupID
     Form_EXITOptions.GroupList_Click
     Form_EXITOptions.RemoteSelectUnit (Me.UnitID)
     Form_EXITOptions.TerminateSelected_Click
@@ -84,7 +84,7 @@ Private Sub ModifyHIST_Click()
     Form_EXITOptions.Leaselist_Click
     Forms!ExitOptions.ScheduleList = SchIDz
     Form_EXITOptions.ScheduleList_Click
-    Forms!ExitOptions.GroupList = Me.groupID
+    Forms!ExitOptions.GroupList = Me.GroupID
     Form_EXITOptions.GroupList_Click
     Form_EXITOptions.RemoteSelectUnit (Me.UnitID)
     '    Forms!ExitOptions.Units_List.Column(0) = Me.UnitID

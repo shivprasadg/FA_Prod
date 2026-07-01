@@ -7,7 +7,7 @@
     "AdaptiveMenu": false,
     "Context": "",
     "Enabled": true,
-    "Height": 121,
+    "Height": 206,
     "Left": 865,
     "NameLocal": "FormsCmd",
     "Position": 5,
@@ -106,7 +106,7 @@
         "ImagePath": "rel:FormsCmd_Images\\Paste"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "&Design View",
@@ -159,7 +159,7 @@
         "TooltipText": "&Form View",
         "Type": 1,
         "Visible": true,
-        "Width": 159,
+        "Width": 171,
         "Id": 502,
         "ImagePath": "rel:FormsCmd_Images\\Form View"
       },
@@ -188,7 +188,7 @@
         "TooltipText": "La&yout View",
         "Type": 1,
         "Visible": true,
-        "Width": 169,
+        "Width": 171,
         "Id": 13157,
         "ImagePath": "rel:FormsCmd_Images\\Layout View"
       },
@@ -217,7 +217,7 @@
         "TooltipText": "Add a Hyperlink",
         "Type": 1,
         "Visible": true,
-        "Width": 161,
+        "Width": 171,
         "Id": 1576,
         "ImagePath": "rel:FormsCmd_Images\\Hyperlink"
       }

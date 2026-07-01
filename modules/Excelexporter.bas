@@ -252,18 +252,18 @@ Public Function Pause(NumberOfSeconds As Variant)
     On Error GoTo Error_GoTo
 
     Dim PauseTime As Variant
-    Dim start As Variant
+    Dim Start As Variant
     Dim Elapsed As Variant
 
     PauseTime = NumberOfSeconds
-    start = Timer
+    Start = Timer
     Elapsed = 0
-    Do While Timer < start + PauseTime
+    Do While Timer < Start + PauseTime
         Elapsed = Elapsed + 1
         If Timer = 0 Then
             ' Crossing midnight
             PauseTime = PauseTime - Elapsed
-            start = 0
+            Start = 0
             Elapsed = 0
         End If
         DoEvents

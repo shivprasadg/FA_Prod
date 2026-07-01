@@ -221,20 +221,20 @@ SendNotice:
     msg1 = msg1 & "<table style='font-family:Segoe UI;font-size:12px' BORDER='1'    WIDTH='50%'   CELLPADDING='2' CELLSPACING='1' border-collapse='1' >"
     msg1 = msg1 & "<TR ALIGN='Center'><TH>Client</TH><TH>Lease No</TH><TH>Schedule</TH><TH>Group</TH><TH>BLCD</TH><TH>Units</TH><TH>All Accepted</TH><TH>All PD Set</TH><TH>FA User</TH><TH>Date Set</TH></TR>"
     For x = 1 To RST.RecordCount
-        If AllUnitsInGroup_Accepted(RST!groupID) = True Then AllAccepted = "Y" Else AllAccepted = "N"
-        If AllUnitsInGroup_PerDiemSet(RST!groupID) = True Then AllPDSet = "Y" Else AllPDSet = "N"
+        If AllUnitsInGroup_Accepted(RST!GroupID) = True Then AllAccepted = "Y" Else AllAccepted = "N"
+        If AllUnitsInGroup_PerDiemSet(RST!GroupID) = True Then AllPDSet = "Y" Else AllPDSet = "N"
 
-        msg1 = msg1 & "<TD>" & DLookup("ClientShortName", "vw_SixKeys", "SGrpID=" & RST!groupID) & "</TD> " & _
-               "<TD>" & DLookup("MLNo", "vw_SixKeys", "SGrpID=" & RST!groupID) & "</TD> " & _
-               "<TD>" & DLookup("Schedule", "vw_SixKeys", "SGrpID=" & RST!groupID) & "</TD> " & _
-               "<TD>" & DLookup("UnitGroup", "vw_SixKeys", "SGrpID=" & RST!groupID) & "</TD> " & _
-               "<TD ALIGN='Center'>" & DLookup("BLCD", "SchGrp", "SGrpID=" & RST!groupID) & "</TD> " & _
-               "<TD ALIGN='Center'>" & DLookup("UnitsInGroup", "SchGrp", "SGrpID=" & RST!groupID) & "</TD> " & _
+        msg1 = msg1 & "<TD>" & DLookup("ClientShortName", "vw_SixKeys", "SGrpID=" & RST!GroupID) & "</TD> " & _
+               "<TD>" & DLookup("MLNo", "vw_SixKeys", "SGrpID=" & RST!GroupID) & "</TD> " & _
+               "<TD>" & DLookup("Schedule", "vw_SixKeys", "SGrpID=" & RST!GroupID) & "</TD> " & _
+               "<TD>" & DLookup("UnitGroup", "vw_SixKeys", "SGrpID=" & RST!GroupID) & "</TD> " & _
+               "<TD ALIGN='Center'>" & DLookup("BLCD", "SchGrp", "SGrpID=" & RST!GroupID) & "</TD> " & _
+               "<TD ALIGN='Center'>" & DLookup("UnitsInGroup", "SchGrp", "SGrpID=" & RST!GroupID) & "</TD> " & _
                "<TD ALIGN='Center'>" & AllAccepted & "</TD>" & _
                "<TD ALIGN='Center'>" & AllPDSet & "</TD>" & _
                "<TD ALIGN='Left'>" & Nz(DLookup("[Employee Name]", "TBL_Employees", "ID=" & RST!USERID), "Atlaas Core") & "</TD>" & _
                "<TD ALIGN='Center'>" & RST!NoticeDate & "</TD></TR>"
-        SQLy = "UPDATE ATLAASNotifications SET NoticeSent = 1 WHERE NoticeTypeID = 3 AND GroupID=" & RST!groupID & ";"
+        SQLy = "UPDATE ATLAASNotifications SET NoticeSent = 1 WHERE NoticeTypeID = 3 AND GroupID=" & RST!GroupID & ";"
         DoCmd.SetWarnings False
      '   DoCmd.RunSQL (SQLy)
         DoCmd.SetWarnings True

@@ -40,7 +40,7 @@ MoveOn:
     End If
 AccessGranted:
     Me.UserName = FAUserFullName
-    Me.USERID = FAUserName & " (" & FAUserAccessLevel & ")"
+    Me.USERID = FaUserName & " (" & FAUserAccessLevel & ")"
     Me.Version = AtlaasVersion
     Me.Version.ControlTipText = CurrentDb.Name
     'Call CustomMenus ' no need to have a start up menu

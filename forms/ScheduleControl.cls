@@ -33,14 +33,14 @@ Private Sub CloneSchGrp_Click()
     If FAUserAccessGroup Like "*ITT*" Or FAUserAccessGroup Like "*TMT*" Or FAUserAccessGroup Like "*OPS*" Then
         AddReportLog "CloneSchGrp_Click"
         DoCmd.close acForm, "CloneScheduleGroups"
-        DoCmd.OpenForm "CloneScheduleGroups", , , , , , Me.SchID & "|" & Me.groupID
+        DoCmd.OpenForm "CloneScheduleGroups", , , , , , Me.SchID & "|" & Me.GroupID
     End If
 End Sub
 
 Private Sub EditPerDiems_Click()
  If Me.GroupList.Column(0) & "test" = "test" Then Exit Sub
  DoCmd.close acForm, "MassMod_PerdiemRents"
- DoCmd.OpenForm "MassMod_PerdiemRents", , , , , , Me.groupID & "?" & Me.SchNo
+ DoCmd.OpenForm "MassMod_PerdiemRents", , , , , , Me.GroupID & "?" & Me.SchNo
 End Sub
 
 Private Sub ExitOptionsDashboard_Click()
@@ -54,8 +54,8 @@ Private Sub ExitOptionsDashboard_Click()
         Form_ExitOptionsManager.ClientList_Click
         If OpenArgX = "Portfolio" Then Forms!ExitOptionsManager.LeaseTypeToShow = 2 Else Forms!ExitOptionsManager.LeaseTypeToShow = 1
         Form_ExitOptionsManager.LeaseTypeToShow_Click
-        If Me.groupID & "test" <> "test" Then
-            Forms!ExitOptionsManager.SchGrpList = Me.groupID
+        If Me.GroupID & "test" <> "test" Then
+            Forms!ExitOptionsManager.SchGrpList = Me.GroupID
             Form_ExitOptionsManager.SchGrpList_Click
         End If
     End If
@@ -72,7 +72,7 @@ End Sub
 Private Sub GroupList_DblClick(Cancel As Integer)
     If Me.GroupList.Column(0) & "test" = "test" Then Exit Sub
     DoCmd.close acForm, "GroupForm"
-    DoCmd.OpenForm "GroupForm", , , "SGrpID=" & Me.groupID, , , Me.groupID
+    DoCmd.OpenForm "GroupForm", , , "SGrpID=" & Me.GroupID, , , Me.GroupID
 End Sub
 
 Private Sub LeaseList_DblClick(Cancel As Integer)
@@ -100,7 +100,7 @@ Private Sub MoveUnitsForm_Click()
 End Sub
 
 Private Sub OpenMassMod_Click()
-    If Me.groupID & "test" = "test" Then
+    If Me.GroupID & "test" = "test" Then
         MsgBox "Sorry, but you must first select a group", , "No Group, No Service :("
         Exit Sub
     End If
@@ -201,16 +201,16 @@ End Sub
 
 Private Sub SignOff_Click()
 'Exit Sub
-    If Me.groupID & 0 = 0 Then
+    If Me.GroupID & 0 = 0 Then
         MsgBox "You must select a Group before you a sign off on it.", vbCritical, AtlaasVersion
         Exit Sub
     End If
-    If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & Me.groupID & "") = "FA" Then
+    If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & Me.GroupID & "") = "FA" Then
     AddReportLog "SignOff_Click"
         If Right(Me.SignOffStatus, 1) = "0" Then
-            Call StartSignOff(Me.groupID, "SignOff1")
+            Call StartSignOff(Me.GroupID, "SignOff1")
         Else
-            Call StartSignOff(Me.groupID, "SignOff" & Right(SignOffStatus, 1))
+            Call StartSignOff(Me.GroupID, "SignOff" & Right(SignOffStatus, 1))
         End If
     End If
 End Sub
@@ -306,7 +306,7 @@ End Sub
 Private Sub ViewUnitGroups_Click()
     If Me.GroupList.Column(0) & "test" = "test" Then Exit Sub
     DoCmd.close acForm, "GroupForm"
-    DoCmd.OpenForm "GroupForm", , , "SGrpID=" & Me.groupID, , , Me.SchID
+    DoCmd.OpenForm "GroupForm", , , "SGrpID=" & Me.GroupID, , , Me.SchID
 End Sub
 
 
@@ -396,7 +396,7 @@ End Sub
 Private Sub Cost_Click()
     If Me.SchID & "test" = "test" Then Exit Sub
     AddReportLog "Cost_Click"
-    FormatExcel "ScheduleCost", "C:\Faas\" & FAUserName & "\Temp\ScheduleCost.xlsx", "ScheduleCost", , , , "Schedule Unit Cost", True
+    FormatExcel "ScheduleCost", "C:\Faas\" & FaUserName & "\Temp\ScheduleCost.xlsx", "ScheduleCost", , , , "Schedule Unit Cost", True
 End Sub
 Public Function MakeDocsReport(Optional TwoTab As Boolean)
     If Me.SchID & "test" = "test" Then Exit Function
@@ -443,7 +443,7 @@ Public Sub ClientList_Click()
     Me.ClientGroupID = Me.ClientList.Column(4)
     Me.MLID = ""
     Me.SchID = ""
-    Me.groupID = ""
+    Me.GroupID = ""
     Me.Units_List.RowSource = ""
     Me.SignOffStatus = ""
     Me.SearchSchedule = ""
@@ -467,7 +467,7 @@ Public Sub Leaselist_Click()
     Me.MLID = Me.LeaseList.Column(0)
     Me.SearchSchedule = ""
     Me.SchID = ""
-    Me.groupID = ""
+    Me.GroupID = ""
     Me.SchNo = "<b>" & Me.ClientList.Column(1) & "</b>" & " ML:<b> " & Me.LeaseList.Column(1) & "</b>"
     Call HideShow
     Me.TotalUnits = DCount("VIN", "vw_SixKeys", "MLID=" & Me.LeaseList & "")
@@ -493,7 +493,7 @@ Public Sub ScheduleList_Click()
            "GROUP BY SGrpID, UnitGroup, SchID, BLCD " & _
            "HAVING SchID=" & Me.ScheduleList & " Order BY UnitGroup; "
     Me.GroupList.RowSource = SQLz
-    Me.groupID = ""
+    Me.GroupID = ""
     Me.SchNo = "<b>" & Me.ClientList.Column(1) & "</b>" & " ML:<b> " & Me.LeaseList.Column(1) & "</b> Sch:<b> " & Me.ScheduleList.Column(1) & "</b>"
     Me.Units_List.RowSource = ""
     Me.SchID = Me.ScheduleList
@@ -510,10 +510,10 @@ Private Sub GroupList_Click()
            "GROUP BY AssetID, VIN, UnitNum, Make, MYear, SGrpID " & _
            "HAVING SGrpID=" & Me.GroupList & " Order By AssetID;"
     Me.Units_List.RowSource = SQLz
-    Me.groupID = Me.GroupList.Column(0)
-    Me.SignOffStatus = "Sign Off Level " & Nz(Right(DMax("Department", "GroupFinalizedTracker", "GroupID=" & Me.groupID & ""), 1), 0)
+    Me.GroupID = Me.GroupList.Column(0)
+    Me.SignOffStatus = "Sign Off Level " & Nz(Right(DMax("Department", "GroupFinalizedTracker", "GroupID=" & Me.GroupID & ""), 1), 0)
     Me.SchNo = "<b>" & Me.ClientList.Column(1) & "</b>" & " ML:<b> " & Me.LeaseList.Column(1) & "</b> Sch:<b> " & Me.ScheduleList.Column(1) & "</b> Grp:<b> " & Me.GroupList.Column(1) & "</b>"
-    Me.SignOffForm.Form.RecordSource = "Select * From vw_UnitGroupHealth Where GroupId=" & Me.groupID
+    Me.SignOffForm.Form.RecordSource = "Select * From vw_UnitGroupHealth Where GroupId=" & Me.GroupID
     Call HideShow
 End Sub
 
@@ -554,7 +554,7 @@ Public Function SearchUnits_List(sField As String)
     If Len(Me("Search" & sField).Text) >= 1 And Len(Me("Search" & sField).Text) < 3 Then Exit Function
     SQLz = "SELECT AssetID, VIN, UnitNum, Make, MYear, SchID " & _
            "FROM vw_SixKeys " & _
-           "Where sGrpID=" & Me.groupID & " AND " & sField & " Like '*" & Me("Search" & sField).Text & "*' Order BY " & sField & ";"
+           "Where sGrpID=" & Me.GroupID & " AND " & sField & " Like '*" & Me("Search" & sField).Text & "*' Order BY " & sField & ";"
     Me.Units_List.RowSource = SQLz
 End Function
 Public Function SearchUnitsLookUp(sField As String)

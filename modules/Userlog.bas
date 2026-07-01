@@ -9,7 +9,7 @@ Sub LogUsersin()
     Set UserlogDet = CurrentDb.OpenRecordset("tbl_UserlogIN", dbOpenDynaset, dbSeeChanges)
     UserlogDet.AddNew
     UserlogDet("Time_In_Stamp").Value = Now()
-    UserlogDet("User_Name").Value = FAUserName
+    UserlogDet("User_Name").Value = FaUserName
     UserlogDet.Update
 End Sub
 
@@ -19,6 +19,6 @@ Sub LogUsersout()
     Set UserlogDet = CurrentDb.OpenRecordset("tbl_UserlogOUT", dbOpenDynaset, dbSeeChanges)
     UserlogDet.AddNew
     UserlogDet("Time_OUT_Stamp").Value = Now()
-    UserlogDet("User_Name").Value = FAUserName
+    UserlogDet("User_Name").Value = FaUserName
     UserlogDet.Update
 End Sub

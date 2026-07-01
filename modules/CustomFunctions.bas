@@ -880,12 +880,12 @@ Function MakeCustodianSubmission(xSchiD As Integer)
     DateX = Nz(DLookup("DateSent", "vw_CustodianTitleTrust2"), Date)
     Response = MsgBox("Do you want to send an Custodian Submission Email?", vbQuestion + vbYesNo + vbCritical, "Email it?")
     If Response = vbYes Then
-        ExcelCustodian2 "CustodianTitleTrust2DataFile", "C:\Faas\" & FAUserName & "\Temp\CustodianTitleTrust2DataFile.xlsx", "DataFile", "Close", , Countx, "Data Files - Sent " & DateX, False, "CC"
-        ExcelCustodian1 "CustodianTitleTrust2", "C:\Faas\" & FAUserName & "\Temp\CustodianTitleTrust2.xlsx", "Custodian", "Close", , Countx, "Equipment Files - Sent " & DateX, False, "CC"
+        ExcelCustodian2 "CustodianTitleTrust2DataFile", "C:\Faas\" & FaUserName & "\Temp\CustodianTitleTrust2DataFile.xlsx", "DataFile", "Close", , Countx, "Data Files - Sent " & DateX, False, "CC"
+        ExcelCustodian1 "CustodianTitleTrust2", "C:\Faas\" & FaUserName & "\Temp\CustodianTitleTrust2.xlsx", "Custodian", "Close", , Countx, "Equipment Files - Sent " & DateX, False, "CC"
         Call EmailToTrust(xSchiD)
     Else
-        ExcelCustodian2 "CustodianTitleTrust2DataFile", "C:\FAAS\" & FAUserName & "\temp\CustodianTitleTrust2DataFile.xlsx", "DataFile", , , Countx, "Data Files - Sent " & DateX, False, "CC"
-        ExcelCustodian1 "CustodianTitleTrust2", "C:\Faas\" & FAUserName & "\Temp\CustodianTitleTrust2.xlsx", "Custodian", , , Countx, "Equipment Files - Sent " & DateX, False, "CC"
+        ExcelCustodian2 "CustodianTitleTrust2DataFile", "C:\FAAS\" & FaUserName & "\temp\CustodianTitleTrust2DataFile.xlsx", "DataFile", , , Countx, "Data Files - Sent " & DateX, False, "CC"
+        ExcelCustodian1 "CustodianTitleTrust2", "C:\Faas\" & FaUserName & "\Temp\CustodianTitleTrust2.xlsx", "Custodian", , , Countx, "Equipment Files - Sent " & DateX, False, "CC"
     End If
     Response = MsgBox("Do you want to log these " & Countx & " Titles as 'Sent To Custodian'?", vbQuestion + vbYesNo + vbCritical, "Log it?")
     If Response = vbYes Then
@@ -899,7 +899,7 @@ AskDate:
         If Not IsDate(DateSent) Then GoTo AskDate
         SQLz = "INSERT INTO UnitTitleLog ( UnitRef, UnitTitleLogDate, EntryTypeId, EntryReasonId, TitleSt, TitleNumber, EntryReason, UserID )" & _
                "SELECT Units.UnitID, #" & [DateSent] & "# AS SentDate, 2 AS Type, 4 AS Reasonid, vw_CustodianTitleTrust2.[State of Title], " & _
-               "vw_CustodianTitleTrust2.TitleNum, 'Sent To Custodian' AS Reason, '" & FAUserName & "' " & _
+               "vw_CustodianTitleTrust2.TitleNum, 'Sent To Custodian' AS Reason, '" & FaUserName & "' " & _
                "FROM vw_CustodianTitleTrust2 INNER JOIN Units ON vw_CustodianTitleTrust2.VIN = Units.UnitVIN " & _
                "ORDER BY Units.AssetID_FATitleLog;"
         DoCmd.SetWarnings False
@@ -1251,11 +1251,11 @@ Public Function MakeHealthReport()
             SQLz = SQLz & " SELECT "
             SQLz = SQLz & RST!ClientID
             SQLz = SQLz & RST!SchID
-            SQLz = SQLz & RST!groupID
+            SQLz = SQLz & RST!GroupID
             SQLz = SQLz & RST!SchNo
             SQLz = SQLz & RST!Client
-            SQLz = SQLz & "," & SchHealthCheck("UNITRENT", "Units", , RST!groupID, RST!SchID)
-            SQLz = SQLz & "," & SchHealthCheck("PDRent", "Units", , RST!groupID, RST!SchID)
+            SQLz = SQLz & "," & SchHealthCheck("UNITRENT", "Units", , RST!GroupID, RST!SchID)
+            SQLz = SQLz & "," & SchHealthCheck("PDRent", "Units", , RST!GroupID, RST!SchID)
             '  DoCmd.SetWarnings False
             DoCmd.RunSQL (SQLz)
             DoCmd.SetWarnings True

@@ -197,7 +197,7 @@ Public Sub PlaceSelectedUnits(Typex As String)
 
     If Typex = "ExchangeIT" Then
         SQLz = "INSERT INTO UnitExitOption ( UnitID, OptionTypeID, OptionTypeDesc, OrginalBLCD, OrigResidual, OrigLeaseTerm, OrginalEOLDate, UserName, DatePosted, UIDX ) " & _
-               "SELECT Units.UnitID, 1 AS OptionID, 'ExchangeIT' AS TypeDesc, SchGrp.BLCD, Units.UnitSynResid, SchGrp.LeaseTermPrimary, DateAdd('m',[LeaseTermPrimary],[SchGrp].[BLCD])-1 AS EOL, '" & FAUserName & "' AS [User], '" & Now() & "'AS Posted, Units.UnitID & '-1' AS UIDX " & _
+               "SELECT Units.UnitID, 1 AS OptionID, 'ExchangeIT' AS TypeDesc, SchGrp.BLCD, Units.UnitSynResid, SchGrp.LeaseTermPrimary, DateAdd('m',[LeaseTermPrimary],[SchGrp].[BLCD])-1 AS EOL, '" & FaUserName & "' AS [User], '" & Now() & "'AS Posted, Units.UnitID & '-1' AS UIDX " & _
                "FROM ((Units INNER JOIN SchGrp ON Units.GroupREF = SchGrp.SGrpID) " & _
                "LEFT JOIN (Select UnitID From UnitExitOption Where OptionTypeID = 1 AND UnitID in (" & wUnitID & ")) As UEO ON Units.UnitID = UEO.UnitID) " & _
                "WHERE UEO.UnitID Is Null AND Units.UnitID In(" & wUnitID & ");"
@@ -212,7 +212,7 @@ Public Sub PlaceSelectedUnits(Typex As String)
     End If
     If Typex = "Terminate" Then
         SQLz = "INSERT INTO UnitExitOption ( UnitID, OptionTypeID, OptionTypeDesc, OrginalBLCD, OrigResidual, OrigLeaseTerm, OrginalEOLDate, UserName, DatePosted, UIDX,OptionSubType, StartOrPurposedDate ) " & _
-               "SELECT Units.UnitID, 2 AS OptionID, 'Terminate' AS TypeDesc, SchGrp.BLCD, Units.UnitSynResid, SchGrp.LeaseTermPrimary, DateAdd('m',[LeaseTermPrimary],[SchGrp].[BLCD])-1 AS EOL, '" & FAUserName & "' AS [User], '" & Now() & "'AS Posted, Units.UnitID & '-2' AS UIDX, " & _
+               "SELECT Units.UnitID, 2 AS OptionID, 'Terminate' AS TypeDesc, SchGrp.BLCD, Units.UnitSynResid, SchGrp.LeaseTermPrimary, DateAdd('m',[LeaseTermPrimary],[SchGrp].[BLCD])-1 AS EOL, '" & FaUserName & "' AS [User], '" & Now() & "'AS Posted, Units.UnitID & '-2' AS UIDX, " & _
                "'Normal' As OptionSubType, EOLDate AS EOLDate " & _
                "FROM ((SchGrp INNER JOIN Units ON SchGrp.SGrpID = Units.GroupREF) " & _
                "LEFT JOIN (Select UnitID From UnitExitOption Where OptionTypeID = 2 AND UnitID in (" & wUnitID & ")) As UEO ON Units.UnitID = UEO.UnitID) " & _
@@ -234,7 +234,7 @@ Public Sub PlaceSelectedUnits(Typex As String)
 
     If Typex = "Extend" Then
         SQLz = "INSERT INTO UnitExitOption ( UnitID, OptionTypeID, OptionTypeDesc, OrginalBLCD, OrigResidual, OrigLeaseTerm, OrginalEOLDate, UserName, DatePosted, UIDX, Rent, TermMonths, Fees, OptionSubType, StartOrPurposedDate, EndOrActualDate, Notes ) " & _
-               "SELECT Units.UnitID, 3 AS OptionID, 'Extend' As TypeDesc, SchGrp.BLCD, Units.UnitSynResid, SchGrp.LeaseTermPrimary, DateAdd('m',[LeaseTermPrimary],[SchGrp].[BLCD])-1 AS EOL, '" & FAUserName & "' AS [User], '" & Now() & "'AS Posted, Units.UnitID & '-3' AS UIDX, " & _
+               "SELECT Units.UnitID, 3 AS OptionID, 'Extend' As TypeDesc, SchGrp.BLCD, Units.UnitSynResid, SchGrp.LeaseTermPrimary, DateAdd('m',[LeaseTermPrimary],[SchGrp].[BLCD])-1 AS EOL, '" & FaUserName & "' AS [User], '" & Now() & "'AS Posted, Units.UnitID & '-3' AS UIDX, " & _
                "Nz(SchGrp.LeaseExtOption1Rent,0) As ExtRent, nz(SchGrp.LeaseExtOption1Term,0) As TermMonths, SchGrp.SgrpFSLPmt As Fees, 'Extend Term' As OptionSubType, DateAdd('m',[LeaseTermPrimary],[SchGrp].[BLCD]) As ExtStartDate, " & _
                "IIf([LeaseExtOption1Term]>0,DateAdd('m',Nz([SchGrp].[LeaseExtOption1Term],0),DateAdd('m',[LeaseTermPrimary],[SchGrp].[BLCD]))-1,Null) AS ExtLeaseEnd, IIf([LeaseExtOption1Term]>0,'As per Group ExtendIT Options',null) As Notes " & _
                "FROM ((Units INNER JOIN SchGrp ON Units.GroupREF = SchGrp.SGrpID) " & _
@@ -253,7 +253,7 @@ Public Sub PlaceSelectedUnits(Typex As String)
 
     If Typex = "BuyIT" Then
        SQLz = "INSERT INTO UnitExitOption ( UnitID, OptionTypeID, OptionTypeDesc, OrginalBLCD, OrigResidual, OrigLeaseTerm, OrginalEOLDate, UserName, DatePosted, UIDX ) " & _
-               "SELECT Units.UnitID, 0 AS OptionID, 'BuyIT' AS TypeDesc, '1/1/1900', Units.UnitSynResid, 0, '1/1/1900' AS EOL, '" & FAUserName & "' AS [User], '" & Now() & "'AS Posted, Units.UnitID & '-0' AS UIDX " & _
+               "SELECT Units.UnitID, 0 AS OptionID, 'BuyIT' AS TypeDesc, '1/1/1900', Units.UnitSynResid, 0, '1/1/1900' AS EOL, '" & FaUserName & "' AS [User], '" & Now() & "'AS Posted, Units.UnitID & '-0' AS UIDX " & _
                "FROM ((Units INNER JOIN SchGrp ON Units.GroupREF = SchGrp.SGrpID) " & _
                "LEFT JOIN (Select UnitID From UnitExitOption Where OptionTypeID = 0 AND UnitID in (" & wUnitID & ")) As UEO ON Units.UnitID = UEO.UnitID) " & _
                "WHERE UEO.UnitID Is Null AND Units.UnitID In(" & wUnitID & ");"

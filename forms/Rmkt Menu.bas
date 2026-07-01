@@ -17,11 +17,11 @@ Begin Form
     GridY =24
     Width =10272
     DatasheetFontHeight =11
-    ItemSuffix =603
-    Left =6252
-    Top =2688
-    Right =17244
-    Bottom =10236
+    ItemSuffix =604
+    Left =2580
+    Top =3024
+    Right =19548
+    Bottom =13104
     ShortcutMenuBar ="SortClip"
     RecSrcDt = Begin
         0x90faff9076ebe340
@@ -2196,7 +2196,7 @@ Begin Form
                     Begin
                         Begin Label
                             BackStyle =1
-                            OverlapFlags =223
+                            OverlapFlags =215
                             Left =8700
                             Top =960
                             Width =1005
@@ -2910,6 +2910,19 @@ Begin Form
                     LayoutCachedTop =3960
                     LayoutCachedWidth =10152
                     LayoutCachedHeight =4260
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9120
+                    Top =4560
+                    Width =1068
+                    Height =300
+                    Name ="Label603"
+                    Caption ="Leo dev 2 +"
+                    LayoutCachedLeft =9120
+                    LayoutCachedTop =4560
+                    LayoutCachedWidth =10188
+                    LayoutCachedHeight =4860
                 End
             End
         End

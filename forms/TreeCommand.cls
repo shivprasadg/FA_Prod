@@ -507,12 +507,12 @@ Call SetCbo(1)
         Me.SchID = 0
     End If
     If GroupIDx <> 0 Then
-        If Nz(Me.groupID, 0) <> GroupIDx Then Call ShowGroupInfo
-        Me.groupID = GroupIDx
-        Me.SelectedNode = Me.SelectedNode & " </B>Grp:<B> " & DLookup("unitGroup", "vw_SixKeys", "SgrpID=" & Me.groupID)
+        If Nz(Me.GroupID, 0) <> GroupIDx Then Call ShowGroupInfo
+        Me.GroupID = GroupIDx
+        Me.SelectedNode = Me.SelectedNode & " </B>Grp:<B> " & DLookup("unitGroup", "vw_SixKeys", "SgrpID=" & Me.GroupID)
     Else
         '   Me.GroupInfo_SubForm.Form.Visible = False
-        Me.groupID = 0
+        Me.GroupID = 0
     End If
     If UnitIDx <> 0 Then
         '       Me.Units_List = UnitIDx
@@ -536,7 +536,7 @@ Private Sub ShowGroupInfo()
     Me.GroupInfo_SubForm.Form.Visible = True
     SQLz = "SELECT *, DLookUp('MLOrig','vw_SixKeys','SGrpID =' & SGrpID) As MLOrig FROM Schgrp WHERE Schgrp.SGrpID=" & GroupIDx & ";"
     Me.GroupInfo_SubForm.Form.RecordSource = SQLz
-    Me.groupID = GroupIDx
+    Me.GroupID = GroupIDx
     SQLz = "SELECT AssetID, VIN, UnitNum,  Make, MYear, SGrpID " & _
            "From vw_SixKeys Where SGrpID=" & GroupIDx & " Order By AssetID;"
     Me.Units_List.RowSource = SQLz
@@ -635,7 +635,7 @@ Public Sub SetCbo(Optional Clearcbo As Boolean, Optional IsUnit As Boolean)
       'If Me.AuditListLabel Like "*Group*" Then
       If CountStringOccurances(KeyX, "|") = 4 Or Me.AuditListLabel Like "*Group*" Then
       TableX = "SchGrp"
-      IDX = Me.groupID
+      IDX = Me.GroupID
       Me.AuditListLabel = "<b>Group</b> Changes"
    End If
       If IsUnit = True Or Me.AuditListLabel Like "*Unit*" Then

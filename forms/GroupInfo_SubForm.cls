@@ -6,10 +6,10 @@ Option Compare Database
 
 Private Sub GroupNum_Click()
 MessageUser "Open", "Opening Groups Form", "just a moment.."
-DoCmd.OpenForm "GroupForm", , , "SGrpID =" & Me.groupID
+DoCmd.OpenForm "GroupForm", , , "SGrpID =" & Me.GroupID
 MessageUser "Close"
 End Sub
 
 Private Sub Label52_Click()
-If Me.groupID <> 0 Then Call GroupNum_Click
+If Me.GroupID <> 0 Then Call GroupNum_Click
 End Sub

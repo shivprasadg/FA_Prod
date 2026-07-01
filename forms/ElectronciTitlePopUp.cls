@@ -69,7 +69,7 @@ Private Sub RunHistory_Click()
         For i = 1 To RST.RecordCount
             SQLx = "Update ElectronicTitleRequest Set SentDate = #" & CDate(Me.Signed) & "# Where tAssetID=" & RST!tAssetID & ";"
             SQLz = "INSERT INTO UnitTitleLog ( UnitRef, EntryReason,  UnitTitleLogDate,  EntryTypeId,  EntryReasonId,  ExpectedReturn,  UserID )"
-            SQLz = SQLz & "SELECT " & RST!tAssetID & ", 'Sent to State for Paper Title', #" & CDate(Me.Signed) & "#, 2, 49, True, '" & FAUserName & "';"
+            SQLz = SQLz & "SELECT " & RST!tAssetID & ", 'Sent to State for Paper Title', #" & CDate(Me.Signed) & "#, 2, 49, True, '" & FaUserName & "';"
             DoCmd.SetWarnings False
             DoCmd.RunSQL (SQLx)
             DoCmd.RunSQL (SQLz)

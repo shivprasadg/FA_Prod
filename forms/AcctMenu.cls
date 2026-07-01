@@ -212,7 +212,7 @@ Private Sub ReserveReport_Click()
     'sCount = DCount("AssetId", "AcctRMKTInventoryReserveRpt")
     XLS = "|B,BC|B,TX|C,TC|E,BL|D,TC|H,$E|K,BC|L,BL|M,$E|N,BL|Q,$E|R,P1R|T,$E|U,$E|V,$E|"
     AddReportLog "AcctRMKTInventoryReserveRpt"
-    FormatExcel "AcctRMKTInventoryReserveRpt", "C:\Faas\" & FAUserName & "\Temp\RMKTReserveReport " & DateX & ".xlsx", "RMKT Reserve-Profit", "", XLS, sCount, "Remarketing Reserve vs. Profit: " & DateX, True
+    FormatExcel "AcctRMKTInventoryReserveRpt", "C:\Faas\" & FaUserName & "\Temp\RMKTReserveReport " & DateX & ".xlsx", "RMKT Reserve-Profit", "", XLS, sCount, "Remarketing Reserve vs. Profit: " & DateX, True
 End Sub
 
 Private Sub SelClient_Click()

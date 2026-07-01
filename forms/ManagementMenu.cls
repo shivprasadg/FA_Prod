@@ -876,7 +876,7 @@ MakeBDEX:
 End Sub
 
 Private Sub Form_Load()
-    If FAUserAccess > 14 Or FAUserName() = "kzeigler" Or FAUserName() = "lredmond" Then
+    If FAUserAccess > 14 Or FaUserName() = "kzeigler" Or FaUserName() = "lredmond" Then
         'Me.AccountingLoanReport.Visible = True
         Me.SyndExportReport.Visible = True
         Me.ClientList.Visible = True

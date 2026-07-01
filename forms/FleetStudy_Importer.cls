@@ -568,11 +568,11 @@ Private Sub ScheduleList_Click()
     SQLz = "Select SGrpID, SGrpNO As GroupNo, LeaseType As GType, SGrpFAID, SgrpDesc, SGrpSchID FROM SchGrp WHERE SgrpSchID = " & ScheduleList & " ORDER BY SGrpNO;"
     Me.GroupList.RowSource = SQLz
     Me.GroupList = Null
-    Me.groupNo = Null
+    Me.GroupNo = Null
     Me.groupType = Null
     Me.GroupDesc = Null
     Me.GrpSchID = Null
-    Me.groupID = Null
+    Me.GroupID = Null
 End Sub
 Private Sub UpdateSchedule_Click()
     If DCount("SchNo", "Schedule", "[SchMLRef] = " & Me.MLID & " And [SchNo]='" & Me.SchNo & "'") > 0 Then
@@ -619,7 +619,7 @@ Private Sub DeleteSchedule_Click()
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
-        Me.groupNo = Null
+        Me.GroupNo = Null
         Me.groupType = Null
         Me.GroupDesc = Null
         Me.GrpSchID = Null
@@ -638,8 +638,8 @@ Private Sub DeleteSchedule_Click()
 End Sub
 
 Private Sub GroupList_Click()
-    Me.groupID = Me.GroupList.Column(0)
-    Me.groupNo = Me.GroupList.Column(1)
+    Me.GroupID = Me.GroupList.Column(0)
+    Me.GroupNo = Me.GroupList.Column(1)
     Me.groupType = Me.GroupList.Column(2)
     Me.GroupDesc = Me.GroupList.Column(4)
 
@@ -660,19 +660,19 @@ Private Sub AddGroup_Click()
         MsgBox "You MUST Select A Schedule", vbCritical, "No Short Cuts"
         Exit Sub
     End If
-    Me.groupNo = "A"
+    Me.GroupNo = "A"
     Me.groupType = "REPORTING"
     Me.GroupDesc = "Tracking Group"
     Me.GrpSchID = Me.ScheduleList.Column(0)
 End Sub
 
 Private Sub SubmitGroup_Click()
-    If DCount("SGrpNO", "SchGrp", "[SGrpSchID] = " & Me.GrpSchID & " And [SGrpNO]='" & Me.groupNo & "'") > 0 Then
-        MsgBox "Sorry, but there is already a Group " & vbNewLine & "with the name of: '" & Me.groupNo & "'", vbCritical, "I Said 'Cloning is illegal' :(."
+    If DCount("SGrpNO", "SchGrp", "[SGrpSchID] = " & Me.GrpSchID & " And [SGrpNO]='" & Me.GroupNo & "'") > 0 Then
+        MsgBox "Sorry, but there is already a Group " & vbNewLine & "with the name of: '" & Me.GroupNo & "'", vbCritical, "I Said 'Cloning is illegal' :(."
         Exit Sub
     Else
         SQLz = "INSERT INTO SchGrp ( SGrpNO, LeaseType, SGrpFAID, GroupAddedDate, SgrpDesc, SGrpSchID  ) " & _
-            "VALUES ( '" & Me.groupNo.Value & "', '" & Me.groupType.Value & "', '" & Me.FAID.Value & "', #" & Date & "#, '" & Me.GroupDesc & "', " & Me.GrpSchID & ");"
+            "VALUES ( '" & Me.GroupNo.Value & "', '" & Me.groupType.Value & "', '" & Me.FAID.Value & "', #" & Date & "#, '" & Me.GroupDesc & "', " & Me.GrpSchID & ");"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
@@ -680,12 +680,12 @@ Private Sub SubmitGroup_Click()
     Me.GroupList.Requery
 End Sub
 Private Sub UpDateGroup_Click()
-    If DCount("SGrpNO", "SchGrp", "[SGrpSchID] = " & Me.SchID & " And [SGrpNO]='" & Me.groupNo & "'") > 0 Then
-        MsgBox "Sorry, but there is already a Group " & vbNewLine & "with the name of: '" & Me.groupNo & "'", vbCritical, "I Said 'Cloning is illegal' :(."
+    If DCount("SGrpNO", "SchGrp", "[SGrpSchID] = " & Me.SchID & " And [SGrpNO]='" & Me.GroupNo & "'") > 0 Then
+        MsgBox "Sorry, but there is already a Group " & vbNewLine & "with the name of: '" & Me.GroupNo & "'", vbCritical, "I Said 'Cloning is illegal' :(."
         Exit Sub
     Else
-        SQLz = "UPDATE SchGrp SET SGrpNO = '" & Me.groupNo & "', LeaseType = '" & Me.groupType & "', SgrpDesc = '" & Me.GroupDesc & "' " & _
-            "WHERE SGrpID=" & Me.groupID & ";"
+        SQLz = "UPDATE SchGrp SET SGrpNO = '" & Me.GroupNo & "', LeaseType = '" & Me.groupType & "', SgrpDesc = '" & Me.GroupDesc & "' " & _
+            "WHERE SGrpID=" & Me.GroupID & ";"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
@@ -708,7 +708,7 @@ Private Sub DeleteGroup_Click()
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
-        Me.groupNo = Null
+        Me.GroupNo = Null
         Me.groupType = Null
         Me.GroupDesc = Null
         Me.GrpSchID = Null

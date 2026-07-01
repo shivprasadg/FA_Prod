@@ -155,7 +155,7 @@ AskReason:
         'Call MessageUser("Update", "Getting AssetIDs", "working...")
         For i = 1 To RST.RecordCount
             SQLz = "Insert Into LocationChangeHistory (AssetId, OldLocationId, NewLocationId, LocationChangeDate, GroupId, Reason,FAUserName, LocationType) " & _
-                   "Values (" & RST!AssetID & ", " & RST!LocationID & ", " & NewLoc & ", '" & MoveDate & "'," & Me.Parent.GroupList & ",'" & MoveReason & "','" & FAUserName & "','Garage')"
+                   "Values (" & RST!AssetID & ", " & RST!LocationID & ", " & NewLoc & ", '" & MoveDate & "'," & Me.Parent.GroupList & ",'" & MoveReason & "','" & FaUserName & "','Garage')"
             DoCmd.SetWarnings False
             DoCmd.RunSQL (SQLz)
             DoCmd.SetWarnings True

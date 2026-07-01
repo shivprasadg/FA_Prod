@@ -84,7 +84,7 @@ AccessGranted:
            "  FROM vw_RecentEvents ORDER BY NoticeDate DESC, SGrpID;"
    ' Me.EventList.RowSource = SQLz
     Me.UserName = FAUserFullName
-    Me.USERID = FAUserName & " (" & FAUserAccessLevel & ")"
+    Me.USERID = FaUserName & " (" & FAUserAccessLevel & ")"
     Me.Version = AtlaasVersion
     Me.Version.ControlTipText = CurrentDb.Name
     ' Call Form_Timer

@@ -5,17 +5,17 @@ Dim SQLz As String
 Dim RST As DAO.Recordset
 
 Public Function CheckForUnitsAtAddress(LocationIdx As Long) As String
-Dim Parked, Reg, TITLED, Delv As Integer
+Dim Parked, Reg, Titled, Delv As Integer
 Dim Tempx As String
 Parked = DCount("UnitID", "Units", "UnitGarageLocationRef=" & LocationIdx & "")
 Reg = DCount("UnitID", "Units", "UnitRegLocationRef=" & LocationIdx & "")
-TITLED = DCount("UnitID", "Units", "UnitTitleLocationRef=" & LocationIdx & "")
+Titled = DCount("UnitID", "Units", "UnitTitleLocationRef=" & LocationIdx & "")
 Delv = DCount("UnitID", "Units", "UnitDeliveryLocationRef=" & LocationIdx & "")
-If Parked + Reg + TITLED + Delv > 0 Then
+If Parked + Reg + Titled + Delv > 0 Then
 Tempx = "There are Units are that address" & vbNewLine
 If Parked > 0 Then Tempx = Tempx & Parked & " Parked" & vbNewLine
 If Reg > 0 Then Tempx = Tempx & Reg & " Reg" & vbNewLine
-If TITLED > 0 Then Tempx = Tempx & TITLED & " Titled" & vbNewLine
+If Titled > 0 Then Tempx = Tempx & Titled & " Titled" & vbNewLine
 If Delv > 0 Then Tempx = Tempx & Delv & " Delv" & vbNewLine
 'CheckForUnitsAtAddress = "There are " & Parked + Reg + Titled + Delv & " units assocated with that address"
 Else
@@ -24,12 +24,12 @@ End If
 CheckForUnitsAtAddress = Tempx
 End Function
 Public Function UnitsAtAddress(LocationIdx As Long) As String
-Dim Parked, Reg, TITLED, Delv As Integer
+Dim Parked, Reg, Titled, Delv As Integer
 Parked = DCount("UnitID", "Units", "UnitGarageLocationRef=" & LocationIdx & "")
 Reg = DCount("UnitID", "Units", "UnitRegLocationRef=" & LocationIdx & "")
-TITLED = DCount("UnitID", "Units", "UnitTitleLocationRef=" & LocationIdx & "")
+Titled = DCount("UnitID", "Units", "UnitTitleLocationRef=" & LocationIdx & "")
 Delv = DCount("UnitID", "Units", "UnitDeliveryLocationRef=" & LocationIdx & "")
-UnitsAtAddress = Parked + Reg + TITLED + Delv
+UnitsAtAddress = Parked + Reg + Titled + Delv
 End Function
 
 Public Function ParkedLocationMove(OldLocationIdx As Long, NewLocationIdx As Long, AssetIDx As Long _
@@ -67,7 +67,7 @@ InputDate:
     If Not IsDate(AsOfDatex) Then GoTo InputDate
     'On Error GoTo FixMe
     SQLz = "INSERT INTO UnitMoveOrder (mAssetID,mOldLocationID,mNewLocationID,mStartDate,mVendorID,mOrderNum,mStatus,mContact,mPhone,mEmail,mFaUserID,mNote) " & _
-        "SELECT " & AssetIDx & ", " & OldLocationIdx & ", " & NewLocationIdx & ", #" & AsOfDatex & "#, 517,'TBD','Not Ordered', '" & Contactx & "','" & Phonex & "', '" & Emailx & "'," & FAUserIDx & ",'Move Order created by " & FAUserName & "';"
+        "SELECT " & AssetIDx & ", " & OldLocationIdx & ", " & NewLocationIdx & ", #" & AsOfDatex & "#, 517,'TBD','Not Ordered', '" & Contactx & "','" & Phonex & "', '" & Emailx & "'," & FAUserIDx & ",'Move Order created by " & FaUserName & "';"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.RunSQL ("Update Units Set UnitStatus='EM', LocationParkedID= " & NewLocationIdx & " WHERE UnitID=" & AssetIDx & ";")
@@ -86,7 +86,7 @@ Sub LinkBennetOrderTable()
     db.TableDefs.Delete "MoveOrderImport"
     On Error GoTo 0
     db.TableDefs.Refresh
-    DoCmd.TransferText TransferType:=acLinkDelim, tableName:="MoveOrderImport", _
+    DoCmd.TransferText TransferType:=acLinkDelim, TableName:="MoveOrderImport", _
         fileName:="C:\FAAS\scripts\report.csv", HasFieldNames:=True
     db.close
     Set RST = CurrentDb.OpenRecordset("Select * From UnitMoveOrderUpdate WHERE [Status]='C';", dbOpenSnapshot)
@@ -119,7 +119,7 @@ Sub LinkBennettInvoiceTable()
     db.TableDefs.Delete "BennettMoveInvoice"
     On Error GoTo 0
     db.TableDefs.Refresh
-    DoCmd.TransferText TransferType:=acLinkDelim, tableName:="BennettMoveInvoice", _
+    DoCmd.TransferText TransferType:=acLinkDelim, TableName:="BennettMoveInvoice", _
         fileName:="C:\FAAS\scripts\CUSTOMER_518678_Open_INVOICES.csv", HasFieldNames:=True
     db.close
 End Sub

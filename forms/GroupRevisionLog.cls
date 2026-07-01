@@ -251,7 +251,7 @@ Set RST = Nothing
 'MsgBox "There was a SQL on this event", vbCritical, AtlaasVersion
 End Sub
 Public Sub Form_Current()
-  GroupIDx = Me.groupID
+  GroupIDx = Me.GroupID
   Me.SelectedID = Me.identity
   Me.txtCurrent = Me.FieldName
 End Sub

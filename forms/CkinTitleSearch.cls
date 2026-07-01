@@ -19,7 +19,7 @@ End Sub
 Private Sub LogTitleIn_Click()
 Dim SQLz As String
 SQLz = "INSERT INTO UnitTitleLog ( Unitref, TitleNumber, TitleSt, Reason, UnitTitleLogDate, EntryTypeId, UserID ) " & _
-       "SELECT " & Me.UnitID & " as unitid, '" & Me.UnitTitleNumber & "' AS Tnum, '" & Me.TitleState & "' AS State, '" & Me.EntryReasonId.Column(0) & "' AS Reason, '" & Date & "', 1, ,'" & FAUserName & "';"
+       "SELECT " & Me.UnitID & " as unitid, '" & Me.UnitTitleNumber & "' AS Tnum, '" & Me.TitleState & "' AS State, '" & Me.EntryReasonId.Column(0) & "' AS Reason, '" & Date & "', 1, ,'" & FaUserName & "';"
 DoCmd.SetWarnings False
 DoCmd.RunSQL (SQLz)
 DoCmd.SetWarnings True

@@ -386,7 +386,7 @@ Private Sub MissingPlateNumber_Click()
 
     XLS = "|A,BL|D,TC|G,BC|H,BC|M,TR|N,BC|"
     UnitCnt = DCount("AssetId", "UnitsMissingLicensePlates")
-    FormatExcel "UnitsMissingLicensePlates", "C:\Faas\" & FAUserName & "\Temp\UnitsMissingLicensePlates.xlsx", "MissingPlateNum", , XLS, Countx, "Missing Plate Numbers | " & UnitCnt & " units", True
+    FormatExcel "UnitsMissingLicensePlates", "C:\Faas\" & FaUserName & "\Temp\UnitsMissingLicensePlates.xlsx", "MissingPlateNum", , XLS, Countx, "Missing Plate Numbers | " & UnitCnt & " units", True
 
 End Sub
 

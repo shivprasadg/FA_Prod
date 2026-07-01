@@ -118,7 +118,7 @@ Public Sub GetSelectedUnits_Click()
     SQLx = ""
     SQLx = "INSERT INTO RMKTUnitTitleLog_Work ( AssetID, VIN, TitleNumber, TitleSt, [Desc], LastDirection, UserID, LastEntry, LastEntryTypeId, UnitStatus) "
     SQLx = SQLx & "SELECT S.AssetID, S.VIN, H.TitleNumber, S.TitledState, S.UnitDescShortVer"
-    SQLx = SQLx & ", IIf([EntryTypeId]=1,'IN',IIf([EntryTypeID]=2,'Out','-')) AS Dir, '" & FAUserName & "' AS [User]"
+    SQLx = SQLx & ", IIf([EntryTypeId]=1,'IN',IIf([EntryTypeID]=2,'Out','-')) AS Dir, '" & FaUserName & "' AS [User]"
     SQLx = SQLx & ", nz(H.EntryReason & ' (' & H.UnitTitleLogDate &')','N/A')"
     SQLx = SQLx & ", EntryTypeId, [Status] "
     SQLx = SQLx & "FROM (vw_SixKeys AS S INNER JOIN Units AS U ON S.AssetID = U.UnitID) "

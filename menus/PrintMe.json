@@ -7,7 +7,7 @@
     "AdaptiveMenu": false,
     "Context": "",
     "Enabled": true,
-    "Height": 268,
+    "Height": 264,
     "Left": 830,
     "NameLocal": "PrintMe",
     "Position": 5,
@@ -19,7 +19,7 @@
     "Width": 304,
     "Controls": [
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "&Design View",
@@ -77,7 +77,7 @@
         "ImagePath": "rel:PrintMe_Images\\Layout View"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "&Close",
@@ -251,7 +251,7 @@
         "ImagePath": "rel:PrintMe_Images\\PDF or XPS"
       },
       {
-        "BeginGroup": true,
+        "BeginGroup": false,
         "BuiltIn": true,
         "BuiltInFace": true,
         "Caption": "M&ail Recipient (as Attachment)...",

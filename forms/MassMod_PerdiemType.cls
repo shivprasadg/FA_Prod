@@ -15,7 +15,7 @@ End Sub
 
 Private Sub Form_Current()
     On Error GoTo whoops
-    Me.txtCurrent = Me.groupID
+    Me.txtCurrent = Me.GroupID
 whoops:
     Exit Sub
 End Sub

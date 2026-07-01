@@ -88,7 +88,7 @@ Private Sub NotesSubmit_Click()
     If Me.NotesCbo & "test" = "test" Then
         Exit Sub
     End If
-    SQLset = "SET Notes = '" & Me.NotesCbo & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 1;"
+    SQLset = "SET Notes = '" & Me.NotesCbo & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 1;"
     Response = MsgBox("You're about set the Notes for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Notes?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -175,7 +175,7 @@ Private Sub FinalRentDateSubmit_Click()
         Exit Sub
     End If
     SQLset = "SET FinalRentDate = #" & Me.FinalRentDateCBO & "#, " & _
-             "UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 1;"
+             "UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 1;"
     Response = MsgBox("You're about set the Final Rent Date for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Final Rent Date")
     If Response = vbNo Then Exit Sub
 '    On Error GoTo FixMe
@@ -191,7 +191,7 @@ Private Sub ReplcedBySubmit_Click()
         Exit Sub
     End If
     SQLset = "SET ReplacedByScheduleID = " & Me.ReplacedByGroupCBO.Column(3) & ", ReplacedByGroupID = " & Me.ReplacedByGroupCBO.Column(0) & ", ReplacedByUnitID=Null, " & _
-             "UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 1;"
+             "UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 1;"
     Response = MsgBox("You're about set the Replacement Schedule and Group for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Clear Replacements?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -222,7 +222,7 @@ End Sub
 Private Sub ActualDateSubmit_Click()
     If Me.EndOrActualDateCBO & "test" = "test" Then Exit Sub
 
-    SQLset = "SET EndOrActualDate = '" & Me.EndOrActualDateCBO & "', UserName='" & FAUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 1;"
+    SQLset = "SET EndOrActualDate = '" & Me.EndOrActualDateCBO & "', UserName='" & FaUserName & "', dateposted='" & Now() & "'WHERE OptionTypeID = 1;"
     Response = MsgBox("You're about set the ACTUAL ExchangeIT date for all selected units, Are you sure?", vbQuestion + vbYesNo + vbCritical, "Set Date?")
     If Response = vbNo Then Exit Sub
     On Error GoTo FixMe
@@ -261,7 +261,7 @@ Private Sub UnitID_DblClick(Cancel As Integer)
     'Me.UnitNum.SetFocus
 End Sub
 Public Sub SetModified()
-    Me.UserName = FAUserName
+    Me.UserName = FaUserName
     Me.DatePosted = Now
 End Sub
 

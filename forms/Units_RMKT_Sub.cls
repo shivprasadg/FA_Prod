@@ -66,7 +66,7 @@ Private Sub SetLocks()
         Me.TermPenalty.Visible = False
         Me.TermPenalty.Locked = True
     End If
-    If FAUserAccessGroup Like "*ITT*" Or FAUserName = "lmanin" Or FAUserAccessGroup Like "*ACCT*" Then
+    If FAUserAccessGroup Like "*ITT*" Or FaUserName = "lmanin" Or FAUserAccessGroup Like "*ACCT*" Then
         Me.UNSaleUnit.Visible = True
     Else
         Me.UNSaleUnit.Visible = False

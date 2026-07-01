@@ -46,7 +46,7 @@ Public Sub ClientList_Click()
     Me.ScheduleList.RowSource = ""
     Me.GroupList.RowSource = ""
     Me.SchID = Null
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.SchNo = Me.ClientList.Column(1)
     Me.DocLinksSub.Form.RecordSource = ""
     Me.DocLinksSub.Form.Visible = False
@@ -61,7 +61,7 @@ Public Sub Leaselist_Click()
     Me.ScheduleList.RowSource = SQLz
     Me.SchID = Null
 
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.SchNo = Me.ClientList.Column(1) & " MLNo: " & LeaseList.Column(1)
     Me.GroupList.RowSource = ""
     Me.DocLinksSub.Form.RecordSource = ""
@@ -70,7 +70,7 @@ Public Sub Leaselist_Click()
 
 Public Sub ScheduleList_Click()
     Me.SchID = Me.ScheduleList
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.SchNo = Me.ClientList.Column(1) & " MLNo: " & LeaseList.Column(1) & " Sch: " & Me.ScheduleList.Column(1)
     SQLz = "SELECT SgrpID, UnitGroup, Count(AssetID) AS Unt, SchID " & _
         "FROM vw_SixKeys Where MLOrig='FA' " & _
@@ -82,9 +82,9 @@ Public Sub ScheduleList_Click()
     Me.DocLinksSub.Form.Visible = True
 End Sub
 Public Sub GroupList_Click()
-    Me.groupID = Me.GroupList.Column(0)
+    Me.GroupID = Me.GroupList.Column(0)
     Me.SchNo = Me.ClientList.Column(1) & " MLNo: " & LeaseList.Column(1) & " Sch: " & Me.ScheduleList.Column(1) & " Grp: " & GroupList.Column(1)
-        SQLz = "SELECT * FROM DocLinks WHERE SchId=" & Me.groupID & ";"
+        SQLz = "SELECT * FROM DocLinks WHERE SchId=" & Me.GroupID & ";"
     Me.DocLinksSub.Form.RecordSource = SQLz
 End Sub
 

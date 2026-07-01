@@ -122,10 +122,10 @@ Private Sub RentReport_Click()
     XLS = "|E,BC|K,BC|L,TC|I,BC|M,P1C|N,$E|O,$E|P,$E|Q,$E|"
     If IsNull(Me.Location) Then
         Countx = DCount("UnitVin", "Schedule_Rent_Report")
-        FormatExcel "Schedule_Rent_Report", "C:\Faas\" & FAUserName & "\Temp\Schedule_Rent_Report.xlsx", "Schedule Rent", , "" & XLS & "", Countx, Me.SchDesc & " - Rent Report - " & Countx & " Units", True
+        FormatExcel "Schedule_Rent_Report", "C:\Faas\" & FaUserName & "\Temp\Schedule_Rent_Report.xlsx", "Schedule Rent", , "" & XLS & "", Countx, Me.SchDesc & " - Rent Report - " & Countx & " Units", True
     Else
         Countx = DCount("UnitVin", "Location_Rent_Report")
-        FormatExcel "Location_Rent_Report", "C:\Faas\" & FAUserName & "\Temp\Location_Rent_Report.xlsx", "Location Rent", , "" & XLS & "", Countx, "Location: " & Me.Location.Column(1) & " - Rent Report - " & Countx & " Units", True
+        FormatExcel "Location_Rent_Report", "C:\Faas\" & FaUserName & "\Temp\Location_Rent_Report.xlsx", "Location Rent", , "" & XLS & "", Countx, "Location: " & Me.Location.Column(1) & " - Rent Report - " & Countx & " Units", True
     End If
 End Sub
 

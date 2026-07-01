@@ -13,10 +13,10 @@ FROM
     LEFT JOIN Vendors ON vw_SixKeys.VendorId = Vendors.VendorID
   )
   LEFT JOIN DrawnUnitInvoices ON (
-    vw_SixKeys.InvoiceNumber = DrawnUnitInvoices.Invoice
+    vw_SixKeys.VendorId = DrawnUnitInvoices.VendorID
   )
   AND (
-    vw_SixKeys.VendorId = DrawnUnitInvoices.VendorID
+    vw_SixKeys.InvoiceNumber = DrawnUnitInvoices.Invoice
   )
 GROUP BY
   Vendors.VendorSNm,

@@ -25,7 +25,7 @@ Sub testSearchFiles()
     Dim iFilesFound As Boolean
     Dim sPath As String
     Dim sSearch As String
-    sPath = "C:\Users\" & FAUserName & "\Downloads"
+    sPath = "C:\Users\" & FaUserName & "\Downloads"
     sSearch = "Schedule_" & DatePart("YYYY", Date) & "-"
     If DatePart("M", Date) < 10 Then sSearch = sSearch & "0" & DatePart("M", Date) & "-" Else sSearch = sSearch & DatePart("M", Date) & "-"
     If DatePart("D", Date) < 10 Then sSearch = sSearch & "0" & DatePart("D", Date) Else sSearch = sSearch & DatePart("D", Date)

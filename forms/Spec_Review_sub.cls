@@ -11,7 +11,7 @@ Dim value1 As Long
 Dim value2 As Long
 Dim value3 As Long
 Dim SubtotalPrice As Long
-Dim discount As Long
+Dim Discount As Long
 
 If IsNull(SRSellingPrice) Then
     value1 = 0
@@ -33,9 +33,9 @@ End If
 
 'Set the DiscountedPrice value
 SubtotalPrice = (value1 / value2) + value3
-discount = (value1 / value2) * 0.01
-MsgBox discount
-DiscountedPrice = SubtotalPrice - discount
+Discount = (value1 / value2) * 0.01
+MsgBox Discount
+DiscountedPrice = SubtotalPrice - Discount
 
 End Function
 

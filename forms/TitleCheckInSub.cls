@@ -27,7 +27,7 @@ Private Sub LogTitleIn_Click()
     SQLz = "INSERT INTO UnitTitleLog ( Unitref, TitleNumber, TitleSt, EntryReason, EntryReasonID, UnitTitleLogDate, EntryTypeId, UserID) "
     SQLz = SQLz & "SELECT " & Me.UnitID.Value & ", '" & Me.UnitTitleNumber.Value & "'"
     SQLz = SQLz & ", '" & Me.TitledState & "', '" & Me.EntryReason.Column(0) & "', " & Me.EntryReasonId & " "
-    SQLz = SQLz & ", '" & Me.UnitTitleLogDate & "', 1,'" & FAUserName & "';"
+    SQLz = SQLz & ", '" & Me.UnitTitleLogDate & "', 1,'" & FaUserName & "';"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True
@@ -52,7 +52,7 @@ Private Sub LogTitleOut_Click()
     SQLz = "INSERT INTO UnitTitleLog ( Unitref, TitleNumber, TitleSt, EntryReason, EntryReasonID, UnitTitleLogDate, EntryTypeId, UserID ) "
     SQLz = SQLz & "SELECT " & Me.UnitID.Value & ", '" & Me.UnitTitleNumber.Value & "', '" & Me.TitledState & "'"
     SQLz = SQLz & ", '" & Me.EntryReason & "', " & Me.EntryReasonId & " "
-    SQLz = SQLz & ", '" & Me.UnitTitleLogDate & "', 2 ,'" & FAUserName & "';"
+    SQLz = SQLz & ", '" & Me.UnitTitleLogDate & "', 2 ,'" & FaUserName & "';"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True

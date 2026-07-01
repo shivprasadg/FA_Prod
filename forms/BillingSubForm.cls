@@ -9,7 +9,7 @@ If Nz(Me.SchID, Me.Parent.SchID) & "test" = "test" Then Exit Sub
     DoCmd.close acForm, "NewBill"
     DoCmd.OpenForm "NewBill", , , , acFormAdd
     Forms!NewBill.Form.BillSchRef = Me.Parent.SchID
-    Forms!NewBill.Form.groupID = Me.Parent.groupID
+    Forms!NewBill.Form.GroupID = Me.Parent.GroupID
     On Error Resume Next
     Forms!NewBill.Form.MLNo = Me.Parent.SelLease
 End Sub
@@ -41,7 +41,7 @@ End Sub
 Private Sub Form_Current()
 
     Me.Parent.BillID = Me.BillID
-    Me.Parent.groupID = Me.groupID
+    Me.Parent.GroupID = Me.GroupID
     On Error GoTo FixMe
     Me.txtCurrent = Me.BillID
 FixMe:
@@ -105,7 +105,7 @@ Public Function MakeInvoice(ToExcel As Boolean)
     Dim HeaderTypex As String
     FundStatus = DMax("Assigned_Indicator", "SchGrp", "sGrpSchID=" & Me.SchID)
     Me.Parent.BillID = Me.BillID
-    Me.Parent.groupID = Me.groupID
+    Me.Parent.GroupID = Me.GroupID
     Dim ReportX, ReportX2, OpenArgsX As String
     Dim RecX As Integer
 
@@ -117,7 +117,7 @@ Public Function MakeInvoice(ToExcel As Boolean)
     If Me.BillType = "BankRentOnly" Then ReportX = "BankBillRentOnly"
     If Me.BillType = "BankBill" And Me.ClientID = 4636 Then ReportX = "FABankBill_ADM"
     If Me.BillType = "BankBill" And Me.ClientID = 4029 And FunStatus = "F" Then ReportX = "FABankBill_Toyota"
-    If Me.BillType = "BankBill" And Me.groupID & "test" <> "test" Then ReportX = "FABankBillGroup"
+    If Me.BillType = "BankBill" And Me.GroupID & "test" <> "test" Then ReportX = "FABankBillGroup"
 
     If Me.BillType = "Rent" Then ReportX = "FARentBillNew"
     If Me.BillType = "Rent" And Me.ClientID = 4029 And FunStatus = "F" Then ReportX = "FABankBill_Toyota"
@@ -163,7 +163,7 @@ Public Function MakeInvoice(ToExcel As Boolean)
         SQLz = SQLz & ",LineTot as [Total Payment] "
         SQLz = SQLz & " From vw_BankBill "
         SQLz = SQLz & " WHERE BillID=" & Me.BillID & " "
-        If Me.BillType = "Rent Group" Then SQLz = SQLz & "AND SGrpID = " & [Forms]![Billing]![groupID] & " "
+        If Me.BillType = "Rent Group" Then SQLz = SQLz & "AND SGrpID = " & [Forms]![Billing]![GroupID] & " "
    '----Default XLS
         XLS = "|K,TC|O,BC|P,$E|R,P3|Q,BC|R,TC|S,$E|T,$E|U,$E|T,W09|"
 
@@ -198,7 +198,7 @@ Public Function MakeInvoice(ToExcel As Boolean)
         If Me.BillType = "PerDiem" And Me.GroupBill Like "*Group*" Then
             SQLz = "SELECT vw_PerdiemInvoice.SGrpID, * "
             SQLz = SQLz & "FROM vw_PerdiemInvoice "
-            SQLz = SQLz & "WHERE (((vw_PerdiemInvoice.SGrpID)= " & [Forms]![Billing]![groupID] & ") AND ((vw_PerdiemInvoice.BillID)= " & [Forms]![Billing]![BillID] & ")) ;"
+            SQLz = SQLz & "WHERE (((vw_PerdiemInvoice.SGrpID)= " & [Forms]![Billing]![GroupID] & ") AND ((vw_PerdiemInvoice.BillID)= " & [Forms]![Billing]![BillID] & ")) ;"
         End If
         If Me.BillType = "PerDiem" Then
             SQLz = "Select BillNo AS [Invoice Number]"              '-Col A

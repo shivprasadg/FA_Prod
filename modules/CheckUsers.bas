@@ -8,9 +8,9 @@ Private Declare Function apiGetUserName Lib "advapi32.dll" Alias _
     "GetUserNameA" (ByVal lpBuffer As String, nSize As Long) As Long
 #End If
 
-Function FAUserName() As String
+Function FaUserName() As String
     ' Returns the network login name
-    FAUserName = LCase(Environ("username"))
+    FaUserName = LCase(Environ("username"))
 End Function
 Function FAUserAccess() As Integer
     ' Returns the Users' Access Level

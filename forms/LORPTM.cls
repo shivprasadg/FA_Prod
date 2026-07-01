@@ -24,7 +24,7 @@ End If
     Countx = DCount("UnitId", "" & [ReportX] & "")
     XLS = "|B,BC|C,BC|E,TL|I,BC|J,TC|K,IC|J,TX|O,BC|P,TX|AB,$E|AC,$E|AD,$E|"
  AddReportLog "AllUnitsLeased_Click"
- FormatExcel ReportX, "C:\Faas\" & FAUserName & "\Temp\" & ReportX, "LeasedUnits", , XLS, Countx, "Leased Units by " & AllUnitsDateType, True
+ FormatExcel ReportX, "C:\Faas\" & FaUserName & "\Temp\" & ReportX, "LeasedUnits", , XLS, Countx, "Leased Units by " & AllUnitsDateType, True
 End Sub
 
 Private Sub ClearAll_Click()

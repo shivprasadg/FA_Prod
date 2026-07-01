@@ -214,7 +214,7 @@ Private Sub NewBuyersOrder_Click()
     Me.BuyersOrderUnits_Sub.Visible = False
     DoCmd.GotoRecord , , acNewRec
     Me.BuyerID = Me.Parent.BuyerID
-    Me.RequestedBy = FAUserName
+    Me.RequestedBy = FaUserName
     If IsNull(Me.TakeDelivery) Then Me.TakeDelivery = DateAdd("M", 1, DateSerial(Year(Date), Month(Date), 1) + 24)
 End Sub
 Private Sub SaveUpdateOrder_Click()

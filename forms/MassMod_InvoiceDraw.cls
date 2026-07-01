@@ -9,7 +9,7 @@ Dim PrevDraw, Askit As Long
 
 Private Sub CloseMe_Click()
     DoCmd.OpenForm "FAMainMenu"
-    If ModMade = -1 Then Call CheckATFChanges(Me.groupID, "Rent Change")
+    If ModMade = -1 Then Call CheckATFChanges(Me.GroupID, "Rent Change")
     DoCmd.close acForm, Me.Form.Name
 End Sub
 

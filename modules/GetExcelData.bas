@@ -28,7 +28,7 @@ OpenEdge:
     Dim wb As WebDriver
     Set wb = New Selenium.EdgeDriver
     'Set WB = New Selenium.PhantomJSDriver
-    wb.start
+    wb.Start
     wb.Get URL
 Login:
     'Call MessageUser("Update", "Loging into NIS", "this will Go Quickly")
@@ -42,7 +42,7 @@ Login:
     intFileNum = FreeFile
     ' change Output to Append if you want to add to an existing file
     ' rather than creating a new file each time
-    Open "C:\Faas\" & FAUserName & "\Temp\WebText.txt" For Output As intFileNum
+    Open "C:\Faas\" & FaUserName & "\Temp\WebText.txt" For Output As intFileNum
     Print #intFileNum, TableString
     Close intFileNum
 SetDate:
@@ -75,7 +75,7 @@ Public Function DownloadDekraDataExcel(Optional URL As String, Optional FileName
     If URL = "" Then URL = "https://www.dekrasmart.com/Analysis/Login"
     'sStartDate = DatePart("M", (Date - 15)) & "/1/" & DatePart("yyyy", Date)
     sStartDate = Date - 5
-    sPath = "C:\Users\" & FAUserName & "\Downloads\"
+    sPath = "C:\Users\" & FaUserName & "\Downloads\"
     sSearch = "Schedule_" & DatePart("YYYY", Date) & "-"
     If DatePart("M", Date) < 10 Then sSearch = sSearch & "0" & DatePart("M", Date) & "-" Else sSearch = sSearch & DatePart("M", Date) & "-"
     If DatePart("D", Date) < 10 Then sSearch = sSearch & "0" & DatePart("D", Date) Else sSearch = sSearch & DatePart("D", Date)
@@ -99,7 +99,7 @@ OpenEdge:
     Dim wb As WebDriver
     Set wb = New Selenium.EdgeDriver
     'Set WB = New Selenium.PhantomJSDriver
-    wb.start
+    wb.Start
     wb.Get URL
 Login:
     Call MessageUser("Update", "Loging into Dekra", "this will Go Quickly")
@@ -283,7 +283,7 @@ Public Function GetDekraData(sLink As String) As String
     Dim Tempx, UTypex, Hoursx, ODOx, InspDatex As String
     Dim wb As WebDriver
     Set wb = New Selenium.PhantomJSDriver
-    wb.start
+    wb.Start
     wb.Get sLink
     InspDatex = wb.FindElementByXPath("/html/body/div[1]/div[1]/fieldset[1]/div[2]/div[4]/span").Text
     Hoursx = "0"
@@ -623,7 +623,7 @@ Public Function GetInspectionData(URL As String)
     intFileNum = FreeFile
     ' change Output to Append if you want to add to an existing file
     ' rather than creating a new file each time
-    Open "C:\Faas\" & FAUserName & "\Temp\WebText.txt" For Output As intFileNum
+    Open "C:\Faas\" & FaUserName & "\Temp\WebText.txt" For Output As intFileNum
     Print #intFileNum, WebString
     Close intFileNum
 End Function

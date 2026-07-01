@@ -5,35 +5,35 @@ Attribute VB_Exposed = False
 Option Compare Database
 
 Private Sub Purchasing_Click()
-Call StartSignOff(Me.groupID, "SignOff1")
+Call StartSignOff(Me.GroupID, "SignOff1")
 Me.Form.Requery
 End Sub
 
 Private Sub InvIn_Click()
-Call StartSignOff(Me.groupID, "SignOff2")
+Call StartSignOff(Me.GroupID, "SignOff2")
 Me.Form.Requery
 End Sub
 
 Private Sub MSOValid_Click()
-Call StartSignOff(Me.groupID, "SignOff3")
+Call StartSignOff(Me.GroupID, "SignOff3")
 Me.Form.Requery
 End Sub
 
 Private Sub Operations_Click()
-Call StartSignOff(Me.groupID, "SignOff4")
+Call StartSignOff(Me.GroupID, "SignOff4")
 Me.Form.Requery
 End Sub
 
 Private Sub TMT_Click()
-Call StartSignOff(Me.groupID, "SignOff5")
+Call StartSignOff(Me.GroupID, "SignOff5")
 Me.Form.Requery
 End Sub
 
 Private Sub Docs_Click()
-Call StartSignOff(Me.groupID, "SignOff6")
+Call StartSignOff(Me.GroupID, "SignOff6")
 Me.Form.Requery
 End Sub
 Private Sub Syndication_Click()
-Call StartSignOff(Me.groupID, "SignOff7")
+Call StartSignOff(Me.GroupID, "SignOff7")
 Me.Form.Requery
 End Sub

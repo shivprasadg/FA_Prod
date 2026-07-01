@@ -8,7 +8,7 @@ Dim ModMade As Boolean
 
 Private Sub CloseMe_Click()
     DoCmd.OpenForm "FAMainMenu"
-    If ModMade = -1 Then Call CheckATFChanges(Me.groupID, "Rent Change")
+    If ModMade = -1 Then Call CheckATFChanges(Me.GroupID, "Rent Change")
     DoCmd.close acForm, Me.Form.Name
 End Sub
 
@@ -96,7 +96,7 @@ If Me.PDRentCurr & "test" = "test" Then Exit Sub
     On Error GoTo FixMe
     SQLz = "UPDATE Units " & _
            "SET Units.UNITPDRENT ='" & Me.PDRentCurr & "' " & _
-           "WHERE GroupRef=" & Me.groupID & ";"
+           "WHERE GroupRef=" & Me.GroupID & ";"
     DoCmd.RunSQL (SQLz)
 FixMe:
     Me.Form.Refresh
@@ -107,7 +107,7 @@ If Me.PDSurrenderCurr & "test" = "test" Then Exit Sub
     On Error GoTo FixMe
     SQLz = "UPDATE Units " & _
            "SET Units.PerDiemSurrender ='" & Me.PDSurrenderCurr & "' " & _
-           "WHERE GroupRef=" & Me.groupID & ";"
+           "WHERE GroupRef=" & Me.GroupID & ";"
     DoCmd.RunSQL (SQLz)
 FixMe:
     Me.Form.Refresh
@@ -130,7 +130,7 @@ Private Sub Use_AcceptedDate_Click()
      Call ConfrimIT("Accepted Date", "PerDiem Start Date")
     SQLz = "UPDATE Units " & _
            "SET Units.UnitPDStartDate = UnitAcceptDate " & _
-           "WHERE GroupRef=" & Me.groupID & ";"
+           "WHERE GroupRef=" & Me.GroupID & ";"
     DoCmd.RunSQL (SQLz)
 FixMe:
     Me.Form.Refresh
@@ -142,7 +142,7 @@ Private Sub Use_ActualDelDate_Click()
      Call ConfrimIT("Delivery Date", "PerDiem Start Date")
     SQLz = "UPDATE Units " & _
            "SET Units.UnitPDStartDate = UnitActualDelDate " & _
-           "WHERE GroupRef=" & Me.groupID & ";"
+           "WHERE GroupRef=" & Me.GroupID & ";"
     DoCmd.RunSQL (SQLz)
 FixMe:
     Me.Form.Refresh
@@ -154,7 +154,7 @@ Private Sub Use_InService_Click()
      Call ConfrimIT("In Service Date", "PerDiem Start Date")
      SQLz = "UPDATE Units " & _
             "SET Units.UnitPDStartDate = UnitInServ " & _
-            "WHERE GroupRef=" & Me.groupID & ";"
+            "WHERE GroupRef=" & Me.GroupID & ";"
     DoCmd.RunSQL (SQLz)
 FixMe:
     Me.Form.Refresh
@@ -166,7 +166,7 @@ Private Sub Use_VendorPaid_Click()
      Call ConfrimIT("Vendor Paid Date", "PerDiem Start Date")
      SQLz = "UPDATE Units " & _
             "SET Units.UnitPDStartDate = UnitVendorPytDate " & _
-            "WHERE GroupRef=" & Me.groupID & ";"
+            "WHERE GroupRef=" & Me.GroupID & ";"
     DoCmd.RunSQL (SQLz)
 FixMe:
     Me.Form.Refresh

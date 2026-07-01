@@ -15,7 +15,7 @@ Private Sub AddLink_Click()
     Me.ClientID = Split(LoadArg, "|")(0)
     Me.MLID = Split(LoadArg, "|")(1)
     Me.SchID = Split(LoadArg, "|")(2)
-    Me.groupID = Split(LoadArg, "|")(3)
+    Me.GroupID = Split(LoadArg, "|")(3)
     Me.UnitID = Split(LoadArg, "|")(4)
     Me.dLink = ""
     Me.dtags = ""
@@ -58,7 +58,7 @@ Public Sub LoadData()
             Me.ClientID = Split(LoadArg, "|")(0)
             Me.MLID = Split(LoadArg, "|")(1)
             Me.SchID = Split(LoadArg, "|")(2)
-            Me.groupID = Split(LoadArg, "|")(3)
+            Me.GroupID = Split(LoadArg, "|")(3)
             Me.UnitID = Split(LoadArg, "|")(4)
             MsgBox "Copy and Paste 'SharePoint Link' to the: " & vbNewLine & "'Link' Field", vbInformation, "Copy & Paste"
         End If
@@ -93,7 +93,7 @@ Private Sub GetLinkInfo()
 End Sub
 Private Sub InsertRecord()
     SQLz = "INSERT INTO DocLinks (ClientID, MLID, SchID, GroupID, UnitID, dtags, dName, dtype, dlink) "
-    SQLz = SQLz & "Select " & Me.ClientID & "," & Me.MLID & "," & Me.SchID & "," & Me.groupID & "," & Me.UnitID & ",'" & Me.dtags & "',"
+    SQLz = SQLz & "Select " & Me.ClientID & "," & Me.MLID & "," & Me.SchID & "," & Me.GroupID & "," & Me.UnitID & ",'" & Me.dtags & "',"
     SQLz = SQLz & "'" & Me.dName & "', '" & Me.dtype & "', '" & Me.dLink & "';"
     DoCmd.SetWarnings False
     'DoCmd.RunSQL (SQLz)

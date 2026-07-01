@@ -41,7 +41,7 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub OpenMassMod_Click()
-    If Me.groupID & "test" = "test" Then
+    If Me.GroupID & "test" = "test" Then
         MsgBox "Sorry, but you must first select a group", , "No Group, No Service :("
         Exit Sub
     End If
@@ -50,30 +50,30 @@ Private Sub OpenMassMod_Click()
     DoCmd.OpenForm "BulkChange_form"
     Forms!BulkChange_Form.ClientList = Me.ClientList
     Form_BulkChange_Form.ClientList_Click
-    Forms!BulkChange_Form.LeaseList = DLookup("MLID", "vw_SixKeys", "sGrpID=" & Me.groupID & "")
+    Forms!BulkChange_Form.LeaseList = DLookup("MLID", "vw_SixKeys", "sGrpID=" & Me.GroupID & "")
     Form_BulkChange_Form.Leaselist_Click
-    Forms!BulkChange_Form.ScheduleList = DLookup("SchID", "vw_SixKeys", "sGrpID=" & Me.groupID & "")
+    Forms!BulkChange_Form.ScheduleList = DLookup("SchID", "vw_SixKeys", "sGrpID=" & Me.GroupID & "")
     Form_BulkChange_Form.ScheduleList_Click
-    Forms!BulkChange_Form.GroupList = Me.groupID
+    Forms!BulkChange_Form.GroupList = Me.GroupID
     Form_BulkChange_Form.GroupList_Click
     Form_BulkChange_Form.GetAll_Click
      MessageUser "Close"
 End Sub
 Private Sub Purchasing_Click()
-    Call StartSignOff(Me.groupID, "SignOff1")
+    Call StartSignOff(Me.GroupID, "SignOff1")
     Me.Form.Requery
 End Sub
 Private Sub InvIn_Click()
-    Call StartSignOff(Me.groupID, "SignOff2")
+    Call StartSignOff(Me.GroupID, "SignOff2")
     Me.Form.Requery
 End Sub
 
 Private Sub MSOValid_Click()
-    Call StartSignOff(Me.groupID, "SignOff3")
+    Call StartSignOff(Me.GroupID, "SignOff3")
     Me.Form.Requery
 End Sub
 Private Sub Operations_Click()
-    Call StartSignOff(Me.groupID, "SignOff4")
+    Call StartSignOff(Me.GroupID, "SignOff4")
     Me.Form.Requery
 End Sub
 
@@ -89,30 +89,30 @@ Private Sub SignOffsPendingBtn_Click()
 End Sub
 
 Private Sub TMT_Click()
-    Call StartSignOff(Me.groupID, "SignOff5")
+    Call StartSignOff(Me.GroupID, "SignOff5")
     Me.Form.Requery
 End Sub
 
 Private Sub Docs_Click()
-    Call StartSignOff(Me.groupID, "SignOff6")
+    Call StartSignOff(Me.GroupID, "SignOff6")
     Me.Form.Requery
 End Sub
 Private Sub Syndication_Click()
-    Call StartSignOff(Me.groupID, "SignOff7")
+    Call StartSignOff(Me.GroupID, "SignOff7")
     Me.Form.Requery
 End Sub
 Private Sub Client_DblClick(Cancel As Integer)
-    If Me.groupID & "test" = "test" Then Exit Sub
+    If Me.GroupID & "test" = "test" Then Exit Sub
     DoCmd.close acForm, "Schedule_Form"
-    DoCmd.OpenForm "Schedule_Form", , , "SchID=" & DLookup("SchID", "vw_SixKeys", "sGrpID=" & Me.groupID & "")
+    DoCmd.OpenForm "Schedule_Form", , , "SchID=" & DLookup("SchID", "vw_SixKeys", "sGrpID=" & Me.GroupID & "")
 End Sub
 Private Sub SchGrp_DblClick(Cancel As Integer)
-    If Me.groupID & "test" = "test" Then
+    If Me.GroupID & "test" = "test" Then
         MsgBox "Sorry, but you must first select a group", , "No Group, No Service :("
         Exit Sub
     End If
     DoCmd.close acForm, "GroupForm"
-    DoCmd.OpenForm "GroupForm", , , "SGrpID=" & Me.groupID
+    DoCmd.OpenForm "GroupForm", , , "SGrpID=" & Me.GroupID
 End Sub
 
 Private Sub UnFundedOECSch_Click()

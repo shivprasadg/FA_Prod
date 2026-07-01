@@ -345,7 +345,7 @@ Public Function LookupSaleTaxStates(Zipx As String, Optional CurrentTax As Doubl
     Set wb = New Selenium.EdgeDriver     ' Show Browser
     'Set WB = New Selenium.PhantomJSDriver ' Hidden
     URL = "https://www.salestaxstates.com"
-    wb.start
+    wb.Start
     wb.Get URL
     wb.FindElementById("autocomplete").SendKeys Zipx
     Call MessageUser("Update", "Posting Request to SalesTaxStates", "Sending ZipCode: ( " & Zipx & " )")
@@ -429,7 +429,7 @@ Public Function LookUpTaxByZip2Tax_zXX1(Zipx As String, Optional CurrentTax As D
     'WB.SetCapability "ms:edgeOptions", "{""args"":[""--headless""]}"
     'Set WB = New Selenium.PhantomJSDriver
     URL = "https://myaccount.zip2tax.com/user/login"
-    wb.start
+    wb.Start
     wb.Get URL
     wb.FindElementById("Email").SendKeys "fleeta"
     wb.FindElementById("Password").SendKeys "af~52fn"
@@ -502,7 +502,7 @@ Public Function LookUpTaxByZip2Tax(Zipx As String, Optional CurrentTax As Double
     Set wb = New Selenium.EdgeDriver
 
     URL = "https://myaccount.zip2tax.com/user/login"
-    wb.start
+    wb.Start
     wb.Get URL
     wb.FindElementById("Email").SendKeys "fleeta"
     wb.FindElementById("Password").SendKeys "af~52fn"

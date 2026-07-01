@@ -121,7 +121,7 @@ If Me.EntryTypeID = 2 And Me.LastDirection = "Out" Then WrongDirection = "You're
     SQLz = "INSERT INTO UnitTitleLog ( Unitref, TitleNumber, TitleSt, EntryReason, UnitTitleLogDate, EntryTypeId, UserID, EntryReasonID) "
     SQLz = SQLz & "SELECT " & Me.UnitID.Value & " as unitid, '" & Me.UnitTitleNumber.Value & "' AS Tnum"
     SQLz = SQLz & ", '" & Me.TitledState & "' AS State, '" & Me.EntryReasonId.Column(1) & "' AS reason, '" & Me.UnitTitleLogDate & "' AS UnitTitleLogDate "
-    SQLz = SQLz & ", 1,'" & FAUserName & "', " & Me.EntryReasonId.Column(0) & ";"
+    SQLz = SQLz & ", 1,'" & FaUserName & "', " & Me.EntryReasonId.Column(0) & ";"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
     DoCmd.SetWarnings True

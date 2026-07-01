@@ -3,7 +3,7 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Enter_System_Click()
-    If FAUserName = DLookup("[User ID]", "TBL_Employees", "[User ID] = FAUserName()") And DLookup("[Active User]", "TBL_Employees", "[User ID] = FAUserName()") = True Then
+    If FaUserName = DLookup("[User ID]", "TBL_Employees", "[User ID] = FAUserName()") And DLookup("[Active User]", "TBL_Employees", "[User ID] = FAUserName()") = True Then
         DoCmd.OpenForm "FAMainMenu", acNormal, "", "", , acNormal
         If FAUserAccessLevel = 3 Then DoCmd.OpenForm "AcctMenu", acNormal, "", "", , acNormal
         If FAUserAccessLevel = 4 Then DoCmd.OpenForm "AM_Menu", acNormal, "", "", , acNormal

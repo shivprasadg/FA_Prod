@@ -30,8 +30,8 @@ Function MakeCustodianFiles(iSchID As Integer)
     DateX = Nz(DLookup("DateSent", "TList"), Date)
     Response = MsgBox("Do you want to send an Custodian Submission Email?", vbQuestion + vbYesNo + vbCritical, "Email it?")
     If Response = vbYes Then CloseMe = "Close" Else CloseMe = "Open"
-    ExcelCustodian2 "DataFile", "C:\Faas\" & FAUserName & "\Temp\CustodianTitleTrust2DataFile.xlsx", "DataFile", CloseMe, , Countx, "Data Files - Sent " & DateX, False, "CC"
-    ExcelCustodian1 "TList", "C:\Faas\" & FAUserName & "\Temp\CustodianTitleTrust2.xlsx", "Custodian", CloseMe, , Countx, "Equipment Files - Sent " & DateX, False, "CC"
+    ExcelCustodian2 "DataFile", "C:\Faas\" & FaUserName & "\Temp\CustodianTitleTrust2DataFile.xlsx", "DataFile", CloseMe, , Countx, "Data Files - Sent " & DateX, False, "CC"
+    ExcelCustodian1 "TList", "C:\Faas\" & FaUserName & "\Temp\CustodianTitleTrust2.xlsx", "Custodian", CloseMe, , Countx, "Equipment Files - Sent " & DateX, False, "CC"
     If Response = vbYes Then Call EmailToTrust(iSchID)
 AskDate:
     Response = MsgBox("Do you want to log these " & Countx & " Titles as 'Sent To Custodian'?", vbQuestion + vbYesNo + vbCritical, "Log it?")
@@ -46,7 +46,7 @@ AskDate:
         If Not IsDate(DateSent) Then GoTo AskDate
         SQLz = "INSERT INTO UnitTitleLog ( UnitRef, UnitTitleLogDate, EntryTypeId, EntryReasonId, TitleSt, TitleNumber, EntryReason, UserID )" & _
             "SELECT Units.UnitID, #" & [DateSent] & "# AS SentDate, 2 AS Type, 4 AS Reasonid, CT.[State of Title], CT.TitleNum, 'Sent To Custodian' AS Reason " & _
-            ",'" & FAUserName & "' " & _
+            ",'" & FaUserName & "' " & _
             "FROM vw_CustodianTitleTrust2 As CT INNER JOIN Units ON CT.VIN = Units.UnitVIN " & _
             "WHERE SchID=" & iSchID & " ORDER BY Units.UnitID;"
         DoCmd.SetWarnings False
@@ -162,8 +162,8 @@ Function EmailToTrust(iSchID As Integer)
     msg1 = ""
     Linkx(0) = ""
     Linkx(1) = ""
-    Linkx(0) = "C:\Faas\" & FAUserName & "\Temp\CustodianTitleTrust2.xlsx"
-    Linkx(1) = "C:\Faas\" & FAUserName & "\Temp\CustodianTitleTrust2DataFile.xlsx"
+    Linkx(0) = "C:\Faas\" & FaUserName & "\Temp\CustodianTitleTrust2.xlsx"
+    Linkx(1) = "C:\Faas\" & FaUserName & "\Temp\CustodianTitleTrust2DataFile.xlsx"
     'make email message
     msg1 = msg1 & "<html><body><p style='color:Navy;font-family:Calibri;font-size:20pt;'><b>Custodian Title Trust Submission</b></p>"
     msg1 = msg1 & "<p style='font-family:Calibri;font-size:11pt'>"
@@ -450,10 +450,10 @@ Public Function GroupFinalizedCheck(GroupIDx As Long, Optional NoDialog As Boole
         SubjectX2 = "Sign Off: " & Replace(SubjectX2, "'", "''")
         'ContactEmailX = "ljohnson@fleetadvantage.com"
         'CcEmailX2 = "ljohnson@fleetadvantage.com"
-        If FAUserName = "Ytj" Then
+        If FaUserName = "Ytj" Then
             Call SendServerEmail(ContactEmailX, CcEmailX2, SubjectX2, Emailx, "yjackson@fleetadvantage.com")
         Else
-            Call SendServerEmail(ContactEmailX, CcEmailX2, SubjectX2, Emailx, FAUserName & "@fleetadvantage.com")
+            Call SendServerEmail(ContactEmailX, CcEmailX2, SubjectX2, Emailx, FaUserName & "@fleetadvantage.com")
         End If
     End If
 
@@ -465,7 +465,7 @@ Cleanup:
 End Function
 Public Function StartSignOff(GroupIDx As Long, SignOffLevel As String)
 'Check if the user is allowed to sign-off
-    If InStr(1, DLookup("DepartmentEmail", "DepartmentContacts", "SignOffLevel='" & SignOffLevel & "'"), FAUserName) = 0 Then Exit Function
+    If InStr(1, DLookup("DepartmentEmail", "DepartmentContacts", "SignOffLevel='" & SignOffLevel & "'"), FaUserName) = 0 Then Exit Function
 
     Dim PrevSigner As Integer
     Dim CurrLevel As Integer
@@ -543,7 +543,7 @@ Public Function StartSignOff(GroupIDx As Long, SignOffLevel As String)
 
        ' NextLevel = NextSignOffLevel(GroupIDx)
         EmailSuffix = "@fleetadvantage.com"
-        FromEmail = FAUserName & EmailSuffix
+        FromEmail = FaUserName & EmailSuffix
 
 
         If NextLevel > 7 Then
@@ -657,10 +657,10 @@ Public Function SubmitSignOff(GroupIDx As Long, SignOffLevel As String, SignOffD
     '********************************************************
     Emailx = Replace(Emailx, "'", "''")
     subjectx = Replace(subjectx, "'", "''")
-    If FAUserName = "ytj" Then
+    If FaUserName = "ytj" Then
         Call SendServerEmail(ToEmail, CcEmailX, subjectx, Emailx, "yjackson@fleetadvantage.com")
     Else
-        Call SendServerEmail(ToEmail, CcEmailX, subjectx, Emailx, FAUserName & "@fleetadvantage.com")
+        Call SendServerEmail(ToEmail, CcEmailX, subjectx, Emailx, FaUserName & "@fleetadvantage.com")
     End If
 End Function
 
@@ -699,21 +699,21 @@ Public Function GroupSignOffCheck(GroupIDx As Long, SignOffLevel As String, Opti
         ' If InvoicePaid <> "Y" Then  TaskMsg = TaskMsg & "<li>Open Invoices: " & InvoicePaid & "</li>"
 
     Case "SignOff5"
-        If RST!PdRent <> "Y" Then TaskMsg = TaskMsg & "<li>PD Rent Missing: " & RST!PdRent & " entered </li>"
+        If RST!PDRent <> "Y" Then TaskMsg = TaskMsg & "<li>PD Rent Missing: " & RST!PDRent & " entered </li>"
         If RST!RentSCH <> "Y" Then TaskMsg = TaskMsg & "<li>Sch Rent Missing: " & RST!RentSCH & " entered </li>"
         If RST!RentExtd <> "Y" Then TaskMsg = TaskMsg & "<li>Extended Rent Missing: " & RST!RentExtd & " entered </li>"
         If RST!RVSales <> "Y" Then TaskMsg = TaskMsg & "<li>Sch Residual Missing: " & RST!RVSales & " entered </li>"
 
     Case "SignOff6"
         If RST![Sch-In] <> "Y" Then TaskMsg = TaskMsg & "<li>Sch-In date Not set</li>"
-        If RST!RentSynd <> "Y" Then TaskMsg = TaskMsg & "<li>Synd Rent Missing on: " & RST!RentSynd & " units</li>"
+        If RST!RentSYND <> "Y" Then TaskMsg = TaskMsg & "<li>Synd Rent Missing on: " & RST!RentSYND & " units</li>"
         If RST![RAL-In] <> "Y" Then TaskMsg = TaskMsg & "<li>RAL date Not set</li>"
         If RST!Billto <> "Y" Then TaskMsg = TaskMsg & "<li>Bill To Not set</li>"
         If RST!OPSPkg <> "Y" Then TaskMsg = TaskMsg & "<li>OPS Package Received Date Not set</li>"
 
     Case "SignOff7"
         If RST!PDStart <> "Y" Then TaskMsg = TaskMsg & "<li>Per-Diem Start Date Missing: " & RST!PDStart & " entered</li>"
-        If RST!RentSynd <> "Y" Then TaskMsg = TaskMsg & "<li>Synd Rent Missing on: " & RST!RentSynd & " units</li>"
+        If RST!RentSYND <> "Y" Then TaskMsg = TaskMsg & "<li>Synd Rent Missing on: " & RST!RentSYND & " units</li>"
         If RST!RVSynd <> "Y" Then TaskMsg = TaskMsg & "<li>Synd Resiudal Missing: " & RST!RVSynd & " entered </li>"
 
     Case "SignOff8"
@@ -728,7 +728,7 @@ Public Function GroupSignOffCheck(GroupIDx As Long, SignOffLevel As String, Opti
         POSet = Nz(DLookup("POSentDt", "schgrp", "sGrpID=" & GroupIDx), 0)
         If POSet = 0 Then TaskMsg = TaskMsg & "<li>P.O. date not entered</li>"
         If SpecSet > 0 Then TaskMsg = TaskMsg & "<li>Spec Incomplete: " & SpecSet & "</li>"
-        If RST!PdRent <> "Y" Then TaskMsg = TaskMsg & "<li>PD Rent Missing: " & RST!PdRent & " entered </li>"
+        If RST!PDRent <> "Y" Then TaskMsg = TaskMsg & "<li>PD Rent Missing: " & RST!PDRent & " entered </li>"
         If RST!RentSCH <> "Y" Then TaskMsg = TaskMsg & "<li>Sch Rent Missing: " & RST!RentSCH & " entered </li>"
         If RST!RentExtd <> "Y" Then TaskMsg = TaskMsg & "<li>Extended Rent Missing: " & RST!RentExtd & " entered </li>"
         If RST!RVSales <> "Y" Then TaskMsg = TaskMsg & "<li>Sch Residual Missing: " & RST!RVSales & " entered </li>"
@@ -737,7 +737,7 @@ Public Function GroupSignOffCheck(GroupIDx As Long, SignOffLevel As String, Opti
         If RST!Billto <> "Y" Then TaskMsg = TaskMsg & "<li>Bill To Not set</li>"
         If RST!OPSPkg <> "Y" Then TaskMsg = TaskMsg & "<li>OPS Package Received Date Not set</li>"
         If RST!PDStart <> "Y" Then TaskMsg = TaskMsg & "<li>Per-Diem Start Date Missing on : " & RST!PDStart & " units</li>"
-        If RST!RentSynd <> "Y" Then TaskMsg = TaskMsg & "<li>Synd Rent Missing on: " & RST!RentSynd & " units</li>"
+        If RST!RentSYND <> "Y" Then TaskMsg = TaskMsg & "<li>Synd Rent Missing on: " & RST!RentSYND & " units</li>"
         If RST!RVSynd <> "Y" Then TaskMsg = TaskMsg & "<li>Synd Resiudal Missing on: " & RST!RVSynd & " units </li>"
     End Select
     RST.close

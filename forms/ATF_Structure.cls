@@ -72,7 +72,7 @@ Private Sub Form_Load()
 End Sub
 Private Sub Form_Current()
     Call Refresh_My_Buttons
-    If FAUserName = "ljohnson" Then
+    If FaUserName = "ljohnson" Then
         Dim Ccrl As Control
         For Each Ccrl In Me.Controls
             If Me(Ccrl.Name).Tag = "Spec" Then

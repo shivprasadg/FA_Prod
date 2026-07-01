@@ -54,7 +54,7 @@ Public Function MakePaymentAdjustment(lGroupID As Long)
         msg1 = msg1 & HSpaces(5) & "Group: <B>" & RST!Grp & "</B> "
         msg1 = msg1 & HSpaces(5) & "Total Units changed: <B>" & RST.RecordCount & "</B><Br />"
         msg1 = msg1 & HSpaces(5) & "Date changes made: <B> " & Date & "</B> "
-        msg1 = msg1 & HSpaces(5) & "Changes made by: <B>By Atlaas Core</B> (<i>not " & FAUserName & "</i>) :)<Br />"
+        msg1 = msg1 & HSpaces(5) & "Changes made by: <B>By Atlaas Core</B> (<i>not " & FaUserName & "</i>) :)<Br />"
         msg1 = msg1 & "<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=2>"
         msg1 = msg1 & "<TR ALIGN=""Center"", bgcolor=""Navy"">"
         msg1 = msg1 & "<TH>LPAF Cost</TH>"

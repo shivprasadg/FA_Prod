@@ -243,7 +243,7 @@ Public Sub MakePAI(iSchID As Long)
         rowIndex = rowIndex + 1
 
         faSchText = "Sch:" & Nz(rsDetail!Schedule, "") & vbCrLf & _
-            "(Grp " & Nz(rsDetail!groupNo, "") & ")" & vbCrLf & _
+            "(Grp " & Nz(rsDetail!GroupNo, "") & ")" & vbCrLf & _
             Nz(rsDetail!UnitsInGroup, 0) & _
             IIf(Nz(rsDetail!UnitsInGroup, 0) = 1, " unit", " units")
 
@@ -335,11 +335,11 @@ Public Sub MakePAIOLD(iSchID As Long)
     SQLz = SQLz & " INTO PAITemp1 From PAIBase WHERE SchID=" & iSchID & ";"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
-    DoCmd.OutputTo acOutputReport, "PAIReport", acFormatPDF, "C:\FAAS\" & FAUserName & "\temp\PAIReport.pdf"
+    DoCmd.OutputTo acOutputReport, "PAIReport", acFormatPDF, "C:\FAAS\" & FaUserName & "\temp\PAIReport.pdf"
    'DoCmd.OutputTo acOutputReport, "PAIReport", acFormatRTF, "C:\FAAS\" & FAUserName & "\temp\PAIReport.rtf"
     DoCmd.SetWarnings True
     Set WordApp = CreateObject("Word.Application")
-    Set WordDoc = WordApp.Documents.Add("C:\FAAS\" & FAUserName & "\temp\PAIReport.pdf")
+    Set WordDoc = WordApp.Documents.Add("C:\FAAS\" & FaUserName & "\temp\PAIReport.pdf")
 
     WordApp.Visible = True
     WordDoc.Activate
@@ -383,10 +383,10 @@ Public Sub MakeRAL()
         DoCmd.SetWarnings True
     End If
     DoCmd.SetWarnings False
-    DoCmd.OutputTo acOutputReport, "RALReport", acFormatPDF, "C:\FAAS\" & FAUserName & "\temp\RALReport.pdf"
+    DoCmd.OutputTo acOutputReport, "RALReport", acFormatPDF, "C:\FAAS\" & FaUserName & "\temp\RALReport.pdf"
     DoCmd.SetWarnings True
     Set WordApp = CreateObject("Word.Application")
-    Set WordDoc = WordApp.Documents.Add("C:\FAAS\" & FAUserName & "\temp\RALReport.pdf")
+    Set WordDoc = WordApp.Documents.Add("C:\FAAS\" & FaUserName & "\temp\RALReport.pdf")
     WordApp.Visible = True
     RST.close
     Set RST = Nothing
@@ -395,10 +395,10 @@ Public Sub MakeRALAttachment()
 
     Dim SQLz, TempStr As String
     DoCmd.SetWarnings False
-    DoCmd.OutputTo acOutputReport, "RALAttachment", acFormatPDF, "C:\FAAS\" & FAUserName & "\temp\RALAttachment.pdf"
+    DoCmd.OutputTo acOutputReport, "RALAttachment", acFormatPDF, "C:\FAAS\" & FaUserName & "\temp\RALAttachment.pdf"
     DoCmd.SetWarnings True
     Set WordApp = CreateObject("Word.Application")
-    Set WordDoc = WordApp.Documents.Add("C:\FAAS\" & FAUserName & "\temp\RALAttachment.pdf")
+    Set WordDoc = WordApp.Documents.Add("C:\FAAS\" & FaUserName & "\temp\RALAttachment.pdf")
     WordApp.Visible = True
 End Sub
 Public Sub MakeRALAttachmentEXCEL(iSchID As Long)
@@ -416,7 +416,7 @@ Public Sub MakeRALAttachmentEXCEL(iSchID As Long)
     RST.MoveLast
     RST.MoveFirst
     On Error GoTo 0
-    Headerx = RST!CompanyName & " Schedule: " & RST!Schedule & " (" & RST!groupNo & ") Master Lease: " & RST!MLNo & ""
+    Headerx = RST!CompanyName & " Schedule: " & RST!Schedule & " (" & RST!GroupNo & ") Master Lease: " & RST!MLNo & ""
     GCount = RST.RecordCount
     Dim IsLastRpt As Boolean
     For i = 1 To GCount
@@ -453,7 +453,7 @@ Public Sub MakeRALAttachmentEXCEL(iSchID As Long)
         SQLz = SQLz & "WHERE SGrpID=" & RST!SGrpID & " Order By AssetID"
         If i = GCount Then IsLastRpt = True Else IsLastRpt = False
 
-        Call SendReport2Excel(SQLz, RST!groupNo, Headerx, False, XLS, , , i, IsLastRpt, , "C:\Faas\" & FAUserName & "\Temp\RALAttachment.xlsx")
+        Call SendReport2Excel(SQLz, RST!GroupNo, Headerx, False, XLS, , , i, IsLastRpt, , "C:\Faas\" & FaUserName & "\Temp\RALAttachment.xlsx")
         RST.MoveNext
     Next i
     RST.close
@@ -738,7 +738,7 @@ Public Function MakeTitleRequestLetter(iBankId As Long, RequestNum As Integer, O
             RST.MoveFirst
             For i = 1 To RST.RecordCount
                 SQLz = "INSERT INTO UnitTitleLog ( UnitRef, EntryReason,  UnitTitleLogDate,  EntryTypeId,  EntryReasonId,  ExpectedReturn,  UserID )"
-                SQLz = SQLz & "SELECT " & RST!UnitID & ", 'Sent Title Release Affidavit', #" & Date & "#, 2, 46, True, '" & FAUserName & "';"
+                SQLz = SQLz & "SELECT " & RST!UnitID & ", 'Sent Title Release Affidavit', #" & Date & "#, 2, 46, True, '" & FaUserName & "';"
                 DoCmd.SetWarnings False
                 DoCmd.RunSQL (SQLz)
                 DoCmd.SetWarnings True
@@ -748,10 +748,10 @@ Public Function MakeTitleRequestLetter(iBankId As Long, RequestNum As Integer, O
         DoCmd.close acReport, "TitleReleaseAffidavit"
         'DoCmd.OpenReport "TitleReleaseAffidavit", acViewPreview
         DoCmd.SetWarnings False
-        DoCmd.OutputTo acOutputReport, "TitleReleaseAffidavit", acFormatPDF, "C:\FAAS\" & FAUserName & "\temp\TitleReleaseAffidavit.pdf"
+        DoCmd.OutputTo acOutputReport, "TitleReleaseAffidavit", acFormatPDF, "C:\FAAS\" & FaUserName & "\temp\TitleReleaseAffidavit.pdf"
         DoCmd.SetWarnings True
         Set WordApp = CreateObject("Word.Application")
-        Set WordDoc = WordApp.Documents.Add("C:\FAAS\" & FAUserName & "\temp\TitleReleaseAffidavit.pdf")
+        Set WordDoc = WordApp.Documents.Add("C:\FAAS\" & FaUserName & "\temp\TitleReleaseAffidavit.pdf")
         WordApp.Visible = True
     End If
 
@@ -760,7 +760,7 @@ Public Function MakeTitleRequestLetter(iBankId As Long, RequestNum As Integer, O
         Dim FilePath As String
         DoCmd.close acReport, "TitleReleaseRequest"
         If SaveFile <> "" Then
-            folderPath = "C:\FAAS\" & FAUserName & "\temp\"
+            folderPath = "C:\FAAS\" & FaUserName & "\temp\"
             FilePath = folderPath & SaveFile & ".pdf"
             Call MessageUser("Update", "Making the Requested Report", "Saving " & SaveFile & ".pdf")
             DoCmd.SetWarnings False

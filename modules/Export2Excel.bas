@@ -1478,7 +1478,7 @@ Public Function SendReport2Excel(ByVal RSql As String, ByVal sTabName As String,
     Const xlCenter As Long = -4108
     Const xlBottom As Long = -4107
     SaveMe = (sFile <> "")
-    If sFile = "" Then sFile = "C:\Faas\" & FAUserName & "\Temp\ExcelReport.xlsx"
+    If sFile = "" Then sFile = "C:\Faas\" & FaUserName & "\Temp\ExcelReport.xlsx"
     Call IfExcelOpenCloseIt(sFile)
     If IsOpen("MessagePopUp") = True Then MessageUser "Update", "Getting Ready", "Setting EXCEL Data..."
     Set rs = CurrentDb.OpenRecordset(RSql, dbOpenSnapshot)
@@ -2022,7 +2022,7 @@ Public Function SendReport2Excel(ByVal RSql As String, ByVal sTabName As String,
     If GroupReports = 0 Or LastReport = True Then xlApp.Visible = True
     If SaveMe = True Then
         xlApp.DisplayAlerts = False
-        If Not sFile Like "*XLSX*" Then sFile = "C:\Faas\" & FAUserName & "\Temp\" & sFile & ".xlsx"
+        If Not sFile Like "*XLSX*" Then sFile = "C:\Faas\" & FaUserName & "\Temp\" & sFile & ".xlsx"
         xlWBk.SaveAs fileName:=sFile
         xlApp.DisplayAlerts = True
     End If
@@ -2117,7 +2117,7 @@ Function MakeDocsReport(Optional formName As String)
                     "|AD,$E|AH,$E|AL,$E|AP,$E|AT,$E|AX,$E" & _
                     "|BB,$E|BF,$E|BJ,$E|BN,$E|BR,$E|BV,$E|BZ,$E" & _
                     "|CD,$E|CH,$E|CL,$E|CP,$E|CS,$E|CU,TC|CY,BC|DG,$E|"
-    FormatExcel "ScheduleUnitDocs4", "C:\Faas\" & FAUserName & "\Temp\ScheduleUnitDocs4.xlsx", "Unit_Docs", , "" & XLS & "", Countx, "" & TitleX & "", True
+    FormatExcel "ScheduleUnitDocs4", "C:\Faas\" & FaUserName & "\Temp\ScheduleUnitDocs4.xlsx", "Unit_Docs", , "" & XLS & "", Countx, "" & TitleX & "", True
     'XLS = Col letter,Format Option
     ' first set = number of columns
     'Format Options Type Command
@@ -2213,7 +2213,7 @@ Function MakeOPSReport(Optional ClientNamex As String, Optional SchIdi As Long, 
         If DCount("AssetID", "Cost_ChildParts", "SchID=" & ScheduleX & " And PartClass Like '*Temp*'") < 1 Then XLS = XLS & "Q,ZZ|Q,ZZ|Q,ZZ|"
     End If
     Set RST = Nothing
-    SendReport2Excel SQLz, "OPS Report", TitleX, True, XLS, , , , , , "C:\FAAS\" & FAUserName & "\Temp\OPSReport.xlsx"
+    SendReport2Excel SQLz, "OPS Report", TitleX, True, XLS, , , , , , "C:\FAAS\" & FaUserName & "\Temp\OPSReport.xlsx"
     MessageUser ("Close")
 End Function
 
@@ -2225,7 +2225,7 @@ Function MakeScheduleUnitSummary(ClientIDx As Integer, SchIDx As Integer, Schedu
     SQLz = "Select * From ScheduleUnitSummary Where Schid=" & SchIDx & ";"
     XLS = "|A,DD|A,BC|B,BC|H,$E|I,$E|K,BC|M,BC|M,W15|N,W15|O,$E|O,W20|P,BC|P,W10" & _
                     "|Q,$E|Q,W20|R,BC|R,W10|S,$E|S,W15|T,$E|T,W15|U,HH|V,HH|W,HH|"
-    SendReport2Excel SQLz, "Summary", "Schedule-Unit Summary: " & ClientX & " Schedule " & ScheduleX & " Units: " & Countx, True, XLS, Countx, , , , , "C:\FAAS\" & FAUserName & "\Temp\ScheduleUnitSummary.xlsx"
+    SendReport2Excel SQLz, "Summary", "Schedule-Unit Summary: " & ClientX & " Schedule " & ScheduleX & " Units: " & Countx, True, XLS, Countx, , , , , "C:\FAAS\" & FaUserName & "\Temp\ScheduleUnitSummary.xlsx"
 End Function
 Public Function IfExcelOpenCloseIt(FileNameX As String)
     Dim oApp   As Object

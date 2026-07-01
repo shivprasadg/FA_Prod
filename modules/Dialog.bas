@@ -379,31 +379,31 @@ Private Function UnEscStr(ByRef str As Variant, toHtml As Boolean) As String
         escValsHtml(10) = vbNullString ' Vertical tab
     End If
 
-    Dim start As Long, pos As Long, i As Long, u As Long
+    Dim Start As Long, pos As Long, i As Long, u As Long
     Dim c As String, v As String
     Dim L As Integer
-    start = 1
+    Start = 1
     ' We'll search for each '\' and
     Do
-        pos = InStr(start, str, "\", vbBinaryCompare)
+        pos = InStr(Start, str, "\", vbBinaryCompare)
 
         ' No '\' found, we're finished with this string
         If pos = 0 Then
-            If start = 1 Then
+            If Start = 1 Then
                 ' There was nothing to un-escape at all in the original
                 ' string, so we just return it verbatim.
                 UnEscStr = str
             Else
                 ' Append the final bit of the original string to the result
-                UnEscStr = UnEscStr & Mid$(str, start)
+                UnEscStr = UnEscStr & Mid$(str, Start)
             End If
             Exit Do
         End If
 
         ' Append the bit of string we found before the escaped sequence
-        UnEscStr = UnEscStr & Mid$(str, start, pos - start)
+        UnEscStr = UnEscStr & Mid$(str, Start, pos - Start)
         pos = pos + 1
-        start = pos + 1
+        Start = pos + 1
         c = Mid$(str, pos, 1)
         ' Search the escaped character in our list of valid ones
         i = InStr(1, "'\0abfnrtv", c, vbBinaryCompare)
@@ -423,7 +423,7 @@ Private Function UnEscStr(ByRef str As Variant, toHtml As Boolean) As String
                     ' Get the whole character code point
                     u = -1
                     On Error Resume Next
-                    u = CLng("&H" & Mid$(str, start, 8))
+                    u = CLng("&H" & Mid$(str, Start, 8))
                     On Error GoTo 0
                     If u = -1 Then
                         ' Conversion failed, probably \Uxxx was not a unicode escape sequence but a path, like \Users
@@ -446,14 +446,14 @@ Private Function UnEscStr(ByRef str As Variant, toHtml As Boolean) As String
                             End If
                         End If
                         UnEscStr = UnEscStr & v
-                        start = start + 8
+                        Start = Start + 8
                     End If
 
                 Case 117 ' u: Standard unicode point that fits into UTF-16
                     u = -1
                     On Error Resume Next
                     ' Must have exactly 4 digits
-                    u = CLng("&H" & Mid$(str, start, 4))
+                    u = CLng("&H" & Mid$(str, Start, 4))
                     On Error GoTo 0
                     If u = -1 Then
                         ' Conversion failed, probably \Uxxx was not a unicode escape sequence but a path, like \Users
@@ -462,20 +462,20 @@ Private Function UnEscStr(ByRef str As Variant, toHtml As Boolean) As String
                     Else
                         If toHtml Then v = "&#x" & Hex$(u) & ";" Else v = ChrW$(u)
                         UnEscStr = UnEscStr & v
-                        start = start + 4
+                        Start = Start + 4
                     End If
 
                 Case 120 ' x: Standard unicode point that fits into UTF-16
                     ' Variable length, 1 to 4 digits
-                    pos = start: L = 0
+                    pos = Start: L = 0
                     Do While InStr(1, "0123456789ABCDEFabcdef", Mid$(str, pos, 1), vbBinaryCompare) > 0 And (L < 4)
                         L = L + 1
                         pos = pos + 1
                     Loop
-                    u = CLng("&H" & Mid$(str, start, L))
+                    u = CLng("&H" & Mid$(str, Start, L))
                     If toHtml Then v = "&#x" & Hex$(u) & ";" Else v = ChrW$(u)
                     UnEscStr = UnEscStr & v
-                    start = start + L
+                    Start = Start + L
 
                 Case Else
                     ' Unknown escape sequence, just leave it as is in the result

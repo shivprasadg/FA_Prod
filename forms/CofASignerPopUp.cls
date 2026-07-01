@@ -22,7 +22,7 @@ Private Sub CofaSignCbo_Click()
     If Committ = vbNo Then
         Exit Sub
     Else
-        SQLz = "UPDATE Units SET Units.CofASigner = " & Me.CofaSignCbo.Column(0) & " WHERE Units.GroupREF=" & Me.groupID & ";"
+        SQLz = "UPDATE Units SET Units.CofASigner = " & Me.CofaSignCbo.Column(0) & " WHERE Units.GroupREF=" & Me.GroupID & ";"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True
@@ -47,7 +47,7 @@ Private Sub DeliveryAsAccepted_Click()
             SQLz = "UPDATE Units SET UnitAcceptDate = UnitActualDelDate " & _
                    "WHERE NOT UnitActualDelDate IS Null " & _
                    "AND UnitAcceptDate Is Null " & _
-                   "AND Units.GroupREF=" & Me.groupID & ";"
+                   "AND Units.GroupREF=" & Me.GroupID & ";"
 
     '       DoCmd.SetWarnings False
             DoCmd.RunSQL (SQLz)
@@ -87,7 +87,7 @@ Private Sub MakeCofA_Click()
         SQLz = "UPDATE Units SET UnitAcceptDate = UnitActualDelDate " & _
             "WHERE NOT UnitActualDelDate Is Null " & _
             "AND UnitActualDelDate Is Null " & _
-            "AND Units.GroupREF=" & Me.groupID & ";"
+            "AND Units.GroupREF=" & Me.GroupID & ";"
         DoCmd.SetWarnings False
         DoCmd.RunSQL (SQLz)
         DoCmd.SetWarnings True

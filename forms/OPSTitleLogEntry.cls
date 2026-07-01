@@ -81,7 +81,7 @@ Private Sub SaveMe_Click()
         ResposeX = Dialog.RichBox(msg1, vbCustom + vbExclamation, AtlaasVersion, , , 0, 1, 0, 0, "Yes", "No")
         If ResposeX = vbBt1 Then ' Yes
             SQLz = "INSERT INTO UnitTitleLog (UnitRef,EntryTypeId,EntryReasonId,EntryReason,TitleNumber,TitleSt,UnitTitleLogDate,ExpectedReturn,UserID) "
-            SQLz = SQLz & "Select " & MatchingUnitID & "," & Me.EntryTypeID & "," & EntryReasonId & ",'" & Me.EntryReason & "','" & Me.TitleNumber & "','" & Me.TitleSt & "','" & Me.UnitTitleLogDate & "'," & ExpectedReturn & ",'" & FAUserName & "';"
+            SQLz = SQLz & "Select " & MatchingUnitID & "," & Me.EntryTypeID & "," & EntryReasonId & ",'" & Me.EntryReason & "','" & Me.TitleNumber & "','" & Me.TitleSt & "','" & Me.UnitTitleLogDate & "'," & ExpectedReturn & ",'" & FaUserName & "';"
             DoCmd.SetWarnings False
             DoCmd.RunSQL (SQLz)
             DoCmd.SetWarnings True

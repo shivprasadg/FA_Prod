@@ -56,7 +56,7 @@ Public Sub ClientList_Click()
     Me.GroupList.RowSource = ""
     Me.Units_List.RowSource = ""
     Me.SchID = Null
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.UnitID = Null
 '    Call Me.AuditManagerLog.Form.HideDetails
     Me.WorkingWith = Me.ClientList.Column(1)
@@ -71,7 +71,7 @@ Public Sub Leaselist_Click()
     Me.ScheduleList.RowSource = SQLz
     Call ClearAuditLogForm
     Me.SchID = Null
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.UnitID = Null
     Call Me.AuditManagerLog.Form.HideDetails
     Me.WorkingWith = Me.ClientList.Column(1) & " MLNo: " & LeaseList.Column(1)
@@ -82,7 +82,7 @@ End Sub
 
 Public Sub ScheduleList_Click()
     Me.SchID = Me.ScheduleList
-    Me.groupID = Null
+    Me.GroupID = Null
     Me.UnitID = Null
     Me.Units_List.RowSource = ""
     Call Me.AuditManagerLog.Form.HideDetails
@@ -121,7 +121,7 @@ End Sub
 Public Sub GroupList_Click()
     Me.UnitID = Null
     Call Me.AuditManagerLog.Form.HideDetails
-    Me.groupID = Me.GroupList.Column(0)
+    Me.GroupID = Me.GroupList.Column(0)
     SQLz = "SELECT SchID, sGrpID As GroupID, AssetID, UnitNum, VIN, [Status], Make, SubType, MYear, UnitGroup " & _
         "FROM vw_SixKeys " & _
         "WHERE sGrpID=" & Me.GroupList & " ORDER BY AssetID;"

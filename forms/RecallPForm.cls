@@ -15,7 +15,7 @@ Private Sub ExportRecallList_Click()
     SQLz = SQLz & " Order By NoticeDate Desc, LocationName ;"
     DoCmd.SetWarnings False
     DoCmd.RunSQL (SQLz)
-    FormatExcel "TempRecall", "C:\Faas\" & FAUserName & "\Temp\RecallExportReport", "Recall", "Close", , DCount("Company", "Recall Export"), Me.Client & " Recall " & Date & " - " & DCount("Company", "TempRecall") & " Units Listed", True
+    FormatExcel "TempRecall", "C:\Faas\" & FaUserName & "\Temp\RecallExportReport", "Recall", "Close", , DCount("Company", "Recall Export"), Me.Client & " Recall " & Date & " - " & DCount("Company", "TempRecall") & " Units Listed", True
     DoCmd.DeleteObject acTable, "TempRecall"
     DoCmd.SetWarnings True
     msg1 = msg1 & "<html><body><p style='color:Navy;font-family:Segoe UI;font-size:20px;'><b>Recall List</b></p>"
@@ -31,7 +31,7 @@ Private Sub ExportRecallList_Click()
     msg1 = msg1 & "<p style='font-family:Segoe UI;font-size:9px'><br/>[End Msg]"
     msg1 = msg1 & "Email Created: " & Date & " (via Fleet Advantage Data Manager).<br/><br />"
     msg1 = msg1 & "</body></html>"
-    Call SendEmailMessage("", "Re: " & Me.Client.Column(1) & " - Recall: " & Me.recallno.Column(1), msg1, False, True, False, "", , , "C:\Faas\" & FAUserName & "\Temp\RecallExportReport.xlsx")
+    Call SendEmailMessage("", "Re: " & Me.Client.Column(1) & " - Recall: " & Me.recallno.Column(1), msg1, False, True, False, "", , , "C:\Faas\" & FaUserName & "\Temp\RecallExportReport.xlsx")
 End Sub
 
 Private Sub client_Click()

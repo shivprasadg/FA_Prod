@@ -59,7 +59,7 @@ End Sub
 
 Public Sub Form_Current()
     SchIDx = Me.SchID
-    GroupIDx = Me.groupID
+    GroupIDx = Me.GroupID
     Me.txtCurrent = Nz(Me.ID, 0)
 End Sub
 Public Function SetRecordSource(Optional WhereX As String)
@@ -127,7 +127,7 @@ Private Sub ClearSearchBoxes(Excludeme As String)
 End Sub
 
 Private Sub SendEmail_Click()
-Call SendATFEmail(Me.SchID, Nz(Me.groupID, 0), Me.txtCurrent)
+Call SendATFEmail(Me.SchID, Nz(Me.GroupID, 0), Me.txtCurrent)
 End Sub
 Public Sub SendATFEmail(SchIDx As Long, GroupIDx As Long, EventID As Long)
     Dim subjectx, ClientX, SQLz, SQLx As String

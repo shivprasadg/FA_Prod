@@ -120,32 +120,32 @@ End Function
 
 Function HCos(x As Double) As Double
 ' Hyperbolic Cosine
-  HCos = (EXP(x) + EXP(-x)) / 2
+  HCos = (Exp(x) + Exp(-x)) / 2
 End Function
 
 Function HCosec(x As Double) As Double
 ' Hyperbolic Cosecant = 1/HSin(X)
-  HCosec = 2 / (EXP(x) - EXP(-x))
+  HCosec = 2 / (Exp(x) - Exp(-x))
 End Function
 
 Function HCotan(x As Double) As Double
 ' Hyperbolic Cotangent = 1/HTan(X)
-  HCotan = (EXP(x) + EXP(-x)) / (EXP(x) - EXP(-x))
+  HCotan = (Exp(x) + Exp(-x)) / (Exp(x) - Exp(-x))
 End Function
 
 Function HSec(x As Double) As Double
 ' Hyperbolic Secant = 1/HCos(X)
-  HSec = 2 / (EXP(x) + EXP(-x))
+  HSec = 2 / (Exp(x) + Exp(-x))
 End Function
 
 Function HSin(x As Double) As Double
 ' Hyperbolic Sine
-  HSin = (EXP(x) - EXP(-x)) / 2
+  HSin = (Exp(x) - Exp(-x)) / 2
 End Function
 
 Function HTan(x As Double) As Double
 ' Hyperbolic Tangent = HSin(X)/HCos(X)
-  HTan = (EXP(x) - EXP(-x)) / (EXP(x) + EXP(-x))
+  HTan = (Exp(x) - Exp(-x)) / (Exp(x) + Exp(-x))
 End Function
 
 Function pi() As Double

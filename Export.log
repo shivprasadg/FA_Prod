@@ -2,10 +2,10 @@
 Beginning Export of Source Files
 ATLAAS_Shiv_v1.accdb
 VCS Version 4.1.2
-Full Path: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb
-Export Folder: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\
+Full Path: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb
+Export Folder: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\
 Using Fast Save
-7/1/2026 1:44:56 AM
+7/1/2026 2:48:20 AM
 -------------------------------------
 Scanning for changes...
 No modified db connections found in this database.
@@ -23,6 +23,7 @@ No modified db properties found in this database.
 No modified imex specs found in this database.
 No modified tables found in this database.
 No modified queries found in this database.
+No modified forms found in this database.
 No modified macros found in this database.
 No modified reports found in this database.
 No modified table data found in this database.
@@ -32,76 +33,61 @@ No modified doc properties found in this database.
 No modified nav pane groups found in this database.
 No modified hidden attributes found in this database.
 -------------------------------------
-Exporting forms...            
-  Rmkt Menu
-    Sanitized in 0.034 seconds.
-[1]
--------------------------------------
-Done. (11.11 seconds)
+Done. (6.73 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Category                      Count     Seconds
 --------------------------------------------------
-Tables                        0         2.76
-Doc Properties                0         1.90
-Queries                       0         1.41
-DB Connections                0         1.02
-Forms                         1         0.82
-Reports                       0         0.47
-CommandBars                   0         0.38
-IMEX Specs                    0         0.32
-Shared Images                 0         0.31
-Hidden Attributes             0         0.27
-Table Data Macros             0         0.16
-DB Properties                 0         0.15
-Modules                       0         0.14
-VBE References                0         0.05
-Relations                     0         0.05
-Nav Pane Groups               0         0.03
-Proj Properties               0         0.01
+Tables                        0         1.37
+Doc Properties                0         1.32
+Queries                       0         0.86
+DB Connections                0         0.63
+Forms                         0         0.44
+CommandBars                   0         0.35
+Reports                       0         0.32
+Hidden Attributes             0         0.20
+Shared Images                 0         0.19
+IMEX Specs                    0         0.18
+Table Data Macros             0         0.12
+Modules                       0         0.09
+DB Properties                 0         0.08
+Relations                     0         0.03
+VBE References                0         0.02
+Nav Pane Groups               0         0.02
 Themes                        0         0.01
-Project                       0         0.01
-Table Data                    0         0.01
-VB Project                    0         0.01
+Proj Properties               0         0.00
+Table Data                    0         0.00
 Macros                        0         0.00
+Project                       0         0.00
+VB Project                    0         0.00
 VBE Forms                     0         0.00
 Saved Specs                   0         0.00
 --------------------------------------------------
-TOTALS:                       1         10.27
+TOTALS:                       0         6.26
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Clear Orphaned Files          20        3.59
-Scan DB Objects               1         3.05
-Check for linked table        1022      2.07
-Convert to JSON               5557      0.90
-Parse JSON                    1         0.48
-Get VBA Hash                  565       0.32
-Parse JSON ISO Date           4270      0.15
-Increment Progress            3836      0.09
-Console Updates               3         0.07
-Close Open Objects            1         0.06
-Compute SHA256                634       0.05
-App.SaveAsText()              1         0.04
-Sanitize File                 1         0.03
-Read File Bytes               1         0.02
+Clear Orphaned Files          20        2.45
+Scan DB Objects               1         2.07
+Check for linked table        1020      0.90
+Convert to JSON               5523      0.48
+Parse JSON                    1         0.30
+Get VBA Hash                  565       0.22
+Parse JSON ISO Date           4269      0.08
+Increment Progress            3833      0.05
+Compute SHA256                629       0.03
+Console Updates               3         0.03
+Close Open Objects            1         0.01
 Quick Count Objects           1         0.01
-Read File                     2         0.00
 Quick Count Files             1         0.00
-Write File                    2         0.00
-Read File DevMode             1         0.00
-Get File Property Hash        2         0.00
-Delete File                   3         0.00
-modFileAccess.VerifyPath      3         0.00
-Sanitize VBA Code             1         0.00
+Read File                     1         0.00
 modFileAccess.GetUncPath      6         0.00
-Get Modified Date             2         0.00
 --------------------------------------------------
-Other Operations                        0.16
+Other Operations                        0.08
 --------------------------------------------------
 
 

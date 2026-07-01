@@ -2,12 +2,12 @@
 Beginning build from Source
 ATLAAS_Shiv_v1.accdb
 VCS Version 4.1.2
-Full Path: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb
-Export Folder: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\
-6/29/2026 10:49:08 AM
+Full Path: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb
+Export Folder: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\
+7/1/2026 2:34:57 AM
 -------------------------------------
 Saving backup of original database...
-Saved as ATLAAS_Shiv_v1_VCSBackup.accdb.
+Saved as ATLAAS_Shiv_v1_VCSBackup1.accdb.
 Created blank database for import. (v12)
 Removing non built-in references...
   Removed DAO
@@ -425,6 +425,11 @@ Importing tables...
   NADAResults.json
   NAICScodes.json
   NewDekraInspections.json
+
+-------------------------------------
+ERROR: 3051 - The Microsoft Access database engine cannot open or write to the file 'Excel 12.0 Xml;HDR=YES;IMEX=2;ACCDB=YES;DATABASE=\\fa-poseidon\Atlaas\Inspections\NewDekraInspections.xlsx'. It is already opened exclusively by another user, or you need permission to view and write its data.
+Source: clsDbTableDef.ImportLinkedTable
+-------------------------------------
   OBC.json
   Open_Email_Tracking.json
   PerDeimSurrenderExceptions.json
@@ -991,27 +996,6 @@ Importing queries...
   DrawDowns_InvoicesChild_Open.bas
   DrawDowns_Invoices_Drawn.bas
   DrawDowns_Invoices_Open.bas
-  DrawDowns_Invoices_Open_Drawn.bas
-
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Source: .Unknown.LogUnhandledErrors
--------------------------------------
--------------------------------------
-ERROR: Import issue with 'DrawDowns_Invoices_Open_Drawn'
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Skipping import of 'DrawDowns_Invoices_Open_Drawn'. Your application may not run or complile.
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Build error in: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\queries\DrawDowns_Invoices_Open_Drawn.bas
-Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
--------------------------------------
   DrawDowns_MstLeases.bas
   DrawDowns_Schedules.bas
   DrawDowns_Units_Drawn.bas
@@ -1122,27 +1106,6 @@ Error 2467: The expression you entered refers to an object that is closed or doe
   FleetStudyImport_ExistingUnits.bas
   FleetStudyImport_Test.bas
   FleetStudyList.bas
-  FleetStudyNewVins.bas
-
-
--------------------------------------
-ERROR: Unhandled error, likely before `On Error` directive
-Source: .Unknown.LogUnhandledErrors
--------------------------------------
--------------------------------------
-ERROR: Import issue with 'FleetStudyNewVins'
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Skipping import of 'FleetStudyNewVins'. Your application may not run or complile.
-Source: modVCSUtility.LoadComponentFromText
--------------------------------------
-
--------------------------------------
-ERROR: Build error in: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\queries\FleetStudyNewVins.bas
-Error 2467: The expression you entered refers to an object that is closed or doesn't exist. Source: modImportExport.Build
--------------------------------------
   FleetStudyNewVinsBase.bas
   FleetStudyUnitNumMatch.bas
   FleetStudyUnitNum_NoMatch.bas
@@ -1728,7 +1691,7 @@ Error 2467: The expression you entered refers to an object that is closed or doe
   YREndDelq.bas
   YrVendorsq.bas
   ZipFips.bas
-[980]
+[978]
 -------------------------------------
 Importing forms...            
   AcctAuth.bas
@@ -2271,74 +2234,74 @@ Importing hidden attributes...
   hidden-attributes.json
 [1]
 -------------------------------------
-Done. (394.66 seconds)
+Done. (324.74 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Category                      Count     Seconds
 --------------------------------------------------
-Forms                         299       92.44
-Reports                       208       74.71
-DB Connections                1         73.74
-Queries                       980       73.37
-Tables                        511       58.73
-CommandBars                   10        4.85
-Modules                       58        4.43
-Shared Images                 52        2.42
-Doc Properties                1         1.53
-IMEX Specs                    17        1.01
-Relations                     7         0.52
-Hidden Attributes             1         0.47
-Macros                        3         0.22
-DB Properties                 1         0.18
-VBE References                1         0.14
-Nav Pane Groups               1         0.09
-Themes                        1         0.05
-VB Project                    1         0.03
-Project                       1         0.03
+Tables                        511       75.46
+DB Connections                1         74.46
+Queries                       978       65.72
+Forms                         299       53.19
+Reports                       208       42.08
+Modules                       58        3.57
+CommandBars                   10        2.50
+Shared Images                 52        1.95
+Doc Properties                1         0.71
+IMEX Specs                    17        0.59
+Relations                     7         0.28
+Hidden Attributes             1         0.23
+Macros                        3         0.13
+DB Properties                 1         0.10
+VBE References                1         0.09
+Nav Pane Groups               1         0.06
+Themes                        1         0.03
+VB Project                    1         0.02
+Project                       1         0.01
 --------------------------------------------------
-TOTALS:                       2154      388.98
+TOTALS:                       2152      321.16
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-App.LoadFromText()            1490      140.43
-Read File                     1670      47.52
-Read File Bytes               3191      38.27
+App.LoadFromText()            1488      90.11
+Read File                     1670      36.90
+Read File Bytes               3188      32.76
 modVCSUtility.LoadComponentFr 
-omText                        1490      14.32
-Building CommandBar           10        4.08
-Get File List                 18        3.70
-Get File Property Hash        2152      2.20
-Save Stream to File           1490      2.10
-Delete File                   3508      2.01
-Increment Progress            2154      1.48
-Parse JSON                    742       1.47
-Import VBE Module             58        1.40
-modFileAccess.VerifyPath      3507      1.13
-Write File                    527       1.00
-Convert to JSON               4488      0.77
-Compute SHA256                4368      0.68
-Get VBA Hash                  565       0.66
-Load Stream from File         1490      0.65
-Get Modified Date             5029      0.53
-Enc. utf-8 as utf-16          1490      0.36
-Parse JSON ISO Date           4269      0.27
-Create new database           1         0.24
-Copy Stream                   1490      0.23
-Console Updates               28        0.22
-Scan Source Files             1         0.15
-Get Unused Resource Name      52        0.10
-Add GUID References           18        0.06
-Parse VBA Module              58        0.06
-Clear References              1         0.02
+omText                        1488      8.28
+Get File List                 18        2.27
+Building CommandBar           10        1.92
+Get File Property Hash        2151      1.52
+Save Stream to File           1488      1.41
+Delete File                   3504      1.36
+Import VBE Module             58        1.09
+Increment Progress            2152      1.07
+Parse JSON                    742       0.84
+modFileAccess.VerifyPath      3503      0.72
+Write File                    527       0.54
+Load Stream from File         1488      0.52
+Compute SHA256                4366      0.41
+Convert to JSON               4488      0.39
+Get Modified Date             5026      0.36
+Get VBA Hash                  565       0.35
+Enc. utf-8 as utf-16          1488      0.27
+Create new database           1         0.23
+Parse JSON ISO Date           4270      0.13
+Console Updates               15        0.13
+Copy Stream                   1488      0.12
+Scan Source Files             1         0.08
+Get Unused Resource Name      52        0.07
+Add GUID References           18        0.04
+Parse VBA Module              58        0.04
+Clear References              1         0.01
 App.SaveAsText()              1         0.00
 Check for linked table        1         0.00
 modFileAccess.GetUncPath      3         0.00
 --------------------------------------------------
-Other Operations                        128.56
+Other Operations                        140.78
 --------------------------------------------------
 
 

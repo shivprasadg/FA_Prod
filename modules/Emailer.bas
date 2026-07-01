@@ -175,7 +175,7 @@ On Error GoTo HandleError    ' Check for other Errors
                             GoTo SendMessage_Done
                         End If
                         objWord.WindowState = wdWindowStateMinimize                                     'minimize word application so user does not see mail being created
-                        Set objrange = objdoc.Range(start:=0, End:=0)                                   'goto start of message again
+                        Set objrange = objdoc.Range(Start:=0, End:=0)                                   'goto start of message again
                         objrange.InsertBefore vbCrLf
                         objdoc.InlineShapes.AddPicture fileName:=varImagePath, LinkToFile:=False, SaveWithDocument:=True, Range:=objrange
                     End If
@@ -185,14 +185,14 @@ On Error GoTo HandleError    ' Check for other Errors
             If Not IsMissing(varHtmlFooter) Then
                 If varHtmlFooter <> "" And Not IsNull(varHtmlFooter) Then
                     If Dir(varHtmlFooter, vbHidden + vbSystem + vbReadOnly + vbDirectory) <> "" Then
-                        Set objrange = objdoc.Range(start:=0, End:=0)                                   'goto start of message
+                        Set objrange = objdoc.Range(Start:=0, End:=0)                                   'goto start of message
                         objrange.InsertFile varHtmlFooter, , , False, False   'insert the html from the external file
                     End If
                 End If
             End If
 
             strTempFile = Environ("temp") & Format(Now(), "yyyymmddhhnnss") & ".htm"        'generate temp filename
-            Set objrange = objdoc.Range(start:=0, End:=0)                                   'goto start of message again
+            Set objrange = objdoc.Range(Start:=0, End:=0)                                   'goto start of message again
             CreateTextFile strTempFile, strBody                                             'save the bodytext as a temporary htm file
             objrange.InsertFile strTempFile, , , False, False                               'insert the htm file into the body of the message
             Kill strTempFile                                                                'delete temp file
@@ -535,8 +535,8 @@ Public Function SendPowerShellEmail(Emailto, subjectx, bodyx As String, Optional
     Ps1 = Ps1 & "-Credential $Credentials "
     Ps1 = Ps1 & "-Port 587 "
 
-    Call WriteStringToFile("C:\Faas\" & FAUserName & "\Temp\PSEmail.ps1", Ps1)
-    Call Shell("powershell -executionpolicy remotesigned -file ""C:\Faas\" & FAUserName & "\Temp\PSEmail.ps1")
+    Call WriteStringToFile("C:\Faas\" & FaUserName & "\Temp\PSEmail.ps1", Ps1)
+    Call Shell("powershell -executionpolicy remotesigned -file ""C:\Faas\" & FaUserName & "\Temp\PSEmail.ps1")
     'Powershell's Email Parameters are below
     '[-To] <String[]>
     '[-Subject] <String>

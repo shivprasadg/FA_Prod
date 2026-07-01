@@ -25,7 +25,7 @@ Private Sub Form_Current()
     On Error GoTo FixMe
     Me.txtCurrent = Me.AssetID
     Me.ScheduleIDx = Me.SchGrpList.Column(0)
-    Me.GroupIDx = Me.groupID
+    Me.GroupIDx = Me.GroupID
     'dd = DLookup("MLNO", "vw_SixKeys", "SchID=" & Me.SchID)
     OpenExitTxt = "Open EXIT Options: "
     If Me.LeaseTypeToShow = 1 Then OpenExitTxt = "Open EXIT Options: " Else OpenExitTxt = "Select an Options"
@@ -150,7 +150,7 @@ Private Sub ExitOptionsHistory_Click()
     Form_EXITOptions.Leaselist_Click
     Forms!ExitOptions.ScheduleList = SchIDz
     Form_EXITOptions.ScheduleList_Click
-    Forms!ExitOptions.GroupList = Me.groupID
+    Forms!ExitOptions.GroupList = Me.GroupID
     Form_EXITOptions.GroupList_Click
     Form_EXITOptions.History_Click
     MessageUser "Close"
@@ -177,7 +177,7 @@ End Sub
 
 Private Sub ScheduleGroup_DblClick(Cancel As Integer)
     DoCmd.close acForm, "GroupForm"
-    DoCmd.OpenForm "GroupForm", , , "SchID=" & Me.SchID, , , Me.groupID
+    DoCmd.OpenForm "GroupForm", , , "SchID=" & Me.SchID, , , Me.GroupID
     Forms!GroupForm.TabControl.Value = 8
 End Sub
 
@@ -706,14 +706,14 @@ End Function
 Private Sub ModifyExch_Click()
        If Not FAUserAccessGroup Like "*TMT*" Or Not FAUserAccessLevel > 50 Then Exit Sub
        If CheckStatus = False Then Exit Sub
-    Call MakeExitOptionUnit(Me.UnitID, Me.SchID, Me.groupID, "EXchangeIT")
+    Call MakeExitOptionUnit(Me.UnitID, Me.SchID, Me.GroupID, "EXchangeIT")
 End Sub
 
 Private Sub ModifyEXTD_Click()
     If Not FAUserAccessGroup Like "*TMT*" Or Not FAUserAccessLevel > 50 Then Exit Sub
     If CheckStatus = False Then Exit Sub
     If IsNull(Me.UnitID) Then Exit Sub
-    Call MakeExitOptionUnit(Me.UnitID, Me.SchID, Me.groupID, "Extend")
+    Call MakeExitOptionUnit(Me.UnitID, Me.SchID, Me.GroupID, "Extend")
 End Sub
 
 Private Sub ModifyTERM_Click()
@@ -723,7 +723,7 @@ Private Sub ModifyTERM_Click()
         Exit Sub
     End If
     If IsNull(Me.UnitID) Then Exit Sub
-    Call MakeExitOptionUnit(Me.UnitID, Me.SchID, Me.groupID, "Terminate")
+    Call MakeExitOptionUnit(Me.UnitID, Me.SchID, Me.GroupID, "Terminate")
 End Sub
 
 Private Sub ModifyHIST_Click()
@@ -734,7 +734,7 @@ Private Sub ModifyHIST_Click()
         MsgBox "AssetID: " & Me.UnitID & " does not have an EXIT Option applied nor any EXIT Option history." & vbNewLine & "To save time, the Exit Options History Form will NOT be loaded." & vbNewLine & vbNewLine & "If the Unit should have EXIT Option history, please create a Ticket with IT.", , "Unit has No History"
         Exit Sub
     End If
-    Call MakeExitOptionUnit(Me.UnitID, Me.SchID, Me.groupID, "History")
+    Call MakeExitOptionUnit(Me.UnitID, Me.SchID, Me.GroupID, "History")
 End Sub
 
 Private Sub NewUnit_DblClick(Cancel As Integer)

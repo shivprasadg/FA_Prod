@@ -99,7 +99,7 @@ MoveOn:
     End If
 AccessGranted:
     Me.UserName = FAUserFullName
-    Me.USERID = FAUserName & " (" & FAUserAccessLevel & ")"
+    Me.USERID = FaUserName & " (" & FAUserAccessLevel & ")"
     Me.Version = AtlaasVersion
     Me.Version.ControlTipText = CurrentDb.Name
     'check if user restricted

@@ -7,7 +7,7 @@ Dim RST As DAO.Recordset
 Dim SQLz   As String
 
 Private Sub AddDrawBtn_Click()
-Call LoadData("Add", Me.groupID)
+Call LoadData("Add", Me.GroupID)
 End Sub
 
 Private Sub CloseMe_Click()
@@ -68,12 +68,12 @@ Public Function LoadData(TaskType As String, IDtoUSEx As Long)
         Me.Client = RST!ClientShortName
         Me.Assignee = RST!BankShortName
         Me.FundDate = Nz(RST!FundedDate, "none")
-        Me.CreatedBy = FAUserName
+        Me.CreatedBy = FaUserName
         Me.CreatedOn = Date
         Me.ClientID = RST!ClientID
         Me.MLID = RST!MLID
         Me.SchID = RST!SchID
-        Me.groupID = RST!groupID
+        Me.GroupID = RST!GroupID
         Me.FAID = RST!FAID
         RST.close
         Set RST = Nothing
@@ -93,15 +93,15 @@ Public Function LoadData(TaskType As String, IDtoUSEx As Long)
         Me.ClientID.ControlSource = "clientID"
         Me.MLID.ControlSource = "MLID"
         Me.SchID.ControlSource = "SchID"
-        Me.groupID.ControlSource = "groupID"
+        Me.GroupID.ControlSource = "groupID"
         Me.FAID.ControlSource = "FAID"
         Me.DrawRequestNumber.ControlSource = "DrawRequestNumber"
         Me.DrawBankAccountNumber.ControlSource = "DrawBankAccountNumber"
         Me.DrawCreditLimit.ControlSource = "DrawCreditLimit"
         Me.DrawPaidOff.ControlSource = "DrawPaidOff"
         Me.Client = DLookup("ClientShNm", "Clients", "ClientID=" & Me.ClientID)
-        Me.FundDate = DLookup("FundDate", "SchGrp", "SGrpId=" & Me.groupID)
-        Me.Assignee = DLookup("Assignee_Bank", "SchGrp", "SGrpId=" & Me.groupID)
+        Me.FundDate = DLookup("FundDate", "SchGrp", "SGrpId=" & Me.GroupID)
+        Me.Assignee = DLookup("Assignee_Bank", "SchGrp", "SGrpId=" & Me.GroupID)
     End If
 
 End Function
@@ -139,7 +139,7 @@ Private Sub SaveMe_Click()
             SQLz = SQLz & ",'" & Me.DrawRequestNumber & "','" & Me.FAID & "'"
             SQLz = SQLz & "," & Nz(Me.DrawCreditLimit, 0) & ",'" & Me.CreatedOn & "'"
             SQLz = SQLz & ",'" & Me.CreatedBy & "'," & Me.DrawTypeId
-            SQLz = SQLz & "," & Me.groupID & "," & Me.SchID
+            SQLz = SQLz & "," & Me.GroupID & "," & Me.SchID
             SQLz = SQLz & ";"
             DoCmd.SetWarnings False
             DoCmd.RunSQL (SQLz)

@@ -156,7 +156,7 @@ Public Function CheckATFChanges(GroupIDx As Long, NoticeTypeX As String, Optiona
     For x = 1 To RST.RecordCount
         If RST!NewValue = "Final" Then Finalized = 1
         If RST!NewValue = "Projected" Then Finalized = 2
-        If RST!SysUser = FAUserName Or TestEvo = True Then
+        If RST!SysUser = FaUserName Or TestEvo = True Then
             If NoticeIDx < 12 And RST!FieldName <> "Vendor Paid" Then OldX = Format(RST!OldValue, "$#,#.#0") Else OldX = RST!OldValue
             If NoticeIDx < 12 And RST!FieldName <> "Vendor Paid" Then NewX = Format(RST!NewValue, "$#,#.#0") Else NewX = RST!NewValue
             If NoticeIDx = 14 Then
@@ -192,7 +192,7 @@ Prompt_For_Reason:
     If NoticeIDx = 12 And RST!FieldName = "Vendor Paid" Then
         Dim Rst2 As DAO.Recordset
         SQLx = ""
-        PDFfileName = "C:\Faas\" & FAUserName & "\Temp\ATF_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDInt) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDInt) & "-" & Format(Date, "mm-dd-yyyy") & ".pdf"
+        PDFfileName = "C:\Faas\" & FaUserName & "\Temp\ATF_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDInt) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDInt) & "-" & Format(Date, "mm-dd-yyyy") & ".pdf"
         SQLx = SQLx & "SELECT Count([UnitId]) AS Units, UnitInvoiceNum, Sum(UnitFinalCost) AS [AmountPaid], UnitVendorPytDate AS [DatePaid] "
         SQLx = SQLx & "From Units WHERE UnitId Between " & RST!UnitIDStart & " And " & RST!UnitIDEnd & " AND NOT UnitVendorPytDate Is Null GROUP BY UnitInvoiceNum, UnitVendorPytDate;"
         Set Rst2 = CurrentDb.OpenRecordset(SQLx, dbOpenSnapshot)
@@ -203,7 +203,7 @@ Prompt_For_Reason:
             InputText = InputText & "On " & CDate(Rst2!DatePaid) & ", " & Format(Rst2!AmountPaid, "$#,#.#0") & " was paid on Invoice # " & Rst2!UnitInvoiceNum & " for " & Rst2!UNITS & " units"
         Next
     End If
-    If Finalized = 1 Then PDFfileName = "C:\Faas\" & FAUserName & "\Temp\ATF_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDInt) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDInt) & "-" & Format(Date, "mm-dd-yyyy") & ".pdf"
+    If Finalized = 1 Then PDFfileName = "C:\Faas\" & FaUserName & "\Temp\ATF_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDInt) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDInt) & "-" & Format(Date, "mm-dd-yyyy") & ".pdf"
     'If a change did happened, was a reason already requested, if not, then ask
     If IsReasonNeeded(GroupIDx, NoticeTypeX, CDate(ReportDate)) <> "Yes" Then
         ReplyX = IsReasonNeeded(GroupIDx, NoticeTypeX, CDate(ReportDate)) & " *previous reason"
@@ -228,7 +228,7 @@ InsertReason:
             NoticeDescX = RST!ActionDesc
             If NoticeDescX Like "Changed Vendor Paid*" Then NoticeDescX = Replace(NoticeDescX, "Changed ", "")
             '******* Reason(s) Inserted Here
-            If TestEvo = False Then Call InsertChangeReason(RST!ActionDate, ReplyX, NoticeTypeX, RST!FieldName, RST!tableName, NoticeDescX & " (" & FormNameX & ")", Grpx, Schx, OldX, NewX, GroupIDx, SchIDInt, UnitIDInt)
+            If TestEvo = False Then Call InsertChangeReason(RST!ActionDate, ReplyX, NoticeTypeX, RST!FieldName, RST!TableName, NoticeDescX & " (" & FormNameX & ")", Grpx, Schx, OldX, NewX, GroupIDx, SchIDInt, UnitIDInt)
             '******* Reason(s) Inserted Here
             RST.MoveNext
         Next x
@@ -352,14 +352,14 @@ SendNotice:
     If UserStopped = True Then subjectx = subjectx & " USER STOPPED!"
     msg1 = Replace(msg1, "'", "''")
     If TestEvo = False Then
-        If FAUserName = "ytj" Then
+        If FaUserName = "ytj" Then
             Call SendServerEmail(EmailToList, EmailCcList, subjectx, msg1, "yjackson@fleetadvantage.com", PDFfileName)
         Else
-            Call SendServerEmail(EmailToList, EmailCcList, subjectx, msg1, FAUserName & "@fleetadvantage.com", PDFfileName)
+            Call SendServerEmail(EmailToList, EmailCcList, subjectx, msg1, FaUserName & "@fleetadvantage.com", PDFfileName)
         End If
     Else
         'Call SendEmailMessage(EmailToList, "ATLAAS Core Message: " & subjectx & "", msg1, False, True, False, EmailCcList)
-        Call SendServerEmail(EmailToList, EmailCcList, subjectx, msg1, FAUserName & "@fleetadvantage.com")
+        Call SendServerEmail(EmailToList, EmailCcList, subjectx, msg1, FaUserName & "@fleetadvantage.com")
     End If
     'Mark Email Sent in the notifaction log
     DoCmd.SetWarnings False
@@ -412,9 +412,9 @@ ExitMe:
     RST.close
     Set RST = Nothing
 End Function
-Public Function InsertChangeReason(ActionDate As Date, Reason, FieldGroup, FieldName, tableName, _
-                                   Action, groupNo, SchNo, OldValue, NewValue As String, _
-                                   groupID, SchID, UnitID As Long)
+Public Function InsertChangeReason(ActionDate As Date, Reason, FieldGroup, FieldName, TableName, _
+                                   Action, GroupNo, SchNo, OldValue, NewValue As String, _
+                                   GroupID, SchID, UnitID As Long)
 ' ATFID, ATFSchSpecID, ATFGroupSpecID, ATFUnitSpecID,
     Dim SQLy   As String
     SQLy = ""
@@ -439,11 +439,11 @@ Public Function InsertChangeReason(ActionDate As Date, Reason, FieldGroup, Field
     SQLy = SQLy & ",'" & Action & vbNewLine & Reason & "'"
     SQLy = SQLy & ",'" & FieldGroup & "'"
     SQLy = SQLy & ",'" & FieldName & "'"
-    SQLy = SQLy & ",'" & FAUserName & "'"
-    SQLy = SQLy & ",'" & tableName & "'"
+    SQLy = SQLy & ",'" & FaUserName & "'"
+    SQLy = SQLy & ",'" & TableName & "'"
     SQLy = SQLy & ",'" & Replace(Action, "'", "''") & "'"
-    SQLy = SQLy & ",'" & Replace(groupNo, "'", "''") & "'"
-    SQLy = SQLy & "," & groupID & ""
+    SQLy = SQLy & ",'" & Replace(GroupNo, "'", "''") & "'"
+    SQLy = SQLy & "," & GroupID & ""
     SQLy = SQLy & ",'" & Replace(SchNo, "'", "''") & "'"
     SQLy = SQLy & "," & SchID & ""
     SQLy = SQLy & ",'" & OldValue & "'"
@@ -467,7 +467,7 @@ Public Function MakeATFRevision(SchIDx As Long, ReasonX As String, CheckRevMadeT
     RST.MoveFirst
     RevNum = CInt(Nz(DMax("RevisionNum", "ATFScheduleRevisions", "SchID=" & SchIDx), 0)) + 1
     If CDate(Nz(DMax("RevisionDate", "ATFScheduleRevisions", "SchID =" & SchIDx), "1/1/1900")) = Date And CheckRevMadeToday = True _
-       And FAUserName = DLookup("SysUser", "ATFScheduleRevisions", "SchID=" & SchIDx & "AND RevisionNum=" & RevNum - 1 & "") Then
+       And FaUserName = DLookup("SysUser", "ATFScheduleRevisions", "SchID=" & SchIDx & "AND RevisionNum=" & RevNum - 1 & "") Then
         DoCmd.Beep
         Select Case AsktoReplace
         Case 1
@@ -483,7 +483,7 @@ Public Function MakeATFRevision(SchIDx As Long, ReasonX As String, CheckRevMadeT
         End Select
     End If
 PostRevision:
- SQLx = "SELECT " & RevNum & " As RevisionNum, #" & Date & "# as RevisionDate, '" & FAUserName & "' as SysUser, '" & ReasonX & "' as RevisionNote, "
+ SQLx = "SELECT " & RevNum & " As RevisionNum, #" & Date & "# as RevisionDate, '" & FaUserName & "' as SysUser, '" & ReasonX & "' as RevisionNote, "
     SQLx = SQLx & RST!SelectPart1
     'Get Fields
     For i = 1 To RST.RecordCount
@@ -881,7 +881,7 @@ SetReportNumber:
     If MakePDF = True Then
         Call MessageUser("Update", "Making ATF Report", "Creating 'New' PDF to attach...")
         Dim strFileName As String
-        strFileName = "C:\Faas\" & FAUserName & "\Temp\ATF_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDx) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDx) & "-" & Format(Date, "mm-dd-yy") & ".pdf"
+        strFileName = "C:\Faas\" & FaUserName & "\Temp\ATF_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDx) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDx) & "-" & Format(Date, "mm-dd-yy") & ".pdf"
         DoCmd.OutputTo acOutputReport, NewReport, acFormatPDF, strFileName, False
     End If
     If MakePDF = True And ImportNotice = True Then
@@ -927,7 +927,7 @@ SendNotice:
     msg1 = msg1 & "&emsp;&nbsp;&nbsp;Number of Groups: <B>" & DCount("SGrpSchID", "SchGrp", "SGrpSchId=" & SchIDx) & "</B><Br />"
     msg1 = msg1 & "&emsp;&nbsp;&nbsp;Total Units in ATF: <B>" & DCount("UnitID", "vw_SixKeys", "SchID=" & SchIDx) & "</B><Br />"
     msg1 = msg1 & "&emsp;&nbsp;&nbsp;Date of Import: <B> " & DLookup("ChangeDate", "ATF_ChangeReasons", "Action ='Schedule Import' AND Schid=" & SchIDx & "") & "</B><Br /> "
-    msg1 = msg1 & "&emsp;&nbsp;&nbsp;Import ran by: <B> " & FAUserName & "</B><Br />"
+    msg1 = msg1 & "&emsp;&nbsp;&nbsp;Import ran by: <B> " & FaUserName & "</B><Br />"
     msg1 = msg1 & "&emsp;&nbsp;&nbsp;Please see the attached PDF"
     msg1 = msg1 & "<p style='font-family:Segoe UI;font-size:8px'><br/>[End Msg] "
     msg1 = msg1 & "Email Created: " & Date & " (via ATLAAS Core Data Manager).<br/><br />"
@@ -1033,13 +1033,13 @@ End Sub
 Public Function SetSessionProfile(GroupIDx As Long, formName As String)
     If DLookup("MLOrig", "vw_FiveKeys", "GroupID=" & GroupIDx) <> "FA" Then Exit Function
     SessionInt = 0
-    SessionInt = Nz(DLookup("SessionID", "ATF_FAID_Sessions", "FormName ='" & formName & "' AND SysUser='" & FAUserName & "' AND isnull(Closed) AND GroupId=" & GroupIDx), 0)
+    SessionInt = Nz(DLookup("SessionID", "ATF_FAID_Sessions", "FormName ='" & formName & "' AND SysUser='" & FaUserName & "' AND isnull(Closed) AND GroupId=" & GroupIDx), 0)
     If SessionInt > 0 Then Exit Function
     Dim SQLz   As String
     SQLz = SQLz & "INSERT INTO ATF_FAID_Sessions (SchID, GroupID, sUnitCost, sChildCost, sGroupOEC, sSyndRent, sSchRent, sPdRent, sUTA, UnitsInGroup, FormName,  SysUser, Opened )"
     SQLz = SQLz & "SELECT OEC.SchID, OEC.GroupID, OEC.GroupOEC, OEC.GroupPartCost, nz(OEC.TotalGroupOEC,0), nz(OEC.SyndRent,0), nz(OEC.SchRent,0), nz(OEC.PerdiemRent,0), nz(UTASynd,0), OEC.Units "
     SQLz = SQLz & ",'" & formName & "' "
-    SQLz = SQLz & ",'" & FAUserName & "' "
+    SQLz = SQLz & ",'" & FaUserName & "' "
     SQLz = SQLz & ",'" & Now() & "' "
     SQLz = SQLz & "From vw_OEC_Rents_LRF_Cost As OEC WHERE OEC.GroupID=" & GroupIDx & ";"
     DoCmd.SetWarnings False
@@ -1069,7 +1069,7 @@ Public Function CompareSessionProfile(SessionX As Long, Item As String) As Strin
 
     Set TempColl = New Collection
     TempColl.Add Key:="WasUnitCost", Item:=RST!sUnitCost
-    TempColl.Add Key:="IsUnitCost", Item:=RST!Unitcost
+    TempColl.Add Key:="IsUnitCost", Item:=RST!UnitCost
     TempColl.Add Key:="CostChanged", Item:=RST!UnitCostChange
 
     TempColl.Add Key:="WasChildCost", Item:=RST!sChildCost
@@ -1085,7 +1085,7 @@ Public Function CompareSessionProfile(SessionX As Long, Item As String) As Strin
     TempColl.Add Key:="SchRentChanged", Item:=RST!SchRentChange
 
     TempColl.Add Key:="WasPdRent", Item:=RST!sPdRent
-    TempColl.Add Key:="IsPdRent", Item:=RST!PdRent
+    TempColl.Add Key:="IsPdRent", Item:=RST!PDRent
     TempColl.Add Key:="PdRentChanged", Item:=RST!PdRentChange
 
     TempColl.Add Key:="WasUnitsInGroup", Item:=RST!sUnitsInGroup
@@ -1108,7 +1108,7 @@ Public Function PrintEmailPO_Vendor(PONumberX As String, GroupIDx As Long)
     Dim FontSetting, msg1 As String
     Dim SchIDx As Integer
     SchIDx = DLookup("SchId", "vw_sixKeys", "SGrpId=" & GroupIDx)
-    FileToAttachment = "C:\Faas\" & FAUserName & "\Temp\PO_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDx) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDx) & "-" & Format(Date, "mm-dd-yy") & ".pdf"
+    FileToAttachment = "C:\Faas\" & FaUserName & "\Temp\PO_" & DLookup("ClientShortName", "vw_sixKeys", "Schid=" & SchIDx) & "_Sch_" & DLookup("Schedule", "vw_sixKeys", "Schid=" & SchIDx) & "-" & Format(Date, "mm-dd-yy") & ".pdf"
     DoCmd.OutputTo acOutputReport, "PO_VendorBoth", acFormatPDF, FileToAttachment, False
 
 SendNotice:
@@ -1122,7 +1122,7 @@ SendNotice:
     msg1 = msg1 & "&emsp;&nbsp;&nbsp;Number of Groups: <B>" & DCount("SGrpSchID", "SchGrp", "SGrpSchId=" & SchIDx) & "</B><Br />"
     msg1 = msg1 & "&emsp;&nbsp;&nbsp;Total Units in ATF: <B>" & DCount("UnitID", "vw_SixKeys", "SchID=" & SchIDx) & "</B><Br />"
     msg1 = msg1 & "&emsp;&nbsp;&nbsp;Date of Import: <B> " & DLookup("ChangeDate", "ATF_ChangeReasons", "Action ='Schedule Import' AND Schid=" & SchIDx & "") & "</B><Br /> "
-    msg1 = msg1 & "&emsp;&nbsp;&nbsp;Import ran by: <B> " & FAUserName & "</B><Br />"
+    msg1 = msg1 & "&emsp;&nbsp;&nbsp;Import ran by: <B> " & FaUserName & "</B><Br />"
     msg1 = msg1 & "&emsp;&nbsp;&nbsp;Please see the attached PDF"
     msg1 = msg1 & "<p style='font-family:Segoe UI;font-size:8px'><br/>[End Msg] "
     msg1 = msg1 & "Email Created: " & Date & " (via ATLAAS Core Data Manager).<br/><br />"

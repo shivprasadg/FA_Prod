@@ -28,7 +28,7 @@ Private Sub AddRevision_Click()
         Me.RevID = Nz(NextRevID(Me.Parent.SchID), 0)
         Me.Action = "ATF Note " & Me.RevID
         Me.ChangeDate = Now()
-        Me.SysUserCbo = FAUserName
+        Me.SysUserCbo = FaUserName
         Me.NewValue = "Note " & Me.RevID
         Me.FieldGroup = "Schedule Notes"
         Me.FieldName = "Rev-Notes"

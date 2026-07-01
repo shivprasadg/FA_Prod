@@ -49,7 +49,7 @@ End If
     SQLz = SQLz & ",Condition10"
     SQLz = SQLz & "," & Me.Parent.ClientID & ""
     SQLz = SQLz & ",VechicleType"
-    SQLz = SQLz & ",'" & FAUserName & "'"
+    SQLz = SQLz & ",'" & FaUserName & "'"
     SQLz = SQLz & ",'" & Date & "'"
     SQLz = SQLz & "FROM SUFConditions WHERE SUFCondID=1"
     DoCmd.SetWarnings False

@@ -20,7 +20,7 @@ Private Sub CloseMe_Click()
 End Sub
 
 Private Sub ExportLog2Excel_Click()
-    FormatExcel "RmktBilllogq", "C:\Faas\" & FAUserName & "\Temp\RmktBilllogq.xlsx", "BillLog"
+    FormatExcel "RmktBilllogq", "C:\Faas\" & FaUserName & "\Temp\RmktBilllogq.xlsx", "BillLog"
 
 End Sub
 

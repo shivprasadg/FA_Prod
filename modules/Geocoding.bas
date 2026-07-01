@@ -196,14 +196,14 @@ Public Sub GetWebtexts(CityName As String, StateName As String)
     Dim inurl As String
     Dim outpath As String
 
-    basepath = "C:\Faas\" & FAUserName & "\Temp\"
+    basepath = "C:\Faas\" & FaUserName & "\Temp\"
    ' pRS.Open "gagelist", CurrentProject.Connection, adOpenStatic, , adCmdTable
    ' pRS.MoveFirst
    ' Do Until pRS.EOF = True
       '  site_no = pRS("site_no").Value
         inurl = "https://www.zip-codes.com/search.asp?srch-type=fuzzy&q=" & CityName & "%2C+" & StateName & ""
       '  inurl = "http://waterdata.usgs.gov/tx/nwis/dv?cb_00060=on&format=rdb&begin_date=2008-10-15&end_date=2009-10-15&referred_module=sw&site_no=" & site_no
-        outpath = "C:\Faas\" & FAUserName & "\Temp\CityName.txt"
+        outpath = "C:\Faas\" & FaUserName & "\Temp\CityName.txt"
         DownloadDVFile inurl, outpath
     '    pRS.MoveNext
 
@@ -240,7 +240,7 @@ Public Function GetZipFromCity(CityName As String, StateName As String) As Strin
     intFileNum = FreeFile
     ' change Output to Append if you want to add to an existing file
     ' rather than creating a new file each time
-    Open "C:\Faas\" & FAUserName & "\Temp\WebText.txt" For Output As intFileNum
+    Open "C:\Faas\" & FaUserName & "\Temp\WebText.txt" For Output As intFileNum
     Print #intFileNum, WebString
     Close intFileNum
 
