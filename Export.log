@@ -2,40 +2,40 @@
 Beginning Export of Single Object
 ATLAAS_Shiv_v1.accdb
 VCS Version 4.1.2
-Full Path: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb
-Export Folder: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\
-7/2/2026 9:17:26 AM
+Full Path: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb
+Export Folder: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\
+7/2/2026 9:35:54 AM
 -------------------------------------
 Exporting Rmkt Menu...
-    Sanitized in 0.031 seconds.
+    Sanitized in 0.020 seconds.
 -------------------------------------
-Done. (1.06 seconds)
+Done. (0.48 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-Parse JSON                    1         0.61
-Parse JSON ISO Date           4270      0.19
-App.SaveAsText()              1         0.05
-Read File Bytes               1         0.04
-Sanitize File                 1         0.03
-Console Updates               3         0.03
+Parse JSON                    1         0.28
+Parse JSON ISO Date           4269      0.07
+App.SaveAsText()              1         0.02
+Sanitize File                 1         0.02
+Read File Bytes               1         0.02
+Console Updates               2         0.01
 Increment Progress            1         0.01
-Convert to JSON               34        0.01
-Read File                     2         0.01
-Get File Property Hash        2         0.00
-Read File DevMode             1         0.00
+Convert to JSON               34        0.00
+Read File                     2         0.00
 Write File                    2         0.00
 Delete File                   3         0.00
+Read File DevMode             1         0.00
 Get VBA Hash                  1         0.00
+Get File Property Hash        2         0.00
 modFileAccess.VerifyPath      3         0.00
-Compute SHA256                6         0.00
 Sanitize VBA Code             1         0.00
+Compute SHA256                6         0.00
 Get Modified Date             2         0.00
 --------------------------------------------------
-Other Operations                        0.08
+Other Operations                        0.04
 --------------------------------------------------
 
 

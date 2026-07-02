@@ -15,13 +15,13 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =10980
+    Width =11004
     DatasheetFontHeight =11
     ItemSuffix =604
     Left =2580
-    Top =3012
-    Right =22788
-    Bottom =11664
+    Top =3024
+    Right =19548
+    Bottom =13104
     ShortcutMenuBar ="SortClip"
     RecSrcDt = Begin
         0x90faff9076ebe340
@@ -2915,13 +2915,13 @@ Begin Form
                     OverlapFlags =85
                     Left =9120
                     Top =4560
-                    Width =1068
+                    Width =1884
                     Height =300
                     Name ="Label603"
-                    Caption ="++++++=="
+                    Caption ="change from gnsone"
                     LayoutCachedLeft =9120
                     LayoutCachedTop =4560
-                    LayoutCachedWidth =10188
+                    LayoutCachedWidth =11004
                     LayoutCachedHeight =4860
                 End
             End
