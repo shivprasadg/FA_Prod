@@ -15,7 +15,7 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =10272
+    Width =10980
     DatasheetFontHeight =11
     ItemSuffix =604
     Left =2580
@@ -2902,13 +2902,13 @@ Begin Form
                     OverlapFlags =85
                     Left =9060
                     Top =3960
-                    Width =1092
+                    Width =1920
                     Height =300
                     Name ="Label602"
-                    Caption ="++++==="
+                    Caption ="change from Gnstwo"
                     LayoutCachedLeft =9060
                     LayoutCachedTop =3960
-                    LayoutCachedWidth =10152
+                    LayoutCachedWidth =10980
                     LayoutCachedHeight =4260
                 End
                 Begin Label
