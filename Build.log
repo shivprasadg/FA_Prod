@@ -2,12 +2,12 @@
 Beginning build from Source
 ATLAAS_Shiv_v1.accdb
 VCS Version 4.1.2
-Full Path: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb
-Export Folder: C:\Users\gnstwo\Desktop\FA_Code\FA_Prod\ATLAAS_Shiv_v1.accdb.src\
-7/2/2026 9:30:59 AM
+Full Path: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb
+Export Folder: C:\FAAS\Git_Setup_Prod\ATLAAS_Shiv_v1.accdb.src\
+7/2/2026 9:36:24 AM
 -------------------------------------
 Saving backup of original database...
-Saved as ATLAAS_Shiv_v1_VCSBackup6.accdb.
+Saved as ATLAAS_Shiv_v1_VCSBackup1.accdb.
 Created blank database for import. (v12)
 Removing non built-in references...
   Removed DAO
@@ -2228,73 +2228,73 @@ Importing hidden attributes...
   hidden-attributes.json
 [1]
 -------------------------------------
-Done. (192.62 seconds)
+Done. (423.84 seconds)
 
 --------------------------------------------------
                 PERFORMANCE REPORTS
 --------------------------------------------------
 Category                      Count     Seconds
 --------------------------------------------------
-DB Connections                1         74.87
-Forms                         299       31.93
-Tables                        510       29.80
-Reports                       208       26.61
-Queries                       978       23.47
-Modules                       58        1.52
-Doc Properties                1         0.57
-Shared Images                 52        0.57
-CommandBars                   10        0.36
-IMEX Specs                    17        0.23
-Hidden Attributes             1         0.16
-Relations                     7         0.12
-DB Properties                 1         0.07
-VBE References                1         0.05
-Macros                        3         0.03
-Themes                        1         0.02
-Nav Pane Groups               1         0.02
-VB Project                    1         0.01
+Forms                         299       106.57
+Reports                       208       91.11
+Queries                       978       79.83
+DB Connections                1         73.82
+Tables                        510       55.19
+Modules                       58        4.60
+Shared Images                 52        2.47
+Doc Properties                1         1.87
+IMEX Specs                    17        1.05
+CommandBars                   10        0.96
+Relations                     7         0.60
+Hidden Attributes             1         0.59
+Macros                        3         0.23
+VBE References                1         0.16
+DB Properties                 1         0.16
+Nav Pane Groups               1         0.11
+Themes                        1         0.08
+VB Project                    1         0.02
 Project                       1         0.01
 --------------------------------------------------
-TOTALS:                       2151      190.42
+TOTALS:                       2151      419.44
 --------------------------------------------------
 
 --------------------------------------------------
 Operations                    Count     Seconds
 --------------------------------------------------
-App.LoadFromText()            1488      59.94
-Read File Bytes               3187      8.42
+App.LoadFromText()            1488      159.09
+Read File                     1669      53.59
+Read File Bytes               3187      46.91
 modVCSUtility.LoadComponentFr 
-omText                        1488      6.16
-Get File List                 18        1.43
-Delete File                   3503      1.07
-Save Stream to File           1488      1.02
-Get File Property Hash        2151      0.95
-Read File                     1669      0.83
-Import VBE Module             58        0.72
-Parse JSON                    741       0.57
-modFileAccess.VerifyPath      3503      0.50
-Increment Progress            2151      0.49
-Write File                    527       0.45
-Load Stream from File         1488      0.33
-Convert to JSON               4488      0.31
-Get VBA Hash                  565       0.29
-Compute SHA256                4366      0.27
-Get Modified Date             5026      0.23
-Enc. utf-8 as utf-16          1488      0.18
-Create new database           1         0.17
-Copy Stream                   1488      0.08
-Parse JSON ISO Date           4270      0.08
-Building CommandBar           10        0.06
-Get Unused Resource Name      52        0.05
-Console Updates               11        0.05
-Add GUID References           18        0.03
-Parse VBA Module              58        0.03
-Scan Source Files             1         0.02
-Clear References              1         0.01
+omText                        1488      16.50
+Get File List                 18        2.90
+Get File Property Hash        2151      2.45
+Save Stream to File           1488      2.40
+Delete File                   3503      2.31
+Increment Progress            2151      1.78
+Import VBE Module             58        1.42
+Parse JSON                    741       1.31
+modFileAccess.VerifyPath      3503      1.28
+Write File                    527       1.21
+Convert to JSON               4488      0.81
+Get VBA Hash                  565       0.77
+Compute SHA256                4366      0.76
+Load Stream from File         1488      0.75
+Get Modified Date             5026      0.57
+Enc. utf-8 as utf-16          1488      0.44
+Copy Stream                   1488      0.26
+Create new database           1         0.26
+Parse JSON ISO Date           4269      0.20
+Console Updates               13        0.15
+Building CommandBar           10        0.14
+Get Unused Resource Name      52        0.11
+Add GUID References           18        0.09
+Parse VBA Module              58        0.06
+Scan Source Files             1         0.03
+Clear References              1         0.02
 Check for linked table        1         0.00
 modFileAccess.GetUncPath      3         0.00
 --------------------------------------------------
-Other Operations                        107.87
+Other Operations                        125.28
 --------------------------------------------------
 
 
