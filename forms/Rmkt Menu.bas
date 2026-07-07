@@ -19,9 +19,9 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =604
     Left =2580
-    Top =3012
-    Right =22788
-    Bottom =11664
+    Top =3024
+    Right =19548
+    Bottom =13104
     ShortcutMenuBar ="SortClip"
     RecSrcDt = Begin
         0x90faff9076ebe340
@@ -2915,13 +2915,13 @@ Begin Form
                     OverlapFlags =85
                     Left =9120
                     Top =4560
-                    Width =1884
+                    Width =2388
                     Height =300
                     Name ="Label603"
-                    Caption ="change from gnsone"
+                    Caption ="change from shivg gnsone"
                     LayoutCachedLeft =9120
                     LayoutCachedTop =4560
-                    LayoutCachedWidth =11004
+                    LayoutCachedWidth =11508
                     LayoutCachedHeight =4860
                 End
             End
